@@ -1,0 +1,3 @@
+name: موقع ملهم|نافذة على المحتوى العربي
+markdown: kramdown
+permalink: /blog/:title
