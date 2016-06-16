@@ -1,3 +1,13 @@
 name: موقع ملهم|نافذة على المحتوى العربي
 markdown: kramdown
-permalink: /blog/:title
+permalink: /:title
+timezone: Asia/Damascus
+defaults:
+ scope:
+ path: "" # an empty string here means all files in the project
+ values:
+ layout: "default"
+highlighter: rouge
+encoding: "utf-8"
+paginate_path: /page:num
+excerpt_separator: <!--more-->

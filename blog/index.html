@@ -5,7 +5,9 @@ title: مدونة ملهم|حلول وشروحات لا سابق لها في ا�
 	<h1>{{ page.title }}</h1>
 	<ul class="posts">
 
-	  {% for post in /_posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+{{ post.excerpt }} <a href="{{ post.url}} ">تابع القراءة>>></a>
+</li>
 	  {% endfor %}
 	</ul>
