@@ -220,6 +220,7 @@ pre {
   pre code, pre tt {
     font-weight: bold;
 	float: left;
+    direction: ltr;
     font-family: FreeMono;
     background-color: transparent;
     border: none; }
