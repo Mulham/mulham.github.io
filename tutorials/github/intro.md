@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-06-16
-title: سلسة دروس جِت هَب|الدرس الأول
+title: سلسلة دروس جِت هَب|مقدمة
 ---
 <dl><dd><center><img src="http://2.bp.blogspot.com/-YNomP_OFh8w/VCLZxwHhzZI/AAAAAAAABdw/ebPo_l63NTM/s1600/blog-github.png"></center></dd></dl>
 

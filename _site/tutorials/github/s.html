@@ -8,7 +8,7 @@
 
 
 
-			<title>سلسلة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني</title>
+			<title>سلسة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني</title>
 			<!-- link to main stylesheet -->
 			
 		</head>
@@ -23,7 +23,7 @@
 			</nav>
 			<div class="container">
 			
-			<h1>سلسلة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني</h1>
+			<h1>سلسة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني</h1>
 <p class="meta">16 Jun 2016</p>
 
 <div class="post">
@@ -39,12 +39,6 @@
 
 <p>الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github</p>
 
-<ul id="markdown-toc">
-  <li><a href="#section" id="markdown-toc-section">أولاً : أخبر جت هب بإبقاء بريدك الإلكتروني خاص</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">ثانياً : أخبر جت باستخدام عنوان بريدك الإلكتروني الخاص</a></li>
-  <li><a href="#section-2" id="markdown-toc-section-2">استخدام عنوان بريدك الخاص لحزمة محددة</a></li>
-</ul>
-
 <p>إن أي تغيير على مشروع ما باستخدام <code class="highlighter-rouge">Git</code> يقوم بتعريفك باستخدام عنوان بريدك الإلكتروني. على الرغم من أن Github لم تتلقى تبليغات عديدة حول رسائل ضارّة يتم إرسالها لعناوين البريد لإلكتروني في تغييرات <code class="highlighter-rouge">Git</code>. إلا أنه يمكنك دائماً استخدام عنوان جت هب خاص بديل، وذلك إذا كنت قلق من إظهار بريدك الإلكتروني أو لديك مخاوف تتعلق بالخصوصية .</p>
 
 <p>سنشرح هنا كيفية عمل ذلك عن طريق استخدام عنوان البريد التالي :</p>
@@ -57,38 +51,38 @@
 
 <h1 id="section">أولاً : أخبر جت هب بإبقاء بريدك الإلكتروني خاص</h1>
 
-<p>1.اضغط على زر الإعدادات  في الزاوية اليمنى ﻷي صفحة</p>
-
-<p><img src="http://1.bp.blogspot.com/-b5Q40aqJa1A/VN9s1-tO92I/AAAAAAAABoM/HcSHuOjBXKI/s1600/userbar-account-settings.png" alt="git-1" /></p>
-
-<p>2.اضغط على زر “Emails” في الشريط الجانبي الأيسر</p>
-
-<p><img src="http://1.bp.blogspot.com/-X_QCfRDpELQ/VN9tNTVaVDI/AAAAAAAABoU/G07_EWRo-hY/s1600/settings-sidebar-emails.png" alt="git-2" /></p>
-
-<p>3.قم بالتأشير على خيار الحفاظ على خصوصية بريدك الإلكتروني “ Keep my email address private.”</p>
-
-<p><img src="http://4.bp.blogspot.com/-9WPWtcl34Yc/VN9tavOCwvI/AAAAAAAABoc/-0MW-8BCBBU/s1600/email_privacy.png" alt="git-3" /></p>
+<ol>
+  <li>
+    <p>اضغط على زر الإعدادات  في الزاوية اليمنى ﻷي صفحة :</p>
+  </li>
+  <li>
+    <p>اضغط على زر “Emails” في الشريط الجانبي الأيسر :</p>
+  </li>
+  <li>
+    <p>قم بالتأشير على خيار الحفاظ على خصوصية بريدك الإلكتروني “ Keep my email address private.”</p>
+  </li>
+</ol>
 
 <h1 id="section-1">ثانياً : أخبر جت باستخدام عنوان بريدك الإلكتروني الخاص</h1>
+
+<p>إذا كنت تستخدم سطر الأوامر أو تطبيق مكتبي لـ <code class="highlighter-rouge">Git</code> لإجراء التغييرات في البيانات محلياً، فستحتاج أيضاً لتحديث إعدادات جِت المحلية (على جهازك).</p>
+
+<p>لاستخدام عنوان بريدك الخاص لكل حزمة على جهازك :</p>
 
 <ol>
   <li>
     <p>قم بفتح موجه الأوامر</p>
   </li>
   <li>
-    <p>حدد بريدك الإلكتروني باستخدام الأمر التالي</p>
+    <p>حدد بريدك الإلكتروني باستخدام الأمر التالي :</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> git config --global user.email
-</code></pre>
-    </div>
+    <p>git config –global user.email “username@users.noreply.github.com”</p>
   </li>
   <li>
     <p>تأكد من تحديدك لبريدك الإلكتروني بشكل صحيح باستعمال الأمر :</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> git config --global user.email
- # username@users.noreply.github.com
-</code></pre>
-    </div>
+    <p>git config –global user.email
+# username@users.noreply.github.com</p>
   </li>
 </ol>
 
@@ -103,17 +97,13 @@
   <li>
     <p>حدد عنوان بريدك باستخدام الأمر :</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> git config user.email "username@users.noreply.github.com" 
-</code></pre>
-    </div>
+    <p>git config user.email “username@users.noreply.github.com”</p>
   </li>
   <li>
     <p>تأكد من تحديدك لعنوان بريدك بشكل صحيح من خلال الأمر :</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> git config user.email
- # username@users.noreply.github.com
-</code></pre>
-    </div>
+    <p>git config user.email
+ # username@users.noreply.github.com</p>
   </li>
 </ol>
 

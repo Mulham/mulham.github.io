@@ -8,7 +8,7 @@
 
 
 
-			<title>سلسة دروس جِت هَب|الدرس الأول</title>
+			<title>سلسة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني</title>
 			<!-- link to main stylesheet -->
 			
 		</head>
@@ -23,17 +23,13 @@
 			</nav>
 			<div class="container">
 			
-			<h1>سلسة دروس جِت هَب|الدرس الأول</h1>
+			<h1>سلسة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني</h1>
 <p class="meta">16 Jun 2016</p>
 
 <div class="post">
-  <dl><dd><center><img src="http://2.bp.blogspot.com/-YNomP_OFh8w/VCLZxwHhzZI/AAAAAAAABdw/ebPo_l63NTM/s1600/blog-github.png" /></center></dd></dl>
+  <p>الفهرس:</p>
 
-<p>نقدم سلسلة دروس Github حصرياً لموقع ملهم</p>
-
-<p>الفهرس:</p>
-
-<p>الدرس الأول: التعريف بـ جِت هَب</p>
+<p><a href="intro">الدرس الأول: التعريف بـ جِت هَب</a></p>
 
 <p><a href="create-repo">الدرس الثاني:إنشاء حزمة في Github</a></p>
 
@@ -41,112 +37,76 @@
 
 <p><a href="being-social">الدرس الرابع: كيف تكون اجتماعياً في Github</a></p>
 
-<p><a href="keep-your-email-private">الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github</a></p>
-
-<h1 id="github">الدرس الأول : التعريف بـ Github</h1>
+<p>الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github</p>
 
 <ul id="markdown-toc">
-  <li><a href="#github" id="markdown-toc-github">الدرس الأول : التعريف بـ Github</a>    <ul>
-      <li><a href="#git" id="markdown-toc-git">تنصيب Git</a>        <ul>
-          <li><a href="#git----" id="markdown-toc-git----">تنصيب Git على نظام تشغيل لينكس</a></li>
-          <li><a href="#git--" id="markdown-toc-git--">تنصيب Git على الويندوز</a></li>
-          <li><a href="#git---1" id="markdown-toc-git---1">تنصيب Git على الماك</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-<p>باختصار هو أفضل مكان لمشاركة الكود البرمجي مع الأصدقاء وأصحاب العمل والجميع. أو هو شبكة اجتماعية للمبرمجين. أكثر من 6 مليون شخص يستخدمون <code class="highlighter-rouge">Github</code> لبناء مشاريع رائعة سوياً .</p>
-
-<p>في قلب <code class="highlighter-rouge">Github</code> يوجد <code class="highlighter-rouge">Git</code> والذي هو مشروع مفتوح المصدر بدأ من قبل منشأ اللينكس “لينوس تورفالدز” .</p>
-
-<p>إن<code class="highlighter-rouge">Git</code> مسؤول عن كل شيئ متعلق ب <code class="highlighter-rouge">Github</code> والذي يحدث محلياً بجهازك.</p>
-
-<p>للبدء مع <code class="highlighter-rouge">Github</code> ودخول عالم المبرمجين يجب عليك أولاً إنشاء حساب على ذلك الموقع من خلال النموذج الموجود في الصفحة الرئيسية <a href="http://github.com">هنا</a>. ثم يجب عليك تنصيب <code class="highlighter-rouge">Git</code> على جهازك .</p>
-
-<h2 id="git">تنصيب Git</h2>
-
-<p>إذا لم تكن معتاد على سطر الأوامر حالياً ، فإن <code class="highlighter-rouge">github</code> يتيح لك القيام بالعديد من الأمور المتعلقة بـ <code class="highlighter-rouge">git</code> بدون استخدام سطر الأوامر، بما في ذلك:</p>
-
-<ul>
-  <li>
-    <p>إنشاء حزمة Creating a repository</p>
-  </li>
-  <li>
-    <p>نسخ حزمة Forking a repository</p>
-  </li>
-  <li>
-    <p>أن تكون اجتماعياً Being social</p>
-  </li>
+  <li><a href="#section" id="markdown-toc-section">أولاً : أخبر جت هب بإبقاء بريدك الإلكتروني خاص</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">ثانياً : أخبر جت باستخدام عنوان بريدك الإلكتروني الخاص</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">استخدام عنوان بريدك الخاص لحزمة محددة</a></li>
 </ul>
 
-<p>على كل الأحوال ، إذا وجدت أنك بحاجة لتنصيب <code class="highlighter-rouge">Git</code> فنحن نساعدك بتنصيبها :</p>
+<p>إن أي تغيير على مشروع ما باستخدام <code class="highlighter-rouge">Git</code> يقوم بتعريفك باستخدام عنوان بريدك الإلكتروني. على الرغم من أن Github لم تتلقى تبليغات عديدة حول رسائل ضارّة يتم إرسالها لعناوين البريد لإلكتروني في تغييرات <code class="highlighter-rouge">Git</code>. إلا أنه يمكنك دائماً استخدام عنوان جت هب خاص بديل، وذلك إذا كنت قلق من إظهار بريدك الإلكتروني أو لديك مخاوف تتعلق بالخصوصية .</p>
 
-<blockquote>
-  <p>ملاحظة : للتعرف على المزيد حول git قم بقراءة <a href="http://www.arabicgit.com/simple-guide/">أساسيات git</a></p>
-</blockquote>
+<p>سنشرح هنا كيفية عمل ذلك عن طريق استخدام عنوان البريد التالي :</p>
 
-<h3 id="git----">تنصيب Git على نظام تشغيل لينكس</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;username&gt;@users.noreply.github.com
+</code></pre>
+</div>
 
-<ol>
-  <li>
-    <p>قم بتحميل الإصدار الأخير من git <a href="http://git-scm.com/downloads">هنا</a></p>
-  </li>
-  <li>
-    <p>قم بفتح التيرمينال (الطرفية) في جهازك</p>
-  </li>
-  <li>
-    <p>أخبر  <code class="highlighter-rouge">Git</code> عن اسمك حتى يتم تصنيف مشاركاتك بشكل صحيح ، أدخل التالي في الطرفية مع استبدال <code class="highlighter-rouge">Your Name</code> باسمك :</p>
-  </li>
-</ol>
+<p>وذلك لجميع العمليات المدعومة من قبل تدفق جت هب في المتصفح .</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">$ git config --global user.name "Your Name"</span></code></pre></figure>
-
-<ol>
-  <li>أخبر <code class="highlighter-rouge">Git</code> عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في <code class="highlighter-rouge">Git</code> . البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب <code class="highlighter-rouge">github</code> .</li>
-</ol>
-
-<blockquote>
-  <p>ملاحظة : لإبقاء بريدك الإلكتروني مخفي راجع: <a href="keep-your-email-private">الحفاظ على خصوصية البريد الإلكتروني</a></p>
-</blockquote>
-
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">$ git config --global user.email "Your Email Address"</span></code></pre></figure>
-
-<p>وبهذا تكون انتهيت من تنصيب git على جهازك .</p>
-
-<h3 id="git--">تنصيب Git على الويندوز</h3>
+<h1 id="section">أولاً : أخبر جت هب بإبقاء بريدك الإلكتروني خاص</h1>
 
 <ol>
   <li>
-    <p>قم بتحميل وتنصيب <a href="https://windows.github.com/">الإصدار الأخير من  <code class="highlighter-rouge">Github</code> للويندوز</a>. حيث سيقوم هذا التطبيق بتنصيب <code class="highlighter-rouge">Git</code> وتحديثه تلقائياً على جهازك .</p>
+    <p>اضغط على زر الإعدادات  في الزاوية اليمنى ﻷي صفحة</p>
   </li>
   <li>
-    <p>قم بفتح تطبيق <code class="highlighter-rouge">Git shell</code> في جهازك.</p>
+    <p>اضغط على زر “Emails” في الشريط الجانبي الأيسر</p>
+  </li>
+  <li>
+    <p>قم بالتأشير على خيار الحفاظ على خصوصية بريدك الإلكتروني “ Keep my email address private.”</p>
   </li>
 </ol>
 
-<p>ثم تابع الخطوات 3 - 4 <a href="#git----">في الأعلى</a>.</p>
+<h1 id="section-1">ثانياً : أخبر جت باستخدام عنوان بريدك الإلكتروني الخاص</h1>
 
-<h3 id="git---1">تنصيب Git على الماك</h3>
+<p>1.قم بفتح موجه الأوامر</p>
 
-<blockquote>
-  <p>ملاحظة : لدى Github <a href="https://mac.github.com/">تطبيق خاص بالماك</a>. يمكنك استعماله بدون استخدام سطر الأوامر .</p>
-</blockquote>
+<p>2.حدد بريدك الإلكتروني باستخدام الأمر التالي</p>
 
-<ol>
-  <li>
-    <p>قم بتحميل وتنصيب الإصدار الأخير من Git.</p>
-  </li>
-  <li>
-    <p>قم بفتح التيرمينال في جهازك .</p>
-  </li>
-</ol>
+<div class="highlighter-rouge"><pre class="highlight"><code>git config --global user.email
+</code></pre>
+</div>
 
-<p>ثم تابع الخطوات 3 -4 <a href="#git----">في الأعلى</a>.</p>
+<p>3.تأكد من تحديدك لبريدك الإلكتروني بشكل صحيح باستعمال الأمر :</p>
 
-<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git config --global user.email
+# username@users.noreply.github.com
+</code></pre>
+</div>
 
-<p>التالي : <a href="2">إنشاء حزمة في  Github</a>.</p>
+<p>أي أدخل الأمر في السطر الأول ، ويجب أن يكون الناتج كما في السطر الثاني .</p>
+
+<h1 id="section-2">استخدام عنوان بريدك الخاص لحزمة محددة</h1>
+
+<p>1.قم بالانتقال للحزمة من خلال سطر الأوامر .</p>
+
+<p>2.حدد عنوان بريدك باستخدام الأمر :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git config user.email "username@users.noreply.github.com" 
+</code></pre>
+</div>
+
+<p>3.تأكد من تحديدك لعنوان بريدك بشكل صحيح من خلال الأمر :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git config user.email
+# username@users.noreply.github.com
+</code></pre>
+</div>
+
+<p>هل لديك سؤال ؟ لا تترد في طرحه في التعليقات ليتم الإجابة عنه بأقرب وقت إن شاء الله .</p>
+
 
 </div>
 			
