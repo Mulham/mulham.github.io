@@ -1,0 +1,85 @@
+---
+layout: post
+date: 2016-06-16
+title: سلسة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني
+---
+ 
+الفهرس:
+
+الدرس الأول: [التعريف بـ جِت هَب](intro)
+
+[الدرس الثاني:إنشاء حزمة في Github](create-repo)
+
+[الدرس الثالث: نسخ حزمة في Github](fork-repo)
+
+[الدرس الرابع: كيف تكون اجتماعياً في Github](being-social)
+
+الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github
+
+
+<div dir="rtl" style="text-align: right;" trbidi="on">
+هذه المشاركة جزء من :&nbsp;<a href="http://efadanet.blogspot.com/2014/09/github.html" target="_blank">سلسلة دروس Github</a><br />
+<br />
+إن أي تغيير على مشروع ما باستخدام Git يقوم بتعريفك باستخدام عنوان بريدك الإلكتروني . على الرغم من أن Github لم تتلقى تبليغات عديدة حول رسائل ضارة يتم إرسالها لعناوين البريد لإلكتروني في تغييرات Git . إلا أنه يمكنك دائماً استخدام عنوان جت هب خاص بديل ، وذلك إذا كنت قلق من إظهار بريدك الإلكتروني أو لديك مخاوف تتعلق بالخصوصية .<br />
+<br />
+سنشرح هنا كيفية عمل ذلك عن طريق استخدام عنوان البريد التالي :<br />
+<blockquote class="tr_bq" style="text-align: left;">
+<span style="background-color: white; color: #666666; font-family: &quot;monaco&quot; , &quot;dejavu sans mono&quot; , &quot;courier new&quot; , monospace; font-size: 13px; line-height: 18.200000762939453px;">&lt;username&gt;@users.noreply.github.com</span></blockquote>
+وذلك لجميع العمليات المدعومة من قبل تدفق جت هب في المتصفح .<br />
+<br />
+أولاً : أخبر جت هب بإبقاء بريدك الإلكتروني خاص :<br />
+<br />
+1. اضغط على زر الإعدادات &nbsp;في الزاوية اليمنى ﻷي صفحة :<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-b5Q40aqJa1A/VN9s1-tO92I/AAAAAAAABoM/HcSHuOjBXKI/s1600/userbar-account-settings.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="69" src="https://1.bp.blogspot.com/-b5Q40aqJa1A/VN9s1-tO92I/AAAAAAAABoM/HcSHuOjBXKI/s1600/userbar-account-settings.png" width="320" /></a></div>
+<br />
+2. &nbsp;اضغط على زر "Emails" في الشريط الجانبي الأيسر :<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-X_QCfRDpELQ/VN9tNTVaVDI/AAAAAAAABoU/G07_EWRo-hY/s1600/settings-sidebar-emails.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://1.bp.blogspot.com/-X_QCfRDpELQ/VN9tNTVaVDI/AAAAAAAABoU/G07_EWRo-hY/s1600/settings-sidebar-emails.png" /></a></div>
+<br />
+3. قم بالتأشير على خيار الحفاظ على خصوصية بريدك الإلكتروني "<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;">&nbsp;</span><b style="background-color: white; border: 0px; color: #333333; font-family: helvetica, arial, freesans, clean, sans-serif; font-size: 15px; line-height: 21px; margin: 0px; padding: 0px; text-align: left; vertical-align: baseline;">Keep my email address private</b><span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;">."</span><br />
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;"><br /></span>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-9WPWtcl34Yc/VN9tavOCwvI/AAAAAAAABoc/-0MW-8BCBBU/s1600/email_privacy.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="101" src="https://4.bp.blogspot.com/-9WPWtcl34Yc/VN9tavOCwvI/AAAAAAAABoc/-0MW-8BCBBU/s1600/email_privacy.png" width="320" /></a></div>
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;"><br /></span>
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;">ثانياً : أخبر جت باستخدام عنوان بريدك الإلكتروني الخاص :</span><br />
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;"><br /></span>
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;">إذا كنت تستخدم سطر الأوامر أو تطبيق مكتبي لـ Git لإجراء التغييرات في البيانات محلياً ، فستحتاج أيضاً لتحديث إعدادات جت المحلية (على جهازك).</span><br />
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;"><br /></span>
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;">لاستخدام عنوان بريدك الخاص<i> لكل</i> حزمة على جهازك :</span><br />
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;"><br /></span>
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;">1. قم بفتح موجه الأوامر</span><br />
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;"><br /></span>
+<span style="background-color: white; color: #333333; font-family: &quot;helvetica&quot; , &quot;arial&quot; , &quot;freesans&quot; , &quot;clean&quot; , sans-serif; font-size: 15px; line-height: 21px; text-align: left;">2. حدد بريدك الإلكتروني باستخدام الأمر التالي :</span><br />
+<br />
+<blockquote class="tr_bq" style="text-align: left;">
+<pre class="command-line" dir="ltr" style="-webkit-background-clip: padding-box; -webkit-font-smoothing: auto; background-clip: padding-box; background-color: #333333; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 2px solid rgb(221, 221, 221); color: white; font-family: Monaco, 'DejaVu Sans Mono', 'Courier New', monospace; font-size: 13px; line-height: inherit; margin-bottom: 10px; margin-top: 10px; overflow: auto; padding: 10px; text-align: left; vertical-align: baseline;"><span class="command" style="border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline; white-space: pre-wrap;">git config --global user.email "<i style="border: 0px; color: #f9fe64; font-family: inherit; font-size: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;">username</i>@users.noreply.github.com"</span></pre>
+</blockquote>
+&nbsp;3. تأكد من تحديدك لبريدك الإلكتروني بشكل صحيح باستعمال الأمر :<br />
+<br />
+<blockquote class="tr_bq" style="text-align: left;">
+<pre class="command-line" style="-webkit-background-clip: padding-box; -webkit-font-smoothing: auto; background-clip: padding-box; background-color: #333333; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 2px solid rgb(221, 221, 221); color: white; font-family: Monaco, 'DejaVu Sans Mono', 'Courier New', monospace; font-size: 13px; line-height: inherit; margin-bottom: 10px; margin-top: 10px; overflow: auto; padding: 10px; vertical-align: baseline;"><span class="command" style="border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline; white-space: pre-wrap;">git config --global user.email</span>
+<span class="output" style="border: 0px; color: #63e463; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline; white-space: pre-wrap;"><span style="border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; left: -1000px; line-height: inherit; margin: 0px; padding: 0px; top: -1000px; vertical-align: baseline;"># </span><i style="border: 0px; color: #f9fe64; font-family: inherit; font-size: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;">username</i>@users.noreply.github.com</span></pre>
+</blockquote>
+<br />
+أي أدخل الأمر في السطر الأول ، ويجب أن يكون الناتج كما في السطر الثاني .<br />
+<br />
+لاستخدام عنوان بريدك الخاص لحزمة محددة :<br />
+<br />
+1. قم بالانتقال للحزمة من خلال سطر الأوامر .<br />
+2. حدد عنوان بريدك باستخدام الأمر :<br />
+<br />
+<blockquote class="tr_bq" dir="ltr" style="text-align: left;">
+<span style="background-color: #333333; color: white; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; white-space: pre-wrap;">git config user.email "</span><i style="background-color: #333333; border: 0px; color: #f9fe64; font-family: inherit; font-size: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline; white-space: pre-wrap;">username</i><span style="background-color: #333333; color: white; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; white-space: pre-wrap;">@users.noreply.github.com"</span>&nbsp;</blockquote>
+3. تأكد من تحديدك لعنوان بريدك بشكل صحيح من خلال الأمر :<br />
+<br />
+<blockquote class="tr_bq" style="text-align: left;">
+<pre class="command-line" style="-webkit-background-clip: padding-box; -webkit-font-smoothing: auto; background-clip: padding-box; background-color: #333333; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 2px solid rgb(221, 221, 221); color: white; font-family: Monaco, 'DejaVu Sans Mono', 'Courier New', monospace; font-size: 13px; line-height: inherit; margin-bottom: 10px; margin-top: 10px; overflow: auto; padding: 10px; vertical-align: baseline;"><span class="command" style="border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline; white-space: pre-wrap;">git config user.email</span>
+<span class="output" style="border: 0px; color: #63e463; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline; white-space: pre-wrap;"><span style="border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; left: -1000px; line-height: inherit; margin: 0px; padding: 0px; top: -1000px; vertical-align: baseline;"># </span><i style="border: 0px; color: #f9fe64; font-family: inherit; font-size: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;">username</i>@users.noreply.github.com</span></pre>
+</blockquote>
+<br />
+هل لديك سؤال ؟ لا تترد في طرحه في التعليقات ليتم الإجابة عنه بأقرب وقت إن شاء الله .<br />
+<br /></div>

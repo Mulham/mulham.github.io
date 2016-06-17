@@ -5,7 +5,7 @@
 <link rel="icon" href="/favicon.png">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/css/main.css">
-<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+
 
 
 			<title>سلسة دروس جِت هَب|الدرس الأول</title>
@@ -17,7 +17,7 @@
 	    		<ul>
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
-						<li><a href="/tutorial">دروس</a></li>
+						<li><a href="/tutorials">دروس</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
 			</nav>
@@ -35,13 +35,13 @@
 
 <p>الدرس الأول: التعريف بـ جِت هَب</p>
 
-<p><a href="/github/2">الدرس الثاني:إنشاء حزمة في Github</a></p>
+<p><a href="create-repo">الدرس الثاني:إنشاء حزمة في Github</a></p>
 
-<p><a href="/github/3">الدرس الثالث: نسخ حزمة في Github</a></p>
+<p><a href="fork-repo">الدرس الثالث: نسخ حزمة في Github</a></p>
 
-<p><a href="/github/4">الدرس الرابع: كيف تكون اجتماعياً في Github</a></p>
+<p><a href="being-social">الدرس الرابع: كيف تكون اجتماعياً في Github</a></p>
 
-<p><a href="/github/5">الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github</a></p>
+<p><a href="keep-your-email-private">الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github</a></p>
 
 <h1 id="github">الدرس الأول : التعريف بـ Github</h1>
 
@@ -83,7 +83,7 @@
 <p>على كل الأحوال ، إذا وجدت أنك بحاجة لتنصيب <code class="highlighter-rouge">Git</code> فنحن نساعدك بتنصيبها :</p>
 
 <blockquote>
-  <p>ملاحظة : للتعرف على المزيد حول <code class="highlighter-rouge">git</code> قم بقراءة <a href="http://www.arabicgit.com/simple-guide/">أساسيات git</a></p>
+  <p>ملاحظة : للتعرف على المزيد حول git قم بقراءة <a href="http://www.arabicgit.com/simple-guide/">أساسيات git</a></p>
 </blockquote>
 
 <h3 id="git----">تنصيب Git على نظام تشغيل لينكس</h3>
@@ -96,22 +96,21 @@
     <p>قم بفتح التيرمينال (الطرفية) في جهازك</p>
   </li>
   <li>
-    <p>أخبر  <code class="highlighter-rouge">Git</code> عن اسمك حتى يتم تصصنيف مشاركاتك بشكل صحيح ، أدخل التالي في الطرفية مع استبدال <code class="highlighter-rouge">Your Name</code> باسمك :</p>
-
-    <p>$ git config –global user.name “<code class="highlighter-rouge">Your Name</code>”</p>
-  </li>
-  <li>
-    <p>أخبر <code class="highlighter-rouge">Git</code> عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في <code class="highlighter-rouge">Git</code> . البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب <code class="highlighter-rouge">github</code> .</p>
+    <p>أخبر  <code class="highlighter-rouge">Git</code> عن اسمك حتى يتم تصنيف مشاركاتك بشكل صحيح ، أدخل التالي في الطرفية مع استبدال <code class="highlighter-rouge">Your Name</code> باسمك :</p>
   </li>
 </ol>
 
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">$ git config --global user.name "Your Name"</span></code></pre></figure>
+
+<ol>
+  <li>أخبر <code class="highlighter-rouge">Git</code> عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في <code class="highlighter-rouge">Git</code> . البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب <code class="highlighter-rouge">github</code> .</li>
+</ol>
+
 <blockquote>
-  <p>ملاحظة : لإبقاء بريدك الإلكتروني مخفي راجع: <a href="/github/keep-your-email-private">الحفاظ على خصوصية البريد الإلكتروني</a></p>
+  <p>ملاحظة : لإبقاء بريدك الإلكتروني مخفي راجع: <a href="keep-your-email-private">الحفاظ على خصوصية البريد الإلكتروني</a></p>
 </blockquote>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git config --global user.email "Your Email Address"
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">$ git config --global user.email "Your Email Address"</span></code></pre></figure>
 
 <p>وبهذا تكون انتهيت من تنصيب git على جهازك .</p>
 
@@ -119,18 +118,20 @@
 
 <ol>
   <li>
-    <p>قم بتحميل وتنصيب الإصدار الأخير من  Github للويندوز . حيث سيقوم هذا التطبيق بتنصيب Git وتحديثه تلقائياً على جهازك .</p>
+    <p>قم بتحميل وتنصيب <a href="https://windows.github.com/">الإصدار الأخير من  <code class="highlighter-rouge">Github</code> للويندوز</a>. حيث سيقوم هذا التطبيق بتنصيب <code class="highlighter-rouge">Git</code> وتحديثه تلقائياً على جهازك .</p>
   </li>
   <li>
-    <p>قم بفتح تطبيق Git shell في جهازك .</p>
+    <p>قم بفتح تطبيق <code class="highlighter-rouge">Git shell</code> في جهازك.</p>
   </li>
 </ol>
 
-<p>ثم تابع الخطوات 3 - 4 في الأعلى .</p>
+<p>ثم تابع الخطوات 3 - 4 <a href="#git----">في الأعلى</a>.</p>
 
 <h3 id="git---1">تنصيب Git على الماك</h3>
 
-<p>ملاحظة : لدى Github تطبيق خاص بالماك . يمكنك استعماله بدون استخدام سطر الأوامر .</p>
+<blockquote>
+  <p>ملاحظة : لدى Github <a href="https://mac.github.com/">تطبيق خاص بالماك</a>. يمكنك استعماله بدون استخدام سطر الأوامر .</p>
+</blockquote>
 
 <ol>
   <li>
@@ -141,9 +142,11 @@
   </li>
 </ol>
 
-<p>ثم تابع الخطوات 3 -4 في الأعلى .</p>
+<p>ثم تابع الخطوات 3 -4 <a href="#git----">في الأعلى</a>.</p>
 
-<p>التالي : <a href="page.next">إنشاء حزمة في  Github</a>.</p>
+<hr />
+
+<p>التالي : <a href="2">إنشاء حزمة في  Github</a>.</p>
 
 </div>
 			
