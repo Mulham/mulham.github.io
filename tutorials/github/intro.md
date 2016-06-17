@@ -20,7 +20,10 @@ title: سلسلة دروس جِت هَب|مقدمة
 
 [الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github](keep-your-email-private)
 
-# الدرس الأول : التعريف بـ Github
+********
+
+الدرس الأول : التعريف بـ Github
+-------
 
   * Toc
 {:toc}  
@@ -53,7 +56,7 @@ title: سلسلة دروس جِت هَب|مقدمة
 على كل الأحوال ، إذا وجدت أنك بحاجة لتنصيب `Git` فنحن نساعدك بتنصيبها :
 
 
-> ملاحظة : للتعرف على المزيد حول git قم بقراءة [أساسيات git](http://www.arabicgit.com/simple-guide/) 
+> للتعرف على المزيد حول git قم بقراءة [أساسيات git](http://www.arabicgit.com/simple-guide/) 
 
 ### تنصيب Git على نظام تشغيل لينكس 
 
@@ -70,7 +73,7 @@ $ git config --global user.name "Your Name"
 
 4. أخبر `Git` عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في `Git` . البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب `github` .
 
-> ملاحظة : لإبقاء بريدك الإلكتروني مخفي راجع: [الحفاظ على خصوصية البريد الإلكتروني](keep-your-email-private) 
+> لإبقاء بريدك الإلكتروني مخفي راجع: [الحفاظ على خصوصية البريد الإلكتروني](keep-your-email-private) 
 
 {% highlight YAML %}
 $ git config --global user.email "Your Email Address"
@@ -88,7 +91,7 @@ $ git config --global user.email "Your Email Address"
 
 ### تنصيب Git على الماك
 
-> ملاحظة : لدى Github [تطبيق خاص بالماك](https://mac.github.com/). يمكنك استعماله بدون استخدام سطر الأوامر .
+> لدى Github [تطبيق خاص بالماك](https://mac.github.com/). يمكنك استعماله بدون استخدام سطر الأوامر .
 
 1. قم بتحميل وتنصيب الإصدار الأخير من Git.
 
@@ -101,4 +104,4 @@ $ git config --global user.email "Your Email Address"
 
 
 
-التالي : [إنشاء حزمة في  Github](2).
+التالي : [إنشاء حزمة في  Github](create-repo).
