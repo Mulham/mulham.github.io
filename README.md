@@ -1,4 +1,4 @@
-<dl><dd><p style="direction= rtl;">
+
 # موقع ملهم
 
 موقع ملهم على استضافة جِت هَب : <https://mulham.github.io>
@@ -11,4 +11,3 @@
 
 إذا كنت مبتدءاً في جِت هَب فيمكنك قراءة [سلسلة دروس Github](https://mulham.github.io/tutorials/github/intro) التي ترجمتها بنفسي.
 
-</p></dd></dl>
