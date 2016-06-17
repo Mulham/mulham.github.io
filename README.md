@@ -1,4 +1,6 @@
-<p style="direction: rtl; text-align: right;">
+----
+layout: default
+----
 
 # موقع ملهم
 
@@ -12,4 +14,3 @@
 
 إذا كنت مبتدءاً في جِت هَب فيمكنك قراءة [سلسلة دروس Github](https://mulham.github.io/tutorials/github/intro) التي ترجمتها بنفسي.
 
-</p>
