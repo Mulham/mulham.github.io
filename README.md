@@ -1,10 +1,7 @@
-----
-layout: default
-----
-
+<dl><dd><p style="direction= rtl;">
 # موقع ملهم
 
-موقع ملهم على استضافة جِت هَب : <mulham.github.io>
+موقع ملهم على استضافة جِت هَب : <https://mulham.github.io>
 
 موقع يقوم بترجمة ونشر المؤلفات في كل ما هو علمي ومفيد، كذلك أحاول الإشارة فيه إلى كل ما جاد من المحتوى العربي. 
 
@@ -14,3 +11,4 @@ layout: default
 
 إذا كنت مبتدءاً في جِت هَب فيمكنك قراءة [سلسلة دروس Github](https://mulham.github.io/tutorials/github/intro) التي ترجمتها بنفسي.
 
+</p></dd></dl>
