@@ -63,7 +63,7 @@ title: "إنشاء قوالب Joomla"
 للإصدار 1.5 استخدم التالي :
 
 {% highlight xml %}
-{% raw %}
+
     <?xml version="1.0" encoding="utf-8"?>
 
 
@@ -152,13 +152,13 @@ title: "إنشاء قوالب Joomla"
 
 
     </install>
-{% endraw %}
-{% end highlight %}
+
+{% endhighlight %}
 
 للإصدار 2.5 وما بعد استخدم التالي ، فقط غير version=”2.5” إلى الإصدار الذي تستخدمه من جملة
 
 {% highlight xml %}
-{% raw %}
+
     <?xml version="1.0" encoding="utf-8"?>
 
 
@@ -244,8 +244,8 @@ title: "إنشاء قوالب Joomla"
 
 
     </extension>
-{% endraw %}
-{% end highlight %}
+
+{% endhighlight %}
 
 لذا ، وكما ترى لدينا مجموعة من المعلومات بين الوسوم `<element>` . أفضل ما تقوم به هو نسخ ولصق هذا الكود في ملف templateDetails.xml لديك . وغير قليلاً بعض المعلومات داخل مثلا `<name>` و `<author>` .
 
@@ -277,7 +277,7 @@ title: "إنشاء قوالب Joomla"
 قالب جملة يبدأ بالأسطر التالية :
 
 {% highlight php %}
-{% raw %}
+
     <?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
 
 
@@ -288,7 +288,7 @@ title: "إنشاء قوالب Joomla"
 
 
     xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
-{% endraw %}
+
 {% endhighlight %}
 
 السطر الأول يمنع المتطفلين من مشاهدة الكود .
@@ -303,7 +303,7 @@ title: "إنشاء قوالب Joomla"
 ### رأس القالب
 
 {% highlight php %}
-{% raw %}
+
     <head>
 
 
@@ -320,13 +320,13 @@ title: "إنشاء قوالب Joomla"
 
 
     </head>
-{% endraw %}
+
 {% endhighlight %}
 
 ### جسم القالب
 
 {% highlight php %}
-{% raw %}
+
     <body>
 
 
@@ -340,7 +340,7 @@ title: "إنشاء قوالب Joomla"
 
 
     </body>
-{% endraw %}
+
 {% endhighlight %}
 
 في الحقيقة هذا يكفي ! نعم إنه جسم بدائي جداً ولكنه يفي بالغرض ، كل شيئ آخر سيتم القيام به من قبل Joomla .
@@ -376,9 +376,9 @@ title: "إنشاء قوالب Joomla"
 يمكنك إضافة صورك الخاصة في أي مكان في القالب ، وذلك من خلال إضافة السطر التالي
 
 {% highlight php %}
-{% raw %}
+
     <img src="<?php echo $this->baseurl; ?>/images/stories/myimage.png" alt="Custom image" class="customImage" />
-{% endraw %}
+
 {% endhighlight %}
 
 فقط قم بتغيير مسار واسم الصورة حسب ما يناسب ..
@@ -392,10 +392,10 @@ title: "إنشاء قوالب Joomla"
 يمكنك إضافة ستايلك الخاص css كما في التالي
 
 {% highlight php %}
-{% raw %}
+
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/styles.css" type="text/css" />
-{% endraw %}
-{% end highlight %}
+
+{% endhighlight %}
 
 كل سطر يتم إضافته يجب أن يكون له سطر مقابل في ملف templateDetails.xml للقالب
 
@@ -404,7 +404,7 @@ title: "إنشاء قوالب Joomla"
 فيما يلي الملف النهائي لذلك :
 
 {% highlight php %}
-{% raw %}
+
    <?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
 
 
@@ -442,7 +442,7 @@ title: "إنشاء قوالب Joomla"
 
 
     </html>
-{% endraw %}
+
 {% endhighlight %}
 
 # اختبار القالب :

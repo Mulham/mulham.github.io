@@ -1,11 +1,11 @@
 ---
 layout: post
-date: 2016-06-18
-title: "إنشاء منتدى PHP من الصفر"
+date: 2016-06-20
+title: إنشاء منتدى PHP من الصفر
 ---
 
 
-سنقوم في هذا الشرح ببناء منتدى PHP/MySQL من الصفر . هذا الشرح أيضاً ممتاز للاعتياد على أساسيات لغة البرمجة php وقواعد بيانات MySQL . لنبدأ سويةً !
+سنقوم في هذا الشرح ببناء منتدى PHP/MySQL من الصفر. هذا الشرح أيضاً ممتاز للاعتياد على أساسيات لغة البرمجة php وقواعد بيانات MySQL . لنبدأ سويةً !
 
 * Toc
 {:toc}
@@ -44,7 +44,8 @@ title: "إنشاء منتدى PHP من الصفر"
 
 ## جدول المستخدمين
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 CREATE TABLE users (
 user_id
 INT(8) NOT NULL AUTO_INCREMENT,
@@ -59,7 +60,8 @@ user_level INT(8) NOT NULL,
 UNIQUE INDEX user_name_unique (user_name),
 PRIMARY KEY (user_id)
 ) TYPE=INNODB;
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 
 تستخدم عبار `CREATE TABLE` لإنشاء جدول جديد. يتبع هذه العبارة اسم الجدول المراد إنشاؤه، ويتم وضع جميع أعمدة الجدول بين قوسين. بالنسبة لأسماء الحقول فهي تشرح نفسها بنفسها، لذا سنناقش الآن أنواع البيانات فقط.
@@ -99,7 +101,8 @@ PRIMARY KEY (user_id)
 
 ## جدول التصنيفات
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 CREATE TABLE categories (
 cat_id
 INT(8) NOT NULL AUTO_INCREMENT,
@@ -110,13 +113,15 @@ VARCHAR(255) NOT NULL,
 UNIQUE INDEX cat_name_unique (cat_name),
 PRIMARY KEY (cat_id)
 ) TYPE=INNODB
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 أنواع البيانات هنا تعمل بشكل أساسي بنفس الطريقة التي تعمل بها أنواع البيانات في جدول المستخدمين. يحوي هذا الجدول أيضاً مفتاح أولي ، واسم التصنيف يجب أن يكون فريد .
 
 ## جدول المواضيع
 
-{% highlight sql %} {% row %}
+{% highlight sql %} 
+
 CREATE TABLE topics (
 topic_id
 INT(8) NOT NULL AUTO_INCREMENT,
@@ -130,13 +135,15 @@ topic_by
 INT(8) NOT NULL,
 PRIMARY KEY (topic_id)
 ) TYPE=INNODB;
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 هذا الجدول تقريباً نفس الجداول السابقة، باستثناء حقل `topic_by` والذي يشير للمستخدم المنشئ للموضوع. وحقل `topic_cat` الذي يشير للتصنيف الذي يتبع الموضوع له. لا يمكن تحديد العلاقات بين هذه الحقول بذكر أسماء الحقول فقط. فيجب أن نُعلم قاعدة البيانات أن هذا الحقل (`topic_by`) يجب أن يحتوي على الرقم التسلسلي `user_id` لمستخدم موجود في جدول المستخدمين، والحقل الآخر (`topic_cat`) يجب أن يحتوي على الرقم التسلسلي cat_id لتصنيف موجود في جدول التصنيفات. سنضيف هذه العلاقات بين الحقول والجداول بعد مناقشة جدول التعليقات.
 
 ## جدول التعليقات
 
-{% highlight sql %} {% row %}
+{% highlight sql %} 
+
 CREATE TABLE posts (
 post_id
 INT(8) NOT NULL AUTO_INCREMENT,
@@ -150,7 +157,8 @@ post_by
 INT(8) NOT NULL,
 PRIMARY KEY (post_id)
 ) TYPE=INNODB;
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 هذا الجدول هو نفس بقية الجداول، ويوجد هنا أيضاً حقل يشير لرقم مستخدم user_id في جدول المستخدمين : حقل `post_by` ، حقل `post_topic` يشير للموضوع الذي يتبع التعليق له .
 
@@ -170,32 +178,40 @@ PRIMARY KEY (post_id)
 
 سنقوم في البداية بربط المواضيع بالتصنيفات:
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 ALTER TABLE topics ADD FOREIGN KEY(topic_cat) REFERENCES categories(cat_id) ON DELETE CASCADE ON UPDATE CASCADE;
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 الجزء الأخير من التعليمة يوضح ما يجري. فعندما يتم حذف التصنيف من قاعدة البيانات، جميع المواضيع المرتبطة بهذا التصنيف سيتم حذفها أيضاً. إذا تم تغيير قيمة cat_id لتصنيف ما، جميع المواضيع المرتبطة بهذا التصنيف سيتم تحديثها أيضاً. وهذا ما تقوم به عبارة `ON UPDATE CASCADE` . بالطبع يمكنك التراجع عن ذلك لحماية بياناتك، وذلك بجعل حذف تنصيف ما غير ممكن ما زال هناك مواضيع مرتبطة بهذا التصنيف، إذا أردت القيام بذلك، فعليك استبدال `ON DELETE` `CASCADE` إلى `ON DELETE RESTRICT` . يوجد أيضاً عبارات `SET NULL` أي اجعله فارغاً و `NO ACTION` أي لا تقم بأي إجراء.
 
 الآن، كل موضوع أصبح مرتبط بتصنيف ما. لنقم بربط المواضيع بالمستخدمين المنشئين لهم.
 
-{% highlight sql %} {% row %}
+{% highlight sql %} 
+
 ALTER TABLE topics ADD FOREIGN KEY(topic_by) REFERENCES users(user_id) ON DELETE RESTRICT ON UPDATE CASCADE;
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 المفتاح الخارجي هنا هو نفسه كسابقه، ولكن هناك فرق واحد: لا يمكن حذف المستخدم ما زال هناك مواضيع مرتبطة به، أو بالأحرى مرتبطة بـ `user_id` للمستخدم (رقمه التسلسلي في قاعدة البيانات). لم نضع هنا `ON DELETE CASCADE`  ﻷننا لا نريد للمعلومات المرتبطة بحساب ما والتي قد تكون قيمة أن تُحذف عندما يقرر المستخدم حذف حسابه. 
 لإبقاء خيار حذف الحساب متاحاً للمستخدمين، يجب أن تقوم بإنشاء ميزة تنقل المواضيع لحساب "مجهول" عند حذف مستخدم لحسابه. وفي الواقع هذا ليش موضوع نقاشنا في هذا الشرح.
 
 ربط التعليقات بالمواضيع:
 
-{% highlight sql %} {% row %}
+{% highlight sql %} 
+
 ALTER TABLE posts ADD FOREIGN KEY(post_topic) REFERENCES topics(topic_id) ON DELETE CASCADE ON UPDATE CASCADE;
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 وأخيراً، ربط كل تعليق بالمستخدم المنشئ له:
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 ALTER TABLE posts ADD FOREIGN KEY(post_by) REFERENCES users(user_id) ON DELETE RESTRICT ON UPDATE CASCADE;
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 انتهى الجزء الخاص بقاعدة البيانات! لقد كان عملاً متعباً نوعاً ما، ولكن النتيجة تستحق هذا العمل، حيث حصلنا على قاعدة بيانات نموذجبة.
 
@@ -205,7 +221,8 @@ ALTER TABLE posts ADD FOREIGN KEY(post_by) REFERENCES users(user_id) ON DELETE R
 
 ## ملف الترويسة header.php
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
@@ -228,24 +245,28 @@ ALTER TABLE posts ADD FOREIGN KEY(post_by) REFERENCES users(user_id) ON DELETE R
         <div id="userbar">Hello Example. Not you? Log out.</div>
     </div>
         <div id="content">
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 سنستخدم وسم `<div id="wrapper">`  لجعل تنسيق كامل الصفحة أسهل. الوسم `<div id="menu">` كما هو واضح يضم قائمة بروابط لصفحات الموقع التي سننشؤها لاحقاً. وسم `<div id="userbar">` سيستخدم كشريط علوي يضم معلومات مثل اسم المستخدم ورابط لتسجيل الخروج. والوسم الأخير سيحوي بشكل واضح المعلومات الفعلية للصفحة التي يكون بها المستخدم.
 
 إذا كنت تقرأ بانتباه، فربما لاحظت أننا فقدنا شيئاً ما. فلم ننهي وسمي `<html>` و `<body>` كما هو واجب في لغة html. أي لم نكتب في نهاية ملف الترويسة `</body> >/html>`
 والسبب هو أننا سنضعهم في ملف التذييل `footer.php` :
 
-{% highlight php %} {% row %} {% row %}
+{% highlight php %}
+
 </div><!-- content -->
 </div><!-- wrapper -->
 <div id="footer">Created for Nettuts+</div>
 </body>
 </html>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 عندما نضمّن ملفي الترويسة والتذييل في كل صفحة، فإن محتوى الصفحة الفعلي سيظهر بين الترويسة (بداية الصفحة) والتذييل (نهاية الصفحة). لهذه الطريقة عدة فوائد. أولها وأهمها أن كل شيئ سيكون منسق بشكل صحيح. مثال سريع :
 
-{% highlight php %} {% row %}
+{% highlight php %} 
+
 <?php
 $error = false;
 if($error = false)
@@ -258,7 +279,8 @@ else
     //bad looking, unstyled error :-( 
 } 
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 كما ترى، إذا لم يحدث أخطاء في الصفحة فستظهر بشكل أنيق. أما اذا كان هناك خطأ، فكل شيئ سيكون مبعثر. ولهذا السبب يجب دائماً التأكد ليس من تنسيق المحتوى فقط، وإنما أيضاً من الأخطاء التي يمكن أن تحدث.
 
@@ -267,6 +289,7 @@ else
 أخيراً سوف نقوم بإضافة بعض التنسيقات والتي تزودنا بإظهارات وترميزات أساسية. لا شيئ معقد هنا، ولا داعي لفهم الكود.
 
 {% highlight css %}
+
 body {
     background-color: #4E4E4E;
     text-align: center;         /* make sure IE centers the page too */
@@ -386,13 +409,15 @@ textarea {
     width: 500px;
     height: 200px;
 }
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 # ثالثاً: البدء بالتنفيذ الفعلي
 
 قبل أن نستطيع قراءة أي شيئ من قاعدة البيانات، يجب أن نقيم اتصال بها. وهذا ما سيقوم به ملف connect.php الذي سنضمنه بكل ملف ننشؤه.
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //connect.php
 $server = 'localhost';
@@ -409,7 +434,8 @@ if(!mysql_select_db($database)
     exit('Error: could not select the database');
 }
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 ببساطة استبدل فقط القيم الافتراضية للمتغيرات في أعلى الكود ببياناتك الخاصة. احفظ الملف ودعنا ننطلق للكملة.
 
@@ -417,7 +443,8 @@ if(!mysql_select_db($database)
 
 بما أننا بدأنا بتقنيات أساسية، سنقوم بعمل طريقة عرض مبسطة للمنتدى الآن.
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //create_cat.php
 include 'connect.php';
@@ -433,7 +460,8 @@ echo '<tr>';
 echo '</tr>';
 include 'footer.php';
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 الآن اكتمل منتداك تقريباً. بفتحك لهذا الملف من السيرفر ستشاهد المنتدى بشكل أنيق وبسيط. سنقوم خلال بقية الشرح بتحديث هذا الملف لنحصل على النتيجة النهائية، خطوة بخطوة!
 
@@ -446,7 +474,8 @@ include 'footer.php';
 سنحتاج أيضاً لصفحة بلغة php لإرسال بيانات النموذج لقاعدة البيانات وإتمام اشتراك المستخدم. سنقوم باستخدام المتغير  `$_SERVER` .
 المتغير `$_SERVER` يحوي مجموعة من القيم التي يتم تعيينها تلقائياً مع كل طلب. أحد هذه القيم هو `REQUEST_METHOD` . عندما يتم طلب صفحة بواسطة `GET` . فسيحمل هذا المتغير القيمة `GET` . وعندما يتم طلب الصفحة بواسطة `POST` ، فسيحمل المتغير القيمة `POST` . ولذا سنستخدم هذا المتغير لمعرفة إذا تم إرسال النموذج (بواسطة `POST`). انظر صفحة الاشتراك signup.php أدناه
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //signup.php
 include 'connect.php';
@@ -544,7 +573,8 @@ else
  
 include 'footer.php';
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
  
 
 العديد من التوضيحات ستجدها في التعليقات الموضوعة ضمن الكود، لذا تأكد من قراءتها. معالجة البيانات تتم على ثلاثة مراحل:
@@ -558,7 +588,8 @@ include 'footer.php';
 
 الجزء المتعلق بـ php على كل حال يشرح نفسه بنفسه، يبقى تعليمات SQL التي تحتاج بعض الشرح.
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 INSERT INTO
        users(user_name, user_pass, user_email ,user_date, user_level)
 VALUES('" . mysql_real_escape_string($_POST['user_name']) . "',
@@ -566,7 +597,8 @@ VALUES('" . mysql_real_escape_string($_POST['user_name']) . "',
        '" . mysql_real_escape_string($_POST['user_email']) . "',
        NOW(), 
        0);
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 في السطر الأول لدينا عبارة `INSERT INTO` التي تستخدم لإضافة بيانات لقاعدة البيانات، وتم تحديد اسم الجدول في السطر الثاني. الكلمات التي بين قوسين تحدد أسماء الأعمدة التي نريد إدراج البيانات لها. عبارة VALUES تُخبر قاعدة البيانات أننا انتهينا من تحديد أسماء الأعمدة وجاء وقت تحديد القيم التي ستُضاف لهذه الأعمدة. ولدينا شيئ جديد هنا: `mysql_real_escape_string`. تستخدم هذه التعليمة لحماية بيانات المستخدم أثناء إرساله للنموذج، ويجب أن تُستخدم دائماً باستثاء بعض الحالات النادرة. السكريبتات التي لا تستخدم هذه التعليمة يكون اختراقها والوصول لبيانات النموذج المرسلة سهل جداً، فلا تخاطر بذلك واستخدم عبارة `mysql_real_escape_string()`.
 
@@ -601,7 +633,8 @@ VALUES('" . mysql_real_escape_string($_POST['user_name']) . "',
 
 بالأسفل ملف تسجيل الدخول signin.php . اطلع على التعليقات ضمن الكود لفهم ما يجري
 
-{% highlight php %} {% row %}
+{% highlight php %} 
+
 <?php
 //signin.php
 include 'connect.php';
@@ -709,11 +742,13 @@ else
  
 include 'footer.php';
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 كما لاحظت، هذه هي تعليمات SQL في الكود السابق
 
-{% highlight sql %} {% row %}
+{% highlight sql %} 
+
 SELECT
     user_id,
     user_name,
@@ -724,13 +759,15 @@ WHERE
     user_name = '" . mysql_real_escape_string($_POST['user_name']) . "'
 AND
     user_pass = '" . sha1($_POST['user_pass'])
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 من الواضح أننا نقوم بالتأكد من البيانات المدخلة إذا كانت لمستخدم موجود بالفعل. هناك العديد من السكريبتات التي تستخرج كلمة السر من قاعدة البيانات وتقارنها مع تلك المدخلة في النموذج باستخدام php. ولكن القيام بذلك بواسطة تعليمات SQL مباشرة سيجعل العملية أكثر أمناً حيث أن العملية هذه تحصل في وسط قاعدة البيانات وليس ضمن تطبيقنا الوب (منتدانا).
 
 إذا قام المستخدم بتسجيل الدخول بشكل صحيح، فسنقوم بعمل بضعة أشياء:
 
-{% highlight php %} {% row %}
+{% highlight php %} 
+
 <?php
 //set the $_SESSION['signed_in'] variable to TRUE
 $_SESSION['signed_in'] = true;
@@ -741,7 +778,8 @@ while($row = mysql_fetch_assoc($result))
     $_SESSION['user_name'] = $row['user_name']; 
 }
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 في البداية، قمنا بإعطاء المتغير `$_SESSION['signed_in']`  القيمة `true` أي أننا بدأنا الجلسة والمستخدم الآن مسجل الدخول. وسنقوم باستخدام هذا المتغير في صفحات أخرى للتأكد من أن المستخدم مسجل الدخول. أيضاً قمنا بوضع اسم المستخدم `username` ومعرفه `user_id` في المتغير `$_SESSION` للاستخدام في صفحات أخرى. أخيراً، سنقوم بعرض رابط لرئيسية المنتدى حيث يمكن للمستخدم البدء في الإبحار.
 
@@ -750,13 +788,16 @@ while($row = mysql_fetch_assoc($result))
 الآن قمنا بضبط متغيرات `$_SESSION` ، يمكننا تحديد اذا كان شخص ما مسجل الدخول. دعنا نقوم الآن بعمل تغيير أخير على ملف الترويسة header.php
 قم باستبدال التالي في الملف:
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <div id="userbar">Hello Example. Not you? Log out.</div>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 إلى :
 
-{% highlight php %} {% row %}
+{% highlight php %} 
+
 <?php
 <div id="userbar">
     if($_SESSION['signed_in'])
@@ -768,7 +809,8 @@ while($row = mysql_fetch_assoc($result))
         echo '<a href="signin.php">Sign in</a> or <a href="sign up">create an account</a>.';
     }
 </div>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 وبالتالي، إذا قام المستخدم بتسجيل الدخول، فسيرى اسمه معروض في بداية الصفحة مع رابط لصفحة تسجيل الخروج.
 
@@ -780,19 +822,22 @@ while($row = mysql_fetch_assoc($result))
 
 نحن نريد إنشاء تصانيف في المنتدى، لذا دعنا ننشئ نموذج لهذه العملية
 
-{% highlight html %} {% row %}
+{% highlight html %}
+
 <form method="post" action="">
     Category name: <input type="text" name="cat_name" />
     Category description: <textarea name="cat_description" /></textarea>
     <input type="submit" value="Add category" />
  </form>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 تبدو هذه الخطوة مثل الخطوة الرابعة (اشتراك مستخدم). لذا لن أقوم بالشرح هنا ، فبما أنك متابع للخطوات فستكون قادراً على فهم الأمور بشكل سريع.
 
 سنقوم تضمين النموذج في الأعلى ضمن صفحة إنشاء تصنيف :
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //create_cat.php
 include 'connect.php';
@@ -824,7 +869,8 @@ else
     }
 }
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 وكما ترى، لقد بدأنا السكريبت بفحص السيرفر $_SERVER ، بعد التأكد من أن المستخدم لديه صلاحيات المدير، والمطلوبة لإنشاء تصنيف، يتم عرض النموذج إذا لم يتم تعبئته وإرساله سابقاً. وإذا تم إرساله، يتم حفظ القيم. مرة أخرى ، يتم تحضير تعليمة SQL وتنفيذها.
 
@@ -834,18 +880,21 @@ else
 
 لقد قمنا بإنشاء بعض التصنيفات، ويمكننا الآن عرضهم في الصفحة الرئيسية. دعنا نضيف تعليمة SQL التالية لمنظقة المحتوى في الصفحة الرئيسية index.php
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 SELECT
     categories.cat_id,
     categories.cat_name,
     categories.cat_description,
 FROM
     categories
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 تقوم هذه التعليمة بتحديد جميع التصنيفات وأسمائهم ووصفهم من جدول التصنيفات. سنحتاج الآن لبضعة أسطر php لعرض النتائج. إذا قمنا بإضافة التعليمة كما فعلنا في الخطوات السابقة، فسيبدو الكود على الشكل:
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //create_cat.php
 include 'connect.php';
@@ -895,7 +944,8 @@ else
  
 include 'footer.php';
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 لاحظ كيف استخدمنا حقل cat_id لإنشاء روابط لصفحة category.php . جميع الروابط لهذه السفحة ستبدو على الشكل:
 
@@ -909,7 +959,8 @@ include 'footer.php';
 
 إن هيكلية ملف إنشاء الموضوع create_topic.php من الصعب شرحها ضمن قائمة أو ما شابه، لذا قمت بكتابة شرح للهيكل العام للملف كتوضيح:
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 if(user is signed in)
 {
@@ -919,7 +970,7 @@ else
 {
     //the user is signed in
     if(form has not been posted)
-    {   
+    {
         //show form
     }
     else
@@ -928,10 +979,12 @@ else
     }
 }
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 وهذا هو الكود الحقيقي لهذا القسم من المنتدى ، راجع الشرح أسفل الكود لفهم ما يجري .
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //create_cat.php
 include 'connect.php';
@@ -947,7 +1000,7 @@ else
 {
     //the user is signed in
     if($_SERVER['REQUEST_METHOD'] != 'POST')
-    {   
+    {
         //the form hasn't been posted yet, display it
         //retrieve the categories from the database for use in the dropdown
         $sql = "SELECT
@@ -1074,7 +1127,8 @@ else
  
 include 'footer.php';
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 سأناقش هذه الصفحة على قسمين: عرض النموذج ومعالجة النموذج.
 
@@ -1082,14 +1136,16 @@ include 'footer.php';
 
 لعرض النموذج فإننا نبدأ بتعليمات html بسيطة، ولكن في الواقع هناك شيئ خاص، ﻷننا نستخدم قائمة منسدلة، هذه القائمة المنسدلة يتم تعبئتها من خلال بيانات موجودة في قاعدة البيانات، يتم استخراج تلك البيانات باستخدام تعليمات SQL :
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 SELECT
     cat_id,
     cat_name,
     cat_description
 FROM
     categories
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 أعتقد أن هذا هو الجزء الغير واضح هنا، والآن كما ترى هو مجرد كود بسيط .
 
@@ -1097,7 +1153,8 @@ FROM
 
 عملية حفظ الموضوع تتضمن مرحلتين: حفظ الموضوع في جدول المواضيع ضمن قاعدة البيانات، وحفظ أول تعليق في جدول التعليقات. وهذا يتطلب شيئ متقدم نوعاً ما وخارج موضوعنا هنا تقريباً، وهو يدعى إجراء `transaction` ، ويُقصد به أننا نبدأ بتنفيذ أمر البدء ثم التراجع إذا كان هناك أخطاء في قاعدة البيانات أو إنهاء التنفيذ عندما يجري كل شيئ بشكل صحيح.
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //start the transaction
 $query  = "BEGIN WORK;";
@@ -1109,11 +1166,13 @@ $result = mysql_query($sql);
 $sql = "COMMIT;";
 $result = mysql_query($sql);
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 أول تعليمة تستخدم لحفظ ابيانات هو تعليمة إنشاء موضوع، والتي تبدو على الشكل التالي :
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 INSERT INTO
     topics(topic_subject,
                topic_date,
@@ -1123,13 +1182,15 @@ VALUES('" . mysql_real_escape_string($_POST['topic_subject']) . "',
        NOW(),
        " . mysql_real_escape_string($_POST['topic_cat']) . ",
        " . $_SESSION['user_id'] . ")
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 في البداية تم تعريف الحقول، ثم القيم ليتم إدراجها في الحقول. لقد رأيت مثل هذه التعليمات سابقاً، حيث أنها مجرد تعليمات يتم تأمينها استخدام العبارة `musql_real_escape_string()` . القيمة الثانية : `NOW()` هي وظيفة في `SQL` لإدارج الوقت الحالي. القيمة الثالثة هي التي لم ترها من قبل، وهي تشير إلى معرف id صالح لتصنيف ما. والقيمة الأخيرة تشير لمعرف id مستخدم موجود بالفعل، وهو في حالتنا هي قيمة المتغير `$_SESSION['user_id']`.  خيث تم مناقشة هذا المتغير خلال خطوة تسجيل الدخول .
 
 إذا تم تنفيذ الكود بدون أخطاء، فيتم الانتقال للخطوة التالية. تذكر أننا ما زالنا نجري إجراءاً هنا `transaction` . إذا حصلنا على أخطاء فسنستخدم تعليمة `ROLLBACK`.
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 INSERT INTO
         posts(post_content,
         post_date,
@@ -1140,7 +1201,8 @@ VALUES
          NOW(),
          " . $topicid . ",
          " . $_SESSION['user_id'] . ")
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 إن أول شيئ نفعله هنا هو استخدام تعليمة `mysql_insert_id()` للحصول على آخر id تم توليده من حقل `topic_id` في جدول المواضيع. وكما وجدت في الخطوات الأولى، يتم توليد الـ `id` في قاعدة البيانات باستخدام تعليمة `auto_increment`.
 
@@ -1172,7 +1234,8 @@ VALUES
 
 لنقم الآن بإنشاء تعليمتي SQL والتي تقوم باستخراج البيانات الني نريدها تحديداً من قاعدة البيانات
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 SELECT
     cat_id,
     cat_name,
@@ -1181,11 +1244,13 @@ FROM
     categories
 WHERE
     cat_id = " . mysql_real_escape_string($_GET['id'])
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 تقوم التعليمة أعلاه باستخراج جميع التصنيفات من قاعدة البيانات
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 SELECT 
     topic_id,
     topic_subject,
@@ -1195,11 +1260,13 @@ FROM
     topics
 WHERE
     topic_cat = " . mysql_real_escape_string($_GET['id'])
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 والآن ، الكود الكامل لملف category.php سيكون على الشكل التالي
 
-{% highlight php %} {% row %}
+{% highlight php %}
+
 <?php
 //create_cat.php
 include 'connect.php';
@@ -1285,7 +1352,8 @@ else
  
 include 'footer.php';
 ?>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 وهذه هي النتيجة النهائية لصفحة التصنيفات
 
@@ -1295,7 +1363,8 @@ include 'footer.php';
 
 إن تعليمات SQL في هذه الخطوة هي تعليمات معقدة. بالنسبة لكود php فسيكون كله مألوفاً لديك وشبيه بما سبق. لذا دعنا نلقي نظرة الآن على تعليمات SQL . حيث التعليمة الأولى تستخرج معلومات أساسية حول الموضوع:
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 SELECT
 topic_id,
 topic_subject
@@ -1304,11 +1373,13 @@ topics
 WHERE
 topics.topic_id = " . mysql_real_escape_string($_GET[
 'id'])
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 يتم عرض هذه المعلومات في رأس الجدول الذي سنستخدمه لعرض جميع البيانات. ثم سنستخرج جميع التعليقات على هذا الموضوع من قاعدة البيانات. التعليمة التالية تعطينا تماماً ما نريد:
 
-{% highlight sql %} {% row %}
+{% highlight sql %}
+
 SELECT
 posts.post_topic,
 posts.post_content,
@@ -1325,7 +1396,8 @@ posts.post_by = users.user_id
 WHERE
 posts.post_topic = " . mysql_real_escape_string($_GET[
 'id'])
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 والآن نريد معلومات من جدول المستخدمين users وجدول التعليقات replies لذا سنستخدم عبارة LEFT JOIN مرة أخرى. حيث يكون الشرط كالتالي: معرف المستخدم user id يجب أن يكون نفسه في حقل reply_by (مؤلف التعليق) . وبهذه الطريقة نستطيع عرض اسم المستخدم للمستخدم الذي قام بإضافة تعليق ما. 
 
@@ -1338,64 +1410,65 @@ posts.post_topic = " . mysql_real_escape_string($_GET[
 
 والآن دعنا ننهي آخر جزء متبقي لدينا من المنتدى، ألا وهو إمكانية إضافة تعليق. سنبدأ بعمل نموذج للتعليق (بلغة html) :
 
-{% highlight html %} {% row %}
+{% highlight html %}
+
 <form method="post" action="reply.php?id=5">
 <textarea name="reply-content"></textarea >
 <input type="submit" value="Submit reply" />
 </form>
-{% endrow %} {% endhighlight %} 
+
+{% endhighlight %} 
 
 ![php10](assets/10.png)
 
 وفي النهاية سيكون الكود الكامل لملف reply.php كالتالي:
 
-{% highlight php %} {% row %}
-<?php
-//create_cat.php
-include 'connect.php';
-include 'header.php';
+{% highlight php %}
 
-if($_SERVER['REQUEST_METHOD'] != 'POST')
-{
-	//someone is calling the file directly, which we don't want
-	echo 'This file cannot be called directly.';
-}
-else
-{
-	//check for sign in status
-	if(!$_SESSION['signed_in'])
-	{
-		echo 'You must be signed in to post a reply.';
-	}
-	else
-	{
-		//a real user posted a real reply
-		$sql = "INSERT INTO 
-					posts(post_content,
-						  post_date,
-						  post_topic,
-						  post_by) 
-				VALUES ('" . $_POST['reply-content'] . "',
-						NOW(),
-						" . mysql_real_escape_string($_GET['id']) . ",
-						" . $_SESSION['user_id'] . ")";
-						
-		$result = mysql_query($sql);
-						
-		if(!$result)
+		<?php
+		//create_cat.php
+		include 'connect.php';
+		include 'header.php';
+		if($_SERVER['REQUEST_METHOD'] != 'POST')
 		{
-			echo 'Your reply has not been saved, please try again later.';
+			//someone is calling the file directly, which we don't want
+			echo 'This file cannot be called directly.';
 		}
 		else
 		{
-			echo 'Your reply has been saved, check out <a href="topic.php?id=' . htmlentities($_GET['id']) . '">the topic</a>.';
+			//check for sign in status
+			if(!$_SESSION['signed_in'])
+			{
+				echo 'You must be signed in to post a reply.';
+			}
+			else
+			{
+				//a real user posted a real reply
+				$sql = "INSERT INTO 
+							posts(post_content,
+									post_date,
+									post_topic,
+									post_by) 
+						VALUES ('" . $_POST['reply-content'] . "',
+								NOW(),
+								" . mysql_real_escape_string($_GET['id']) . ",
+								" . $_SESSION['user_id'] . ")";
+						
+				$result = mysql_query($sql);
+				if(!$result)
+				{
+					echo 'Your reply has not been saved, please try again later.';
+				}
+				else
+				{
+					echo 'Your reply has been saved, check out <a href="topic.php?id=' . htmlentities($_GET['id']) . '">the topic</a>.';
+				}
+			}
 		}
-	}
-}
+		include 'footer.php';
+		?>
 
-include 'footer.php';
-?>
-{% end highlight %}
+{% endhighlight %}
 
 انظر التعليقات ضمن الكود لفهم ما يجري.
 
