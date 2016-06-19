@@ -17,7 +17,7 @@ title: سلسلة دروس جِت هَب|نسخ حزمة
 [الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github](keep-your-email-private)
 
 
-![](http://3.bp.blogspot.com/-qUyapKARtjQ/VCmzm1NCKkI/AAAAAAAABhg/5ZL2WIT0NYk/s1600/fork-a-repo-b5a001c97271f05ca279cb1c22c44018.gif)
+![](https://help.github.com/assets/images/site/fork-a-repo.gif)
 
 نسخ (Fork) حزمة يتيح لك التعديل بحريّة على المشاريع بدون التأثير على المشروع الأصلي. أو بشكل أوضح، نسخ حزمة يستخدم إما لاقتراح تغييرات على مشروع شخص آخر، أو لاستخدام مشروع شخص آخر كنقظة بداية لفكرتك الخاصة.
 
@@ -50,7 +50,7 @@ title: سلسلة دروس جِت هَب|نسخ حزمة
 2.في الزاوية أعلى يمين الصفحة ، اضغط على Fork لنسخ الحزمة .
 
 
-![](http://1.bp.blogspot.com/-e7WT6UiwHmQ/VCm0pA-8PAI/AAAAAAAABhs/lLxwD6O2Muc/s1600/fork_button.jpg)
+![](https://help.github.com/assets/images/help/repository/fork_button.jpg)
 
 
 

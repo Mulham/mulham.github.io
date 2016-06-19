@@ -8,6 +8,7 @@
 
 
 
+
 			<title>سلسلة دروس جِت هَب|مقدمة</title>
 			<!-- link to main stylesheet -->
 			
@@ -18,6 +19,8 @@
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
+						<li><a href="/about/request">اطلب ترجمة</a></li>
+						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
 			</nav>
@@ -27,7 +30,7 @@
 <p class="meta">16 Jun 2016</p>
 
 <div class="post">
-  <dl><dd><center><img src="http://2.bp.blogspot.com/-YNomP_OFh8w/VCLZxwHhzZI/AAAAAAAABdw/ebPo_l63NTM/s1600/blog-github.png" /></center></dd></dl>
+  <dl><dd><center><img src="https://help.github.com/articles/set-up-git" /></center></dd></dl>
 
 <p>نقدم سلسلة دروس Github حصرياً لموقع ملهم</p>
 
@@ -43,16 +46,16 @@
 
 <p><a href="keep-your-email-private">الدرس الخامس: كيف تجعل عنوان بريدك الإلكتروني خاصاً في Github</a></p>
 
-<h1 id="github">الدرس الأول : التعريف بـ Github</h1>
+<hr />
+
+<h2 id="github">الدرس الأول : التعريف بـ Github</h2>
 
 <ul id="markdown-toc">
-  <li><a href="#github" id="markdown-toc-github">الدرس الأول : التعريف بـ Github</a>    <ul>
-      <li><a href="#git" id="markdown-toc-git">تنصيب Git</a>        <ul>
-          <li><a href="#git----" id="markdown-toc-git----">تنصيب Git على نظام تشغيل لينكس</a></li>
-          <li><a href="#git--" id="markdown-toc-git--">تنصيب Git على الويندوز</a></li>
-          <li><a href="#git---1" id="markdown-toc-git---1">تنصيب Git على الماك</a></li>
-        </ul>
-      </li>
+  <li><a href="#github" id="markdown-toc-github">الدرس الأول : التعريف بـ Github</a></li>
+  <li><a href="#git" id="markdown-toc-git">تنصيب Git</a>    <ul>
+      <li><a href="#git----" id="markdown-toc-git----">تنصيب Git على نظام تشغيل لينكس</a></li>
+      <li><a href="#git--" id="markdown-toc-git--">تنصيب Git على الويندوز</a></li>
+      <li><a href="#git---1" id="markdown-toc-git---1">تنصيب Git على الماك</a></li>
     </ul>
   </li>
 </ul>
@@ -83,7 +86,7 @@
 <p>على كل الأحوال ، إذا وجدت أنك بحاجة لتنصيب <code class="highlighter-rouge">Git</code> فنحن نساعدك بتنصيبها :</p>
 
 <blockquote>
-  <p>ملاحظة : للتعرف على المزيد حول git قم بقراءة <a href="http://www.arabicgit.com/simple-guide/">أساسيات git</a></p>
+  <p>للتعرف على المزيد حول git قم بقراءة <a href="http://www.arabicgit.com/simple-guide/">أساسيات git</a></p>
 </blockquote>
 
 <h3 id="git----">تنصيب Git على نظام تشغيل لينكس</h3>
@@ -97,20 +100,23 @@
   </li>
   <li>
     <p>أخبر  <code class="highlighter-rouge">Git</code> عن اسمك حتى يتم تصنيف مشاركاتك بشكل صحيح ، أدخل التالي في الطرفية مع استبدال <code class="highlighter-rouge">Your Name</code> باسمك :</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ git config --global user.name "Your Name"
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>أخبر <code class="highlighter-rouge">Git</code> عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في <code class="highlighter-rouge">Git</code>. البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب <code class="highlighter-rouge">github</code>.</p>
   </li>
 </ol>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">$ git config --global user.name "Your Name"</span></code></pre></figure>
-
-<ol>
-  <li>أخبر <code class="highlighter-rouge">Git</code> عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في <code class="highlighter-rouge">Git</code> . البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب <code class="highlighter-rouge">github</code> .</li>
-</ol>
-
 <blockquote>
-  <p>ملاحظة : لإبقاء بريدك الإلكتروني مخفي راجع: <a href="keep-your-email-private">الحفاظ على خصوصية البريد الإلكتروني</a></p>
+  <p>لإبقاء بريدك الإلكتروني مخفي راجع: <a href="keep-your-email-private">الحفاظ على خصوصية البريد الإلكتروني</a></p>
 </blockquote>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">$ git config --global user.email "Your Email Address"</span></code></pre></figure>
+<div class="highlighter-rouge"><pre class="highlight"><code>	$ git config --global user.email "Your Email Address"
+</code></pre>
+</div>
 
 <p>وبهذا تكون انتهيت من تنصيب git على جهازك .</p>
 
@@ -130,7 +136,7 @@
 <h3 id="git---1">تنصيب Git على الماك</h3>
 
 <blockquote>
-  <p>ملاحظة : لدى Github <a href="https://mac.github.com/">تطبيق خاص بالماك</a>. يمكنك استعماله بدون استخدام سطر الأوامر .</p>
+  <p>لدى Github <a href="https://mac.github.com/">تطبيق خاص بالماك</a>. يمكنك استعماله بدون استخدام سطر الأوامر.</p>
 </blockquote>
 
 <ol>
@@ -146,16 +152,21 @@
 
 <hr />
 
-<p>التالي : <a href="2">إنشاء حزمة في  Github</a>.</p>
+<p>التالي : <a href="create-repo">إنشاء حزمة في  Github</a>.</p>
 
 </div>
 			
 			</div><!-- /.container -->
 			<footer>
-	    		<ul>
-        		<li><a href="/usage_policy.html">سياسة الإستخدام</a></li>
-        		<li><a href="/download_site.html">حمل الموقع وتصفحه بدون اتصال بالإنترنت</a></li>
-				</ul>
+
+
+	    		<table style="width:100%;">
+<tr>
+<td style="text-align: center; border: none;"><a href="#">الرجوع للأعلى</a></li>
+        	
+				</td><td style="text-align: center; border: none;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><img alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.</td>
+<td style="text-align: center; border: none;"><a href="mailto:mulham94@gmail.com">البريد الإلكتروني</a></td></tr></table>
 			</footer>
 		</body>
 	</html>

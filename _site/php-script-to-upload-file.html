@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+<link rel="icon" href="/favicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+
+
+			<title>سكريبت php بسيط لرفع ملف</title>
+			<!-- link to main stylesheet -->
+			
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	                	<li><a href="/">الرئيسية</a></li>
+						<li><a href="/blog">المدونة</a></li>
+						<li><a href="/tutorials">دروس</a></li>
+						<li><a href="/about/request">اطلب ترجمة</a></li>
+						<li><a href="/urls">روابط مفيدة</a></li>
+						<li><a href="/about">عن الموقع</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			<h1>سكريبت php بسيط لرفع ملف</h1>
+<p class="meta">19 Jun 2016</p>
+
+<div class="post">
+  <p>نقدم لكم سكريبت بسيط بلغة php لرفع ملف .</p>
+
+<p>يستخدم هذا السكريبت لرفع صور أو ملفات من نوع آخر لسيرفرك ،<!--more--> حيث يحتوي على نموذج بلغة <code class="highlighter-rouge">HTML</code> فيه حقل لرفع ملف ، و كود <code class="highlighter-rouge">php</code> والذي يتأكد من نوع الملف (لاحقته) ، حجم الملف ، العرض والطول بالنسبة للصور ، ويقوم برفع الملف اذا لم يكن هناك أخطاء .</p>
+
+<p>يمكنك في السكريبت تحديد نوع الملفات المسموحة (عبر اللاحقة ) ، الحجم الأعظمي المسموح للملف و الطول والعرض الأعظميين المسومح بهما للصور .</p>
+
+<p>يتم حفظ الملف في مجلد <code class="highlighter-rouge">upload</code> (أو المجلد الذي تحدده في متغير <code class="highlighter-rouge">uploadpath$</code> )  ، هذا المجلد يجب إنشاؤه في نفس المكان الذي يوضع فيه ملف الـ <code class="highlighter-rouge">php</code> الحاوي على هذا السكريبت . يجب أن تكون php لديها صلاحيات الكتابة في هذا المجلد <code class="highlighter-rouge">( chmod 0755 / 0777 )</code> حتى تتمكن من حفظ الملف .</p>
+
+<p>بعد رفع الملف بنجاح سيقوم السكريبت بعرض عنوان الملف على السيرفر .</p>
+
+<p>الكود :</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="c1">// Simple PHP Upload Script:  http://coursesweb.net/php-mysql/
+</span>
+<span class="nv">$uploadpath</span> <span class="o">=</span> <span class="s1">'upload/'</span><span class="p">;</span>      <span class="c1">// directory to store the uploaded files
+</span><span class="nv">$max_size</span> <span class="o">=</span> <span class="mi">2000</span><span class="p">;</span>          <span class="c1">// maximum file size, in KiloBytes
+</span><span class="nv">$alwidth</span> <span class="o">=</span> <span class="mi">900</span><span class="p">;</span>            <span class="c1">// maximum allowed width, in pixels
+</span><span class="nv">$alheight</span> <span class="o">=</span> <span class="mi">800</span><span class="p">;</span>           <span class="c1">// maximum allowed height, in pixels
+</span><span class="nv">$allowtype</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'bmp'</span><span class="p">,</span> <span class="s1">'gif'</span><span class="p">,</span> <span class="s1">'jpg'</span><span class="p">,</span> <span class="s1">'jpe'</span><span class="p">,</span> <span class="s1">'png'</span><span class="p">);</span>        <span class="c1">// allowed extensions
+</span>
+<span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$uploadpath</span> <span class="o">=</span> <span class="nv">$uploadpath</span> <span class="o">.</span> <span class="nb">basename</span><span class="p">(</span> <span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]);</span>       <span class="c1">// gets the file name
+</span>  <span class="nv">$sepext</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s1">'.'</span><span class="p">,</span> <span class="nb">strtolower</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]));</span>
+  <span class="nv">$type</span> <span class="o">=</span> <span class="nb">end</span><span class="p">(</span><span class="nv">$sepext</span><span class="p">);</span>       <span class="c1">// gets extension
+</span>  <span class="k">list</span><span class="p">(</span><span class="nv">$width</span><span class="p">,</span> <span class="nv">$height</span><span class="p">)</span> <span class="o">=</span> <span class="nb">getimagesize</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'tmp_name'</span><span class="p">]);</span>     <span class="c1">// gets image width and height
+</span>  <span class="nv">$err</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>         <span class="c1">// to store the errors
+</span>
+  <span class="c1">// Checks if the file has allowed type, size, width and height (for images)
+</span>  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$type</span><span class="p">,</span> <span class="nv">$allowtype</span><span class="p">))</span> <span class="nv">$err</span> <span class="o">.=</span> <span class="s1">'The file: &lt;b&gt;'</span><span class="o">.</span> <span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]</span><span class="o">.</span> <span class="s1">'&lt;/b&gt; not has the allowed extension type.'</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'size'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$max_size</span><span class="o">*</span><span class="mi">1000</span><span class="p">)</span> <span class="nv">$err</span> <span class="o">.=</span> <span class="s1">'&lt;br/&gt;Maximum file size must be: '</span><span class="o">.</span> <span class="nv">$max_size</span><span class="o">.</span> <span class="s1">' KB.'</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$width</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$height</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nv">$width</span> <span class="o">&gt;=</span> <span class="nv">$alwidth</span> <span class="o">||</span> <span class="nv">$height</span> <span class="o">&gt;=</span> <span class="nv">$alheight</span><span class="p">))</span> <span class="nv">$err</span> <span class="o">.=</span> <span class="s1">'&lt;br/&gt;The maximum Width x Height must be: '</span><span class="o">.</span> <span class="nv">$alwidth</span><span class="o">.</span> <span class="s1">' x '</span><span class="o">.</span> <span class="nv">$alheight</span><span class="p">;</span>
+
+  <span class="c1">// If no errors, upload the image, else, output the errors
+</span>  <span class="k">if</span><span class="p">(</span><span class="nv">$err</span> <span class="o">==</span> <span class="s1">''</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">move_uploaded_file</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'tmp_name'</span><span class="p">],</span> <span class="nv">$uploadpath</span><span class="p">))</span> <span class="p">{</span> 
+      <span class="k">echo</span> <span class="s1">'File: &lt;b&gt;'</span><span class="o">.</span> <span class="nb">basename</span><span class="p">(</span> <span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">])</span><span class="o">.</span> <span class="s1">'&lt;/b&gt; successfully uploaded:'</span><span class="p">;</span>
+      <span class="k">echo</span> <span class="s1">'&lt;br/&gt;File type: &lt;b&gt;'</span><span class="o">.</span> <span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'type'</span><span class="p">]</span> <span class="o">.</span><span class="s1">'&lt;/b&gt;'</span><span class="p">;</span>
+      <span class="k">echo</span> <span class="s1">'&lt;br /&gt;Size: &lt;b&gt;'</span><span class="o">.</span> <span class="nb">number_format</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s1">'fileup'</span><span class="p">][</span><span class="s1">'size'</span><span class="p">]</span><span class="o">/</span><span class="mi">1024</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'.'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span> <span class="o">.</span><span class="s1">'&lt;/b&gt; KB'</span><span class="p">;</span>
+      <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$width</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$height</span><span class="p">))</span> <span class="k">echo</span> <span class="s1">'&lt;br/&gt;Image Width x Height: '</span><span class="o">.</span> <span class="nv">$width</span><span class="o">.</span> <span class="s1">' x '</span><span class="o">.</span> <span class="nv">$height</span><span class="p">;</span>
+      <span class="k">echo</span> <span class="s1">'&lt;br/&gt;&lt;br/&gt;Image address: &lt;b&gt;http://'</span><span class="o">.</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'HTTP_HOST'</span><span class="p">]</span><span class="o">.</span><span class="nb">rtrim</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'REQUEST_URI'</span><span class="p">]),</span> <span class="s1">'\\/'</span><span class="p">)</span><span class="o">.</span><span class="s1">'/'</span><span class="o">.</span><span class="nv">$uploadpath</span><span class="o">.</span><span class="s1">'&lt;/b&gt;'</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="k">echo</span> <span class="s1">'&lt;b&gt;Unable to upload the file.&lt;/b&gt;'</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="k">echo</span> <span class="nv">$err</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin:1em auto; width:333px; text-align:center;"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'PHP_SELF'</span><span class="p">];</span> <span class="cp">?&gt;</span><span class="s">"</span> <span class="na">method=</span><span class="s">"POST"</span> <span class="na">enctype=</span><span class="s">"multipart/form-data"</span><span class="nt">&gt;</span> 
+  Upload File: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"fileup"</span> <span class="nt">/&gt;&lt;br/&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">'submit'</span> <span class="na">value=</span><span class="s">"Upload"</span> <span class="nt">/&gt;</span> 
+ <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>إذا تم رفع الملف بنجاح ، سيقوم السكريبت بتقديم معلومات كما في المثال التالي</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	File: image.jpg successfully uploaded:
+
+	File type: image/jpeg
+
+	Size: 16.545 KB
+
+	Image Width x Height: 300 x 200
+
+
+	Image address: http://domain/upload/image.jpg
+</code></pre>
+</div>
+
+</div>
+			
+			</div><!-- /.container -->
+			<footer>
+
+
+	    		<table style="width:100%;">
+<tr>
+<td style="text-align: center; border: none;"><a href="#">الرجوع للأعلى</a></li>
+        	
+				</td><td style="text-align: center; border: none;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><img alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.</td>
+<td style="text-align: center; border: none;"><a href="mailto:mulham94@gmail.com">البريد الإلكتروني</a></td></tr></table>
+			</footer>
+		</body>
+	</html>
+

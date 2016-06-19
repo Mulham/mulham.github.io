@@ -1,5 +1,6 @@
 name: موقع ملهم|نافذة على المحتوى العربي
 markdown: kramdown
+highlighter: true
 permalink: /:title
 timezone: Asia/Damascus
 defaults:
@@ -11,3 +12,4 @@ highlighter: rouge
 encoding: "utf-8"
 paginate_path: /page:num
 excerpt_separator: <!--more-->
+

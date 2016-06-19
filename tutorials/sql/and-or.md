@@ -6,26 +6,25 @@ title: سلسلة دروس SQL|عمليات AND & OR
 
 الفهرس :
 
+[الدرس الأول : التعريف بـ SQL](intro)
 
-الدرس الأول : التعريف بـ SQL
+[الدرس الثاني : بناء SQL](build)
 
-الدرس الثاني : بناء SQL
+[الدرس الثالث : تصريح SELECT](select)
 
-الدرس الثالث : تصريح SELECT
+[الدرس الرابع : تصريح تحديد الاختلاف في SQL](select-distinct)
 
-الدرس الرابع : تصريح تحديد الاختلاف في SQL
-
-الدرس الخامس : عبارة WHERE في SQL
+[الدرس الخامس : عبارة WHERE في SQL](where)
 
 الدرس السادس : عمليات AND & OR في SQL
 
-الدرس السابع : دالة ORDER BY في SQL
+[الدرس السابع : دالة ORDER BY في SQL](order-by)
 
-الدرس الثامن: تصريح INSERT INTO في SQL
+[الدرس الثامن: تصريح INSERT INTO في SQL](insert-into)
 
-الدرس التاسع: تصريح UPDATE في SQL
+[الدرس التاسع: تصريح UPDATE في SQL](update)
 
-الدرس العاشر: تصريح DELETE في SQL
+[الدرس العاشر: تصريح DELETE في SQL](delete)
 
 *****************
 
@@ -52,7 +51,7 @@ title: سلسلة دروس SQL|عمليات AND & OR
 في الأسفل تحديد من جدول الزبائن Customers
 
 
-![](http://3.bp.blogspot.com/-txe3CmsAcew/VODvNYC9AII/AAAAAAAABpg/lpoMB6Uu2Eo/s1600/Screenshot%2Bfrom%2B2015-02-15%2B21%3A09%3A44.png)
+![customers](/assets/customers.png)
 
 # مثال على عملية AND
 

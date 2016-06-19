@@ -7,25 +7,25 @@ title: سلسلة دروس SQL|تصريح SELECT DISTINCT
 الفهرس :
 
 
-الدرس الأول : التعريف بـ SQL
+[الدرس الأول : التعريف بـ SQL](intro)
 
-الدرس الثاني : بناء SQL
+[الدرس الثاني : بناء SQL](build)
 
-الدرس الثالث : تصريح SELECT
+[الدرس الثالث : تصريح SELECT](select)
 
 الدرس الرابع : تصريح تحديد الاختلاف في SQL
 
-الدرس الخامس : عبارة WHERE في SQL
+[الدرس الخامس : عبارة WHERE في SQL](where)
 
-الدرس السادس : عمليات AND & OR في SQL
+[الدرس السادس : عمليات AND & OR في SQL](and-or)
 
-الدرس السابع : دالة ORDER BY في SQL
+[الدرس السابع : دالة ORDER BY في SQL](order-by)
 
-الدرس الثامن: تصريح INSERT INTO في SQL
+[الدرس الثامن: تصريح INSERT INTO في SQL](insert-into)
 
-الدرس التاسع: تصريح UPDATE في SQL
+[الدرس التاسع: تصريح UPDATE في SQL](update)
 
-الدرس العاشر: تصريح DELETE في SQL
+[الدرس العاشر: تصريح DELETE في SQL](delete)
 
 *****************
 
@@ -58,7 +58,7 @@ title: سلسلة دروس SQL|تصريح SELECT DISTINCT
 
 في الأسفل تحديد من جدول الزبائن `Customers`
 
-![](http://1.bp.blogspot.com/-txe3CmsAcew/VODvNYC9AII/AAAAAAAABpc/-n-9ly6Kz74/s1600/Screenshot%2Bfrom%2B2015-02-15%2B21%3A09%3A44.png)
+![customers](/assets/customers.png)
 
 # مثال لتصريح SELECT DISTINCT
 

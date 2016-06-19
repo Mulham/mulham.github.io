@@ -3,7 +3,7 @@ layout: post
 date: 2016-06-16
 title: سلسلة دروس جِت هَب|مقدمة
 ---
-<dl><dd><center><img src="http://2.bp.blogspot.com/-YNomP_OFh8w/VCLZxwHhzZI/AAAAAAAABdw/ebPo_l63NTM/s1600/blog-github.png"></center></dd></dl>
+<dl><dd><center><img src="https://help.github.com/articles/set-up-git"></center></dd></dl>
 
 
  نقدم سلسلة دروس Github حصرياً لموقع ملهم
@@ -66,18 +66,18 @@ title: سلسلة دروس جِت هَب|مقدمة
 
 3. أخبر  `Git` عن اسمك حتى يتم تصنيف مشاركاتك بشكل صحيح ، أدخل التالي في الطرفية مع استبدال `Your Name` باسمك :
 
-{% highlight YAML %}
-$ git config --global user.name "Your Name"
-{% endhighlight %}
+
+		$ git config --global user.name "Your Name"
 
 
-4. أخبر `Git` عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في `Git` . البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب `github` .
+
+4. أخبر `Git` عن بريدك الإلكتروني والذي سيكون مرتبط بمشاركاتك في `Git`. البريد الذي ستدخله يجب أن يكون نفسه الذي استعملته عند الاشتراك ب `github`.
 
 > لإبقاء بريدك الإلكتروني مخفي راجع: [الحفاظ على خصوصية البريد الإلكتروني](keep-your-email-private) 
 
-{% highlight YAML %}
-$ git config --global user.email "Your Email Address"
-{% endhighlight %}
+
+		$ git config --global user.email "Your Email Address"
+
 وبهذا تكون انتهيت من تنصيب git على جهازك .
 
 ### تنصيب Git على الويندوز 
@@ -91,7 +91,7 @@ $ git config --global user.email "Your Email Address"
 
 ### تنصيب Git على الماك
 
-> لدى Github [تطبيق خاص بالماك](https://mac.github.com/). يمكنك استعماله بدون استخدام سطر الأوامر .
+> لدى Github [تطبيق خاص بالماك](https://mac.github.com/). يمكنك استعماله بدون استخدام سطر الأوامر.
 
 1. قم بتحميل وتنصيب الإصدار الأخير من Git.
 

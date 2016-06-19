@@ -6,26 +6,25 @@ title: سلسلة دروس SQL|عبارة WHERE
 
 الفهرس :
 
+[الدرس الأول : التعريف بـ SQL](intro)
 
-الدرس الأول : التعريف بـ SQL
+[الدرس الثاني : بناء SQL](build)
 
-الدرس الثاني : بناء SQL
+[الدرس الثالث : تصريح SELECT](select)
 
-الدرس الثالث : تصريح SELECT
-
-الدرس الرابع : تصريح تحديد الاختلاف في SQL
+[الدرس الرابع : تصريح تحديد الاختلاف في SQL](select-distinct)
 
 الدرس الخامس : عبارة WHERE في SQL
 
-الدرس السادس : عمليات AND & OR في SQL
+[الدرس السادس : عمليات AND & OR في SQL](and-or)
 
-الدرس السابع : دالة ORDER BY في SQL
+[الدرس السابع : دالة ORDER BY في SQL](order-by)
 
-الدرس الثامن: تصريح INSERT INTO في SQL
+[الدرس الثامن: تصريح INSERT INTO في SQL](insert-into)
 
-الدرس التاسع: تصريح UPDATE في SQL
+[الدرس التاسع: تصريح UPDATE في SQL](update)
 
-الدرس العاشر: تصريح DELETE في SQL
+[الدرس العاشر: تصريح DELETE في SQL](delete)
 
 *****************
 

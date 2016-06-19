@@ -6,27 +6,25 @@ title: سلسلة دروس SQL|البناء
 
 الفهرس :
 
-
-الدرس الأول : التعريف بـ SQL
+[الدرس الأول : التعريف بـ SQL](intro)
 
 الدرس الثاني : بناء SQL
 
-الدرس الثالث : تصريح SELECT
+[الدرس الثالث : تصريح SELECT](select)
 
-الدرس الرابع : تصريح تحديد الاختلاف في SQL
+[الدرس الرابع : تصريح تحديد الاختلاف في SQL](select-distinct)
 
-الدرس الخامس : عبارة WHERE في SQL
+[الدرس الخامس : عبارة WHERE في SQL](where)
 
-الدرس السادس : عمليات AND & OR في SQL
+[الدرس السادس : عمليات AND & OR في SQL](and-or)
 
-الدرس السابع : دالة ORDER BY في SQL
+[الدرس السابع : دالة ORDER BY في SQL](order-by)
 
-الدرس الثامن: تصريح INSERT INTO في SQL
+[الدرس الثامن: تصريح INSERT INTO في SQL](insert-into)
 
-الدرس التاسع: تصريح UPDATE في SQL
+[الدرس التاسع: تصريح UPDATE في SQL](update)
 
-الدرس العاشر: تصريح DELETE في SQL
-
+[الدرس العاشر: تصريح DELETE في SQL](delete)
 *****************
 
 * Toc
@@ -43,7 +41,7 @@ title: سلسلة دروس SQL|البناء
 
 الجدول التالي هو قسم من من جدول الزبائن "Customers" :
 
-![](http://1.bp.blogspot.com/-TO6OyYDYVeQ/VODg52HJWNI/AAAAAAAABpQ/447It2x5d1c/s1600/Screenshot%2Bfrom%2B2015-02-15%2B20%3A08%3A29.png)
+![customers](/assets/customers.png)
 
 
 الجدول في اﻷعلى يحوي على خمسة تسجيلات (واحد لكل زبون) ، وسبعة أعمدة (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country)
@@ -66,9 +64,9 @@ title: سلسلة دروس SQL|البناء
 سنتعلم في هذه السلسة جميع تصريحات SQL المختلفة .
 
 
-> تذكر أن ..
+> تذكر أن 
 > 
-SQL ليست حساسة للأحرف الكبيرة . فـ select هي نفس SELECT بالنسبة لـ SQL .
+SQL ليست حساسة للأحرف الكبيرة . فـ select هي نفس SELECT بالنسبة لـ SQL.
 سنقوم بسلسلة الشروحات هذه بكتابة جميع أوامر SQL الأساسية بأحرف كبيرة .
 
 

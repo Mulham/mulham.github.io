@@ -31,15 +31,15 @@ title: سلسلة دروس جِت هَب|الحفاظ على خصوصية الب
 
 1.اضغط على زر الإعدادات  في الزاوية اليمنى ﻷي صفحة
 
-![git-1](http://1.bp.blogspot.com/-b5Q40aqJa1A/VN9s1-tO92I/AAAAAAAABoM/HcSHuOjBXKI/s1600/userbar-account-settings.png)
+![git-1](https://help.github.com/assets/images/help/settings/userbar-account-settings.png)
 
 2.اضغط على زر "Emails" في الشريط الجانبي الأيسر
 
-![git-2](http://1.bp.blogspot.com/-X_QCfRDpELQ/VN9tNTVaVDI/AAAAAAAABoU/G07_EWRo-hY/s1600/settings-sidebar-emails.png)
+![git-2](https://help.github.com/assets/images/help/settings/settings-sidebar-emails.png)
 
 3.قم بالتأشير على خيار الحفاظ على خصوصية بريدك الإلكتروني " Keep my email address private."
 
-![git-3](http://4.bp.blogspot.com/-9WPWtcl34Yc/VN9tavOCwvI/AAAAAAAABoc/-0MW-8BCBBU/s1600/email_privacy.png)
+![git-3](https://help.github.com/assets/images/help/settings/email_privacy.png)
 
 # ثانياً : أخبر جت باستخدام عنوان بريدك الإلكتروني الخاص
 
