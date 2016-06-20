@@ -1,6 +1,5 @@
-name: موقع ملهم|نافذة على المحتوى العربي
+name: موقع ملهم|شغف المعرفة
 markdown: kramdown
-highlighter: true
 permalink: /:title
 timezone: Asia/Damascus
 defaults:
