@@ -3,8 +3,10 @@
 
 		<head>
 <link rel="icon" href="/favicon.png">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="google" content="notranslate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/css/main.css">
+<meta name="description" content="" />
 
 
 
@@ -29,12 +31,15 @@
 			<h1>سكريبت php بسيط لرفع ملف</h1>
 <p class="meta">19 Jun 2016</p>
 
+
+
+
 <div class="post">
   <p>نقدم لكم سكريبت بسيط بلغة php لرفع ملف .</p>
 
 <p>يستخدم هذا السكريبت لرفع صور أو ملفات من نوع آخر لسيرفرك ،<!--more--> حيث يحتوي على نموذج بلغة <code class="highlighter-rouge">HTML</code> فيه حقل لرفع ملف ، و كود <code class="highlighter-rouge">php</code> والذي يتأكد من نوع الملف (لاحقته) ، حجم الملف ، العرض والطول بالنسبة للصور ، ويقوم برفع الملف اذا لم يكن هناك أخطاء .</p>
 
-<p>يمكنك في السكريبت تحديد نوع الملفات المسموحة (عبر اللاحقة ) ، الحجم الأعظمي المسموح للملف و الطول والعرض الأعظميين المسومح بهما للصور .</p>
+<p>يمكنك في السكريبت تحديد نوع الملفات المسموحة (عبر اللاحقة )، الحجم الأعظمي المسموح للملف و الطول والعرض الأعظميين المسومح بهما للصور.</p>
 
 <p>يتم حفظ الملف في مجلد <code class="highlighter-rouge">upload</code> (أو المجلد الذي تحدده في متغير <code class="highlighter-rouge">uploadpath$</code> )  ، هذا المجلد يجب إنشاؤه في نفس المكان الذي يوضع فيه ملف الـ <code class="highlighter-rouge">php</code> الحاوي على هذا السكريبت . يجب أن تكون php لديها صلاحيات الكتابة في هذا المجلد <code class="highlighter-rouge">( chmod 0755 / 0777 )</code> حتى تتمكن من حفظ الملف .</p>
 

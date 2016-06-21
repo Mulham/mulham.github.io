@@ -6,7 +6,7 @@ title: دروس حصرية|موقع ملهم
 
 * [سلسلة دروس جِت هَب](github/intro)
 
-* [سلسلة دروس SQL](sql/inro)
+* [سلسلة دروس SQL](sql/intro)
 
 * [سلسلة دروس مشروع الوب الجاهز للاستخدام Joomla](joomla/intro)
 

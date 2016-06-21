@@ -28,37 +28,37 @@ title: سلسلة دروس جِت هَب|إنشاء حزمة
 
 # إنشاء حزمة جديدة في Github
 
-1.في الزاوية أعلى اليمين ﻷي صفحة ، اضغط على العلامة + ثم اختر 
+1. في الزاوية أعلى اليمين ﻷي صفحة ، اضغط على العلامة + ثم اختر 
 `New repository` أي حزمة جديدة .
 
-![](https://help.github.com/assets/images/help/repository/repo-create.png)
+	![](https://help.github.com/assets/images/help/repository/repo-create.png)
 
 
-2.أنشأ اسم قصير و سهل تذكره لحزمتك .
+2. أنشئ اسم قصير و سهل تذكره لحزمتك .
 
 
-![](https://help.github.com/assets/images/help/repository/create-repository-name.png0/create-repository-name.png)
+	![](https://help.github.com/assets/images/help/repository/create-repository-name.png0/create-repository-name.png)
 
-3.اختيارياً، أضف وصف لحزمتك . على سبيل المثال  " My first repository on Github" أي حزمتي الأولى في Github
-
-
-![](https://help.github.com/assets/images/help/repository/create-repository-desc.png)
-
-4.اختر إما إنشاء حزمة عامة أو خاصة.
-
-![](https://help.github.com/assets/images/help/repository/create-repository-public-private.png)
-
-  * الحزم العامة خيار رائع للبدء! إنها مجانية ومرئية ﻷي مستخدم على Github ، وبالتالي يمكنك الاستفادة من الشبكة التعاونية لـ Github .
-
-  * الحزم الخاصة تتطلب خطوات بسيطة إضافية للإنشاء. إنها مدفوعة، ومتاحة فقط لك، أي لصاحب الحزمة، بالإضافة للمستخدمين الذين تختارهم أنت لمشاركة الحزمة معهم.
+3. اختيارياً، أضف وصف لحزمتك . على سبيل المثال  " My first repository on Github" أي حزمتي الأولى في Github
 
 
-5.اختر `Initialize this repository with a README`.  أي استهلال الحزمة بملف اقرأني (لوضع معلومات عن الحزمة والتعريف بها وبوظيفتها ..) .
+	![](https://help.github.com/assets/images/help/repository/create-repository-desc.png)
+
+4. اختر إما إنشاء حزمة عامة أو خاصة.
+
+	![](https://help.github.com/assets/images/help/repository/create-repository-public-private.png)
+
+	* الحزم العامة خيار رائع للبدء! إنها مجانية ومرئية ﻷي مستخدم على Github ، وبالتالي يمكنك الاستفادة من الشبكة التعاونية لـ Github .
+
+	* الحزم الخاصة تتطلب خطوات بسيطة إضافية للإنشاء. إنها مدفوعة، ومتاحة فقط لك، أي لصاحب الحزمة، بالإضافة للمستخدمين الذين تختارهم أنت لمشاركة الحزمة معهم.
 
 
-![](https://help.github.com/assets/images/help/repository/create-repository-init-readme.png)
+5. اختر `Initialize this repository with a README`.  أي استهلال الحزمة بملف اقرأني (لوضع معلومات عن الحزمة والتعريف بها وبوظيفتها ..) .
 
-6.اضغط على `Create repository` أي إنشاء الحزمة .
+
+	![](https://help.github.com/assets/images/help/repository/create-repository-init-readme.png)
+
+6. اضغط على `Create repository` أي إنشاء الحزمة .
 
 
 ![](https://help.github.com/assets/images/help/repository/create-repository-button.png)
@@ -75,38 +75,38 @@ title: سلسلة دروس جِت هَب|إنشاء حزمة
 
 دعنا الآن ننشأ تغيير على ملف اقرأني :
 
-1.ضمن قائمة الملفات لحزمتك ، اضغط على `README.md`
+1. ضمن قائمة الملفات لحزمتك ، اضغط على `README.md`
 
 
-![](https://help.github.com/assets/images/help/repository/create-commit-open-readme.png)
+	![](https://help.github.com/assets/images/help/repository/create-commit-open-readme.png)
 
-2.أعلى محتويات الملف ، اضغط على أيقونة التعديل (على شكل قلم)
-
-
-3.ضمن عرض الكود ، اكتب معلومات عن نفسك .
-
-![](https://help.github.com/assets/images/help/repository/edit-readme-light.png)
+2. أعلى محتويات الملف ، اضغط على أيقونة التعديل (على شكل قلم)
 
 
-4.أعلى المحتوى الجديد الذي أدخلته ، اضغط على Preview أي معاينة .
+3. ضمن عرض الكود ، اكتب معلومات عن نفسك .
+
+	![](https://help.github.com/assets/images/help/repository/edit-readme-light.png)
 
 
-![](https://help.github.com/assets/images/help/repository/edit-readme-preview-changes.png)
+4. أعلى المحتوى الجديد الذي أدخلته ، اضغط على Preview أي معاينة .
 
 
-5.راجع التغييرات التي أجريتها للملف ، حيث ستجد المحتوى الجديد الذي أدخلته باللون الأخضر .
+	![](https://help.github.com/assets/images/help/repository/edit-readme-preview-changes.png)
 
 
-![](https://help.github.com/assets/images/help/repository/create-commit-review.png)
+5. راجع التغييرات التي أجريتها للملف ، حيث ستجد المحتوى الجديد الذي أدخلته باللون الأخضر .
 
 
-6.أسفل الصفحة ، و تحت "Commit changes" أدخل رسالة تغيير قصيرة وواضحة تصف التغيير الذي أجريته للملف .
+	![](https://help.github.com/assets/images/help/repository/create-commit-review.png)
 
 
-![](https://help.github.com/assets/images/help/repository/write-commit-message-quick-pull.png)
+6. أسفل الصفحة ، و تحت "Commit changes" أدخل رسالة تغيير قصيرة وواضحة تصف التغيير الذي أجريته للملف .
 
 
-7.اضغط على `Commit changes`
+	![](https://help.github.com/assets/images/help/repository/write-commit-message-quick-pull.png)
+
+
+7. اضغط على `Commit changes`
 
 
 تهانينا! بهذا تكون قد أنشأت حزمة على Github تحتوي على ملف اقرأني `README` ، وأجريت تغييرك الأول في Github .

@@ -46,8 +46,9 @@ title: سلسلة دروس جِت هَب|نسخ حزمة
 
 إن عملية نسخ حزمة عملية بسيطة جداً تتضمن خطوتين فقط . يوجد هناك حزمة تم إنشاؤها ﻷجلك لتمارس الشروحات عليها !
 
-1.اذهب إلى [الحزمة التالية في Github](https://github.com/octocat/Spoon-Knife)  
-2.في الزاوية أعلى يمين الصفحة ، اضغط على Fork لنسخ الحزمة .
+1. اذهب إلى [الحزمة التالية في Github](https://github.com/octocat/Spoon-Knife)
+
+2. في الزاوية أعلى يمين الصفحة ، اضغط على Fork لنسخ الحزمة .
 
 
 ![](https://help.github.com/assets/images/help/repository/fork_button.jpg)

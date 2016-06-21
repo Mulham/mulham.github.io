@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Mulham Tutorials</title>
+	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-06-19T15:15:39+03:00</updated>
+	<updated>2016-06-21T15:53:08+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;يستخدم هذا السكريبت لرفع صور أو ملفات من نوع آخر لسيرفرك ،&lt;!--more--&gt; حيث يحتوي على نموذج بلغة &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; فيه حقل لرفع ملف ، و كود &lt;code class=&quot;highlighter-rouge&quot;&gt;php&lt;/code&gt; والذي يتأكد من نوع الملف (لاحقته) ، حجم الملف ، العرض والطول بالنسبة للصور ، ويقوم برفع الملف اذا لم يكن هناك أخطاء .&lt;/p&gt;
 
-&lt;p&gt;يمكنك في السكريبت تحديد نوع الملفات المسموحة (عبر اللاحقة ) ، الحجم الأعظمي المسموح للملف و الطول والعرض الأعظميين المسومح بهما للصور .&lt;/p&gt;
+&lt;p&gt;يمكنك في السكريبت تحديد نوع الملفات المسموحة (عبر اللاحقة )، الحجم الأعظمي المسموح للملف و الطول والعرض الأعظميين المسومح بهما للصور.&lt;/p&gt;
 
 &lt;p&gt;يتم حفظ الملف في مجلد &lt;code class=&quot;highlighter-rouge&quot;&gt;upload&lt;/code&gt; (أو المجلد الذي تحدده في متغير &lt;code class=&quot;highlighter-rouge&quot;&gt;uploadpath$&lt;/code&gt; )  ، هذا المجلد يجب إنشاؤه في نفس المكان الذي يوضع فيه ملف الـ &lt;code class=&quot;highlighter-rouge&quot;&gt;php&lt;/code&gt; الحاوي على هذا السكريبت . يجب أن تكون php لديها صلاحيات الكتابة في هذا المجلد &lt;code class=&quot;highlighter-rouge&quot;&gt;( chmod 0755 / 0777 )&lt;/code&gt; حتى تتمكن من حفظ الملف .&lt;/p&gt;
 
@@ -101,34 +101,34 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;&quot;&gt;extratorrent.com&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://extratorrent.com&quot;&gt;extratorrent.com&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;&quot;&gt;bitenova.nl&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://bitenova.nl&quot;&gt;bitenova.nl&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;&quot;&gt;fenopy.com&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://fenopy.com&quot;&gt;fenopy.com&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;&quot;&gt;torrentat.org&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://torrentat.org&quot;&gt;torrentat.org&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;fulldls.com&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://fulldls.com&quot;&gt;fulldls.com&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;spynova.org&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://spynova.org&quot;&gt;spynova.org&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;2torrents.com&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://2torrents.com&quot;&gt;2torrents.com&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;scrapetorrent.com&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://scrapetorrent.com&quot;&gt;scrapetorrent.com&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;litebay.org&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://litebay.org&quot;&gt;litebay.org&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;torrents.to&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://torrents.to&quot;&gt;torrents.to&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </content>

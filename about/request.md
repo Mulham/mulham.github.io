@@ -24,7 +24,7 @@ date: 2016-06-16
 
 * [عتاد الحاسوب](https://ar.wikipedia.org/wiki/عتاد_الحاسوب)
 
-* [طرفية الحاسوب](https://ar.wikipedia.org/wiki/نمذجة_البرمجيات)
+* [نمذجة البرمجيات](https://ar.wikipedia.org/wiki/نمذجة_البرمجيات)
 
 * [مصفوفة النقاط](https://ar.wikipedia.org/wiki/مصفوفة_النقاط)
 

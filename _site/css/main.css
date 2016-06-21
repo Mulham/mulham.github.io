@@ -29,9 +29,8 @@ h1 {
 }
 blockquote {
   display:block;
-  background: #e0e0e0;
+  background: #e7e7e7;
   font-size: 1.2em;
-  border-right: 4px solid #00cbba;
   padding: 0 15px; 
   quotes: "\201C""\201D""\2018""\2019";
 /*Font*/
@@ -42,8 +41,7 @@ blockquote {
   text-align: justify;
   
   /*Borders - (Optional)*/
-  border-right: 15px solid #c76c0c;
-  border-left: 2px solid #c76c0c;
+  border-right: 12px solid #c76c0c;
   
   /*Box Shadow - (Optional)*/
   -moz-box-shadow: 2px 2px 15px #ccc;

@@ -29,26 +29,17 @@ title: "إنشاء قوالب Joomla"
 وهنا ملخص الملفات والمجلدات الأساسية التي يجب إنشاؤها لإنشاء قالب Joomla بسيط :
 
 
+* mynewtemplate/
 
+* css/
 
-		mynewtemplate/
+	* template.css
 
+* images/
 
-		css/
+* index.php
 
-
-			template.css
-
-
-		images/
-
-
-		index.php
-
-
-		templateDetails.xml
-
-
+* templateDetails.xml
 
 
 ## إنشاء ملف templateDetails.xml
@@ -343,7 +334,7 @@ title: "إنشاء قوالب Joomla"
 
 {% endhighlight %}
 
-في الحقيقة هذا يكفي ! نعم إنه جسم بدائي جداً ولكنه يفي بالغرض ، كل شيئ آخر سيتم القيام به من قبل Joomla .
+في الحقيقة هذا يكفي ! نعم إنه جسم بدائي جداً ولكنه يفي بالغرض ، كل شيئ آخر سيتم القيام به من قبل Joomla.
 
 
 ### Module Positions
