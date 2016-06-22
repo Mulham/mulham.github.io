@@ -28,7 +28,7 @@ title: موقع ملهم|شغف المعرفة
 
 	<ul class="posts">
 
-	  {% for post in site.posts %}
+	  {% for post in paginator.posts %}
 	    <li>
 <a href="{{ post.url }}" title="{{ post.title }}"><br />{{ post.title }}</a><br />
 <span style="font-size: 14px">{{ post.date | date_to_string }}</span> <br />
@@ -37,3 +37,18 @@ title: موقع ملهم|شغف المعرفة
 
 	  {% endfor %}
 	</ul>
+<!-- Pagination links --><center>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">السابق</a>
+  {% else %}
+    <span class="previous">السابق</span>
+  {% endif %}
+  <span class="page_number ">صفحة: {{ paginator.page }} من {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">التالي</a>
+  {% else %}
+    <span class="next ">التالي</span>
+  {% endif %}
+</div>
+</center>
