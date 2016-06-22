@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/reinstall-android</loc>
+<lastmod>2016-06-22T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>/installing-web-project-on-server</loc>
+<lastmod>2016-06-22T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>/markdown</loc>
 <lastmod>2016-06-21T00:00:00+03:00</lastmod>
 </url>
@@ -113,10 +121,6 @@
 <lastmod>2016-06-16T00:00:00+03:00</lastmod>
 </url>
 <url>
-<loc>/first-commit</loc>
-<lastmod>2016-06-16T00:00:00+03:00</lastmod>
-</url>
-<url>
 <loc>/blog/</loc>
 </url>
 <url>
@@ -136,5 +140,9 @@
 </url>
 <url>
 <loc>/category/%25D8%25A3%25D8%25A8%25D9%2588%25D9%2586%25D8%25AA%25D9%2588</loc>
+</url>
+<url>
+<loc>/google50f28f949b2557cc.html</loc>
+<lastmod>2016-06-22T13:40:10+03:00</lastmod>
 </url>
 </urlset>

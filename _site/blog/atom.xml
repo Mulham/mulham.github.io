@@ -4,13 +4,266 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-06-22T03:10:49+03:00</updated>
+	<updated>2016-06-23T01:11:16+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>إعادة تنصيب أندرويد</title>
+			<link href="http://mulham.github.io/reinstall-android"/>
+			<updated>2016-06-22T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//reinstall-android</id>
+			<content type="html">&lt;p&gt;إذا قمت &lt;a href=&quot;/installing-ubuntu-touch&quot;&gt;بتنصيب أبونتو&lt;/a&gt; (أو أي نظام آخر) على جهازك اللوحي أو هاتفك، فبإمكانك إعادة تنصيب أندرويد (والذي سيحذف أبونتو). طبعاً إعادة التنصيب يكون من خلال وصل الجهاز مع حاسوب يعمل على نظام لينكس (والشرح هنا على توزيعة أبونتو).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;تحذير: سيتم حذف جميع تطبيقات وبيانات أبونتو، بما في ذلك بيانات المستخدم.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تحميل ملفات نسخة أندرويد&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;استخراج الملفات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;الذهاب لمُحمل الإقلاع&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;إعادة تنصيب أندرويد&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-4&quot; id=&quot;markdown-toc-section-4&quot;&gt;استعادة بيانات وتطبيقات أندرويد (اختياري)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-5&quot; id=&quot;markdown-toc-section-5&quot;&gt;قفل الجهاز (اختياري)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;تحميل ملفات نسخة أندرويد&lt;/h1&gt;
+
+&lt;p&gt;يمكنك في أي وقت تحميل ملفات أندرويد المطلوبة لاستعادة نظامك.
+يعرض هذا الجدول روابط لإصدارات أندرويد الشائعة (إذا لم تجد جهازك في الجدول فاطلب رابط النسخة الخاصة لجهازك هنا أو من خلال مراسلتي - على العموم يمكنك البحث بعد إدخال القيم المطلوبة الخاصة بجهازك والحبث عن نسخة أندرويد له).&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الجهاز&lt;/th&gt;
+      &lt;th&gt;نسخة أندرويد بحسب النوع&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nexus 4&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#occam&quot;&gt;occam&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nexus 10&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#mantaray&quot;&gt;mantaray&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nexus 7 2013 WiFi&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#razor&quot;&gt;razor&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Galaxy Nexus&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#takju&quot;&gt;takju&lt;/a&gt; أو &lt;a href=&quot;https://developers.google.com/android/nexus/images#yakju&quot;&gt;yakju&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nexus 7&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#nakasi&quot;&gt;nakasi&lt;/a&gt; أو &lt;a href=&quot;https://developers.google.com/android/nexus/images#nakasig&quot;&gt;nakasig&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;قم بتحميل النسخة المطلوبة، مع ملاحظة أنه يجب اختيار رقم الإصدار (build version) والذي كان موجود أصلاً على جهازك. ومنه يمكنك تحديثه بعد تنصيب أندرويد.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;استخراج الملفات&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم باستخراج النظام المُحمل. مثلاً إذا كان اسم الملف الذي تم تحميله &lt;code class=&quot;highlighter-rouge&quot;&gt;razor-kot49h-factory-ebb4918e.tgz&lt;/code&gt; فاستخرجه بالأمر:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ tar -xzf razor-kot49h-factory-ebb4918e.tgz
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;انتقل للمجلد المستخرج&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ cd razor-kot49h
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;الذهاب لمُحمل الإقلاع&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بوصل جهازك اللوحي بحاسوب أبونتو عبر الـ USB .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;تأكد من أن النظام (أو بالأحرى أداة adb) تعرف على الجهاز&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ adb devices
+ List of devices attached
+ 025d138e2f521413 device
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;أي يجب ان يكون ناتج الأمر في السطر الأول شبيه بالسطرين الثاني والثالث.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بإعادة تشغيل الجهاز اللوحي لمُحمِّل الإقلاع&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ adb reboot bootloader
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;إعادة تنصيب أندرويد&lt;/h1&gt;
+
+&lt;p&gt;يجب أن تكون في المجلد المستخرج لنسخة أندرويد لبدء العملية.&lt;/p&gt;
+
+&lt;p&gt;نفذ الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	$ sudo ./flash-all.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;انتظر حتى اكتمال العملية وإقلاع أندرويد لشاشة الترحيب.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-4&quot;&gt;استعادة بيانات وتطبيقات أندرويد (اختياري)&lt;/h1&gt;
+
+&lt;p&gt;إذا قمت سابقاً بعمل نسخة احتياطية لتطبيقات وبيانات أندرويد، كما هو موضح هنا، فيمكنك استعادة هذه النسخة الاحتياطية :
+1. يجب أن تقوم أولاً بتفعيل وضع تحسين أخطاء USB في نظام أندرويد ، وتوصيل جهاز أندرويد لسطح مكتب أبونتو عبر USB (انظر &lt;a href=&quot;https://mulham.github.io/installing-ubuntu-touch#usb&quot;&gt;هنا&lt;/a&gt;).&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;افتح الطرفية في سطح مكتب أبونتو Ctrrl + Alt + T&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اذهب باستخدام الأمر cd للمجلد الذي يحوي ملف النسخة الاحتياطية backup.ab.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم باستعادة ملف backup.ab لأندرويد :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ adb restore backup.ab
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section-5&quot;&gt;قفل الجهاز (اختياري)&lt;/h1&gt;
+
+&lt;p&gt;لقد قمت سابقاً لتنصيب أبونتو بإلغاء قفل الجهاز، يمكنك الآن اختيارياً قفله.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;أطفئ الجهاز من زر الطاقة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أعد التشغيل لمحمل الإقلاع بالضغط على مجموعة الأزرار الصحيحة لنوع جهازك كما هو مذكور &lt;a href=&quot;https://source.android.com/source/building-devices.html#booting-into-fastboot-mode&quot;&gt;هنا&lt;/a&gt; (بالإنجليزية) :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;تأكد من أن الجهاز متصل بوضع fastboot كالتالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	$ fastboot devices
+	025d138e2f521413 fastboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;اقفل الجهاز :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ fastboot oem lock
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أعد التشغيل لأندرويد :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ fastboot reboot
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية تنصيب مشاريع الوب الجاهزة</title>
+			<link href="http://mulham.github.io/installing-web-project-on-server"/>
+			<updated>2016-06-22T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//installing-web-project-on-server</id>
+			<content type="html">&lt;h1 id=&quot;section&quot;&gt;تنصيب سكريبت على السيرفر المحلي - لينكس&lt;/h1&gt;
+
+&lt;p&gt;سأقوم هنا بشرح كيفية تنصيب سكريبت جاهز (وورد بريس - جوملة - دروبال ..) على السيرفر المحلي localhost بالإضافة لحل أبرز المشاكل التي تعترض هذه العملية.&lt;/p&gt;
+
+&lt;p&gt;طبعاً تنصيب سكريبت على السيرفر المحلي يأتي عادة ﻷغراض تجريبية .&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;تنصيب سكريبت على السيرفر المحلي&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بتحميل السكريبت المطلوب من الموقع الرسمي له. للتعرف على أبرز سكريبتات المشاريع الجاهزة ومواقعهم الرسمية ، راجع&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بفك الضغط عن الملف المحمل وانقل المجلد الناتج لمجلد السيرفر المحلي: /var/www/html/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;افتح برنامج phpmyadmin وقم بإنشاء قاعدة بيانات جديدة : قم بالدخول لـ phpmyadmin باستعمال اسم المستخدم وكلمة المرور المنشأة عند تنزيل البرنامج ، ثم اضغط في القائمة العلوية على خيار databases ، اكتب اسم قاعدة البيانات المراد إنشاؤها (وليكن اسمها على اسم الكريبت المحمل) واضغط على زر create .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;للمزيد راجع : إدارة قواعد البيانات باستخدام phpmyadmin&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;أذهب لمجلد السكريبت في السيرفر المحلي: أدخل في المتصفح العنوان : 127.0.0.1/flodername ، مع استبدال foldername باسم المجلد الخاص بالسكريبت.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اتبع تعليمات التنزيل .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;مشاكل وحلول&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;قد يعرض لك السكريبت أثناء عملية التنزيل خطأ تفيد بأن الملفات للقراءة فقط و غير قابلة للكتابة.
+ الحل: افتح الطرفية Ctrl+Alt+T واكتب :
+sudo groupadd conakyuser
+بهذا تكون أنشأت مجموعة جديدة من المستخدمين ، قم بإضافة مستخدمين لهذه المجموعة  :
+استبدل user1 باسمك الحالي على النظام (مكتوب في الطرفية قبل الـ @(. 
+sudo usermod -a -G tomandruser user1
+sudo usermod -a -G tomandruser admin&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;الآن قم بإعطاء الصلاحية للمجموعة المنشأة. هذه الخطوة هي فقط التي ستحتاج لتكرارها لاحقاً عند كل عملية تنصيب سكريبت.
+sudo chgrp -R conakyuser /var/www/html
+sudo chmod -R 777 /var/www/html&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;لا يوجد ملف إعدادات settings.php
+هذه المشكلة غالباً ما تحصل مع سكريبت دروبال ، قم بالذهاب للمسار الموجود به ملف الإعدادات الافتراضية default.settings.php ، إن كنت تنصب دروبال فسيكون الملف في المسار /var/www/html/foldername/sites/default . 
+الآن قم بإنشاء ملف جديد وسمه settings.php وافتح الملف default.settings.php وانسخ ما فيه والصقه في الملف المنشأ.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;تقييدات PHP&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;قد يكون السكريبت الذي تنزله يحتاج لمتطلبات سيرفر أعلى من الإعدادات الافتراضية. فقد يطلب السكريبت ذاكرة تخزين php مؤقتة أكبر . حد أقصى لوقت الإدخال أكبر .. وما إلى ذلك.&lt;/p&gt;
+
+&lt;p&gt;الحل: اذهب لملف إعداد php في السيرفر المحلي . ستجده في المسار /etc/php5/apache2 طبعاً باعتبار أن إصدار php المنزل هو الخامس وإصدار سيرفر أباتش هو الثاني.
+الآن افتح ملف php.ini وهنا تكمن جميع القيم التي قد يطلب السكريبت تغييرها. اقرأ رسالة الخطأ في السكريبت، سيعطيك ما يجب تغييره والقيمة التي يجب تغييرها له . أي ستجد في رسالة الخطأ مثل max_input_time وسيذكر بعدها قيمة عددية كـ 120.
+قم بالبحث ضمن ملف php.ini على المتغير المطلوب وقم بتغيير القيمة بعد إشارة = للقيمة المطلوبة . احفظ الملف.
+الآن يجب إعادة تشغيل سيرفر أباتش ، للقيام بذلك نفذ الأمر :
+sudo service apache2 restart
+أو الأمر التالي يقوم بنفس الغرض :
+sudo restart apache2&lt;/p&gt;
+
+&lt;p&gt;هل هناك نقص بالشرح ، هل واجهتك مشكلة غير مذكورة هنا . الرجاء لا تتردد في طرح استفساراتك أو اقتراحاتك ضمن التعليقات أدناه.&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<title>أساسيات لغة Markdown</title>
@@ -1736,14 +1989,44 @@
 		</entry>
 	
 		<entry>
-			<title>Mkusb</title>
+			<title>برنامج mkusb الأفضل لعمل فلاشة إقلاعية</title>
 			<link href="http://mulham.github.io/mkusb"/>
 			<updated>2016-06-19T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//mkusb</id>
-			<content type="html">
-&lt;p&gt;هناك العديد من البرامج التي توفر إمكانية حرق توزيعة على فلاشة، أي جعل قرص الفلاش إقلاعي ليتم الإقلاع منه وتنصيب نظام التشغيل المطلوبة، وهذه العملية بدأت بالانتشار أكثر وطغت على عملية حرق الأنظمة على أقراص ليزرية، كون الفلاشة قابلة لإعادة الكتابة والقراءة منها تعتبر أسرع بشكل عام.&lt;/p&gt;
+			<content type="html">&lt;p&gt;هناك العديد من البرامج التي توفر إمكانية حرق توزيعة على فلاشة، أي جعل قرص الفلاش إقلاعي ليتم الإقلاع منه وتنصيب نظام التشغيل المطلوبة، وهذه العملية بدأت بالانتشار أكثر وطغت على عملية حرق الأنظمة على أقراص ليزرية، كون الفلاشة قابلة لإعادة الكتابة والقراءة منها تعتبر أسرع بشكل عام.&lt;/p&gt;
 
-&lt;p&gt;إن أفضل برنامج مُجرب للقيام بذلك هو mkusb، وقد تم تجربته من قبل الكثير وأثبت نجاحاً كبيراً..ففي الغالب سيعطي نتيجة مرضية ودون حدوث مشاكل مثل باقي البرامج.&lt;/p&gt;
+&lt;p&gt;إن أفضل برنامج مُجرب للقيام بذلك هو mkusb، وقد تم تجربته من قبل الكثير وأثبت نجاحاً كبيراً..ففي الغالب سيعطي نتيجة مُرضية ودون حدوث مشاكل والتي قد تحدث في البرامج الأخرى.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#mkusb&quot; id=&quot;markdown-toc-mkusb&quot;&gt;تنصيب mkusb&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تفعيل الإقلاع من الفلاشة&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;mkusb&quot;&gt;تنصيب mkusb&lt;/h1&gt;
+
+&lt;p&gt;افتح الطرفية واكتب الأوامر التالية (لتوزيعة أبونتو):&lt;/p&gt;
+
+&lt;p&gt;في حال استخدامك لأبونتو ستحتاج أولاً لتفعيل الحزم العامة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository universe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ثم أدخل الأوامر الثلاث التالية كلٍّ على حدى :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository ppa:mkusb/ppa
+	sudo apt-get update
+	sudo apt-get install mkusb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;الآن كل ما عليك فعله هو الذهاب لقائمة البرامج والبحث عن &lt;code class=&quot;highlighter-rouge&quot;&gt;mkusb&lt;/code&gt;. افتح البرنامج واتبع التعليمات. سيقوم في البداية بتحذيرك حيث أن المعلومات الموجودة على القرص (الفلاشة) سيتم فقدانها، فلا تنس أخذ نسخة عنها قبل إجراء العملية، ثم ستحدد موقع الفلاشة وبعدها موقع ملف .iso لحرقه على الفلاشة ثم إجراء العملية حتى تصبح الفلاشة إقلاعية..&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;تفعيل الإقلاع من الفلاشة&lt;/h1&gt;
+
+&lt;p&gt;لن يُقلع حاسوبك من الفلاشة بشكل افتراضي، ستحتاج لتغيير إعدادات البيوس للقيام بذلك. إذا أعد تشغيل الحاسوب واذهب إلى البيوس بالضغط على زر Del عند بداية الإقلاع - يختلف هذا الزر من جهاز لآخر ويمكن البحث عن الزر المستخدم في جهازك بحسب الشركة المصنعة.&lt;/p&gt;
+
+&lt;p&gt;بعدها اذهب لما يسمى Boot options أي خيارات الإقلاع ستجدها أسفل تبويبة Boot، اجعل الخيار الأول لـ usb ثم احفظ الإعدادات (بالضغط على F10 غالباً) وسيتم إعادة التشغيل وغالباً ستنجح العملية .. وإذا لم تنجح ففي الواقع قد يكون الأمر معقد قليلاً فهناك اسباب عديدة، يمكنك مراسلتي للمناقشة.&lt;/p&gt;
 
 </content>
 		</entry>
@@ -3943,7 +4226,7 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;إجراء اختياري مشروح في الأسفل لعمل نسخة لتطبيقات أندرويد والبيانات لملف محلي. ولا يوجد ضمان لنجاح عملية الاستعادة.
-راجع: &lt;a href=&quot;https://developer.ubuntu.com/en/phone/devices/reinstalling-android/&quot;&gt;إعادة تنصيب أندرويد&lt;/a&gt;.&lt;/p&gt;
+راجع: &lt;a href=&quot;reinstall-android/&quot;&gt;إعادة تنصيب أندرويد&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-1&quot;&gt;ملاحظات الإصدار&lt;/h1&gt;
 
@@ -4974,17 +5257,6 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 &lt;p&gt;أنت الآن مستخدم اجتماعي وعضو بارز في مجتمع Github !&lt;/p&gt;
 
 &lt;p&gt;يمكنك الإطلاع على &lt;a href=&quot;keep-your-email-private&quot;&gt;الدرس الأخير&lt;/a&gt; إن أردت إخفاء عنوان بريدك الإلكتروني عن العامة.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>المشاركة الأولى</title>
-			<link href="http://mulham.github.io/first-commit"/>
-			<updated>2016-06-16T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//first-commit</id>
-			<content type="html">&lt;p&gt;هذه هي المشاركة الأولى في الموقع، والمدعوم 
-&lt;!--more--&gt;
-من قبل &lt;a href=&quot;http://jekyllrb.com&quot;&gt;جايكل&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
