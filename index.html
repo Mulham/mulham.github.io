@@ -28,7 +28,7 @@ title: موقع ملهم|شغف المعرفة
 
 	<ul class="posts">
 
-	  {% for post in paginator.posts %}
+	  {% for post in site.posts %}
 	    <li>
 <a href="{{ post.url }}" title="{{ post.title }}"><br />{{ post.title }}</a><br />
 <span style="font-size: 14px">{{ post.date | date_to_string }}</span> <br />
