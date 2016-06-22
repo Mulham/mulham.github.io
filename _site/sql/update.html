@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+<link rel="icon" href="/favicon.png">
+<meta name="google" content="notranslate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+
+
+			<title>سلسلة دروس SQL|تصريح UPDATE</title>
+			<!-- link to main stylesheet -->
+			
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	                	<li><a href="/">الرئيسية</a></li>
+						<li><a href="/blog">المدونة</a></li>
+						<li><a href="/tutorials">دروس</a></li>
+						<li><a href="/about/request">اطلب ترجمة</a></li>
+						<li><a href="/urls">روابط مفيدة</a></li>
+						<li><a href="/about">عن الموقع</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			<h1>سلسلة دروس SQL|تصريح UPDATE</h1>
+<p class="meta">18 Jun 2016
+
+
+
+
+</p>
+
+
+
+
+
+<div class="post">
+  <p>الفهرس :</p>
+
+<p><a href="intro">الدرس الأول : التعريف بـ SQL</a></p>
+
+<p><a href="build">الدرس الثاني : بناء SQL</a></p>
+
+<p><a href="select">الدرس الثالث : تصريح SELECT</a></p>
+
+<p><a href="select-distinct">الدرس الرابع : تصريح تحديد الاختلاف في SQL</a></p>
+
+<p><a href="where">الدرس الخامس : عبارة WHERE في SQL</a></p>
+
+<p><a href="and-or">الدرس السادس : عمليات AND &amp; OR في SQL</a></p>
+
+<p><a href="order-by">الدرس السابع : دالة ORDER BY في SQL</a></p>
+
+<p><a href="insert-into">الدرس الثامن: تصريح INSERT INTO في SQL</a></p>
+
+<p>الدرس التاسع: تصريح UPDATE في SQL</p>
+
+<p><a href="delete">الدرس العاشر: تصريح DELETE في SQL</a></p>
+
+<hr />
+
+<p>يستخدم تصريح UPDATE لتحديث تسجيلات موجودة مسبقاً في جدول .</p>
+
+<ul id="markdown-toc">
+  <li><a href="#update" id="markdown-toc-update">بناء تصريح UPDATE</a></li>
+  <li><a href="#section" id="markdown-toc-section">استعراض قاعدة بيانات :</a></li>
+  <li><a href="#update-1" id="markdown-toc-update-1">مثال على تصريح UPDATE</a></li>
+</ul>
+
+<h1 id="update">بناء تصريح UPDATE</h1>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	UPDATE table_name
+
+	SET column1=value1,column2=value2,...
+
+	WHERE some_column=some_value;
+</code></pre>
+</div>
+
+<blockquote>
+  <p>لاحظ عبارة WHERE في تصريح UPDATE !</p>
+</blockquote>
+
+<p>عبارة WHERE تحدد أي تسجيل أو تسجيلات يجب أن تُحدّث ، إذا قمت بحذف عبارة WHERE ، فسوف تُحدّث جميع التسجيلات!</p>
+
+<h1 id="section">استعراض قاعدة بيانات :</h1>
+
+<p>سنستخدم قاعدة البيانات المعروفة جيداً : Northwind</p>
+
+<p>في الأسفل تحديد من جدول الزبائن Customers</p>
+
+<p><img src="/assets/customers.png" alt="customers" /></p>
+
+<h1 id="update-1">مثال على تصريح UPDATE</h1>
+
+<p>على فرض أننا نريد تحديث سجل الزبون “Alfreds Futterkiste” لاسم تواصل ContactName ومدينة City جديدين، حينها نستخدم تصريح SQL التالي</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	UPDATE Customers
+
+	SET ContactName='Alfred Schmidt', City='Hamburg'
+
+	WHERE CustomerName='Alfreds Futterkiste';
+</code></pre>
+</div>
+
+<p>الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي</p>
+
+<p><img src="/assets/customers3.png" alt="customers3" /></p>
+
+<blockquote>
+  <p>تحذير! كن حذراً عند تحديث التسجيلات</p>
+</blockquote>
+
+<p>فإذا قمت بحذف عبارة WHERE من المثال السابق، كأن تكتب</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	UPDATE Customers
+
+	SET ContactName='Alfred Schmidt', City='Hamburg';
+</code></pre>
+</div>
+
+<p>حينها ،  سيبدو جدول الزبائن على الشكل</p>
+
+<p><img src="/assets/customers4.png" alt="customers4" /></p>
+
+<p>التالي: <a href="delete">تصريح DELETE</a></p>
+
+</div>
+			
+			</div><!-- /.container -->
+			<footer>
+
+
+	    		<table style="width:100%;">
+<tr>
+<td style="text-align: center; border: none;"><a href="#">الرجوع للأعلى</a></li>
+        	
+				</td><td style="text-align: center; border: none;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><img alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.</td>
+<td style="text-align: center; border: none;"><a href="mailto:mulham94@gmail.com">البريد الإلكتروني</a></td></tr></table>
+			</footer>
+		</body>
+	</html>
+

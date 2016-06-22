@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+<link rel="icon" href="/favicon.png">
+<meta name="google" content="notranslate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+
+
+			<title>سلسلة دروس SQL|البناء</title>
+			<!-- link to main stylesheet -->
+			
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	                	<li><a href="/">الرئيسية</a></li>
+						<li><a href="/blog">المدونة</a></li>
+						<li><a href="/tutorials">دروس</a></li>
+						<li><a href="/about/request">اطلب ترجمة</a></li>
+						<li><a href="/urls">روابط مفيدة</a></li>
+						<li><a href="/about">عن الموقع</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			<h1>سلسلة دروس SQL|البناء</h1>
+<p class="meta">18 Jun 2016
+
+
+
+
+</p>
+
+
+
+
+
+<div class="post">
+  <p>الفهرس :</p>
+
+<p><a href="intro">الدرس الأول : التعريف بـ SQL</a></p>
+
+<p>الدرس الثاني : بناء SQL</p>
+
+<p><a href="select">الدرس الثالث : تصريح SELECT</a></p>
+
+<p><a href="select-distinct">الدرس الرابع : تصريح تحديد الاختلاف في SQL</a></p>
+
+<p><a href="where">الدرس الخامس : عبارة WHERE في SQL</a></p>
+
+<p><a href="and-or">الدرس السادس : عمليات AND &amp; OR في SQL</a></p>
+
+<p><a href="order-by">الدرس السابع : دالة ORDER BY في SQL</a></p>
+
+<p><a href="insert-into">الدرس الثامن: تصريح INSERT INTO في SQL</a></p>
+
+<p><a href="update">الدرس التاسع: تصريح UPDATE في SQL</a></p>
+
+<p><a href="delete">الدرس العاشر: تصريح DELETE في SQL</a></p>
+
+<hr />
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">جداول قواعد البيانات</a></li>
+  <li><a href="#sql" id="markdown-toc-sql">تصريحات SQL</a></li>
+  <li><a href="#sql-1" id="markdown-toc-sql-1">فاصلة منقوطة بعد تصريحات SQL؟</a></li>
+</ul>
+
+<h1 id="section">جداول قواعد البيانات</h1>
+
+<p>تحتوي قاعدة البيانات في معظم الأحيان على جدول واحد أو أكثر . يتم تعريف كل جدول باسم ، على سبيل المثال : “الزبائن” ، “الطلبات” .. تحتوي الجداول على تسجيلات (صفوف) يتم بها الاحتفاظ بالبيانات.</p>
+
+<p>سوف نستخدم في هذا الشرح قاعدة البيانات الافتراضية والمعروفة جيداً : Northwind ( المضمنة في ميكروسوفت أكسس ، وميكروسوفت SQL سيرفر ) .</p>
+
+<p>الجدول التالي هو قسم من من جدول الزبائن “Customers” :</p>
+
+<p><img src="/assets/customers.png" alt="customers" /></p>
+
+<p>الجدول في اﻷعلى يحوي على خمسة تسجيلات (واحد لكل زبون) ، وسبعة أعمدة (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country)</p>
+
+<h1 id="sql">تصريحات SQL</h1>
+
+<p>نقصد هنا بـ “تصريحات” أسطر الأوامر لـ sql أي الجملة المؤلفة لأوامر sql  .</p>
+
+<p>معظم الأمور التي تحتاج القيام بها في قواعد البيانات يمكن تأديتها بواسطة تصريحات (أوامر) SQL</p>
+
+<p>يختار تصريح SQL التالي جميع التسجيلات في جدول الزبائن :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SELECT * FROM Customers;
+</code></pre>
+</div>
+
+<p>سنتعلم في هذه السلسة جميع تصريحات SQL المختلفة .</p>
+
+<blockquote>
+  <p>تذكر أن</p>
+
+  <p>SQL ليست حساسة للأحرف الكبيرة . فـ select هي نفس SELECT بالنسبة لـ SQL.
+سنقوم بسلسلة الشروحات هذه بكتابة جميع أوامر SQL الأساسية بأحرف كبيرة .</p>
+</blockquote>
+
+<h1 id="sql-1">فاصلة منقوطة بعد تصريحات SQL؟</h1>
+
+<p>إن بعض أنظمة قواعد البيانات تتطلب فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .</p>
+
+<p>الفاصلة المنقوطة ; هي الطريقة الأساسية لفصل عبارات SQL عن بعضها في أنظمة قواعد البيانات التي تسمح بتنفيذ أكثر من عبارة SQL واحدة ضمن الاستدعاء ذاته (الاتصال) للسيرفر (الخادم) .</p>
+
+<p>في هذه الشروحات سوف نستخدم فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .</p>
+
+<p>بعض أهم أوامر SQL</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">SELECT</code>: يقوم باستخراج بيانات من قاعدة البيانات</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">UPDATE</code>: يقوم بتحديث بيانات في قاعدة البيانات</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">DELETE</code>: يقوم بحذف بيانات من قاعدة البيانات</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">INSERT INTO</code>: يقوم بإدراج بيانات جديدة في قاعدة البيانات</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">CREATE DATABASE</code>: يقوم بإنشاء قاعدة بيانات جديدة</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">ALTER DATABASE</code>: تقوم بالتعديل على قاعدة البيانات</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">CREATE TABLE</code>: يقوم بإنشاء جدول جديد</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">ALTER TABLE</code>: يقوم بالتعديل على جدول</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">DROP TABLE</code>: يقوم بحذف جدول</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">CREATE INDEX</code>: يقوم بإنشاء فهرس (مفتاح بحث)</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">DROP INDEX</code>: يحذف فهرس</p>
+  </li>
+</ul>
+
+<p>التالي : <a href="select">تصريح SELECT</a></p>
+
+</div>
+			
+			</div><!-- /.container -->
+			<footer>
+
+
+	    		<table style="width:100%;">
+<tr>
+<td style="text-align: center; border: none;"><a href="#">الرجوع للأعلى</a></li>
+        	
+				</td><td style="text-align: center; border: none;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><img alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.</td>
+<td style="text-align: center; border: none;"><a href="mailto:mulham94@gmail.com">البريد الإلكتروني</a></td></tr></table>
+			</footer>
+		</body>
+	</html>
+

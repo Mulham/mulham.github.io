@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+<link rel="icon" href="/favicon.png">
+<meta name="google" content="notranslate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+<meta name="description" content="تعلّم لغة Markdown في خمس دقائق بشكل كامل، جميع أكواد لغة ماركداون ستجدها هنا" />
+
+
+
+
+			<title>أساسيات لغة Markdown</title>
+			<!-- link to main stylesheet -->
+			
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	                	<li><a href="/">الرئيسية</a></li>
+						<li><a href="/blog">المدونة</a></li>
+						<li><a href="/tutorials">دروس</a></li>
+						<li><a href="/about/request">اطلب ترجمة</a></li>
+						<li><a href="/urls">روابط مفيدة</a></li>
+						<li><a href="/about">عن الموقع</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			<h1>أساسيات لغة Markdown</h1>
+<p class="meta">21 Jun 2016
+
+
+
+
+</p>
+
+
+
+
+
+<div class="post">
+  <ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">كيفية التنسيق</a>    <ul>
+      <li><a href="#section-1" id="markdown-toc-section-1">النص العادي</a></li>
+      <li><a href="#section-2" id="markdown-toc-section-2">العناوين</a></li>
+      <li><a href="#section-3" id="markdown-toc-section-3">الاقتباس</a></li>
+      <li><a href="#section-4" id="markdown-toc-section-4">نمط النص</a></li>
+      <li><a href="#section-5" id="markdown-toc-section-5">القوائم</a>        <ul>
+          <li><a href="#section-6" id="markdown-toc-section-6">قائمة منقطة</a></li>
+          <li><a href="#section-7" id="markdown-toc-section-7">قائمة مُرقّمة</a></li>
+          <li><a href="#section-8" id="markdown-toc-section-8">قوائم متداخلة</a></li>
+        </ul>
+      </li>
+      <li><a href="#section-9" id="markdown-toc-section-9">الأكواد</a></li>
+      <li><a href="#section-10" id="markdown-toc-section-10">الروابط</a></li>
+      <li><a href="#section-11" id="markdown-toc-section-11">خط أفقي</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-12" id="markdown-toc-section-12">الجداول</a></li>
+  <li><a href="#section-13" id="markdown-toc-section-13">ملاحظات</a></li>
+</ul>
+
+<p>إنّ لغة ماركداون (Markdown) هي لغة وب تنسيقية. فبدلاً من الكتابة بلغة HTML يمكن الكتابة بهذه اللغة وهي أبسط بكثير من html وسهلة القراءة والكتابة، وبوجود مفسر فسيتم تحويل تنسيق markdown إلى html.</p>
+
+<p>يجب العلم بأن الكثير من المواقع التي نستخدمها تدعم تفسير تنسيق markdown، فيمكن استخدام هذه اللغة في ووردبريس ومشاريع أخرى، وطبعاً هي لغة أساسية في github.</p>
+
+<h1 id="section">كيفية التنسيق</h1>
+
+<p>والآن، لكي نتعلم هذه اللغة فكل ما علينا تعلمه هو بعض الأكواد التي تتضمنها اللغة. هنا حاولت جمع كل الأكواد المستخدمة في هذه اللغة (فهي ليست لغة ضخمة)</p>
+
+<h2 id="section-1">النص العادي</h2>
+
+<p>النص العادي يكتب بدون الحاجة لأي أكواد. مع ملاحظة بسيطة هو أنك يجب أن تضع سطر فارغ بين الفقرة والأخرى لكي تُقرأ على أنها بداية سطر جديد. أي بدل الضغط على <code class="highlighter-rouge">enter</code> للانتقال للسطر الجديد ستضغط على enter`` مرتين لترك سطر فارغ وبالتالي ليفهم المفسر أنك تريد الانتقال لسطر جديد.</p>
+
+<h2 id="section-2">العناوين</h2>
+
+<p>لكتابة العناوين نضع الرمز <code class="highlighter-rouge">#</code> مرة واحدة أو أكثر قبل العنوان (لا تنس الفراغ بين الرمز والعنوان):</p>
+
+<pre style="direction: rtl; text-align: right;">
+
+# عنوان رئيسي
+## عنوان فرعي 1
+### عنوان فرعي 2
+#### عنوان فرعي 3
+	
+</pre>
+
+<p>وما إلى ذلك .. مثلاً العنوان الرئيسي في هذه الصفحة هو “كيفية التنسيق (الأكواد)” والعنوان الفرعي الأول هو “العناوين”.</p>
+
+<h2 id="section-3">الاقتباس</h2>
+
+<p>لكتابة نص مقتبس بلغة markdown (أو عرض نص كملاحظة كما أفعل أنا هنا) نضع الرمز <code class="highlighter-rouge">&gt;</code> قبل النص المقتبس، وأيضاً يجب الانتباه للفراغ بين الرمز والكتابة:</p>
+<pre style="direction: rtl; text-align: right;">
+&gt; هذا عبارة عن نص مقتبس
+</pre>
+<p>سيكون الناتج:</p>
+
+<blockquote>
+  <p>هذا عبارة عن نص مقتبس</p>
+</blockquote>
+
+<h2 id="section-4">نمط النص</h2>
+
+<p>لجعل بعض الكلمات تظهر بشكل عريض أو مائل نستخدم الرمز <code class="highlighter-rouge">*</code> كما يلي:</p>
+<pre style="direction: rtl; text-align: right;">
+هذه الكلمة مكتوبة بشكل **عريض** وهذه مكتوبة بشكل *مائل*
+</pre>
+<p>الناتج:</p>
+
+<p>هذه الكلمة مكتوبة بشكل <strong>عريض</strong> وهذه مكتوبة بشكل <em>مائل</em></p>
+
+<p>ملاحظة: هناك رمز آخر يستخدم لنفس الغرض وهو الشرطة السفلية <code class="highlighter-rouge">_</code> وبنفس الطريقة المذكورة.</p>
+
+<h2 id="section-5">القوائم</h2>
+
+<h3 id="section-6">قائمة منقطة</h3>
+
+<p>للقائمة المنقطة نستخدم الرمز <code class="highlighter-rouge">*</code> ثم فراغ ثم النص. كذلك الرمز <code class="highlighter-rouge">-</code> يستخدم لنفس الغرض</p>
+<pre style="direction: rtl; text-align: right;">
+* عنصر قائمة
+* عنصر قائمة
+* عنصر قائمة
+</pre>
+<p>الناتج:</p>
+
+<ul>
+  <li>عنصر قائمة</li>
+  <li>عنصر قائمة</li>
+  <li>عنصر قائمة</li>
+</ul>
+
+<h3 id="section-7">قائمة مُرقّمة</h3>
+
+<p>للقائمة المُرّقمة نستخدم الأرقام. حيث نضع بعد الرقم نقطة <code class="highlighter-rouge">.</code> ثم فراغ ثم النص</p>
+<pre style="direction: rtl; text-align: right;">
+1. عنصر قائمة 1
+2. عنصر قائمة 2
+3. عنصر قائمة 3
+</pre>
+<p>الناتج:</p>
+
+<ol>
+  <li>عنصر قائمة 1</li>
+  <li>عنصر قائمة 2</li>
+  <li>عنصر قائمة 3</li>
+</ol>
+
+<p>ملاحظة: هناك خطأ يرتكبه البعض ولا يعرفوا السبب، مثلاً لو وضعنا نص أسفل عنصر القائمة 1 والذي يشرح هذا العنصر ثم نصاً تحت عنصر القائمة 2 ليشرحه وهكذا، عند  المعاينة ستجد النتيجة على الشكل :</p>
+
+<ol>
+  <li>عنصر قائمة 1</li>
+</ol>
+
+<p>نص شرح للعنصر1</p>
+
+<ol>
+  <li>عنصر قائمة 2</li>
+</ol>
+
+<p>نص شرح للعنصر 2</p>
+
+<ol>
+  <li>عنصر قائمة 3</li>
+</ol>
+
+<p>نص شرح للعنصر 3</p>
+
+<p>هل لاحظت أن الترقيم بات 1 وأيضاً 1 و 1 !! لماذا؟ في الواقع يجب وضع أربعة فراغات على الأقل قبل نص الشرح وذلك لكي يفهم المفسر أن النص هو تابع للعنصر 1 وبالتالي لا يعيد الترقيم من الأول وكأننا بدأنا بقائمة جديدة. عند وضع 4 فراغات قبل كل عنصر ستُحل المشكلة:</p>
+
+<ol>
+  <li>
+    <p>عنصر قائمة 1</p>
+
+    <p>نص شرح للعنصر1</p>
+  </li>
+  <li>
+    <p>عنصر قائمة 2</p>
+
+    <p>نص شرح للعنصر 2</p>
+  </li>
+  <li>
+    <p>عنصر قائمة 3</p>
+
+    <p>نص شرح للعنصر 3</p>
+  </li>
+</ol>
+
+<h3 id="section-8">قوائم متداخلة</h3>
+<pre style="direction: rtl; text-align: right;">
+		1. عنصر 1
+			1. عنصر مُرقّم تابع للعنصر 1
+			2. عنصر مرقم تابع للعنصر 1
+		2. عنصر 2
+			* عنصر غير مرقم تابع للعنصر 2
+			  * عنصر غير مرقم تابع للعنصر الذي يسبقه
+			  * عنصر غير مرقم تابع لقبل سابقه
+		3. عنصر 3
+</pre>
+<p>الناتج:</p>
+
+<ol>
+  <li>عنصر 1
+    <ol>
+      <li>عنصر مُرقّم تابع للعنصر 1</li>
+      <li>عنصر مرقم تابع للعنصر 1</li>
+    </ol>
+  </li>
+  <li>عنصر 2
+    <ul>
+      <li>عنصر غير مرقم تابع للعنصر 2
+        <ul>
+          <li>عنصر غير مرقم تابع للعنصر الذي يسبقه</li>
+          <li>عنصر غير مرقم تابع لقبل سابقه</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>عنصر 3</li>
+</ol>
+
+<p>ملاحظة: لقد وضعت هنا فراغين فقط بدلاً من 4 بين العنصر الفرعي والعنصر التابع له، وذلك لكي لا يسبق العنصر الذي من الدرجة الثالثة 8 فراغات وبالتالي يُفهم بشكل آخر، اقرأ الفقرة التالية</p>
+
+<h2 id="section-9">الأكواد</h2>
+
+<p>نحتاج أحياناً لتضمين الأكواد في المقال وذلك عند كتابة شرح للغة برمجة معينة أو ما شابه. لتضمين أسطر برمجية نضع 8 فراغات قبل كل سطر برمجي وبالتالي يكون الناتج:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	This is a code line
+</code></pre>
+</div>
+
+<p>ولكن أحياناً نحتاج أيضا لإظهار كلمة واحدة ضمن النص على أنه وسم أو جزء من كود، أي ماذا عن هذه الكلمة التي على شكل <code class="highlighter-rouge">كود</code> . كيف كتبتها؟</p>
+
+<pre style="direction: rtl; text-align: right;">
+ماذا عن هذه الكلمة التي على شكل `كود` . كيف كتبتها؟
+</pre>
+<p>هل وصلت الفكرة؟</p>
+
+<p>ملاحظة: ألم تجد الرمز ` في لوحة المفاتيح؟ سأوفر عليك عناء البحث .. إنه الزر <code class="highlighter-rouge">ذ</code> ولكن عندما تكون لغة الكتابة الإنجليزية.</p>
+
+<p>ملاحظة2: لوضع 4 أو 8 فراغات يمكن استخدام زر الـ Tab والذي يكون 4 فراغات في بعض محررات النصوص على جهازك أو 8 في محررات أخرى، يمكن تحديد ذلك من إعدادات محرر النصوص لديك (مثل المفكرة - ولكنها برنامج بدائي بعض الشيئ)</p>
+
+<h2 id="section-10">الروابط</h2>
+
+<p>لكتابة الروابط بلغة ماركداون نضع نص الرابط بين قوسين متوسطين <code class="highlighter-rouge">[ ]</code> وبعدها مباشرة قوسين صغيرين <code class="highlighter-rouge">( )</code> يكون الرابط ضمنهم.</p>
+
+<pre style="direction: rtl; text-align: right;">
+[موقع ملهم](http://mulham.github.io)
+</pre>
+
+<p>والناتج:</p>
+
+<p><a href="http://mulham.github.io">موقع ملهم</a></p>
+
+<p>ماذا عن الصورة؟</p>
+
+<p>لوضع صورة نقوم بنفس الكتابة السابقة ولكن يسبقها إشارة التعجب <code class="highlighter-rouge">!</code> ، يكون الشكل:</p>
+<pre style="direction: rtl; text-align: right;">
+![نص بديل للصورة](رابط الصورة "نص توضيح اختياري")
+</pre>
+
+<pre style="direction: rtl; text-align: right;">
+![صورة الترخيص](https://mulham.github.io/assets/ccl.png "رمز رخصة الموقع")
+</pre>
+
+<p>الناتج:</p>
+
+<p><img src="https://mulham.github.io/assets/ccl.png" alt="صورة الترخيص" title="رمز رخصة الموقع" /></p>
+
+<p>ملاحظة: يفيد النص البديل في توضيح محتوى الصورة لمحركات البحث، فلا تهمله.</p>
+
+<p>لعرض الرابط نفسه للضغط عليه، نضع الرابط بين رمزي <code class="highlighter-rouge">&lt;</code> و <code class="highlighter-rouge">&gt;</code> أي:</p>
+
+<pre style="direction: rtl; text-align: right;">
+&lt;http://mulham.github.io&gt;
+</pre>
+
+<p>الناتج:</p>
+
+<p><a href="http://mulham.github.io">http://mulham.github.io</a></p>
+
+<h2 id="section-11">خط أفقي</h2>
+
+<p>لإظهار خط أفقي في الصفحة نضع ثلاث نجمات أو أكثر <code class="highlighter-rouge">***</code> ، فيظهر :</p>
+
+<hr />
+
+<h1 id="section-12">الجداول</h1>
+
+<p>لكتابة جدول بلغة الماركداون نستخدم الرمز <code class="highlighter-rouge">|</code> (يُكتب هذا الرمز بالضغط على زر <code class="highlighter-rouge">shift</code> وزر <code class="highlighter-rouge">\</code> والذي يكون فوق زر الـ <code class="highlighter-rouge">Enter</code>)، يجب أن تكون كل خانة في الجدول محاطة بالرمز <code class="highlighter-rouge">|</code> من الجهتين:</p>
+
+<pre style="direction: rtl; text-align: right;">
+
+| عنوان غليظ | عنوان غليظ | عنوان غليظ |
+|------------| ---------- | ---------- |
+| عنصر | عنصر | عنصر |
+| عنصر | عنصر | عنصر ما |
+
+</pre>
+
+<p>الناتج:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>عنوان غليظ</th>
+      <th>عنوان غليظ</th>
+      <th>عنوان غليظ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>عنصر</td>
+      <td>عنصر</td>
+      <td>عنصر</td>
+    </tr>
+    <tr>
+      <td>عنصر</td>
+      <td>عنصر</td>
+      <td>عنصر ما</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>لاحظ أن العنوان الغليظ ظهر (بشكل غليظ) لأننا وضعنا أسفله 3 شرطات <code class="highlighter-rouge">-</code> أو أكثر.</p>
+
+<h1 id="section-13">ملاحظات</h1>
+
+<ul>
+  <li>
+    <p>يمكن الكتابة بلغة html داخل لغة Markdown ، فلو وجدت أن هناك ما ينقص لغة markdown فلا بأس من استخدام أكواد html بداخل التنسيق</p>
+  </li>
+  <li>
+    <p>هل تريد عرض رموز ماركداون نفسها؟ أي كيف سأعرض مثلاً الرمز <code class="highlighter-rouge">|</code> ضمن الجدول؟ يمكن ذلك باستخدام الرمز <code class="highlighter-rouge">\</code> قبل رمز ماركداون المخصص.</p>
+  </li>
+  <li>
+    <p>هل تريد أمثلة؟ هناك الكثير، مثلاً الشروحات في هذا الموقع كلها بتنسيق ماركداون. اختر صفحة من <a href="http://mulham.github.io/tutorials">الدروس</a> مثلا واذهب للصفحة المصدر على <a href="https://github.com/mulham/mulham.github.io/tree/master/tutorials/_posts">github</a> وتعلم كيف كُتبت الصفحة.</p>
+  </li>
+  <li>
+    <p>تُستخدم لغة التنسيق CSS بجانب لغة ماركداون لإظهار المحتوى بالشكل المطلوب (لتلوين خانات جدول ماركدوان، لتلوين حقل الإقتباس، وما إلى ذلك ..) لو أعجبك الإظهار هنا، أي طريقة إظهار الأكواد والاقتباسات فيمكنك أخذ ملف التنسيق الخاص بالموقع الموجود <a href="https://github.com/mulham/mulham.github.io/tree/master/css/main.css">هنا</a></p>
+  </li>
+</ul>
+
+
+</div>
+			
+			</div><!-- /.container -->
+			<footer>
+
+
+	    		<table style="width:100%;">
+<tr>
+<td style="text-align: center; border: none;"><a href="#">الرجوع للأعلى</a></li>
+        	
+				</td><td style="text-align: center; border: none;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><img alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.</td>
+<td style="text-align: center; border: none;"><a href="mailto:mulham94@gmail.com">البريد الإلكتروني</a></td></tr></table>
+			</footer>
+		</body>
+	</html>
+

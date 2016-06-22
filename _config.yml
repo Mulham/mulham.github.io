@@ -8,7 +8,8 @@ defaults:
  values:
 
 encoding: "utf-8"
+paginate: 5
 paginate_path: /page:num
 excerpt_separator: <!--more-->
-gems: [jekyll-sitemap]
+gems: [jekyll-sitemap, jekyll-paginate]
 

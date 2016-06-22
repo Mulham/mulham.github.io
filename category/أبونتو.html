@@ -1,0 +1,18 @@
+---
+layout: default
+title: تصنيف|أبونتو
+---
+
+<h1>{{ page.title }}</h1>
+	<ul class="category">
+
+	  {% for post in site.posts %}
+			{% if post.category == "أبونتو" %}
+	    		<li><a href="{{ post.url }}" title="{{ post.title }}">				{{ post.title }}</a>
+				</li><br />
+			{% endif %}
+	  {% endfor %}
+
+
+
+	</ul>
