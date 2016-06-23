@@ -4,13 +4,254 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-06-23T01:17:33+03:00</updated>
+	<updated>2016-06-24T02:36:03+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>كيفية تنصيب مشاريع الوب الجاهزة</title>
+			<link href="http://mulham.github.io/installing-web-project-on-server"/>
+			<updated>2016-06-23T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//installing-web-project-on-server</id>
+			<content type="html">&lt;p&gt;سأقوم هنا بشرح كيفية تنصيب سكريبت جاهز (وورد بريس - جوملة - دروبال ..) على السيرفر المحلي localhost على منصة لينُكس وكذلك على الاستضافة، بالإضافة لحل أبرز المشاكل التي تعترض هذه العملية.&lt;/p&gt;
+
+&lt;p&gt;طبعاً تنصيب سكريبت على السيرفر المحلي يأتي عادة ﻷغراض تجريبية.&lt;/p&gt;
+
+&lt;p&gt;بالنسبة لتنصيب سكريبت على الاستضافة فيكون بنفس الخطوات مع اختلاف بسيط سوف أوضحه هنا. فلنبدأ!&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تنصيب السكريبت على السيرفر المحلي&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;تنصيب سكريبت على الإستضافة&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;مشاكل وحلول&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;للقراءة فقط&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#settingsphp&quot; id=&quot;markdown-toc-settingsphp&quot;&gt;لا يوجد ملف إعدادات settings.php&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#php&quot; id=&quot;markdown-toc-php&quot;&gt;تقييدات PHP&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بتحميل السكريبت المطلوب من الموقع الرسمي له.&lt;/p&gt;
+
+    &lt;p&gt;هناك العديد من مشاريع الوب الجاهزة، قد يكون أشهرها &lt;a href=&quot;https://wordpress.org/&quot;&gt;ووردبريس&lt;/a&gt; وهو للمدونات، وهناك &lt;a href=&quot;https://www.joomla.org/&quot;&gt;جملة&lt;/a&gt; (Joomla) للمواقع ويصلح أيضاً للمدونات، بالنسبة للمنتديات الحديثة فيوجد &lt;a href=&quot;https://vanillaforums.org/&quot;&gt;فانيللا&lt;/a&gt;، ولمواقع السؤال وجواب فـ &lt;a href=&quot;https://sourceforge.net/projects/pligg/&quot;&gt;بليج&lt;/a&gt; (pligg) ويوجد غيرهم الكثير بالطبع، إن سألتني عن الأفضل فأنا أقول &lt;a href=&quot;https://www.drupal.org/&quot;&gt;دروبال&lt;/a&gt;، وهو يصلح لأي شيئ! فبه خيارات للتخصيص لا حصر لها، وبما أنه كذلك، فهو أصعب للمبتدئين، إن كنت مبتدءاً في هذا المجال ولا تريد أن تجلب الألم لرأسك، فاستخدم المشاريع الأخرى التي ذكرتها وبحسب هدفك.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;الخطوات التالية ستختلف بحسب التنصيب على الإستضافة أو السيرفر المحلي&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;تنصيب السكريبت على السيرفر المحلي&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بفك الضغط عن الملف المُحمَّل وانقل المجلد الناتج لمجلد السيرفر المحلي: /var/www/html/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;افتح برنامج phpmyadmin وقم بإنشاء قاعدة بيانات جديدة : قم بالدخول لـ phpmyadmin باستعمال اسم المستخدم وكلمة المرور المنشأة عند تنزيل البرنامج ، ثم اضغط في القائمة العلوية على خيار databases ، اكتب اسم قاعدة البيانات المراد إنشاؤها (وليكن اسمها على اسم الكريبت المحمل) واضغط على زر create .&lt;/p&gt;
+
+    &lt;p&gt;للمزيد راجع : &lt;a href=&quot;/phpmyadmin&quot;&gt;إدارة قواعد البيانات باستخدام phpmyadmin&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أذهب لمجلد السكريبت في السيرفر المحلي: أدخل في المتصفح العنوان : 127.0.0.1/foldername ، مع استبدال foldername باسم المجلد الخاص بالسكريبت.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اتبع تعليمات التنصيب&lt;/p&gt;
+
+    &lt;p&gt;سيطلب منك معلومات عن اسم الموقع ووصفه كما تريد أن يظهر لمحركات البحث، وكذلك بريدك الإلكتروني لإرسال رسائل معلومات تتعلق بموقعك، واسم قاعدة البيانات التي أنشأتها، ومعلومات أخرى عن الموقع، بما في ذلك كلمة سر المدير. وطبعاً بعدها سيقوم تلقائياً بالتنصيب بعد التعرف على قاعدة البيانات بشكل صحيح، وسترى أخيراً موقعك جاهزاً للعمل! وعليك حينها الذهاب للوحة تحكم الوقع من خلال الرابط الذي سيعطيك إياه في نهاية عملية التنصيب، والبدء بالتخصيص وإضافة المحتوى.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;تنصيب سكريبت على الإستضافة&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم برفع المجلدات والملفات الناتجة بعد فك الضغط عن ملف المشروع إلى المجلد الرئيسي للموقع (htdocs)، أو إلى مجلد فرعي إن رغبت بذلك (إن كنت تريد وضع أكثر من مشروع أو برمجية في موقعك - غير مستحسن!)&lt;/p&gt;
+
+    &lt;p&gt;طبعاً الرفع يتم أسهل عن طريق بروتوكول ftp (راجع &lt;a href=&quot;/ftp&quot;&gt;الطريقة&lt;/a&gt; إن كنت جديداً في هذا المجال، &lt;em&gt;إنه أمر بسيط جداً&lt;/em&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اذهب للمتصفح وقم بالوصول لواجهة الاستضافة التي تتعامل معها، وهناك يجب أن ترى خيار إنشاء قاعدة بيانات MySQL (بالإنجليزي MySQL Database) اذهب لهذا الخيار وأنشئ قاعدة بيانات جديدة وذلك بكتابة اسمها والضغط على Ok أو Create أو ما شابه، وليكن اسم قاعدة البيانات باسم المشروع مثلاً.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الآن ما زلنا في المتصفح، افتح نافذة جديدة وأدخل عنوان موقعك (أو عنوان موقعك يليه اسم المجلد إن كنت رفعت السكريبت لمجلد فرعي، مثل: www.example.com/folder)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اتبع تعليمات التنصيب&lt;/p&gt;
+
+    &lt;p&gt;سيطلب منك معلومات عن اسم الموقع ووصفه كما تريد أن يظهر لمحركات البحث، وكذلك بريدك الإلكتروني لإرسال رسائل معلومات تتعلق بموقعك، واسم قاعدة البيانات التي أنشأتها، ومعلومات أخرى عن الموقع، بما في ذلك كلمة سر المدير. وطبعاً بعدها سيقوم تلقائياً بالتنصيب بعد التعرف على قاعدة البيانات بشكل صحيح، وسترى أخيراً موقعك جاهزاً للعمل! وعليك حينها الذهاب للوحة تحكم الوقع من خلال الرابط الذي سيعطيك إياه في نهاية عملية التنصيب، والبدء بالتخصيص وإضافة المحتوى.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;مشاكل وحلول&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;هذا القسم خاص في حال التنصيب على السيرفر المحلي وتحت منصة لينكس.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;للقراءة فقط&lt;/h2&gt;
+
+&lt;p&gt;قد يعرض لك السكريبت أثناء عملية التنزيل خطأ تفيد بأن الملفات للقراءة فقط و غير قابلة للكتابة.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt; افتح الطرفية Ctrl+Alt+T واكتب :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo groupadd conakyuser
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;بهذا تكون أنشأت مجموعة جديدة من المستخدمين، قم بإضافة مستخدمين لهذه المجموعة :&lt;/p&gt;
+
+&lt;p&gt;استبدل user1 باسمك الحالي على النظام (مكتوب في الطرفية قبل الـ @).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo usermod -a -G tomandruser user1
+	sudo usermod -a -G tomandruser admin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;الآن قم بإعطاء الصلاحية للمجموعة المنشأة. هذه الخطوة هي فقط التي ستحتاج لتكرارها لاحقاً عند كل عملية تنصيب سكريبت أو تغيير يدوي في ملفاته.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo chgrp -R conakyuser /var/www/html
+	sudo chmod -R 777 /var/www/html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;settingsphp&quot;&gt;لا يوجد ملف إعدادات settings.php&lt;/h2&gt;
+
+&lt;p&gt;هذه المشكلة غالباً ما تحصل مع سكريبت دروبال، قم بالذهاب للمسار الموجود به ملف الإعدادات الافتراضية default.settings.php ، إن كنت تنصب دروبال فسيكون الملف في المسار /var/www/html/foldername/sites/default .&lt;/p&gt;
+
+&lt;p&gt;الآن قم بإنشاء ملف جديد وسمه settings.php وافتح الملف default.settings.php وانسخ ما فيه والصقه في الملف المنشأ.&lt;/p&gt;
+
+&lt;h2 id=&quot;php&quot;&gt;تقييدات PHP&lt;/h2&gt;
+
+&lt;p&gt;قد يكون السكريبت الذي تنزله يحتاج لمتطلبات سيرفر أعلى من الإعدادات الافتراضية. فقد يطلب السكريبت ذاكرة تخزين php مؤقتة أكبر . حد أقصى لوقت الإدخال أكبر .. وما إلى ذلك.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt; اذهب لملف إعداد php في السيرفر المحلي . ستجده في المسار etc/php5/apache2 طبعاً باعتبار أن إصدار php المنزل هو الخامس وإصدار سيرفر أباتشي هو الثاني.&lt;/p&gt;
+
+&lt;p&gt;الآن افتح ملف php.ini وهنا تكمن جميع القيم التي قد يطلب السكريبت تغييرها. اقرأ رسالة الخطأ في السكريبت، سيعطيك ما يجب تغييره والقيمة التي يجب تغييرها له. أي ستجد في رسالة الخطأ مثل max_input_time وسيذكر بعدها قيمة عددية كـ 120.&lt;/p&gt;
+
+&lt;p&gt;قم بالبحث ضمن ملف php.ini على المتغير المطلوب وقم بتغيير القيمة بعد إشارة = للقيمة المطلوبة. احفظ الملف.&lt;/p&gt;
+
+&lt;p&gt;الآن يجب إعادة تشغيل سيرفر أباتشي ، للقيام بذلك نفذ الأمر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo service apache2 restart
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;أو الأمر التالي يقوم بنفس الغرض :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo restart apache2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;هل هناك نقص بالشرح؟ هل واجهتك مشكلة غير مذكورة هنا؟ الرجاء لا تتردد في طرح استفساراتك أو اقتراحاتك عبر مراسلتي.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>برنامج التحميل الأفضل إكستريم داونلود مانيجر</title>
+			<link href="http://mulham.github.io/xtreme-download-manager"/>
+			<updated>2016-06-23T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//xtreme-download-manager</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/xdm.png&quot; alt=&quot;لقطة برنامج إكستريم داونلود مانيجر&quot; title=&quot;لقطة برنامج إكستريم داونلود مانيجر&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;إكستريم داونلود مانيجر، البديل المجاني لبرنامج التحميل الشهير إنترنت داونلود مانيجر. وأعتقد أنه أفضل برنامج تحميل من الإنترنت.&lt;/p&gt;
+
+&lt;p&gt;برنامج Xtreme Download Manager عبارة عن برنامج جديد ومجاني تماماً ومفتوح المصدر.&lt;/p&gt;
+
+&lt;p&gt;البرنامج هذا يعتبر سريع في التحميل وغالباً يدعم الاستكمال، ويمكن من خلاله تحميل الملفات من كافة المواقع بما فيها الشهيرة منها كيوتيوب.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تحميل البرنامج&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;كيفية التحميل والإستكمال&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;تحميل الملفات&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;تحميل من اليوتيوب&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-4&quot; id=&quot;markdown-toc-section-4&quot;&gt;استكمال التحميل&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;تحميل البرنامج&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://xdman.sourceforge.net/xdm_4.0.exe&quot;&gt;تحميل البرنامج لنظام ويندوز&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;لتحميل البرنامج لنظام لينكس:&lt;/p&gt;
+
+    &lt;p&gt;البرنامج على اللينكس يتطلب تنصيب حزمة openjdk-7-jdk، لتنصيبها:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo add-apt-repository ppa:openjdk-r/ppa 
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;اضغط Enter عند الطلب. ثم نفذ الأمر&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get install openjdk-7-jdk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ثم تابع ..&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;الطريقة التالية باتت قديمة أو للإصدارات القديمة، انزل قليلاً للأسفل&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;فقط افتح التيرمينال واكتب الأوامر التالية:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo add-apt-repository ppa:noobslab/apps
+    sudo apt-get update
+    sudo apt-get install xdman
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;الطريقة المستخدمة حالياً:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;قم بتحميل الإصدار الأخير من &lt;a href=&quot;http://tenet.dl.sourceforge.net/project/xdman/xdman.deb&quot;&gt;هنا&lt;/a&gt; ثم نفذ الأوامر التالية على الطرفية:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	cd Downloads  #الانتقال للمجلد الذي يحوي الملف المُحمل
+	sudo dpkg -i xdman.deb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;بعد التنصيب (بعد تنصيب openjdk-7-jdk) قد تظهر رسائل خطأ من قبل البرنامج الذي يُنشئ تقارير الأخطاء على أبونتو، يمكنك حذف البرنامج بشكل عام فهو مُزعج وبلا فائدة!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get remove apport
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;الآن، لتنصيب إضافة برنامج إكستريم داونلود مانيجر لمتصفح الفايرفوكس افتح البرنامج ثم اذهب للمتصفح واكتب في شريط العناوين :&lt;/p&gt;
+
+&lt;p&gt;http://localhost:9614/xdmff.xpi&lt;/p&gt;
+
+&lt;p&gt;أو في الإصدار الحديث من البرنامج اضغط على File ثم Advanced Youtube Manager وذلك للتعرف على الفيديوهات المفتوحة على المتصفح، أغلق النافذة عند الإنتهاء من ذلك.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;كيفية التحميل والإستكمال&lt;/h1&gt;
+
+&lt;p&gt;في الواقع هناك خيارات كثيرة في البرنامج سأشرح بعضها وأهمها هنا وسأترك الباقي لك.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;تحميل الملفات&lt;/h2&gt;
+
+&lt;p&gt;لتحميل الملفات والتي تحوي لاحقة واضحة في الرابط (أي رابط جاهز ومباشر للملف) اذهب للبرنامج واضغط على قائمة File في الأعلى، ثم Add url، إذا قمت بنسخ الرابط في المتصفح فسترى الرابط جاهز هنا، فقط اضغط على Download.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;تحميل من اليوتيوب&lt;/h2&gt;
+
+&lt;p&gt;للتحميل من اليوتيوب انسخ رابط الفيديو ثم اذهب للبرنامج واضغط على File ثم Youtube Download ثم أدخل الرابط ثم Get Video! ، سوف يقوم البرنامج بتحميل روابط جميع الملفات المتعلقة بالفيديو (بحسب الدقة) ثم ستظهر قائمة مرتبة، أعلاها هي أعلى دقة للفيديو وأسفلها هي أخفض دقة، وطبعا سيتخلف الحجم بحسب الدقة المطلوبة، اختر الدقة التي تريدها ثم اضغط على Download&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;استكمال التحميل&lt;/h2&gt;
+
+&lt;p&gt;يمكن استكمال التحميل في هذا البرنامج (غالباً) ، ولكن قد تحتاج لتحديث الرابط، وخاصة عند التحميل من اليوتيوب، فيمكنك توقيف التحميل متى شئت واستكماله لاحقاً، لتحديث الرابط على اليوتيوب عليك بالعودة للموقع ونسخ رابط الفيديو الذي أردت تحميله ثم الذهاب للبرنامج و الضغط على file ثم Youtube Download ثم اختيار نفس الدقة التي بدأنا بتحميلها ثم الضغط على Download، ولكن أوقف هذا التحميل مباشرة، ثم في واجهة البرنامج الرئيسية سترى التحميل الجديد الذي أنشأته، اضغط عليه باليمين ثم copy url ، الآن اذهب للتحميل الذي تريد استكماله، اضغط علىيه باليمين ثم Refresh link ثم الصق الرابط في الحقل المحدد بالضغط على ctrl + V ، الآن اضغط على الملف نفسه باليمين ثم resume وسيبدأ بالاستكمال.&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<title>إعادة تنصيب أندرويد</title>
@@ -185,83 +426,6 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-</content>
-		</entry>
-	
-		<entry>
-			<title>كيفية تنصيب مشاريع الوب الجاهزة</title>
-			<link href="http://mulham.github.io/installing-web-project-on-server"/>
-			<updated>2016-06-22T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//installing-web-project-on-server</id>
-			<content type="html">&lt;h1 id=&quot;section&quot;&gt;تنصيب سكريبت على السيرفر المحلي - لينكس&lt;/h1&gt;
-
-&lt;p&gt;سأقوم هنا بشرح كيفية تنصيب سكريبت جاهز (وورد بريس - جوملة - دروبال ..) على السيرفر المحلي localhost بالإضافة لحل أبرز المشاكل التي تعترض هذه العملية.&lt;/p&gt;
-
-&lt;p&gt;طبعاً تنصيب سكريبت على السيرفر المحلي يأتي عادة ﻷغراض تجريبية .&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;تنصيب سكريبت على السيرفر المحلي&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بتحميل السكريبت المطلوب من الموقع الرسمي له. للتعرف على أبرز سكريبتات المشاريع الجاهزة ومواقعهم الرسمية ، راجع&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بفك الضغط عن الملف المحمل وانقل المجلد الناتج لمجلد السيرفر المحلي: /var/www/html/&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;افتح برنامج phpmyadmin وقم بإنشاء قاعدة بيانات جديدة : قم بالدخول لـ phpmyadmin باستعمال اسم المستخدم وكلمة المرور المنشأة عند تنزيل البرنامج ، ثم اضغط في القائمة العلوية على خيار databases ، اكتب اسم قاعدة البيانات المراد إنشاؤها (وليكن اسمها على اسم الكريبت المحمل) واضغط على زر create .&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;للمزيد راجع : إدارة قواعد البيانات باستخدام phpmyadmin&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;أذهب لمجلد السكريبت في السيرفر المحلي: أدخل في المتصفح العنوان : 127.0.0.1/flodername ، مع استبدال foldername باسم المجلد الخاص بالسكريبت.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اتبع تعليمات التنزيل .&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;مشاكل وحلول&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;قد يعرض لك السكريبت أثناء عملية التنزيل خطأ تفيد بأن الملفات للقراءة فقط و غير قابلة للكتابة.
- الحل: افتح الطرفية Ctrl+Alt+T واكتب :
-sudo groupadd conakyuser
-بهذا تكون أنشأت مجموعة جديدة من المستخدمين ، قم بإضافة مستخدمين لهذه المجموعة  :
-استبدل user1 باسمك الحالي على النظام (مكتوب في الطرفية قبل الـ @(. 
-sudo usermod -a -G tomandruser user1
-sudo usermod -a -G tomandruser admin&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;الآن قم بإعطاء الصلاحية للمجموعة المنشأة. هذه الخطوة هي فقط التي ستحتاج لتكرارها لاحقاً عند كل عملية تنصيب سكريبت.
-sudo chgrp -R conakyuser /var/www/html
-sudo chmod -R 777 /var/www/html&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;لا يوجد ملف إعدادات settings.php
-هذه المشكلة غالباً ما تحصل مع سكريبت دروبال ، قم بالذهاب للمسار الموجود به ملف الإعدادات الافتراضية default.settings.php ، إن كنت تنصب دروبال فسيكون الملف في المسار /var/www/html/foldername/sites/default . 
-الآن قم بإنشاء ملف جديد وسمه settings.php وافتح الملف default.settings.php وانسخ ما فيه والصقه في الملف المنشأ.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;تقييدات PHP&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;قد يكون السكريبت الذي تنزله يحتاج لمتطلبات سيرفر أعلى من الإعدادات الافتراضية. فقد يطلب السكريبت ذاكرة تخزين php مؤقتة أكبر . حد أقصى لوقت الإدخال أكبر .. وما إلى ذلك.&lt;/p&gt;
-
-&lt;p&gt;الحل: اذهب لملف إعداد php في السيرفر المحلي . ستجده في المسار /etc/php5/apache2 طبعاً باعتبار أن إصدار php المنزل هو الخامس وإصدار سيرفر أباتش هو الثاني.
-الآن افتح ملف php.ini وهنا تكمن جميع القيم التي قد يطلب السكريبت تغييرها. اقرأ رسالة الخطأ في السكريبت، سيعطيك ما يجب تغييره والقيمة التي يجب تغييرها له . أي ستجد في رسالة الخطأ مثل max_input_time وسيذكر بعدها قيمة عددية كـ 120.
-قم بالبحث ضمن ملف php.ini على المتغير المطلوب وقم بتغيير القيمة بعد إشارة = للقيمة المطلوبة . احفظ الملف.
-الآن يجب إعادة تشغيل سيرفر أباتش ، للقيام بذلك نفذ الأمر :
-sudo service apache2 restart
-أو الأمر التالي يقوم بنفس الغرض :
-sudo restart apache2&lt;/p&gt;
-
-&lt;p&gt;هل هناك نقص بالشرح ، هل واجهتك مشكلة غير مذكورة هنا . الرجاء لا تتردد في طرح استفساراتك أو اقتراحاتك ضمن التعليقات أدناه.&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -5257,6 +5421,94 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 &lt;p&gt;أنت الآن مستخدم اجتماعي وعضو بارز في مجتمع Github !&lt;/p&gt;
 
 &lt;p&gt;يمكنك الإطلاع على &lt;a href=&quot;keep-your-email-private&quot;&gt;الدرس الأخير&lt;/a&gt; إن أردت إخفاء عنوان بريدك الإلكتروني عن العامة.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>برنامج Jdownloader لتحميل الملفات على اللينكس</title>
+			<link href="http://mulham.github.io/jdownloader"/>
+			<updated>2015-02-15T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//jdownloader</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/jdownloader.jpg&quot; alt=&quot;برنامج جي داونلودر لتحميل الملفات على اللينكس&quot; title=&quot;برنامج جي داونلودر لتحميل الملفات على اللينكس&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;تم اكتشاف برنامج قد يكون أفضل من هذا، وهو &lt;a href=&quot;/xtreme-download-manager&quot;&gt;إكستريم داونلود مانيجر XDM&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;سوف أشرح هنا كيفية تنصيب برنامج جي داونلودر بديل برنامج إنترنت داونلود مانيجر على لينكس&lt;/p&gt;
+
+&lt;p&gt;في البداية يجب تنزيل إضافة لمتصفح الفايرفوكس وهي : &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/downloads/latest/220/addon-220-latest.xpi?src=flashgot.ownsite&quot;&gt;Flashgot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;الآن افتح الطرفية “terminal” واكتب فيها الأوامر التالية كل أمر على حده (أي اكتب السطر الأول أولا بعدها اضغط انتر … ثم السطر الثاني ..)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository ppa:jd-team/jdownloader
+
+	sudo apt-get update
+
+	sudo apt-get install jdownloader
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;بعد الانتهاء من التنزيل أغلق الطرفية وابحث عن البرنامج في قائمة البرامج “jdownloader” ستجده هناك، افتحه .. بعد الفتح سوف يقوم بعملية تحديث تلقائية ستستغرق بعض الوقت وبعدها بإمكانك تحميل الملفات عن طريقه، والصورة التالية ستوضح ذلك&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/falshgot-jdownloader-Screenshot.png&quot; alt=&quot;كيفية تنزيل الملفات عبر فلاش جوت وجي داونلودر&quot; title=&quot;كيفية تنزيل الملفات عبر فلاش جوت وجي داونلودر&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ومبروك عليك ツ&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية استخدام برنامج utorrent على اللينكس</title>
+			<link href="http://mulham.github.io/utorrent"/>
+			<updated>2015-01-11T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//utorrent</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/utorrent.png&quot; alt=&quot;يوتورنت على اللينكس&quot; title=&quot;يوتورنت على اللينكس&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;من المعلوم أن هناك بدائل أخرى لبرنامج utorrent على اللينكس، ولكن ألا يمكن استخدام البرنامج نفسه؟ بالطبع يمكن، وذلك من خلال واجهة وب محلية، أي عبر المتصفح، إليكم الطريقة&lt;/p&gt;
+
+&lt;p&gt;في البداية قم بتحميل البرنامج من الموقع الرسمي له من &lt;a href=&quot;http://www.utorrent.com/downloads/linux&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;الآن بعد تنزيل الملف “utorrent-server-3.0-ubuntu-10.10-27079.tar.gz” قم باستخراجه .
+مع العلم أن الملف يجب أن يوضع في المسار التالي : home &amp;gt; downloads&lt;/p&gt;
+
+&lt;p&gt;الآن بعد الاستخراج ستجد الملف “utorrent-server-v3_0” افتح لترى بداخله الملف “ utserver”&lt;/p&gt;
+
+&lt;p&gt;انقر على هذا الملف باليمين ثم اذهب للخصائص “ Properties”  ثم اذهب للتصاريح “permissions” وتأكد من وضع علامة على مربع السماح لتنفيذ الملف كبرنامج.&lt;/p&gt;
+
+&lt;p&gt;الآن قم بفتح الملف “utserver” .. لم يظهر شيئ ؟
+حسناً .. قم بفتح أي متصفح انترنت لديك واذهب للرابط التالي : http://localhost:8080/gui
+اسم المستخدم أو “username” هو : admin
+ولا يوجد كلمة سر، أي دع هذا الحقل فارغاً … ومبروك عليك ツ&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>برنامج VideoCacheView</title>
+			<link href="http://mulham.github.io/videocacheview"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//videocacheview</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/videocacheview.jpg&quot; alt=&quot;برنامج فيديو كاش فيو&quot; title=&quot;برنامج فيديو كاش فيو لحفظ ملفات الفيديو المشاهدة&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;وظيفة البرنامج : حفظ ملفات الفيديو التي تمت مشاهدتها من الإنترنت مباشرة دون الحاجة لإعادة التحميل.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;حجم البرنامج : 150 كيلو بايت&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الشرح : كما في الصورة&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/videocacheview1.jpg&quot; alt=&quot;شرح برنامج فيديو كاش فيو&quot; title=&quot;شرح برنامج فيديو كاش فيو&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ملاحظة : يجب أولا أن تكون تمت مشاهدة مقطع الفيديو بالكامل ويجب الانتباه لحفظ ملف الفيديو بواسطة البرنامج قبل إغلاق صفحة الإنترنت التي تمت مشاهدة الفيديو منها لأنه عند إغلاقها يحذف الملف المؤقت للفيديو ..&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;رابط التحميل &lt;a href=&quot;https://docs.google.com/open?id=0B7_D8z8IYW_naEREVmZKT0o0Z0U&quot;&gt;https://docs.google.com/open?id=0B7_D8z8IYW_naEREVmZKT0o0Z0U&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
 		</entry>
 	
