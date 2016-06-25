@@ -129,6 +129,14 @@
 <lastmod>2015-02-15T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>/git-basics</loc>
+<lastmod>2015-01-12T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>/design-flash-file</loc>
+<lastmod>2015-01-11T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>/utorrent</loc>
 <lastmod>2015-01-11T00:00:00+02:00</lastmod>
 </url>
@@ -150,6 +158,9 @@
 </url>
 <url>
 <loc>/about/request</loc>
+</url>
+<url>
+<loc>/test</loc>
 </url>
 <url>
 <loc>/urls</loc>

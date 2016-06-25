@@ -4,7 +4,7 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2016-06-24T02:36:03+03:00</updated>
+	<updated>2016-06-25T21:02:52+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -1588,7 +1588,7 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;وكما ترى، لقد بدأنا السكريبت بفحص السيرفر $_SERVER ، بعد التأكد من أن المستخدم لديه صلاحيات المدير، والمطلوبة لإنشاء تصنيف، يتم عرض النموذج إذا لم يتم تعبئته وإرساله سابقاً. وإذا تم إرساله، يتم حفظ القيم. مرة أخرى ، يتم تحضير تعليمة SQL وتنفيذها.&lt;/p&gt;
+&lt;p&gt;وكما ترى، لقد بدأنا السكريبت بفحص السيرفر $_SERVER ، بعد التأكد من أن المستخدم لديه صلاحيات المدير، والمطلوبة لإنشاء تصنيف، يتم عرض النموذج إذا لم يتم تعبئته وإرساله سابقاً، وإذا تم إرساله، يتم حفظ القيم. مرة أخرى ، يتم تحضير تعليمة SQL وتنفيذها.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/5.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-6&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-6&quot; /&gt;&lt;/p&gt;
 
@@ -2148,7 +2148,7 @@
 
 &lt;h1 id=&quot;section-18&quot;&gt;النهاية&lt;/h1&gt;
 
-&lt;p&gt;الآن وبعد قراءتك لهذا الشرح ستكون لديك المعرفة الكافية لبناء منتدى، أتمنى أن يكون الشرح واضحاً وأنك لم تعترك مع أية مشكلات في طريقك .. إذا كان الأمر كذلك فأنا جاهز للرد على أسئلتك ونموذج التعليقات أدناه بانتظارك .&lt;/p&gt;
+&lt;p&gt;الآن وبعد قراءتك لهذا الشرح ستكون لديك المعرفة الكافية لبناء منتدى، أتمنى أن يكون الشرح واضحاً وأنك لم تعترك مع أية مشاكل في طريقك ..&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -5455,6 +5455,179 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;ومبروك عليك ツ&lt;/p&gt;
 
+</content>
+		</entry>
+	
+		<entry>
+			<title>أساسيات التعامل مع Git</title>
+			<link href="http://mulham.github.io/git-basics"/>
+			<updated>2015-01-12T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//git-basics</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/git.png&quot; alt=&quot;جِت-git&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;ماهي جِت؟&lt;/h1&gt;
+
+&lt;p&gt;تسمح جِت لمجموعة من الأشخاص بالعمل سويةً، وباستخدام نفس الملفات، والتعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها.&lt;/p&gt;
+
+&lt;p&gt;لنفترض أن هناك شركة مؤلفة من صاحب الشركة وعدة موظفين، جميعهم يعملون على تطوير برنامج ما، وذلك عبر موقع Github وهو موقع مبني على git، يبدأ الموظف بتحميل ملفات البرنامج المعمول عليه من الموقع (من السيرفر على الإنترنت) ويصبح لديه نسخة محلية للملفات (على جهازه الخاص)، والموظفين الآخرين كل شخص منهم لديه نسخة محلية، وصاحب الشركة كذلك.&lt;/p&gt;
+
+&lt;p&gt;الآن، إذا قام أحد الموظفين بإجراء تغييرات على أحد الملفات، فسيقوم برفعها على الملفات الأساسية على الإنترنت، ولكنه يجب أن يتأكد أولاً إذا قام أحد غيره بالتعديل وإن كان هناك تعديلات تتعارض مع تعديلاته، كل هذا يتم خطوة خطوة من خلال الأوامر، وهذا ما سنتعلمه هنا، ورغم وجود واجهة للمستخدمين للتعامل مع جِت، إلا أن استخدام الأوامر يبقى هو الأساس (وهو ليس بالأمر الصعب ..)&lt;/p&gt;
+
+&lt;h1 id=&quot;git&quot;&gt;تنصيب Git&lt;/h1&gt;
+
+&lt;p&gt;لتنصيب git على أنظمة لينكس ، ويندوز ، ماك .. راجع الشرح &lt;a href=&quot;/github/intro#git&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;ملاحظة :&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;إنشاء حزمة جديدة :&lt;/h1&gt;
+
+&lt;p&gt;حزمة يعني مجموعة ملفات نعمل عليها، كما في المثال السابق فالحزمة هي ملفات البرنامج التي تعمل الشركة على تطويره.&lt;/p&gt;
+
+&lt;p&gt;إنشاء حزمة يعني في مثالنا أنك أنت صاحب العمل والآن تقوم بوضع حجر الأساس!&lt;/p&gt;
+
+&lt;p&gt;قم بإنشاء مجلد جديد على جهازك واذهب لمسار المجلد في التيرمينال من خلال الأمر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	cd folder/path
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;طبعا مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;folder/path&lt;/code&gt; بمسار المجلد.&lt;/p&gt;
+
+&lt;p&gt;الآن ، ولإنشاء حزمة جديدة نفذ الأمر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;هل هذا صعب؟&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;الوصول لحزمة :&lt;/h1&gt;
+
+&lt;p&gt;هنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git clone /path/to/repository 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;هذا هو الشكل العام للأمر، استبدل username باسمك على جِتهب والـ /path/to/repository بمسار الحزمة على جتهب، مثلاً لتحميل حزمة هذا الموقع (والذي هو موجود كحزمة على جتهب) سوف أكتب:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/mulham/mulham.github.io&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;طريقة العمل :&lt;/h1&gt;
+
+&lt;p&gt;(طريقة العمل هذه للفهم النظري، وليست مهمة للتطبيق العملي)&lt;/p&gt;
+
+&lt;p&gt;إن حزمتك المحلية مؤلفة من ثلاث “شجرات” مختزنة من قبل git. الأولى هي المجلد الذي نعمل ضمنه ، والذي يحوي على ملفات الحزمة. و الثانية هي ملف ال index والذي نتعامل معه كمسرح العمل. وأخيراً الرأس Head والذي يشير لآخر تعديل قمت به.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/trees.png&quot; alt=&quot;شرح مبدأ عمل git&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section-4&quot;&gt;إضافة وتعديل :&lt;/h1&gt;
+
+&lt;p&gt;إذاً بعد إنشاء حزمة على جهازك الخاص أو تحميلها من الإنترنت لجهازك، ستقوم الآن بالتعديل على ملفات الحزمة ثم رفع هذه التعديلات للحزمة الأساسية على الإنترنت.&lt;/p&gt;
+
+&lt;p&gt;لإضافة التغييرات التي قمت بها إلى خشبة المسرح، استخدم الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add &amp;lt;filename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;filename&amp;gt;&lt;/code&gt; باسم الملف أو المسار ثم اسم الملف، إذا أردت إضافة كل شيئ، ضع نجمة &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; بدل اسم الملف:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add * 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;أو إذا أردت إضافة جميع الملفات ذات الصيغة المحددة، أي مثلاً التي تكون بلاحقة html، فاكتب:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add *.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;على العموم للسهولة يمكن دائماً استخدام الأمر الثاني أي إضافة كل شيئ.&lt;/p&gt;
+
+&lt;p&gt;الآن لتنفيذ هذه التعديلات (أو لنقل للسهولة لإعطاء رسالة لتوضيح سبب أو محتوى التعديل - الخطوة إجبارية) استخدم الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;Commit message&quot; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;commit message&lt;/code&gt; بين قوسين، أي مثلاً &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;modify&quot;&lt;/code&gt; هنا أعطيت رسالة بأنني قمت بتعديل ما.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;لأفضل استخدام، اجعل هذه الرسالة تعبر بوضوح عن التغييرات التي أجريتها، فالرسالة ستظهر على الإنترنت، وعند مراجعتك لأرشيف التغييرات لاحقاً ستُبين لك تسلسل العمليات وتوضح لك الأمور إن كانت مكتوبة بشكل جيد.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;كل هذا مازلنا نعمل محلياً، بقيت لدينا الخطوة الأخيرة أو الأمر الأخير وهو رفع التعديلات للحزمة الموجودة على الإنترنت.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-5&quot;&gt;إرسال التغييرات :&lt;/h1&gt;
+
+&lt;p&gt;لإرسال التغييرات التي أجريناها إلى الحزمة البعيدة على الإنترنت، نفذ الأمر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;حيث &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; هو اسم مجلد الحزمة و &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; اسم الفرع (branch) الذي تريد إرسال التغييرات إليه.&lt;/p&gt;
+
+&lt;p&gt;الجزء &lt;code class=&quot;highlighter-rouge&quot;&gt;-u&lt;/code&gt; من الأمر هو لحفظ الفرع الموجود على الجهاز المحلي (origin) والموجود على الإنترنت (master)، أي أنك ستكتب هذا الأمر مرة واحدة فقط، أما لاحقاً فستكتب لرفع تعديلاتك التالي فقط:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;section-6&quot;&gt;عرض الإختلاف&lt;/h1&gt;
+
+&lt;p&gt;لقد قلت لك في السطر الأول من هذا الشرح أن جِت تسمح بـ “&lt;em&gt;التعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;إذا لقد قمت أنت بالتعديل على أحد الملفات، يجب أولاً (وإن كنت جزء من فريق يعمل على تطوير الحزمة ولست لوحدك) بالاتصال بالحزمة الأساسية الموجودة على الإنترنت ومعرفة إن كان أحدهم قام بالتعديل على نفس الملف وإن كان هناك تعارضات، كل هذا بالأمر:&lt;/p&gt;
+
+&lt;h1 id=&quot;section-7&quot;&gt;روابط خارجية&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;لقد قام الأخ وليد بعمل &lt;a href=&quot;https://www.arabicgit.com/git-cheat-sheet/&quot;&gt;ورقة&lt;/a&gt; واحدة تتضمن أهم أوامر جِت للرجوع إليها عند الحاجة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;كما قام موقع codeschool (التجاري) بعمل &lt;a href=&quot;https://try.github.io/levels/1/challenges/1&quot;&gt;شرح&lt;/a&gt; مُبسط مجاني لتعلم أوامر جِت (بالإنجليزي).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-8&quot;&gt;اقرأ أيضاً&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/github/intro&quot;&gt;سلسلة دروس جِت هَب&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/markdown&quot;&gt;أساسيات لغة ماركداون&lt;/a&gt;، حيث أن موقع جتهب يعتمد على هذه اللغة التنسيقية في نموذج التعليقات وغيره، كما أنك ستحتاج هذه اللغة التنسيقية البسيطة إذا أردت &lt;a href=&quot;/github-pages&quot;&gt;استضافة موقعك على جِتهَب&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>بالفيديو|كيفية تصميم إعلان/موقع تفاعلي متحرك Flash</title>
+			<link href="http://mulham.github.io/design-flash-file"/>
+			<updated>2015-01-11T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//design-flash-file</id>
+			<content type="html">&lt;p&gt;شاهد كيفية تصميم واجهة فلاشية لموقع وب أو كإعلان تفاعلي حيث يكون الملف الناتج بصيغة swf أو كصورة gif، ولكن الصيغة الأولى أفضل حيث تكون ذات حجم أقل وكذلك يمكن التفاعل معها، أي الضغط على زر معين أو إظهار تأثيرات معينة عند المرور بالفأرة على جزء من الشكل.&lt;/p&gt;
+
+&lt;p&gt;الجزء الأول (7:09) دقيقة&lt;/p&gt;
+
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;
+&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/uH7owZEVf_k/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/uH7owZEVf_k?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/uH7owZEVf_k?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
+
+&lt;p&gt;الجزء الثاني (5:21) دقيقة&lt;/p&gt;
+
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/TG_QZ-5n_48/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/TG_QZ-5n_48?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/TG_QZ-5n_48?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
+
+&lt;p&gt;مع ملاحظة خطأ بسيط في هذا الفيديو وهو أنه لحذف keyframe نضغط shift+F5 وليس shift+F6&lt;/p&gt;
+
+&lt;p&gt;الجزء الأخير (8:51) دقيقة&lt;/p&gt;
+
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/0YsvuigGpnQ/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/0YsvuigGpnQ?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/0YsvuigGpnQ?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
+&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: blue;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
 </content>
 		</entry>
 	

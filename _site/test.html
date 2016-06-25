@@ -10,7 +10,7 @@
 
 
 
-			<title>تصنيف|أبونتو</title>
+			<title></title>
 			<!-- link to main stylesheet -->
 			
 		</head>
@@ -27,89 +27,29 @@
 			</nav>
 			<div class="container">
 			
-			<h1>تصنيف|أبونتو</h1>
-	<ul class="category">
-
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	    		<li><a href="/installing-ubuntu-touch" title="تنصيب أبونتو على الأجهزة اللوحية والجوالات">				تنصيب أبونتو على الأجهزة اللوحية والجوالات</a>
-				</li><br />
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-			
-	  
-
-
-
-	</ul>
+			<script type="text/javascript">
+function httpGet(theUrl)
+{
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            return xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET", theUrl, false );
+    xmlhttp.send();    
+}
+  document.write(httpGet("http://localhost:4000/index.html"));
+</script>
 			
 			</div><!-- /.container -->
 			<footer>
