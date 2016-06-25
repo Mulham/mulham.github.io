@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/css/main.css">
 
-<meta name="description" content="شرح مبسط لاستخدام GIt وأهم الأوامر التي تلزم للاستخدامات الأساسية." />
+<meta name="description" content="شرح مبسط لاستخدام Git وأهم الأوامر التي تلزم للاستخدامات الأساسية." />
 
 
 
@@ -44,6 +44,24 @@
 <div class="post">
   <p><img src="/assets/git.png" alt="جِت-git" /></p>
 
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">ماهي جِت؟</a></li>
+  <li><a href="#git" id="markdown-toc-git">تنصيب Git</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">إنشاء حزمة جديدة</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">الوصول لحزمة</a></li>
+  <li><a href="#section-3" id="markdown-toc-section-3">طريقة العمل</a></li>
+  <li><a href="#section-4" id="markdown-toc-section-4">إضافة وتعديل</a></li>
+  <li><a href="#section-5" id="markdown-toc-section-5">إرسال التغييرات</a></li>
+  <li><a href="#section-6" id="markdown-toc-section-6">عرض الإختلاف</a></li>
+  <li><a href="#section-7" id="markdown-toc-section-7">أوامر أخرى</a>    <ul>
+      <li><a href="#section-8" id="markdown-toc-section-8">معرفة الحالة</a></li>
+      <li><a href="#section-9" id="markdown-toc-section-9">الأفرع</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-10" id="markdown-toc-section-10">روابط خارجية</a></li>
+  <li><a href="#section-11" id="markdown-toc-section-11">اقرأ أيضاً</a></li>
+</ul>
+
 <h1 id="section">ماهي جِت؟</h1>
 
 <p>تسمح جِت لمجموعة من الأشخاص بالعمل سويةً، وباستخدام نفس الملفات، والتعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها.</p>
@@ -56,9 +74,7 @@
 
 <p>لتنصيب git على أنظمة لينكس ، ويندوز ، ماك .. راجع الشرح <a href="/github/intro#git">هنا</a>.</p>
 
-<p>ملاحظة :</p>
-
-<h1 id="section-1">إنشاء حزمة جديدة :</h1>
+<h1 id="section-1">إنشاء حزمة جديدة</h1>
 
 <p>حزمة يعني مجموعة ملفات نعمل عليها، كما في المثال السابق فالحزمة هي ملفات البرنامج التي تعمل الشركة على تطويره.</p>
 
@@ -80,7 +96,7 @@
 
 <p>هل هذا صعب؟</p>
 
-<h1 id="section-2">الوصول لحزمة :</h1>
+<h1 id="section-2">الوصول لحزمة</h1>
 
 <p>هنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:</p>
 
@@ -92,7 +108,7 @@
 
 <p><code class="highlighter-rouge">git clone https://github.com/mulham/mulham.github.io</code></p>
 
-<h1 id="section-3">طريقة العمل :</h1>
+<h1 id="section-3">طريقة العمل</h1>
 
 <p>(طريقة العمل هذه للفهم النظري، وليست مهمة للتطبيق العملي)</p>
 
@@ -100,7 +116,7 @@
 
 <p><img src="/assets/trees.png" alt="شرح مبدأ عمل git" /></p>
 
-<h1 id="section-4">إضافة وتعديل :</h1>
+<h1 id="section-4">إضافة وتعديل</h1>
 
 <p>إذاً بعد إنشاء حزمة على جهازك الخاص أو تحميلها من الإنترنت لجهازك، ستقوم الآن بالتعديل على ملفات الحزمة ثم رفع هذه التعديلات للحزمة الأساسية على الإنترنت.</p>
 
@@ -138,7 +154,7 @@
 
 <p>كل هذا مازلنا نعمل محلياً، بقيت لدينا الخطوة الأخيرة أو الأمر الأخير وهو رفع التعديلات للحزمة الموجودة على الإنترنت.</p>
 
-<h1 id="section-5">إرسال التغييرات :</h1>
+<h1 id="section-5">إرسال التغييرات</h1>
 
 <p>لإرسال التغييرات التي أجريناها إلى الحزمة البعيدة على الإنترنت، نفذ الأمر :</p>
 
@@ -154,13 +170,97 @@
 </code></pre>
 </div>
 
+<p>(سيطلب منك في كل عملية رفع اسم المستخدم وكلمة المرور الخاصين بك على موقع جِتهَب)</p>
+
 <h1 id="section-6">عرض الإختلاف</h1>
 
 <p>لقد قلت لك في السطر الأول من هذا الشرح أن جِت تسمح بـ “<em>التعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها</em>”</p>
 
 <p>إذا لقد قمت أنت بالتعديل على أحد الملفات، يجب أولاً (وإن كنت جزء من فريق يعمل على تطوير الحزمة ولست لوحدك) بالاتصال بالحزمة الأساسية الموجودة على الإنترنت ومعرفة إن كان أحدهم قام بالتعديل على نفس الملف وإن كان هناك تعارضات، كل هذا بالأمر:</p>
 
-<h1 id="section-7">روابط خارجية</h1>
+<div class="highlighter-rouge"><pre class="highlight"><code>	git pull
+</code></pre>
+</div>
+
+<p>في حال وجود أي تعارضات فستُعرض لك حينها ملف بملف، سطر بسطر، ويمكنك عندها دمج أو حل هذه التعارضات، ثم تقوم بعدها برفع تغييراتك باستخدام <code class="highlighter-rouge">git add</code> و <code class="highlighter-rouge">git commit</code>.</p>
+
+<h1 id="section-7">أوامر أخرى</h1>
+
+<h2 id="section-8">معرفة الحالة</h2>
+
+<p>يمكنك دائماً معرفة حالة الحزمة، أي عرض التعديلات (إن وُجدت) التي قمت بها والغير موجودة على خشبة المسرح، أي التي لم تضيفها بعد لتُرفع للإنترنت</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	git status
+</code></pre>
+</div>
+
+<p>هذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.</p>
+
+<h2 id="section-9">الأفرع</h2>
+
+<p>هناك العديد من الأوامر المفيدة، ومنها مثلاً لاستعادة تغييرات لزمن محدد أو حالة محددة. ولكن ربما أكثرهم إفادة هي الأفرع. لنقل مثلاً اننا كفريق نعمل على تطوير برنامج للترجمة، وقد خطرت لك فكرة رائعة للبرنامج ولكنها تحتاج لإجراء تغييرات أساسية على البرنامج، أي على الكود الموجود حالياً، وقد تتخوف من عمل ذلك، ولكن في الحقيقة لا داعي للقلق، يمكنك إنشاء فرع جديد من الحزمة!</p>
+
+<p>أولاً يمكنك تفقد الأفرع الموجودة حالياً على جهازك</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	git branch
+</code></pre>
+</div>
+
+<p>وسيكون الناتج مثلاً:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	master*
+</code></pre>
+</div>
+
+<p>أي أنه يوجد حالياً فرع واحد فقط يحوي الحزمة نفسها. وعلامة النجمة تعني بأنه الفرع الذي تعمل به حالياً، الآن لإنشاء فرع جديد:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	git branch perfectdict
+</code></pre>
+</div>
+
+<p>وبالتالي تكون قد أنشأت نسخة لجميع الملفات الموجودة في الفرع الأصلي master. لتنتقل الآن لفرع الجديد الذي أنشأته</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	git checkout perfectdict
+</code></pre>
+</div>
+
+<p>يمكنك إعادة إظهار الأفرع الموجودة حالياً</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	&gt; git branch
+	master
+	perfectdict*
+</code></pre>
+</div>
+
+<p>كما تلاحظ فقد عرض لنا فرعين، والنجمة موضوعة على الفرع الجديد أي أنك الآن ضمنه.</p>
+
+<p>الآن يمكنك إجراء التغييرات التي تريد وكيفما تريد دون قلق فأنت الآن ضمن فرع مستقل ولكن تُحدث الفوضى في الحزمة أو الفرع الأساسي.</p>
+
+<p>بعد انتهاءك من العمل على الفرع الجديد، يمكنك الانتقال للفرع الأصلي ودمج التغييرات</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	&gt; git checkout master
+	&gt; git branch
+	master*
+	perfectdict
+</code></pre>
+</div>
+
+<p>هنا انتقلنا للفرع الأساسي master وتأكدنا بوجود التجمة بجواره أي أننا فعلاً ضمنه الآن. لنقم بالدمج</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	git merge perfectdict
+</code></pre>
+</div>
+
+<p>وبهذا تم دمج الكود في الفرع الذي أنشأته <code class="highlighter-rouge">perfectdict</code> مع الكود الأصلي في الحزمة <code class="highlighter-rouge">master</code>. كل هذا مازال محلياً، لرفع التغييرات الآن إلى الإنترنت:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	&gt; git pull
+	&gt; git add *
+	&gt; git commit -m "added new cool feature!"
+	&gt; git push
+</code></pre>
+</div>
+
+<h1 id="section-10">روابط خارجية</h1>
 
 <ul>
   <li>
@@ -171,7 +271,7 @@
   </li>
 </ul>
 
-<h1 id="section-8">اقرأ أيضاً</h1>
+<h1 id="section-11">اقرأ أيضاً</h1>
 
 <ul>
   <li>
@@ -188,9 +288,9 @@
 
 <div class="share-page">
     شارك الصفحة على &larr;
-    <a href="https://plus.google.com/share?url=/git-basics" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
-    <a href="https://twitter.com/intent/tweet?text=أساسيات التعامل مع Git&url=/git-basics&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
-    <a href="https://facebook.com/sharer.php?u=/git-basics" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=https://mulham.github.io/git-basics" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
+    <a href="https://twitter.com/intent/tweet?text=أساسيات التعامل مع Git&url=https://mulham.github.io/git-basics&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
+    <a href="https://facebook.com/sharer.php?u=https://mulham.github.io/git-basics" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
 
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <g:plusone></g:plusone>

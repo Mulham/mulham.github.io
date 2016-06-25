@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-06-25T21:02:52+03:00</updated>
+	<updated>2016-06-25T22:04:40+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -5465,6 +5465,24 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 			<id>http://mulham.github.io//git-basics</id>
 			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/git.png&quot; alt=&quot;جِت-git&quot; /&gt;&lt;/p&gt;
 
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;ماهي جِت؟&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#git&quot; id=&quot;markdown-toc-git&quot;&gt;تنصيب Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;إنشاء حزمة جديدة&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;الوصول لحزمة&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;طريقة العمل&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-4&quot; id=&quot;markdown-toc-section-4&quot;&gt;إضافة وتعديل&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-5&quot; id=&quot;markdown-toc-section-5&quot;&gt;إرسال التغييرات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-6&quot; id=&quot;markdown-toc-section-6&quot;&gt;عرض الإختلاف&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-7&quot; id=&quot;markdown-toc-section-7&quot;&gt;أوامر أخرى&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-8&quot; id=&quot;markdown-toc-section-8&quot;&gt;معرفة الحالة&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-9&quot; id=&quot;markdown-toc-section-9&quot;&gt;الأفرع&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-10&quot; id=&quot;markdown-toc-section-10&quot;&gt;روابط خارجية&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-11&quot; id=&quot;markdown-toc-section-11&quot;&gt;اقرأ أيضاً&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;section&quot;&gt;ماهي جِت؟&lt;/h1&gt;
 
 &lt;p&gt;تسمح جِت لمجموعة من الأشخاص بالعمل سويةً، وباستخدام نفس الملفات، والتعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها.&lt;/p&gt;
@@ -5477,9 +5495,7 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;لتنصيب git على أنظمة لينكس ، ويندوز ، ماك .. راجع الشرح &lt;a href=&quot;/github/intro#git&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;ملاحظة :&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;إنشاء حزمة جديدة :&lt;/h1&gt;
+&lt;h1 id=&quot;section-1&quot;&gt;إنشاء حزمة جديدة&lt;/h1&gt;
 
 &lt;p&gt;حزمة يعني مجموعة ملفات نعمل عليها، كما في المثال السابق فالحزمة هي ملفات البرنامج التي تعمل الشركة على تطويره.&lt;/p&gt;
 
@@ -5501,7 +5517,7 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;هل هذا صعب؟&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;الوصول لحزمة :&lt;/h1&gt;
+&lt;h1 id=&quot;section-2&quot;&gt;الوصول لحزمة&lt;/h1&gt;
 
 &lt;p&gt;هنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:&lt;/p&gt;
 
@@ -5513,7 +5529,7 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/mulham/mulham.github.io&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;طريقة العمل :&lt;/h1&gt;
+&lt;h1 id=&quot;section-3&quot;&gt;طريقة العمل&lt;/h1&gt;
 
 &lt;p&gt;(طريقة العمل هذه للفهم النظري، وليست مهمة للتطبيق العملي)&lt;/p&gt;
 
@@ -5521,7 +5537,7 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;&lt;img src=&quot;/assets/trees.png&quot; alt=&quot;شرح مبدأ عمل git&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;section-4&quot;&gt;إضافة وتعديل :&lt;/h1&gt;
+&lt;h1 id=&quot;section-4&quot;&gt;إضافة وتعديل&lt;/h1&gt;
 
 &lt;p&gt;إذاً بعد إنشاء حزمة على جهازك الخاص أو تحميلها من الإنترنت لجهازك، ستقوم الآن بالتعديل على ملفات الحزمة ثم رفع هذه التعديلات للحزمة الأساسية على الإنترنت.&lt;/p&gt;
 
@@ -5559,7 +5575,7 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;كل هذا مازلنا نعمل محلياً، بقيت لدينا الخطوة الأخيرة أو الأمر الأخير وهو رفع التعديلات للحزمة الموجودة على الإنترنت.&lt;/p&gt;
 
-&lt;h1 id=&quot;section-5&quot;&gt;إرسال التغييرات :&lt;/h1&gt;
+&lt;h1 id=&quot;section-5&quot;&gt;إرسال التغييرات&lt;/h1&gt;
 
 &lt;p&gt;لإرسال التغييرات التي أجريناها إلى الحزمة البعيدة على الإنترنت، نفذ الأمر :&lt;/p&gt;
 
@@ -5575,13 +5591,97 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;p&gt;(سيطلب منك في كل عملية رفع اسم المستخدم وكلمة المرور الخاصين بك على موقع جِتهَب)&lt;/p&gt;
+
 &lt;h1 id=&quot;section-6&quot;&gt;عرض الإختلاف&lt;/h1&gt;
 
 &lt;p&gt;لقد قلت لك في السطر الأول من هذا الشرح أن جِت تسمح بـ “&lt;em&gt;التعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها&lt;/em&gt;”&lt;/p&gt;
 
 &lt;p&gt;إذا لقد قمت أنت بالتعديل على أحد الملفات، يجب أولاً (وإن كنت جزء من فريق يعمل على تطوير الحزمة ولست لوحدك) بالاتصال بالحزمة الأساسية الموجودة على الإنترنت ومعرفة إن كان أحدهم قام بالتعديل على نفس الملف وإن كان هناك تعارضات، كل هذا بالأمر:&lt;/p&gt;
 
-&lt;h1 id=&quot;section-7&quot;&gt;روابط خارجية&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git pull
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;في حال وجود أي تعارضات فستُعرض لك حينها ملف بملف، سطر بسطر، ويمكنك عندها دمج أو حل هذه التعارضات، ثم تقوم بعدها برفع تغييراتك باستخدام &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-7&quot;&gt;أوامر أخرى&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;معرفة الحالة&lt;/h2&gt;
+
+&lt;p&gt;يمكنك دائماً معرفة حالة الحزمة، أي عرض التعديلات (إن وُجدت) التي قمت بها والغير موجودة على خشبة المسرح، أي التي لم تضيفها بعد لتُرفع للإنترنت&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;هذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;الأفرع&lt;/h2&gt;
+
+&lt;p&gt;هناك العديد من الأوامر المفيدة، ومنها مثلاً لاستعادة تغييرات لزمن محدد أو حالة محددة. ولكن ربما أكثرهم إفادة هي الأفرع. لنقل مثلاً اننا كفريق نعمل على تطوير برنامج للترجمة، وقد خطرت لك فكرة رائعة للبرنامج ولكنها تحتاج لإجراء تغييرات أساسية على البرنامج، أي على الكود الموجود حالياً، وقد تتخوف من عمل ذلك، ولكن في الحقيقة لا داعي للقلق، يمكنك إنشاء فرع جديد من الحزمة!&lt;/p&gt;
+
+&lt;p&gt;أولاً يمكنك تفقد الأفرع الموجودة حالياً على جهازك&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git branch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;وسيكون الناتج مثلاً:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	master*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;أي أنه يوجد حالياً فرع واحد فقط يحوي الحزمة نفسها. وعلامة النجمة تعني بأنه الفرع الذي تعمل به حالياً، الآن لإنشاء فرع جديد:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git branch perfectdict
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;وبالتالي تكون قد أنشأت نسخة لجميع الملفات الموجودة في الفرع الأصلي master. لتنتقل الآن لفرع الجديد الذي أنشأته&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git checkout perfectdict
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;يمكنك إعادة إظهار الأفرع الموجودة حالياً&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&amp;gt; git branch
+	master
+	perfectdict*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;كما تلاحظ فقد عرض لنا فرعين، والنجمة موضوعة على الفرع الجديد أي أنك الآن ضمنه.&lt;/p&gt;
+
+&lt;p&gt;الآن يمكنك إجراء التغييرات التي تريد وكيفما تريد دون قلق فأنت الآن ضمن فرع مستقل ولكن تُحدث الفوضى في الحزمة أو الفرع الأساسي.&lt;/p&gt;
+
+&lt;p&gt;بعد انتهاءك من العمل على الفرع الجديد، يمكنك الانتقال للفرع الأصلي ودمج التغييرات&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&amp;gt; git checkout master
+	&amp;gt; git branch
+	master*
+	perfectdict
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;هنا انتقلنا للفرع الأساسي master وتأكدنا بوجود التجمة بجواره أي أننا فعلاً ضمنه الآن. لنقم بالدمج&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git merge perfectdict
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;وبهذا تم دمج الكود في الفرع الذي أنشأته &lt;code class=&quot;highlighter-rouge&quot;&gt;perfectdict&lt;/code&gt; مع الكود الأصلي في الحزمة &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. كل هذا مازال محلياً، لرفع التغييرات الآن إلى الإنترنت:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&amp;gt; git pull
+	&amp;gt; git add *
+	&amp;gt; git commit -m &quot;added new cool feature!&quot;
+	&amp;gt; git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;section-10&quot;&gt;روابط خارجية&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -5592,7 +5692,7 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-8&quot;&gt;اقرأ أيضاً&lt;/h1&gt;
+&lt;h1 id=&quot;section-11&quot;&gt;اقرأ أيضاً&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;

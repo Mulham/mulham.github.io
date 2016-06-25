@@ -45,7 +45,7 @@ code, tt{margin:0 2px;direction:ltr;text-align:left;padding:0 5px;white-space:no
 pre code{direction:ltr;text-align:left;margin:0;padding:0;white-space:pre;border:none;background:transparent;}
 pre{color:#14b803;background-color:#414141;direction:ltr;text-align:left;font-size:14px;line-height:27px;max-height:250px;overflow:auto;padding:6px 10px;border-radius:3px;text-align:left;}
 pre code, pre tt{font-weight:bold;float:left;text-align:left;font-family:FreeMono;}
-#markdown-toc::before{font-family:'Noto Kufi Arabic', 'Helvetica', 'Arial', 'Sans-Serif';content:"Ø§Ù„Ù…Ø­ØªÙˆÙŠØ§Øª";font-weight:bold;}
+#markdown-toc::before{font-family:'Noto Kufi Arabic', 'Helvetica', 'Arial', 'Sans-Serif';content:"المحتويات";font-weight:bold;}
 //Using numbers instead of bullets for listing
 #markdown-toc ul{list-style:decimal;}
 #markdown-toc{border:1px solid #aaa;padding:2em;list-style:decimal;display:inline-block;}
