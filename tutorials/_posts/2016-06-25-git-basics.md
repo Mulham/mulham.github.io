@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-01-12
+date: 2016-06-25
 title: أساسيات التعامل مع Git
 description: شرح مبسط لاستخدام Git وأهم الأوامر التي تلزم للاستخدامات الأساسية. 
 type: tutorial
