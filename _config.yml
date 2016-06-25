@@ -7,7 +7,6 @@ defaults:
  scope:
  path: "" # an empty string here means all files in the project
  values:
-baseurl: https://mulham.github.io
 encoding: "utf-8"
 paginate: 5
 paginate_path: /page:num
