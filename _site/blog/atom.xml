@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-06-27T19:30:58+03:00</updated>
+	<updated>2016-06-27T22:13:20+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -5757,6 +5757,70 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 		</entry>
 	
 		<entry>
+			<title>ماينارد|واجهة جديدة وأنيقة لأنظمة لينكس</title>
+			<link href="http://mulham.github.io/maynard"/>
+			<updated>2015-01-11T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//maynard</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/maynard.png&quot; alt=&quot;صورة لواجهة ماينارد على أنظمة لينكس&quot; title=&quot;صورة لواجهة ماينارد على أنظمة لينكس&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;بيئة سطح مكتب جديدة وخفيفة مبنية على ويلاند قيد التطوير لتوزريعة رسابيري باي ، ولكنها ستكون متاحة لتوزيعات لينكس الأخرى أيضاً .&lt;/p&gt;
+
+&lt;p&gt;تحتوي واجهة ماينارد على شريط جانبي صغير على يسار الشاشة ، الشريط يحتوي على الاختصارات السريعة للتحكم بالصوت والتشغيل و قائمة منبثقة لجميع التطبيقات المنزلة .&lt;/p&gt;
+
+&lt;p&gt;ماينارد واجهة قيد التطوير حالياً حيث تفتقد لبعض الأزرار والمزايا . ولكن طريقة العمل والإظهارات جميلة وواعدة .. كما يظهر الفيديو التالي :&lt;/p&gt;
+
+&lt;center&gt;&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/irrv8OA30Bs&quot; width=&quot;420&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
+
+&lt;p&gt;رغم أن الواجهة يتم تطويرها لراسبيري باي ولكن هذا لا يعني أنه لا يمكن استخدامها في توزيعات لينكس الأخرى مثل ابونتو ، فقط تحتاج معرفة صغيرة في كيفية تنزيل البرمجيات من الكود المصدري .&lt;/p&gt;
+
+&lt;p&gt;العملية مشروحة بشكل كامل في الرابط في الأسفل (باللغة الإنجليزية )&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/raspberrypi/maynard/wiki/Develop-on-a-computer&quot;&gt;كيفية تنصيب ماينارد على أبونتو&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>أضف فانوس رمضان المتحرك لمدونتك</title>
+			<link href="http://mulham.github.io/fanus-ramadan"/>
+			<updated>2014-06-18T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//fanus-ramadan</id>
+			<content type="html">&lt;center&gt;&lt;img src=&quot;/assets/beautiful-islamic-ramadan-widget-for-blogger.png&quot; title=&quot;أضف فانوس رمضان المتحرك لمدونتك&quot; alt=&quot;أضف فانوس رمضان المتحرك لمدونتك&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;هنا تجد طريقة إضافة فانوس رمضان المتحرك أعلى يسار الصفحة في مدونات بلوجر، كما يمكن إضافته في أي موقع كان.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;اذهب للوحة تحكم بلوجر&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اذهب لصفحة “القالب” ثم اضغط على زر “تحرير HTML”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ابحث بالضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+f&lt;/code&gt; عن السمة &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;انسخ والصق الكود التالي &lt;strong&gt;فوقها&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;     &lt;span class=&quot;c&quot;&gt;&amp;lt;!--  Ramadan Lantern taken from Mulham.github.io --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;align=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;center&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;table&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;border=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;0&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;cellpadding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;0&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;cellspacing=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;0&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;900&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;0&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;900&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;float:top right; position:absolute; overflow:visible; left:45px; top:0px; height:192px; width:144px z-index: 9999;&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;object&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;border=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;0&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;classid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;clsid:D27CDB6E-AE6D-11CF-96B8-444553540000&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;codebase=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;144&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;obj2&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;192&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;param&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;movie&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;http://netoopscodes.googlecode.com/svn/branches/swf/ramzan-hanging-lanterns.swf&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;param&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;quality&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;High&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;param&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;wmode&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;transparent&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;embed&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;144&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;obj2&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pluginspage=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;http://www.macromedia.com/go/getflashplayer&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;quality=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;High&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;http://netoopscodes.googlecode.com/svn/branches/swf/ramzan-hanging-lanterns.swf&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;application/x-shockwave-flash&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;192&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wmode=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;transparent&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;/object&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--  End Ramadan Lantern taken from Mulham.github.io --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;اضغط على حفظ النموذج ثم شاهد النتيجة مباشرة في مدونتك.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
 			<title>برنامج VideoCacheView</title>
 			<link href="http://mulham.github.io/videocacheview"/>
 			<updated>2014-06-16T00:00:00+03:00</updated>
@@ -5782,6 +5846,64 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 &lt;ul&gt;
   &lt;li&gt;رابط التحميل &lt;a href=&quot;https://docs.google.com/open?id=0B7_D8z8IYW_naEREVmZKT0o0Z0U&quot;&gt;https://docs.google.com/open?id=0B7_D8z8IYW_naEREVmZKT0o0Z0U&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية إضافة شريط مهام مشابه لويندوز في أبونتو</title>
+			<link href="http://mulham.github.io/tint-ubuntu-taskbar"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//tint-ubuntu-taskbar</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/00_lead_image_taskbar.jpg&quot; alt=&quot;شريط مهام أبونتو tint2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;إلى كل من يفتقد لشريط المهام في واجهة يونيتي Unity على أبونتو، إليك هذه الطريقة البسيطة جدأ لإضافة شريط مهام للنوافذ المفتوحة وذلك عبر أداة تدعى Tint2&lt;/p&gt;
+
+&lt;p&gt;كل ما عليك فعله هو تنصيب الأداة وجعلها تعمل تلقائياً عند بدء التشغيل .&lt;/p&gt;
+
+&lt;h1 id=&quot;tint2&quot;&gt;تنصيب أداة Tint2&lt;/h1&gt;
+
+&lt;p&gt;يمكنك القيام بذلك إما عن طريق الـ Synaptic أو قم بفتح الطرفية (terminal) من القائمة أو بالضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt; واكتب الأمر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get install tint2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;أدخل كلمة السر الخاصة بك ، واضغط y عند السؤال&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/02_do_you_want_to_continue1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;إضافة الأداة لبرامج بدء التشغيل :&lt;/h1&gt;
+
+&lt;p&gt;بعد الانتهاء من التنصيب أغلق التيرمينال ، ثم اذهب لقائمة البحث الخاصة بيونيتي وابحث عن “startup app” وقم بفتحه&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/05_opening_startup_apps.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;اضغط على زر Add لإضافة الأداة للبرامج التي تبدأ مع بدء التشغيل&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/06_clicking_add.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;الآن اكتب في حقل command العبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;tint2&lt;/code&gt; والباقي اختياري&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/07_entering_startup_app_info.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;اضغط على Add ثم إغلاق (close)، الآن قم بتسجيل الخروج من أبونتو  Log out ثم سجل الدخول من جديد  لترى الشريط كما في الصورة&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/09_taskbar.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;إذا قررت لاحقاً بأنك لا تحتاج لبدء الشريط عند كل دخول فكل ما عليك فعله هو إلغاء علامة الصح بجانب اسم الأداة في قائمة البرامج startup application، أي بإمكانك فقط إلغاء بدءها مع بدء التشغيل بإزالة العلامة دون حذف الأداة من القائمة.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>قهوة تصنع من فضلات الفيل</title>
+			<link href="http://mulham.github.io/stange-coffee"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//stange-coffee</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/elephant-coffee.jpg&quot; style=&quot;float: left&quot; alt=&quot;قهوة تصنع من فضلات الفيل&quot; title=&quot;قهوة تصنع من فضلات الفيل&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;هذه القهوة التي يطلق عليها “ بلاك ايفوري” تستخرج من فضلات الفيل ويبلغ سعر الكيلو غرام الواحد منها حوالي 1100 دولار وبالتالي تعد أغلى قهوة في العالم !
+وقد نقلت وسائل الإعلام البريطانية ان  “بلايك دينكين” و هو مقاول كندي والبالغ من العمر 42 عام، يقوم بإنتاج هذه القهوة ، ويقول إن السر وراء مذاق قهوته الفريدة هو أن قطيع الفيلة في تايلاند يأكل حبوب القهوة ثم يخرجها مع برازه مما يساهم في التخلص من الطعم المر الذي يوجد فيها. ويضيف دينكين قائلاً:
+عندما يأكل الفيل حبوب القهوة تنتج معدته حمضاً يفكك البروتين في الحبوب، وهو المسؤول عن مذاقها المر، لينتج في الأخر قهوة ذات مذاق سلس للغاية..&lt;/p&gt;
 </content>
 		</entry>
 	
