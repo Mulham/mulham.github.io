@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-06-26T00:30:47+03:00</updated>
+	<updated>2016-06-27T19:22:16+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -253,7 +253,7 @@
     &lt;p&gt;&lt;a href=&quot;/github/intro&quot;&gt;سلسلة دروس جِت هَب&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/markdown&quot;&gt;أساسيات لغة ماركداون&lt;/a&gt;، حيث أن موقع جتهب يعتمد على هذه اللغة التنسيقية في نموذج التعليقات وغيره، كما أنك ستحتاج هذه اللغة التنسيقية البسيطة إذا أردت &lt;a href=&quot;/github-pages&quot;&gt;استضافة موقعك على جِتهَب&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/markdown&quot;&gt;أساسيات لغة ماركداون&lt;/a&gt;، حيث أن موقع جتهب يعتمد على هذه اللغة التنسيقية في نموذج التعليقات وغيره، كما أنك ستحتاج هذه اللغة التنسيقية البسيطة إذا أردت استضافة موقعك على جِتهَب.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -5782,6 +5782,86 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 &lt;ul&gt;
   &lt;li&gt;رابط التحميل &lt;a href=&quot;https://docs.google.com/open?id=0B7_D8z8IYW_naEREVmZKT0o0Z0U&quot;&gt;https://docs.google.com/open?id=0B7_D8z8IYW_naEREVmZKT0o0Z0U&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية وضع تردد معين في برنامج كافيين</title>
+			<link href="http://mulham.github.io/kaffiene"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//kaffiene</id>
+			<content type="html">&lt;p&gt;كافيين (Kaffeine) هو برنامج يعمل على نظام لينكس لمشاهدة قنوات الدش (الستلايت)، يمكن تنصيبه من مدير الحِزَم لديك.&lt;/p&gt;
+
+&lt;p&gt;سأشرح هنا كيفية وضع تردد معين في هذا برنامج (حيث أنه لايحوي خيار بشكل افتراضي لعمل ذلك).
+العملية بسيطة جدا .. فقط قم بفتح الطرفية أو التيرمينال واكتب الأمر التالي :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	gedit ~/.kde/share/apps/kaffeine/scanfile.dvb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ولا تنسى كتابة sudo قبل الأمر اذا كنت على أبونتو أو التوزيعات المبينة عليها أو yum اذا كنت في فيدورا وهكذا ..&lt;/p&gt;
+
+&lt;p&gt;الآن ابحث عن اسم القمر المطلوب في النافذة الجديدة وضع التردد الذي تريد أسفله.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سيارة البيضة من هيونداي</title>
+			<link href="http://mulham.github.io/hyundai-egg-car"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//hyundai-egg-car</id>
+			<content type="html">&lt;p&gt;&lt;img alt=&quot;سيارة البيضة من هيونداي&quot; src=&quot;/assets/hyundai-e4u-idea.jpg&quot; style=&quot;float: left;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;السيارات أصبحت منتشرة بكثرة في هذه الأوقات .. لذلك وللفت أنظار الناس لسيارة غير اعتيادية فأنت تحتاج لسيارة مثل هيوندا E4U.&lt;/p&gt;
+
+&lt;p&gt;إن عربة E4U بمقعد واحد يمكنها الدوران بجميع الاتجاهات وبسهولة.&lt;/p&gt;
+
+&lt;p&gt;تسير هذه العربة على عجلة دائرية أمامية واثنتان خلفيتان للدعم.&lt;/p&gt;
+
+&lt;p&gt;يتم التحكم بدفع هذه العربة عن طريق دواسات القدم والتي تتسبب في إمالة العجلة الأمامية وبالتالي تحريكها .&lt;/p&gt;
+
+&lt;p&gt;وكعرض تجريبي في معرض السيارات تحركت العربة بحوالي سرعة المشي ، ووفقا لموقع “نيكي تيك-أون” الياباني والذي زودنا بالصورة التالية للعربة وذكر بأنها نتاج قسم التصميم المتقدم لشركة هيوندايي&lt;/p&gt;
+
+&lt;center&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JvykS988XWw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
+
+&lt;p&gt;إن القبعة الشفافة هي في الحقيقة سقف البيضة.&lt;/p&gt;
+
+&lt;p&gt;وأضاف الموقع أن الحرف الأول من اسم السيارة “E” يمثل البيض egg والتطور evolution و البيئة ecology&lt;/p&gt;
+
+&lt;p&gt;صور أخرى للسيارة&lt;/p&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;https://mulham.github.io/images/assets/egg-car.jpg&quot; title=&quot;Image 1 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/images/assets/egg-car.jpg&quot; alt=&quot;placeholder image 1&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;https://mulham.github.io/images/assets/egg-car2.jpg&quot; title=&quot;Image 2 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/images/assets/egg-car2.jpg&quot; alt=&quot;placeholder image 2&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;https://mulham.github.io/images/assets/egg-car-3.jpg&quot; title=&quot;Image 3 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/images/assets/egg-car-3.jpg&quot; alt=&quot;placeholder image 3&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;https://mulham.github.io/images/assets/egg-car-4.jpg&quot; title=&quot;Image 4 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/images/assets/egg-car-4.jpg&quot; alt=&quot;placeholder image 4&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Hyundai-egg-car-gallery
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
 </content>
 		</entry>
 	
