@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+<link rel="icon" href="/favicon.png">
+<meta name="google" content="notranslate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+
+
+			<title>كيفية معرفة التطبيقات التي تستهلك سرعة الإنترنت على اللينكس</title>
+			<!-- link to main stylesheet -->
+			
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	                	<li><a href="/">الرئيسية</a></li>
+						<li><a href="/blog">المدونة</a></li>
+						<li><a href="/tutorials">دروس</a></li>
+						<li><a href="/about/request">اطلب ترجمة</a></li>
+						<li><a href="/urls">روابط مفيدة</a></li>
+						<li><a href="/about">عن الموقع</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			<h1>كيفية معرفة التطبيقات التي تستهلك سرعة الإنترنت على اللينكس</h1>
+<p class="meta">18 Jun 2014
+
+
+
+
+</p>
+
+
+
+
+
+<div class="post">
+  <p>كثيراً ما يكون هناك تطبيقات غير ظاهرة تعمل في الخلفية وتستهلك سرعة الإنترنت مما يؤدي لبطئ ملحوظ أثناء تصفحنا للإنترنت .. والآن سنتعرف على طريقة من عدة طرق لمعرفة التطبيقات المتصلة بالإنترنت على نظام لينكس ، والطريقة هذه برأيي هي الأفضل حيث أنها تظهر التطبيقات المتصلة والسرعة التي تستهلكها حيث سيظهر التطبيق الذي يستهلك سرعة الإنترنت بشكل كبير أولاً ، وبعد معرفته يمكننا إغلاقه من مدير العمليات system monitor</p>
+
+<p>أولا يجب تنزيل التطبيق nethogs والذي يقوم بذلك من خلال الأمر :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    sudo apt-get install nethogs 
+</code></pre>
+</div>
+
+<p>ثم لمشاهدة التطبيقات المتصلة بالإنترنت نكتب :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    sudo nethogs &lt;interface&gt;
+</code></pre>
+</div>
+
+<p>مع استبدال <code class="highlighter-rouge">&lt;interface&gt;</code> بالواجهة التي تتصل من خلالها بالإنترنت ، فإذا كنت تتصل سلكياً بالإنترنت استبدل <code class="highlighter-rouge">&lt;interface&gt;</code> بـ <code class="highlighter-rouge">eth0</code> ، واذا كنت تتصل لا سلكياً استبدلها بـ <code class="highlighter-rouge">wlan0</code> ،(لمشاهدة جميع الواجهات الموجودة في الجهاز اكتب الأمر: <code class="highlighter-rouge">sudo ifconfig</code> ) .</p>
+
+<p>وبعد مشاهدة التطبيقات اذا كان هناك تطبيق يستهلك سرعة النت وأردت إغلاقة اذهب الى قائمة البرامج وابحث عن
+ system monitor ، ستجد تحت تبويب processes أو العمليات جميع التطبيقات المفتوحة وهي مرتبة أبجدياً ، ابحث عن التطبيق الذي تود إغلاقة ثم انقر على End process أو إنهاء العملية .</p>
+
+<p><strong>ملاحظة:</strong> لإغلاق تطبيق nethogs المفتوح على التيرمينال فقط اضغط 
+ctrl + C  ، ثم أغلق التيرمينال</p>
+
+</div>
+
+
+<div class="share-page">
+    إن أعجبك الشرح فيرجى مشاركته &larr;
+    <a href="https://plus.google.com/share?url=https://mulham.github.io/know-apps-slow-internet-linux" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
+    <a href="https://twitter.com/intent/tweet?text=كيفية معرفة التطبيقات التي تستهلك سرعة الإنترنت على اللينكس&url=https://mulham.github.io/know-apps-slow-internet-linux&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
+    <a href="https://facebook.com/sharer.php?u=https://mulham.github.io/know-apps-slow-internet-linux" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+</div>
+
+
+<br />
+			
+			</div><!-- /.container -->
+			<footer>
+
+
+	    		<table style="width:100%;">
+<tr>
+<td style="text-align: center; border: none;"><a href="#">الرجوع للأعلى</a></li>
+        	
+				</td><td style="text-align: center; border: none;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><img alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.</td>
+<td style="text-align: center; border: none;"><a href="mailto:mulham94@gmail.com">البريد الإلكتروني</a></td></tr></table>
+			</footer>
+		</body>
+	</html>
+

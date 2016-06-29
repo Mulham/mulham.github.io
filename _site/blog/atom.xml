@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-06-27T22:13:20+03:00</updated>
+	<updated>2016-06-29T01:34:02+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -4442,7 +4442,49 @@
 
 &lt;p&gt;عند فتح جدول ما ستتمكن من مشاهدة الحقول التي يحويها ، بضغطك على المربع بجوار أحد صفوف الجدول ستتمكن من القيام بالعمليات عليه كتحريره والمزيد من الأيقونات في الأسفل ..&lt;/p&gt;
 
-&lt;h1 id=&quot;section-4&quot;&gt;لمزيد من المعلومات ..&lt;/h1&gt;
+&lt;h1 id=&quot;section-4&quot;&gt;أخذ نسخة احتياطية&lt;/h1&gt;
+
+&lt;p&gt;من المستحسن جداً أخذ نسخة احتياطية لقواعد البيانات على الأقل مرة في الشهر، فقد تحتاج لاستعادة البيانات المحتواة في النسخ الاحتياطية.&lt;/p&gt;
+
+&lt;p&gt;على افتراض أنك قمت بالذهاب لـ phpMyAdmin وأنك في قاعدة البيانات المراد أخذ نسخة احتياطية لها ..&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط على زر Export في الأعلى&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أشر للمربع بجوار Save as File&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أدخل اسم الملف للنسخة الاحتياطية ، وليكن اسم قاعدة البيانات مثلاً والتاريخ&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اختر Zipped بجوار Compression&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط على Go&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section-5&quot;&gt;استعادة نسخة احتياطية&lt;/h1&gt;
+
+&lt;p&gt;على افتراض أن لديك ملف النسخة الاحتياطية وأنك في قاعدة البيانات التي تريد استرجاع النسخة الاحتياطية إليها ..&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط على زر Import في الأعلى&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط على Choose.. واختر ملف النسخة الاحتياطية من جهازك&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط على GO&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;يجب أن تكون الآن في عملية الاستعادة، تذكر دائماً كلما احتوت النسخة الاحتياطية على بيانات أكثر، كلما أخذت عملية الاستعادة وقتاً أطول&lt;/p&gt;
+
+&lt;h1 id=&quot;section-6&quot;&gt;لمزيد من المعلومات ..&lt;/h1&gt;
 
 &lt;p&gt;هذه مقالة مختصرة جداً تغطي أساسيات phpMyAdmin ، إذا أردت المزيد من المعلومات والتعلم أكثر يمكنك قراءة الوثائق التالية (بالإنكليزي)
 &lt;a href=&quot;http://wiki.phpmyadmin.net/pma/Articles#English&quot;&gt;http://wiki.phpmyadmin.net/pma/Articles#English&lt;/a&gt;&lt;/p&gt;
@@ -5163,6 +5205,109 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 		</entry>
 	
 		<entry>
+			<title>ثلاث إجراءات للسيطرة على الشبكة المحلية</title>
+			<link href="http://mulham.github.io/control-local-network"/>
+			<updated>2016-06-18T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//control-local-network</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/control-local-network.jpg&quot; alt=&quot;كيفية السيطرة على الشبكة المحلية&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;في هذه المشاركة أضع بين أيديكم عدة طرق للسيطرة على الشبكة المحلية (طبعاً يجب أن تكون أنت مدير الشبكة حتى تتمكن من القيام بذلك) وذلك من خلال:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;تحديد سرعة الإرسال والإستقبال لبعض المستخدمين على الشبكة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;حجب بعض المواقع عن المستخدمين على الشبكة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;معرفة المواقع التي يتم الدخول إليها&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;تحديد سرعة الإرسال والإستقبال لبعض المستخدمين على الشبكة&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;للقيام بذلك قم بالدخول إلى صفحة الراوتر (المودم) وفي أغلب الأحيان ستجد ضمن قائمة “Advanced Settings” صفحة “Traffic Control” اذهب إليها واضغط على Enable .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;طبعا ستجد مربع باسم “Egress Total Rate” وهو سرعة الرفع أي الإرسال، يفضل هنا أن تضعها كلها أي تكتب في هذا المربع نفس الرقم المكتوب على يمينه بالرمادي وذلك لإعطاء السرعة بالكامل لكافة الأجهزة وبعدها نحدد السرعة لمستخدمين محددين.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أيضاً ستجد مربع باسم “Ingress Total Rate” وهو سرعة الإستقبال أي التحميل. أيضا قم بوضعها كاملة كما هي في المربع على يمينه.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الآن اذهب إلى الصفحة التالية أسفل هذه الصفحة في القائمة وهي “Traffic Control Rules” اضغط على Add ، سيتوجب عليك إدخال ال IP الداخلي لمستخدم معين لتحديد السرعة له ، من أين أعرف الـ IP ؟&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;لمعرفة المستخدمين المتصلين والـ IP الداخلي لكل متصل اذهب إلى أول خيار في القائمة الرئيسية وهو “Device Info” ثم اذهب لصفحة ARP ستجد جدول مكتوب به عنوان الماك لكل جهاز والـ IP الداخلية الحالية له . طبعا يتوجب عليك العلم المسبق بكل ماك ﻷي جهاز يتنمي .. إذا لم تكن تعرف مسبقا ، فقط عند أو تشغيل للراوتر اذهب إلى هذه الصفحة ستكون ربما فقط انت المتصل .. وبالتالي ستعرف عنوان الماك الخاص بك .. وبعدها راقب من سيكون المتصل التالي وانسخ عنوان الماك الخاص به وهكذا .. أيضا يمكنك معرفة ذلك بالذهاب إلى جهاز كل شخص وأخذ عنوان الماك منه .&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;الـ IP الداخلية تتغير عند كل تشغيل للراوتر وبالتالي يتوجب عليك دائماً الذهاب لصفحة ARP وإعادة تحديد السرعات حسب الآيبيهات الجديدة.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الآن وبعد أن عرفنا الآي بي لكل جهاز نعود لصفحة “Traffic Control Rules”  ثم  Add ونضع الآي بي المحدد في الحقلين المسميان “IP Range” وذلك لتحديد السرعة لمستخدم واحد ، او نضع مدى واسع من الآيبيهات ليتم تحديدها لمجموعة مستخدمين مرة واحدة . بعد ذلك ندخل ال Port Range ، الافتراضي هو 80 ، أي اذا لم تكن متقدم في هذه الأمور فقط أكتب 80 في الحقلين ، ثم في مربع الـ Protocol اختر All ثم حدد مدى السرعة في مربع الـ Egress أي الإرسال ومربع الـ Ingress أي الاستقبال ، فمثلا إذا أردنا إعطاء ربع السرعة فقط لمستخدم معين واذا كان لدينا سرعة الإرسال 256 فسوف ندخل 64 في هذا الحقل ، وسرعة الإستقبال بالتالي ستكون 512 سندخل 128 لتحديد ربع السرعة أيضا للاستقبال (على سبيل المثال ) . ونفس الشيئ إذا أردنا تحديد السرعة لمستخدمين آخرين فقط نضغط على Add وندخل المطلوب . وطبعا لا ننسى ان نضغط على Enable لكل نطاق IP ليتم تفعيل تحديد السرعة لهذا المستخدم.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;حجب بعض المواقع عن المستخدمين على الشبكة&lt;/h1&gt;
+
+&lt;p&gt;إن أفضل خدمة برأيي تمكنك من حجب بعض فئات المواقع ومعرفة المواقع التي يتم الدخول إليها هي &lt;a href=&quot;http://www.opendns.com/&quot;&gt;OpenDNS&lt;/a&gt;  حيث تمكنك هذه الخدمة بحجب بعض فئات المواقع مثل المواقع الإباحية - مواقع السبام (الاختراق والتي تحتوي خدع ﻷجل زرع فيروسات بجهازك) - المواقع التي تحتوي على عنف .. وما إلى ذلك حيث تحتوي عدد كبير من التصانيف تختار ما شئت منهم للحجب ليحجب لك كل المواقع التي تتعلق بهذا التصنيف حيث تحتوي هذه الخدمة على قاعدة ضخمة جدا من المواقع التي تضمن لك حجب جميع المواقع تقريبا المتعلقة بالتصنيف المختار .&lt;/p&gt;
+
+&lt;p&gt;لاستخدام هذه الخدمة اذهب إلى الموقع وصفحة فتح حساب مجاني من &lt;a href=&quot;http://www.opendns.com/home-internet-security/&quot;&gt;هنا&lt;/a&gt;
+اضغط على اليسار على زر GET STARTED أسفل Parental Controls&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/opendns1.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-1&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ستفتح لك صفحة جديدة .. اضغط أيضا على اليسار على زر SIGN UP NOW أسفل OpenDNS Home لإنشاء حساب مجاني .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/opendns2.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-2&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ثم املأ الحقول على اليمين وبالنسبة للمربع الأخير “Where will you use this account?” اختر الخيار الثاني “Household”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/opendns3.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-3&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ثم اضغط على Continue لإنشاء الحساب واتبع التعليمات حيث سيتم إرسال رسالة لبريدك الإلكتروني لتفعيله في الحساب ..
+الآن سنحتاج لربط شبكتنا بالخدمة وذلك عن طريق وضع الـ DNS الخاص بالخدمة في الراوتر لدينا .. للقيام بذلك نذهب لصفحة الراوتر ثم أسفل Advanced Settings سنجد DNS نذهب لهذه الصفحة وإذا كان مربع “Auto DNS Server” مؤشر عليه نزيل الإشارة ونقوم بالتأشير على “ Use the following Static DNS IP address:” ثم ندخل هذه الإعدادات في كل حقل على الترتيب :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Primary DNS server: 208.67.222.222
+Secondary DNS server: 208.67.220.220
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ثم نضغط على Apply/Save&lt;/p&gt;
+
+&lt;p&gt;الآن نذهب إلى لوحة التحكم الخاصة بنا على موقع OpenDNS من &lt;a href=&quot;http://dashboard.opendns.com/&quot;&gt;هنا&lt;/a&gt;  ، نسجل الدخول إذا لم نفعل من قبل ، ثم نذهب إلى الإعدادات Settings&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/opendns4.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-4&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;وتحت قائمة Your networks نضغط على رقم الـ IP الخاص بنا لنجد قائمة Web Content Filtering&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/opendns5.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-5&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;أفضل خيار هو “Moderate” ليكون الحجب بشكل متوسط أي فقط المواقع السيئة والإباحية وما إلى ذلك ، ولكن أيضاً يمكننا اختيار ما نشاء من التصنيفات من خلال الخيار “Custom” ثم نؤشر على التصنيف الذي نرغب بحجبه ثم نضغط على الزر في الأسفل Apply ، سيحتاج التطبيق لثلاث دقائق لكي يتم حفظ الإعدادات في السيرفر وبعدها ستكون خاصية الحجب مفعلة .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; إن تطبيق الخيارات التي حددتها يتطلب إعلام السيرفر أي موقع OpenDNS بالـ IP الخارجية لك والتي تتغير مع كل تشغيل للراوتر ..وبالتالي وللقيام بذلك بشكل تلقائي عند تشغيلك للجهاز حمل برنامج الخدمة الخفيف والصغير جدا والذي يعمل في الخلفية أي فقط ستجد أيقونة بجوار الساعة ويقوم هذا البرنامج بتحديث الآي بي الخاصة بك في السيرفر لتطبيق الإعدادات التي اخترتها على شبكتك . 
+البرنامج متوفر لنظام الويندوز من &lt;a href=&quot;https://www.opendns.com/download/windows&quot;&gt;هنا&lt;/a&gt; ، ونظام الماك من &lt;a href=&quot;https://www.opendns.com/download/mac&quot;&gt;هنا&lt;/a&gt; 
+أما إذا كنت على لينكس أو أندرويد فستحتاج عند كل تشغيل للراوتر الذهاب إلى إعداداتك في الموقع &lt;a href=&quot;https://dashboard.opendns.com/settings/&quot;&gt;هنا&lt;/a&gt; والضغط على زر التحديث بجانب الآي بي الخاصة بك والتي ستعرض أعلى الآي بي القديمة .&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;معرفة المواقع التي يتم الدخول إليها&lt;/h1&gt;
+
+&lt;p&gt;وذلك أيضا من خلال خدمة OpenDNS بالذهاب إلى STATS كما هو موضح بالصورة&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/opendns6.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-6&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ثم من القائمة على اليسار نختار Domains ليتم عرض كافة المواقع التي تم الدخول لها ، وإذا كان هناك موقع ما قمنا بحجبه أي مصنف ضمن أحد التصنيفات المحجوبة وتم محاولة فتحه سوف يعرض بالأحمر .&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;يجب تحديث الـ IP الخاص بنا في السيرفر عند كل تشغيل للراوتر (كما هو مشروح في الأعلى) ليتم تسجيل المواقع التي يتم الدخول لها.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+		</entry>
+	
+		<entry>
 			<title>سلسلة دروس جِت هَب|الحفاظ على خصوصية البريد الإلكتروني</title>
 			<link href="http://mulham.github.io/github/keep-your-email-private"/>
 			<updated>2016-06-16T00:00:00+03:00</updated>
@@ -5780,6 +5925,97 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 		</entry>
 	
 		<entry>
+			<title>ثلاث نظارات عالية التقنية تفعل ما لا تفعله نظارات جوجل</title>
+			<link href="http://mulham.github.io/3-smart-glasses"/>
+			<updated>2014-06-20T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//3-smart-glasses</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/New_Eyeglasses_Tech.jpg&quot; alt=&quot;نظارات عالية التقنية غير نظارات جوجل&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;فتحت نظارات جوجل الأبواب لتقنية النظارات الذكية ، وهي تحتوي على العديد من المزايا الرائعة ، ولكن هناك مجموعة من الأمثلة لنظارات أخرى عالية التقنية والتي تستحق الاكتشاف . وهنا سنذكر بعضاً منها :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.drexel.edu/now/news-media/releases/archive/2014/April/Product-Design/&quot;&gt;نظارات Light Therapy&lt;/a&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/glasses-post.jpg&quot; alt=&quot;نظارة عالية التقنية غير نظارة جوجل&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;الاضطرابات الموسمية والمعروفة أيضاً بـ “كآبة الشتاء” تؤثر على حوالي 10 مليون شخص في نصف الكرة الشمالي خلال أشهر الشتاء . معظم الأعراض تتضمن الاكتئاب ، القلق وتغيرات في المزاج .الحل النموذجي للعلاج هو نظارات Light Therapy أو ما يعني “العلاج بالضوء” ، حيث تستخدم هذه النظارات أضواء خاصة لتحاكي بشكل شبه حقيقي ضوء الشمس والذي لا يمكن استعيابه بالشكل الطبيعي ، وهذه الأضواء تحول الشتاء إلى صيف بنظر الشخص الذي يرتديها !&lt;/p&gt;
+
+&lt;p&gt;قامت طالبة من جامعة دريكسل كلية “فنون الإعلام والتصميم” والتي تدعى “Troy Hudson” بعمر 22 سنة (والتي تظهر في الصورة أعلاه) بتصميم هذه النظارات.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.spaceglasses.com/&quot;&gt;Meta&lt;/a&gt; :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;center&gt;&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/iWPdAhhUWD0&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
+
+&lt;p&gt;مجموعة من الأشخاص قاموا بصنع هذه النظارة والتي يؤدي ارتداؤها لإنشاء عرض مجسم يتيح للمستخدمين التحكم به من خلال أيديهم . النظارات مؤلفة من نظام ذو شقين : الأول عرض نصف 3D والثاني ماسح ضوئي نصف 3D . العرض نصف 3D يتيح للمستخدم من رؤية المجسمات _ على سبيل المثال صورة أو ملف حاسوبي _ والماسح الضوئي يفحص البيئة المحيطة ويخبر المعالج أين يقوم بوضع العرض ليتناسب مع المرتدي .&lt;/p&gt;
+
+&lt;p&gt;الفكرة بشكل عام وكما يقول منشؤوها هي لصنع نظارات مثل نظارات جوجل ولكن بشكل متميز نوعاً ما .&lt;/p&gt;
+
+&lt;p&gt;المجموعة جمعت حوالي 200,000$ لصناعة النظارات عبر أحد مواقع التمويل السنة الماضية . ووفق الموقع الخاص بهم يمكنك طلب نظارتك الخاصة مسبقاً مقابل 3,650$ وسيتم شحن الطلبات في كانون الثاني/يناير 2015 .&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kickstarter.com/projects/avegantglyph/a-mobile-personal-theater-with-built-in-premium-au&quot;&gt;Avegant Glyph&lt;/a&gt; :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;center&gt;&lt;iframe frameborder=&quot;0&quot; height=&quot;360&quot; scrolling=&quot;no&quot; src=&quot;https://www.kickstarter.com/projects/avegantglyph/a-mobile-personal-theater-with-built-in-premium-au/widget/video.html&quot; width=&quot;480&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
+
+&lt;p&gt;“المسرح الشخصي” القابل للارتداء والذي جمع مؤخراً أكثر من 1.5$ مليون . هي عبارة عن نظارات تستخدم تقنية الشبكية الافتراضية لتعطي المستخدمين صورة واضحة . الغريب فيها أن مدموجة أيضاُ بسماعات . وباستخدام اتصال HDMI يمكن للمستخدمين نقل أي شيئ من أجهزتهم الشخصية إلى Glyph.&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>فنان يجمع المال لبناء منزل صغير وجميل على سطح القمر</title>
+			<link href="http://mulham.github.io/build-moon-house"/>
+			<updated>2014-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//build-moon-house</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/moon-house.jpg&quot; alt=&quot;فنان يجمع المال لبناء منزل على سطح القمر&quot; title=&quot;فنان يجمع المال لبناء منزل على سطح القمر&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;رغم أن سطح القمر الفضي هو سطح واسع من الكآبة والعزلة، ولكن هذا لا يعني عدم وضع القليل من الألوان عليه.&lt;/p&gt;
+
+&lt;p&gt;يهدف فنان ورجل أعمال سويدي “ميكائيل جينبيرغ” لتحقيق ذلك من خلال نقل هذا النحت عن طريق المحطة “SpaceX’s Falcoln 9” .&lt;/p&gt;
+
+&lt;p&gt;وكما وضح “جينبيرغ” على &lt;a href=&quot;http://themoonhouse.com/en&quot;&gt;موقعه الإلكتروني&lt;/a&gt; :&lt;/p&gt;
+
+&lt;p&gt;هذا المنزل القمري هو أكثر من مجرد مشروع فني . الهدف هو إلهام الناس وتوسيع نظرتهم إلى ما يمكن أن نجعله ممكناً .
+المنزل القمري هو مشروع فني جماهيري بحيث أن أي شخص مرحب به للإسهام في المشروع وإيجاد مثل فريد من نوعه لما يمكن للناس تحقيقه ، سوية . المنزل القمري يجعل الفضاء متاح ﻷي شخص ولكل شخص مننا . سوية يمكن أن نجعل ذلك يحصل .&lt;/p&gt;
+
+&lt;p&gt;وتجدر الإشارة إلى أن تمويل المشروع مازال مفتوحاً ومتاح ﻷي شخص. بحيث 50$ تجعل اسمك داخل المنزل، ولكن زيارته ستكون أغلى من ذلك..&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية معرفة التطبيقات التي تستهلك سرعة الإنترنت على اللينكس</title>
+			<link href="http://mulham.github.io/know-apps-slow-internet-linux"/>
+			<updated>2014-06-18T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//know-apps-slow-internet-linux</id>
+			<content type="html">&lt;p&gt;كثيراً ما يكون هناك تطبيقات غير ظاهرة تعمل في الخلفية وتستهلك سرعة الإنترنت مما يؤدي لبطئ ملحوظ أثناء تصفحنا للإنترنت .. والآن سنتعرف على طريقة من عدة طرق لمعرفة التطبيقات المتصلة بالإنترنت على نظام لينكس ، والطريقة هذه برأيي هي الأفضل حيث أنها تظهر التطبيقات المتصلة والسرعة التي تستهلكها حيث سيظهر التطبيق الذي يستهلك سرعة الإنترنت بشكل كبير أولاً ، وبعد معرفته يمكننا إغلاقه من مدير العمليات system monitor&lt;/p&gt;
+
+&lt;p&gt;أولا يجب تنزيل التطبيق nethogs والذي يقوم بذلك من خلال الأمر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo apt-get install nethogs 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ثم لمشاهدة التطبيقات المتصلة بالإنترنت نكتب :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo nethogs &amp;lt;interface&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;interface&amp;gt;&lt;/code&gt; بالواجهة التي تتصل من خلالها بالإنترنت ، فإذا كنت تتصل سلكياً بالإنترنت استبدل &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;interface&amp;gt;&lt;/code&gt; بـ &lt;code class=&quot;highlighter-rouge&quot;&gt;eth0&lt;/code&gt; ، واذا كنت تتصل لا سلكياً استبدلها بـ &lt;code class=&quot;highlighter-rouge&quot;&gt;wlan0&lt;/code&gt; ،(لمشاهدة جميع الواجهات الموجودة في الجهاز اكتب الأمر: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ifconfig&lt;/code&gt; ) .&lt;/p&gt;
+
+&lt;p&gt;وبعد مشاهدة التطبيقات اذا كان هناك تطبيق يستهلك سرعة النت وأردت إغلاقة اذهب الى قائمة البرامج وابحث عن
+ system monitor ، ستجد تحت تبويب processes أو العمليات جميع التطبيقات المفتوحة وهي مرتبة أبجدياً ، ابحث عن التطبيق الذي تود إغلاقة ثم انقر على End process أو إنهاء العملية .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; لإغلاق تطبيق nethogs المفتوح على التيرمينال فقط اضغط 
+ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
 			<title>أضف فانوس رمضان المتحرك لمدونتك</title>
 			<link href="http://mulham.github.io/fanus-ramadan"/>
 			<updated>2014-06-18T00:00:00+03:00</updated>
@@ -5908,6 +6144,51 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 		</entry>
 	
 		<entry>
+			<title>العلماء يكتشفون 'حيلة غريبة' استخدمها المصريون القدماء لبناء الأهرامات</title>
+			<link href="http://mulham.github.io/pyramids-discovery"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//pyramids-discovery</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/pyramids.jpg&quot; alt=&quot;الأهرامات- اكتاشف حيلة غريبة استخدمت لبناؤها&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;هناك العديد من الامور الغامضة حول بناء الأهرامات . حيث يبقى دائماً السؤال الذي يحير الأذهان وهو كيفية قيام المصريين القدماء بنقل حجارة تزن نحو 2.5 طن باستخدام مزالق بسيطة ..&lt;/p&gt;
+
+&lt;p&gt;والآن، مجموعة من علماء الفيزياء يقولون بأنهم كشفوا الغطاء عن ‘حيلة غريبة’ استخدمها المهندسون القدماء لتساعدهم على نقل تلك الحجارة الضخمة عبر الصحراء .. العنصر السحري ..: قليل من الماء!&lt;/p&gt;
+
+&lt;p&gt;وجد الباحثون من جامعة أمستردام ومؤسسة البحوث الأساسية في ماتر بأن المصريين القدماء كان باستطاعتهم سحب أحجار وتماثيل كبيرة عبر الصحراء وبدون أن تتراكم الرمال أما عجلات المزالق وذلك فقط بتبليل الأرض أمام المزالق .&lt;/p&gt;
+
+&lt;p&gt;الصورة التالية توضح رسم على حائط ضريح ‘جهيوتي هوتب” والذي يعتقد العلماء أنه يظهر كيفية ممارسة خدعة الماء&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/Figure 2. Wall painting from the tomb of Djehutihotep.jpeg&quot; alt=&quot;رسم يوضح خدعة الماء التي استخدمها الفراعنة لبناء الأهرامات&quot; title=&quot;رسم يوضح خدعة الماء التي استخدمها الفراعنة لبناء الأهرامات&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;وقام الفيزيائيون بتجربة نظرياتهم وذلك باستخدام مصغرات للمزالق والحجارة، وقياس مقدار القوة اللازمة لسحب وزن معين وصلابة الرمال بالعلاقة مع كمية الماء.&lt;/p&gt;
+
+&lt;p&gt;وبشكل مثير للاهتمام فإن الدليل على هذا الاكتشاف كان واضحا تقريباً، حيث يظهر الرسم على جدار الضريح القديم عملية نقل تماثيل ضخمة ويظهر فيها شخص يصب الماء على مسار المزلقة - وهذا التفصيل تم رفضه مؤخراً باعتباره جزء من طقوس دينية أو ما شابه..&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>تطبيق للجوالات يكشف سرطان الجلد</title>
+			<link href="http://mulham.github.io/mobile-app-discover-skin-cancer"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//mobile-app-discover-skin-cancer</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/o-EUREKALERTOS-570.jpg&quot; alt=&quot;تطبيق للجوالات يكشف سرطان الجلد&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;هناك العديد من التطبيقات التي تدعي أن لديها إمكانية الحفاظ على حياتك. ولكن هذا التطبيق ربما يكون الأول الذي يمكنه ذلك بالفعل.&lt;/p&gt;
+
+&lt;p&gt;تطبيق ‘Dermoscan’ هو تطبيق جديد يمكنه فحص الشامات المشبوهة والآفات بدقة، ويخبرك فيما اذا كانت هذه الخلايا بإمكانها التطور لسرطان الجلد.&lt;/p&gt;
+
+&lt;p&gt;لدى التطبيق المطور في جامعة هوستون معدل دقة حوالي 85%، أي أفضل من أطباء الرعاية الصحية الأولية وعلى وجه المساواة مع المتخصصين.&lt;/p&gt;
+
+&lt;p&gt;الشيئ السلبي الوحيد في التطبيق هو أنك يجب أن تستخدم معه عدسة مكبرة خاصة مرفقة تكلف حوالي 500 دولار . ولكن التطبيق يتطور بسرعة كما يقول البروفيسور ‘جورج زوريداكيس’ والذي عمل على الفكرة منذ 2005 . ومرفقات أرخص  قد يتم تطويرها قريبا والتي قد تضع التقنية في أيدي معظم الناس بما في ذلك الدول النامية.&lt;/p&gt;
+
+&lt;p&gt;وأوضح البروفيسور أنه قبل حدوث ذلك كان عليهم تحسين مستوى الدقة للتطبيق.&lt;/p&gt;
+
+&lt;p&gt;وإن مركز السرطان في جامعة تكساس يقوم يقوم بإطلاق تجربة أكبر للفكرة ، وأعطت المعاهد الوطنية للصحة مبلغ
+$412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بورولي’ (البكتيريا آكلة اللحم التي وجدت في المناطق الريفية في أفريقيا).&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
 			<title>كيفية وضع تردد معين في برنامج كافيين</title>
 			<link href="http://mulham.github.io/kaffiene"/>
 			<updated>2014-06-16T00:00:00+03:00</updated>
@@ -5984,6 +6265,131 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
   
 &lt;/figure&gt;
 
+</content>
+		</entry>
+	
+		<entry>
+			<title>أسرار بحث جوجل</title>
+			<link href="http://mulham.github.io/google-search-secrets"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//google-search-secrets</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/google-search-secrets.jpg&quot; alt=&quot;أسرار بحث جوجل&quot; title=&quot;أسرار بحث جوجل&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;إن خدمة البحث في جوجل هي أداة أكثر ذكاء وقوة مما يعتقد معظم الناس . إليكم 11 طريقة وأداة للبحث لتجعل استخدامكم لجوجل أكثر فاعلية&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;البحث في موقع معين:&lt;/strong&gt; إذا كانت تريد البحث في موقع معين ولم تعجبك أداة البحث في ذلك الموقع ، فيمكنك استخدام جوجل لذلك .. مثلا إذا أردت البحث عن شيئ معين في هذا الموقع عن طريق جوجل فقط اكتب في مربع البحث :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; site:mulham.github.io
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;ثم عبارة البحث ، مثلاً :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; site:mulham.github.io كيفية قفل وإخفاء الملفات 
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;ونفس الشيئ للبحث في أي موقع أو منتدى أو مدونة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;إيجاد اسم منتج ، وصفة .. والمزيد مع &lt;strong&gt;بحث الصور العكسي:&lt;/strong&gt; تساعدك هذه الميزة في البحث عن مصدر الصورة والبحث عن معلومات عنها ، مثل معرفة صانع الكرسي الظاهر في الصورة ، كيفية عمل الطبخة الظاهرة في الصورة ..والمزيد . فقط اذهب لبحث الصور في جوجل ستجد في آخر مربع البحث أيقونة على شكل كاميرا .. اضغط عليها وأدخل عنوان الصورة اذا كانت على الإنترنت أو قم برفعها من جهازك لتظهر لك النتائج المتعلقة بتلك الصورة .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الحصول على اقتراحات بديلة عبر &lt;strong&gt;الإكمال التلقائي:&lt;/strong&gt; في العديد من محركات البحث المتقدمة تستطيع وضع علامة * للدلاة على “أي شيئ” .. وجوجل أحد هذه المحركات ، ولكنه لا يعمل بالطريقة التي تريدها.. على أية حال، يمكنك الحصول على اقتراحات بديلة وذلك بكتابة عبارة كاملة في مربع بحث جوجل ثم حذف الكلمات التي تريد استبدالها ، على سبيل المثال ، يمكننا البحث عن “كيفية تنظيف جهاز أندرويد “ وحذف أحد الكلمات لرؤية جميع الاقتراحات حول “كيفية * جهاز أندرويد” .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;إيجاد روابط تحميل ﻷي نوع من الملفات:&lt;/strong&gt; هل احتجت يوما لتطبيق أندرويد قديم ولكنك لم تستطع إيجاد ملف التنزيل APK له ؟ أو أردت ملف MP3 ولم تستطع إيجاد النسخة المطلوبة؟ يحتوي جوجل على بعض ادوات البحث والتي يمكن عند استخدامها معاً أن تفتح لك كم كبير من الملفات القابلة للتحميل . وهذه الادوات هي :
+&lt;code class=&quot;highlighter-rouge&quot;&gt;inurl&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;intitle&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;filetype&lt;/code&gt; . على سبيل المثال ، إذا أردت البحث عن تطبيق أندرويد بصيغة &lt;code class=&quot;highlighter-rouge&quot;&gt;APK&lt;/code&gt; فعليك البحث عن :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; -inurl:htm -inurl:html intitle:&quot;index of&quot; apk
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;وذلك لعرض الصفحات المخزن بها ملفات بصيغة APK ، يمكنك عمل ذلك لإيجاد تطبيقات أندرويد ، ملفات صوتية ، كتب إلكترونية ، والمزيد ..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;اكتشاف البدائل&lt;/strong&gt; لمواقع مشهورة،تطبيقات، منتجات .. : وذلك بكتابة اسم المنتج أو الشركة أو .. ويليه العبارة vs والتي تعني “مقابل” أو “ضد” وذلك للمقارنة بين شيئين، ثم انتظار الاقتراحات التي سيعطيك إياها جوجل.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;الوصول لـ “جوجل كاش” مباشرة من مربع البحث:&lt;/strong&gt; لمن لا يعرف جوجل كاش Google cache أو بما معناه “ذاكرة جوجل” ، فهي خدمة رائعة تمكنك من معرفة النسخ القديمة لصفحات المواقع.&lt;/p&gt;
+
+    &lt;p&gt;وهنا نوضح أنه لا داعي للبحث عن الصفحة المطلوبة ثم الذهاب لرابط cache لمشاهدة النسخة القديمة ، يمكنك عمل ذلك مباشرة من مربع البحث ، فقط اكتب :cache قبل رابط الموقع . فمثلاً إذا أردنا مشاهدة الصفحة الرئيسية للسنخة القديمة من فيس بوك ، نكتب في مربع البحث :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; cache:http://facebook.com
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;فتح المواقع المحجوبة:&lt;/strong&gt; ربما تعرف مسبقاً أنه يمكنك عمل ذلك عن طريق ترجمة جوجل ، وهذه حيلة ذكية لفك الحجب وفتح المواقع المحجوبة . و كـ جوجل كاش يمكنك عمل ذلك مباشرة وذلك بإضافة عنوان الموقع المطلوب لنهاية الرابط :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; http://translate.google.com/translate?sl=ja&amp;amp;tl=en&amp;amp;u=http://example.com/ 
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;حيث الرابط في الأعلى لفتح موقع example.com عبر ترجمة جوجل.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;البحث عن أشخاص عبر صور جوجل:&lt;/strong&gt; بعض أسماء الأشخاص هي أشياء موجودة في الواقع ، على سبيل المثال هناك فتيات اسمهن “وردة” ، إذا كتبنا في مربع البحث في صور جوجل “وردة” سيظهر لنا أشكال لعدة أنواع من الورد .. وليس هذا ما نريده ، فلذلك للبحث عن أشخاص بمثل هذه الأسماء نضغط على Search Tools أو أدوات البحث ثم Type النمط ثم نختار Face وجه وذلك للبحث عن وجوه بهذا الاسم .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;الحصول على نتائج بحث مبنية على وقت معين:&lt;/strong&gt; ربما وجدت مسبقا الخيار في بحث جوجل الذي يفرز النتائج حسب الوقت ، مثل الساعة أو اليوم أو الاسبوع الماضي . ولكن ماذا إذا كنا نريد تحديد الوقت بدقة أكبر ؟ فقط أضف إلى نهاية الرابط في الأعلى العبارة&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;amp;tbs=qdr:
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;متبوعة بـ h5 مثلاً لخمس ساعات الماضية ، n5 للدقائق الخمسة الماضية ، s5 لخمس ثواني ! ، طبعاً ضع الرقم الذي تريد . فمثلاً إذا أردنا البحث عن النتائج خلال العشر دقائق الماضية نضيف للرابط :&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;amp;tbs=qdr:n10
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;البحث عن كلمات محددة وبنفس الترتيب:&lt;/strong&gt; عند البحث عن عبارة معينة في جوجل تظهر النتائج التي تحوي الكلمات الموجودة في العبارة أو بعضها ، وليس بنفس الترتيب . إذا أردنا لنتائج البحث أن تًظهر هذه العبارة المحددة بجميع كلماتها وبنفس ترتيب الكلمات وبشكل متتالي مباشرة ، فقط نضع العبارة ضمن علامتي تنصيص “”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;بعض خدمات جوجل:&lt;/strong&gt; بحث جوجل يشتمل على بعض الخدمات الخفية ، على سبيل المثال محول العملات ، فقط اكتب في مربع البحث currency converter ليظهر لك محول العملات . أو محول درجات الحرارة temperature converter ، وهناك أيضا ميقاتية ، أي تقوم أنت بوضع وقت معين وبعد انتهاؤه ترن الميقاتية ليتم تنبيهك بانتهاء المدة التي حددتها ، فقط اكتب في مربع بحث جوجل set timer وبعدها المدة ، مثلاً لثلاثين دقيقة نكتب:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set timer 30 minutes 
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;إذا وجدت هذا الموضوع مفيد فقم بمشاركته مع أصدقائك لتعم الفائدة.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>بديل الفلاش بلاير على اللينكس</title>
+			<link href="http://mulham.github.io/flashplayer-alternatives-linux"/>
+			<updated>2014-06-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//flashplayer-alternatives-linux</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/flashplayer-alternatives-linux.jpg&quot; alt=&quot;بدائل الفلاش بلاير على اللينكس&quot; title=&quot;بدائل الفلاش بلاير على اللينكس&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;هناك العديد من الناس يشتكون من مشغل الفلاش “فلاش بلاير” بسبب مشاكله الكثيرة وخاصة على اللينكس ..&lt;/p&gt;
+
+&lt;p&gt;والآن يمكنك إزالة الفلاش بلير ومشاكله من رأسك فهناك بديل :)&lt;/p&gt;
+
+&lt;p&gt;Gnash هو أحد البدائل والمتوفر بمستودعات أبونتو وباقي المستودعات على الأرجح .. فقط اذهب لمديرالتطبيقات أو الـ synaptic ونزله من هناك بكل سهولة ..&lt;/p&gt;
+
+&lt;p&gt;أيضاً هناك بديل آخر وهو Lightspark ، ولتنصيبه أضفه للمستودعات لديك أولا وذلك بفتح التيرمينال أو الطرفية وكتابة الأمر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository ppa:sparkers/ppa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ثم قم بالتحديث وتنصيب البرنامج وإضافته للمتصفحات من خلال الأوامر :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get update 
+
+	sudo apt-get install lightspark browser-plugin-lightspark 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;هذا كل شيئ!&lt;/p&gt;
 </content>
 		</entry>
 	
