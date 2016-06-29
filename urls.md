@@ -16,10 +16,6 @@ date: 2016-06-16
 
 * [مكتبة الكتب](http://download-pdf-ebooks.org/)
 
-	تحوي كتب علمية متقدمة أكثر 
-
-* [مكتبة الطفل](http://download-children-pdf-ebooks.com/)
-
 * [رواق - منصة عربية للتعليم المفتوح](https://www.rwaq.org/)
 
 * [أكاديمية التحرير](http://tahriracademy.org/)
