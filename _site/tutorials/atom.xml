@@ -4,13 +4,170 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2016-06-29T05:35:32+03:00</updated>
+	<updated>2016-07-01T02:51:17+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>تطوير تطبيقات أندرويد</title>
+			<link href="http://mulham.github.io/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF"/>
+			<updated>2016-07-01T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//تطوير تطبيقات أندرويد</id>
+			<content type="html">&lt;p&gt;مرحباً، أعتقد أن موضوع تطوير برمجيّات أندرويد يُحقّق ملحوظيّة كبيرة ويهتم به الكثير من العرب، في حين أنه لا يوجد محتوى عربي جادّ ومجانيّ في هذا المجال، لذا أحببت أن أُترجم سلسلة دروس “تطوير برمجيات أندرويد” من الموقع الرسمي المنشور تحت رخصة المشاع الإبداعي هنا:
+https://developer.android.com/training/basics/firstapp/index.html&lt;/p&gt;
+
+&lt;p&gt;بالنسبة للمواضيع الجانبية والتي تحتاج لشرح (يضع المقال الأصلي روابط لها) فقد قمت بشرحها باختصار ضمن الدروس.&lt;/p&gt;
+
+&lt;p&gt;بالنسبة للمصطلحات فمرجعيتي تكون لـ مصطلحات المنظمة العربية للترجمة(إعداد: الدكتور هيثم الناهي، الآنسة هبة شرّي، الآنسة حياة حسنين) وكذلك القاموس التقني المعلوماتي الذي نشره موقع عرب آيز.&lt;/p&gt;
+
+&lt;p&gt;إليكم الدرس الأول بصيغة Markdown&lt;/p&gt;
+
+&lt;!--الدرس الأول--&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;بناء تطبيقك الأوّل&lt;/h1&gt;
+
+&lt;p&gt;أهلاً بك في سلسلة دروس “تطوير تطبيقات أندرويد”!&lt;/p&gt;
+
+&lt;p&gt;ستُعلّمك هذه الدروس كيفية بناء تطبيقك الأوّل لنظام أندرويد، كما ستتعلّم كيفية إنشاء مشروع على أندرويد وكيفية تشغيل التطبيق بوضعية التنقيح (debugging)، كما ستتعلّم بعض الأساسيات لتصميم تطبيق أندرويد بما في ذلك كيفية بناء واجهة مستخدم بسيطة والتعامل مع إدخالات المستخدم. &lt;strong&gt;كل ذلك بدون أيّة معرفة مسبقة!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;تجهيز بيئة العمل&lt;/h2&gt;
+
+&lt;p&gt;قبل البدء، عليك بتنصيب البرمجيّات التي سنعمل عليها سويةً، حيث ستحتاج إلى:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;تنصيب &lt;a href=&quot;https://developer.android.com/studio/index.html&quot;&gt;استديو أندرويد&lt;/a&gt; (Android studio)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;تنصيب آخر برمجيات وأدوات SDK باستخدام &lt;a href=&quot;(https://developer.android.com/tools/help/sdk-manager.html)&quot;&gt;مدير SDK&lt;/a&gt; (SDK Manager)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ملاحظة: على الرغم من أن معظم هذه الدروس تشرح التعليمات باستخدام استديو أندرويد، إلا أن جزء منها يعتمد على استخدام أدوات SDK عبر موجّه الأوامر.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;قم بتنصيب المتطلّبات أعلاه ثم عد إلى هنا كي نبدأ سويةً.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;إنشاء مشروع أندرويد&lt;/h1&gt;
+
+&lt;p&gt;يحتوي مشروع أندرويد على جميع الملفّات التي تُشكّل الكود المصدري لتطبيق أندرويد.&lt;/p&gt;
+
+&lt;p&gt;سيوضِّح لك هذا الدرس عمليّة إنشاء مشروع جديد وذلك إما باستخدام استديو أندرويد أو باستخدام أدوات SDk من خلال موجِّه الأوامر. هيّا نبدأ&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;معلومة إضافيّة: SDK هي اختصار لـ Software Development Kit أو ما معناه “عِدّة تطوير البرمجيات” وهي فعلياً مجموعة من أدوات التطوير التي تتيح إنشاء تطبيقات لبرمجيات أو أنظمة مُحدّدة.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;إنشاء مشروع باستخدام استديو أندرويد&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بإنشاء مشروع جديد على استديو أندرويد:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;إذا لم يكن لديك مشروع مفتوح مسبقاً، فاضغط على &lt;strong&gt;New Project&lt;/strong&gt; في شاشة الترحيب (الشاشة الرئيسية للبرنامج).&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;إذا كان هناك مشروع مفتوح مسبقاً، فاختر &lt;strong&gt;New project&lt;/strong&gt; من القائمة &lt;strong&gt;File&lt;/strong&gt; في الأعلى.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;الآن يجب أن تكون ظهرت لديك نافذة &lt;em&gt;Create New Project&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;املأ الحقول الظاهرة على الشاشة ثم اضغط &lt;strong&gt;Next&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;يُستحسن لسهولة استخدام هذه الدروس إدخال القيم التالية:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;في حقل &lt;strong&gt;Application Name&lt;/strong&gt; وهو اسم التطبيق الذي تريد بناؤه، أدخل حالياً My First APP&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Company domain&lt;/strong&gt;:  تُزوّد القيمة المُدخلة في هذا الحقل مُعرّفاً يتم إرفاقه باسم الحزمة، سيتذكر استديو أندرويد هذا المعرّف لكل مشروع جديد ستنشئه.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Package name&lt;/strong&gt;: هنا يُدخَل الاسم الكامل المُؤهِّل للمشروع (باتباع نفس قواعد تسمية الحِزَم في لغة برمجة جافا). يجب أن يكون اسم حزمتك فريد بين جميع الحزم المُنصَّبة على نظام أندرويد. يمكنك تعديل هذه القيمة (&lt;strong&gt;Edit&lt;/strong&gt;) بشكل مستقل عن قِيَم الحقلين السابقين.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;قواعد التسمية:&lt;/strong&gt; طبعاً أن تكون أحرف إنجليزية، وصغيرة، يُسمح بالأرقام والشرطة العلوية &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; والسفلية &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt; ولكن يجب ألّا يبدأ الاسم برقم. يجب على الشركات عكس اسم موقعهم المُستضيف للحزمة، فيجب مثلاً كتابة: &lt;code class=&quot;highlighter-rouge&quot;&gt;com.example.mypackage&lt;/code&gt; لحزمة اسمها &lt;code class=&quot;highlighter-rouge&quot;&gt;mypackge&lt;/code&gt; مُنشأة على موقع &lt;code class=&quot;highlighter-rouge&quot;&gt;example.com&lt;/code&gt; وفي حال بدء اسم الحزمة برقم فيوضع شرطة سفلية قبله، مثلاً موقع الحزمة على الإنترنت سيكون: &lt;code class=&quot;highlighter-rouge&quot;&gt;123name.example.com&lt;/code&gt; وبالتالي نُسمّي الحزمة: &lt;code class=&quot;highlighter-rouge&quot;&gt;com.example._123name&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Project location&lt;/strong&gt;: هنا يُوضع مسار المجلّد الذي يحوي ملفات المشروع في حاسوبك.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بالتأشير على المربع بجانب &lt;strong&gt;Phone and Tablets&lt;/strong&gt; أسفل حقل &lt;strong&gt;Select the form factors your app will run on&lt;/strong&gt; (أين أنك تريد لتطبيقك أن يعمل على الجوّالات والأجهزة اللوحيّة).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;بالنسبة لـ &lt;strong&gt;Minimum SDK&lt;/strong&gt;، اختر &lt;strong&gt;API 8: Android 2.2 (Froyo)&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;إنّ أقل إصدار SDK مطلوب هو أقدم إصدار أندرويد يدعمه تطبيقك. والمُوضّح باستخدام مستوى API. إذا أردت لتطبيقك أن يدعم أكبر عدد ممكن من الأجهزة، فقم باختيار أقدم إصدار متاح والذي يسمح لتطبيقك بتقديم المزايا الأساسية (فهناك مزايا لا تعمل إلا على الإصدارات الحديثة من أندرويد). إذا كان هناك مزايا في تطبيقك لا تعتبرها أساسيّة ولا تعمل إلا على الإصدارات الحديثة من أندرويد، فمازال بإمكانك وضع إصدارات أقدم في هذا الحقل مع تفعيل المزايا المتقدمة فقط عندما يعمل التطبيق ضمن إصدارات حديثة.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;مستوى API:&lt;/strong&gt; (أو بالإنجليزية API Level) وهو عدد صحيح يُعرّف تغييرات بنية API المُمقدمة بواسطة إصدار أندرويد (بدأ أولاً بـ 1 وازداد مع كل إصدار جديد لأندرويد). يمكنك الاطلّاع على جدول أسفل &lt;a href=&quot;https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels&quot;&gt;هذه الفقرة&lt;/a&gt; والموضّح لإصدارات أندرويد ومستوى API الموافق لكل منها.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أبقِ على جميع الخيارات الأخرى (TV,Wear, and Glass) بدون تاشير، واضغط &lt;strong&gt;Next&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أسفل حقل **Add an activity to &lt;template&gt;\**, اختر **Blank Activity** واضغط **Next**&lt;/template&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أسفل حقل &lt;strong&gt;Customize th Activity&lt;/strong&gt;، قم بتغيير &lt;strong&gt;Activity Name&lt;/strong&gt; إلى &lt;em&gt;MyActivity&lt;/em&gt;. وسترى أن حقل &lt;strong&gt;Layout Name&lt;/strong&gt; قد تغيّر إلى &lt;em&gt;activity_my&lt;/em&gt; وحقل &lt;strong&gt;Title&lt;/strong&gt; إلى &lt;em&gt;MyActivity&lt;/em&gt;، كذلك &lt;strong&gt;Menu Resourcr Name&lt;/strong&gt; يجب أن يصبح &lt;em&gt;menu_my&lt;/em&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط على زر &lt;strong&gt;Finish&lt;/strong&gt; لإنشاء المشروع.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;النشاط (Activity) هو أحد الملامح المُميِّزة لنظام أندرويد. تتيح الأنشطة للمستخدم الوصول لتطبيقك، وقد يكون هناك العديد من الأنشطة. سيحوي التطبيق غالباً على نشاط رئيسي وهو عند تشغيله من قبل المستخدم، ونشاط آخر وهو على سبيل المثال عندما يختار المستخدم محتوى ما لعرضه. ونشاطات أخرى تتضمن قيام المستخدم بالتنقل بين نوافذ وخيارات التطبيق أو إعطائه مهام لتنفيذها وما إلى ذلك.&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;إنّ مشروع أندرويد الخاص بك الآن هو عبارة عن تطبيق بِدائيّ بسيط يحوي بعض الملفات الافتراضيّة. دعنا نُخصّص دقيقة من وقتنا لإلقاء نظرة على أهم هذه الملفات (سأضع المسار الكامل للملف وذلك انطلاقاً من المجلد الأساسي للمشروع)&lt;/p&gt;
+
+    &lt;p&gt;app/src/main/res/layout/activity_my.xml&lt;/p&gt;
+
+    &lt;p&gt;هذا الملف التنسيقي بلاحقة xml هو للنشاط الذي أضفته عند إنشاءك للمشروع على استديو أندرويد. وباتّباع تدفّق عمل المشروع الجديد، فإن استديو أندرويد يعرض هذا الملف مع كلٍّ من العرض النصي وعرض واجهة المستخدم على الشاشة. يحوي هذا الملف بعض عناصر الواجهة الافتراضيّة المأخوذة من مكتبة التصميم في استديو أندرويد، من هذه العناصر الشريط الرئيسي للتطبيق وزر وحيد، كما تتضمّن ملف تنسيقي منفصل يحوي المحتوى الأساسيّ.&lt;/p&gt;
+
+    &lt;p&gt;app/src/main/res/layout/content_my.xml&lt;/p&gt;
+
+    &lt;p&gt;ملف التنسيق هذا بلاحقة xml يكمن في الملف السابق (يتم استدعاءه منه)، ويحوي بعض الإعدادات وعنصر للعرض النصي والذي يعرض رسالة “Hello world!” أي بما معناه “أهلاً بكم” (وهي الرسالة الافتراضية بالإنجليزية لأي مشروع أو موقع وب جديد).&lt;/p&gt;
+
+    &lt;p&gt;app/src/main/java/com.mycompany.myfirstapp/MyActivity.java&lt;/p&gt;
+
+    &lt;p&gt;يَظهر في استديو أندرويد شريط لهذا الملف عندا ينتهي تدفّق عمل المشروع الجديد. عند تحديدك للملف سترى تعريف الصِنف للنشاط الذي أنشأته. عند بناءك وتشغيلك للتطبيق، فإن صنف Activity يبدأ النشاط ويُحمِّل ملف التنسيق الذي يعرض رسالة “Hello World!”.&lt;/p&gt;
+
+    &lt;p&gt;app/src/main/AndroidManifest.xml&lt;/p&gt;
+
+    &lt;p&gt;يُحدّد هذا الملف الملامح الأساسيّة للتطبيق ويُعرّف كلّ مكّوناتها. ستقوم بالرجوع لهذا الملف عند استكمالك لهذه الدروس لإضافة مكوّنات إضافيّة لتطبيقك.&lt;/p&gt;
+
+    &lt;p&gt;app/build.gradle&lt;/p&gt;
+
+    &lt;p&gt;يستخدم استديو أندرويد هذا الملف (Gradle) لتفسير وبناء تطبيقك (حيث تحتاج تطبيقات الحاسوب لتفسيرها compile للغة الآلة قبل تصديرها لتكون جاهزة للتشغيل). هناك ملف بنفس الاسم build.gradle لكل منظومة من مشروعك، بالإضافة إلى ملف build.gradle للمشروع بأكمله. ستكون عادةً مهتم بملف build.gradle الخاص بالمنظومة، وفي هذه الحالة نتكلّم عن الملف الخاص بمنظومة التطبيق.&lt;/p&gt;
+
+    &lt;p&gt;drawable-&amp;lt;density&amp;gt;/&lt;/p&gt;
+
+    &lt;p&gt;layout/&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;لتشغيل التطبيق، أكمل إلى الدرس القادم.&lt;/p&gt;
+
+&lt;!--نهاية الدرس الأول--&gt;
+
+&lt;p&gt;حسابي على موقع مستقل: https://mostaql.com/u/Mulham94 يحتوي على صورة لي ونبذة عني.&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<title>أساسيات التعامل مع Git</title>
