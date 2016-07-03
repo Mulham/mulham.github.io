@@ -25,7 +25,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -40,12 +40,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   <li>
     <p>ستجد في هذا الموقع دروس ومقالات لا سابق لها في المحتوى العربي حيث أن المحتوى هنا بالكامل إما من تأليفي أو ترجمتي للدروس التي أرى أننا بحاجة لها.<a href="/about">اقرأ المزيد عن الموقع</a></p>
   </li>
-  <li>
-    <p>يمكنك <a href="/about/request">إرسال طلب خاص لي لترجمة مقال معين</a> مجاناً!</p>
-  </li>
-  <li>
-    <p>كما يمكنك الاستفادة من الموقع بوضع رابط موقعك ضمن قائمة الروابط المفيدة. راسلني لذلك.</p>
-  </li>
+
 </ul>
 
 <hr />
@@ -56,13 +51,6 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 
 	<ul class="posts">
-
-	  
-	    <li>
-<a href="/pyramids-discovery" title="العلماء يكتشفون 'حيلة غريبة' استخدمها المصريون القدماء لبناء الأهرامات"><br />العلماء يكتشفون 'حيلة غريبة' استخدمها المصريون القدماء لبناء الأهرامات</a><br />
-<span style="font-size: 14px">16 Jun 2014</span> <br />
-<p style="font-size: 18px">هناك العديد من الامور الغامضة حول بناء الأهرامات . حيث يبقى دائماً السؤال الذي يحير الأذهان وهو كيفية قيام المصريين القدماء بنقل حجارة تزن نحو 2.5 طن باستخدام مزالق بسيطة .. والآن، مجموعة من علماء الفيزياء يقولون بأنهم كشفوا الغطاء عن ‘حيلة غريبة’ استخدمها المهندسون القدماء لتساعدهم على نقل تلك الحجارة الضخمة عبر الصحراء .. العنصر السحري ..: قليل من الماء! وجد الباحثون من جامعة أمستردام ومؤسسة البحوث الأساسية في ماتر بأن المصريين القدماء كان... <a href="/pyramids-discovery">قراءة المزيد» </a></p>
-</li><br />
 
 	  
 	    <li>
@@ -93,6 +81,13 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </li><br />
 
 	  
+	    <li>
+<a href="/flashplayer-alternatives-linux" title="بديل الفلاش بلاير على اللينكس"><br />بديل الفلاش بلاير على اللينكس</a><br />
+<span style="font-size: 14px">16 Jun 2014</span> <br />
+<p style="font-size: 18px">هناك العديد من الناس يشتكون من مشغل الفلاش “فلاش بلاير” بسبب مشاكله الكثيرة وخاصة على اللينكس .. والآن يمكنك إزالة الفلاش بلير ومشاكله من رأسك فهناك بديل :) Gnash هو أحد البدائل والمتوفر بمستودعات أبونتو وباقي المستودعات على الأرجح .. فقط اذهب لمديرالتطبيقات أو الـ synaptic ونزله من هناك بكل سهولة .. أيضاً هناك بديل آخر وهو Lightspark ، ولتنصيبه أضفه للمستودعات لديك أولا وذلك بفتح التيرمينال أو الطرفية وكتابة الأمر : sudo add-apt-repository ppa:sparkers/ppa... <a href="/flashplayer-alternatives-linux">قراءة المزيد» </a></p>
+</li><br />
+
+	  
 	</ul>
 <!-- Pagination links --><center>
 <div class="pagination">
@@ -107,6 +102,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </center>
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 

@@ -25,7 +25,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -40,12 +40,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   <li>
     <p>ستجد في هذا الموقع دروس ومقالات لا سابق لها في المحتوى العربي حيث أن المحتوى هنا بالكامل إما من تأليفي أو ترجمتي للدروس التي أرى أننا بحاجة لها.<a href="/about">اقرأ المزيد عن الموقع</a></p>
   </li>
-  <li>
-    <p>يمكنك <a href="/about/request">إرسال طلب خاص لي لترجمة مقال معين</a> مجاناً!</p>
-  </li>
-  <li>
-    <p>كما يمكنك الاستفادة من الموقع بوضع رابط موقعك ضمن قائمة الروابط المفيدة. راسلني لذلك.</p>
-  </li>
+
 </ul>
 
 <hr />
@@ -56,13 +51,6 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 
 	<ul class="posts">
-
-	  
-	    <li>
-<a href="/design-flash-file" title="بالفيديو|كيفية تصميم إعلان/موقع تفاعلي متحرك Flash"><br />بالفيديو|كيفية تصميم إعلان/موقع تفاعلي متحرك Flash</a><br />
-<span style="font-size: 14px">11 Jan 2015</span> <br />
-<p style="font-size: 18px">شاهد كيفية تصميم واجهة فلاشية لموقع وب أو كإعلان تفاعلي حيث يكون الملف الناتج بصيغة swf أو كصورة gif، ولكن الصيغة الأولى أفضل حيث تكون ذات حجم أقل وكذلك يمكن التفاعل معها، أي الضغط على زر معين أو إظهار تأثيرات معينة عند المرور بالفأرة على جزء من الشكل. الجزء الأول (7:09) دقيقة الجزء الثاني (5:21) دقيقة مع ملاحظة خطأ بسيط في هذا الفيديو وهو أنه لحذف keyframe نضغط shift+F5 وليس shift+F6 الجزء الأخير (8:51) دقيقة... <a href="/design-flash-file">قراءة المزيد» </a></p>
-</li><br />
 
 	  
 	    <li>
@@ -93,6 +81,13 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </li><br />
 
 	  
+	    <li>
+<a href="/know-apps-slow-internet-linux" title="كيفية معرفة التطبيقات التي تستهلك سرعة الإنترنت على اللينكس"><br />كيفية معرفة التطبيقات التي تستهلك سرعة الإنترنت على اللينكس</a><br />
+<span style="font-size: 14px">18 Jun 2014</span> <br />
+<p style="font-size: 18px">كثيراً ما يكون هناك تطبيقات غير ظاهرة تعمل في الخلفية وتستهلك سرعة الإنترنت مما يؤدي لبطئ ملحوظ أثناء تصفحنا للإنترنت .. والآن سنتعرف على طريقة من عدة طرق لمعرفة التطبيقات المتصلة بالإنترنت على نظام لينكس ، والطريقة هذه برأيي هي الأفضل حيث أنها تظهر التطبيقات المتصلة والسرعة التي تستهلكها حيث سيظهر التطبيق الذي يستهلك سرعة الإنترنت بشكل كبير أولاً ، وبعد معرفته يمكننا إغلاقه من مدير العمليات system monitor أولا يجب تنزيل التطبيق nethogs والذي... <a href="/know-apps-slow-internet-linux">قراءة المزيد» </a></p>
+</li><br />
+
+	  
 	</ul>
 <!-- Pagination links --><center>
 <div class="pagination">
@@ -107,6 +102,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </center>
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 

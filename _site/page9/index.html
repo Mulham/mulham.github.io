@@ -25,7 +25,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -40,12 +40,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   <li>
     <p>ستجد في هذا الموقع دروس ومقالات لا سابق لها في المحتوى العربي حيث أن المحتوى هنا بالكامل إما من تأليفي أو ترجمتي للدروس التي أرى أننا بحاجة لها.<a href="/about">اقرأ المزيد عن الموقع</a></p>
   </li>
-  <li>
-    <p>يمكنك <a href="/about/request">إرسال طلب خاص لي لترجمة مقال معين</a> مجاناً!</p>
-  </li>
-  <li>
-    <p>كما يمكنك الاستفادة من الموقع بوضع رابط موقعك ضمن قائمة الروابط المفيدة. راسلني لذلك.</p>
-  </li>
+
 </ul>
 
 <hr />
@@ -56,13 +51,6 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 
 	<ul class="posts">
-
-	  
-	    <li>
-<a href="/blue-vulcano-ethubia" title="البركان الأزرق في أثيوبيا يحرق غاز الكبريت القاتل"><br />البركان الأزرق في أثيوبيا يحرق غاز الكبريت القاتل</a><br />
-<span style="font-size: 14px">28 Mar 2014</span> <br />
-<p style="font-size: 18px">هذا ليس مشروع فوتوشوب ، البركان يولد حمم زرقاء والنتيجة مذهلة ، ولكنها قاتلة .. البركان الأزرق الغير اعتيادي انفجر في سهل داناكيل المنخفض في اثيوبيا . الحمم البركانية الاعتيادية تكون برتقالية أو حمراء ، وهنا ما زالت كذلك ولكن الأزرق يظهر هنا بسبب اختلاط هذه الحمم مع غازات الكبريت القاتلة . تم التقاط هذه الصورة من قبل المصور الفوتوغرافي الفرنسي “أوليفر غرانوالد” بدون تغيير في الألوان أو إضافة أية مؤثرات .. وطبعاً هذه مهمة... <a href="/blue-vulcano-ethubia">قراءة المزيد» </a></p>
-</li><br />
 
 	  
 	    <li>
@@ -94,6 +82,13 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </li><br />
 
 	  
+	    <li>
+<a href="/highest-speed-internet" title="الإنترنت الأسرع على الإطلاق 1.4 تيرابايت بالثانية !"><br />الإنترنت الأسرع على الإطلاق 1.4 تيرابايت بالثانية !</a><br />
+<span style="font-size: 14px">03 Feb 2014</span> <br />
+<p style="font-size: 18px">تم إجراء مؤخراً تجارب لطرق أسرع لنقل البيانات باستخدام تقنية الليزر المجمع أو المعقد . ولكن هذا أول اختبار تم تجربته في العالم الحقيقي خارج مختبرات التجارب . إنه ما يمكن أن نطلق عليه أكبر تقدم في عالم الإنترنت ، حيث ابتكر العلماء أسرع حزم واسعة النطاق على الإطلاق بسرعة تصل لـ 1.4 تيرابايت بالثانية .. حيث تكفي هذه السرعة (على سبيل المثال) لنقل 44 فيلم عالي الدقة دفعة واحدة . تم إجراء هذه التجربة... <a href="/highest-speed-internet">قراءة المزيد» </a></p>
+</li><br />
+
+	  
 	</ul>
 <!-- Pagination links --><center>
 <div class="pagination">
@@ -108,6 +103,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </center>
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 

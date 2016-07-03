@@ -27,7 +27,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -239,7 +239,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <p>كما تلاحظ فقد عرض لنا فرعين، والنجمة موضوعة على الفرع الجديد أي أنك الآن ضمنه.</p>
 
-<p>الآن يمكنك إجراء التغييرات التي تريد وكيفما تريد دون قلق فأنت الآن ضمن فرع مستقل ولكن تُحدث الفوضى في الحزمة أو الفرع الأساسي.</p>
+<p>الآن يمكنك إجراء التغييرات التي تريد وكيفما تريد دون قلق فأنت الآن ضمن فرع مستقل ولن تُحدث الفوضى في الحزمة أو الفرع الأساسي.</p>
 
 <p>بعد انتهاءك من العمل على الفرع الجديد، يمكنك الانتقال للفرع الأصلي ودمج التغييرات</p>
 
@@ -250,7 +250,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </code></pre>
 </div>
 
-<p>هنا انتقلنا للفرع الأساسي master وتأكدنا بوجود التجمة بجواره أي أننا فعلاً ضمنه الآن. لنقم بالدمج</p>
+<p>هنا انتقلنا للفرع الأساسي master وتأكدنا بوجود النجمة بجواره أي أننا فعلاً ضمنه الآن. لنقم بالدمج</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>	git merge perfectdict
 </code></pre>
@@ -302,6 +302,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 <br />
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 

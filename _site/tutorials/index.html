@@ -25,7 +25,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -37,11 +37,6 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <ul>
 
-	  
-			
-	    <li><p style="font-size: 18px"><a href="/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF" title="تطوير تطبيقات أندرويد"> تطوير تطبيقات أندرويد</a></p>
-</li>
-			
 	  
 			
 	    <li><p style="font-size: 18px"><a href="/git-basics" title="أساسيات التعامل مع Git"> أساسيات التعامل مع Git</a></p>
@@ -225,6 +220,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	</ul>
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 

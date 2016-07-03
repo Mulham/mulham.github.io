@@ -25,7 +25,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -40,12 +40,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   <li>
     <p>ستجد في هذا الموقع دروس ومقالات لا سابق لها في المحتوى العربي حيث أن المحتوى هنا بالكامل إما من تأليفي أو ترجمتي للدروس التي أرى أننا بحاجة لها.<a href="/about">اقرأ المزيد عن الموقع</a></p>
   </li>
-  <li>
-    <p>يمكنك <a href="/about/request">إرسال طلب خاص لي لترجمة مقال معين</a> مجاناً!</p>
-  </li>
-  <li>
-    <p>كما يمكنك الاستفادة من الموقع بوضع رابط موقعك ضمن قائمة الروابط المفيدة. راسلني لذلك.</p>
-  </li>
+
 </ul>
 
 <hr />
@@ -56,17 +51,6 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 
 	<ul class="posts">
-
-	  
-	    <li>
-<a href="/php-script-to-upload-file" title="سكريبت php بسيط لرفع ملف"><br />سكريبت php بسيط لرفع ملف</a><br />
-<span style="font-size: 14px">19 Jun 2016</span> <br />
-<p style="font-size: 18px">نقدم لكم سكريبت بسيط بلغة php لرفع ملف .
-
-يستخدم هذا السكريبت لرفع صور أو ملفات من نوع آخر لسيرفرك ،
-
- <a href="/php-script-to-upload-file">قراءة المزيد» </a></p>
-</li><br />
 
 	  
 	    <li>
@@ -97,6 +81,13 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </li><br />
 
 	  
+	    <li>
+<a href="/google" title="كيفية إضافة موقعك وتحسين عرضه في جوجل"><br />كيفية إضافة موقعك وتحسين عرضه في جوجل</a><br />
+<span style="font-size: 14px">18 Jun 2016</span> <br />
+<p style="font-size: 18px">يعتبر موقع بحث جوجل من أشهر مواقع البحث على الإنترنت ، وإضافة موقعك له سيجلب لك زوار كثر ويجعل موقعك أكثر شعبية على الإنترنت وخاصة إذا كان موقعك لديه محتوى ضخم نوعاً ما . إضافة موقعك لمحرك البحث جوجل : إنشاء خريطة الموقع وإضافتها لجوجل إنشاء خريطة موقعك : إضافة خريطة الموقع لجوجل : إضافة موقعك لمحرك البحث جوجل : اذهب ﻷدوات مشرفي المواقع اضغط على إضافة موقع أو Add Site أدخل عنوان موقعك (مثال... <a href="/google">قراءة المزيد» </a></p>
+</li><br />
+
+	  
 	</ul>
 <!-- Pagination links --><center>
 <div class="pagination">
@@ -111,6 +102,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </center>
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 

@@ -27,7 +27,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -78,7 +78,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <h2 id="section-1">النص العادي</h2>
 
-<p>النص العادي يكتب بدون الحاجة لأي أكواد. مع ملاحظة بسيطة هو أنك يجب أن تضع سطر فارغ بين الفقرة والأخرى لكي تُقرأ على أنها بداية سطر جديد. أي بدل الضغط على <code class="highlighter-rouge">enter</code> للانتقال للسطر الجديد ستضغط على enter`` مرتين لترك سطر فارغ وبالتالي ليفهم المفسر أنك تريد الانتقال لسطر جديد.</p>
+<p>النص العادي يكتب بدون الحاجة لأي أكواد. مع ملاحظة بسيطة هو أنك يجب أن تضع سطر فارغ بين الفقرة والأخرى لكي تُقرأ على أنها بداية سطر جديد. أي بدل الضغط على <code class="highlighter-rouge">enter</code> للانتقال للسطر الجديد ستضغط على <code class="highlighter-rouge">enter</code> مرتين لترك سطر فارغ وبالتالي ليفهم المفسر أنك تريد الانتقال لسطر جديد.</p>
 
 <h2 id="section-2">العناوين</h2>
 
@@ -363,6 +363,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 <br />
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 

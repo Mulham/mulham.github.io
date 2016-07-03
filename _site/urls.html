@@ -25,7 +25,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 	                	<li><a href="/">الرئيسية</a></li>
 						<li><a href="/blog">المدونة</a></li>
 						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">اطلب ترجمة</a></li>
+						
 						<li><a href="/urls">روابط مفيدة</a></li>
 						<li><a href="/about">عن الموقع</a></li>
 	    		</ul>
@@ -35,6 +35,18 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 			<h1 id="section">روابط مفيدة</h1>
 
 <ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[كتب عربية حرة</td>
+          <td>نجو معرفة حرة](http://librebooks.org/)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>تتضمن كتب تقنية جديدة ومفيدة.</p>
+  </li>
   <li>
     <p><a href="http://www.e-kutub.com/">إي-كتب</a></p>
 
@@ -59,6 +71,9 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   </li>
   <li>
     <p><a href="https://www.rwaq.org/">رواق - منصة عربية للتعليم المفتوح</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.webteb.com/">ويب طب - معلومات طبية وصحية متنوعة</a></p>
   </li>
   <li>
     <p><a href="http://tahriracademy.org/">أكاديمية التحرير</a></p>
@@ -133,6 +148,15 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 			
 			</div><!-- /.container -->
+<script>
+$(function(){
+     var loaded = parseInt(localStorage.getItem('loaded'), 10),
+         loaded_numb = loaded?loaded+1:1;
+     localStorage.setItem('loaded', loaded_numb);
+
+     $('body').append('<p>This page was loaded by you '+loaded_numb+' times !');
+});
+</script>
 			<footer>
 
 
