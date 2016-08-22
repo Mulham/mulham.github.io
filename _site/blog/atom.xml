@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-07-04T20:36:49+03:00</updated>
+	<updated>2016-08-22T15:56:59+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -183,7 +183,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;لتشغيل التطبيق، أكمل إلى الدرس القادم. (جاري التحرير .. ابقَ على اطّلاع)&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;تم إيقاف ترجمة باقي الدروس نظراً لوجود بدائل في المواقع العربية.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 </content>
 		</entry>
@@ -2589,6 +2591,10 @@
   &lt;li&gt;&lt;a href=&quot;#mkusb&quot; id=&quot;markdown-toc-mkusb&quot;&gt;تنصيب mkusb&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تفعيل الإقلاع من الفلاشة&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;هذا البرنامج يعمل على نظام لينكس، إذا رغبت برنامج مماثل لنظام ويندوز فأنا أنصحك بـ &lt;a href=&quot;http://www.linuxliveusb.com/&quot;&gt;هذا البرنامج&lt;/a&gt;، أما على نظام ماك فأنصح ببرنامج &lt;a href=&quot;/unetbootin&quot;&gt;unetbootin&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;mkusb&quot;&gt;تنصيب mkusb&lt;/h1&gt;
 
@@ -6035,20 +6041,19 @@ Secondary DNS server: 208.67.220.220
 			<content type="html">&lt;p&gt;شاهد كيفية تصميم واجهة فلاشية لموقع وب أو كإعلان تفاعلي حيث يكون الملف الناتج بصيغة swf أو كصورة gif، ولكن الصيغة الأولى أفضل حيث تكون ذات حجم أقل وكذلك يمكن التفاعل معها، أي الضغط على زر معين أو إظهار تأثيرات معينة عند المرور بالفأرة على جزء من الشكل.&lt;/p&gt;
 
 &lt;p&gt;الجزء الأول (7:09) دقيقة&lt;/p&gt;
-
+&lt;dl&gt;&lt;dd&gt;
 &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;
-&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/uH7owZEVf_k/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/uH7owZEVf_k?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/uH7owZEVf_k?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
+&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/uH7owZEVf_k/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/uH7owZEVf_k?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/uH7owZEVf_k?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;&lt;/dd&gt;&lt;/dl&gt;
 
 &lt;p&gt;الجزء الثاني (5:21) دقيقة&lt;/p&gt;
-
-&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/TG_QZ-5n_48/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/TG_QZ-5n_48?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/TG_QZ-5n_48?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
+&lt;dl&gt;&lt;dd&gt;
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/TG_QZ-5n_48/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/TG_QZ-5n_48?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/TG_QZ-5n_48?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;&lt;/dd&gt;&lt;/dl&gt;
 
 &lt;p&gt;مع ملاحظة خطأ بسيط في هذا الفيديو وهو أنه لحذف keyframe نضغط shift+F5 وليس shift+F6&lt;/p&gt;
 
 &lt;p&gt;الجزء الأخير (8:51) دقيقة&lt;/p&gt;
-
-&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/0YsvuigGpnQ/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/0YsvuigGpnQ?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/0YsvuigGpnQ?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
-&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: blue;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;dl&gt;&lt;dd&gt;
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;object class=&quot;BLOGGER-youtube-video&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot; data-thumbnail-src=&quot;http://i1.ytimg.com/vi/0YsvuigGpnQ/0.jpg&quot; height=&quot;266&quot; width=&quot;320&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/0YsvuigGpnQ?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed width=&quot;320&quot; height=&quot;266&quot; src=&quot;http://www.youtube.com/v/0YsvuigGpnQ?version=3&amp;amp;f=user_uploads&amp;amp;c=google-webdrive-0&amp;amp;app=youtube_gdata&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: blue;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;/dd&gt;&lt;/dl&gt;
 </content>
 		</entry>
 	
