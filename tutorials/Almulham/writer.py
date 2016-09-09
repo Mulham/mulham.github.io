@@ -22,7 +22,7 @@ b.write("dict = {")
 i = 0
 for c,d in m_dict.dict.items():
 	i += 1
-	b.write("'"+c+"': ["+"\n")
+	b.write('"'+c+'": ['+"\n")
 	b.write(str(d[0])+",\n")
 	b.write(str(d[1])+",\n")
 	b.write(str(d[2])+",\n")
