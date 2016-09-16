@@ -17,6 +17,7 @@ while a:
 			c = input("Enter next meaning: ")
 	a = input("Enter next word: ")
 print("Closing ...")
+print('Number of words till now: ',len(m_dict.dict))
 b = open("m_dict.py", encoding="utf-8", mode="w")
 b.write("dict = {")
 i = 0
