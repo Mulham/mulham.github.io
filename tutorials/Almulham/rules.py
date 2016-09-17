@@ -137,8 +137,6 @@ past_participle = ['abode', 'arisen', 'awoke',
  'striven', 'sunburnt', 'sworn', 'swept', 'swollen',
  'swum', 'swung', 'taken', 'taught', 'torn', 'told', 'thought', 'thriven', 'thrown', 'thrust', 'trodden', 'trod', 'unbent', 'underbidden', 'underbid', 'undergone', 'undersold', 'understood', 'undertaken', 'underwritten', 'undone', 'upset', 'woken', 'woke', 'waylaid', 'worn', 'woven', 'wove', 'wed', 'wept', 'wet', 'won', 'wound', 'withdrawn', 'withheld', 'withstood', 'wrought', 'wrung', 'written', 'writ'] 
 
-bad_topic_detector = ['porn', 'sex', 'orgasm', 'tits', 'pussy', 'fuck', 'cock', 'dick', 'naked', 'nude', 'ass', 'dp', 'cum', 'handjob', 'anal', 'blowjob', 'footjob', 'pee', 'fucking', 'harcore', 'gay', 'lesbian', 'horny', 'worship', 'solo', 'penetration', 'dp', 'hook', 'ganged', 'nailed', 'goddess', 'slave', 'black']
-surely_bad = ['xxx', 'kink', 'xhamster', 'abigaile johnson', 'remy lacroix', 'bonnie rotten']
 
 #short comparative
 def short_comparative(word):
