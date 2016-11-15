@@ -29,8 +29,9 @@ type: blog
 
 		sudo add-apt-repository ppa:openjdk-r/ppa 
 
-اضغط Enter عند الطلب. ثم نفذ الأمر
+اضغط Enter عند الطلب. ثم نفذ الأمرين
 
+		sudo apt-get update
 		sudo apt-get install openjdk-7-jdk
 
 ثم تابع ..
