@@ -4,7 +4,7 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2016-11-25T18:45:20+02:00</updated>
+	<updated>2016-11-25T19:09:33+02:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -4797,10 +4797,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;كيفية حرق توزيعة أبونتو على قرص ديفيدي باستخدام Brasero&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;brasero&quot;&gt;كيفية حرق توزيعة أبونتو على قرص ديفيدي باستخدام Brasero&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;unetbootin لحرق توزيعة أبونتو على فلاشة&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;mkusb&quot;&gt;mkusb الأفضل لحرق توزيعة أبونتو على فلاشة&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -4855,7 +4855,7 @@
 
 &lt;h1 id=&quot;الأجهزة-المدعومة&quot;&gt;الأجهزة المدعومة&lt;/h1&gt;
 
-&lt;p&gt;قائمة الأجهزة المستهدفة حالياُ والتي يعمل أبونتو بشكل جيد عليها موجودة &lt;a href=&quot;&quot;&gt;هنا&lt;/a&gt;https://developer.ubuntu.com/en/start/ubuntu-for-devices/devices/. كما قام المتطوعون بإيجاد منافذ لمجموعة أكبر من الأجهزة (مع تعمليات التنصيب) من &lt;a href=&quot;https://wiki.ubuntu.com/Touch/Devices&quot;&gt;هنا&lt;/a&gt;. على كل ، هذه المنافذ غير مدعومة بشكل رسمي.&lt;/p&gt;
+&lt;p&gt;قائمة الأجهزة المستهدفة حالياُ والتي يعمل أبونتو بشكل جيد عليها موجودة &lt;a href=&quot;https://developer.ubuntu.com/en/start/ubuntu-for-devices/devices/&quot;&gt;هنا&lt;/a&gt;. كما قام المتطوعون بإيجاد منافذ لمجموعة أكبر من الأجهزة (مع تعمليات التنصيب) من &lt;a href=&quot;https://wiki.ubuntu.com/Touch/Devices&quot;&gt;هنا&lt;/a&gt;. على كل ، هذه المنافذ غير مدعومة بشكل رسمي.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;تحذير : فقد بيانات.&lt;/strong&gt;&lt;/p&gt;
@@ -4864,7 +4864,7 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;إجراء اختياري مشروح في الأسفل لعمل نسخة لتطبيقات أندرويد والبيانات لملف محلي. ولا يوجد ضمان لنجاح عملية الاستعادة.
-راجع: &lt;a href=&quot;reinstall-android/&quot;&gt;إعادة تنصيب أندرويد&lt;/a&gt;.&lt;/p&gt;
+راجع: &lt;a href=&quot;reinstall-android&quot;&gt;إعادة تنصيب أندرويد&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;ملاحظات-الإصدار&quot;&gt;ملاحظات الإصدار&lt;/h1&gt;
 
