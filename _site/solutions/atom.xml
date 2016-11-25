@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Mulham Blog</title>
-	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://mulham.github.io/blog"/>
+	<title>Mulham Solutions</title>
+	<link href="http://mulham.github.io/solutions/atom.xml" rel="self"/>
+	<link href="http://mulham.github.io/solutions"/>
 	<updated>2016-11-25T21:25:32+02:00</updated>
-	<id>http://mulham.github.io/tutorials</id>
+	<id>http://mulham.github.io/solutions</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
