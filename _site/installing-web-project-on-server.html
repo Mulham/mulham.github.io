@@ -71,12 +71,12 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 <p>بالنسبة لتنصيب سكريبت على الاستضافة فيكون بنفس الخطوات مع اختلاف بسيط سوف أوضحه هنا. فلنبدأ!</p>
 
 <ul id="markdown-toc">
-  <li><a href="#section" id="markdown-toc-section">تنصيب السكريبت على السيرفر المحلي</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">تنصيب سكريبت على الإستضافة</a></li>
-  <li><a href="#section-2" id="markdown-toc-section-2">مشاكل وحلول</a>    <ul>
-      <li><a href="#section-3" id="markdown-toc-section-3">للقراءة فقط</a></li>
-      <li><a href="#settingsphp" id="markdown-toc-settingsphp">لا يوجد ملف إعدادات settings.php</a></li>
-      <li><a href="#php" id="markdown-toc-php">تقييدات PHP</a></li>
+  <li><a href="#تنصيب-السكريبت-على-السيرفر-المحلي" id="markdown-toc-تنصيب-السكريبت-على-السيرفر-المحلي">تنصيب السكريبت على السيرفر المحلي</a></li>
+  <li><a href="#تنصيب-سكريبت-على-الإستضافة" id="markdown-toc-تنصيب-سكريبت-على-الإستضافة">تنصيب سكريبت على الإستضافة</a></li>
+  <li><a href="#مشاكل-وحلول" id="markdown-toc-مشاكل-وحلول">مشاكل وحلول</a>    <ul>
+      <li><a href="#للقراءة-فقط" id="markdown-toc-للقراءة-فقط">للقراءة فقط</a></li>
+      <li><a href="#لا-يوجد-ملف-إعدادات-settingsphp" id="markdown-toc-لا-يوجد-ملف-إعدادات-settingsphp">لا يوجد ملف إعدادات settings.php</a></li>
+      <li><a href="#تقييدات-php" id="markdown-toc-تقييدات-php">تقييدات PHP</a></li>
     </ul>
   </li>
 </ul>
@@ -91,7 +91,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <p>الخطوات التالية ستختلف بحسب التنصيب على الإستضافة أو السيرفر المحلي</p>
 
-<h1 id="section">تنصيب السكريبت على السيرفر المحلي</h1>
+<h1 id="تنصيب-السكريبت-على-السيرفر-المحلي">تنصيب السكريبت على السيرفر المحلي</h1>
 
 <ol>
   <li>
@@ -112,7 +112,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   </li>
 </ol>
 
-<h1 id="section-1">تنصيب سكريبت على الإستضافة</h1>
+<h1 id="تنصيب-سكريبت-على-الإستضافة">تنصيب سكريبت على الإستضافة</h1>
 
 <ol>
   <li>
@@ -133,13 +133,13 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   </li>
 </ol>
 
-<h1 id="section-2">مشاكل وحلول</h1>
+<h1 id="مشاكل-وحلول">مشاكل وحلول</h1>
 
 <blockquote>
   <p>هذا القسم خاص في حال التنصيب على السيرفر المحلي وتحت منصة لينكس.</p>
 </blockquote>
 
-<h2 id="section-3">للقراءة فقط</h2>
+<h2 id="للقراءة-فقط">للقراءة فقط</h2>
 
 <p>قد يعرض لك السكريبت أثناء عملية التنزيل خطأ تفيد بأن الملفات للقراءة فقط و غير قابلة للكتابة.</p>
 
@@ -165,13 +165,13 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </code></pre>
 </div>
 
-<h2 id="settingsphp">لا يوجد ملف إعدادات settings.php</h2>
+<h2 id="لا-يوجد-ملف-إعدادات-settingsphp">لا يوجد ملف إعدادات settings.php</h2>
 
 <p>هذه المشكلة غالباً ما تحصل مع سكريبت دروبال، قم بالذهاب للمسار الموجود به ملف الإعدادات الافتراضية default.settings.php ، إن كنت تنصب دروبال فسيكون الملف في المسار /var/www/html/foldername/sites/default .</p>
 
 <p>الآن قم بإنشاء ملف جديد وسمه settings.php وافتح الملف default.settings.php وانسخ ما فيه والصقه في الملف المنشأ.</p>
 
-<h2 id="php">تقييدات PHP</h2>
+<h2 id="تقييدات-php">تقييدات PHP</h2>
 
 <p>قد يكون السكريبت الذي تنزله يحتاج لمتطلبات سيرفر أعلى من الإعدادات الافتراضية. فقد يطلب السكريبت ذاكرة تخزين php مؤقتة أكبر . حد أقصى لوقت الإدخال أكبر .. وما إلى ذلك.</p>
 
@@ -202,9 +202,9 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <div class="share-page">
     إن أعجبك الشرح فيرجى مشاركته &larr;
-    <a href="https://plus.google.com/share?url=https://mulham.github.io/installing-web-project-on-server" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
-    <a href="https://twitter.com/intent/tweet?text=كيفية تنصيب مشاريع الوب الجاهزة&url=https://mulham.github.io/installing-web-project-on-server&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
-    <a href="https://facebook.com/sharer.php?u=https://mulham.github.io/installing-web-project-on-server" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/installing-web-project-on-server" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
+    <a href="https://twitter.com/intent/tweet?text=كيفية تنصيب مشاريع الوب الجاهزة&url=http://localhost:4000/installing-web-project-on-server&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/installing-web-project-on-server" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
 </div>
 
 

@@ -63,30 +63,30 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <div class="post">
   <ul id="markdown-toc">
-  <li><a href="#section" id="markdown-toc-section">مقدمة</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">إنشاء مجلد القالب</a>    <ul>
-      <li><a href="#templatedetailsxml" id="markdown-toc-templatedetailsxml">إنشاء ملف templateDetails.xml</a></li>
-      <li><a href="#indexphp" id="markdown-toc-indexphp">إنشاء ملف index.php</a>        <ul>
-          <li><a href="#section-2" id="markdown-toc-section-2">البداية :</a></li>
-          <li><a href="#section-3" id="markdown-toc-section-3">رأس القالب</a></li>
-          <li><a href="#section-4" id="markdown-toc-section-4">جسم القالب</a></li>
+  <li><a href="#مقدمة" id="markdown-toc-مقدمة">مقدمة</a></li>
+  <li><a href="#إنشاء-مجلد-القالب" id="markdown-toc-إنشاء-مجلد-القالب">إنشاء مجلد القالب</a>    <ul>
+      <li><a href="#إنشاء-ملف-templatedetailsxml" id="markdown-toc-إنشاء-ملف-templatedetailsxml">إنشاء ملف templateDetails.xml</a></li>
+      <li><a href="#إنشاء-ملف-indexphp" id="markdown-toc-إنشاء-ملف-indexphp">إنشاء ملف index.php</a>        <ul>
+          <li><a href="#البداية-" id="markdown-toc-البداية-">البداية :</a></li>
+          <li><a href="#رأس-القالب" id="markdown-toc-رأس-القالب">رأس القالب</a></li>
+          <li><a href="#جسم-القالب" id="markdown-toc-جسم-القالب">جسم القالب</a></li>
           <li><a href="#module-positions" id="markdown-toc-module-positions">Module Positions</a></li>
-          <li><a href="#section-5" id="markdown-toc-section-5">النهاية</a></li>
+          <li><a href="#النهاية" id="markdown-toc-النهاية">النهاية</a></li>
         </ul>
       </li>
-      <li><a href="#section-6" id="markdown-toc-section-6">صور مخصصة:</a></li>
-      <li><a href="#css-" id="markdown-toc-css-">CSS مخصص</a></li>
+      <li><a href="#صور-مخصصة" id="markdown-toc-صور-مخصصة">صور مخصصة:</a></li>
+      <li><a href="#css-مخصص" id="markdown-toc-css-مخصص">CSS مخصص</a></li>
     </ul>
   </li>
-  <li><a href="#section-7" id="markdown-toc-section-7">اختبار القالب :</a></li>
-  <li><a href="#section-8" id="markdown-toc-section-8">تحزيم قالب للتنصيب</a></li>
+  <li><a href="#اختبار-القالب-" id="markdown-toc-اختبار-القالب-">اختبار القالب :</a></li>
+  <li><a href="#تحزيم-قالب-للتنصيب" id="markdown-toc-تحزيم-قالب-للتنصيب">تحزيم قالب للتنصيب</a></li>
 </ul>
 
-<h1 id="section">مقدمة</h1>
+<h1 id="مقدمة">مقدمة</h1>
 
 <p>إن هدف هذا الشرح هو إعطاء مقدمة عن إنشاء قوالب Joomla ، حيث سيغطي هذا الشرح الأكواد والملفات الأساسية لإنشاء قالب بسيط ، حيث الأكواد المقدمة هنا يمكنك نسخها ولصقها مع تعديل بسيط فقط .</p>
 
-<h1 id="section-1">إنشاء مجلد القالب</h1>
+<h1 id="إنشاء-مجلد-القالب">إنشاء مجلد القالب</h1>
 
 <p>لإنشاء قالب بسيط ، أنشأ مجلد جديد ضمن مجلد templates . وقم بتسمية هذا المجلد باسم القالب الذي تود إنشاؤه ، مثل : mynewtemplate</p>
 
@@ -118,7 +118,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   </li>
 </ul>
 
-<h2 id="templatedetailsxml">إنشاء ملف templateDetails.xml</h2>
+<h2 id="إنشاء-ملف-templatedetailsxml">إنشاء ملف templateDetails.xml</h2>
 
 <p>إن ملف templateDetails.xml أساسي ، وبدونه لن يتم رؤية قالبك من قبل joomla . هذا الملف يحمل مفاتيح metadata عن القالب .</p>
 
@@ -311,7 +311,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <p>أبق ترتيب العناصر كما هي ، فهذا هو الترتيب الشائع والذي يمكنك من الانتقال بسهولة من القالب البسيط .</p>
 
-<h2 id="indexphp">إنشاء ملف index.php</h2>
+<h2 id="إنشاء-ملف-indexphp">إنشاء ملف index.php</h2>
 
 <p>(هذا الشرح لإصدارات 2.5 و 3x من Joomla )</p>
 
@@ -319,7 +319,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <p>هذه الصفحة في الأسفل تظهر الكود البدائي والقابل للنسخ واللصق داخل تصميمك الخاص .</p>
 
-<h3 id="section-2">البداية :</h3>
+<h3 id="البداية-">البداية :</h3>
 
 <p>قالب جملة يبدأ بالأسطر التالية :</p>
 
@@ -340,7 +340,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <p>السطر الثالث يبدأ ملفنا الـ HTML ويصف اللغة التي يستخدمها الموقع . ملف الـ html مقسم لجزأين ، الرأس head والجسم body ، الرأس يحوي معلومات حول الملف والجسم يحوي كود الموقع والذي يتحكم بالتنسيق</p>
 
-<h3 id="section-3">رأس القالب</h3>
+<h3 id="رأس-القالب">رأس القالب</h3>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;head&gt;</span>
 
@@ -359,7 +359,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
     <span class="nt">&lt;/head&gt;</span></code></pre></figure>
 
-<h3 id="section-4">جسم القالب</h3>
+<h3 id="جسم-القالب">جسم القالب</h3>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;body&gt;</span>
 
@@ -385,7 +385,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
   <p>يمكنك إضافة أسطرك الخاصة في أي مكان تريد في الجسم ، ولكن عليك إضافة أسطر مماثلة في ملف templateDetails.xml والذي يتم تنفيذه جنباً إلى جنب مع ملف index.php في قالبك</p>
 </blockquote>
 
-<h3 id="section-5">النهاية</h3>
+<h3 id="النهاية">النهاية</h3>
 
 <p>أنه قالبك بالوسم</p>
 
@@ -393,7 +393,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 </code></pre>
 </div>
 
-<h2 id="section-6">صور مخصصة:</h2>
+<h2 id="صور-مخصصة">صور مخصصة:</h2>
 
 <p>يمكنك إضافة صورك الخاصة في أي مكان في القالب ، وذلك من خلال إضافة السطر التالي</p>
 
@@ -401,7 +401,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <p>فقط قم بتغيير مسار واسم الصورة حسب ما يناسب ..</p>
 
-<h2 id="css-">CSS مخصص</h2>
+<h2 id="css-مخصص">CSS مخصص</h2>
 
 <p>يمكنك إضافة ستايلك الخاص css كما في التالي</p>
 
@@ -449,7 +449,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
     <span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
-<h1 id="section-7">اختبار القالب :</h1>
+<h1 id="اختبار-القالب-">اختبار القالب :</h1>
 
 <p>قم بإيجاد القالب في مدير القوالب Template Manager ، اختر قالبك واضغط على Default لجعله القالب الافتراضي</p>
 
@@ -459,7 +459,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <p>لاحظ أن يمكنك إنشاء قالبك خارج جملة وتنصيبه بعد ذلك ببساطة كأي إضافة عادية ..</p>
 
-<h1 id="section-8">تحزيم قالب للتنصيب</h1>
+<h1 id="تحزيم-قالب-للتنصيب">تحزيم قالب للتنصيب</h1>
 
 <p>مجلد يحتوي عدة ملفات مبعثرة ليس طريقة جيدة لعمل حزمة (قالب ، إضافة .. إلخ) . لذا الخطوة الأخيرة هو عمل حزمة . وهي أرشيف مضغوط يحوي المجلد المنشأ وجميع الملفات . يمكن للحزمة أن تكون بلاحقة zip أو tar.gz أو tar.bz2</p>
 
@@ -471,9 +471,9 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
 <div class="share-page">
     إن أعجبك الشرح فيرجى مشاركته &larr;
-    <a href="https://plus.google.com/share?url=https://mulham.github.io/joomla/create-template" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
-    <a href="https://twitter.com/intent/tweet?text=إنشاء قوالب Joomla&url=https://mulham.github.io/joomla/create-template&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
-    <a href="https://facebook.com/sharer.php?u=https://mulham.github.io/joomla/create-template" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/joomla/create-template" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
+    <a href="https://twitter.com/intent/tweet?text=إنشاء قوالب Joomla&url=http://localhost:4000/joomla/create-template&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/joomla/create-template" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
 </div>
 
 
