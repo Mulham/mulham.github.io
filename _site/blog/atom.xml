@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2016-08-22T15:56:59+03:00</updated>
+	<updated>2016-11-25T15:36:52+02:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -618,9 +618,10 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;اضغط Enter عند الطلب. ثم نفذ الأمر&lt;/p&gt;
+&lt;p&gt;اضغط Enter عند الطلب. ثم نفذ الأمرين&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get install openjdk-7-jdk
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get update
+	sudo apt-get install openjdk-7-jdk
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
