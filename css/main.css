@@ -3,11 +3,11 @@ nav ul, footer ul{font-family:'Noto Kufi Arabic', 'droid arabic kufi', 'Droid Ar
 nav ul li, footer ul li{display:inline;margin-right:20px;}
 a{text-decoration:none;color:#999;}
 a:hover{text-decoration:none;color:#4ab6ed;}
-h1{font-size:2.2em;font-family:'Noto Kufi Arabic', 'Helvetica', 'Arial', 'Sans-Serif';}
+h1{font-size:2.2em;font-family:'Noto Kufi Arabic', 'droid arabic kufi', 'Droid Arabic Naskh', 'Helvetica', 'Arial', 'Sans-Serif';}
 blockquote{display:block;background:#e7e7e7;font-size:1.2em;padding:0 15px;quotes:"\201C""\201D""\2018""\2019";font-family:Georgia, serif;font-size:19px;line-height:1.2;color:#d44803;text-align:justify;border-right:12px solid #c76c0c;-moz-box-shadow:2px 2px 15px #ccc;-webkit-box-shadow:2px 2px 15px #ccc;box-shadow:2px 2px 15px #ccc;}
 blockquote:before{color:#00cbba;font-size:4em;line-height:0.1em;margin-right:0.25em;vertical-align:-0.45em;}
 blockquote p{display:inline;}
-p{font-family:'Noto Kufi Arabic', 'Helvetica', 'Arial', 'Sans-Serif';font-size:1.2em;line-height:1.4em;color:#333;}
+p{font-family:'Noto Kufi Arabic', 'droid arabic kufi', 'Droid Arabic Naskh', 'Helvetica', 'Arial', 'Sans-Serif';font-size:1.2em;line-height:1.4em;color:#333;}
 table{padding:0;}
 table tr{border-top:1px solid #cccccc;background-color:white;margin:0;padding:0;}
 table tr:nth-child(2n){background-color:#f8f8f8;}
