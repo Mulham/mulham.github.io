@@ -21,8 +21,6 @@ hidden: true
 
 [الدرس السادس : عمليات AND & OR في SQL](and-or)
 
-[الدرس السابع : دالة ORDER BY في SQL](order-by)
-
 الدرس الثامن: تصريح INSERT INTO في SQL
 
 [الدرس التاسع: تصريح UPDATE في SQL](update)
