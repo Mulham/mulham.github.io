@@ -4,13 +4,90 @@
 	<title>Mulham Solutions</title>
 	<link href="http://mulham.github.io/solutions/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/solutions"/>
-	<updated>2016-11-26T07:33:24+02:00</updated>
+	<updated>2016-12-06T16:45:27+02:00</updated>
 	<id>http://mulham.github.io/solutions</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>5 أشياء قد لا تعرفها عن أنواع التوضّع في CSS</title>
+			<link href="http://mulham.github.io/css-positioning-types"/>
+			<updated>2016-12-05T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//css-positioning-types</id>
+			<content type="html">&lt;p&gt;مرحباً ..
+يمكن في هذه الأيام أن يقوم المطورون ببناء هيكليّة معقدة لصفحة الوب باستخدام تقنيات CSS المتعددة. لبعض هذه التقنيات تاريخ طويل (مثل floats)، بينما حاز البعض الآخر على الشعبية في السنوات الأخيرة (مثل flexbox).&lt;/p&gt;
+
+&lt;p&gt;سأقوم عزيزي القارئ في هذا المقال بإلقاء الضوء أكثر على تقنيات CSS الغير مشهورة تماماً والمتعلقة بطريقة تنسيق توضّع الحقول والمحتويات ضمن صفحة الوب.&lt;/p&gt;
+
+&lt;p&gt;ولكن قبل البدء بذلك دعنا نلقِ نظرة سريعة وضرورية على أنواع التوضّع المتاحة..&lt;/p&gt;
+
+&lt;h1 id=&quot;مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/h1&gt;
+
+&lt;p&gt;تتيح لنا خاصية &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; في CSS تحديد نوع التوضّع لعنصر ما.&lt;/p&gt;
+
+&lt;h2 id=&quot;خيارات-خاصيّة-التوضّع-position&quot;&gt;خيارات خاصيّة التوضّع ‘position’&lt;/h2&gt;
+
+&lt;p&gt;إن القيمة الافتراضية لهذه الخاصية هي &lt;strong&gt;static&lt;/strong&gt;. هذه القيمة تعني أن العنصر لم يتم تحديد موقعه، لتحديد توضعّه يجب تغيير هذه القيمة الافتراضية ﻷحد القيم التالية:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;relative&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;absolute&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fixed&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sticky&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;يمكننا بعد ذلك استخدام خصائص الإزاحة لتحديد الموضع المطلوب للعنصر، وهذه الخصائص هي :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;right&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bottom&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;left&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;مع العلم أن القيمة المبدئيّة لهذه الخصائص هي &lt;code class=&quot;highlighter-rouge&quot;&gt;auto&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	div.relative {
+	    position: relative;
+	    right: 30px;
+	    top: 10px;
+	}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;عليك دائماً أن تتذكر أن العنصر الذي تكون قيمة الخاصيّة &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; له هي &lt;code class=&quot;highlighter-rouge&quot;&gt;absolute&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;fixed&lt;/code&gt; يدعى العنصر المتوضّع بشكل مطلق/ أو العنصر مطلق التوضّع. يعني أنك لا يمكن أن تستخدم خصائص الإزاحة مع هذه القيم. لاحظ أيضاً أن العنصر المتوضّع يمكن أن يستخدم خاصيّة &lt;code class=&quot;highlighter-rouge&quot;&gt;z-index&lt;/code&gt; والتي تحدد ترتيبه وأوليته في العرض (فوق الكل أم أسفل شيئ معين وما إلى ذلك، مثل ترتيب الطبقات في برامج التصميم).&lt;/p&gt;
+
+&lt;h2 id=&quot;الاختلافات-الرئيسية-لخاصية-التوضّع-في-css&quot;&gt;الاختلافات الرئيسية لخاصية التوضّع في CSS&lt;/h2&gt;
+
+&lt;p&gt;دعنا الآن نناقش باختصار فروقات ثلاث رئيسية بين أنواع التوضّع المتاحة:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>كيفية الإجابة على السؤال "لماذا تستحق المنحة" عند التقدم للمنح الدراسية</title>
@@ -2937,8 +3014,6 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3065,8 +3140,6 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/p&gt;
@@ -3161,8 +3234,6 @@
 &lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -3268,8 +3339,6 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3322,106 +3391,6 @@
 		</entry>
 	
 		<entry>
-			<title>سلسلة دروس SQL|دالة ORDER BY</title>
-			<link href="http://mulham.github.io/sql/order-by"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/order-by</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;الدرس السابع : دالة ORDER BY فيSQL&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#دالة-order-by-في-sql&quot; id=&quot;markdown-toc-دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-order-by&quot; id=&quot;markdown-toc-بناء-order-by&quot;&gt;بناء ORDER BY&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by&quot; id=&quot;markdown-toc-مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-desc&quot; id=&quot;markdown-toc-مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-لعدة-أعمدة&quot; id=&quot;markdown-toc-مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج&lt;/p&gt;
-
-&lt;h1 id=&quot;دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/h1&gt;
-
-&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج بعمود واحد أو أكثر&lt;/p&gt;
-
-&lt;p&gt;تقوم دالة ORDER BY بفرز التسجيلات افتراضياً بحسب الترتيب الأبجدي (ascending) ، لفرز التسجيلات بعكس الترتيب الأبجدي (descending) ، استعمل دالة DESC .&lt;/p&gt;
-
-&lt;h1 id=&quot;بناء-order-by&quot;&gt;بناء ORDER BY&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
-
-    FROM table_name
-
-    ORDER BY column_name,column_name ASC|DESC;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/h1&gt;
-
-&lt;p&gt;سنستخدم في هذا الشرح قاعدة البيانات المعروفة جيداً Northwind&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/h1&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب عمود الدولة Country&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
-
-	ORDER BY Country; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/h2&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين عكس الترتيب الأبجدي  بحسب عمود الدولة Country&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
-
-	ORDER BY Country DESC;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/h2&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب أعمدة الدولة Country واسم الزبون CustomerName&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
-
-	ORDER BY Country,CustomerName;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;insert-into&quot;&gt;تصريح INSERT INTO&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
 			<title>سلسلة دروس SQL|مقدمة</title>
 			<link href="http://mulham.github.io/sql/intro"/>
 			<updated>2016-06-18T00:00:00+03:00</updated>
@@ -3449,8 +3418,6 @@
 &lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -3583,8 +3550,6 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3694,8 +3659,6 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3789,8 +3752,6 @@
 &lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -3908,8 +3869,6 @@
 
 &lt;p&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3978,7 +3937,6 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;التالي: &lt;a href=&quot;order-by&quot;&gt;دالة ORDER BY&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
