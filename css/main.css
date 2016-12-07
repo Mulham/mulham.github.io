@@ -24,7 +24,7 @@ table tr td{border:1px solid #cccccc;text-align:right;margin:0;padding:6px 13px;
 table tr th:first-child, table tr td:first-child{margin-top:0;}
 table tr th:last-child, table tr td:last-child{margin-bottom:0;}
 footer{border-top:1px solid #d5d5d5;font-size:1em;}
-ul.posts{margin:20px auto 40px;font-size:1.5em;}
+ul.posts{font-family:'BKamran', "Courier New", Courier, monospace, 'Noto Kufi Arabic', 'droid arabic kufi', 'Droid Arabic Naskh', 'Helvetica', 'Arial', 'Sans-Serif';margin:20px auto 40px;font-size:2em;font-weight:bold;}
 ul.posts li{list-style:none;}
 dl{padding:0;}
 dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px;}
