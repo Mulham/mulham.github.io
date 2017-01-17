@@ -4,13 +4,130 @@
 	<title>Mulham Solutions</title>
 	<link href="http://mulham.github.io/solutions/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/solutions"/>
-	<updated>2016-12-07T19:36:04+02:00</updated>
+	<updated>2016-12-07T23:30:39+02:00</updated>
 	<id>http://mulham.github.io/solutions</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>5 أشياء قد لا تعرفها عن أنواع التوضّع في CSS</title>
+			<link href="http://mulham.github.io/css-positioning-types"/>
+			<updated>2016-12-05T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//css-positioning-types</id>
+			<content type="html">&lt;p&gt;مرحباً ..
+يمكن في هذه الأيام أن يقوم المطورون ببناء هيكليّة معقدة لصفحة الوب باستخدام تقنيات CSS المتعددة. لبعض هذه التقنيات تاريخ طويل (مثل floats)، بينما حاز البعض الآخر على الشعبية في السنوات الأخيرة (مثل flexbox).&lt;/p&gt;
+
+&lt;p&gt;سأقوم عزيزي القارئ في هذا المقال بإلقاء الضوء أكثر على تقنيات CSS الغير مشهورة تماماً والمتعلقة بطريقة تنسيق توضّع الحقول والمحتويات ضمن صفحة الوب.&lt;/p&gt;
+
+&lt;p&gt;ولكن قبل البدء بذلك دعنا نلقِ نظرة سريعة وضرورية على أنواع التوضّع المتاحة..&lt;/p&gt;
+
+&lt;h1 id=&quot;مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/h1&gt;
+
+&lt;p&gt;تتيح لنا خاصية &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; في CSS تحديد نوع التوضّع لعنصر ما.&lt;/p&gt;
+
+&lt;h2 id=&quot;خيارات-خاصيّة-التوضّع-position&quot;&gt;خيارات خاصيّة التوضّع ‘position’&lt;/h2&gt;
+
+&lt;p&gt;إن القيمة الافتراضية لهذه الخاصية هي &lt;strong&gt;static&lt;/strong&gt;. هذه القيمة تعني أن العنصر لم يتم تحديد موقعه، لتحديد توضعّه يجب تغيير هذه القيمة الافتراضية ﻷحد القيم التالية:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;relative&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;absolute&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fixed&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sticky&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;يمكننا بعد ذلك استخدام خصائص الإزاحة لتحديد الموضع المطلوب للعنصر، وهذه الخصائص هي :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;right&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bottom&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;left&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;مع العلم أن القيمة المبدئيّة لهذه الخصائص هي &lt;code class=&quot;highlighter-rouge&quot;&gt;auto&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;div.relative {
+    position: relative;
+    right: 30px;
+    top: 10px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;عليك دائماً أن تتذكر أن العنصر الذي تكون قيمة الخاصيّة &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; له هي &lt;code class=&quot;highlighter-rouge&quot;&gt;absolute&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;fixed&lt;/code&gt; يدعى العنصر المتوضّع بشكل مطلق/ أو العنصر مطلق التوضّع. يعني أنك لا يمكن أن تستخدم خصائص الإزاحة مع هذه القيم. لاحظ أيضاً أن العنصر المتوضّع يمكن أن يستخدم خاصيّة &lt;code class=&quot;highlighter-rouge&quot;&gt;z-index&lt;/code&gt; والتي تحدد ترتيبه وأوليته في العرض (فوق الكل أم أسفل شيئ معين وما إلى ذلك، مثل ترتيب الطبقات في برامج التصميم).&lt;/p&gt;
+
+&lt;h2 id=&quot;الاختلافات-الرئيسية-لخاصية-التوضّع-في-css&quot;&gt;الاختلافات الرئيسية لخاصية التوضّع في CSS&lt;/h2&gt;
+
+&lt;p&gt;دعنا الآن نناقش باختصار فروقات ثلاث رئيسية بين أنواع التوضّع المتاحة:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;العنصر الذي تكون قيمة توضّعه absolute يكون محذوف بشكل كامل من العرض الطبيعي وتحتل مكانه العناصر المجاورة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;العنصر الذي تكون قيمة توضّعه relative أو sticky يحجز مكاناً خاصاً له ولا يمكن للعناصر المجاورة أن تحتل أي جزء من المساحة المجحوزة. ولكن إذا تم تطبيق أحد خصائص الإزاحة فإن هذه الإزاحة لا تحجز مكاناً خاصاً بحيث يتم تجاهلها من قبل باقي العناصر وقد يسبب ذلك تداخل العناصر فوق بعضها!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;العنصر الذي تكون قيمة توضّعه fixed يتوضع دائماً بشكل ملائم للعرض (فيما عدا العناصر التي تحمل الخاصيّة &lt;code class=&quot;highlighter-rouge&quot;&gt;transform&lt;/code&gt; والتي تدعمها جميع الإصدارات الأخيرة لمتصفحات الوب).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;العنصر الذي تكون قيمة توضّعه sticky يتوضّع بشكل ملائم بالنسبة للعناصر المجاورة التي تحوي مربع التمرير (مثل خاصية &lt;code class=&quot;highlighter-rouge&quot;&gt;overflow: auto&lt;/code&gt;). وإذا لم يتواجد مثل هذا العنصر فيتوضع بشكل ملائم للعرض.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;أعرف أنك لم تفهم شيئأ .. وهذا ما أتوقعه أصلاً .. دعنا نجرب بشكل حي، فبالمثال والتجربة يزول الإشكال:&lt;/p&gt;
+
+&lt;p data-height=&quot;500&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;vyjwWa&quot; data-default-tab=&quot;result&quot; data-user=&quot;mulham94&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Overview of the available positioning types&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/mulham94/pen/vyjwWa/&quot;&gt;Overview of the available positioning types&lt;/a&gt; by Mulham (&lt;a href=&quot;http://codepen.io/mulham94&quot;&gt;@mulham94&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;لا تزال وضعية التوضع sticky تعتبر تقنية تجريبية وتدعمها متصفحات محدودة فقط. يمكنك استخدام خاصية polyfill (مثل stickyfill) لإضافة هذه الميزة للمتصفحات التي لا تدعم sticky.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;توضّع-العناصر-وفق-النوع-absolute&quot;&gt;توضّع العناصر وفق النوع Absolute&lt;/h1&gt;
+
+&lt;p&gt;قد يعرف الكثير منكم كيف يعمل هذا النوع من التوضّع، ولكن في بعض الأحيان يكون هذا النوع غير مفهوم ومربك للمصممين الجدد.&lt;/p&gt;
+
+&lt;p&gt;لهذا السبب قررت الحديث عنه في قائمة المفاهيم الغير معروفة كثيراً وإرفاق إطار للتجريب أيضاً.&lt;/p&gt;
+
+&lt;p&gt;وكما ذكرت سابقاً، العنصر الذي يكون نوع توضّعه absolute يكون عرضه ملائم لأقرب عنصر يحتويه. وطبعاً هذا في حالة أن العنصر الأب (الحاوي لعنصرنا من نوع absolute) لا يساوي نوع توضعه static. وبهذا، إن لم يكن لدى العنصر أي عنصر أب له قيمة توضع غير الافتراضية (static)، فسيتوضع هذا العنصر بشكل ملائم للعرض ككل.&lt;/p&gt;
+
+&lt;p&gt;لفهم ذلك أكثر دعنا نجرب هذا السلوك في العرض أدناه:&lt;/p&gt;
+
+&lt;p&gt;وكما لاحظت، لقد أ&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;أعد متعة القراءة لموقعك&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;خـــمــــســـــات&lt;/p&gt;
+
+&lt;p&gt;اطلب خطّك الآن ليصبح حيّاً على موقعك!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;خط حصري لموقعك على الإنترنت!&lt;/strong&gt;&lt;/p&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>كيفية الإجابة على السؤال "لماذا تستحق المنحة" عند التقدم للمنح الدراسية</title>

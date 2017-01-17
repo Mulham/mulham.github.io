@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/css-positioning-types</loc>
+<lastmod>2016-12-05T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9</loc>
 <lastmod>2016-11-26T00:00:00+02:00</lastmod>
 </url>

@@ -65,12 +65,21 @@ type: tutorial
 
 أعرف أنك لم تفهم شيئأ .. وهذا ما أتوقعه أصلاً .. دعنا نجرب بشكل حي، فبالمثال والتجربة يزول الإشكال:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="vyjwWa" data-default-tab="result" data-user="mulham94" data-embed-version="2" data-pen-title="Overview of the available positioning types" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/vyjwWa/">Overview of the available positioning types</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="0" data-slug-hash="vyjwWa" data-default-tab="result" data-user="mulham94" data-embed-version="2" data-pen-title="Overview of the available positioning types" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/vyjwWa/">Overview of the available positioning types</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
   > لا تزال وضعية التوضع sticky تعتبر تقنية تجريبية وتدعمها متصفحات محدودة فقط. يمكنك استخدام خاصية polyfill (مثل stickyfill) لإضافة هذه الميزة للمتصفحات التي لا تدعم sticky. 
 
 # توضّع العناصر وفق النوع Absolute
+
+قد يعرف الكثير منكم كيف يعمل هذا النوع من التوضّع، ولكن في بعض الأحيان يكون هذا النوع غير مفهوم ومربك للمصممين الجدد.
+
+لهذا السبب قررت الحديث عنه في قائمة المفاهيم الغير معروفة كثيراً وإرفاق إطار للتجريب أيضاً.
+
+وكما ذكرت سابقاً، العنصر الذي يكون نوع توضّعه absolute يكون عرضه ملائم لأقرب عنصر يحتويه. وطبعاً هذا في حالة أن العنصر الأب (الحاوي لعنصرنا من نوع absolute) لا يساوي نوع توضعه static. وبهذا، إن لم يكن لدى العنصر أي عنصر أب له قيمة توضع غير الافتراضية (static)، فسيتوضع هذا العنصر بشكل ملائم للعرض ككل.
+
+لفهم ذلك أكثر دعنا نجرب هذا السلوك في العرض أدناه:
+
 
 
 
