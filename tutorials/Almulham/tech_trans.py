@@ -1,6 +1,7 @@
 import gi, tech_dict
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
+from gi.repository import Gtk, GObject
+
 class dict_window(Gtk.Window):		
 	def __init__(self):
 		Gtk.Window.__init__(self, title="Al-Mulham Translator")
@@ -10,14 +11,12 @@ class dict_window(Gtk.Window):
 		self.add(vbox)
 		hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=2)
 		self.add(hbox)
-		vbox.pack_start(hbox, True, True, 0)
-		self.entry = Gtk.TextView()
-		
+		self.entry = Gtk.Entry()
 		hbox.pack_start(self.entry, True, True, 0)
-		self.entry.set_wrap_mode(True)
-		self.entry1 = Gtk.TextView()
-		
+		vbox.pack_start(hbox, True, True, 0)
+		self.entry1 = Gtk.Entry()
 		hbox.pack_start(self.entry1, True, True, 0)
+		
 		
 		self.entry.set_text("أدخل النص المراد ترجمته هنا")
 		self.entry1.set_text("النص المترجم يجب أن يظهر هنا")
@@ -28,10 +27,8 @@ class dict_window(Gtk.Window):
 		self.link = Gtk.LinkButton("https://mulham.github.io", "Visit Al-Mulham Homepage")
 		vbox.pack_start(self.link, True, True, 0)
 		self.entry1.set_editable(False)
-		self.entry1.set_cursor_visible(False)
 	def on_button_clicked(self, widget):
 		text = self.entry.get_text()
-		self.entry1.set_wrap_mode(True)
 		self.entry1.set_text(str(tech_dict.dict[text][0][0]))
 		
 win = dict_window()

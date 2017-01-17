@@ -1,79 +1,78 @@
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
+from gi.repository import Gtk, GObject
 
-class LabelWindow(Gtk.Window):
+class EntryWindow(Gtk.Window):
 
     def __init__(self):
-        Gtk.Window.__init__(self, title="Label Example")
-        
-        hbox = Gtk.Box(spacing=10)
-        hbox.set_homogeneous(False)
-        vbox_left = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
-        vbox_left.set_homogeneous(False)
-        vbox_right = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
-        vbox_right.set_homogeneous(False)
-        
-        hbox.pack_start(vbox_left, True, True, 0)
-        hbox.pack_start(vbox_right, True, True, 0)
-        
-        label = Gtk.Label("This is a normal label")
-        vbox_left.pack_start(label, True, True, 0)
-        
-        label = Gtk.Label()
-        label.set_text("This is a left-justified label.\nWith multiple lines.")
-        label.set_justify(Gtk.Justification.LEFT)
-        vbox_left.pack_start(label, True, True, 0)
-        
-        label = Gtk.Label(
-            "This is a right-justified label.\nWith multiple lines.")
-        label.set_justify(Gtk.Justification.RIGHT)
-        vbox_left.pack_start(label, True, True, 0)
-        
-        label = Gtk.Label("This is an example of a line-wrapped label.  It "
-                          "should not be taking up the entire             "
-                          "width allocated to it, but automatically "
-                          "wraps the words to fit.\n"
-                          "     It supports multiple paragraphs correctly, "
-                          "and  correctly   adds "
-                          "many          extra  spaces. ")
-        label.set_line_wrap(True)
-        vbox_right.pack_start(label, True, True, 0)
-        
-        label = Gtk.Label("This is an example of a line-wrapped, filled label. "
-                          "It should be taking "
-                          "up the entire              width allocated to it.  "
-                          "Here is a sentence to prove "
-                          "my point.  Here is another sentence. "
-                          "Here comes the sun, do de do de do.\n"
-                          "    This is a new paragraph.\n"
-                          "    This is another newer, longer, better "
-                          "paragraph.  It is coming to an end, "
-                          "unfortunately.")
-        label.set_line_wrap(True)
-        label.set_justify(Gtk.Justification.FILL)
-        vbox_right.pack_start(label, True, True, 0)
+        Gtk.Window.__init__(self, title="Entry Demo")
+        self.set_size_request(200, 100)
 
-        label = Gtk.Label()
-        label.set_markup("Text can be <small>small</small>, <big>big</big>, "
-                         "<b>bold</b>, <i>italic</i> and even point to "
-                         "somewhere in the <a href=\"http://www.gtk.org\" "
-                         "title=\"Click to find out more\">internets</a>.")
-        label.set_line_wrap(True)
-        vbox_left.pack_start(label, True, True, 0)
+        self.timeout_id = None
 
-        label = Gtk.Label.new_with_mnemonic(
-            "_Press Alt + P to select button to the right")
-        vbox_left.pack_start(label, True, True, 0)
-        label.set_selectable(True)
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        self.add(vbox)
 
-        button = Gtk.Button(label="Click at your own risk")
-        label.set_mnemonic_widget(button)
-        vbox_right.pack_start(button, True, True, 0)
+        self.entry = Gtk.Entry()
+        self.entry.set_text("Hello World")
+        vbox.pack_start(self.entry, True, True, 0)
 
-        self.add(hbox)
+        hbox = Gtk.Box(spacing=6)
+        vbox.pack_start(hbox, True, True, 0)
+        
+        self.check_editable = Gtk.CheckButton("Editable")
+        self.check_editable.connect("toggled", self.on_editable_toggled)
+        self.check_editable.set_active(True)
+        hbox.pack_start(self.check_editable, True, True, 0)
 
-window = LabelWindow()        
-window.connect("delete-event", Gtk.main_quit)
-window.show_all()
+        self.check_visible = Gtk.CheckButton("Visible")
+        self.check_visible.connect("toggled", self.on_visible_toggled)
+        self.check_visible.set_active(True)
+        hbox.pack_start(self.check_visible, True, True, 0)
+
+        self.pulse = Gtk.CheckButton("Pulse")
+        self.pulse.connect("toggled", self.on_pulse_toggled)
+        self.pulse.set_active(False)
+        hbox.pack_start(self.pulse, True, True, 0)
+
+        self.icon = Gtk.CheckButton("Icon")
+        self.icon.connect("toggled", self.on_icon_toggled)
+        self.icon.set_active(False)
+        hbox.pack_start(self.icon, True, True, 0)
+
+    def on_editable_toggled(self, button):
+        value = button.get_active()
+        self.entry.set_editable(value)
+
+    def on_visible_toggled(self, button):
+        value = button.get_active()
+        self.entry.set_visibility(value)
+
+    def on_pulse_toggled(self, button):
+        if button.get_active():
+            self.entry.set_progress_pulse_step(0.2)
+            # Call self.do_pulse every 100 ms
+            self.timeout_id = GObject.timeout_add(100, self.do_pulse, None)
+        else:
+            # Don't call self.do_pulse anymore
+            GObject.source_remove(self.timeout_id)
+            self.timeout_id = None
+            self.entry.set_progress_pulse_step(0)
+
+    def do_pulse(self, user_data):
+        self.entry.progress_pulse()
+        return True
+
+    def on_icon_toggled(self, button):
+        if button.get_active():
+            icon_name = "system-search-symbolic"
+        else:
+            icon_name = None
+        self.entry.set_icon_from_icon_name(Gtk.EntryIconPosition.PRIMARY,
+            icon_name)
+
+win = EntryWindow()
+win.connect("delete-event", Gtk.main_quit)
+win.show_all()
 Gtk.main()
+
