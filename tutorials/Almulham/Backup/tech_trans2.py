@@ -11,18 +11,15 @@ class dict_window(Gtk.Window):
 		self.add(vbox)
 		hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=2)
 		self.add(hbox)
-		self.entry = Gtk.TextView()
-		self.textbuffer = self.entry.get_buffer()
+		self.entry = Gtk.Entry()
 		hbox.pack_start(self.entry, True, True, 0)
 		vbox.pack_start(hbox, True, True, 0)
-		self.entry1 = Gtk.TextView()
-		self.textbuffer1 = self.entry1.get_buffer()
-		self.entry.set_wrap_mode(True)
+		self.entry1 = Gtk.Entry()
 		hbox.pack_start(self.entry1, True, True, 0)
 		
 		
-		self.textbuffer.set_text("أدخل النص المراد ترجمته هنا")
-		self.textbuffer1.set_text("النص المترجم يجب أن يظهر هنا")
+		self.entry.set_text("أدخل النص المراد ترجمته هنا")
+		self.entry1.set_text("النص المترجم يجب أن يظهر هنا")
 
 		self.button = Gtk.Button(label="ترجم!")
 		self.button.connect("clicked", self.on_button_clicked)
@@ -30,11 +27,9 @@ class dict_window(Gtk.Window):
 		self.link = Gtk.LinkButton("https://mulham.github.io", "Visit Al-Mulham Homepage")
 		vbox.pack_start(self.link, True, True, 0)
 		self.entry1.set_editable(False)
-		self.entry1.set_cursor_visible(False)
 	def on_button_clicked(self, widget):
-		text = self.textbuffer.get_text(self.textbuffer.get_start_iter(),self.textbuffer.get_end_iter(),False)
-		self.entry1.set_wrap_mode(True)
-		self.textbuffer1.set_text(str(tech_dict.dict[text][0][0]))
+		text = self.entry.get_text()
+		self.entry1.set_text(str(tech_dict.dict[text][0][0]))
 		
 win = dict_window()
 win.connect("delete-event", Gtk.main_quit)
