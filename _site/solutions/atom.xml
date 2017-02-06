@@ -4,7 +4,7 @@
 	<title>Mulham Solutions</title>
 	<link href="http://mulham.github.io/solutions/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/solutions"/>
-	<updated>2016-12-07T23:30:39+02:00</updated>
+	<updated>2017-02-06T15:47:19+02:00</updated>
 	<id>http://mulham.github.io/solutions</id>
 	<author>
 		<name>Mulham</name>
@@ -116,15 +116,75 @@
 
 &lt;p&gt;لفهم ذلك أكثر دعنا نجرب هذا السلوك في العرض أدناه:&lt;/p&gt;
 
-&lt;p&gt;وكما لاحظت، لقد أ&lt;/p&gt;
+&lt;p data-height=&quot;500&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;dNKxae&quot; data-default-tab=&quot;result&quot; data-user=&quot;mulham94&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Little-known thing #1 - Positioning elements with absolute positioning type&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/mulham94/pen/dNKxae/&quot;&gt;Little-known thing #1 - Positioning elements with absolute positioning type&lt;/a&gt; by Mulham (&lt;a href=&quot;http://codepen.io/mulham94&quot;&gt;@mulham94&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;strong&gt;أعد متعة القراءة لموقعك&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;أعطينا في هذا العرض الصندوق الأخضر (الدائري) نوع توضّع مبدئي absolute مع قيم إزاحة &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom:0&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;left:0&lt;/code&gt;. كما لم نحدّد نوع التوضّع للعنصر الأب (الصندوق الأحمر). إلا أنّنا قمنا بتحديد توضّع الكود الخارجي (outer wrapper) مثل العنصر ضمن صنف &lt;code class=&quot;highlighter-rouge&quot;&gt;jumbotron&lt;/code&gt;. لاحظ اختلاف توضّع الصندوق الأخضر باختلاف نوع التوضّع للعناصر الأب.&lt;/p&gt;
 
-&lt;p&gt;خـــمــــســـــات&lt;/p&gt;
+&lt;h1 id=&quot;تجاهل-خاصية-float-للعناصر-المتوضّعة-بشكل-مطلق&quot;&gt;تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق&lt;/h1&gt;
 
-&lt;p&gt;اطلب خطّك الآن ليصبح حيّاً على موقعك!&lt;/p&gt;
+&lt;p&gt;إذا كان العنصر يحوي خاصية float ليظهر إلى اليمين أو اليسار وقمنا بجعل نوعية توضّعه absolute أو fixed، فإن قيمة الخاصية float ستصبح &lt;code class=&quot;highlighter-rouge&quot;&gt;none&lt;/code&gt; (يتم تجاهلها). وفي المقابل، فإذا جعلنا نوعيّة توضّعه relative فلن تتأثر قيمة float.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;خط حصري لموقعك على الإنترنت!&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;العناصر-المضمّنة-المتوضّعة-بشكل-مطلق-تكون-كعناصر-مستوى-block&quot;&gt;العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block&lt;/h1&gt;
+
+&lt;p&gt;أي أن سلوكها كالعناصر التي تكون ككتلة، أي block-level .. غير واضح؟&lt;/p&gt;
+
+&lt;p&gt;العناصر المضمّنة التي يكون نوع توضّعها absolute أو fixed يكون لها خواص العناصر ذات المستوى block-level أي المستوى الأعلى وفي حال تعارض التوضّع فستوضع فوق العناصر ذات المستوى الأدنى. لإيضاح ذلك لدينا الجدول في الأسفل يلخِّص أنواع العناصر التي تُحوَّل إلى العناصر ذات مستوى block-level:&lt;/p&gt;
+
+&lt;p data-height=&quot;500&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;OWwLBN&quot; data-default-tab=&quot;result&quot; data-user=&quot;mulham94&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Little-known thing #3 - The inline elements which are absolutely positioned behave as block-level elements&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/mulham94/pen/OWwLBN/&quot;&gt;Little-known thing #3 - The inline elements which are absolutely positioned behave as block-level elements&lt;/a&gt; by Mulham (&lt;a href=&quot;http://codepen.io/mulham94&quot;&gt;@mulham94&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;في هذه الحالة، قمنا بتعريف عنصرين مختلفين، الأوّل (الصندوق الأخضر) هو عنصر من متسوى block-level (مثل &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt;) والثاني (الصندوق الأحمر) عنصر مضمّن (مثل &lt;code class=&quot;highlighter-rouge&quot;&gt;span&lt;/code&gt;). وبالتالي لاحظ في البداية أن الصندوق الأخضر فقط هو الذي يظهر، بينما الأحمر غير ظاهر فعلياً ﻷننا أعطيناه عرض &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; وارتفاع &lt;code class=&quot;highlighter-rouge&quot;&gt;height&lt;/code&gt; يمكن أن يُطبّقوا فقط على العناصر ذو المستوى block-level و inline-block، بالإضافة إلى أنه عنصر فارغ (لا يحوي عناصر ضمنه مثل مقطع نصي).&lt;/p&gt;
+
+&lt;p&gt;وعند جعل وضع التوضّع absolute أو fixed فإن العنصر (الأحمر) يظهر ﻷن سلوكه أصبح من مستوى block-level.&lt;/p&gt;
+
+&lt;h1 id=&quot;الهوامش-غير-قابلة-للطي-في-العناصر-المتوضّعة-بشكل-مطلق&quot;&gt;الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق&lt;/h1&gt;
+
+&lt;p&gt;عند تلامس هامشان عموديان مع بعضهما فإنهما افتراضياً ينطويان ضمن هامش واحد تكون قيمتة محددّة بحسب قيمة الهامش الأكبر. يُعرف هذا السلوك باسم طيّ الهامش (margin collapsin).&lt;/p&gt;
+
+&lt;p&gt;وكما يحدث للهوامش في العناصر العائمة (ذات الخاصية float) فإن هوامش العناصر المتوضعة بشكل مطلق absolute لا تنطوي مع أي هامش آخر.&lt;/p&gt;
+
+&lt;p&gt;لنعاين المثال التالي:&lt;/p&gt;
+
+&lt;p data-height=&quot;500&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;qRyBWG&quot; data-default-tab=&quot;result&quot; data-user=&quot;mulham94&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Little-known thing #4 - The margins don’t collapse on absolutely positioned elements&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/mulham94/pen/qRyBWG/&quot;&gt;Little-known thing #4 - The margins don’t collapse on absolutely positioned elements&lt;/a&gt; by Mulham (&lt;a href=&quot;http://codepen.io/mulham94&quot;&gt;@mulham94&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;يجوي العنصر في هذا المثال هامش يساوي &lt;code class=&quot;highlighter-rouge&quot;&gt;20px&lt;/code&gt;، وإن هامشه العلوي &lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; ينطوي (يتَّحد) مع الهامش العلوي &lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; للعنصر الأب والذي قيمته أيضاً &lt;code class=&quot;highlighter-rouge&quot;&gt;20px&lt;/code&gt;. وكما ترى، فعند اختيار نوع التوضع كمطلق absolute فإن الهامش &lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; لا ينطوي مع الهوامش المناسبة للعناصر التي يقع ضمنها.&lt;/p&gt;
+
+&lt;p&gt;طبعاً واضح أن هذا السلوك هو المطلوب فنحن غالباً لا نريد للهوامش أن تتحد مع بعض.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;سؤال:&lt;/strong&gt; &lt;em&gt;كيف يمكنني منع الهوامش من الاتحاد؟&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;حسناً .. يجب علينا وضع شيئ يمنعهم من ذلك. لنقل على سبيل المثال بعض الملء &lt;code class=&quot;highlighter-rouge&quot;&gt;padding&lt;/code&gt; أو الحدود &lt;code class=&quot;highlighter-rouge&quot;&gt;border&lt;/code&gt; (يجب علينا تطبيق ذلك على العناصر الرئيسية “الأب” أو “الابن” أي العناصر المُضمّنة). كما يوجد حل آخر وهو إضافة الصنف &lt;code class=&quot;highlighter-rouge&quot;&gt;clearfix&lt;/code&gt; (والموجود في مثالنا) للعنصر الأب.&lt;/p&gt;
+
+&lt;h1 id=&quot;توضّع-العناصر-بالبيكسل-والنسب-المئويّة&quot;&gt;توضّع العناصر بالبيكسل والنسب المئويّة&lt;/h1&gt;
+
+&lt;p&gt;هل استخدمت سابقاً النسب المئويّة بدلاً من البيكسل لتحديد إزاحة عنصر ما؟ إذا كان جوابك نعم فربما لاحظت أن قيم الإزاحة المحسوبة تختلف بحسب وحدات CSS التي تختارها (بيكسل أو وحدة مئوية).&lt;/p&gt;
+
+&lt;p&gt;غير واضح؟ دعنا نرى أولاً ما يقوله الموقع الرسمي عن الإزاحات المعطاة بالنسب المئويّة:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;الإزاحة هي نسبة مئويّة لعرض الصندوق المحتوي للعنصر (&lt;code class=&quot;highlighter-rouge&quot;&gt;left&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;right&lt;/code&gt;) أو ارتفاعه (&lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom&lt;/code&gt;). بالنسبة للعناصر ذات التوضّع sticky فإن الإزاحة فيها هي النسبة المئويّة لتدفق عرض الجذر root (&lt;code class=&quot;highlighter-rouge&quot;&gt;left&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;right&lt;/code&gt;) أو ارتفاعه (&lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom&lt;/code&gt;).مسموح بالقيم السلبيّة كذلك.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;أي أننا عندما نحدّد قيم الإزاحة بالنسب المئويّة، فإن مكان العنصر يتحدّد اعتماداً على العرض يميناً ويساراً (للإزاحات &lt;code class=&quot;highlighter-rouge&quot;&gt;left&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;right&lt;/code&gt;) والارتفاع (للإزاحات &lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom&lt;/code&gt;) للعنصر الأب.&lt;/p&gt;
+
+&lt;p&gt;يظهر المثال التالي هذا الاختلاف:&lt;/p&gt;
+
+&lt;p data-height=&quot;500&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;qRyBMO&quot; data-default-tab=&quot;result&quot; data-user=&quot;mulham94&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Little-known thing #5 - The difference between positioning elements with pixels and percentages&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/mulham94/pen/qRyBMO/&quot;&gt;Little-known thing #5 - The difference between positioning elements with pixels and percentages&lt;/a&gt; by Mulham (&lt;a href=&quot;http://codepen.io/mulham94&quot;&gt;@mulham94&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;استخدمنا في هذا المثال البيكسل والنسب المئوية لتحريك العنصر. كن متأكداً بأنه عند تحديد الإزاحة بالبيكسل فإن العنصر يتحرك للمكان الذي نتوقعه.. جيد إلى هنا!&lt;/p&gt;
+
+&lt;p&gt;الآن عندما نختار السنب المئوية الوحدة CSS المطلوبة للإزاحة، فإن مكان العنصر سيعتمد على أبعاد العنصر الأب. في الأسفل رسم يبيّن حساب الموقع الجديد (بالنسب المئويّة):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/New_Position.png&quot; alt=&quot;أنواع توضّع CSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: كما تعلم، فإن خاصية &lt;code class=&quot;highlighter-rouge&quot;&gt;transform&lt;/code&gt; (بالإضافة لخصائص &lt;code class=&quot;highlighter-rouge&quot;&gt;translate&lt;/code&gt; المختلفة) تتيح لنا أيضاً تغيرر موضع العنصر. ولكن يجب الانتباه إلى أنه عند اختيارنا للنسب المئويّة كوحدة CSS، فإن العنصر سيتوضّع وفقاً لأبعاده وليس وفقاً لأبعاد العنصر الأب (خلافاً للإزاحات).&lt;/p&gt;
+
+&lt;h1 id=&quot;في-النهاية-&quot;&gt;في النهاية ..&lt;/h1&gt;
+
+&lt;p&gt;أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :)&lt;/p&gt;
 
 </content>
 		</entry>
@@ -2990,52 +3050,6 @@
 		</entry>
 	
 		<entry>
-			<title>10 مواقع تورنت ربما لم تسمع عنها من قبل</title>
-			<link href="http://mulham.github.io/10-torrent-sites-unremarked"/>
-			<updated>2016-06-19T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//10-torrent-sites-unremarked</id>
-			<content type="html">&lt;p&gt;جميعنا يعرف مواقع التورنت الشهيرة بما في ذلك &lt;a href=&quot;http://www.mininova.org/&quot;&gt;مينيوفا&lt;/a&gt;، &lt;a href=&quot;http://thepiratebay.se/&quot;&gt;ذا بايريت باي&lt;/a&gt; ، &lt;a href=&quot;https://torrentz.eu/&quot;&gt;تورنتز&lt;/a&gt;. ولكن مالا يعلمه معظمنا هو بأن هناك خيارات أكثر بكثير ولكن غير معروفة جيدا رغم احتوائها على محتويات جيدة وأحياناً نادرة .&lt;/p&gt;
-
-&lt;p&gt;لذلك قمنا بعمل قائمة من أجلكم لمواقع التورنت الأقل شهرة والتي تحوي قاعدة محتويات ضخمة . والمعيار الذي اتخذناه لوصفها “الأقل شهرة “ هو ترتيب أليكسا . حيث جميع المواقع المذكورة في القائمة ليست ضمن المواقع الـ 5000 الأكثر زيارة على الإنترنت .&lt;/p&gt;
-
-&lt;p&gt;وإليكم القائمة :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://extratorrent.com&quot;&gt;extratorrent.com&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://bitenova.nl&quot;&gt;bitenova.nl&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://fenopy.com&quot;&gt;fenopy.com&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://torrentat.org&quot;&gt;torrentat.org&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://fulldls.com&quot;&gt;fulldls.com&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://spynova.org&quot;&gt;spynova.org&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://2torrents.com&quot;&gt;2torrents.com&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://scrapetorrent.com&quot;&gt;scrapetorrent.com&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://litebay.org&quot;&gt;litebay.org&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://torrents.to&quot;&gt;torrents.to&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</content>
-		</entry>
-	
-		<entry>
 			<title>سلسلة دروس SQL|عبارة WHERE</title>
 			<link href="http://mulham.github.io/sql/where"/>
 			<updated>2016-06-18T00:00:00+03:00</updated>
@@ -3053,6 +3067,8 @@
 &lt;p&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -3180,6 +3196,8 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/p&gt;
@@ -3274,6 +3292,8 @@
 &lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -3379,6 +3399,8 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3431,6 +3453,106 @@
 		</entry>
 	
 		<entry>
+			<title>سلسلة دروس SQL|دالة ORDER BY</title>
+			<link href="http://mulham.github.io/sql/order-by"/>
+			<updated>2016-06-18T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/order-by</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;الدرس السابع : دالة ORDER BY فيSQL&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#دالة-order-by-في-sql&quot; id=&quot;markdown-toc-دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-order-by&quot; id=&quot;markdown-toc-بناء-order-by&quot;&gt;بناء ORDER BY&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by&quot; id=&quot;markdown-toc-مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-desc&quot; id=&quot;markdown-toc-مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-لعدة-أعمدة&quot; id=&quot;markdown-toc-مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج&lt;/p&gt;
+
+&lt;h1 id=&quot;دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/h1&gt;
+
+&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج بعمود واحد أو أكثر&lt;/p&gt;
+
+&lt;p&gt;تقوم دالة ORDER BY بفرز التسجيلات افتراضياً بحسب الترتيب الأبجدي (ascending) ، لفرز التسجيلات بعكس الترتيب الأبجدي (descending) ، استعمل دالة DESC .&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-order-by&quot;&gt;بناء ORDER BY&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
+
+    FROM table_name
+
+    ORDER BY column_name,column_name ASC|DESC;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم في هذا الشرح قاعدة البيانات المعروفة جيداً Northwind&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/h1&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب عمود الدولة Country&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
+
+	ORDER BY Country; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/h2&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين عكس الترتيب الأبجدي  بحسب عمود الدولة Country&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
+
+	ORDER BY Country DESC;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/h2&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب أعمدة الدولة Country واسم الزبون CustomerName&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
+
+	ORDER BY Country,CustomerName;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;insert-into&quot;&gt;تصريح INSERT INTO&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
 			<title>سلسلة دروس SQL|مقدمة</title>
 			<link href="http://mulham.github.io/sql/intro"/>
 			<updated>2016-06-18T00:00:00+03:00</updated>
@@ -3458,6 +3580,8 @@
 &lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -3590,6 +3714,8 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3699,6 +3825,8 @@
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
@@ -3792,6 +3920,8 @@
 &lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -3908,6 +4038,8 @@
 &lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 

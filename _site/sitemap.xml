@@ -53,10 +53,6 @@
 <lastmod>2016-06-19T00:00:00+03:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/10-torrent-sites-unremarked</loc>
-<lastmod>2016-06-19T00:00:00+03:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/sql/where</loc>
 <lastmod>2016-06-18T00:00:00+03:00</lastmod>
 </url>
@@ -70,6 +66,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/sql/select-distinct</loc>
+<lastmod>2016-06-18T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/sql/order-by</loc>
 <lastmod>2016-06-18T00:00:00+03:00</lastmod>
 </url>
 <url>

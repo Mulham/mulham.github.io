@@ -41,7 +41,6 @@ class dict_window(Gtk.Window):
 		basic_translation = []
 		#i تجميع علامات النص في سلسلة ليتم إضافتها لاحقاً للترجمة كما هي
 		marks = re.findall('[,;.?!.\)\(]*', self.text)
-		# ينقص هنا النقطتين : وعلامات الاقتباس "" مع العلم أنه البرنامج حالياً لا يفصل علامتين متتاليتين بينهما فراغ
 		counter = 0
 		while counter < len(marks):	#حذف القيم الفارغة
 			if marks[counter] == '':
@@ -49,7 +48,7 @@ class dict_window(Gtk.Window):
 			else:
 				counter += 1
 		self.text = self.text + ' '		#for فلترة العلامات في آخر الجملة أيضاً
-		sentences = re.split('[,;.?!.\)\(]*', self.text)
+		sentences = re.split('[,;.?!.\)\(]*(and|or|as a result|thus|consequently|for example|for instance|in conclusion|in summary|in fact|in addition|moreover|furthermore|in contrast|on the other hand|nevertheless|nonetheless|however|fortunately|surprisingly|interestingly)*', self.text)
 		counter = 0		#for حذف القيم الفارغة ''
 		while counter < len(sentences):
 			if sentences[counter]:
@@ -63,15 +62,14 @@ class dict_window(Gtk.Window):
 					counter += 1
 			else:
 				del sentences[counter]
-		#so at the end we have sentences contains the sentences between the marks in the given text (slef.text) 
-		# not working anymore!: and also contain tranitional phrases independntly
+		#so at the end we have sentences contains the sentences between the marks in the given text (slef.text) and alo contain tranitional phrases independntly
+
 
 		# start searching from combined word in the dict and translating them if found
 		counter = 0
 		for sentence in sentences:
 			i = 0
 			if re.search('(\D)+ \d*(\D)+', sentence):  	#if the sentence not a single word
-				sentence = str(sentence[0].lower()) + sentence[1:]	#making first letter after each mark always lower
 				words = sentence.split()	#تقسيم الجملة لكلمات
 				while i+3 < len(words):		# Searching four words together
 					group = ''
@@ -97,14 +95,19 @@ class dict_window(Gtk.Window):
 					except:
 						i += 1
 				for word in words:
-					basic_translation.append(word)
+					basic_translation.append(word)		
+				try:
+					basic_translation.append(marks[counter])	#إضافة العلامة الفاصلة كما هي
+				except:
+					pass
+				counter += 1
 			else:
 				basic_translation.append(sentence)
-			try:		#إضافة العلامة الفاصلة كما هي
-				basic_translation.append(marks[counter])
-			except:
-				pass
-			counter += 1				
+				if not re.search('(and|or|as a result|thus|consequently|for example|for instance|in conclusion|in summary|in fact|in addition|moreover|furthermore|in contrast|on the other hand|nevertheless|nonetheless|however|fortunately|surprisingly|interestingly)*', sentence):
+					try:
+						basic_translation.append(marks[counter])
+					except:
+						pass
 			
 			
 		## end of translating combined words as they are (if exist) in dic	
@@ -121,20 +124,9 @@ class dict_window(Gtk.Window):
 			try:	#if the word exist in the dictionary
 				bt1.append(m_dict.dict[basic_translation[t]][0][0])
 			except:		#else add the word as it is (in english)
-				#try to recognize the word, otherwise put it without translation
-				if basic_translation[t][-1] == 's':  #maybe it's plural
-					rules.plural(basic_translation[t], bt1)
 				bt1.append(basic_translation[t])
 			t += 1
 				# at the end الكلمات الغير مترجمة يتم عمل الاختبارات التالية عليها
-		rules.arabic_marks(bt1)
-############ The start of advanced translation processes (applying rules):
-		for word in bt1:		#  مرحلة أولى
-			if word == 'يكون':
-				rules.damir_uygun(word, bt1)
-		for word in bt1:		# مرحلة ثانية
-			if word == 'كيف':
-				rules.kaif(word, bt1)
 		final_trans = ''
 		for j in bt1:
 			if re.search('[,;.?!.\)\(]+', j):

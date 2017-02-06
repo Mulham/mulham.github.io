@@ -1,7 +1,6 @@
 import gi, tech_dict
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, GObject
-
+from gi.repository import Gtk
 class dict_window(Gtk.Window):		
 	def __init__(self):
 		Gtk.Window.__init__(self, title="Al-Mulham Translator")
@@ -11,16 +10,16 @@ class dict_window(Gtk.Window):
 		self.add(vbox)
 		hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=2)
 		self.add(hbox)
-		self.entry = Gtk.TextView()
-		self.textbuffer = self.entry.get_buffer()
-		hbox.pack_start(self.entry, True, True, 0)
 		vbox.pack_start(hbox, True, True, 0)
-		self.entry1 = Gtk.TextView()
-		self.textbuffer1 = self.entry1.get_buffer()
+		self.entry = Gtk.TextView()
+		self.buffer = Gtk.TextBuffer()
+		hbox.pack_start(self.entry, True, True, 0)
 		self.entry.set_wrap_mode(True)
+		self.entry1 = Gtk.TextView()
+		self.buffer1 = Gtk.TextBuffer()
 		hbox.pack_start(self.entry1, True, True, 0)
-		
-		
+		self.textbuffer = self.entry.get_buffer()
+		self.textbuffer1 = self.entry1.get_buffer()
 		self.textbuffer.set_text("أدخل النص المراد ترجمته هنا")
 		self.textbuffer1.set_text("النص المترجم يجب أن يظهر هنا")
 
@@ -32,9 +31,10 @@ class dict_window(Gtk.Window):
 		self.entry1.set_editable(False)
 		self.entry1.set_cursor_visible(False)
 	def on_button_clicked(self, widget):
-		text = self.textbuffer.get_text(self.textbuffer.get_start_iter(),self.textbuffer.get_end_iter(),False)
+		text = self.entry.get_buffer().get_text()
 		self.entry1.set_wrap_mode(True)
-		self.textbuffer1.set_text(str(tech_dict.dict[text][0][0]))
+		self.textbuffer = self.entry1.get_buffer()
+		self.textbuffer.set_text(str(tech_dict.dict[text][0][0]))
 		
 win = dict_window()
 win.connect("delete-event", Gtk.main_quit)

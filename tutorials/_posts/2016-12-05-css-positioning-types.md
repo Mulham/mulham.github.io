@@ -80,7 +80,7 @@ type: tutorial
 
 لفهم ذلك أكثر دعنا نجرب هذا السلوك في العرض أدناه:
 
-<p data-height="500" data-theme-id="0" data-slug-hash="dNKxae" data-default-tab="js,result" data-user="mulham94" data-embed-version="2" data-pen-title="Little-known thing #1 - Positioning elements with absolute positioning type" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/dNKxae/">Little-known thing #1 - Positioning elements with absolute positioning type</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="0" data-slug-hash="dNKxae" data-default-tab="result" data-user="mulham94" data-embed-version="2" data-pen-title="Little-known thing #1 - Positioning elements with absolute positioning type" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/dNKxae/">Little-known thing #1 - Positioning elements with absolute positioning type</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 أعطينا في هذا العرض الصندوق الأخضر (الدائري) نوع توضّع مبدئي absolute مع قيم إزاحة `bottom:0` و `left:0`. كما لم نحدّد نوع التوضّع للعنصر الأب (الصندوق الأحمر). إلا أنّنا قمنا بتحديد توضّع الكود الخارجي (outer wrapper) مثل العنصر ضمن صنف `jumbotron`. لاحظ اختلاف توضّع الصندوق الأخضر باختلاف نوع التوضّع للعناصر الأب.
@@ -90,5 +90,64 @@ type: tutorial
 إذا كان العنصر يحوي خاصية float ليظهر إلى اليمين أو اليسار وقمنا بجعل نوعية توضّعه absolute أو fixed، فإن قيمة الخاصية float ستصبح `none` (يتم تجاهلها). وفي المقابل، فإذا جعلنا نوعيّة توضّعه relative فلن تتأثر قيمة float.
 
 
+# العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block
 
+
+أي أن سلوكها كالعناصر التي تكون ككتلة، أي block-level .. غير واضح؟
+
+العناصر المضمّنة التي يكون نوع توضّعها absolute أو fixed يكون لها خواص العناصر ذات المستوى block-level أي المستوى الأعلى وفي حال تعارض التوضّع فستوضع فوق العناصر ذات المستوى الأدنى. لإيضاح ذلك لدينا الجدول في الأسفل يلخِّص أنواع العناصر التي تُحوَّل إلى العناصر ذات مستوى block-level:
+
+<p data-height="500" data-theme-id="0" data-slug-hash="OWwLBN" data-default-tab="result" data-user="mulham94" data-embed-version="2" data-pen-title="Little-known thing #3 - The inline elements which are absolutely positioned behave as block-level elements" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/OWwLBN/">Little-known thing #3 - The inline elements which are absolutely positioned behave as block-level elements</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+في هذه الحالة، قمنا بتعريف عنصرين مختلفين، الأوّل (الصندوق الأخضر) هو عنصر من متسوى block-level (مثل `div`) والثاني (الصندوق الأحمر) عنصر مضمّن (مثل `span`). وبالتالي لاحظ في البداية أن الصندوق الأخضر فقط هو الذي يظهر، بينما الأحمر غير ظاهر فعلياً ﻷننا أعطيناه عرض `width` وارتفاع `height` يمكن أن يُطبّقوا فقط على العناصر ذو المستوى block-level و inline-block، بالإضافة إلى أنه عنصر فارغ (لا يحوي عناصر ضمنه مثل مقطع نصي).
+
+وعند جعل وضع التوضّع absolute أو fixed فإن العنصر (الأحمر) يظهر ﻷن سلوكه أصبح من مستوى block-level.
+
+# الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق
+
+عند تلامس هامشان عموديان مع بعضهما فإنهما افتراضياً ينطويان ضمن هامش واحد تكون قيمتة محددّة بحسب قيمة الهامش الأكبر. يُعرف هذا السلوك باسم طيّ الهامش (margin collapsin).
+
+وكما يحدث للهوامش في العناصر العائمة (ذات الخاصية float) فإن هوامش العناصر المتوضعة بشكل مطلق absolute لا تنطوي مع أي هامش آخر.
+
+لنعاين المثال التالي:
+
+<p data-height="500" data-theme-id="0" data-slug-hash="qRyBWG" data-default-tab="result" data-user="mulham94" data-embed-version="2" data-pen-title="Little-known thing #4 - The margins don’t collapse on absolutely positioned elements" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/qRyBWG/">Little-known thing #4 - The margins don’t collapse on absolutely positioned elements</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+يجوي العنصر في هذا المثال هامش يساوي `20px`، وإن هامشه العلوي `top` ينطوي (يتَّحد) مع الهامش العلوي `top` للعنصر الأب والذي قيمته أيضاً `20px`. وكما ترى، فعند اختيار نوع التوضع كمطلق absolute فإن الهامش `top` لا ينطوي مع الهوامش المناسبة للعناصر التي يقع ضمنها.
+
+طبعاً واضح أن هذا السلوك هو المطلوب فنحن غالباً لا نريد للهوامش أن تتحد مع بعض.
+
+**سؤال:** *كيف يمكنني منع الهوامش من الاتحاد؟*
+
+حسناً .. يجب علينا وضع شيئ يمنعهم من ذلك. لنقل على سبيل المثال بعض الملء `padding` أو الحدود `border` (يجب علينا تطبيق ذلك على العناصر الرئيسية "الأب" أو "الابن" أي العناصر المُضمّنة). كما يوجد حل آخر وهو إضافة الصنف `clearfix` (والموجود في مثالنا) للعنصر الأب.
+
+# توضّع العناصر بالبيكسل والنسب المئويّة
+
+هل استخدمت سابقاً النسب المئويّة بدلاً من البيكسل لتحديد إزاحة عنصر ما؟ إذا كان جوابك نعم فربما لاحظت أن قيم الإزاحة المحسوبة تختلف بحسب وحدات CSS التي تختارها (بيكسل أو وحدة مئوية).
+
+غير واضح؟ دعنا نرى أولاً ما يقوله الموقع الرسمي عن الإزاحات المعطاة بالنسب المئويّة:
+
+> الإزاحة هي نسبة مئويّة لعرض الصندوق المحتوي للعنصر (`left` أو `right`) أو ارتفاعه (`top` أو `bottom`). بالنسبة للعناصر ذات التوضّع sticky فإن الإزاحة فيها هي النسبة المئويّة لتدفق عرض الجذر root (`left` أو `right`) أو ارتفاعه (`top` أو `bottom`).مسموح بالقيم السلبيّة كذلك.
+
+
+أي أننا عندما نحدّد قيم الإزاحة بالنسب المئويّة، فإن مكان العنصر يتحدّد اعتماداً على العرض يميناً ويساراً (للإزاحات `left` و `right`) والارتفاع (للإزاحات `top` و `bottom`) للعنصر الأب.
+
+يظهر المثال التالي هذا الاختلاف:
+
+<p data-height="500" data-theme-id="0" data-slug-hash="qRyBMO" data-default-tab="result" data-user="mulham94" data-embed-version="2" data-pen-title="Little-known thing #5 - The difference between positioning elements with pixels and percentages" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/qRyBMO/">Little-known thing #5 - The difference between positioning elements with pixels and percentages</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+استخدمنا في هذا المثال البيكسل والنسب المئوية لتحريك العنصر. كن متأكداً بأنه عند تحديد الإزاحة بالبيكسل فإن العنصر يتحرك للمكان الذي نتوقعه.. جيد إلى هنا!
+
+الآن عندما نختار السنب المئوية الوحدة CSS المطلوبة للإزاحة، فإن مكان العنصر سيعتمد على أبعاد العنصر الأب. في الأسفل رسم يبيّن حساب الموقع الجديد (بالنسب المئويّة):
+
+![أنواع توضّع CSS](/assets/New_Position.png)
+
+**ملاحظة**: كما تعلم، فإن خاصية `transform` (بالإضافة لخصائص `translate` المختلفة) تتيح لنا أيضاً تغيرر موضع العنصر. ولكن يجب الانتباه إلى أنه عند اختيارنا للنسب المئويّة كوحدة CSS، فإن العنصر سيتوضّع وفقاً لأبعاده وليس وفقاً لأبعاد العنصر الأب (خلافاً للإزاحات).
+
+# في النهاية ..
+
+أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :)
 
