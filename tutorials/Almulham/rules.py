@@ -358,10 +358,50 @@ def arabic_marks(list):
 			list[list.index(i)] = i.replace(',', '،')
 	return list
 # fn_key = 1
-def kaif(how_index, list):
+def kaif(how, list):
 	''' if found How '''
+	how_index = list.index(how)
 	if list[how_index + 1] == 'تكون':
 		list[how_index + 1] = 'حالك'
 	elif list[how_index + 1] == 'يكونوا':
 		list[how_index + 1] = 'حالهم'
 	return list
+def convert_to_plural(word):
+	''' convert the arabic word from single to plural '''
+	
+def plural(word, list):
+	''' if s detected at the end of the word then tests are here to get sure '''
+	if word[-2] == 'e' and re.search('[hsxz]', word[-3]):
+		word = word[:-2]	#delete es
+	elif word[-2] == 'e' and word[-3] == 'i':
+		word = word[:-3] + 'y'	#delete es and replace it with y
+	else:
+		word = word[:-1]	#just delete s and hope for the best!
+	try:
+		translated = m_dict.dict[word][0][0]
+		# Now we must convert the translation to the plural ..
+		#جميع مافي الأسفل يحولوا لجمع في حالة الرفع، ويجب التحديد والتعديل لاحقاً
+########################جمع المذكر السالم##############################################3
+		if afdal_test(translated):	#أسماء التفضيل تجمع دائماً جمع مذكر سالم
+			translated = translated[:-1] + 'ون'
+		if len(trnaslated) > 3 and translated[-1] != 'ة':	#أعتقد جمع المذكر مفرده لا يقل عن أربعة أحرف
+			if m_dict.dict[word][1][0] == 'اسم:شخص' or m_dict.dict[word][1][0] == 'صفة:شخص':
+				if translated[-1] == 'ى':	#مصطفى => مصطفَوْن
+					translated = translated[:-1] + 'َوْن'
+				elif translated[-1] == 'ي':	#محامي => محامون
+					translated = translated[:-1] + 'ون'
+				else:
+					translated += 'ون'	# جمع مذكر سالم
+				list.append(translated)
+##################################################################################
+######################جمع المؤنث السالم####################################
+		if
+	except:
+		pass
+
+def afdal_test(word):	#word in arabic
+	''' test if the arabic word is اسم تفضيل '''
+	if word[0] == 'أ' and len(word) == 4:
+		return True
+	else:
+		return False

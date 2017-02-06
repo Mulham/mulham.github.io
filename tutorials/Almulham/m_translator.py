@@ -121,10 +121,20 @@ class dict_window(Gtk.Window):
 			try:	#if the word exist in the dictionary
 				bt1.append(m_dict.dict[basic_translation[t]][0][0])
 			except:		#else add the word as it is (in english)
+				#try to recognize the word, otherwise put it without translation
+				if basic_translation[t][-1] == 's':  #maybe it's plural
+					rules.plural(basic_translation[t], bt1)
 				bt1.append(basic_translation[t])
 			t += 1
 				# at the end الكلمات الغير مترجمة يتم عمل الاختبارات التالية عليها
 		rules.arabic_marks(bt1)
+############ The start of advanced translation processes (applying rules):
+		for word in bt1:		#  مرحلة أولى
+			if word == 'يكون':
+				rules.damir_uygun(word, bt1)
+		for word in bt1:		# مرحلة ثانية
+			if word == 'كيف':
+				rules.kaif(word, bt1)
 		final_trans = ''
 		for j in bt1:
 			if re.search('[,;.?!.\)\(]+', j):
