@@ -80,13 +80,14 @@ type: tutorial
 
 لفهم ذلك أكثر دعنا نجرب هذا السلوك في العرض أدناه:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="dNKxae" data-default-tab="js,result" data-user="mulham94" data-embed-version="2" data-pen-title="Little-known thing #1 - Positioning elements with absolute positioning type" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/dNKxae/">Little-known thing #1 - Positioning elements with absolute positioning type</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="0" data-slug-hash="dNKxae" data-default-tab="js,result" data-user="mulham94" data-embed-version="2" data-pen-title="Little-known thing #1 - Positioning elements with absolute positioning type" class="codepen">See the Pen <a href="http://codepen.io/mulham94/pen/dNKxae/">Little-known thing #1 - Positioning elements with absolute positioning type</a> by Mulham (<a href="http://codepen.io/mulham94">@mulham94</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 أعطينا في هذا العرض الصندوق الأخضر (الدائري) نوع توضّع مبدئي absolute مع قيم إزاحة `bottom:0` و `left:0`. كما لم نحدّد نوع التوضّع للعنصر الأب (الصندوق الأحمر). إلا أنّنا قمنا بتحديد توضّع الكود الخارجي (outer wrapper) مثل العنصر ضمن صنف `jumbotron`. لاحظ اختلاف توضّع الصندوق الأخضر باختلاف نوع التوضّع للعناصر الأب.
 
+# تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق
 
-
+إذا كان العنصر يحوي خاصية float ليظهر إلى اليمين أو اليسار وقمنا بجعل نوعية توضّعه absolute أو fixed، فإن قيمة الخاصية float ستصبح `none` (يتم تجاهلها). وفي المقابل، فإذا جعلنا نوعيّة توضّعه relative فلن تتأثر قيمة float.
 
 
 
