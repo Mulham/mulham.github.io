@@ -26,8 +26,8 @@ title: موقع ملهم|شغف المعرفة
 	  {% for post in paginator.posts %}
 	    <li>
 <a href="{{ post.url }}" title="{{ post.title }}"><br />{{ post.title }}</a><br />
-<span style="font-size: 16px">{{ post.date | date_to_string }}</span> <br />
-<p style="font-size: 20px">{{ post.excerpt | strip_html | truncatewords:75 }} <a href="{{ post.url }}">قراءة المزيد» </a></p>
+<span style="font-size: 14px">{{ post.date | date_to_string }}</span> <br />
+<p style="font-size: 19px">{{ post.excerpt | strip_html | truncatewords:75 }} <a href="{{ post.url }}">قراءة المزيد» </a></p>
 </li><br />
 
 	  {% endfor %}
