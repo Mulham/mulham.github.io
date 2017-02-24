@@ -64,7 +64,7 @@ class dict_window(Gtk.Window):
 			else:
 				del sentences[counter]
 		#so at the end we have sentences contains the sentences between the marks in the given text (slef.text) 
-		# not working anymore!: and also contain tranitional phrases independntly
+		# not working anymore!: and also contain transitional phrases independntly
 
 		# start searching from combined word in the dict and translating them if found
 		counter = 0
@@ -74,26 +74,23 @@ class dict_window(Gtk.Window):
 				sentence = str(sentence[0].lower()) + sentence[1:]	#making first letter after each mark always lower
 				words = sentence.split()	#تقسيم الجملة لكلمات
 				while i+3 < len(words):		# Searching four words together
-					group = ''
-					group = words[i] + words[i+1] + words[i+2] + words[i+3]
+					group = words[i] + ' ' + words[i+1] + ' ' + words[i+2] + ' ' + words[i+3]
 					try:
-						words[i:i+4] = m_dic.dict[group][0][0]
+						words[i:i+4] = [m_dict.dict[group][0][0]]
 					except:
 						i += 1
 				i = 0
 				while i+2 < len(words):		# Searching three words together
-					group = ''
-					group = words[i] + words[i+1] + words[i+2]
+					group = words[i] + ' ' + words[i+1] + ' ' + words[i+2]
 					try:
-						words[i:i+3] = m_dic.dict[group][0][0]
+						words[i:i+3] = [m_dict.dict[group][0][0]]
 					except:
 						i += 1
 				i = 0
 				while i+1 < len(words):		# Searching two words together
-					group = ''
-					group = words[i] + words[i+1]
+					group = words[i] + ' ' + words[i+1]
 					try:
-						words[i:i+2] = m_dic.dict[group][0][0]
+						words[i:i+2] = [m_dict.dict[group][0][0]]
 					except:
 						i += 1
 				for word in words:
@@ -109,23 +106,54 @@ class dict_window(Gtk.Window):
 			
 		## end of translating combined words as they are (if exist) in dic	
 
-		# Here we basic translation as this: ['word word', ',', 'word', 'and', 'word', '.']
+		# Here we have basic translation as this: ['word', ',', 'word', 'word', '.']
+#################Arranging#####################3
+		#rules.rearrange(basic_translation)	#re-arrange it first
+		types = []
+		for word in basic_trnaslation:
+			try:
+				types.append(m_dict.dict[word][1][0])
+			except:
+				types.append('UR')	#Un-Recognized
+		arrange = []
+		for t in types:
+			if types[t]=='فعل':
+				arrange.append(types.index(t))
+				types[0] == types[t] 
 
+###################################################################
 		# ----- start translating single words -----------	
-
 		## 1 detecting word type (verb or noun)
 		t = 0
 		bt1 = []
 		while t < len(basic_translation):
-			
-			try:	#if the word exist in the dictionary
-				bt1.append(m_dict.dict[basic_translation[t]][0][0])
-			except:		#else add the word as it is (in english)
-				#try to recognize the word, otherwise put it without translation
-				if basic_translation[t][-1] == 's':  #maybe it's plural
-					rules.plural(basic_translation[t], bt1)
+			#firstly, translated words must be out of this whole process
+			if basic_translation[t].upper() == basic_translation[t].lower():
+			#that means word is arabic so there's no upper or lower at all..
 				bt1.append(basic_translation[t])
-			t += 1
+				t += 1
+			else:	#word is english => let's try to translate it
+				try:	#if the word exist in the dictionary
+					bt1.append(m_dict.dict[basic_translation[t]][0][0])
+				except:		#else add the word as it is (in english)
+					#try to recognize the word, otherwise put it without translation
+					past_test = rules.past_tense(basic_translation[t])
+					if basic_translation[t][-1] == 's':  #maybe it's plural
+					#ATTENTION: maybe it's verb! with s for third person
+						plural_test = rules.plural(basic_translation[t])
+						if plural_test:	#if we found the word and pluralized it
+							bt1.append(plural_test)
+						else:
+							bt1.append(basic_translation[t])
+					elif past_test:
+						bt1.append(past_test)
+						#if m_dict.dict[noun[t]][1][0] == 'اسم:مؤنث':
+							#bt1.append(rules.she_convert_past(past_test))
+						#else:
+							#bt1.append(past_test)
+					else:
+						bt1.append(basic_translation[t])
+				t += 1
 				# at the end الكلمات الغير مترجمة يتم عمل الاختبارات التالية عليها
 		rules.arabic_marks(bt1)
 ############ The start of advanced translation processes (applying rules):
@@ -135,9 +163,11 @@ class dict_window(Gtk.Window):
 		for word in bt1:		# مرحلة ثانية
 			if word == 'كيف':
 				rules.kaif(word, bt1)
+
+################The Most End of Translation#########################################
 		final_trans = ''
 		for j in bt1:
-			if re.search('[,;.?!.\)\(]+', j):
+			if re.search('[,;.?!.\)\(]+', j):	#remove the space between the word and the mark
 				final_trans = final_trans[:-1]
 			final_trans += j #make the translation as string alternative to list
 			final_trans += ' '

@@ -4,7 +4,7 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2017-02-06T15:47:19+02:00</updated>
+	<updated>2017-02-24T19:06:23+02:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -23,6 +23,20 @@
 &lt;p&gt;سأقوم عزيزي القارئ في هذا المقال بإلقاء الضوء أكثر على تقنيات CSS الغير مشهورة تماماً والمتعلقة بطريقة تنسيق توضّع الحقول والمحتويات ضمن صفحة الوب.&lt;/p&gt;
 
 &lt;p&gt;ولكن قبل البدء بذلك دعنا نلقِ نظرة سريعة وضرورية على أنواع التوضّع المتاحة..&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot; id=&quot;markdown-toc-مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#خيارات-خاصيّة-التوضّع-position&quot; id=&quot;markdown-toc-خيارات-خاصيّة-التوضّع-position&quot;&gt;خيارات خاصيّة التوضّع ‘position’&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#الاختلافات-الرئيسية-لخاصية-التوضّع-في-css&quot; id=&quot;markdown-toc-الاختلافات-الرئيسية-لخاصية-التوضّع-في-css&quot;&gt;الاختلافات الرئيسية لخاصية التوضّع في CSS&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#توضّع-العناصر-وفق-النوع-absolute&quot; id=&quot;markdown-toc-توضّع-العناصر-وفق-النوع-absolute&quot;&gt;توضّع العناصر وفق النوع Absolute&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#تجاهل-خاصية-float-للعناصر-المتوضّعة-بشكل-مطلق&quot; id=&quot;markdown-toc-تجاهل-خاصية-float-للعناصر-المتوضّعة-بشكل-مطلق&quot;&gt;تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#العناصر-المضمّنة-المتوضّعة-بشكل-مطلق-تكون-كعناصر-مستوى-block&quot; id=&quot;markdown-toc-العناصر-المضمّنة-المتوضّعة-بشكل-مطلق-تكون-كعناصر-مستوى-block&quot;&gt;العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الهوامش-غير-قابلة-للطي-في-العناصر-المتوضّعة-بشكل-مطلق&quot; id=&quot;markdown-toc-الهوامش-غير-قابلة-للطي-في-العناصر-المتوضّعة-بشكل-مطلق&quot;&gt;الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#توضّع-العناصر-بالبيكسل-والنسب-المئويّة&quot; id=&quot;markdown-toc-توضّع-العناصر-بالبيكسل-والنسب-المئويّة&quot;&gt;توضّع العناصر بالبيكسل والنسب المئويّة&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#في-النهاية-&quot; id=&quot;markdown-toc-في-النهاية-&quot;&gt;في النهاية ..&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/h1&gt;
 
@@ -186,6 +200,8 @@
 
 &lt;p&gt;أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :)&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;https://scotch.io/bar-talk/5-things-you-might-not-know-about-the-css-positioning-types&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -225,6 +241,17 @@
 &lt;p&gt;أهلاً بك في سلسلة دروس “تطوير تطبيقات أندرويد”!&lt;/p&gt;
 
 &lt;p&gt;ستُعلّمك هذه الدروس كيفية بناء تطبيقك الأوّل لنظام أندرويد، كما ستتعلّم كيفية إنشاء مشروع على أندرويد وكيفية تشغيل التطبيق بوضعيّة التنقيح (debugging)، كما ستتعلّّم بعض الأساسيّات لتصميم تطبيق أندرويد بما في ذلك كيفيّة بناء واجهة مستخدم بسيطة والتعامل مع إدخالات المستخدم. &lt;strong&gt;كل ذلك بدون أيّة معرفة مسبقة!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-تطبيقك-الأوّل&quot; id=&quot;markdown-toc-بناء-تطبيقك-الأوّل&quot;&gt;بناء تطبيقك الأوّل&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#تجهيز-بيئة-العمل&quot; id=&quot;markdown-toc-تجهيز-بيئة-العمل&quot;&gt;تجهيز بيئة العمل&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#إنشاء-مشروع-أندرويد&quot; id=&quot;markdown-toc-إنشاء-مشروع-أندرويد&quot;&gt;إنشاء مشروع أندرويد&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#إنشاء-مشروع-باستخدام-استديو-أندرويد&quot; id=&quot;markdown-toc-إنشاء-مشروع-باستخدام-استديو-أندرويد&quot;&gt;إنشاء مشروع باستخدام استديو أندرويد&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;تجهيز-بيئة-العمل&quot;&gt;تجهيز بيئة العمل&lt;/h2&gt;
 
@@ -1374,7 +1401,9 @@
 			<link href="http://mulham.github.io/php-forum-from-scratch"/>
 			<updated>2016-06-20T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//php-forum-from-scratch</id>
-			<content type="html">&lt;p&gt;سنقوم في هذا الشرح ببناء منتدى PHP/MySQL من الصفر. هذا الشرح أيضاً ممتاز للاعتياد على أساسيات لغة البرمجة php وقواعد بيانات MySQL . لنبدأ سويةً !&lt;/p&gt;
+			<content type="html">&lt;p&gt;هذا الدرس من تأليف Evert padje وترجمتي (ملهم)، يركّز الدرس على إنشاء منتدى باستخدام php و Mysql من أجل قاعدة بيانات المنتدى .. وهو لغرض تعليمي، يمكن معاينة المنتدى الناتج على &lt;a href=&quot;http://inkshouse.heroicmice.com/forum/index.php&quot;&gt;هذا الرابط&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;سنقوم في هذا الشرح ببناء منتدى PHP/MySQL من الصفر. هذا الشرح أيضاً ممتاز للاعتياد على أساسيات لغة البرمجة php وقواعد بيانات MySQL . لنبدأ سويةً !&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#أولاً--إنشاء-جداول-قاعدة-البيانات-&quot; id=&quot;markdown-toc-أولاً--إنشاء-جداول-قاعدة-البيانات-&quot;&gt;أولاً : إنشاء جداول قاعدة البيانات :&lt;/a&gt;    &lt;ul&gt;
@@ -6471,9 +6500,9 @@ ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
 	
 		<entry>
 			<title>قهوة تصنع من فضلات الفيل</title>
-			<link href="http://mulham.github.io/stange-coffee"/>
+			<link href="http://mulham.github.io/strange-coffee"/>
 			<updated>2014-06-16T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//stange-coffee</id>
+			<id>http://mulham.github.io//strange-coffee</id>
 			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/elephant-coffee.jpg&quot; style=&quot;float: left&quot; alt=&quot;قهوة تصنع من فضلات الفيل&quot; title=&quot;قهوة تصنع من فضلات الفيل&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;هذه القهوة التي يطلق عليها “ بلاك ايفوري” تستخرج من فضلات الفيل ويبلغ سعر الكيلو غرام الواحد منها حوالي 1100 دولار وبالتالي تعد أغلى قهوة في العالم !
@@ -6854,15 +6883,6 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 &lt;p&gt;وعمل “غرانوالد” بمساعدة قناع للغازات لتجنب استنشاق الغازات المميتة .&lt;/p&gt;
 
 &lt;p&gt;أيضا أحد المصاعب التي واجهته هو أن الغازات الأسيدية لا تتوافق مع كاميراته ، ولكنه كمصور يجد أن المهمة تستحق العناء ، فكما يقول : “ هذه الظاهرة غير شائعة أبداً ، حيث أننا نشعر حقا وكأننا على سطح كوكب آخر ! “.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Blue Volcano Ethubia</title>
-			<link href="http://mulham.github.io/blue-volcano-ethubia"/>
-			<updated>2014-03-28T01:00:00+03:00</updated>
-			<id>http://mulham.github.io//blue-volcano-ethubia</id>
-			<content type="html">
 </content>
 		</entry>
 	

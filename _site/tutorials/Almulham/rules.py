@@ -200,10 +200,10 @@ def past_tense(word):
 	if word[-1] == 'd':
 		word = word[:-1]	#delete the d letter
 		try:
-			i = m.dict_dict[word][0][0]
+			i = m_dict.dict[word][0][0]
 			#this word must be verb. let's check this
 			word_index = 0
-			for t in m.dict_dict[word][1]:
+			for t in m_dict.dict[word][1]:
 				if t[:3] == 'فعل':
 					# yes, it's really a verb
 					past_tense = 1
@@ -213,10 +213,10 @@ def past_tense(word):
 			if word[-1] == 'e':		#so the word ends with 'ed'
 				word = word[:-1]
 			try:
-				i = m.dict_dict[word][0][0]
+				i = m_dict.dict[word][0][0]
 				#this word must be verb. let's check this
 				word_index = 0
-				for t in m.dict_dict[word][1]:
+				for t in m_dict.dict[word][1]:
 					if t[:3] == 'فعل':
 						# yes, it's really a verb
 						past_tense = 1
@@ -225,11 +225,13 @@ def past_tense(word):
 			except:
 				if word[-1] == word[-2]:	#like knitted
 					word = word[:-1]
+				elif word[-1] == 'i':		#studied
+					word = word[:-1] + 'y'
 				try:
-					i = m.dict_dict[word][0][0]
+					i = m_dict.dict[word][0][0]
 					#this word must be verb. let's check this
 					word_index = 0
-					for t in m.dict_dict[word][1]:
+					for t in m_dict.dict[word][1]:
 						if t[:3] == 'فعل':
 							# yes, it's really a verb
 							past_tense = 1
@@ -265,7 +267,7 @@ def past_tense(word):
 			if translated[-2] == 'و': 		#c إذا كانت كلمة مثل يعود/يقول يجب استبدال الواو بألف
 				translated = translated[:-2] + 'ا' + translated[-1]		
 			elif translated[-2] == 'ي':		#s كلمة مثل يطيع/يستطيع يجب تحويل الياء لألف
-				tanslated = translated[:-2] + 'ا' + translated[-1]
+				translated = translated[:-2] + 'ا' + translated[-1]
 			#if -- إذا كانت الكلمة مُشكّة فيجب تصحيح التشكيل			
 				if translated[-2] == 'َ':		#بدّل الفتحة بالكسرة والكسرة بالفتحة
 					translated = translated[:-2] + 'ِ' + translated[-1]
@@ -366,17 +368,22 @@ def kaif(how, list):
 	elif list[how_index + 1] == 'يكونوا':
 		list[how_index + 1] = 'حالهم'
 	return list
-def convert_to_plural(word):
-	''' convert the arabic word from single to plural '''
+def afdal_test(word):	#word in arabic
+	''' test if the arabic word is اسم تفضيل '''
+	if word[0] == 'أ' and len(word) == 4:
+		return True
+	else:
+		return False
 	
-def plural(word, list):
+def plural(word):
 	''' if s detected at the end of the word then tests are here to get sure '''
 	if word[-2] == 'e' and re.search('[hsxz]', word[-3]):
 		word = word[:-2]	#delete es
 	elif word[-2] == 'e' and word[-3] == 'i':
-		word = word[:-3] + 'y'	#delete es and replace it with y
+		word = word[:-3] + 'y'	#delete ies and replace it with y
 	else:
 		word = word[:-1]	#just delete s and hope for the best!
+	ok = 0
 	try:
 		translated = m_dict.dict[word][0][0]
 		# Now we must convert the translation to the plural ..
@@ -384,7 +391,8 @@ def plural(word, list):
 ########################جمع المذكر السالم##############################################3
 		if afdal_test(translated):	#أسماء التفضيل تجمع دائماً جمع مذكر سالم
 			translated = translated[:-1] + 'ون'
-		if len(trnaslated) > 3 and translated[-1] != 'ة':	#أعتقد جمع المذكر مفرده لا يقل عن أربعة أحرف
+			ok = 1
+		elif len(trnaslated) > 3 and translated[-1] != 'ة':	#أعتقد جمع المذكر مفرده لا يقل عن أربعة أحرف
 			if m_dict.dict[word][1][0] == 'اسم:شخص' or m_dict.dict[word][1][0] == 'صفة:شخص':
 				if translated[-1] == 'ى':	#مصطفى => مصطفَوْن
 					translated = translated[:-1] + 'َوْن'
@@ -392,16 +400,36 @@ def plural(word, list):
 					translated = translated[:-1] + 'ون'
 				else:
 					translated += 'ون'	# جمع مذكر سالم
-				list.append(translated)
+				ok = 1
 ##################################################################################
 ######################جمع المؤنث السالم####################################
-		if
+		if ok == 0:	#havn't find a plural yet..
+			if translated[-2:] == 'اة':	#فتاة
+				translated = translated[:-2] + 'يات'
+			elif translated[-1] == 'ة':	#عالمة
+				translated = translated[:-1] + 'ات'
+			elif transalted[-1] == 'ى':	#هدى/مستشفى
+				translated = translated[:-1] + 'يات'
+			elif translated[-1] == 'ا':	#d رضا => رضوات
+				translated = translated[:-1] + 'وات'
+			elif translated[-1] == 'ء':
+				if translated[2] == 'ّ': 	#وضّاء
+					translated += 'ات'
+				else:	#عذراء حسناء الألف للتأنيث
+					translated = translated[:-1] + 'وات'
+			elif translated[4:] == 'ابن ':
+				translated = 'بنات ' + translated[4:]
+			elif translated[3:] == 'ذو ':
+				translated = 'ذوات ' + translated[3:]
+			elif translated == 'أم':
+				translated = 'أمهات'
+			else:	#هند سعاد زينب
+				translated += 'ات'
+		return translated
 	except:
-		pass
-
-def afdal_test(word):	#word in arabic
-	''' test if the arabic word is اسم تفضيل '''
-	if word[0] == 'أ' and len(word) == 4:
-		return True
-	else:
 		return False
+
+def rearrange(list):
+	''' re-arrange the sentences and words to suit the arabic structure, the list here contains english words '''
+	
+
