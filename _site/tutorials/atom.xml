@@ -4,7 +4,7 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2017-02-24T22:50:51+02:00</updated>
+	<updated>2017-02-25T13:42:04+02:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -13,12 +13,51 @@
 
 	
 		<entry>
+			<title>بعض اختصارات الحاسوب التي ينبغي على الجميع معرفتها</title>
+			<link href="http://mulham.github.io/%D8%A8%D8%B9%D8%B6-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7"/>
+			<updated>2017-02-25T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//بعض-اختصارات-الحاسوب-التي-ينبغي-على-الجميع-معرفتها</id>
+			<content type="html">
+</content>
+		</entry>
+	
+		<entry>
 			<title>معظم صيغ وامتدادات الملفات في العالم</title>
 			<link href="http://mulham.github.io/%D9%85%D8%B9%D8%B8%D9%85-%D8%A7%D9%85%D8%AA%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%B5%D9%8A%D8%BA-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85"/>
 			<updated>2017-02-22T00:00:00+02:00</updated>
 			<id>http://mulham.github.io//معظم-امتدادات-وصيغ-الملفات-في-العالم</id>
-			<content type="html">&lt;p&gt;ستجد في الجداول أدناه معظم صيغ وامتدادات ملفات الحاسوب مع شرح كل امتداد والبرنامج التابع له.
+			<content type="html">&lt;p&gt;ستجد في الجداول أدناه معظم صيغ وامتدادات ملفات الحاسوب مرتبة أبجدياً مع شرح كل امتداد والبرنامج التابع له.
 &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#a&quot; id=&quot;markdown-toc-a&quot;&gt;A&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#b&quot; id=&quot;markdown-toc-b&quot;&gt;B&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#c&quot; id=&quot;markdown-toc-c&quot;&gt;C&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#d&quot; id=&quot;markdown-toc-d&quot;&gt;D&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#e&quot; id=&quot;markdown-toc-e&quot;&gt;E&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#f&quot; id=&quot;markdown-toc-f&quot;&gt;F&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#g&quot; id=&quot;markdown-toc-g&quot;&gt;G&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#h&quot; id=&quot;markdown-toc-h&quot;&gt;H&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#i&quot; id=&quot;markdown-toc-i&quot;&gt;I&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#j&quot; id=&quot;markdown-toc-j&quot;&gt;J&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#k&quot; id=&quot;markdown-toc-k&quot;&gt;K&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#l&quot; id=&quot;markdown-toc-l&quot;&gt;L&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#m&quot; id=&quot;markdown-toc-m&quot;&gt;M&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n&quot; id=&quot;markdown-toc-n&quot;&gt;N&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#o&quot; id=&quot;markdown-toc-o&quot;&gt;O&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#p&quot; id=&quot;markdown-toc-p&quot;&gt;P&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#q&quot; id=&quot;markdown-toc-q&quot;&gt;Q&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#r&quot; id=&quot;markdown-toc-r&quot;&gt;R&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#s&quot; id=&quot;markdown-toc-s&quot;&gt;S&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#t&quot; id=&quot;markdown-toc-t&quot;&gt;T&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#u&quot; id=&quot;markdown-toc-u&quot;&gt;U&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#v&quot; id=&quot;markdown-toc-v&quot;&gt;V&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#w&quot; id=&quot;markdown-toc-w&quot;&gt;W&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#x&quot; id=&quot;markdown-toc-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#y&quot; id=&quot;markdown-toc-y&quot;&gt;Y&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#z&quot; id=&quot;markdown-toc-z&quot;&gt;Z&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أرقام-ورموز&quot; id=&quot;markdown-toc-أرقام-ورموز&quot;&gt;أرقام ورموز&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;a&quot;&gt;A&lt;/h1&gt;
 
@@ -2605,7 +2644,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;http://ace.net.nz/tech/TechFileFormat.html&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;هذه المقالة منقولة مع بعض التعديلات، يمكنك الاطلاع على &lt;a href=&quot;http://ace.net.nz/tech/TechFileFormat.html&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 </content>
 		</entry>
