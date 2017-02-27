@@ -4,7 +4,7 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2017-02-27T21:30:28+02:00</updated>
+	<updated>2017-02-27T21:39:32+02:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -9322,26 +9322,26 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 &lt;figure class=&quot;third &quot;&gt;
   
     
-      &lt;a href=&quot;https://mulham.github.io/assets/egg-car.jpg&quot; title=&quot;Image 1 title caption&quot;&gt;
-        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-th.jpg&quot; alt=&quot;placeholder image 1&quot; /&gt;
+      &lt;a href=&quot;http://localhost:4000/assets/egg-car.jpg&quot; title=&quot;Image 1 title caption&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/egg-car-th.jpg&quot; alt=&quot;placeholder image 1&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://mulham.github.io/assets/egg-car2.jpg&quot; title=&quot;Image 2 title caption&quot;&gt;
-        &lt;img src=&quot;https://mulham.github.io/assets/egg-car2-th.jpg&quot; alt=&quot;placeholder image 2&quot; /&gt;
+      &lt;a href=&quot;http://localhost:4000/assets/egg-car2.jpg&quot; title=&quot;Image 2 title caption&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/egg-car2-th.jpg&quot; alt=&quot;placeholder image 2&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://mulham.github.io/assets/egg-car-3.jpg&quot; title=&quot;Image 3 title caption&quot;&gt;
-        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-3-th.jpg&quot; alt=&quot;placeholder image 3&quot; /&gt;
+      &lt;a href=&quot;http://localhost:4000/assets/egg-car-3.jpg&quot; title=&quot;Image 3 title caption&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/egg-car-3-th.jpg&quot; alt=&quot;placeholder image 3&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://mulham.github.io/assets/egg-car-4.jpg&quot; title=&quot;Image 4 title caption&quot;&gt;
-        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-4-th.jpg&quot; alt=&quot;placeholder image 4&quot; /&gt;
+      &lt;a href=&quot;http://localhost:4000/assets/egg-car-4.jpg&quot; title=&quot;Image 4 title caption&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/egg-car-4-th.jpg&quot; alt=&quot;placeholder image 4&quot; /&gt;
       &lt;/a&gt;
     
   
