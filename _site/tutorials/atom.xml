@@ -4,7 +4,7 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2017-02-25T13:42:04+02:00</updated>
+	<updated>2017-02-27T21:30:28+02:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -13,11 +13,90 @@
 
 	
 		<entry>
-			<title>بعض اختصارات الحاسوب التي ينبغي على الجميع معرفتها</title>
-			<link href="http://mulham.github.io/%D8%A8%D8%B9%D8%B6-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7"/>
+			<title>بعض حِيَل الحاسوب التي ينبغي على الجميع معرفتها</title>
+			<link href="http://mulham.github.io/%D8%A8%D8%B9%D8%B6-%D8%AD%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7"/>
 			<updated>2017-02-25T00:00:00+02:00</updated>
-			<id>http://mulham.github.io//بعض-اختصارات-الحاسوب-التي-ينبغي-على-الجميع-معرفتها</id>
-			<content type="html">
+			<id>http://mulham.github.io//بعض-حيل-الحاسوب-التي-ينبغي-على-الجميع-معرفتها</id>
+			<content type="html">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;زر الويندوز + L لقفل الشاشة (على منصةّ ويندوز).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;زر الويندوز + P لتثبيث جهاز إسقاط أو شاشة ثانية (على منصّة ويندوز).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;عند مشاهدة مقطع فيديو على برنامج VLC، إذا كان هناك فارق زمني بين الصوت والصورة فيمكنك الضغط على زرّي k و j لتأخير أو تسبيق الصوت عن الصورة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;في برنامج الفوتوشوب عند استعمال أداة marquee tool لرسم الأشكال الهندسية، يمكنك الضغط على زر الفراغ لسحب الشكل بدون فقدان إمكانية تحجيمه.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;عند تنصيب البرامج اختر دائماً تنصيب مخصّص custom لمنع البرامج من تنصيب أدوات إضافية قد تكون مزعجة مثل شريط الأدوات في المتصفح أو غيرها.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;عند كتابة عنوان موقع في متصفح الإنترنت، يمكنك الضغط على ctrl + Enter وسيقوم تلقائياً بإضافة http://www. قبل ما كتبته وكذلك .com بعده.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;عند تنصيب نظام ويندوز جديد على الحاسوب فيمكنك توفير الوقت باستخدام &lt;a href=&quot;http://www.ninite.com/&quot;&gt;Ninite&lt;/a&gt; لتنصيب/تحديث عدة برامج مرّة واحدة (لم أجربه شخصياً - استخدامه محدود بشكل مجاني).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الضغط على crtl + shift + esc سيفتح مدير المهام مباشرةً.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;عند ملئ النموذج على الإنترنت أو على برامج تحرير المستندات مثل إكسل، فالضغط على زر tab سينقل المؤشر لحقل الإدخال التالي، والضغط على shift + tab سينقل المؤشر لحقل الإدخال السابق.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكنك دائماً استعمال الاختصار ctrl + L أو F6 ضمن متصفح الوب للانتقال لشريط العناوين مباشرةَ.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يعمل زر Caps Lock وفق مستوى الهاردوير، بحيث يمكنك تحديد إذا كان الجهاز لا يستجيب أم أن المشكلة في بعض التطبيقات التي تسبب البطئ أو أخطاء في العرض. فقط اضغط على زر Caps Lock وإذا ظهر ضوء الزر على لوحة المفاتيح فهذا يعني أن الجهاز مازال يستجيب ويعمل.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على &lt;a href=&quot;http://oneminutelist.com/11-computer-tricks-everyone-should-know-about&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>8 مواقع إنجليزية لاكتساب مهارات جديدة مجاناً</title>
+			<link href="http://mulham.github.io/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7"/>
+			<updated>2017-02-25T00:00:00+02:00</updated>
+			<id>http://mulham.github.io//8-مواقع-إنجليزية-لاكتساب-مهارات-جديدة-مجانا</id>
+			<content type="html">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.duolingo.com/&quot;&gt;Duolingo&lt;/a&gt; - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.codecademy.com/&quot;&gt;Codecademy&lt;/a&gt; - تعلّم البرمجة بسهولة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://ocw.mit.edu/courses/&quot;&gt;MIT Courses&lt;/a&gt; - مناهج مفتوحة من قبل دكاترة معهد MIT التقني&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://education-portal.com/&quot;&gt;Education Portal&lt;/a&gt; - اختر بين عدة مناهج ويمكنك الحصول على تقدير جامعي حقيقي&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://edx.org&quot;&gt;Edx&lt;/a&gt; - مناهج مجانيّة متعدّدة في مجالات مختلفة مع شهادات مدفوعة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/&quot;&gt;coursera&lt;/a&gt; - كما هو مذكور في موقعهم: “أفضل المناهج في العالم عبر الإنترنت وبالمجان”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.khanacademy.org/&quot;&gt;Khan Academy&lt;/a&gt; - مناهج في مجالات مختلفة بما فيها علم الحاسوب والرياضيّات&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://diy.org/skills&quot;&gt;DIY.com&lt;/a&gt; - اختر بين مهارات عديدة وتعلمهم.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;إضافة&lt;/em&gt;: موقع حروب الكود &lt;a href=&quot;http://codewars.com/&quot;&gt;codewars&lt;/a&gt; لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;http://oneminlist.com/7-sites-where-you-can-learn-new-skills-for-free/&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -2843,7 +2922,7 @@
 		</entry>
 	
 		<entry>
-			<title>كيفية الإجابة على السؤال "لماذا تستحق المنحة" عند التقدم للمنح الدراسية</title>
+			<title>كيفية الإجابة على السؤال (لماذا تستحق المنحة) عند التقدم للمنح الدراسية</title>
 			<link href="http://mulham.github.io/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9"/>
 			<updated>2016-11-26T00:00:00+02:00</updated>
 			<id>http://mulham.github.io//لماذا-تستحق-المنحة</id>
@@ -6358,6 +6437,8 @@
 &lt;p&gt;الجداول هي مجموعة من مدخلات البيانات المرتبطة وتتألف من الصفوف والأعمدة .&lt;/p&gt;
 
 &lt;p&gt;التالي: &lt;a href=&quot;build&quot;&gt;بناء SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;سلسلة الدروس هذه بأكملها مترجمة وبتصرّف، يمكنك الاطّلاع على &lt;a href=&quot;https://www.w3schools.com/SQl/sql_intro.asp&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -9241,26 +9322,26 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 &lt;figure class=&quot;third &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car.jpg&quot; title=&quot;Image 1 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car-th.jpg&quot; alt=&quot;placeholder image 1&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car.jpg&quot; title=&quot;Image 1 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-th.jpg&quot; alt=&quot;placeholder image 1&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car2.jpg&quot; title=&quot;Image 2 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car2-th.jpg&quot; alt=&quot;placeholder image 2&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car2.jpg&quot; title=&quot;Image 2 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car2-th.jpg&quot; alt=&quot;placeholder image 2&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car-3.jpg&quot; title=&quot;Image 3 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car-3-th.jpg&quot; alt=&quot;placeholder image 3&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car-3.jpg&quot; title=&quot;Image 3 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-3-th.jpg&quot; alt=&quot;placeholder image 3&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car-4.jpg&quot; title=&quot;Image 4 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car-4-th.jpg&quot; alt=&quot;placeholder image 4&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car-4.jpg&quot; title=&quot;Image 4 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-4-th.jpg&quot; alt=&quot;placeholder image 4&quot; /&gt;
       &lt;/a&gt;
     
   

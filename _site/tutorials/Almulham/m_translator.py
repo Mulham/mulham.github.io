@@ -49,6 +49,40 @@ class dict_window(Gtk.Window):
 			else:
 				counter += 1
 		self.text = self.text + ' '		#for فلترة العلامات في آخر الجملة أيضاً
+#################Arranging#####################3
+		#rules.rearrange(basic_translation)	#re-arrange it first
+		sentences = re.split('[.?!\)\(]*', self.text)
+		counter = 0		#for حذف القيم الفارغة ''
+		while counter < len(sentences):
+			if sentences[counter]:
+				if sentences[counter] == ' ':
+					del sentences[counter]
+				else:
+					if sentences[counter][0] == ' ':		#حذف الفراغات أول وآخر الجملة
+						sentences[counter] = sentences[counter][1:]
+					if sentences[counter][-1] == ' ':
+						sentences[counter] = sentences[counter][:-1]
+					counter += 1
+			else:
+				del sentences[counter]
+		types = []
+		for sentence in sentences:
+			for word in sentence:
+				try:
+					types.append(m_dict.dict[word][1][0])
+				except:
+					types.append('UR')	#Un-Recognized
+			arrange = []
+			for t in types:
+				if t=='فعل':
+					arrange.append(types.index(t))
+					types[0] == types[t] 
+
+###################################################################
+
+
+
+
 		sentences = re.split('[,;.?!.\)\(]*', self.text)
 		counter = 0		#for حذف القيم الفارغة ''
 		while counter < len(sentences):
@@ -71,8 +105,8 @@ class dict_window(Gtk.Window):
 		for sentence in sentences:
 			i = 0
 			if re.search('(\D)+ \d*(\D)+', sentence):  	#if the sentence not a single word
-				sentence = str(sentence[0].lower()) + sentence[1:]	#making first letter after each mark always lower
-				words = sentence.split()	#تقسيم الجملة لكلمات
+#				sentence = str(sentence[0].lower()) + sentence[1:]	#making first letter after each mark always lower
+				words = sentence.lower().split()	#تقسيم الجملة لكلمات
 				while i+3 < len(words):		# Searching four words together
 					group = words[i] + ' ' + words[i+1] + ' ' + words[i+2] + ' ' + words[i+3]
 					try:
@@ -107,21 +141,7 @@ class dict_window(Gtk.Window):
 		## end of translating combined words as they are (if exist) in dic	
 
 		# Here we have basic translation as this: ['word', ',', 'word', 'word', '.']
-#################Arranging#####################3
-		#rules.rearrange(basic_translation)	#re-arrange it first
-		types = []
-		for word in basic_trnaslation:
-			try:
-				types.append(m_dict.dict[word][1][0])
-			except:
-				types.append('UR')	#Un-Recognized
-		arrange = []
-		for t in types:
-			if types[t]=='فعل':
-				arrange.append(types.index(t))
-				types[0] == types[t] 
 
-###################################################################
 		# ----- start translating single words -----------	
 		## 1 detecting word type (verb or noun)
 		t = 0
