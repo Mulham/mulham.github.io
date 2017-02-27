@@ -4,7 +4,7 @@
 	<title>Mulham Tutorials</title>
 	<link href="http://mulham.github.io/tutorials/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/tutorials"/>
-	<updated>2017-02-27T21:39:32+02:00</updated>
+	<updated>2017-02-27T23:00:35+02:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -2917,32 +2917,6 @@
 &lt;p&gt;أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;https://scotch.io/bar-talk/5-things-you-might-not-know-about-the-css-positioning-types&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>كيفية الإجابة على السؤال (لماذا تستحق المنحة) عند التقدم للمنح الدراسية</title>
-			<link href="http://mulham.github.io/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9"/>
-			<updated>2016-11-26T00:00:00+02:00</updated>
-			<id>http://mulham.github.io//لماذا-تستحق-المنحة</id>
-			<content type="html">&lt;p&gt;&lt;strong&gt;بعض المنح تطلب منك أن تصف في رسالة “لماذا تستحق برأيك هذه المنحة” .. مالذي يجب أن تكتبه في هذه الرسالة (رسالة الدوافع)؟&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;إليك الجواب (حسب رأي بعض الأشخاص):&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;يجب أن تكون اللجنة مقتنعة بأنك ستنفق المال بشكل جيّد. وبالتالي من الأفضل أن تذكر بأنك ستنفق المال لكي تصبح أفضل في مجال الدراسة المحدّد (عبر شراء المحاضرات والكتب، حضور المؤتمرات، الدفع مقابل بعض المناهج والشهادات، نشر المقالات والأبحاث في المجلات..). ولكن انتبه، لا تحاول أن تكون مثالياً! فهذا سينعكس سلباً بالطبع.&lt;/p&gt;
-
-&lt;p&gt;يجب أيضاً أن تُقنع اللجنة أنّك ستبلي بلاءً حسناً في دراستك، ومنه أن تذكر نتائج دراساتك السابقة والإنجازات أو التقديرات التي حصلت عليها.&lt;/p&gt;
-
-&lt;p&gt;كما يجب أن تُقنع اللجنة أنك تحب مجال دراستك ومتحمس له وستواصل العمل بجد. إذا استفدت من دراستك سابقاً في العمل فاذكر ذلك. واذكر أيضاً أهدافك على المدى القصير والبعيد، التعليمية منها والمهنية.&lt;/p&gt;
-
-&lt;p&gt;كما يمكن أن تذكر نقاط القوة في شخصيتك وتعطي أدلة عليها (مثال: القدرة على القيادة، حيث أنك قمت بإدارة وقيادة فريق من الطلاب في مشروع س والذي كان ناجحاً).&lt;/p&gt;
-
-&lt;p&gt;أي أنّ رسالة الدوافع motivation letter بشكل عام يجب أن تكون إجابة على السؤال “لماذا تستحق المنحة الدراسية؟”.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;خلاصة: في رسالة الدوافع قم بذكر: الإنجازات السابقة والاهتمامات الحاليّة ومقدار الحماس والرؤية الإيجابيّة للمستقبل.&lt;/p&gt;
-&lt;/blockquote&gt;
 
 </content>
 		</entry>
@@ -9322,26 +9296,26 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 &lt;figure class=&quot;third &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car.jpg&quot; title=&quot;Image 1 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car-th.jpg&quot; alt=&quot;placeholder image 1&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car.jpg&quot; title=&quot;Image 1 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-th.jpg&quot; alt=&quot;placeholder image 1&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car2.jpg&quot; title=&quot;Image 2 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car2-th.jpg&quot; alt=&quot;placeholder image 2&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car2.jpg&quot; title=&quot;Image 2 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car2-th.jpg&quot; alt=&quot;placeholder image 2&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car-3.jpg&quot; title=&quot;Image 3 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car-3-th.jpg&quot; alt=&quot;placeholder image 3&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car-3.jpg&quot; title=&quot;Image 3 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-3-th.jpg&quot; alt=&quot;placeholder image 3&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/assets/egg-car-4.jpg&quot; title=&quot;Image 4 title caption&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/egg-car-4-th.jpg&quot; alt=&quot;placeholder image 4&quot; /&gt;
+      &lt;a href=&quot;https://mulham.github.io/assets/egg-car-4.jpg&quot; title=&quot;Image 4 title caption&quot;&gt;
+        &lt;img src=&quot;https://mulham.github.io/assets/egg-car-4-th.jpg&quot; alt=&quot;placeholder image 4&quot; /&gt;
       &lt;/a&gt;
     
   
