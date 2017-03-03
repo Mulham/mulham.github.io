@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2017-03-04T00:42:14+03:00</updated>
+	<updated>2017-03-04T01:13:40+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -19,13 +19,13 @@
 			<id>http://mulham.github.io//بعض-حيل-الحاسوب-التي-ينبغي-على-الجميع-معرفتها</id>
 			<content type="html">&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;زر الويندوز + L لقفل الشاشة (على منصةّ ويندوز).&lt;/p&gt;
+    &lt;p&gt;زر الويندوز  &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Windows&lt;/kbd&gt; لقفل الشاشة (على منصةّ ويندوز).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;زر الويندوز + P لتثبيث جهاز إسقاط أو شاشة ثانية (على منصّة ويندوز).&lt;/p&gt;
+    &lt;p&gt;زر الويندوز + &lt;kbd&gt;P&lt;/kbd&gt; لتثبيث جهاز إسقاط أو شاشة ثانية (على منصّة ويندوز).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;عند مشاهدة مقطع فيديو على برنامج VLC، إذا كان هناك فارق زمني بين الصوت والصورة فيمكنك الضغط على زرّي k و j لتأخير أو تسبيق الصوت عن الصورة.&lt;/p&gt;
+    &lt;p&gt;عند مشاهدة مقطع فيديو على برنامج VLC، إذا كان هناك فارق زمني بين الصوت والصورة فيمكنك الضغط على زرّي &lt;kbd&gt;K&lt;/kbd&gt; و &lt;kbd&gt;J&lt;/kbd&gt; لتأخير أو تسبيق الصوت عن الصورة.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;في برنامج الفوتوشوب عند استعمال أداة marquee tool لرسم الأشكال الهندسية، يمكنك الضغط على زر الفراغ لسحب الشكل بدون فقدان إمكانية تحجيمه.&lt;/p&gt;
@@ -34,31 +34,28 @@
     &lt;p&gt;عند تنصيب البرامج اختر دائماً تنصيب مخصّص custom لمنع البرامج من تنصيب أدوات إضافية قد تكون مزعجة مثل شريط الأدوات في المتصفح أو غيرها.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;عند كتابة عنوان موقع في متصفح الإنترنت، يمكنك الضغط على ctrl + Enter وسيقوم تلقائياً بإضافة http://www. قبل ما كتبته وكذلك .com بعده.&lt;/p&gt;
+    &lt;p&gt;عند كتابة عنوان موقع في متصفح الإنترنت، يمكنك الضغط على &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt; وسيقوم تلقائياً بإضافة http://www. قبل ما كتبته وكذلك .com بعده.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;عند تنصيب نظام ويندوز جديد على الحاسوب فيمكنك توفير الوقت باستخدام &lt;a href=&quot;http://www.ninite.com/&quot;&gt;Ninite&lt;/a&gt; لتنصيب/تحديث عدة برامج مرّة واحدة (لم أجربه شخصياً - استخدامه محدود بشكل مجاني).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;الضغط على crtl + shift + esc سيفتح مدير المهام مباشرةً.&lt;/p&gt;
+    &lt;p&gt;الضغط على &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Esc&lt;/kbd&gt; سيفتح مدير المهام مباشرةً.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;عند ملئ النموذج على الإنترنت أو على برامج تحرير المستندات مثل إكسل، فالضغط على زر tab سينقل المؤشر لحقل الإدخال التالي، والضغط على shift + tab سينقل المؤشر لحقل الإدخال السابق.&lt;/p&gt;
+    &lt;p&gt;عند ملئ النموذج على الإنترنت أو على برامج تحرير المستندات مثل إكسل، فالضغط على زر tab سينقل المؤشر لحقل الإدخال التالي، والضغط على &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt; سينقل المؤشر لحقل الإدخال السابق.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكنك دائماً استعمال الاختصار ctrl + L أو F6 ضمن متصفح الوب للانتقال لشريط العناوين مباشرةَ.&lt;/p&gt;
+    &lt;p&gt;يمكنك دائماً استعمال الاختصار &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;L&lt;/kbd&gt; أو &lt;kbd&gt;F6&lt;/kbd&gt; ضمن متصفح الوب للانتقال لشريط العناوين مباشرةَ.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يعمل زر Caps Lock وفق مستوى الهاردوير، بحيث يمكنك تحديد إذا كان الجهاز لا يستجيب أم أن المشكلة في بعض التطبيقات التي تسبب البطئ أو أخطاء في العرض. فقط اضغط على زر Caps Lock وإذا ظهر ضوء الزر على لوحة المفاتيح فهذا يعني أن الجهاز مازال يستجيب ويعمل.&lt;/p&gt;
+    &lt;p&gt;يعمل زر &lt;kbd&gt;Caps Lock&lt;/kbd&gt; وفق مستوى الهاردوير، بحيث يمكنك تحديد إذا كان الجهاز لا يستجيب أم أن المشكلة في بعض التطبيقات التي تسبب البطئ أو أخطاء في العرض. فقط اضغط على زر Caps Lock وإذا ظهر ضوء الزر على لوحة المفاتيح فهذا يعني أن الجهاز مازال يستجيب ويعمل.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على &lt;a href=&quot;http://oneminutelist.com/11-computer-tricks-everyone-should-know-about&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.&lt;/p&gt;
-&lt;/blockquote&gt;
-
+&lt;p class=&quot;notice&quot;&gt;هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -7692,9 +7689,7 @@
 			<id>http://mulham.github.io//installing-ubuntu-touch</id>
 			<content type="html">&lt;p&gt;إليك شرح مفصل وشامل حول كيفية تنصيب أبونتو على جهازك اللوحي .&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;إذا كنت تريد تنصيب أبونتو على حاسوبك الثابت أو المحمول، فيمكنك تحميل &lt;a href=&quot;http://www.ubuntu.com/download/desktop&quot;&gt;أبونتو لسطح المكتب&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;notice&quot;&gt;إذا كنت تريد تنصيب أبونتو على حاسوبك الثابت أو المحمول، فيمكنك تحميل &lt;a href=&quot;http://www.ubuntu.com/download/desktop&quot;&gt;أبونتو لسطح المكتب&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;راجع أيضاً&lt;/strong&gt;&lt;/p&gt;
 

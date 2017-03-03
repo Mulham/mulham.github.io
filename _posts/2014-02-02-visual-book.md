@@ -3,6 +3,7 @@ date: 2014-02-02
 title: مشروع الكتاب المرئي "أول كتاب مرئي باللغة العربية"
 type: blog
 layout: post
+comments: true
 ---
 
 ![أول كتاب مرئي باللغة العربية](/assets/epub500.jpg)

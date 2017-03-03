@@ -4,6 +4,7 @@ layout: post
 date: 2016-06-18
 title: "إنشاء قوالب Joomla"
 hidden: true
+comments: true
 ---
 
 * Toc

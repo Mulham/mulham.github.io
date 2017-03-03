@@ -3,6 +3,7 @@ date: 2014-03-28
 title: البركان الأزرق في أثيوبيا يحرق غاز الكبريت القاتل
 type: blog
 layout: post
+comments: true
 ---
 
 ![البركان الأزرق في أثيوبيا](/assets/Blue_volcano.jpg)

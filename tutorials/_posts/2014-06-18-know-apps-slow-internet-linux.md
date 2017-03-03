@@ -3,6 +3,7 @@ layout: post
 date: 2014-06-18
 title: كيفية معرفة التطبيقات التي تستهلك سرعة الإنترنت على اللينكس
 type: tutorial
+comments: true
 ---
 
 

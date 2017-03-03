@@ -3,6 +3,7 @@ layout: post
 date: 2014-06-16
 type: blog
 title: كيفية إضافة شريط مهام مشابه لويندوز في أبونتو
+comments: true
 ---
 
 

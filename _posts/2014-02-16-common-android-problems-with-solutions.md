@@ -3,6 +3,7 @@ date: 2014-02-16
 title: مشاكل شائعة في أندرويد مع الحل
 type: blog
 layout: post
+comments: true
 ---
 
 <img src="/assets/common-android-problems1.jpg" style="float: left" alt="مشاكل شائعة في أندرويد مع الحل" alt="مشاكل شائعة في أندرويد مع الحل">

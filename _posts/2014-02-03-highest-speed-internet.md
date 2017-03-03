@@ -3,6 +3,7 @@ date: 2014-02-03
 title: الإنترنت الأسرع على الإطلاق 1.4 تيرابايت بالثانية !
 type: blog
 layout: post
+comments: true
 ---
 
 

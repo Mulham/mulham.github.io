@@ -3,6 +3,7 @@ layout: post
 title: أضف فانوس رمضان المتحرك لمدونتك
 date: 2014-06-18
 type: blog
+comments: true
 ---
 
 

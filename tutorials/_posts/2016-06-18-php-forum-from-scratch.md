@@ -4,6 +4,7 @@ date: 2016-06-20
 title: إنشاء منتدى PHP من الصفر
 description: شرح شامل ومُيسَّر لطريقة إنشاء منتدى متكامل باستخدام php و MySQL من البداية
 type: tutorial
+comments: true
 ---
 هذا الدرس من تأليف Evert padje وترجمتي (ملهم)، يركّز الدرس على إنشاء منتدى باستخدام php و Mysql من أجل قاعدة بيانات المنتدى .. وهو لغرض تعليمي، يمكن معاينة المنتدى الناتج على [هذا الرابط](http://inkshouse.heroicmice.com/forum/index.php) 
 

@@ -3,6 +3,7 @@ layout: post
 title: سكريبت php بسيط لرفع ملف
 date: 2016-06-19
 type: blog
+comments: true
 ---
 
 نقدم لكم سكريبت بسيط بلغة php لرفع ملف .

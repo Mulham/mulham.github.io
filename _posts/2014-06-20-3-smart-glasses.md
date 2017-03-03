@@ -3,6 +3,7 @@ layout: post
 date: 2014-06-20
 type: blog
 title: ثلاث نظارات عالية التقنية تفعل ما لا تفعله نظارات جوجل
+comments: true
 ---
 
 

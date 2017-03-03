@@ -3,6 +3,7 @@ date: 2014-02-01
 title: الكتاب الإلكتروني القابل للارتداء!
 type: blog
 layout: post
+comments: true
 ---
 
 ![كتاب إلكتروني قابل للارتداء](/assets/Wearable-Ebook1.png "كتاب إلكتروني قابل للارتداء")

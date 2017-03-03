@@ -3,6 +3,7 @@ date: 2014-03-28
 title: إنترنت فائق السرعة.. الآن على القمر باستخدام أشعة الليزر
 type: blog
 layout: post
+comments: true
 ---
 
 

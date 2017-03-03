@@ -3,6 +3,7 @@ date: 2014-05-03
 title: كيف تحذف نفسك من نتائج بحث جوجل
 type: blog
 layout: post
+comments: true
 ---
 
 

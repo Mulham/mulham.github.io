@@ -20,6 +20,7 @@ gallery:
     image_path: /assets/egg-car-4-th.jpg
     alt: "placeholder image 4"
     title: "Image 4 title caption"
+comments: true
 ---
 
 

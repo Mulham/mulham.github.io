@@ -4,6 +4,7 @@ date: 2016-12-05
 title: 5 أشياء قد لا تعرفها عن أنواع التوضّع في CSS
 description: تقنيات CSS المعروفة منها والجديدة لتوضع العناصر 
 type: tutorial
+comments: true
 ---
 
 مرحباً ..

@@ -3,6 +3,7 @@ date: 2014-02-03
 title: كيفية إخفاء القائمة الجانبية "أشخاص قد تعرفهم" في الفيس بوك
 type: blog
 layout: post
+comments: true
 ---
 
 

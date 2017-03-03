@@ -4,6 +4,7 @@ date: 2015-02-15
 title: برنامج Jdownloader لتحميل الملفات على اللينكس
 type: blog
 description: برنامج jdownloader جي داونلودر لتحميل الملفات على اللينكس
+comments: true
 ---
 
 
