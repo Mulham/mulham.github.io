@@ -3,23 +3,6 @@ layout: post
 date: 2014-06-16
 type: blog
 title: سيارة البيضة من هيونداي
-gallery:
-  - url: /assets/egg-car.jpg
-    image_path: /assets/egg-car-th.jpg
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
-  - url: /assets/egg-car2.jpg
-    image_path: /assets/egg-car2-th.jpg
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
-  - url: /assets/egg-car-3.jpg
-    image_path: /assets/egg-car-3-th.jpg
-    alt: "placeholder image 3"
-    title: "Image 3 title caption"
-  - url: /assets/egg-car-4.jpg
-    image_path: /assets/egg-car-4-th.jpg
-    alt: "placeholder image 4"
-    title: "Image 4 title caption"
 comments: true
 ---
 
@@ -46,8 +29,16 @@ comments: true
 صور أخرى للسيارة
 
 
-{% include gallery caption="Hyundai-egg-car-gallery" %}
-
+<figure class="half">
+    <a href="/assets/egg-car.jpg"><img src="/assets/egg-car-th.jpg"></a>
+    <a href="/assets/egg-car2.jpg"><img src="/assets/egg-car2-th.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
+<figure class="half">
+    <a href="/assets/egg-car3.jpg"><img src="/assets/egg-car3-th.jpg"></a>
+    <a href="/assets/egg-car4.jpg"><img src="/assets/egg-car4-th.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
 
 
 
