@@ -32,12 +32,10 @@ comments: true
 <figure class="half">
     <a href="/assets/egg-car.jpg"><img src="/assets/egg-car-th.jpg"></a>
     <a href="/assets/egg-car2.jpg"><img src="/assets/egg-car2-th.jpg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
 </figure>
 <figure class="half">
-    <a href="/assets/egg-car3.jpg"><img src="/assets/egg-car3-th.jpg"></a>
-    <a href="/assets/egg-car4.jpg"><img src="/assets/egg-car4-th.jpg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
+    <a href="/assets/egg-car-3.jpg"><img src="/assets/egg-car-3-th.jpg"></a>
+    <a href="/assets/egg-car-4.jpg"><img src="/assets/egg-car-4-th.jpg"></a>
 </figure>
 
 
