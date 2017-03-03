@@ -27,7 +27,7 @@ layout: compress
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.excerpt }}</p>
+                            <p>{{ post.excerpt | strip_html | truncatewords:75 }}</p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">قراءة المزيد»</a>
                         </li>
                     </ul>
