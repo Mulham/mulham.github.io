@@ -51,7 +51,7 @@ class dict_window(Gtk.Window):
 		self.text = self.text + ' '		#for فلترة العلامات في آخر الجملة أيضاً
 #################Arranging#####################3
 		#rules.rearrange(basic_translation)	#re-arrange it first
-		sentences = re.split('[.?!\)\(]*', self.text)
+		sentences = re.split('[;,.?!\)\(]*', self.text)
 		counter = 0		#for حذف القيم الفارغة ''
 		while counter < len(sentences):
 			if sentences[counter]:
@@ -66,37 +66,41 @@ class dict_window(Gtk.Window):
 			else:
 				del sentences[counter]
 		types = []
-		for sentence in sentences:
-			for word in sentence:
+		i = 0
+		arrange = []
+		while i < len(sentences):
+			for word in sentences[i]:
 				try:
 					types.append(m_dict.dict[word][1][0])
 				except:
 					types.append('UR')	#Un-Recognized
-			arrange = []
-			for t in types:
-				if t=='فعل':
-					arrange.append(types.index(t))
-					types[0] == types[t] 
+			try:
+				types.append(sentences[i+1])
+			except:
+				pass
+			i += 2	#exclude marks from for loop
+		#now types is like this: ['word', 'word', ',', 'word']
+		i = 0
+		groups = []
+		group = ''
+		while i < len(types):
+			group += types[i]
+		for t in types:
+			if t[:3]=='فعل':
+				arrange.append(sentences[i][types.index(t)])
+				#that means the RESULT OF ARRANGE WILL BE WORDS NOT sentences
+				del types[types.index(t)]
+				del sentences[i][types.index(t)]
+			break
+		for t in types:
+			arrange.append(sentences[i][types.index(t)])
 
 ###################################################################
 
 
 
 
-		sentences = re.split('[,;.?!.\)\(]*', self.text)
-		counter = 0		#for حذف القيم الفارغة ''
-		while counter < len(sentences):
-			if sentences[counter]:
-				if sentences[counter] == ' ':
-					del sentences[counter]
-				else:
-					if sentences[counter][0] == ' ':		#حذف الفراغات أول وآخر الجملة
-						sentences[counter] = sentences[counter][1:]
-					if sentences[counter][-1] == ' ':
-						sentences[counter] = sentences[counter][:-1]
-					counter += 1
-			else:
-				del sentences[counter]
+		
 		#so at the end we have sentences contains the sentences between the marks in the given text (slef.text) 
 		# not working anymore!: and also contain transitional phrases independntly
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "طلب ترجمة"
 date: 2016-06-16
 ---

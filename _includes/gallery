@@ -1,51 +1,21 @@
-{% include base_path %}
+{% assign images = include.images | split:" " %}
+{% assign caption = include.caption %}
+{% assign cols = include.cols %}
 
-{% if include.id %}
-  {% assign gallery = page.[include.id] %}
-{% else %}
-  {% assign gallery = page.gallery %}
-{% endif %}
-
-{% capture gallery_size %}{{ gallery | size }}{% endcapture %}
-
-{% if gallery_size == '2' %}
-  {% assign gallery_layout = 'half' %}
-{% elsif gallery_size >= '3' %}
-  {% assign gallery_layout = 'third' %}
-{% else %}
-  {% assign gallery_layout = '' %}
-{% endif %}
-
-<figure class="{{ gallery_layout }} {{ include.class }}">
-  {% for img in gallery %}
-    {% if img.url %}
-      <a href=
-        {% if img.url contains "://" %}
-          "{{ img.url }}"
-        {% else %}
-          "{{ img.url | prepend: base_path }}"
-        {% endif %}
-        {% if img.title %}title="{{ img.title }}"{% endif %}
-      >
-        <img src=
-          {% if img.image_path contains "://" %}
-            "{{ img.image_path }}"
-          {% else %}
-            "{{ img.image_path | prepend: base_path }}"
-          {% endif %}
-          alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-      </a>
+{% case cols %}
+    {% when 1 %}
+        {% assign class = "" %}
+    {% when 2 %}
+        {% assign class = "half" %}
+    {% when 3 %}
+        {% assign class = "third" %}
     {% else %}
-      <img src=
-        {% if img.image_path contains "://" %}
-          "{{ img.image_path }}"
-        {% else %}
-          "{{ img.image_path | prepend: base_path }}"
-        {% endif %}
-        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-    {% endif %}
-  {% endfor %}
-  {% if include.caption %}
-    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
-  {% endif %}
+        {% assign class = "" %}
+{% endcase %}
+
+<figure {% if class != "" %}class="{{ class }}"{% endif %}>
+    {% for image in images %}
+    <a href="{{ image }}"><img src="{{ image }}" alt=""></a>
+    {% endfor %}
+    <figcaption>{{ caption }}</figcaption>
 </figure>

@@ -1,127 +1,11 @@
 <!DOCTYPE html>
-	<html>
-
-		<head>
-
-<script>
-var host = "mulham.github.io";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-80564042-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<meta name="yandex-verification" content="ea5684dc21acccc9" />
-<link rel="icon" href="/favicon.png">
-<meta name="google" content="notranslate" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-
-
-
-			<title>إنشاء قوالب Joomla</title>
-			<!-- link to main stylesheet -->
-			
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	                	<li><a href="/">الرئيسية</a></li>
-						<li><a href="/blog">المدونة</a></li>
-						<li><a href="/tutorials">دروس</a></li>
-						<li><a href="/about/request">طلب ترجمة</a></li>
-						<li><a href="/urls">روابط مفيدة</a></li>
-						<li><a href="/about">عن الموقع</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			<h1>إنشاء قوالب Joomla</h1>
-<p class="meta">18 Jun 2016
-
-
-
-
-</p>
-
-
-
-
-
-<div class="post">
-  <ul id="markdown-toc">
-  <li><a href="#مقدمة" id="markdown-toc-مقدمة">مقدمة</a></li>
-  <li><a href="#إنشاء-مجلد-القالب" id="markdown-toc-إنشاء-مجلد-القالب">إنشاء مجلد القالب</a>    <ul>
-      <li><a href="#إنشاء-ملف-templatedetailsxml" id="markdown-toc-إنشاء-ملف-templatedetailsxml">إنشاء ملف templateDetails.xml</a></li>
-      <li><a href="#إنشاء-ملف-indexphp" id="markdown-toc-إنشاء-ملف-indexphp">إنشاء ملف index.php</a>        <ul>
-          <li><a href="#البداية-" id="markdown-toc-البداية-">البداية :</a></li>
-          <li><a href="#رأس-القالب" id="markdown-toc-رأس-القالب">رأس القالب</a></li>
-          <li><a href="#جسم-القالب" id="markdown-toc-جسم-القالب">جسم القالب</a></li>
-          <li><a href="#module-positions" id="markdown-toc-module-positions">Module Positions</a></li>
-          <li><a href="#النهاية" id="markdown-toc-النهاية">النهاية</a></li>
-        </ul>
-      </li>
-      <li><a href="#صور-مخصصة" id="markdown-toc-صور-مخصصة">صور مخصصة:</a></li>
-      <li><a href="#css-مخصص" id="markdown-toc-css-مخصص">CSS مخصص</a></li>
-    </ul>
-  </li>
-  <li><a href="#اختبار-القالب-" id="markdown-toc-اختبار-القالب-">اختبار القالب :</a></li>
-  <li><a href="#تحزيم-قالب-للتنصيب" id="markdown-toc-تحزيم-قالب-للتنصيب">تحزيم قالب للتنصيب</a></li>
-</ul>
-
-<h1 id="مقدمة">مقدمة</h1>
-
-<p>إن هدف هذا الشرح هو إعطاء مقدمة عن إنشاء قوالب Joomla ، حيث سيغطي هذا الشرح الأكواد والملفات الأساسية لإنشاء قالب بسيط ، حيث الأكواد المقدمة هنا يمكنك نسخها ولصقها مع تعديل بسيط فقط .</p>
-
-<h1 id="إنشاء-مجلد-القالب">إنشاء مجلد القالب</h1>
-
-<p>لإنشاء قالب بسيط ، أنشأ مجلد جديد ضمن مجلد templates . وقم بتسمية هذا المجلد باسم القالب الذي تود إنشاؤه ، مثل : mynewtemplate</p>
-
-<p>باستخدام محرر النصوص المفضل لديك قم بإنشاء الملفات index.php و templateDetails.xml ، ولإبقاء الأمور منظمة ، أنشأ مجلدين جديدين باسم images و css ، داخل مجلد css أنشأ ملف وسمه template.css</p>
-
-<p>على الرغم من أنه يمكنك وضع كود css مباشرة ضمن ملف index.php ، ولكن معظم مطوري المواقع يفضلون وضع أكواد css في ملفات منفصلة والتي يمكن استدعاؤها واستخدامها لعدة صفحات باستخدام الوسم link . هذا قد يقلل وقت تحميل صفحاتك ، حيث الملفات المنفصلة يتم وضعها ضمن الملفات المؤقتة في متصفحات المستخدمين .</p>
-
-<p>وهنا ملخص الملفات والمجلدات الأساسية التي يجب إنشاؤها لإنشاء قالب Joomla بسيط :</p>
-
-<ul>
-  <li>
-    <p>mynewtemplate/</p>
-  </li>
-  <li>
-    <p>css/</p>
-
-    <ul>
-      <li>template.css</li>
-    </ul>
-  </li>
-  <li>
-    <p>images/</p>
-  </li>
-  <li>
-    <p>index.php</p>
-  </li>
-  <li>
-    <p>templateDetails.xml</p>
-  </li>
-</ul>
-
-<h2 id="إنشاء-ملف-templatedetailsxml">إنشاء ملف templateDetails.xml</h2>
-
-<p>إن ملف templateDetails.xml أساسي ، وبدونه لن يتم رؤية قالبك من قبل joomla . هذا الملف يحمل مفاتيح metadata عن القالب .</p>
-
-<p>كود الملف يختلف قليلاً حسب إصدار Joomla .</p>
-
-<p>للإصدار 1.5 استخدم التالي :</p>
-
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml">    <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js">
+<!--<![endif]--> <head> <meta charset="UTF-8"> <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <title>إنشاء قوالب Joomla – موقع ملهم</title> <meta name="description" content="شغف المعرفة"> <meta name="keywords" content=""> <!-- Twitter Cards --> <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="http://localhost:4000/assets/img/logo.png"> <meta name="twitter:title" content="إنشاء قوالب Joomla"> <meta name="twitter:description" content=" مقدمة إنشاء مجلد القالب إنشاء ملف templateDetails.xml إنشاء ملف index.php البداية : رأس القالب جسم القالب Module Positions النهاية صور مخصصة: CSS مخصص اختبار القالب : تحزيم قالب للتنصيبمقدمةإن هدف هذا الشرح هو إعطاء مقدمة عن إنشاء قوالب Joomla ، حيث سيغطي هذا الشرح الأكواد والملفات الأساسية لإنشاء قالب بسيط ، حيث الأكواد المقدمة هنا يمكنك نسخها ولصقها مع تعديل بسيط فقط .إنشاء مجلد القالبلإنشاء قالب بسيط ، أنشأ مجلد جديد ضمن مجلد templates . وقم بتسمية هذا المجلد باسم القالب الذي تود إنشاؤه ، مثل : mynewtemplateباستخدام محرر النصوص المفضل لديك قم بإنشاء الملفات index.php و templateDetails.xml ، ولإبقاء الأمور منظمة ، أنشأ مجلدين جديدين باسم images و css ، داخل مجلد css أنشأ ملف وسمه template.cssعلى الرغم من أنه يمكنك وضع كود css مباشرة ضمن ملف index.php ، ولكن معظم مطوري المواقع يفضلون وضع أكواد css في ملفات منفصلة والتي يمكن استدعاؤها واستخدامها لعدة صفحات باستخدام الوسم link . هذا قد يقلل وقت تحميل صفحاتك ، حيث الملفات المنفصلة يتم وضعها ضمن الملفات المؤقتة في متصفحات المستخدمين .وهنا ملخص الملفات والمجلدات الأساسية التي يجب إنشاؤها لإنشاء قالب Joomla بسيط : mynewtemplate/ css/ template.css images/ index.php templateDetails.xml إنشاء ملف templateDetails.xmlإن ملف templateDetails.xml أساسي ، وبدونه لن يتم رؤية قالبك من قبل joomla . هذا الملف يحمل مفاتيح metadata عن القالب .كود الملف يختلف قليلاً حسب إصدار Joomla .للإصدار 1.5 استخدم التالي : &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;!DOCTYPE install PUBLIC &quot;-//Joomla! 1.5//DTD template 1.0//EN&quot; &quot;http://www.joomla.org/xml/dtd/1.5/template-install.dtd&quot;&gt; &lt;install version=&quot;1.5&quot; type=&quot;template&quot;&gt; &lt;name&gt;mynewtemplate&lt;/name&gt; &lt;creationDate&gt;2008-05-01&lt;/creationDate&gt; &lt;author&gt;John Doe&lt;/author&gt; &lt;authorEmail&gt;john@example.com&lt;/authorEmail&gt; &lt;authorUrl&gt;http://www.example.com&lt;/authorUrl&gt;; &lt;copyright&gt;John Doe 2008&lt;/copyright&gt; &lt;license&gt;GNU/GPL&lt;/license&gt; &lt;version&gt;1.0.2&lt;/version&gt; &lt;description&gt;My New Template&lt;/description&gt; &lt;files&gt; &lt;filename&gt;index.php&lt;/filename&gt; &lt;filename&gt;templateDetails.xml&lt;/filename&gt; &lt;folder&gt;images&lt;/folder&gt; &lt;folder&gt;css&lt;/folder&gt; &lt;/files&gt; &lt;positions&gt; &lt;position&gt;breadcrumb&lt;/position&gt; &lt;position&gt;left&lt;/position&gt; &lt;position&gt;right&lt;/position&gt; &lt;position&gt;top&lt;/position&gt; &lt;position&gt;user1&lt;/position&gt; &lt;position&gt;user2&lt;/position&gt; &lt;position&gt;user3&lt;/position&gt; &lt;position&gt;user4&lt;/position&gt; &lt;position&gt;footer&lt;/position&gt; &lt;/positions&gt; &lt;/install&gt;للإصدار 2.5 وما بعد استخدم التالي ، فقط غير version=”2.5” إلى الإصدار الذي تستخدمه من جملة &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;extension version=&quot;2.5&quot; type=&quot;template&quot;&gt; &lt;name&gt;mynewtemplate&lt;/name&gt; &lt;creationDate&gt;2008-05-01&lt;/creationDate&gt; &lt;author&gt;John Doe&lt;/author&gt; &lt;authorEmail&gt;john@example.com&lt;/authorEmail&gt; &lt;authorUrl&gt;http://www.example.com&lt;/authorUrl&gt;; &lt;copyright&gt;John Doe 2008&lt;/copyright&gt; &lt;license&gt;GNU/GPL&lt;/license&gt; &lt;version&gt;1.0.2&lt;/version&gt; &lt;description&gt;My New Template&lt;/description&gt; &lt;files&gt; &lt;filename&gt;index.php&lt;/filename&gt; &lt;filename&gt;templateDetails.xml&lt;/filename&gt; &lt;folder&gt;images&lt;/folder&gt; &lt;folder&gt;css&lt;/folder&gt; &lt;/files&gt; &lt;positions&gt; &lt;position&gt;breadcrumb&lt;/position&gt; &lt;position&gt;left&lt;/position&gt; &lt;position&gt;right&lt;/position&gt; &lt;position&gt;top&lt;/position&gt; &lt;position&gt;user1&lt;/position&gt; &lt;position&gt;user2&lt;/position&gt; &lt;position&gt;user3&lt;/position&gt; &lt;position&gt;user4&lt;/position&gt; &lt;position&gt;footer&lt;/position&gt; &lt;/positions&gt; &lt;/extension&gt;لذا ، وكما ترى لدينا مجموعة من المعلومات بين الوسوم &lt;element&gt; . أفضل ما تقوم به هو نسخ ولصق هذا الكود في ملف templateDetails.xml لديك . وغير قليلاً بعض المعلومات داخل مثلا &lt;name&gt; و &lt;author&gt; .قسم &lt;files&gt; يجب أن يحتوي على جميع الملفات التي تستخدمها ( على الأغلب لا تعرف أسماءهم بعد ، لا تقلق .. يمكنك تحديث ذلك لاحقاً ) .عنصر &lt;folder&gt; يمكن أن يستخدم لتعريف مجلد بأكلمه مرة واحدة .أبق ترتيب العناصر كما هي ، فهذا هو الترتيب الشائع والذي يمكنك من الانتقال بسهولة من القالب البسيط .إنشاء ملف index.php(هذا الشرح لإصدارات 2.5 و 3x من Joomla )ملف index.php أصبح الأساس لكل صفحة تعرض بواسطة Joomla . بشكل أساسي ، أنت تصنع هنا صفحة إنترنت (كأي صفحة HTML ) ولكن ضع كود PHP حيث يجب أن تكون محتويات موقعك . يعمل القالب بإضافة كود Joomla داخل أماكن الوحدات النمطية module والجزء المكون لقالبك . أي شيئ مضاف للقالب سيظهر بجميع الصفحات إلا إذا كان الكود مضاف ﻷحد هذه الأقسام بواسطة Joomla ( أو كود مخصص) .هذه الصفحة في الأسفل تظهر الكود البدائي والقابل للنسخ واللصق داخل تصميمك الخاص .البداية :قالب جملة يبدأ بالأسطر التالية : &lt;?php defined( '_JEXEC' ) or die( 'Restricted access' );?&gt; &lt;!DOCTYPE html&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; &gt;السطر الأول يمنع المتطفلين من مشاهدة الكود .السطر الثاني هو تحديد نوع الملف Document Type Declaration (DOCTYPE) ، والذي يخبر المتصفح أي نوع من HTML تستخدمه الصفحة . النوع المستخدم في الأعلى هو HTML5 ، وهو أحدث إصدار من HTML والذي يحوي العديد من المزايا الجديدة .السطر الثالث يبدأ ملفنا الـ HTML ويصف اللغة التي يستخدمها الموقع . ملف الـ html مقسم لجزأين ، الرأس head والجسم body ، الرأس يحوي معلومات حول الملف والجسم يحوي كود الموقع والذي يتحكم بالتنسيقرأس القالب &lt;head&gt; &lt;jdoc:include type=&quot;head&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/system/css/system.css&quot; type=&quot;text/css&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/system/css/general.css&quot; type=&quot;text/css&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/&lt;?php echo $this-&gt;template; ?&gt;/css/template.css&quot; type=&quot;text/css&quot; /&gt; &lt;/head&gt;جسم القالب &lt;body&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;top&quot; /&gt; &lt;jdoc:include type=&quot;component&quot; /&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;bottom&quot; /&gt; &lt;/body&gt;في الحقيقة هذا يكفي ! نعم إنه جسم بدائي جداً ولكنه يفي بالغرض ، كل شيئ آخر سيتم القيام به من قبل Joomla.Module Positionsيوجد في الأعلى السطر الذي يحتوي الأمر name=”top” والذي يضيف module position يدعى top ويتيح لجملة استبدال الوحدات النمطية لهذا القسم من القالب ، الأمر type=”component” يحوي جميع المقالات والمحتويات الرئيسية ، وهو هام جداً ، ويتم وضعه في منتصف القالب . يمكنك إضافة أسطرك الخاصة في أي مكان تريد في الجسم ، ولكن عليك إضافة أسطر مماثلة في ملف templateDetails.xml والذي يتم تنفيذه جنباً إلى جنب مع ملف index.php في قالبكالنهايةأنه قالبك بالوسم&lt;/html&gt;صور مخصصة:يمكنك إضافة صورك الخاصة في أي مكان في القالب ، وذلك من خلال إضافة السطر التالي &lt;img src=&quot;&lt;?php echo $this-&gt;baseurl; ?&gt;/images/stories/myimage.png&quot; alt=&quot;Custom image&quot; class=&quot;customImage&quot; /&gt;فقط قم بتغيير مسار واسم الصورة حسب ما يناسب ..CSS مخصصيمكنك إضافة ستايلك الخاص css كما في التالي &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/&lt;?php echo $this-&gt;template;?&gt;/css/styles.css&quot; type=&quot;text/css&quot; /&gt;كل سطر يتم إضافته يجب أن يكون له سطر مقابل في ملف templateDetails.xml للقالبفيما يلي الملف النهائي لذلك : &lt;?php defined( '_JEXEC' ) or die( 'Restricted access' );?&gt; &lt;!DOCTYPE html&gt; &lt;html xml:lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; &gt; &lt;head&gt; &lt;jdoc:include type=&quot;head&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/mynewtemplate/css/template.css&quot; type=&quot;text/css&quot; /&gt; &lt;/head&gt; &lt;body&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;top&quot; /&gt; &lt;jdoc:include type=&quot;component&quot; /&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;bottom&quot; /&gt; &lt;/body&gt; &lt;/html&gt;اختبار القالب :قم بإيجاد القالب في مدير القوالب Template Manager ، اختر قالبك واضغط على Default لجعله القالب الافتراضيفي إصدار جملة 1.5 ستجد القالب مباشرة في مدير القوالب Template Manager والذي يمكن الوصول عبر Extensions &gt; Template Managerفي إصدار جملة 2.5 وما بعد ستحتاج أولاً لإخبار جملة بأن لديك قالب جديد ، هذا الخيار يدعى Discover Extensions ويمكن الوصول له عبر Extensions &gt; Extension Manager &gt; Discover ، عندها اضغط على Discover لاكتشاف القالب ، بعد ذلك اضغط على Install لتنصيبه . الآن يجب أن يظهر القالب في مدير القوالب Template Manager والذي يمكن الوصول إليه عبر Extensions &gt; Template Managerلاحظ أن يمكنك إنشاء قالبك خارج جملة وتنصيبه بعد ذلك ببساطة كأي إضافة عادية ..تحزيم قالب للتنصيبمجلد يحتوي عدة ملفات مبعثرة ليس طريقة جيدة لعمل حزمة (قالب ، إضافة .. إلخ) . لذا الخطوة الأخيرة هو عمل حزمة . وهي أرشيف مضغوط يحوي المجلد المنشأ وجميع الملفات . يمكن للحزمة أن تكون بلاحقة zip أو tar.gz أو tar.bz2وأخيراً ، فقد قمت الآن بعمل قالب بسيط ، قد لا يبدو جميلاً جداً ، لذا فعيلك الآن بدء تجربتك مع التنسيق والستايل css ."> <!-- Open Graph --> <meta property="og:locale" content="ar_SY"> <meta property="og:type" content="article"> <meta property="og:title" content="إنشاء قوالب Joomla"> <meta property="og:description" content=" مقدمة إنشاء مجلد القالب إنشاء ملف templateDetails.xml إنشاء ملف index.php البداية : رأس القالب جسم القالب Module Positions النهاية صور مخصصة: CSS مخصص اختبار القالب : تحزيم قالب للتنصيبمقدمةإن هدف هذا الشرح هو إعطاء مقدمة عن إنشاء قوالب Joomla ، حيث سيغطي هذا الشرح الأكواد والملفات الأساسية لإنشاء قالب بسيط ، حيث الأكواد المقدمة هنا يمكنك نسخها ولصقها مع تعديل بسيط فقط .إنشاء مجلد القالبلإنشاء قالب بسيط ، أنشأ مجلد جديد ضمن مجلد templates . وقم بتسمية هذا المجلد باسم القالب الذي تود إنشاؤه ، مثل : mynewtemplateباستخدام محرر النصوص المفضل لديك قم بإنشاء الملفات index.php و templateDetails.xml ، ولإبقاء الأمور منظمة ، أنشأ مجلدين جديدين باسم images و css ، داخل مجلد css أنشأ ملف وسمه template.cssعلى الرغم من أنه يمكنك وضع كود css مباشرة ضمن ملف index.php ، ولكن معظم مطوري المواقع يفضلون وضع أكواد css في ملفات منفصلة والتي يمكن استدعاؤها واستخدامها لعدة صفحات باستخدام الوسم link . هذا قد يقلل وقت تحميل صفحاتك ، حيث الملفات المنفصلة يتم وضعها ضمن الملفات المؤقتة في متصفحات المستخدمين .وهنا ملخص الملفات والمجلدات الأساسية التي يجب إنشاؤها لإنشاء قالب Joomla بسيط : mynewtemplate/ css/ template.css images/ index.php templateDetails.xml إنشاء ملف templateDetails.xmlإن ملف templateDetails.xml أساسي ، وبدونه لن يتم رؤية قالبك من قبل joomla . هذا الملف يحمل مفاتيح metadata عن القالب .كود الملف يختلف قليلاً حسب إصدار Joomla .للإصدار 1.5 استخدم التالي : &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;!DOCTYPE install PUBLIC &quot;-//Joomla! 1.5//DTD template 1.0//EN&quot; &quot;http://www.joomla.org/xml/dtd/1.5/template-install.dtd&quot;&gt; &lt;install version=&quot;1.5&quot; type=&quot;template&quot;&gt; &lt;name&gt;mynewtemplate&lt;/name&gt; &lt;creationDate&gt;2008-05-01&lt;/creationDate&gt; &lt;author&gt;John Doe&lt;/author&gt; &lt;authorEmail&gt;john@example.com&lt;/authorEmail&gt; &lt;authorUrl&gt;http://www.example.com&lt;/authorUrl&gt;; &lt;copyright&gt;John Doe 2008&lt;/copyright&gt; &lt;license&gt;GNU/GPL&lt;/license&gt; &lt;version&gt;1.0.2&lt;/version&gt; &lt;description&gt;My New Template&lt;/description&gt; &lt;files&gt; &lt;filename&gt;index.php&lt;/filename&gt; &lt;filename&gt;templateDetails.xml&lt;/filename&gt; &lt;folder&gt;images&lt;/folder&gt; &lt;folder&gt;css&lt;/folder&gt; &lt;/files&gt; &lt;positions&gt; &lt;position&gt;breadcrumb&lt;/position&gt; &lt;position&gt;left&lt;/position&gt; &lt;position&gt;right&lt;/position&gt; &lt;position&gt;top&lt;/position&gt; &lt;position&gt;user1&lt;/position&gt; &lt;position&gt;user2&lt;/position&gt; &lt;position&gt;user3&lt;/position&gt; &lt;position&gt;user4&lt;/position&gt; &lt;position&gt;footer&lt;/position&gt; &lt;/positions&gt; &lt;/install&gt;للإصدار 2.5 وما بعد استخدم التالي ، فقط غير version=”2.5” إلى الإصدار الذي تستخدمه من جملة &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;extension version=&quot;2.5&quot; type=&quot;template&quot;&gt; &lt;name&gt;mynewtemplate&lt;/name&gt; &lt;creationDate&gt;2008-05-01&lt;/creationDate&gt; &lt;author&gt;John Doe&lt;/author&gt; &lt;authorEmail&gt;john@example.com&lt;/authorEmail&gt; &lt;authorUrl&gt;http://www.example.com&lt;/authorUrl&gt;; &lt;copyright&gt;John Doe 2008&lt;/copyright&gt; &lt;license&gt;GNU/GPL&lt;/license&gt; &lt;version&gt;1.0.2&lt;/version&gt; &lt;description&gt;My New Template&lt;/description&gt; &lt;files&gt; &lt;filename&gt;index.php&lt;/filename&gt; &lt;filename&gt;templateDetails.xml&lt;/filename&gt; &lt;folder&gt;images&lt;/folder&gt; &lt;folder&gt;css&lt;/folder&gt; &lt;/files&gt; &lt;positions&gt; &lt;position&gt;breadcrumb&lt;/position&gt; &lt;position&gt;left&lt;/position&gt; &lt;position&gt;right&lt;/position&gt; &lt;position&gt;top&lt;/position&gt; &lt;position&gt;user1&lt;/position&gt; &lt;position&gt;user2&lt;/position&gt; &lt;position&gt;user3&lt;/position&gt; &lt;position&gt;user4&lt;/position&gt; &lt;position&gt;footer&lt;/position&gt; &lt;/positions&gt; &lt;/extension&gt;لذا ، وكما ترى لدينا مجموعة من المعلومات بين الوسوم &lt;element&gt; . أفضل ما تقوم به هو نسخ ولصق هذا الكود في ملف templateDetails.xml لديك . وغير قليلاً بعض المعلومات داخل مثلا &lt;name&gt; و &lt;author&gt; .قسم &lt;files&gt; يجب أن يحتوي على جميع الملفات التي تستخدمها ( على الأغلب لا تعرف أسماءهم بعد ، لا تقلق .. يمكنك تحديث ذلك لاحقاً ) .عنصر &lt;folder&gt; يمكن أن يستخدم لتعريف مجلد بأكلمه مرة واحدة .أبق ترتيب العناصر كما هي ، فهذا هو الترتيب الشائع والذي يمكنك من الانتقال بسهولة من القالب البسيط .إنشاء ملف index.php(هذا الشرح لإصدارات 2.5 و 3x من Joomla )ملف index.php أصبح الأساس لكل صفحة تعرض بواسطة Joomla . بشكل أساسي ، أنت تصنع هنا صفحة إنترنت (كأي صفحة HTML ) ولكن ضع كود PHP حيث يجب أن تكون محتويات موقعك . يعمل القالب بإضافة كود Joomla داخل أماكن الوحدات النمطية module والجزء المكون لقالبك . أي شيئ مضاف للقالب سيظهر بجميع الصفحات إلا إذا كان الكود مضاف ﻷحد هذه الأقسام بواسطة Joomla ( أو كود مخصص) .هذه الصفحة في الأسفل تظهر الكود البدائي والقابل للنسخ واللصق داخل تصميمك الخاص .البداية :قالب جملة يبدأ بالأسطر التالية : &lt;?php defined( '_JEXEC' ) or die( 'Restricted access' );?&gt; &lt;!DOCTYPE html&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; &gt;السطر الأول يمنع المتطفلين من مشاهدة الكود .السطر الثاني هو تحديد نوع الملف Document Type Declaration (DOCTYPE) ، والذي يخبر المتصفح أي نوع من HTML تستخدمه الصفحة . النوع المستخدم في الأعلى هو HTML5 ، وهو أحدث إصدار من HTML والذي يحوي العديد من المزايا الجديدة .السطر الثالث يبدأ ملفنا الـ HTML ويصف اللغة التي يستخدمها الموقع . ملف الـ html مقسم لجزأين ، الرأس head والجسم body ، الرأس يحوي معلومات حول الملف والجسم يحوي كود الموقع والذي يتحكم بالتنسيقرأس القالب &lt;head&gt; &lt;jdoc:include type=&quot;head&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/system/css/system.css&quot; type=&quot;text/css&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/system/css/general.css&quot; type=&quot;text/css&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/&lt;?php echo $this-&gt;template; ?&gt;/css/template.css&quot; type=&quot;text/css&quot; /&gt; &lt;/head&gt;جسم القالب &lt;body&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;top&quot; /&gt; &lt;jdoc:include type=&quot;component&quot; /&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;bottom&quot; /&gt; &lt;/body&gt;في الحقيقة هذا يكفي ! نعم إنه جسم بدائي جداً ولكنه يفي بالغرض ، كل شيئ آخر سيتم القيام به من قبل Joomla.Module Positionsيوجد في الأعلى السطر الذي يحتوي الأمر name=”top” والذي يضيف module position يدعى top ويتيح لجملة استبدال الوحدات النمطية لهذا القسم من القالب ، الأمر type=”component” يحوي جميع المقالات والمحتويات الرئيسية ، وهو هام جداً ، ويتم وضعه في منتصف القالب . يمكنك إضافة أسطرك الخاصة في أي مكان تريد في الجسم ، ولكن عليك إضافة أسطر مماثلة في ملف templateDetails.xml والذي يتم تنفيذه جنباً إلى جنب مع ملف index.php في قالبكالنهايةأنه قالبك بالوسم&lt;/html&gt;صور مخصصة:يمكنك إضافة صورك الخاصة في أي مكان في القالب ، وذلك من خلال إضافة السطر التالي &lt;img src=&quot;&lt;?php echo $this-&gt;baseurl; ?&gt;/images/stories/myimage.png&quot; alt=&quot;Custom image&quot; class=&quot;customImage&quot; /&gt;فقط قم بتغيير مسار واسم الصورة حسب ما يناسب ..CSS مخصصيمكنك إضافة ستايلك الخاص css كما في التالي &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/&lt;?php echo $this-&gt;template;?&gt;/css/styles.css&quot; type=&quot;text/css&quot; /&gt;كل سطر يتم إضافته يجب أن يكون له سطر مقابل في ملف templateDetails.xml للقالبفيما يلي الملف النهائي لذلك : &lt;?php defined( '_JEXEC' ) or die( 'Restricted access' );?&gt; &lt;!DOCTYPE html&gt; &lt;html xml:lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot; &gt; &lt;head&gt; &lt;jdoc:include type=&quot;head&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/mynewtemplate/css/template.css&quot; type=&quot;text/css&quot; /&gt; &lt;/head&gt; &lt;body&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;top&quot; /&gt; &lt;jdoc:include type=&quot;component&quot; /&gt; &lt;jdoc:include type=&quot;modules&quot; name=&quot;bottom&quot; /&gt; &lt;/body&gt; &lt;/html&gt;اختبار القالب :قم بإيجاد القالب في مدير القوالب Template Manager ، اختر قالبك واضغط على Default لجعله القالب الافتراضيفي إصدار جملة 1.5 ستجد القالب مباشرة في مدير القوالب Template Manager والذي يمكن الوصول عبر Extensions &gt; Template Managerفي إصدار جملة 2.5 وما بعد ستحتاج أولاً لإخبار جملة بأن لديك قالب جديد ، هذا الخيار يدعى Discover Extensions ويمكن الوصول له عبر Extensions &gt; Extension Manager &gt; Discover ، عندها اضغط على Discover لاكتشاف القالب ، بعد ذلك اضغط على Install لتنصيبه . الآن يجب أن يظهر القالب في مدير القوالب Template Manager والذي يمكن الوصول إليه عبر Extensions &gt; Template Managerلاحظ أن يمكنك إنشاء قالبك خارج جملة وتنصيبه بعد ذلك ببساطة كأي إضافة عادية ..تحزيم قالب للتنصيبمجلد يحتوي عدة ملفات مبعثرة ليس طريقة جيدة لعمل حزمة (قالب ، إضافة .. إلخ) . لذا الخطوة الأخيرة هو عمل حزمة . وهي أرشيف مضغوط يحوي المجلد المنشأ وجميع الملفات . يمكن للحزمة أن تكون بلاحقة zip أو tar.gz أو tar.bz2وأخيراً ، فقد قمت الآن بعمل قالب بسيط ، قد لا يبدو جميلاً جداً ، لذا فعيلك الآن بدء تجربتك مع التنسيق والستايل css ."> <meta property="og:url" content="http://localhost:4000/joomla/create-template"> <meta property="og:site_name" content="موقع ملهم"> <meta property="og:image" content="http://localhost:4000/assets/img/logo.png"> <script> var host = "mulham.github.io"; if ((host == window.location.host) && (window.location.protocol != "https:")) window.location.protocol = "https"; </script> <meta name="yandex-verification" content="ea5684dc21acccc9"> <link rel="canonical" href="http://localhost:4000/joomla/create-template"> <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="موقع ملهم Feed"> <!-- Handheld --> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- CSS --> <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"> <!-- JS --> <script src="http://localhost:4000/assets/js/modernizr-3.3.1.custom.min.js"></script> <!-- Favicons --> <link rel="apple-touch-icon" href="http://localhost:4000/assets/img/favicons/apple-icon-precomposed.png"> <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/assets/img/favicons/apple-icon-72x72.png"> <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/assets/img/favicons/apple-icon-114x114.png"> <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/assets/img/favicons/apple-icon-144x144.png"> <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon.png"> <link rel="shortcut icon" href="http://localhost:4000/favicon.ico"> <!-- Background Image --> <style type="text/css">body {background-image:url(http://localhost:4000/assets/img/placeholder-big.jpg); background-repeat: no-repeat; background-size: cover; }</style> <!-- Post Feature Image --> </head> <body> <nav id="dl-menu" class="dl-menuwrapper" role="navigation"> <button class="dl-trigger">عرض القائمة</button> <ul class="dl-menu"> <li><a href="http://localhost:4000/">الرئيسيّة</a></li> <li> <a href="#">عن الموقع</a> <ul class="dl-submenu"> <li> <img src="http://localhost:4000/assets/img/logo.png" alt="موقع ملهم photo" class="author-photo"> <h4>موقع ملهم</h4> <p>شغف المعرفة</p> </li> <li><a href="http://localhost:4000/about/"><span class="btn btn-inverse">تعرّف أكثر</span></a></li> <li> <a href="mailto:mulham94@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> البريد الإلكتروني</a> </li> <li> <a href="http://plus.google.com/+MulhamEB" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a> </li> <li> <a href="http://linkedin.com/in/mulham-alibrahim-37b389121" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a> </li> <li> <a href="http://github.com/mulham" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github"></i> Github</a> </li> <li> <a href="https://youtube.com/user/UCR9MjRHAD5VWXf9ASnOdh7Q" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-youtube-square"></i> يوتيوب</a> </li> </ul>
+<!-- /.dl-submenu --> </li> <li> <a href="#">المدونة</a> <ul class="dl-submenu"> <li><a href="http://localhost:4000/posts/">جميع المشاركات</a></li> <li><a href="http://localhost:4000/tags/">جميع الوسوم</a></li> </ul> </li> <li><a href="http://localhost:4000/tutorials/">الدروس</a></li> <li><a href="http://localhost:4000/about/request">طلب ترجمة</a></li> <li><a href="http://localhost:4000/urls">روابط مفيدة</a></li> </ul>
+<!-- /.dl-menu --> </nav><!-- /.dl-menuwrapper --> <!-- Header --> <header class="header" role="banner"> <div class="wrapper animated fadeIn"> <div class="content"> <div class="post-title "> <h1>إنشاء قوالب Joomla</h1> <h4>18 Jun 2016</h4> <p class="reading-time"> <i class="fa fa-clock-o"></i> مدة القراءة ~ 5 دقائق </p>
+<!-- /.entry-reading-time --> <a class="btn zoombtn" href="http://localhost:4000/posts/"> <i class="fa fa-chevron-left"></i> </a> </div> <ul id="markdown-toc"> <li><a href="#%D9%85%D9%82%D8%AF%D9%85%D8%A9" id="markdown-toc-مقدمة">مقدمة</a></li> <li>
+<a href="#%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D8%AC%D9%84%D8%AF-%D8%A7%D9%84%D9%82%D8%A7%D9%84%D8%A8" id="markdown-toc-إنشاء-مجلد-القالب">إنشاء مجلد القالب</a> <ul> <li><a href="#%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%84%D9%81-templatedetailsxml" id="markdown-toc-إنشاء-ملف-templatedetailsxml">إنشاء ملف templateDetails.xml</a></li> <li>
+<a href="#%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%84%D9%81-indexphp" id="markdown-toc-إنشاء-ملف-indexphp">إنشاء ملف index.php</a> <ul> <li><a href="#%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-" id="markdown-toc-البداية-">البداية :</a></li> <li><a href="#%D8%B1%D8%A3%D8%B3-%D8%A7%D9%84%D9%82%D8%A7%D9%84%D8%A8" id="markdown-toc-رأس-القالب">رأس القالب</a></li> <li><a href="#%D8%AC%D8%B3%D9%85-%D8%A7%D9%84%D9%82%D8%A7%D9%84%D8%A8" id="markdown-toc-جسم-القالب">جسم القالب</a></li> <li><a href="#module-positions" id="markdown-toc-module-positions">Module Positions</a></li> <li><a href="#%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9" id="markdown-toc-النهاية">النهاية</a></li> </ul> </li> <li><a href="#%D8%B5%D9%88%D8%B1-%D9%85%D8%AE%D8%B5%D8%B5%D8%A9" id="markdown-toc-صور-مخصصة">صور مخصصة:</a></li> <li><a href="#css-%D9%85%D8%AE%D8%B5%D8%B5" id="markdown-toc-css-مخصص">CSS مخصص</a></li> </ul> </li> <li><a href="#%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%82%D8%A7%D9%84%D8%A8-" id="markdown-toc-اختبار-القالب-">اختبار القالب :</a></li> <li><a href="#%D8%AA%D8%AD%D8%B2%D9%8A%D9%85-%D9%82%D8%A7%D9%84%D8%A8-%D9%84%D9%84%D8%AA%D9%86%D8%B5%D9%8A%D8%A8" id="markdown-toc-تحزيم-قالب-للتنصيب">تحزيم قالب للتنصيب</a></li> </ul> <h1 id="مقدمة">مقدمة</h1> <p>إن هدف هذا الشرح هو إعطاء مقدمة عن إنشاء قوالب Joomla ، حيث سيغطي هذا الشرح الأكواد والملفات الأساسية لإنشاء قالب بسيط ، حيث الأكواد المقدمة هنا يمكنك نسخها ولصقها مع تعديل بسيط فقط .</p> <h1 id="إنشاء-مجلد-القالب">إنشاء مجلد القالب</h1> <p>لإنشاء قالب بسيط ، أنشأ مجلد جديد ضمن مجلد templates . وقم بتسمية هذا المجلد باسم القالب الذي تود إنشاؤه ، مثل : mynewtemplate</p> <p>باستخدام محرر النصوص المفضل لديك قم بإنشاء الملفات index.php و templateDetails.xml ، ولإبقاء الأمور منظمة ، أنشأ مجلدين جديدين باسم images و css ، داخل مجلد css أنشأ ملف وسمه template.css</p> <p>على الرغم من أنه يمكنك وضع كود css مباشرة ضمن ملف index.php ، ولكن معظم مطوري المواقع يفضلون وضع أكواد css في ملفات منفصلة والتي يمكن استدعاؤها واستخدامها لعدة صفحات باستخدام الوسم link . هذا قد يقلل وقت تحميل صفحاتك ، حيث الملفات المنفصلة يتم وضعها ضمن الملفات المؤقتة في متصفحات المستخدمين .</p> <p>وهنا ملخص الملفات والمجلدات الأساسية التي يجب إنشاؤها لإنشاء قالب Joomla بسيط :</p> <ul> <li> <p>mynewtemplate/</p> </li> <li> <p>css/</p> <ul> <li>template.css</li> </ul> </li> <li> <p>images/</p> </li> <li> <p>index.php</p> </li> <li> <p>templateDetails.xml</p> </li> </ul> <h2 id="إنشاء-ملف-templatedetailsxml">إنشاء ملف templateDetails.xml</h2> <p>إن ملف templateDetails.xml أساسي ، وبدونه لن يتم رؤية قالبك من قبل joomla . هذا الملف يحمل مفاتيح metadata عن القالب .</p> <p>كود الملف يختلف قليلاً حسب إصدار Joomla .</p> <p>للإصدار 1.5 استخدم التالي :</p> <figure class="highlight"><pre><code class="language-xml" data-lang="xml">    <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
 
 
     <span class="cp">&lt;!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd"&gt;</span>
@@ -208,11 +92,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <span class="nt">&lt;/positions&gt;</span>
 
 
-    <span class="nt">&lt;/install&gt;</span></code></pre></figure>
-
-<p>للإصدار 2.5 وما بعد استخدم التالي ، فقط غير version=”2.5” إلى الإصدار الذي تستخدمه من جملة</p>
-
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml">    <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+    <span class="nt">&lt;/install&gt;</span></code></pre></figure> <p>للإصدار 2.5 وما بعد استخدم التالي ، فقط غير version=”2.5” إلى الإصدار الذي تستخدمه من جملة</p> <figure class="highlight"><pre><code class="language-xml" data-lang="xml">    <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
 
 
     <span class="nt">&lt;extension</span> <span class="na">version=</span><span class="s">"2.5"</span> <span class="na">type=</span><span class="s">"template"</span><span class="nt">&gt;</span>
@@ -296,29 +176,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <span class="nt">&lt;/positions&gt;</span>
 
 
-    <span class="nt">&lt;/extension&gt;</span></code></pre></figure>
-
-<p>لذا ، وكما ترى لدينا مجموعة من المعلومات بين الوسوم <code class="highlighter-rouge">&lt;element&gt;</code> . أفضل ما تقوم به هو نسخ ولصق هذا الكود في ملف templateDetails.xml لديك . وغير قليلاً بعض المعلومات داخل مثلا <code class="highlighter-rouge">&lt;name&gt;</code> و <code class="highlighter-rouge">&lt;author&gt;</code> .</p>
-
-<p>قسم <code class="highlighter-rouge">&lt;files&gt;</code> يجب أن يحتوي على جميع الملفات التي تستخدمها ( على الأغلب لا تعرف أسماءهم بعد ، لا تقلق .. يمكنك تحديث ذلك لاحقاً ) .</p>
-
-<p>عنصر <code class="highlighter-rouge">&lt;folder&gt;</code> يمكن أن يستخدم لتعريف مجلد بأكلمه مرة واحدة .</p>
-
-<p>أبق ترتيب العناصر كما هي ، فهذا هو الترتيب الشائع والذي يمكنك من الانتقال بسهولة من القالب البسيط .</p>
-
-<h2 id="إنشاء-ملف-indexphp">إنشاء ملف index.php</h2>
-
-<p>(هذا الشرح لإصدارات 2.5 و 3x من Joomla )</p>
-
-<p>ملف index.php أصبح الأساس لكل صفحة تعرض بواسطة Joomla . بشكل أساسي ، أنت تصنع هنا صفحة إنترنت (كأي صفحة HTML ) ولكن ضع كود PHP حيث يجب أن تكون محتويات موقعك . يعمل القالب بإضافة كود Joomla داخل أماكن الوحدات النمطية module والجزء المكون لقالبك . أي شيئ مضاف للقالب سيظهر بجميع الصفحات إلا إذا كان الكود مضاف ﻷحد هذه الأقسام بواسطة Joomla ( أو كود مخصص) .</p>
-
-<p>هذه الصفحة في الأسفل تظهر الكود البدائي والقابل للنسخ واللصق داخل تصميمك الخاص .</p>
-
-<h3 id="البداية-">البداية :</h3>
-
-<p>قالب جملة يبدأ بالأسطر التالية :</p>
-
-<figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="cp">&lt;?php</span> <span class="nb">defined</span><span class="p">(</span> <span class="s1">'_JEXEC'</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">'Restricted access'</span> <span class="p">);</span><span class="cp">?&gt;</span>
+    <span class="nt">&lt;/extension&gt;</span></code></pre></figure> <p>لذا ، وكما ترى لدينا مجموعة من المعلومات بين الوسوم <code class="highlighter-rouge">&lt;element&gt;</code> . أفضل ما تقوم به هو نسخ ولصق هذا الكود في ملف templateDetails.xml لديك . وغير قليلاً بعض المعلومات داخل مثلا <code class="highlighter-rouge">&lt;name&gt;</code> و <code class="highlighter-rouge">&lt;author&gt;</code> .</p> <p>قسم <code class="highlighter-rouge">&lt;files&gt;</code> يجب أن يحتوي على جميع الملفات التي تستخدمها ( على الأغلب لا تعرف أسماءهم بعد ، لا تقلق .. يمكنك تحديث ذلك لاحقاً ) .</p> <p>عنصر <code class="highlighter-rouge">&lt;folder&gt;</code> يمكن أن يستخدم لتعريف مجلد بأكلمه مرة واحدة .</p> <p>أبق ترتيب العناصر كما هي ، فهذا هو الترتيب الشائع والذي يمكنك من الانتقال بسهولة من القالب البسيط .</p> <h2 id="إنشاء-ملف-indexphp">إنشاء ملف index.php</h2> <p>(هذا الشرح لإصدارات 2.5 و 3x من Joomla )</p> <p>ملف index.php أصبح الأساس لكل صفحة تعرض بواسطة Joomla . بشكل أساسي ، أنت تصنع هنا صفحة إنترنت (كأي صفحة HTML ) ولكن ضع كود PHP حيث يجب أن تكون محتويات موقعك . يعمل القالب بإضافة كود Joomla داخل أماكن الوحدات النمطية module والجزء المكون لقالبك . أي شيئ مضاف للقالب سيظهر بجميع الصفحات إلا إذا كان الكود مضاف ﻷحد هذه الأقسام بواسطة Joomla ( أو كود مخصص) .</p> <p>هذه الصفحة في الأسفل تظهر الكود البدائي والقابل للنسخ واللصق داخل تصميمك الخاص .</p> <h3 id="البداية-">البداية :</h3> <p>قالب جملة يبدأ بالأسطر التالية :</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="cp">&lt;?php</span> <span class="nb">defined</span><span class="p">(</span> <span class="s1">'_JEXEC'</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">'Restricted access'</span> <span class="p">);</span><span class="cp">?&gt;</span>
 
 
     <span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -327,17 +185,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span>
 
 
-    <span class="na">xml:lang=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">language</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="s">"</span> <span class="na">lang=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">language</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="s">"</span> <span class="nt">&gt;</span></code></pre></figure>
-
-<p>السطر الأول يمنع المتطفلين من مشاهدة الكود .</p>
-
-<p>السطر الثاني هو تحديد نوع الملف Document Type Declaration (DOCTYPE) ، والذي يخبر المتصفح أي نوع من HTML تستخدمه الصفحة . النوع المستخدم في الأعلى هو HTML5 ، وهو أحدث إصدار من HTML والذي يحوي العديد من المزايا الجديدة .</p>
-
-<p>السطر الثالث يبدأ ملفنا الـ HTML ويصف اللغة التي يستخدمها الموقع . ملف الـ html مقسم لجزأين ، الرأس head والجسم body ، الرأس يحوي معلومات حول الملف والجسم يحوي كود الموقع والذي يتحكم بالتنسيق</p>
-
-<h3 id="رأس-القالب">رأس القالب</h3>
-
-<figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;head&gt;</span>
+    <span class="na">xml:lang=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">language</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="s">"</span> <span class="na">lang=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">language</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="s">"</span> <span class="nt">&gt;</span></code></pre></figure> <p>السطر الأول يمنع المتطفلين من مشاهدة الكود .</p> <p>السطر الثاني هو تحديد نوع الملف Document Type Declaration (DOCTYPE) ، والذي يخبر المتصفح أي نوع من HTML تستخدمه الصفحة . النوع المستخدم في الأعلى هو HTML5 ، وهو أحدث إصدار من HTML والذي يحوي العديد من المزايا الجديدة .</p> <p>السطر الثالث يبدأ ملفنا الـ HTML ويصف اللغة التي يستخدمها الموقع . ملف الـ html مقسم لجزأين ، الرأس head والجسم body ، الرأس يحوي معلومات حول الملف والجسم يحوي كود الموقع والذي يتحكم بالتنسيق</p> <h3 id="رأس-القالب">رأس القالب</h3> <figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;head&gt;</span>
 
 
     <span class="nt">&lt;jdoc:include</span> <span class="na">type=</span><span class="s">"head"</span> <span class="nt">/&gt;</span>
@@ -352,11 +200,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">baseurl</span> <span class="cp">?&gt;</span><span class="s">/templates/</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">template</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="s">/css/template.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="nt">/&gt;</span>
 
 
-    <span class="nt">&lt;/head&gt;</span></code></pre></figure>
-
-<h3 id="جسم-القالب">جسم القالب</h3>
-
-<figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;/head&gt;</span></code></pre></figure> <h3 id="جسم-القالب">جسم القالب</h3> <figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;body&gt;</span>
 
 
     <span class="nt">&lt;jdoc:include</span> <span class="na">type=</span><span class="s">"modules"</span> <span class="na">name=</span><span class="s">"top"</span> <span class="nt">/&gt;</span>
@@ -368,45 +212,8 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <span class="nt">&lt;jdoc:include</span> <span class="na">type=</span><span class="s">"modules"</span> <span class="na">name=</span><span class="s">"bottom"</span> <span class="nt">/&gt;</span>
 
 
-    <span class="nt">&lt;/body&gt;</span></code></pre></figure>
-
-<p>في الحقيقة هذا يكفي ! نعم إنه جسم بدائي جداً ولكنه يفي بالغرض ، كل شيئ آخر سيتم القيام به من قبل Joomla.</p>
-
-<h3 id="module-positions">Module Positions</h3>
-
-<p>يوجد في الأعلى السطر الذي يحتوي الأمر <code class="highlighter-rouge">name=”top”</code> والذي يضيف module position يدعى <code class="highlighter-rouge">top</code> ويتيح لجملة استبدال الوحدات النمطية لهذا القسم من القالب ، الأمر <code class="highlighter-rouge">type=”component”</code> يحوي جميع المقالات والمحتويات الرئيسية ، وهو هام جداً ، ويتم وضعه في منتصف القالب .</p>
-
-<blockquote>
-  <p>يمكنك إضافة أسطرك الخاصة في أي مكان تريد في الجسم ، ولكن عليك إضافة أسطر مماثلة في ملف templateDetails.xml والذي يتم تنفيذه جنباً إلى جنب مع ملف index.php في قالبك</p>
-</blockquote>
-
-<h3 id="النهاية">النهاية</h3>
-
-<p>أنه قالبك بالوسم</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;/html&gt;
-</code></pre>
-</div>
-
-<h2 id="صور-مخصصة">صور مخصصة:</h2>
-
-<p>يمكنك إضافة صورك الخاصة في أي مكان في القالب ، وذلك من خلال إضافة السطر التالي</p>
-
-<figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">baseurl</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="s">/images/stories/myimage.png"</span> <span class="na">alt=</span><span class="s">"Custom image"</span> <span class="na">class=</span><span class="s">"customImage"</span> <span class="nt">/&gt;</span></code></pre></figure>
-
-<p>فقط قم بتغيير مسار واسم الصورة حسب ما يناسب ..</p>
-
-<h2 id="css-مخصص">CSS مخصص</h2>
-
-<p>يمكنك إضافة ستايلك الخاص css كما في التالي</p>
-
-<figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">baseurl</span> <span class="cp">?&gt;</span><span class="s">/templates/</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">template</span><span class="p">;</span><span class="cp">?&gt;</span><span class="s">/css/styles.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="nt">/&gt;</span></code></pre></figure>
-
-<p>كل سطر يتم إضافته يجب أن يكون له سطر مقابل في ملف templateDetails.xml للقالب</p>
-
-<p>فيما يلي الملف النهائي لذلك :</p>
-
-<figure class="highlight"><pre><code class="language-php" data-lang="php">   <span class="cp">&lt;?php</span> <span class="nb">defined</span><span class="p">(</span> <span class="s1">'_JEXEC'</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">'Restricted access'</span> <span class="p">);</span><span class="cp">?&gt;</span>
+    <span class="nt">&lt;/body&gt;</span></code></pre></figure> <p>في الحقيقة هذا يكفي ! نعم إنه جسم بدائي جداً ولكنه يفي بالغرض ، كل شيئ آخر سيتم القيام به من قبل Joomla.</p> <h3 id="module-positions">Module Positions</h3> <p>يوجد في الأعلى السطر الذي يحتوي الأمر <code class="highlighter-rouge">name=”top”</code> والذي يضيف module position يدعى <code class="highlighter-rouge">top</code> ويتيح لجملة استبدال الوحدات النمطية لهذا القسم من القالب ، الأمر <code class="highlighter-rouge">type=”component”</code> يحوي جميع المقالات والمحتويات الرئيسية ، وهو هام جداً ، ويتم وضعه في منتصف القالب .</p> <blockquote> <p>يمكنك إضافة أسطرك الخاصة في أي مكان تريد في الجسم ، ولكن عليك إضافة أسطر مماثلة في ملف templateDetails.xml والذي يتم تنفيذه جنباً إلى جنب مع ملف index.php في قالبك</p> </blockquote> <h3 id="النهاية">النهاية</h3> <p>أنه قالبك بالوسم</p> <div class="highlighter-rouge"><pre class="highlight"><code>&lt;/html&gt;
+</code></pre></div> <h2 id="صور-مخصصة">صور مخصصة:</h2> <p>يمكنك إضافة صورك الخاصة في أي مكان في القالب ، وذلك من خلال إضافة السطر التالي</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">baseurl</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="s">/images/stories/myimage.png"</span> <span class="na">alt=</span><span class="s">"Custom image"</span> <span class="na">class=</span><span class="s">"customImage"</span> <span class="nt">/&gt;</span></code></pre></figure> <p>فقط قم بتغيير مسار واسم الصورة حسب ما يناسب ..</p> <h2 id="css-مخصص">CSS مخصص</h2> <p>يمكنك إضافة ستايلك الخاص css كما في التالي</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">baseurl</span> <span class="cp">?&gt;</span><span class="s">/templates/</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">template</span><span class="p">;</span><span class="cp">?&gt;</span><span class="s">/css/styles.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="nt">/&gt;</span></code></pre></figure> <p>كل سطر يتم إضافته يجب أن يكون له سطر مقابل في ملف templateDetails.xml للقالب</p> <p>فيما يلي الملف النهائي لذلك :</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">   <span class="cp">&lt;?php</span> <span class="nb">defined</span><span class="p">(</span> <span class="s1">'_JEXEC'</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">'Restricted access'</span> <span class="p">);</span><span class="cp">?&gt;</span>
 
 
     <span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -442,56 +249,5 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <span class="nt">&lt;/body&gt;</span>
 
 
-    <span class="nt">&lt;/html&gt;</span></code></pre></figure>
-
-<h1 id="اختبار-القالب-">اختبار القالب :</h1>
-
-<p>قم بإيجاد القالب في مدير القوالب Template Manager ، اختر قالبك واضغط على Default لجعله القالب الافتراضي</p>
-
-<p>في إصدار جملة 1.5 ستجد القالب مباشرة في مدير القوالب Template Manager والذي يمكن الوصول عبر Extensions &gt; Template Manager</p>
-
-<p>في إصدار جملة 2.5 وما بعد ستحتاج أولاً لإخبار جملة بأن لديك قالب جديد ، هذا الخيار يدعى Discover Extensions ويمكن الوصول له عبر Extensions &gt; Extension Manager &gt; Discover ، عندها اضغط على Discover لاكتشاف القالب ، بعد ذلك اضغط على Install لتنصيبه . الآن يجب أن يظهر القالب في مدير القوالب Template Manager والذي يمكن الوصول إليه عبر Extensions &gt; Template Manager</p>
-
-<p>لاحظ أن يمكنك إنشاء قالبك خارج جملة وتنصيبه بعد ذلك ببساطة كأي إضافة عادية ..</p>
-
-<h1 id="تحزيم-قالب-للتنصيب">تحزيم قالب للتنصيب</h1>
-
-<p>مجلد يحتوي عدة ملفات مبعثرة ليس طريقة جيدة لعمل حزمة (قالب ، إضافة .. إلخ) . لذا الخطوة الأخيرة هو عمل حزمة . وهي أرشيف مضغوط يحوي المجلد المنشأ وجميع الملفات . يمكن للحزمة أن تكون بلاحقة zip أو tar.gz أو tar.bz2</p>
-
-<p>وأخيراً ، فقد قمت الآن بعمل قالب بسيط ، قد لا يبدو جميلاً جداً ، لذا فعيلك الآن بدء تجربتك مع التنسيق والستايل css .</p>
-
-
-</div>
-
-
-<div class="share-page">
-    إن أعجبك الشرح فيرجى مشاركته &larr;
-    <a href="https://plus.google.com/share?url=https://mulham.github.io/joomla/create-template" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>&nbsp&nbsp&nbsp
-    <a href="https://twitter.com/intent/tweet?text=إنشاء قوالب Joomla&url=https://mulham.github.io/joomla/create-template&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>&nbsp&nbsp&nbsp
-    <a href="https://facebook.com/sharer.php?u=https://mulham.github.io/joomla/create-template" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-</div>
-
-
-<br>
-<font color='#34522'><b>
-لمناقشة هذا الموضوع يرجى بدء مناقشة جديدة <a href='https://github.com/Mulham/mulham.github.io/issues'>هنا</a> (يلزم حساب على Github)
-</font></b>
-<br />
-
-			
-			</div><!-- /.container -->
-
-			<footer>
-
-
-	    		<table style="width:100%;">
-<tr>
-<td style="text-align: center; border: none;"><a href="#">الرجوع للأعلى</a>
-        	
-				</td><td style="text-align: center; border: none;">
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><img alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.</td>
-<td style="text-align: center; border: none;"><a href="mailto:mulham94@gmail.com">البريد الإلكتروني</a></td></tr></table>
-			</footer>
-		</body>
-	</html>
-
+    <span class="nt">&lt;/html&gt;</span></code></pre></figure> <h1 id="اختبار-القالب-">اختبار القالب :</h1> <p>قم بإيجاد القالب في مدير القوالب Template Manager ، اختر قالبك واضغط على Default لجعله القالب الافتراضي</p> <p>في إصدار جملة 1.5 ستجد القالب مباشرة في مدير القوالب Template Manager والذي يمكن الوصول عبر Extensions &gt; Template Manager</p> <p>في إصدار جملة 2.5 وما بعد ستحتاج أولاً لإخبار جملة بأن لديك قالب جديد ، هذا الخيار يدعى Discover Extensions ويمكن الوصول له عبر Extensions &gt; Extension Manager &gt; Discover ، عندها اضغط على Discover لاكتشاف القالب ، بعد ذلك اضغط على Install لتنصيبه . الآن يجب أن يظهر القالب في مدير القوالب Template Manager والذي يمكن الوصول إليه عبر Extensions &gt; Template Manager</p> <p>لاحظ أن يمكنك إنشاء قالبك خارج جملة وتنصيبه بعد ذلك ببساطة كأي إضافة عادية ..</p> <h1 id="تحزيم-قالب-للتنصيب">تحزيم قالب للتنصيب</h1> <p>مجلد يحتوي عدة ملفات مبعثرة ليس طريقة جيدة لعمل حزمة (قالب ، إضافة .. إلخ) . لذا الخطوة الأخيرة هو عمل حزمة . وهي أرشيف مضغوط يحوي المجلد المنشأ وجميع الملفات . يمكن للحزمة أن تكون بلاحقة zip أو tar.gz أو tar.bz2</p> <p>وأخيراً ، فقد قمت الآن بعمل قالب بسيط ، قد لا يبدو جميلاً جداً ، لذا فعيلك الآن بدء تجربتك مع التنسيق والستايل css .</p> <div class="entry-meta"> <br> <hr> <span class="entry-tags"></span> <span class="social-share"> <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/joomla/create-template" title="Share on Facebook" class="tag"> <span class="term"><i class="fa fa-facebook-square"></i> Like</span> </a> <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/joomla/create-template" title="Share on Twitter" class="tag"> <span class="term"><i class="fa fa-twitter-square"></i> Tweet</span> </a> <a href="https://plus.google.com/share?url=http://localhost:4000/joomla/create-template" title="Share on Google+" class="tag"> <span class="term"><i class="fa fa-google-plus-square"></i> +1</span> </a> </span> <div style="clear:both"></div> </div> </div> </div> </header> <!-- JS --> <script src="http://localhost:4000/assets/js/jquery-1.12.0.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.dlmenu.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.goup.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.magnific-popup.min.js"></script> <script src="http://localhost:4000/assets/js/jquery.fitvid.min.js"></script> <script src="http://localhost:4000/assets/js/scripts.js"></script> <!-- Asynchronous Google Analytics snippet --> <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-80564042-1', 'auto'); ga('require', 'linkid', 'linkid.js'); ga('send', 'pageview'); </script> <script type="text/javascript"> var disqus_shortname = 'mulham-1'; (function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); })(); (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js'; (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s); }()); </script> <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript> <!-- MathJax --> <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> </body> </html>
