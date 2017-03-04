@@ -49,10 +49,6 @@
 <lastmod>2016-06-20T00:00:00+03:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/mkusb/</loc>
-<lastmod>2016-06-19T00:00:00+03:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/ftp/</loc>
 <lastmod>2016-06-19T00:00:00+03:00</lastmod>
 </url>
@@ -62,6 +58,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/php-script-to-upload-file/</loc>
+<lastmod>2016-06-19T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/mkusb/</loc>
 <lastmod>2016-06-19T00:00:00+03:00</lastmod>
 </url>
 <url>
@@ -265,10 +265,6 @@
 <lastmod>2014-02-03T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/visual-book/</loc>
-<lastmod>2014-02-02T00:00:00+02:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/electronic-book/</loc>
 <lastmod>2014-02-01T00:00:00+02:00</lastmod>
 </url>
@@ -292,6 +288,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/about/request/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/about/special/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/urls/</loc>

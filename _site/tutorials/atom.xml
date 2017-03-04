@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2017-03-04T01:13:40+03:00</updated>
+	<updated>2017-03-04T21:36:20+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -3126,9 +3126,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;تم إيقاف ترجمة باقي الدروس نظراً لوجود بدائل في المواقع العربية.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;notice&quot;&gt;تم إيقاف ترجمة باقي الدروس نظراً لوجود بدائل في المواقع العربية، يمكنك مع هذا &lt;a href=&quot;/about/request&quot;&gt;طلب استكمال الترجمة&lt;/a&gt; إن أحببت.&lt;/p&gt;
 
 </content>
 		</entry>
@@ -3457,7 +3455,7 @@
 
 &lt;h1 id=&quot;مشاكل-وحلول&quot;&gt;مشاكل وحلول&lt;/h1&gt;
 
-&lt;blockquote&gt;
+&lt;blockquote class=&quot;notice&quot;&gt;
   &lt;p&gt;هذا القسم خاص في حال التنصيب على السيرفر المحلي وتحت منصة لينكس.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -3515,9 +3513,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;هل هناك نقص بالشرح؟ هل واجهتك مشكلة غير مذكورة هنا؟ الرجاء لا تتردد في طرح استفساراتك أو اقتراحاتك عبر مراسلتي.&lt;/p&gt;
+&lt;p&gt;هل هناك نقص بالشرح؟ هل واجهتك مشكلة غير مذكورة هنا؟ الرجاء لا تتردد في طرح استفساراتك أو اقتراحاتك في التعليقات أدناه أو عبر مراسلتي.&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -3630,9 +3626,7 @@
 			<id>http://mulham.github.io//reinstall-android</id>
 			<content type="html">&lt;p&gt;إذا قمت &lt;a href=&quot;/installing-ubuntu-touch&quot;&gt;بتنصيب أبونتو&lt;/a&gt; (أو أي نظام آخر) على جهازك اللوحي أو هاتفك، فبإمكانك إعادة تنصيب أندرويد (والذي سيحذف أبونتو). طبعاً إعادة التنصيب يكون من خلال وصل الجهاز مع حاسوب يعمل على نظام لينكس (والشرح هنا على توزيعة أبونتو).&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;تحذير: سيتم حذف جميع تطبيقات وبيانات أبونتو، بما في ذلك بيانات المستخدم.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;notice&quot;&gt;تحذير: سيتم حذف جميع تطبيقات وبيانات أبونتو، بما في ذلك بيانات المستخدم.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#تحميل-ملفات-نسخة-أندرويد&quot; id=&quot;markdown-toc-تحميل-ملفات-نسخة-أندرويد&quot;&gt;تحميل ملفات نسخة أندرويد&lt;/a&gt;&lt;/li&gt;
@@ -3770,17 +3764,14 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;أعد التشغيل لمحمل الإقلاع بالضغط على مجموعة الأزرار الصحيحة لنوع جهازك كما هو مذكور &lt;a href=&quot;https://source.android.com/source/building-devices.html#booting-into-fastboot-mode&quot;&gt;هنا&lt;/a&gt; (بالإنجليزية) :&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
 
-&lt;p&gt;تأكد من أن الجهاز متصل بوضع fastboot كالتالي:&lt;/p&gt;
+    &lt;p&gt;تأكد من أن الجهاز متصل بوضع fastboot كالتالي:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	$ fastboot devices
-	025d138e2f521413 fastboot
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ fastboot devices
+ 025d138e2f521413 fastboot
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;اقفل الجهاز :&lt;/p&gt;
 
@@ -5526,53 +5517,6 @@
 		</entry>
 	
 		<entry>
-			<title>برنامج mkusb الأفضل لعمل فلاشة إقلاعية</title>
-			<link href="http://mulham.github.io/mkusb/"/>
-			<updated>2016-06-19T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//mkusb</id>
-			<content type="html">&lt;p&gt;هناك العديد من البرامج التي توفر إمكانية حرق توزيعة على فلاشة، أي جعل قرص الفلاش إقلاعي ليتم الإقلاع منه وتنصيب نظام التشغيل المطلوبة، وهذه العملية بدأت بالانتشار أكثر وطغت على عملية حرق الأنظمة على أقراص ليزرية، كون الفلاشة قابلة لإعادة الكتابة والقراءة منها تعتبر أسرع بشكل عام.&lt;/p&gt;
-
-&lt;p&gt;إن أفضل برنامج مُجرب للقيام بذلك هو mkusb، وقد تم تجربته من قبل الكثير وأثبت نجاحاً كبيراً..ففي الغالب سيعطي نتيجة مُرضية ودون حدوث مشاكل والتي قد تحدث في البرامج الأخرى.&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#تنصيب-mkusb&quot; id=&quot;markdown-toc-تنصيب-mkusb&quot;&gt;تنصيب mkusb&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#تفعيل-الإقلاع-من-الفلاشة&quot; id=&quot;markdown-toc-تفعيل-الإقلاع-من-الفلاشة&quot;&gt;تفعيل الإقلاع من الفلاشة&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;هذا البرنامج يعمل على نظام لينكس، إذا رغبت برنامج مماثل لنظام ويندوز فأنا أنصحك بـ &lt;a href=&quot;http://www.linuxliveusb.com/&quot;&gt;هذا البرنامج&lt;/a&gt;، أما على نظام ماك فأنصح ببرنامج &lt;a href=&quot;/unetbootin&quot;&gt;unetbootin&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;تنصيب-mkusb&quot;&gt;تنصيب mkusb&lt;/h1&gt;
-
-&lt;p&gt;افتح الطرفية واكتب الأوامر التالية (لتوزيعة أبونتو):&lt;/p&gt;
-
-&lt;p&gt;في حال استخدامك لأبونتو ستحتاج أولاً لتفعيل الحزم العامة:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository universe
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;ثم أدخل الأوامر الثلاث التالية كلٍّ على حدى :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository ppa:mkusb/ppa
-	sudo apt-get update
-	sudo apt-get install mkusb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;الآن كل ما عليك فعله هو الذهاب لقائمة البرامج والبحث عن &lt;code class=&quot;highlighter-rouge&quot;&gt;mkusb&lt;/code&gt;. افتح البرنامج واتبع التعليمات. سيقوم في البداية بتحذيرك حيث أن المعلومات الموجودة على القرص (الفلاشة) سيتم فقدانها، فلا تنس أخذ نسخة عنها قبل إجراء العملية، ثم ستحدد موقع الفلاشة وبعدها موقع ملف .iso لحرقه على الفلاشة ثم إجراء العملية حتى تصبح الفلاشة إقلاعية..&lt;/p&gt;
-
-&lt;h1 id=&quot;تفعيل-الإقلاع-من-الفلاشة&quot;&gt;تفعيل الإقلاع من الفلاشة&lt;/h1&gt;
-
-&lt;p&gt;لن يُقلع حاسوبك من الفلاشة بشكل افتراضي، ستحتاج لتغيير إعدادات البيوس للقيام بذلك. إذا أعد تشغيل الحاسوب واذهب إلى البيوس بالضغط على زر Del عند بداية الإقلاع - يختلف هذا الزر من جهاز لآخر ويمكن البحث عن الزر المستخدم في جهازك بحسب الشركة المصنعة.&lt;/p&gt;
-
-&lt;p&gt;بعدها اذهب لما يسمى Boot options أي خيارات الإقلاع ستجدها أسفل تبويبة Boot، اجعل الخيار الأول لـ usb ثم احفظ الإعدادات (بالضغط على F10 غالباً) وسيتم إعادة التشغيل وغالباً ستنجح العملية .. وإذا لم تنجح ففي الواقع قد يكون الأمر معقد قليلاً فهناك اسباب عديدة، يمكنك مراسلتي للمناقشة.&lt;/p&gt;
-
-</content>
-		</entry>
-	
-		<entry>
 			<title>إدارة الملفات عبر FTP</title>
 			<link href="http://mulham.github.io/ftp/"/>
 			<updated>2016-06-19T00:00:00+03:00</updated>
@@ -5711,7 +5655,7 @@
 
 &lt;p&gt;هذا كل شيئ !&lt;/p&gt;
 
-&lt;p&gt;تعرف على &lt;a href=&quot;mkusb&quot;&gt;كيفية حرق توزيعة على فلاشة&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;تعرف على &lt;a href=&quot;/mkusb&quot;&gt;كيفية حرق توزيعة على فلاشة&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -5788,6 +5732,51 @@
 	Image address: http://domain/upload/image.jpg
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>برنامج mkusb الأفضل لعمل فلاشة إقلاعية</title>
+			<link href="http://mulham.github.io/mkusb/"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//mkusb</id>
+			<content type="html">&lt;p&gt;هناك العديد من البرامج التي توفر إمكانية حرق توزيعة على فلاشة، أي جعل قرص الفلاش إقلاعي ليتم الإقلاع منه وتنصيب نظام التشغيل المطلوبة، وهذه العملية بدأت بالانتشار أكثر وطغت على عملية حرق الأنظمة على أقراص ليزرية، كون الفلاشة قابلة لإعادة الكتابة والقراءة منها تعتبر أسرع بشكل عام.&lt;/p&gt;
+
+&lt;p&gt;إن أفضل برنامج مُجرب للقيام بذلك هو mkusb، وقد تم تجربته من قبل الكثير وأثبت نجاحاً كبيراً..ففي الغالب سيعطي نتيجة مُرضية ودون حدوث مشاكل والتي قد تحدث في البرامج الأخرى.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#تنصيب-mkusb&quot; id=&quot;markdown-toc-تنصيب-mkusb&quot;&gt;تنصيب mkusb&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#تفعيل-الإقلاع-من-الفلاشة&quot; id=&quot;markdown-toc-تفعيل-الإقلاع-من-الفلاشة&quot;&gt;تفعيل الإقلاع من الفلاشة&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;notice&quot;&gt;هذا البرنامج يعمل على نظام لينكس، إذا رغبت ببرنامج مماثل لنظام ويندوز فأنا أنصحك بـ &lt;a href=&quot;http://www.linuxliveusb.com/&quot;&gt;هذا البرنامج&lt;/a&gt; أو برنامج &lt;a href=&quot;/unetbootin&quot;&gt;unetbootin&lt;/a&gt; لنظامي ماك وويندوز.&lt;/p&gt;
+
+&lt;h1 id=&quot;تنصيب-mkusb&quot;&gt;تنصيب mkusb&lt;/h1&gt;
+
+&lt;p&gt;افتح الطرفية واكتب الأوامر التالية (لتوزيعة أبونتو):&lt;/p&gt;
+
+&lt;p&gt;في حال استخدامك لأبونتو ستحتاج أولاً لتفعيل الحزم العامة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository universe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ثم أدخل الأوامر الثلاث التالية كلٍّ على حدى :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo add-apt-repository ppa:mkusb/ppa
+	sudo apt-get update
+	sudo apt-get install mkusb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;الآن كل ما عليك فعله هو الذهاب لقائمة البرامج والبحث عن &lt;code class=&quot;highlighter-rouge&quot;&gt;mkusb&lt;/code&gt;. افتح البرنامج واتبع التعليمات. سيقوم في البداية بتحذيرك حيث أن المعلومات الموجودة على القرص (الفلاشة) سيتم فقدانها، فلا تنس أخذ نسخة عنها قبل إجراء العملية، ثم ستحدد موقع الفلاشة وبعدها موقع ملف .iso لحرقه على الفلاشة ثم إجراء العملية حتى تصبح الفلاشة إقلاعية..&lt;/p&gt;
+
+&lt;h1 id=&quot;تفعيل-الإقلاع-من-الفلاشة&quot;&gt;تفعيل الإقلاع من الفلاشة&lt;/h1&gt;
+
+&lt;p&gt;لن يُقلع حاسوبك من الفلاشة بشكل افتراضي، ستحتاج لتغيير إعدادات البيوس للقيام بذلك. إذا أعد تشغيل الحاسوب واذهب إلى البيوس بالضغط على زر Del عند بداية الإقلاع - يختلف هذا الزر من جهاز لآخر ويمكن البحث عن الزر المستخدم في جهازك بحسب الشركة المصنعة.&lt;/p&gt;
+
+&lt;p&gt;بعدها اذهب لما يسمى Boot options أي خيارات الإقلاع ستجدها أسفل تبويبة Boot، اجعل الخيار الأول لـ usb ثم احفظ الإعدادات (بالضغط على F10 غالباً) وسيتم إعادة التشغيل وغالباً ستنجح العملية .. وإذا لم تنجح ففي الواقع قد يكون الأمر معقد قليلاً فهناك اسباب عديدة، يمكنك مراسلتي للمناقشة.&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -6853,6 +6842,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;order-by&quot;&gt;دالة Order By&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -7573,15 +7564,9 @@
 &lt;p&gt;هذه مقالة مختصرة جداً تغطي أساسيات phpMyAdmin ، إذا أردت المزيد من المعلومات والتعلم أكثر يمكنك قراءة الوثائق التالية (بالإنكليزي)
 &lt;a href=&quot;http://wiki.phpmyadmin.net/pma/Articles#English&quot;&gt;http://wiki.phpmyadmin.net/pma/Articles#English&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;هل يهمك هذا الموضوع وتريد قراءة المزيد بالعربية؟ إن لم تجد ما يكفيك من المصادر العربية حول هذا الموضوع فيمكنك إرسال &lt;a href=&quot;/about/request&quot;&gt;طلب ترجمة&lt;/a&gt; لي لكي أترجم لك باقي الدروس مجاناً!&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;notice&quot;&gt;هل يهمك هذا الموضوع وتريد قراءة المزيد بالعربية؟ إن لم تجد ما يكفيك من المصادر العربية حول هذا الموضوع فيمكنك إرسال &lt;a href=&quot;/about/request&quot;&gt;طلب ترجمة&lt;/a&gt; لي لكي أترجم لك باقي الدروس مجاناً!&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;تنويه:&lt;/p&gt;
-
-  &lt;p&gt;التعليمات والشروحات الموجودة في مواقع أخرى قد لا تكون كاملة أو دقيقة أو قابلة للتنفيذ .. الاعتماد على شرح من موقع خارجي قد يكون خطر ويتم على مسؤوليتك الخاصة ..&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;notice&quot;&gt;التعليمات والشروحات الموجودة في مواقع أخرى قد لا تكون كاملة أو دقيقة أو قابلة للتنفيذ .. الاعتماد على شرح من موقع خارجي قد يكون خطر ويتم على مسؤوليتك الخاصة ..&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -7695,10 +7680,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;brasero&quot;&gt;كيفية حرق توزيعة أبونتو على قرص ديفيدي باستخدام Brasero&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/brasero&quot;&gt;كيفية حرق توزيعة أبونتو على قرص ديفيدي باستخدام Brasero&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;mkusb&quot;&gt;mkusb الأفضل لحرق توزيعة أبونتو على فلاشة&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/mkusb&quot;&gt;mkusb الأفضل لحرق توزيعة أبونتو على فلاشة&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -8281,7 +8266,7 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;كما تسعدني مراسلتك في أي وقت على البريد الإلكتروني الموجود عنوانه أسفل الصفحة، فأنا من المستخدمين دائماً لأبونتو.&lt;/p&gt;
+&lt;p&gt;كما تسعدني مراسلتك في أي وقت، فأنا من المستخدمين دائماً لأبونتو.&lt;/p&gt;
 
 </content>
 		</entry>
@@ -8906,10 +8891,6 @@ Secondary DNS server: 208.67.220.220
 			<id>http://mulham.github.io//jdownloader</id>
 			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/jdownloader.jpg&quot; alt=&quot;برنامج جي داونلودر لتحميل الملفات على اللينكس&quot; title=&quot;برنامج جي داونلودر لتحميل الملفات على اللينكس&quot; /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;تم اكتشاف برنامج قد يكون أفضل من هذا، وهو &lt;a href=&quot;/xtreme-download-manager&quot;&gt;إكستريم داونلود مانيجر XDM&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;p&gt;سوف أشرح هنا كيفية تنصيب برنامج جي داونلودر بديل برنامج إنترنت داونلود مانيجر على لينكس&lt;/p&gt;
 
 &lt;p&gt;في البداية يجب تنزيل إضافة لمتصفح الفايرفوكس وهي : &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/downloads/latest/220/addon-220-latest.xpi?src=flashgot.ownsite&quot;&gt;Flashgot&lt;/a&gt;&lt;/p&gt;
@@ -9113,7 +9094,7 @@ ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
     &lt;p&gt;اذهب لصفحة “القالب” ثم اضغط على زر “تحرير HTML”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;ابحث بالضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+f&lt;/code&gt; عن السمة &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;ابحث بالضغط على &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;F&lt;/kbd&gt; عن السمة &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;انسخ والصق الكود التالي &lt;strong&gt;فوقها&lt;/strong&gt;&lt;/p&gt;
@@ -9179,7 +9160,7 @@ ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
 
 &lt;h1 id=&quot;تنصيب-أداة-tint2&quot;&gt;تنصيب أداة Tint2&lt;/h1&gt;
 
-&lt;p&gt;يمكنك القيام بذلك إما عن طريق الـ Synaptic أو قم بفتح الطرفية (terminal) من القائمة أو بالضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt; واكتب الأمر :&lt;/p&gt;
+&lt;p&gt;يمكنك القيام بذلك إما عن طريق الـ Synaptic أو قم بفتح الطرفية (terminal) من القائمة أو بالضغط على &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;T&lt;/kbd&gt; واكتب الأمر :&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get install tint2
 &lt;/code&gt;&lt;/pre&gt;
@@ -9187,25 +9168,25 @@ ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
 
 &lt;p&gt;أدخل كلمة السر الخاصة بك ، واضغط y عند السؤال&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/02_do_you_want_to_continue1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/02_do_you_want_to_continue1.jpg&quot; alt=&quot;installing tint task bar&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;إضافة-الأداة-لبرامج-بدء-التشغيل-&quot;&gt;إضافة الأداة لبرامج بدء التشغيل :&lt;/h1&gt;
 
 &lt;p&gt;بعد الانتهاء من التنصيب أغلق التيرمينال ، ثم اذهب لقائمة البحث الخاصة بيونيتي وابحث عن “startup app” وقم بفتحه&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/05_opening_startup_apps.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/05_opening_startup_apps.jpg&quot; alt=&quot;running tint for ubuntu&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;اضغط على زر Add لإضافة الأداة للبرامج التي تبدأ مع بدء التشغيل&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/06_clicking_add.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/06_clicking_add.jpg&quot; alt=&quot;making tint as startup app in ubuntu&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;الآن اكتب في حقل command العبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;tint2&lt;/code&gt; والباقي اختياري&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/07_entering_startup_app_info.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/07_entering_startup_app_info.jpg&quot; alt=&quot;adding tint to startup menu&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;اضغط على Add ثم إغلاق (close)، الآن قم بتسجيل الخروج من أبونتو  Log out ثم سجل الدخول من جديد  لترى الشريط كما في الصورة&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/09_taskbar.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/09_taskbar.png&quot; alt=&quot;tint preview windows taskbar in ubuntu&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;إذا قررت لاحقاً بأنك لا تحتاج لبدء الشريط عند كل دخول فكل ما عليك فعله هو إلغاء علامة الصح بجانب اسم الأداة في قائمة البرامج startup application، أي بإمكانك فقط إلغاء بدءها مع بدء التشغيل بإزالة العلامة دون حذف الأداة من القائمة.&lt;/p&gt;
 </content>
@@ -9314,9 +9295,13 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;p&gt;صور أخرى للسيارة&lt;/p&gt;
 
-&lt;figure&gt;
-    
-    &lt;figcaption&gt;Hyundai-egg-car-gallery&lt;/figcaption&gt;
+&lt;figure class=&quot;half&quot;&gt;
+    &lt;a href=&quot;/assets/egg-car.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car-th.jpg&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;/assets/egg-car2.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car2-th.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;figure class=&quot;half&quot;&gt;
+    &lt;a href=&quot;/assets/egg-car-3.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car-3-th.jpg&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;/assets/egg-car-4.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car-4-th.jpg&quot; /&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 </content>
@@ -9456,9 +9441,7 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;p&gt;الحكم الجديد الصادر من قبل محكمة العدل الأوربية يعني أنه من الآن أي شخص لديه الحق في أن يكون “منسي” ويوقف محركات البحث مثل جوجل من إظهار معلومات عنك والتي قد تكون سيئة أو محرجة أو غير مناسبة .&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;في هذه المشاركة نتحدث عن النموذج الجديد لجوجل نتيجة القرار الصادر . أما إذا كنت تريد حذف صفحتك الشخصية مثلاً على الفيس بوك من نتائج بحث جوجل فهذا يتم من إعدادات الفيس بوك نفسه .&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;notice&quot;&gt;في هذه المشاركة نتحدث عن النموذج الجديد لجوجل نتيجة القرار الصادر . أما إذا كنت تريد حذف صفحتك الشخصية مثلاً على الفيس بوك من نتائج بحث جوجل فهذا يتم من إعدادات الفيس بوك نفسه .&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -9486,6 +9469,8 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 			<updated>2014-05-01T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//unetbootin</id>
 			<content type="html">&lt;p&gt;هل تريد حرق توزيعة اللينكس التي قمت بتنزيلها على فلاشة إقلاعية بدلاً من قرص DVD ؟&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;إذا كنت تستخدم نظام لينكس بدلاً من ويندوز، فربما يكون من الأفضل استخدام برنامج &lt;a href=&quot;/mkusb&quot;&gt;mkusb&lt;/a&gt; فهو أقوى باعتقادي.&lt;/p&gt;
 
 &lt;p&gt;Unetbootin هو البرنامج الأفضل لذلك حيث يقوم بإنشاء فلاشة usb إقلاعية تحمل نظام لينكس ، يمكنك من خلاله حرق توزيعات اللينكس التي قمت بتنزيلها من الإنترنت بلاحقة .iso أو تنزيل التوزيعة من الإنترنت وحرقها مباشرة من خلال البرنامج وذلك من خلال قائمة التوزيعات المتاحة فيه ..&lt;/p&gt;
 
@@ -9726,13 +9711,12 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
         &lt;p&gt;اضغط على رز الإيقاف أعلى القائمة لإنهاء الاتصال&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;استخدم مفاتيح الإرسال لإرسال أوامر للجهاز البعيد . مثل Ctrl + Alt + Del و Print Screen  .&lt;/p&gt;
+        &lt;p&gt;استخدم مفاتيح الإرسال لإرسال أوامر للجهاز البعيد . مثل &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Del&lt;/kbd&gt; و &lt;kbd&gt;Print screen&lt;/kbd&gt;  .&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;شارك الشاشة مؤقتاً. إذا أردت مشاركة الشاشة مع شخص ما بشكل مؤقت ، لغرض الدعم التقني مثلا ، يمكنك استخدام خيار المساعدة عن بعد . اضغط على زر المشاركة “Share” في القائمة الرئيسية لهذه الإضافة وانسخ الرمز (الكود) المعروض ، أعط هذا الرمز للشخص الذي تريد مشاركة الشاشة معه ليتمكن من الاتصال بجهازك عن طريق هذه الإضافة في متصفح كروم.&lt;/li&gt;
-    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;شارك الشاشة مؤقتاً. إذا أردت مشاركة الشاشة مع شخص ما بشكل مؤقت ، لغرض الدعم التقني مثلا ، يمكنك استخدام خيار المساعدة عن بعد . اضغط على زر المشاركة “Share” في القائمة الرئيسية لهذه الإضافة وانسخ الرمز (الكود) المعروض ، أعط هذا الرمز للشخص الذي تريد مشاركة الشاشة معه ليتمكن من الاتصال بجهازك عن طريق هذه الإضافة في متصفح كروم.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -9764,23 +9748,31 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;h1 id=&quot;التوجيهات&quot;&gt;التوجيهات&lt;/h1&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; أدخل القرص الصلب المرفق مع فأرة أو لوحة المفاتيح اللاسلكية في السواقة واتبع التعليمات فيها لتنصيب التعريف اللازم لعمل القطعة.
-
- أدخل البطاريات في الفأرة أو لوحة المفاتيح المطلوبة واستعمل مفك البراغي لإزالة أي براغي تحمل الغطاء الذي يوضع بداخله البطاريات .
-
-اربط مستقبل الإشارة اللاسلكية (الوايرلس) بحاسوبك الشخصي ، غالبا ما تتطلب مستقبلات الوايرلس موصل usb يربط الحاسوب بالقطعة اللاسلكية ، فقط أدخل قطعة ال usb في الحاسوب وهو سيحدد تلقائيا القطعة المستقبلة للإشارة .
-
-شغل الفأرة أو لوحة المفاتيح اللاسلكية اذا كانت تحتوي على زر تشغيل ، اضغط على زر &quot;Sync&quot; أو &quot;Connect&quot;  أو &quot;Pair&quot; في الفأرة أو لوحة المفاتيح وذلك حسب النوع . والآن أصبحت الفأرة أو لوحة المفاتيح اللاسلكية لديك تعمل .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;أدخل القرص الصلب المرفق مع فأرة أو لوحة المفاتيح اللاسلكية في السواقة واتبع التعليمات فيها لتنصيب التعريف اللازم لعمل القطعة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أدخل البطاريات في الفأرة أو لوحة المفاتيح المطلوبة واستعمل مفك البراغي لإزالة أي براغي تحمل الغطاء الذي يوضع بداخله البطاريات .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اربط مستقبل الإشارة اللاسلكية (الوايرلس) بحاسوبك الشخصي ، غالبا ما تتطلب مستقبلات الوايرلس موصل usb يربط الحاسوب بالقطعة اللاسلكية ، فقط أدخل قطعة ال usb في الحاسوب وهو سيحدد تلقائيا القطعة المستقبلة للإشارة .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;شغل الفأرة أو لوحة المفاتيح اللاسلكية اذا كانت تحتوي على زر تشغيل ، اضغط على زر “Sync” أو “Connect”  أو “Pair” في الفأرة أو لوحة المفاتيح وذلك حسب النوع . والآن أصبحت الفأرة أو لوحة المفاتيح اللاسلكية لديك تعمل .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h1 id=&quot;نصائح-وتحذيرات&quot;&gt;نصائح وتحذيرات&lt;/h1&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;حافظ دائماً على بطاريات ممتلئة جاهزة للعمل بجوارك في حالة استهلاك البطاريات المستعملة  وذلك لكي لا تفقد اتصال لوحة المفاتيح أو الفأرة بالجهاز.
-
- في بعض الحالات النادرة ، تؤثر أجهزة أخرى تستخدم تقنية الوايرلس مثل الهاتف الذكي على إشارة الفأرة أو لوحة المفاتيح اللاسلكية ، لذا ابق مثل هذه الأجهزة بعيدا عن مستقبل الوايرلس الخاص بالفأرة ولوحةالمفاتيح.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;حافظ دائماً على بطاريات ممتلئة جاهزة للعمل بجوارك في حالة استهلاك البطاريات المستعملة  وذلك لكي لا تفقد اتصال لوحة المفاتيح أو الفأرة بالجهاز.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;في بعض الحالات النادرة ، تؤثر أجهزة أخرى تستخدم تقنية الوايرلس مثل الهاتف الذكي على إشارة الفأرة أو لوحة المفاتيح اللاسلكية ، لذا ابق مثل هذه الأجهزة بعيدا عن مستقبل الوايرلس الخاص بالفأرة ولوحةالمفاتيح.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </content>
 		</entry>
 	
@@ -9789,7 +9781,7 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 			<link href="http://mulham.github.io/common-android-problems-with-solutions/"/>
 			<updated>2014-02-16T00:00:00+02:00</updated>
 			<id>http://mulham.github.io//common-android-problems-with-solutions</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/common-android-problems1.jpg&quot; style=&quot;float: left&quot; alt=&quot;مشاكل شائعة في أندرويد مع الحل&quot; /&gt;&lt;/p&gt;
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/common-android-problems1.jpg&quot; alt=&quot;مشاكل شائعة في أندرويد مع الحل&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;العديد من الهواتف والأجهزة اللوحية تعمل بنظام أندرويد ، حيث انتشر هذا النظام بشكل رهيب في الفترة الأخيرة، ورغم أنه سهل الاستخدام .. إلا أن الكثير من المشاكل ربما تواجه مستخدميه في الكثير من الأمور . إفادة تضع بين العديد من المشاكل الشائعة لأندرويد مع حلولهم&lt;/p&gt;
 
@@ -11940,33 +11932,6 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>مشروع الكتاب المرئي "أول كتاب مرئي باللغة العربية"</title>
-			<link href="http://mulham.github.io/visual-book/"/>
-			<updated>2014-02-02T00:00:00+02:00</updated>
-			<id>http://mulham.github.io//visual-book</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/epub500.jpg&quot; alt=&quot;أول كتاب مرئي باللغة العربية&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;أعلن الموقع الرسمي للدكتور “حازم فلاح سكيك “  الأستاذ المشارك في قسم الفيزياء – جامعة الأزهر – غزة عن مشروع جديد من المشاريع التي
- يشرف عليها وهو مشروع “الكتاب المرئي The Video Book” والذي وصفه الدكتور سكيك بالكتاب النموذجي للطالب العصري. حيث ان فكرة هذا الكتاب الجديد تقوم على دمج الوسائط المتعددة على صفحات الكتاب والتي تشمل الصوتيات والفيديو الأفلام الوثائقية والصور والرسومات بحيث يصبح النص المقروء مشروحا بالصوت والصورة فبعد ان يقوم الدارس بقراءة النص يمكنه ان يشغل مقطع فيديو يشرح ما قرأه فان كان تجربة او اشتقاق قانون او حل مثال كل ذلك يكون بالصوت والصورة. اي ان الكتاب والمدرس والمواد التعليمية المساندة كلها على نفس صفحة الكتاب، وبتكلفة اقل بكثير من تكلفة طباعة الكتب على الورق وتكرار طباعتها في كل عام في حين ان الكتب المرئية سهلة التطوير ووالتجديد والتحديث والنشر والتوزيع من خلال الاجهزة اللوحية والجوالات واجهزة الكمبيوتر والكثير من المزايا في &lt;a href=&quot;http://hazemsakeek.net/media/index.php/services/2013-02-23-17-33-53/163-2014-02-01-15-59-01&quot;&gt;هذا التقرير&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;روابط التحميل:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;لتحميل الكتاب من مركز الخليج على هذا الرابط
-&lt;a href=&quot;http://www.gulfup.com/?YMjf9S&quot;&gt;http://www.gulfup.com/?YMjf9S&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;لتصفح الكتاب على أجهزة الوندوز 
-يمكنك تحميل برنامج caliber من موقع البرنامج على هذا الرابط&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://calibre-ebook.com/download&quot;&gt;http://calibre-ebook.com/download&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;بعد تثبيت البرنامج وتشغيله قم بإضافة الكتاب من خلال اول زر على اليسار Add Books&lt;/p&gt;
-
-&lt;p&gt;كذلك يمكنك تصفح الكتاب بعد تحميله على متصفح الفيرفوكس بعد تحميل هذه الإضافة من هنا
-&lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/epubreader/&quot;&gt;https://addons.mozilla.org/en-US/firefox/addon/epubreader/&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	

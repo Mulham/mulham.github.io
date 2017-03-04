@@ -16,31 +16,31 @@ comments: true
 
 # تنصيب أداة Tint2
 
-يمكنك القيام بذلك إما عن طريق الـ Synaptic أو قم بفتح الطرفية (terminal) من القائمة أو بالضغط على `Ctrl+Alt+T` واكتب الأمر :
+يمكنك القيام بذلك إما عن طريق الـ Synaptic أو قم بفتح الطرفية (terminal) من القائمة أو بالضغط على <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> واكتب الأمر :
 
 		sudo apt-get install tint2
 
 أدخل كلمة السر الخاصة بك ، واضغط y عند السؤال
 
-![](/assets/02_do_you_want_to_continue1.jpg)
+![installing tint task bar](/assets/02_do_you_want_to_continue1.jpg)
 
 # إضافة الأداة لبرامج بدء التشغيل :
 
 بعد الانتهاء من التنصيب أغلق التيرمينال ، ثم اذهب لقائمة البحث الخاصة بيونيتي وابحث عن "startup app" وقم بفتحه
 
 
-![](/assets/05_opening_startup_apps.jpg)
+![running tint for ubuntu](/assets/05_opening_startup_apps.jpg)
 
 اضغط على زر Add لإضافة الأداة للبرامج التي تبدأ مع بدء التشغيل
 
-![](/assets/06_clicking_add.jpg)
+![making tint as startup app in ubuntu](/assets/06_clicking_add.jpg)
 
  الآن اكتب في حقل command العبارة `tint2` والباقي اختياري
 
-![](/assets/07_entering_startup_app_info.jpg)
+![adding tint to startup menu](/assets/07_entering_startup_app_info.jpg)
 
 اضغط على Add ثم إغلاق (close)، الآن قم بتسجيل الخروج من أبونتو  Log out ثم سجل الدخول من جديد  لترى الشريط كما في الصورة
 
-![](/assets/09_taskbar.png)
+![tint preview windows taskbar in ubuntu](/assets/09_taskbar.png)
 
 إذا قررت لاحقاً بأنك لا تحتاج لبدء الشريط عند كل دخول فكل ما عليك فعله هو إلغاء علامة الصح بجانب اسم الأداة في قائمة البرامج startup application، أي بإمكانك فقط إلغاء بدءها مع بدء التشغيل بإزالة العلامة دون حذف الأداة من القائمة.

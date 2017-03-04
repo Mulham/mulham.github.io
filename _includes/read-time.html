@@ -3,4 +3,5 @@
 مدة القراءة ~
 {% if readtime > 2 and readtime <= 10  %}
 {{ readtime }} دقائق
+{% elsif readtime <=1 %} 1 دقيقة
 {% else %}{{ readtime }} دقيقة{% endif %}
