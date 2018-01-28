@@ -195,7 +195,7 @@ ALTER TABLE topics ADD FOREIGN KEY(topic_cat) REFERENCES categories(cat_id) ON D
 
 الآن، كل موضوع أصبح مرتبط بتصنيف ما. لنقم بربط المواضيع بالمستخدمين المنشئين لهم.
 
-{% highlight sql %} 
+{% highlight sql %}
 
 ALTER TABLE topics ADD FOREIGN KEY(topic_by) REFERENCES users(user_id) ON DELETE RESTRICT ON UPDATE CASCADE;
 
@@ -206,7 +206,7 @@ ALTER TABLE topics ADD FOREIGN KEY(topic_by) REFERENCES users(user_id) ON DELETE
 
 ربط التعليقات بالمواضيع:
 
-{% highlight sql %} 
+{% highlight sql %}
 
 ALTER TABLE posts ADD FOREIGN KEY(post_topic) REFERENCES topics(topic_id) ON DELETE CASCADE ON UPDATE CASCADE;
 
@@ -272,7 +272,7 @@ ALTER TABLE posts ADD FOREIGN KEY(post_by) REFERENCES users(user_id) ON DELETE R
 
 عندما نضمّن ملفي الترويسة والتذييل في كل صفحة، فإن محتوى الصفحة الفعلي سيظهر بين الترويسة (بداية الصفحة) والتذييل (نهاية الصفحة). لهذه الطريقة عدة فوائد. أولها وأهمها أن كل شيئ سيكون منسق بشكل صحيح. مثال سريع :
 
-{% highlight php %} 
+{% highlight php %}
 
 <?php
 $error = false;
@@ -803,7 +803,7 @@ while($row = mysql_fetch_assoc($result))
 
 إلى :
 
-{% highlight php %} 
+{% highlight php %}
 
 <?php
 <div id="userbar">
@@ -1488,3 +1488,5 @@ posts.post_topic = " . mysql_real_escape_string($_GET[
 # النهاية
 
 الآن وبعد قراءتك لهذا الشرح ستكون لديك المعرفة الكافية لبناء منتدى، أتمنى أن يكون الشرح واضحاً وأنك لم تعترك مع أية مشاكل في طريقك ..
+
+إذا كان هناك أي غموض بالشرح أو واجهتك أي مشكلة فلا تتردد أبداً بمراسلتي أو ترك تعليق في الأسفل
