@@ -6,7 +6,7 @@ description: شرح شامل ومُيسَّر لطريقة إنشاء منتدى
 type: tutorial
 comments: true
 ---
-هذا الدرس من تأليف Evert padje وترجمتي (ملهم)، يركّز الدرس على إنشاء منتدى باستخدام php و Mysql من أجل قاعدة بيانات المنتدى .. وهو لغرض تعليمي، يمكن معاينة المنتدى الناتج على [هذا الرابط](http://inkshouse.heroicmice.com/forum/index.php) 
+هذا الدرس من تأليف Evert padje وترجمتي (ملهم) مع إضافتي للتحديثات اللازمة، يركّز الدرس على إنشاء منتدى باستخدام php و Mysql من أجل قاعدة بيانات المنتدى ..
 
 سنقوم في هذا الشرح ببناء منتدى PHP/MySQL من الصفر. هذا الشرح أيضاً ممتاز للاعتياد على أساسيات لغة البرمجة php وقواعد بيانات MySQL . لنبدأ سويةً !
 
@@ -434,7 +434,7 @@ if(!mysql_connect($server, $username,  $password))
 {
     exit('Error: could not establish database connection');
 }
-if(!mysql_select_db($database)
+if(!mysql_select_db($database))
 {
     exit('Error: could not select the database');
 }
