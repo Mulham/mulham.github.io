@@ -448,12 +448,12 @@ if(!mysql_select_db($database))
 
 # رابعاً: عرض المنتدى
 
-بما أننا بدأنا بتقنيات أساسية، سنقوم بعمل طريقة عرض مبسطة للمنتدى الآن.
+بما أننا بدأنا بتقنيات أساسية، سنقوم بعمل طريقة عرض مبسطة للمنتدى الآن. وبالتالي سنقوم بإنشاء الصفحة الرئيسية للمنتدى index.php
 
 {% highlight php %}
 
 <?php
-//create_cat.php
+//index.php
 include 'connect.php';
 include 'header.php';
          
@@ -898,12 +898,12 @@ FROM
 
 {% endhighlight %} 
 
-تقوم هذه التعليمة بتحديد جميع التصنيفات وأسمائهم ووصفهم من جدول التصنيفات. سنحتاج الآن لبضعة أسطر php لعرض النتائج. إذا قمنا بإضافة التعليمة كما فعلنا في الخطوات السابقة، فسيبدو الكود على الشكل:
+تقوم هذه التعليمة بتحديد جميع التصنيفات وأسمائهم ووصفهم من جدول التصنيفات. سنحتاج الآن لبضعة أسطر php لعرض النتائج. إذا قمنا بإضافة التعليمة كما فعلنا في الخطوات السابقة، فسيبدو الكود (الكود النهائي للصفحة الرئيسية index.php) على الشكل:
 
 {% highlight php %}
 
 <?php
-//create_cat.php
+//index.php
 include 'connect.php';
 include 'header.php';
  
@@ -993,7 +993,7 @@ else
 {% highlight php %}
 
 <?php
-//create_cat.php
+//create_topic.php
 include 'connect.php';
 include 'header.php';
  
@@ -1275,7 +1275,7 @@ WHERE
 {% highlight php %}
 
 <?php
-//create_cat.php
+//category.php
 include 'connect.php';
 include 'header.php';
  
@@ -1433,7 +1433,7 @@ posts.post_topic = " . mysql_real_escape_string($_GET[
 {% highlight php %}
 
 <?php
-//create_cat.php
+//reply.php
 include 'connect.php';
 include 'header.php';
 if($_SERVER['REQUEST_METHOD'] != 'POST')
