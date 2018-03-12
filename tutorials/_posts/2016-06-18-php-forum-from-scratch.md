@@ -826,8 +826,9 @@ while($row = mysql_fetch_assoc($result))
 
 {% highlight php %}
 
-<?php
+
 <div id="userbar">
+<?php
     if($_SESSION['signed_in'])
     {
         echo 'Hello' . $_SESSION['user_name'] . '. Not you? <a href="signout.php">Sign out</a>';
@@ -836,6 +837,7 @@ while($row = mysql_fetch_assoc($result))
     {
         echo '<a href="signin.php">Sign in</a> or <a href="sign up">create an account</a>.';
     }
+?>
 </div>
 
 {% endhighlight %} 
@@ -972,6 +974,19 @@ else
  
 include 'footer.php';
 ?>
+
+{% endhighlight %} 
+
+**تحديث**: لـ php7 واستخدام mysqli، يرجى استبدال السطر التالي الموجود في بداية الكود $result = mysql_query($sql); إلى:
+
+{% highlight php %}
+
+$conn = mysqli_connect("localhost","root","password","DatabaseName");
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+$result = mysqli_query($conn, $sql);
 
 {% endhighlight %} 
 
