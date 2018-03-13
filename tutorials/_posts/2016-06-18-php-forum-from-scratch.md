@@ -1750,6 +1750,29 @@ include 'footer.php';
 
 ![كيفية عمل منتدى باستخدام php و MySQL من الصفر-11](/assets/11.png "كيفية عمل منتدى باستخدام php و MySQL من الصفر-11")
 
+# الخطوة 13: تسجيل الخروج
+
+يتم تسجيل الخروج من خلال الصفحة signout.php بالكود البسيط التالي:
+
+{% highlight sql %}
+
+<?php
+// Initialize the session
+session_start();
+ 
+// Unset all of the session variables
+$_SESSION = array();
+ 
+// Destroy the session.
+session_destroy();
+ 
+// Redirect to login page
+header("location: signout.php");
+exit;
+?>
+
+{% endhighlight %} 
+
 # النهاية
 
 الآن وبعد قراءتك لهذا الشرح ستكون لديك المعرفة الكافية لبناء منتدى، أتمنى أن يكون الشرح واضحاً وأنك لم تعترك مع أية مشاكل في طريقك ..
