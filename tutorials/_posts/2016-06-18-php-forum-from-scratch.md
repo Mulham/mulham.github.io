@@ -1057,6 +1057,7 @@ while($row = mysql_fetch_assoc($result))
 
 <div id="userbar">
 <?php
+    session_start();
     if(isset($_SESSION['signed_in']))
     {
         echo 'Hello' . $_SESSION['user_name'] . '. Not you? <a href="signout.php">Sign out</a>';
