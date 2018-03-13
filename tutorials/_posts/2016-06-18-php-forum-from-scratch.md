@@ -276,7 +276,7 @@ ALTER TABLE posts ADD FOREIGN KEY(post_by) REFERENCES users(user_id) ON DELETE R
 
 <?php
 $error = false;
-if($error = false)
+if($error == false)
 {
     //the beautifully styled content, everything looks good
     echo '<div id="content">some text</div>';
