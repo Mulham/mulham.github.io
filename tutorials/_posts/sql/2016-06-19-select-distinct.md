@@ -30,6 +30,8 @@ comments: true
 
 [الدرس العاشر: تصريح DELETE في SQL](delete)
 
+[الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM](top-limit-rownum)
+
 *****************
 
 يستخدم تصريح `SELECT DISTINCT` للحصول على القيم المختلفة فقط .
