@@ -109,6 +109,6 @@ comments: true
 	WHERE Country='Germany' AND ROWNUM <= 3;
 
 
-
+التالي: [دالات MIN و MAX](min-max)
 
 
