@@ -61,7 +61,7 @@ youtube:          mulham94
 #hackernews:        username
 # Gems
 excerpt_separator: <!--more-->
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap

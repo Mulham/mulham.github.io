@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2018-05-07T13:44:43+03:00</updated>
+	<updated>2018-05-07T13:47:25+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -179,7 +179,9 @@ FROM Products;
 
 &lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -6454,7 +6456,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -6467,6 +6469,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -6589,11 +6593,13 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
