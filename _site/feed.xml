@@ -1,18 +1,409 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-<generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator>
-<link href="https://mulham.github.io/feed.xml" rel="self" type="application/atom+xml" />
-<link href="https://mulham.github.io/" rel="alternate" type="text/html" />
-<updated>2018-01-29T00:50:09+03:00</updated>
-<id>https://mulham.github.io/</id>
-<subtitle>شغف المعرفة</subtitle>
-<entry>
-<title>بعض حِيَل الحاسوب التي ينبغي على الجميع معرفتها</title>
-<link href="https://mulham.github.io/%D8%A8%D8%B9%D8%B6-%D8%AD%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7/" rel="alternate" type="text/html" title="بعض حِيَل الحاسوب التي ينبغي على الجميع معرفتها" />
-<published>2017-02-25T00:00:00+03:00</published>
-<updated>2017-02-25T00:00:00+03:00</updated>
-<id>https://mulham.github.io/بعض-حيل-الحاسوب-التي-ينبغي-على-الجميع-معرفتها</id>
-<content type="html" xml:base="https://mulham.github.io/%D8%A8%D8%B9%D8%B6-%D8%AD%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7/">&lt;ol&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-07T13:44:43+03:00</updated><id>http://localhost:4000/</id><title type="html">موقع ملهم</title><subtitle>شغف المعرفة</subtitle><entry><title type="html">سلسلة دروس SQL|Min and Max</title><link href="http://localhost:4000/sql/min-max" rel="alternate" type="text/html" title="سلسلة دروس SQL|Min and Max" /><published>2018-05-07T00:00:00+03:00</published><updated>2018-05-07T00:00:00+03:00</updated><id>http://localhost:4000/sql/min-max</id><content type="html" xml:base="http://localhost:4000/sql/min-max">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#دالّات-min-و-max-في-sql&quot; id=&quot;markdown-toc-دالّات-min-و-max-في-sql&quot;&gt;دالّات MIN() و MAX() في SQL&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#استخدام-دالّة-min&quot; id=&quot;markdown-toc-استخدام-دالّة-min&quot;&gt;استخدام دالّة MIN()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#استخدام-دالة-max&quot; id=&quot;markdown-toc-استخدام-دالة-max&quot;&gt;استخدام دالة MAX()&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-استخدام-min&quot; id=&quot;markdown-toc-مثال-على-استخدام-min&quot;&gt;مثال على استخدام MIN()&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-استخدام-max&quot; id=&quot;markdown-toc-مثال-على-استخدام-max&quot;&gt;مثال على استخدام MAX()&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;دالّات-min-و-max-في-sql&quot;&gt;دالّات MIN() و MAX() في SQL&lt;/h1&gt;
+
+&lt;p&gt;تُعطي دالة MIN() أصغر قيمة من العمود المُحدَّد في قاعدة البيانات. وتُعطي دالة MAX() أكبر قيمة من العمود المُحدَّد.&lt;/p&gt;
+
+&lt;h2 id=&quot;استخدام-دالّة-min&quot;&gt;استخدام دالّة MIN()&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;استخدام-دالة-max&quot;&gt;استخدام دالة MAX()&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول “Products” (المنتجات) في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ProductID&lt;/th&gt;
+      &lt;th&gt;ProductName&lt;/th&gt;
+      &lt;th&gt;SupplierID&lt;/th&gt;
+      &lt;th&gt;CategoryID&lt;/th&gt;
+      &lt;th&gt;Unit&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Chais&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;10 boxes x 20 bags&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Chang&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;24 - 12 oz bottles&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Aniseed Syrup&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;12 - 550 ml bottles&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Cajun Seasoning&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;48 - 6 oz jars&lt;/td&gt;
+      &lt;td&gt;22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Gumbo Mix&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;36 boxes&lt;/td&gt;
+      &lt;td&gt;21.35&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-على-استخدام-min&quot;&gt;مثال على استخدام MIN()&lt;/h1&gt;
+
+&lt;p&gt;تُعطي عبارة SQL التالية سعر أرخص منتج:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;مثال-على-استخدام-max&quot;&gt;مثال على استخدام MAX()&lt;/h1&gt;
+
+&lt;p&gt;تُعطي عبارة SQL التالية سعر أغلى منتج:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT MAX(Price) AS LargestPrice
+FROM Products;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX دالّات MIN() و MAX() في SQL استخدام دالّة MIN() استخدام دالة MAX() استعراض قاعدة البيانات مثال على استخدام MIN() مثال على استخدام MAX() دالّات MIN() و MAX() في SQL تُعطي دالة MIN() أصغر قيمة من العمود المُحدَّد في قاعدة البيانات. وتُعطي دالة MAX() أكبر قيمة من العمود المُحدَّد. استخدام دالّة MIN() SELECT MIN(column_name) FROM table_name WHERE condition; استخدام دالة MAX() SELECT MAX(column_name) FROM table_name WHERE condition; استعراض قاعدة البيانات في الأسفل تحديد من جدول “Products” (المنتجات) في قاعدة البيانات النموذجية Northwind ProductID ProductName SupplierID CategoryID Unit Price 1 Chais 1 1 10 boxes x 20 bags 18 2 Chang 1 1 24 - 12 oz bottles 19 3 Aniseed Syrup 1 2 12 - 550 ml bottles 10 4 Chef Anton’s Cajun Seasoning 2 2 48 - 6 oz jars 22 5 Chef Anton’s Gumbo Mix 2 2 36 boxes 21.35 مثال على استخدام MIN() تُعطي عبارة SQL التالية سعر أرخص منتج: SELECT MIN(Price) AS SmallestPrice FROM Products; مثال على استخدام MAX() تُعطي عبارة SQL التالية سعر أغلى منتج: SELECT MAX(Price) AS LargestPrice FROM Products;</summary></entry><entry><title type="html">سلسلة دروس SQL|TOP-LIMIT-ROWNUM</title><link href="http://localhost:4000/sql/top-limit-rownum" rel="alternate" type="text/html" title="سلسلة دروس SQL|TOP-LIMIT-ROWNUM" /><published>2018-05-06T00:00:00+03:00</published><updated>2018-05-06T00:00:00+03:00</updated><id>http://localhost:4000/sql/top-limit-rownum</id><content type="html" xml:base="http://localhost:4000/sql/top-limit-rownum">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-select-top-في-sql&quot; id=&quot;markdown-toc-عبارة-select-top-في-sql&quot;&gt;عبارة SELECT TOP في SQL&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#بناء-التصريح-في-سيرفر-sql-أو-ميكروسوفت-access&quot; id=&quot;markdown-toc-بناء-التصريح-في-سيرفر-sql-أو-ميكروسوفت-access&quot;&gt;بناء التصريح في سيرفر SQL أو ميكروسوفت Access&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#بناء-التصريح-في-mysql&quot; id=&quot;markdown-toc-بناء-التصريح-في-mysql&quot;&gt;بناء التصريح في MySQL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#بناء-التصريح-في-oracle&quot; id=&quot;markdown-toc-بناء-التصريح-في-oracle&quot;&gt;بناء التصريح في Oracle&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-sql-top-و-limit-و-rownum&quot; id=&quot;markdown-toc-أمثلة-على-sql-top-و-limit-و-rownum&quot;&gt;أمثلة على SQL TOP و LIMIT و ROWNUM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-sql-top-percent&quot; id=&quot;markdown-toc-مثال-على-sql-top-percent&quot;&gt;مثال على SQL TOP PERCENT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#إضافة-تصريح-where&quot; id=&quot;markdown-toc-إضافة-تصريح-where&quot;&gt;إضافة تصريح WHERE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-select-top-في-sql&quot;&gt;عبارة SELECT TOP في SQL&lt;/h1&gt;
+
+&lt;p&gt;تستخدم عبارة SELECT TOP لتحديد عدد القيم المراد استخراجها من قاعدة البيانات (الحصول عليها) ، هذه العبارة مفيدة في حالة الجداول الضخمة التي تحتوي على آلاف القيم، مع ملاحظة أن استخراج عدد كبير من القيم قد يؤثر على الأداء.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: لا تدعم جميع أنظمة قواعد البيانات عبارة SELECT TOP. وبذلك تدعم لغة MySQL العبارة LIMIT لتحديد عدد محدد من القيم، بينما تستخدم Oracle العبارة ROWNUM.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;بناء-التصريح-في-سيرفر-sql-أو-ميكروسوفت-access&quot;&gt;بناء التصريح في سيرفر SQL أو ميكروسوفت Access&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT TOP number|percent column_name(s)
+FROM table_name
+WHERE condition;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;بناء-التصريح-في-mysql&quot;&gt;بناء التصريح في MySQL&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;بناء-التصريح-في-oracle&quot;&gt;بناء التصريح في Oracle&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT column_name(s)
+FROM table_name
+WHERE ROWNUM &amp;lt;= number;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;أمثلة-على-sql-top-و-limit-و-rownum&quot;&gt;أمثلة على SQL TOP و LIMIT و ROWNUM&lt;/h1&gt;
+
+&lt;p&gt;تحدد عبارة SQL التالية أول ثلاث قيم من جدول “Customers”:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT TOP 3 * FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+LIMIT 3;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE ROWNUM &amp;lt;= 3;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;مثال-على-sql-top-percent&quot;&gt;مثال على SQL TOP PERCENT&lt;/h1&gt;
+
+&lt;p&gt;تُحدِّد عبارة SQL التالية أول 50% من القيم في جدول “Customers”:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT TOP 50 PERCENT * FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;إضافة-تصريح-where&quot;&gt;إضافة تصريح WHERE&lt;/h1&gt;
+
+&lt;p&gt;تُحدِّد عبارة SQL التالية أول ثلاث قيم من جدول “Customers” حيث البلد هو “Germany”:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT TOP 3 * FROM Customers
+WHERE Country='Germany';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE Country='Germany'
+LIMIT 3;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;min-max&quot;&gt;دالات MIN و MAX&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM عبارة SELECT TOP في SQL بناء التصريح في سيرفر SQL أو ميكروسوفت Access بناء التصريح في MySQL بناء التصريح في Oracle استعراض قاعدة بيانات أمثلة على SQL TOP و LIMIT و ROWNUM مثال على SQL TOP PERCENT إضافة تصريح WHERE عبارة SELECT TOP في SQL تستخدم عبارة SELECT TOP لتحديد عدد القيم المراد استخراجها من قاعدة البيانات (الحصول عليها) ، هذه العبارة مفيدة في حالة الجداول الضخمة التي تحتوي على آلاف القيم، مع ملاحظة أن استخراج عدد كبير من القيم قد يؤثر على الأداء. ملاحظة: لا تدعم جميع أنظمة قواعد البيانات عبارة SELECT TOP. وبذلك تدعم لغة MySQL العبارة LIMIT لتحديد عدد محدد من القيم، بينما تستخدم Oracle العبارة ROWNUM. بناء التصريح في سيرفر SQL أو ميكروسوفت Access SELECT TOP number|percent column_name(s) FROM table_name WHERE condition; بناء التصريح في MySQL SELECT column_name(s) FROM table_name WHERE condition LIMIT number; بناء التصريح في Oracle SELECT column_name(s) FROM table_name WHERE ROWNUM &amp;lt;= number; استعراض قاعدة بيانات في الأسفل تحديد من جدول الزبائن Customers أمثلة على SQL TOP و LIMIT و ROWNUM تحدد عبارة SQL التالية أول ثلاث قيم من جدول “Customers”: SELECT TOP 3 * FROM Customers; تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT: SELECT * FROM Customers LIMIT 3; كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM: SELECT * FROM Customers WHERE ROWNUM &amp;lt;= 3; مثال على SQL TOP PERCENT تُحدِّد عبارة SQL التالية أول 50% من القيم في جدول “Customers”: SELECT TOP 50 PERCENT * FROM Customers; إضافة تصريح WHERE تُحدِّد عبارة SQL التالية أول ثلاث قيم من جدول “Customers” حيث البلد هو “Germany”: SELECT TOP 3 * FROM Customers WHERE Country='Germany'; تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT: SELECT * FROM Customers WHERE Country='Germany' LIMIT 3; كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM: SELECT * FROM Customers WHERE Country='Germany' AND ROWNUM &amp;lt;= 3; التالي: دالات MIN و MAX</summary></entry><entry><title type="html">المـــوت</title><link href="http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA/" rel="alternate" type="text/html" title="المـــوت" /><published>2018-04-21T00:00:00+03:00</published><updated>2018-04-21T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA</id><content type="html" xml:base="http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA/">&lt;p&gt;لماذا نحزن عندما نرى مُضِيَّ الأيام وزوالها وتغير الزمن وكِبَر عُمرنا وتغير شكلنا شيئاً فشيئاً، عندما نرى من نُحب يهرم ويشيخ وتتغير معالم شكله وتظهر تجاعيد وجهه ويشيب رأسه..
+لماذا نبكي عندما يموت من نحب، أو.. لماذا نخاف من الموت؟ ربما ﻷننا لا ندرك حقيقته..&lt;/p&gt;
+
+&lt;p&gt;الموت! كلمة جميلة لو فهمنا معناها، لو فهمنا حقيقة الدنيا التي نعيش بها، حقيقة الموت، وحقيقة ما بعده..&lt;/p&gt;
+
+&lt;p&gt;عندما نُحسنُ في حياتنا، ونحاول الابتعاد عن الجانب الأسود في هذه الدنيا، عن كل ما هو خاطئ..عن الظلم، ظلم الناس، أو ظلم أنفسنا..فسنحيا حياةً كريمةً طيبةً في هذه الدنيا، وأيضاً سنجد الموت جميل! سنجده راحةً لنا عندما نشيب، أو عندما تضيق بنا الأيام، أو بالضبط عندما يحين موعده..سنكون بشوق ولهفة له، سنجد فيه الراحة، سنجد فيه الطمأنينة والنعيم، سنجد فيه الخلود..&lt;/p&gt;
+
+&lt;p&gt;فلو أنك نِمت، نِمت عن هذه الدنيا الزائلة التي يتبدّل فيها كل شيئ في كل لحظة ولايدوم بها شيئ على حاله، عن هذه المشقات والأعباء والهموم التي تحملها بداخلك والتي زَرَعَتْها بك الدنيا..ووجدت أنك في حدائق وأنهار..في جنان، وجدت من مات ممن تحب وهو في عِزِّ شبابه، وقد اجتمعتم سويةً، مع شخصيات أحببتها من التاريخ أيضًا..وجدت نفسك في هذه الجَمعة الخيالية في ذلك المكان الخياليّ الروعة، ووجدت قصرك وخادماته..ووجدت من النعيم مالم تتخيل ومالم يتخيل أحد من أغنى أغنياء الدنيا..وبعدها خُيِّرت بالاستيقاظ من منامك والعودة لهمومك ومشاقّك في الدنيا، أو الإكمال في ذلك الحلم والعبور به نحو الحقيقة..أي معايشته حقيقةً..ماذا ستختار؟&lt;/p&gt;
+
+&lt;p&gt;لقد حدث هذا التخيير حقيقةً، حدث لنبينا محمد صلى الله عليه وسلم، فأجاب “بل الرفيق الأعلى”..وليس فقط للأنبياء..بل كل عبد صالح إن خُيِّر فسيكون خياره نفسه، حدث مع جدتي، عندما وقفت أمي فوقها على فراش السعادة..أو كما يدعونه فراش الموت، وقالت لها ارجِعي..لا تموتي..فأشارت لها بـ لا ..لااااا..فلقد رأت ما رأت..&lt;/p&gt;
+
+&lt;p&gt;فقط لنحيا بصدق، بإخلاص، بإحسان..لنحيا بوفاء للخالق ونِعَمه..لنحيا على صراطٍ مستقيم..وليس ذلك بالعسير..هي الدنيا أيام قليلة، وامتحانات معدودة..لنحياها كما يجب..عندها لن نخشى الموت..بل سيكون السعادة الأبدية لنا..والخلود في النعيم..&lt;/p&gt;</content><author><name></name></author><summary type="html">لماذا نحزن عندما نرى مُضِيَّ الأيام وزوالها وتغير الزمن وكِبَر عُمرنا وتغير شكلنا شيئاً فشيئاً، عندما نرى من نُحب يهرم ويشيخ وتتغير معالم شكله وتظهر تجاعيد وجهه ويشيب رأسه.. لماذا نبكي عندما يموت من نحب، أو.. لماذا نخاف من الموت؟ ربما ﻷننا لا ندرك حقيقته.. الموت! كلمة جميلة لو فهمنا معناها، لو فهمنا حقيقة الدنيا التي نعيش بها، حقيقة الموت، وحقيقة ما بعده.. عندما نُحسنُ في حياتنا، ونحاول الابتعاد عن الجانب الأسود في هذه الدنيا، عن كل ما هو خاطئ..عن الظلم، ظلم الناس، أو ظلم أنفسنا..فسنحيا حياةً كريمةً طيبةً في هذه الدنيا، وأيضاً سنجد الموت جميل! سنجده راحةً لنا عندما نشيب، أو عندما تضيق بنا الأيام، أو بالضبط عندما يحين موعده..سنكون بشوق ولهفة له، سنجد فيه الراحة، سنجد فيه الطمأنينة والنعيم، سنجد فيه الخلود.. فلو أنك نِمت، نِمت عن هذه الدنيا الزائلة التي يتبدّل فيها كل شيئ في كل لحظة ولايدوم بها شيئ على حاله، عن هذه المشقات والأعباء والهموم التي تحملها بداخلك والتي زَرَعَتْها بك الدنيا..ووجدت أنك في حدائق وأنهار..في جنان، وجدت من مات ممن تحب وهو في عِزِّ شبابه، وقد اجتمعتم سويةً، مع شخصيات أحببتها من التاريخ أيضًا..وجدت نفسك في هذه الجَمعة الخيالية في ذلك المكان الخياليّ الروعة، ووجدت قصرك وخادماته..ووجدت من النعيم مالم تتخيل ومالم يتخيل أحد من أغنى أغنياء الدنيا..وبعدها خُيِّرت بالاستيقاظ من منامك والعودة لهمومك ومشاقّك في الدنيا، أو الإكمال في ذلك الحلم والعبور به نحو الحقيقة..أي معايشته حقيقةً..ماذا ستختار؟ لقد حدث هذا التخيير حقيقةً، حدث لنبينا محمد صلى الله عليه وسلم، فأجاب “بل الرفيق الأعلى”..وليس فقط للأنبياء..بل كل عبد صالح إن خُيِّر فسيكون خياره نفسه، حدث مع جدتي، عندما وقفت أمي فوقها على فراش السعادة..أو كما يدعونه فراش الموت، وقالت لها ارجِعي..لا تموتي..فأشارت لها بـ لا ..لااااا..فلقد رأت ما رأت.. فقط لنحيا بصدق، بإخلاص، بإحسان..لنحيا بوفاء للخالق ونِعَمه..لنحيا على صراطٍ مستقيم..وليس ذلك بالعسير..هي الدنيا أيام قليلة، وامتحانات معدودة..لنحياها كما يجب..عندها لن نخشى الموت..بل سيكون السعادة الأبدية لنا..والخلود في النعيم..</summary></entry><entry><title type="html">دراسة البكالوريوس في تركيا</title><link href="http://localhost:4000/Bachelor-in-turkey/" rel="alternate" type="text/html" title="دراسة البكالوريوس في تركيا" /><published>2018-02-17T00:00:00+03:00</published><updated>2018-02-17T00:00:00+03:00</updated><id>http://localhost:4000/Bachelor-in-turkey</id><content type="html" xml:base="http://localhost:4000/Bachelor-in-turkey/">&lt;p&gt;مرحباً..
+أود في هذه الصفحة كتابة تفاصيل ومتطلبات التقديم للجامعات التركية للحصول على مقعد جامعي في مرحلة البكالوريوس أو ما يسمى الليسنس أو الإجازة الجامعية (بالتركية Lisans والكلية تدعى fakülte)، وأيضاً المعاهد (ön Lisans والمعهد yüksek okul).&lt;/p&gt;
+
+&lt;p&gt;فيما يلي المتطلبات والأوراق والشهادات اللازمة &lt;strong&gt;للبدء&lt;/strong&gt; في الدراسة الجامعية، ولكن قد لا تحتاج لبعضها للحصول على مقعد جامعي، وسيتم ذكر ذلك بالتفصيل..&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: هذا الشرح للطلاب المستجدين الذين يودون بدء دراستهم الجامعية من البداية، إذا كنت طالب استكمال أي انقطعت عن دراستك الجامعية (البكالوريوس) وتود استكمالها في تركيا فستجد &lt;a href=&quot;https://www.facebook.com/groups/1775576486009928/&quot;&gt;هنا&lt;/a&gt; مرجع مفيد جداً لك. مع العلم أن جميع المتطلبات أدناه تبقى مشتركة، عدا الشهادات الإضافية (اليوس أو السات).&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#المتطلبات&quot; id=&quot;markdown-toc-المتطلبات&quot;&gt;المتطلبات&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#الشهادة-الثانوية&quot; id=&quot;markdown-toc-الشهادة-الثانوية&quot;&gt;الشهادة الثانوية&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#المعادلة&quot; id=&quot;markdown-toc-المعادلة&quot;&gt;المعادلة&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#شهادة-اللغة-التركية&quot; id=&quot;markdown-toc-شهادة-اللغة-التركية&quot;&gt;شهادة اللغة التركية&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#مناهج-اللغة-التركية&quot; id=&quot;markdown-toc-مناهج-اللغة-التركية&quot;&gt;مناهج اللغة التركية&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#اليوس--السات&quot; id=&quot;markdown-toc-اليوس--السات&quot;&gt;اليوس / السات&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#اليوس&quot; id=&quot;markdown-toc-اليوس&quot;&gt;اليوس&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#السات&quot; id=&quot;markdown-toc-السات&quot;&gt;السات&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#التقدّم-للجامعات&quot; id=&quot;markdown-toc-التقدّم-للجامعات&quot;&gt;التقدّم للجامعات&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;المتطلبات&quot;&gt;المتطلبات&lt;/h1&gt;
+
+&lt;h2 id=&quot;الشهادة-الثانوية&quot;&gt;الشهادة الثانوية&lt;/h2&gt;
+
+&lt;p&gt;(بالتركية Lise Diploması)البكالوريا أو التوجيهي هي الشهادة الأساسية التي تؤهلك للتقدّم للجامعات، إذا كانت دراستك الثانوية وحصلت عليها من تركيا فلن تحتاج لمعادلة، أما إذا كانت من خارج تركيا فستحتاج لمعادلتها:&lt;/p&gt;
+
+&lt;h3 id=&quot;المعادلة&quot;&gt;المعادلة&lt;/h3&gt;
+
+&lt;p&gt;معادلة الشهادة الثانوية أو بالتركية “Denklik” يتم وفق الخطوات التالية:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;ترجمة الشهادة إلى اللغة التركية من قبل مترجم محلّف (بالتركية Yeminli tercüman)معتمد من قبل الحكومة التركية (في تركيا حصراً أو وفق قائمة المترجمين المعتمدين من قبل تركيا في بلدك والتي يمكن أن تحصل عليها غالباَ من السفارة أو القنصلية التركية في بلدك). تكلف ترجمة الورقة الواحدة في تركيا من قبل مترجم محلف حوالي 40 ليرة تركية.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ختم تلك الترجمة من قبل كاتب العدل في تركيا أو الذي يدعى في التركية “Noter”.&lt;/p&gt;
+
+    &lt;p&gt;إذا قمت بترجمة شهادتك في تركيا (وهو الأفضل) فغالباً سيقوم المترجم مباشرةً بتحويلك لنوتر (كاتب عدل) قريب منه وسيضع اسمه أسفل الترجمة لتذهب إليه وتحصل على ختمه وتوقيعه وفق مبلغ معين (حوالي 60 ليرة تركية تذهب للحكومة).&lt;/p&gt;
+
+    &lt;p&gt;يجب التنويه أنه قبل الذهاب للنوتر، وخلال تواجدك عند المترجم يجب التأكد من الترجمة ومقارنتها مع الأصل حرف حرف، ومقارنة جميع العلامات والتأكد من الأرقام المكتوبة كتابةً بالتركية بأنها لاتحوي أخطاء..فالأخطاء هنا تسبب مشكلة حقيقية..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الذهاب لمديرية التربية (بالتركية Milli Eğitim Müdürlüğü)في مدينتك وإعطاؤهم الشهادة الأصل (Asıl) + المترجمة وصورة (fotokopi) عن الإقامة التركية (أو الكيمليك) وأي أوراق أخرى قد يطلبوها. مع العلم أن جميعها سيُرد إليك بعد ختمه ومعادلته. تأخذ هذه العملية من يوم واحد إلى شهرين! بحسب الموظفين غالباً..لذا يجب كسب الوقت والإسراع بإتمام الأوراق فور الوصول إلى تركيا.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;خاص بالسوريين الحاصلين على الشهادة الثانوية من قبل النظام السوري: يجب الحصول على ختم المعادلة أولاً من قبل الحكومة السورية المؤقتة (Suriye Geçici Hükümeti) في غازي عنتاب وفق المعلومات في الصورة أدناه&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://mulham.github.io/assets/denklik.jpg&quot; alt=&quot;تعديل الشهادة الثانوية السورية في تركيا&quot; title=&quot;تعديل الشهادة الثانوية السورية في تركيا&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظات&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;بالنسبة لوصل تسجيل الجامعة بحسب الوارد في الصورة فهو غير مهم ويمكن التغاضي عنه.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;لا يُشترط التواجد الشخصي، فإذا كان لديك شخص في غازي عنتاب &lt;strong&gt;تثق به&lt;/strong&gt; فيمكنك إرسال الأوراق له (وتكلفة المعادلة بحسب تاريخ كتابة هذه الصفحة 30 ليرة تركية) بدلاً من السفر بنفسك. مع العلم أنهم يطلبون رقم الهوية ومعلومات مفصلة عنك عند التقدم لتعديل الشهادة لديهم، والعملية كلها تتم في نفس اليوم، يضعون أوراقك بعد ختم الشهادة الثانوية في ظرف مغلق، ويجب عدم فتحه وتسليمه مغلقاً لمديرية التربية في مدينتك.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;شهادة-اللغة-التركية&quot;&gt;شهادة اللغة التركية&lt;/h2&gt;
+
+&lt;p&gt;(بالتركية Türkçe yeterlik belgesi) ربما معظم الأجانب بشكل عام يقومون بالتقديم للجامعات التركية من بلدانهم، وعند الحصول على مقعد جامعي يَقْدِمون لتركيا للبدء بدراسة اللغة التركية، ولكن يُعتقد أن وجود شهادة اللغة التركية أثناء التقدم للجامعات يزيد من احتمالية قبولك، لذا فيجب الحصول على شهادة اللغة بأسرع وقت، وكحد أدنى يجب أن تكون في المستوى B2 والكافي للبدء بالدراسة الجامعية.&lt;/p&gt;
+
+&lt;p&gt;بحسب علمي فإن كل جامعة لديها دورات سنوية لتعليم اللغة التركية وإعطاء شهادات للناجحين بها، يمكنك الانضمام لتلك الدورة أو شراء الكتب اللازمة والدراسة بنفسك ثم التقديم فقط للامتحان.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: هناك عدد قليل جداً من الجامعات التركية لا يقبلون بشهادات لغة تركية من غيرهم، ولديهم ككل جامعة موعد امتحان لغة ويمكن التقدم إليه أيضاً..&lt;/p&gt;
+
+&lt;h3 id=&quot;مناهج-اللغة-التركية&quot;&gt;مناهج اللغة التركية&lt;/h3&gt;
+
+&lt;p&gt;لا تقم أبداً بالدراسة من عدة مناهج! اختر منهجاً واحداً (وليكن الأول مثلاً فهو شهير ومعروف جداً) وركّز على فهمه وإتمام دراسته، عند ذلك يمكنك التقدم ﻷي فحص في أي جامعة واجتيازه بعون الله بنجاح..&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;اسطنبول: وربما هو الأشهر، اسمه “Istanbul yabancılar için Türkçe” أي “اسطنبول-التركية للأجانب”، كل مستوى كباقي المناهج لديه كتابين، كتاب الطالب وكتاب الأنشطة، سعر كل كتابين (أي كل مستوى) حوالي 40 ليرة تركية.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Hitit: أيضاً شهير جداً&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lale Türkçe : ليس شهيراً كالمناهج أعلاه ولكنه ربما الأمتع في القراءة!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;هناك مناهج كثيرة أخرى ولكن سنكتفي بهذا القدر، بالنسبة للاستماع فيكون في المناهج لكل كتاب قرص مرفق يحوي الملفات الصوتية للاستماع، كما يمكن مشاهدة العديد من الفيديوهات التعليمية على الإنترنت، ولكن نصيحتي: لا تشاهد فيديوهات القواعد (إلا إذا كان هناك قاعدة لم تفهمها من الكتاب) بل هناك العديد من مجموعة حلقات مصورة من قبل الأتراك أنفسهم للأجانب، وهي ممتعة ويتم تصويرها كمسلسل عادي، ولكن للأجانب. (اكتب على اليوتيوب مثلاً Türkçe öğreniyorum) واحرص دائماً على التعلم من المصدر الصحيح، فالإنترنت مليئ بالشروحات ولكن يوجد منها ما هو خاطئ، أو يحوي كلمات غير مستخدمة، فيجب علينا دائماً معرفة المصدر الذي نأخذ منه المعلومة..&lt;/p&gt;
+
+&lt;h2 id=&quot;اليوس--السات&quot;&gt;اليوس / السات&lt;/h2&gt;
+
+&lt;p&gt;الكثير من الجامعات التركية تطلب شهادات إضافية لإمكانية التقدم لها، فالأتراك مثلاً بعد إنهائهم الثانوية يخضعون لفحص مخصص للتقدم للجامعات، والأجانب أيضاً لهم فحص خاص بهم، وهم اثنان:&lt;/p&gt;
+
+&lt;h3 id=&quot;اليوس&quot;&gt;اليوس&lt;/h3&gt;
+
+&lt;p&gt;بالتركية YÖS والتي هي اختصار لـ YABANCI UYRUKLU ÖĞRENCİ SINAVI أي فحص الطلاب الأجانب، وهو عبارة عن  رياضيات متقدمة (اشتقاق وتكامل وما إلى ذلك) بالإضافة ﻷسئلة ذكاء أو ما يسمى IQ.&lt;/p&gt;
+
+&lt;p&gt;كل جامعة تقريباً لها فحص YÖS خاص بها! وكل جامعة تقريباً تقبل بفحصها وفحص بضعة جامعات أخرى، ولكن ليس جميعها! ويوجد أيضاً جامعة اسطنبول العريقة، والتي على حسب علمي لا تقبل سوى بفحصها اليوس فقط! يمكنك الاستفسار من الجامعة شخصياً أو عبر الموقع أو سؤال من لديه الخبرة بتلك الجامعة عن الجامعات التي تقبل بشهاداتها في فحص اليوس.&lt;/p&gt;
+
+&lt;h3 id=&quot;السات&quot;&gt;السات&lt;/h3&gt;
+
+&lt;p&gt;فحص الـ SAT (اختصاراً لـ Scholastic Aptitude Test) بخلاف الفحص السابق المحلي في تركيا، فهذا الفحص عالمي، تم إجراءه ﻷول مرة عام 1926! وطبعاً حُدِّثَ أكثر من مرة..&lt;/p&gt;
+
+&lt;p&gt;وهو عبارة عن رياضيات بسيطة أسهل بكثير من اليوس، ولكن بالإضافة للإنجليزي، وفقط..&lt;/p&gt;
+
+&lt;p&gt;اختبار الإنجليزي في هذ الفحص هو الذي يجعله صعباً وهو ما يجعل الطلاب يفضلون اليوس عليه، حيث يجب أن تكون لغتك الإتجليزية متقدمة جداً لتحصل على علامة جيدة، مع العلم أن الاختبار مؤتمت (الأسئلة اختيار من متعدد - قسم الرياضيات كذلك أيضاً) ولايوجد قسم سماعي أو غيره، ولكنه يحوي على مقالات علمية وأدبية، ودراسات اجتماعية.&lt;/p&gt;
+
+&lt;p&gt;فحص السات هو فحص عالمي وبالتالي موحد، وعدد الجامعات التركية التي تقبل به أكثر بشكل ملحوظ من عدد الجامعات التي تقبل بفحص اليوس الذي يختلف من جامعة ﻷخرى كما ذكرنا..فالحاصل على شهادة السات يتقدم لعدد كبير من الجامعات، بينما في الغالب يضطر أصحاب اليوس لتقديم الفحص في أكثر من جامعة..
+ولكن تبقى جامعة اسطنبول مثلاً لا تقبل سوى بفحصها اليوس الخاص بها ولا تقبل بأي فحص سواه! (بحسب تاريخ هذه الصفحة - ربما تطرأ مستجدات فالقوانين تتغير)&lt;/p&gt;
+
+&lt;p&gt;يتم التسجيل لهذا الفحص والدفع إلكترونياً عبر &lt;a href=&quot;https://collegereadiness.collegeboard.org/sat&quot;&gt;الموقع الرسمي&lt;/a&gt;، حيث تختار المكان من أحد المراكز المعتمدة عبر الموقع وتاريخ الفحص وتحجز مقعدك.&lt;/p&gt;
+
+&lt;p&gt;للتحضير للفحص فهناك كتاب من قبل مؤسسين الاختبار ستجده على الموقع الرسمي، كما يوجد موقع خان أكاديمي المتعاون بشكل رسمي مع مؤسسي الاختبار لوضع مرجع متكامل وكافي للتحضير والتدرب على الفحص عبر الإنترنت وبشكل مجاني تماماً، وأؤكد لك أنه كافي، فقط قم بحل أكبر عدد من الأسئلة عليه يومياً، وقبل شهرين على الأقل من الفحص. الموقع سهل الحفظ ولن أضعه كرابط لقراءته وحفظه: Satpractice.org وسيتم التحويل مباشرة لقسم السات في موقع خان أكاديمي.&lt;/p&gt;
+
+&lt;p&gt;مع العلم أن هناك عدد لا بأس به من الجامعات التي لا تشترط وجود أي من شهادتي هذين الفحصين للتقدم لها، ولكن تبقى الأولوية لمن يملك إحداهما..&lt;/p&gt;
+
+&lt;h1 id=&quot;التقدّم-للجامعات&quot;&gt;التقدّم للجامعات&lt;/h1&gt;
+
+&lt;p&gt;(بالتركية üniversite başvuruları) هناك العديد من الجهات التي تتتبّع أخبار الجامعات التركية وتنشر مواعيد التقديم لها فور فتح التسجيل، أذكر منها:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.facebook.com/akadimi.com.tr/&quot;&gt;الأكاديمي للخدمات الجامعية في تركيا&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.facebook.com/togrencit/&quot;&gt;تجمع الطلبة في تركيا&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;قم بتتبع تواريخ التقدم لليوس، أو التسجيل والتحضير لاختبار السات، وتتبع مواعيد افتتاح التسجيل في الجامعات، وكذلك لا تنسى تتبع أخبار المنح! هناك المنحة التركية الرسمية وهناك منح من جهات أخرى، أعتقد أن الصفحات أعلاه يتكلمون عن المنح ويمكنك أيضاً البحث عن مصادر أخرى بنفسك.&lt;/p&gt;
+
+&lt;p&gt;أيضاً كل جامعة تقريباً لها نظام إلكتروني للتقديم مختلف عن الآخر، وبعض الأنظمة تكون غير واضحة، في هذه الحالة فقط ابحث على الإنترنت على فيديو بعنوان كيفية التسجيل في جامعة &lt;em&gt;كذا&lt;/em&gt;، وستجد فيديو مشروح خطوة بخطوة بكيفية رفع وتقديم الطلب بشكل صحيح في تلك الجامعة.&lt;/p&gt;
+
+&lt;p&gt;كما تتطلب بعض الجامعات مبلغاً مالياً غير قابل للإعادة مقابل التقديم على مفاضلتها..&lt;/p&gt;
+
+&lt;p&gt;وفي النهاية أتمنى التوفيق لكم جميعاً، ولكلِّ مجتهدٍ نصيب..&lt;/p&gt;
+
+&lt;p&gt;إذا وجدت أي نقص أو كانت لديك أي معلومة إضافية فيرجى مشاركتها ليستفد الجميع/ إما في التعليقات أو مراسلتي شخصياً، ليتم إضافتها للنص الأصلي ..والشكر لك مسبقاً :)&lt;/p&gt;</content><author><name></name></author><summary type="html">مرحباً.. أود في هذه الصفحة كتابة تفاصيل ومتطلبات التقديم للجامعات التركية للحصول على مقعد جامعي في مرحلة البكالوريوس أو ما يسمى الليسنس أو الإجازة الجامعية (بالتركية Lisans والكلية تدعى fakülte)، وأيضاً المعاهد (ön Lisans والمعهد yüksek okul). فيما يلي المتطلبات والأوراق والشهادات اللازمة للبدء في الدراسة الجامعية، ولكن قد لا تحتاج لبعضها للحصول على مقعد جامعي، وسيتم ذكر ذلك بالتفصيل.. ملاحظة: هذا الشرح للطلاب المستجدين الذين يودون بدء دراستهم الجامعية من البداية، إذا كنت طالب استكمال أي انقطعت عن دراستك الجامعية (البكالوريوس) وتود استكمالها في تركيا فستجد هنا مرجع مفيد جداً لك. مع العلم أن جميع المتطلبات أدناه تبقى مشتركة، عدا الشهادات الإضافية (اليوس أو السات). المتطلبات الشهادة الثانوية المعادلة شهادة اللغة التركية مناهج اللغة التركية اليوس / السات اليوس السات التقدّم للجامعات المتطلبات الشهادة الثانوية (بالتركية Lise Diploması)البكالوريا أو التوجيهي هي الشهادة الأساسية التي تؤهلك للتقدّم للجامعات، إذا كانت دراستك الثانوية وحصلت عليها من تركيا فلن تحتاج لمعادلة، أما إذا كانت من خارج تركيا فستحتاج لمعادلتها: المعادلة معادلة الشهادة الثانوية أو بالتركية “Denklik” يتم وفق الخطوات التالية: ترجمة الشهادة إلى اللغة التركية من قبل مترجم محلّف (بالتركية Yeminli tercüman)معتمد من قبل الحكومة التركية (في تركيا حصراً أو وفق قائمة المترجمين المعتمدين من قبل تركيا في بلدك والتي يمكن أن تحصل عليها غالباَ من السفارة أو القنصلية التركية في بلدك). تكلف ترجمة الورقة الواحدة في تركيا من قبل مترجم محلف حوالي 40 ليرة تركية. ختم تلك الترجمة من قبل كاتب العدل في تركيا أو الذي يدعى في التركية “Noter”. إذا قمت بترجمة شهادتك في تركيا (وهو الأفضل) فغالباً سيقوم المترجم مباشرةً بتحويلك لنوتر (كاتب عدل) قريب منه وسيضع اسمه أسفل الترجمة لتذهب إليه وتحصل على ختمه وتوقيعه وفق مبلغ معين (حوالي 60 ليرة تركية تذهب للحكومة). يجب التنويه أنه قبل الذهاب للنوتر، وخلال تواجدك عند المترجم يجب التأكد من الترجمة ومقارنتها مع الأصل حرف حرف، ومقارنة جميع العلامات والتأكد من الأرقام المكتوبة كتابةً بالتركية بأنها لاتحوي أخطاء..فالأخطاء هنا تسبب مشكلة حقيقية.. الذهاب لمديرية التربية (بالتركية Milli Eğitim Müdürlüğü)في مدينتك وإعطاؤهم الشهادة الأصل (Asıl) + المترجمة وصورة (fotokopi) عن الإقامة التركية (أو الكيمليك) وأي أوراق أخرى قد يطلبوها. مع العلم أن جميعها سيُرد إليك بعد ختمه ومعادلته. تأخذ هذه العملية من يوم واحد إلى شهرين! بحسب الموظفين غالباً..لذا يجب كسب الوقت والإسراع بإتمام الأوراق فور الوصول إلى تركيا. خاص بالسوريين الحاصلين على الشهادة الثانوية من قبل النظام السوري: يجب الحصول على ختم المعادلة أولاً من قبل الحكومة السورية المؤقتة (Suriye Geçici Hükümeti) في غازي عنتاب وفق المعلومات في الصورة أدناه ملاحظات: بالنسبة لوصل تسجيل الجامعة بحسب الوارد في الصورة فهو غير مهم ويمكن التغاضي عنه. لا يُشترط التواجد الشخصي، فإذا كان لديك شخص في غازي عنتاب تثق به فيمكنك إرسال الأوراق له (وتكلفة المعادلة بحسب تاريخ كتابة هذه الصفحة 30 ليرة تركية) بدلاً من السفر بنفسك. مع العلم أنهم يطلبون رقم الهوية ومعلومات مفصلة عنك عند التقدم لتعديل الشهادة لديهم، والعملية كلها تتم في نفس اليوم، يضعون أوراقك بعد ختم الشهادة الثانوية في ظرف مغلق، ويجب عدم فتحه وتسليمه مغلقاً لمديرية التربية في مدينتك. شهادة اللغة التركية (بالتركية Türkçe yeterlik belgesi) ربما معظم الأجانب بشكل عام يقومون بالتقديم للجامعات التركية من بلدانهم، وعند الحصول على مقعد جامعي يَقْدِمون لتركيا للبدء بدراسة اللغة التركية، ولكن يُعتقد أن وجود شهادة اللغة التركية أثناء التقدم للجامعات يزيد من احتمالية قبولك، لذا فيجب الحصول على شهادة اللغة بأسرع وقت، وكحد أدنى يجب أن تكون في المستوى B2 والكافي للبدء بالدراسة الجامعية. بحسب علمي فإن كل جامعة لديها دورات سنوية لتعليم اللغة التركية وإعطاء شهادات للناجحين بها، يمكنك الانضمام لتلك الدورة أو شراء الكتب اللازمة والدراسة بنفسك ثم التقديم فقط للامتحان. ملاحظة: هناك عدد قليل جداً من الجامعات التركية لا يقبلون بشهادات لغة تركية من غيرهم، ولديهم ككل جامعة موعد امتحان لغة ويمكن التقدم إليه أيضاً.. مناهج اللغة التركية لا تقم أبداً بالدراسة من عدة مناهج! اختر منهجاً واحداً (وليكن الأول مثلاً فهو شهير ومعروف جداً) وركّز على فهمه وإتمام دراسته، عند ذلك يمكنك التقدم ﻷي فحص في أي جامعة واجتيازه بعون الله بنجاح.. اسطنبول: وربما هو الأشهر، اسمه “Istanbul yabancılar için Türkçe” أي “اسطنبول-التركية للأجانب”، كل مستوى كباقي المناهج لديه كتابين، كتاب الطالب وكتاب الأنشطة، سعر كل كتابين (أي كل مستوى) حوالي 40 ليرة تركية. Hitit: أيضاً شهير جداً Lale Türkçe : ليس شهيراً كالمناهج أعلاه ولكنه ربما الأمتع في القراءة! هناك مناهج كثيرة أخرى ولكن سنكتفي بهذا القدر، بالنسبة للاستماع فيكون في المناهج لكل كتاب قرص مرفق يحوي الملفات الصوتية للاستماع، كما يمكن مشاهدة العديد من الفيديوهات التعليمية على الإنترنت، ولكن نصيحتي: لا تشاهد فيديوهات القواعد (إلا إذا كان هناك قاعدة لم تفهمها من الكتاب) بل هناك العديد من مجموعة حلقات مصورة من قبل الأتراك أنفسهم للأجانب، وهي ممتعة ويتم تصويرها كمسلسل عادي، ولكن للأجانب. (اكتب على اليوتيوب مثلاً Türkçe öğreniyorum) واحرص دائماً على التعلم من المصدر الصحيح، فالإنترنت مليئ بالشروحات ولكن يوجد منها ما هو خاطئ، أو يحوي كلمات غير مستخدمة، فيجب علينا دائماً معرفة المصدر الذي نأخذ منه المعلومة.. اليوس / السات الكثير من الجامعات التركية تطلب شهادات إضافية لإمكانية التقدم لها، فالأتراك مثلاً بعد إنهائهم الثانوية يخضعون لفحص مخصص للتقدم للجامعات، والأجانب أيضاً لهم فحص خاص بهم، وهم اثنان: اليوس بالتركية YÖS والتي هي اختصار لـ YABANCI UYRUKLU ÖĞRENCİ SINAVI أي فحص الطلاب الأجانب، وهو عبارة عن رياضيات متقدمة (اشتقاق وتكامل وما إلى ذلك) بالإضافة ﻷسئلة ذكاء أو ما يسمى IQ. كل جامعة تقريباً لها فحص YÖS خاص بها! وكل جامعة تقريباً تقبل بفحصها وفحص بضعة جامعات أخرى، ولكن ليس جميعها! ويوجد أيضاً جامعة اسطنبول العريقة، والتي على حسب علمي لا تقبل سوى بفحصها اليوس فقط! يمكنك الاستفسار من الجامعة شخصياً أو عبر الموقع أو سؤال من لديه الخبرة بتلك الجامعة عن الجامعات التي تقبل بشهاداتها في فحص اليوس. السات فحص الـ SAT (اختصاراً لـ Scholastic Aptitude Test) بخلاف الفحص السابق المحلي في تركيا، فهذا الفحص عالمي، تم إجراءه ﻷول مرة عام 1926! وطبعاً حُدِّثَ أكثر من مرة.. وهو عبارة عن رياضيات بسيطة أسهل بكثير من اليوس، ولكن بالإضافة للإنجليزي، وفقط.. اختبار الإنجليزي في هذ الفحص هو الذي يجعله صعباً وهو ما يجعل الطلاب يفضلون اليوس عليه، حيث يجب أن تكون لغتك الإتجليزية متقدمة جداً لتحصل على علامة جيدة، مع العلم أن الاختبار مؤتمت (الأسئلة اختيار من متعدد - قسم الرياضيات كذلك أيضاً) ولايوجد قسم سماعي أو غيره، ولكنه يحوي على مقالات علمية وأدبية، ودراسات اجتماعية. فحص السات هو فحص عالمي وبالتالي موحد، وعدد الجامعات التركية التي تقبل به أكثر بشكل ملحوظ من عدد الجامعات التي تقبل بفحص اليوس الذي يختلف من جامعة ﻷخرى كما ذكرنا..فالحاصل على شهادة السات يتقدم لعدد كبير من الجامعات، بينما في الغالب يضطر أصحاب اليوس لتقديم الفحص في أكثر من جامعة.. ولكن تبقى جامعة اسطنبول مثلاً لا تقبل سوى بفحصها اليوس الخاص بها ولا تقبل بأي فحص سواه! (بحسب تاريخ هذه الصفحة - ربما تطرأ مستجدات فالقوانين تتغير) يتم التسجيل لهذا الفحص والدفع إلكترونياً عبر الموقع الرسمي، حيث تختار المكان من أحد المراكز المعتمدة عبر الموقع وتاريخ الفحص وتحجز مقعدك. للتحضير للفحص فهناك كتاب من قبل مؤسسين الاختبار ستجده على الموقع الرسمي، كما يوجد موقع خان أكاديمي المتعاون بشكل رسمي مع مؤسسي الاختبار لوضع مرجع متكامل وكافي للتحضير والتدرب على الفحص عبر الإنترنت وبشكل مجاني تماماً، وأؤكد لك أنه كافي، فقط قم بحل أكبر عدد من الأسئلة عليه يومياً، وقبل شهرين على الأقل من الفحص. الموقع سهل الحفظ ولن أضعه كرابط لقراءته وحفظه: Satpractice.org وسيتم التحويل مباشرة لقسم السات في موقع خان أكاديمي. مع العلم أن هناك عدد لا بأس به من الجامعات التي لا تشترط وجود أي من شهادتي هذين الفحصين للتقدم لها، ولكن تبقى الأولوية لمن يملك إحداهما.. التقدّم للجامعات (بالتركية üniversite başvuruları) هناك العديد من الجهات التي تتتبّع أخبار الجامعات التركية وتنشر مواعيد التقديم لها فور فتح التسجيل، أذكر منها: الأكاديمي للخدمات الجامعية في تركيا تجمع الطلبة في تركيا قم بتتبع تواريخ التقدم لليوس، أو التسجيل والتحضير لاختبار السات، وتتبع مواعيد افتتاح التسجيل في الجامعات، وكذلك لا تنسى تتبع أخبار المنح! هناك المنحة التركية الرسمية وهناك منح من جهات أخرى، أعتقد أن الصفحات أعلاه يتكلمون عن المنح ويمكنك أيضاً البحث عن مصادر أخرى بنفسك. أيضاً كل جامعة تقريباً لها نظام إلكتروني للتقديم مختلف عن الآخر، وبعض الأنظمة تكون غير واضحة، في هذه الحالة فقط ابحث على الإنترنت على فيديو بعنوان كيفية التسجيل في جامعة كذا، وستجد فيديو مشروح خطوة بخطوة بكيفية رفع وتقديم الطلب بشكل صحيح في تلك الجامعة. كما تتطلب بعض الجامعات مبلغاً مالياً غير قابل للإعادة مقابل التقديم على مفاضلتها.. وفي النهاية أتمنى التوفيق لكم جميعاً، ولكلِّ مجتهدٍ نصيب.. إذا وجدت أي نقص أو كانت لديك أي معلومة إضافية فيرجى مشاركتها ليستفد الجميع/ إما في التعليقات أو مراسلتي شخصياً، ليتم إضافتها للنص الأصلي ..والشكر لك مسبقاً :)</summary></entry><entry><title type="html">بعض حِيَل الحاسوب التي ينبغي على الجميع معرفتها</title><link href="http://localhost:4000/%D8%A8%D8%B9%D8%B6-%D8%AD%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7/" rel="alternate" type="text/html" title="بعض حِيَل الحاسوب التي ينبغي على الجميع معرفتها" /><published>2017-02-25T00:00:00+03:00</published><updated>2017-02-25T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A8%D8%B9%D8%B6-%D8%AD%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7</id><content type="html" xml:base="http://localhost:4000/%D8%A8%D8%B9%D8%B6-%D8%AD%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D9%86%D8%A8%D8%BA%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D9%85%D8%B9%D8%B1%D9%81%D8%AA%D9%87%D8%A7/">&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;زر الويندوز  &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Windows&lt;/kbd&gt; لقفل الشاشة (على منصةّ ويندوز).&lt;/p&gt;
   &lt;/li&gt;
@@ -50,17 +441,7 @@
 
 &lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على &lt;a href=&quot;http://oneminutelist.com/11-computer-tricks-everyone-should-know-about&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p class=&quot;notice&quot;&gt;هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.&lt;/p&gt;
-</content>
-<summary>      زر الويندوز  Shift + Windows لقفل الشاشة (على منصةّ ويندوز).        زر الويندوز + P لتثبيث جهاز إسقاط أو شاشة ثانية (على منصّة ويندوز).        عند مشاهدة مقطع فيديو على برنامج VLC، إذا كان هناك فارق زمني بين الصوت والصورة فيمكنك الضغط على زرّي K و J لتأخير أو تسبيق الصوت عن الصورة.        في برنامج الفوتوشوب عند استعمال أداة marquee tool لرسم الأشكال الهندسية، يمكنك الضغط على زر الفراغ لسحب الشكل بدون فقدان إمكانية تحجيمه.        عند تنصيب البرامج اختر دائماً تنصيب مخصّص custom لمنع البرامج من تنصيب أدوات إضافية قد تكون مزعجة مثل شريط الأدوات في المتصفح أو غيرها.        عند كتابة عنوان موقع في متصفح الإنترنت، يمكنك الضغط على Ctrl + Enter وسيقوم تلقائياً بإضافة http://www. قبل ما كتبته وكذلك .com بعده.        عند تنصيب نظام ويندوز جديد على الحاسوب فيمكنك توفير الوقت باستخدام Ninite لتنصيب/تحديث عدة برامج مرّة واحدة (لم أجربه شخصياً - استخدامه محدود بشكل مجاني).        الضغط على Ctrl + Shift + Esc سيفتح مدير المهام مباشرةً.        عند ملئ النموذج على الإنترنت أو على برامج تحرير المستندات مثل إكسل، فالضغط على زر tab سينقل المؤشر لحقل الإدخال التالي، والضغط على Shift + Tab سينقل المؤشر لحقل الإدخال السابق.        يمكنك دائماً استعمال الاختصار Ctrl + L أو F6 ضمن متصفح الوب للانتقال لشريط العناوين مباشرةَ.        يعمل زر Caps Lock وفق مستوى الهاردوير، بحيث يمكنك تحديد إذا كان الجهاز لا يستجيب أم أن المشكلة في بعض التطبيقات التي تسبب البطئ أو أخطاء في العرض. فقط اضغط على زر Caps Lock وإذا ظهر ضوء الزر على لوحة المفاتيح فهذا يعني أن الجهاز مازال يستجيب ويعمل.  هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على المصدرهل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.</summary>
-</entry>
-<entry>
-<title>8 مواقع إنجليزية لاكتساب مهارات جديدة مجاناً</title>
-<link href="https://mulham.github.io/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7/" rel="alternate" type="text/html" title="8 مواقع إنجليزية لاكتساب مهارات جديدة مجاناً" />
-<published>2017-02-25T00:00:00+03:00</published>
-<updated>2017-02-25T00:00:00+03:00</updated>
-<id>https://mulham.github.io/8-مواقع-إنجليزية-لاكتساب-مهارات-جديدة-مجانا</id>
-<content type="html" xml:base="https://mulham.github.io/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7/">&lt;ol&gt;
+&lt;p class=&quot;notice&quot;&gt;هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.&lt;/p&gt;</content><author><name></name></author><summary type="html">زر الويندوز Shift + Windows لقفل الشاشة (على منصةّ ويندوز). زر الويندوز + P لتثبيث جهاز إسقاط أو شاشة ثانية (على منصّة ويندوز). عند مشاهدة مقطع فيديو على برنامج VLC، إذا كان هناك فارق زمني بين الصوت والصورة فيمكنك الضغط على زرّي K و J لتأخير أو تسبيق الصوت عن الصورة. في برنامج الفوتوشوب عند استعمال أداة marquee tool لرسم الأشكال الهندسية، يمكنك الضغط على زر الفراغ لسحب الشكل بدون فقدان إمكانية تحجيمه. عند تنصيب البرامج اختر دائماً تنصيب مخصّص custom لمنع البرامج من تنصيب أدوات إضافية قد تكون مزعجة مثل شريط الأدوات في المتصفح أو غيرها. عند كتابة عنوان موقع في متصفح الإنترنت، يمكنك الضغط على Ctrl + Enter وسيقوم تلقائياً بإضافة http://www. قبل ما كتبته وكذلك .com بعده. عند تنصيب نظام ويندوز جديد على الحاسوب فيمكنك توفير الوقت باستخدام Ninite لتنصيب/تحديث عدة برامج مرّة واحدة (لم أجربه شخصياً - استخدامه محدود بشكل مجاني). الضغط على Ctrl + Shift + Esc سيفتح مدير المهام مباشرةً. عند ملئ النموذج على الإنترنت أو على برامج تحرير المستندات مثل إكسل، فالضغط على زر tab سينقل المؤشر لحقل الإدخال التالي، والضغط على Shift + Tab سينقل المؤشر لحقل الإدخال السابق. يمكنك دائماً استعمال الاختصار Ctrl + L أو F6 ضمن متصفح الوب للانتقال لشريط العناوين مباشرةَ. يعمل زر Caps Lock وفق مستوى الهاردوير، بحيث يمكنك تحديد إذا كان الجهاز لا يستجيب أم أن المشكلة في بعض التطبيقات التي تسبب البطئ أو أخطاء في العرض. فقط اضغط على زر Caps Lock وإذا ظهر ضوء الزر على لوحة المفاتيح فهذا يعني أن الجهاز مازال يستجيب ويعمل. هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على المصدر هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.</summary></entry><entry><title type="html">8 مواقع إنجليزية لاكتساب مهارات جديدة مجاناً</title><link href="http://localhost:4000/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7/" rel="alternate" type="text/html" title="8 مواقع إنجليزية لاكتساب مهارات جديدة مجاناً" /><published>2017-02-25T00:00:00+03:00</published><updated>2017-02-25T00:00:00+03:00</updated><id>http://localhost:4000/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7</id><content type="html" xml:base="http://localhost:4000/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7/">&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://www.duolingo.com/&quot;&gt;Duolingo&lt;/a&gt; - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.&lt;/p&gt;
   &lt;/li&gt;
@@ -89,17 +470,7 @@
 
 &lt;p&gt;&lt;em&gt;إضافة&lt;/em&gt;: موقع حروب الكود &lt;a href=&quot;http://codewars.com/&quot;&gt;codewars&lt;/a&gt; لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;http://oneminlist.com/7-sites-where-you-can-learn-new-skills-for-free/&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</content>
-<summary>      Duolingo - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.        Codecademy - تعلّم البرمجة بسهولة        MIT Courses - مناهج مفتوحة من قبل دكاترة معهد MIT التقني        Education Portal - اختر بين عدة مناهج ويمكنك الحصول على تقدير جامعي حقيقي        Edx - مناهج مجانيّة متعدّدة في مجالات مختلفة مع شهادات مدفوعة        coursera - كما هو مذكور في موقعهم: “أفضل المناهج في العالم عبر الإنترنت وبالمجان”        Khan Academy - مناهج في مجالات مختلفة بما فيها علم الحاسوب والرياضيّات        DIY.com - اختر بين مهارات عديدة وتعلمهم.  إضافة: موقع حروب الكود codewars لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء.هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على المصدر</summary>
-</entry>
-<entry>
-<title>معظم صيغ وامتدادات الملفات في العالم</title>
-<link href="https://mulham.github.io/%D9%85%D8%B9%D8%B8%D9%85-%D8%A7%D9%85%D8%AA%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%B5%D9%8A%D8%BA-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/" rel="alternate" type="text/html" title="معظم صيغ وامتدادات الملفات في العالم" />
-<published>2017-02-22T00:00:00+03:00</published>
-<updated>2017-02-22T00:00:00+03:00</updated>
-<id>https://mulham.github.io/معظم-امتدادات-وصيغ-الملفات-في-العالم</id>
-<content type="html" xml:base="https://mulham.github.io/%D9%85%D8%B9%D8%B8%D9%85-%D8%A7%D9%85%D8%AA%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%B5%D9%8A%D8%BA-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/">&lt;p&gt;ستجد في الجداول أدناه معظم صيغ وامتدادات ملفات الحاسوب مرتبة أبجدياً مع شرح كل امتداد والبرنامج التابع له.
+&lt;p&gt;&lt;strong&gt;هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;http://oneminlist.com/7-sites-where-you-can-learn-new-skills-for-free/&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Duolingo - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة. Codecademy - تعلّم البرمجة بسهولة MIT Courses - مناهج مفتوحة من قبل دكاترة معهد MIT التقني Education Portal - اختر بين عدة مناهج ويمكنك الحصول على تقدير جامعي حقيقي Edx - مناهج مجانيّة متعدّدة في مجالات مختلفة مع شهادات مدفوعة coursera - كما هو مذكور في موقعهم: “أفضل المناهج في العالم عبر الإنترنت وبالمجان” Khan Academy - مناهج في مجالات مختلفة بما فيها علم الحاسوب والرياضيّات DIY.com - اختر بين مهارات عديدة وتعلمهم. إضافة: موقع حروب الكود codewars لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء. هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على المصدر</summary></entry><entry><title type="html">معظم صيغ وامتدادات الملفات في العالم</title><link href="http://localhost:4000/%D9%85%D8%B9%D8%B8%D9%85-%D8%A7%D9%85%D8%AA%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%B5%D9%8A%D8%BA-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/" rel="alternate" type="text/html" title="معظم صيغ وامتدادات الملفات في العالم" /><published>2017-02-22T00:00:00+03:00</published><updated>2017-02-22T00:00:00+03:00</updated><id>http://localhost:4000/%D9%85%D8%B9%D8%B8%D9%85-%D8%A7%D9%85%D8%AA%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%B5%D9%8A%D8%BA-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85</id><content type="html" xml:base="http://localhost:4000/%D9%85%D8%B9%D8%B8%D9%85-%D8%A7%D9%85%D8%AA%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%B5%D9%8A%D8%BA-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/">&lt;p&gt;ستجد في الجداول أدناه معظم صيغ وامتدادات ملفات الحاسوب مرتبة أبجدياً مع شرح كل امتداد والبرنامج التابع له.
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -129,7 +500,7 @@
   &lt;li&gt;&lt;a href=&quot;#x&quot; id=&quot;markdown-toc-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#y&quot; id=&quot;markdown-toc-y&quot;&gt;Y&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#z&quot; id=&quot;markdown-toc-z&quot;&gt;Z&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;أرقام ورموز&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أرقام-ورموز&quot; id=&quot;markdown-toc-أرقام-ورموز&quot;&gt;أرقام ورموز&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;a&quot;&gt;A&lt;/h1&gt;
@@ -2674,7 +3045,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;أرقام ورموز&lt;/h1&gt;
+&lt;h1 id=&quot;أرقام-ورموز&quot;&gt;أرقام ورموز&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
@@ -2717,18 +3088,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;هذه المقالة منقولة مع بعض التعديلات، يمكنك الاطلاع على &lt;a href=&quot;http://ace.net.nz/tech/TechFileFormat.html&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-</content>
-<summary>ستجد في الجداول أدناه معظم صيغ وامتدادات ملفات الحاسوب مرتبة أبجدياً مع شرح كل امتداد والبرنامج التابع له.</summary>
-</entry>
-<entry>
-<title>5 أشياء قد لا تعرفها عن أنواع التوضّع في CSS</title>
-<link href="https://mulham.github.io/css-positioning-types/" rel="alternate" type="text/html" title="5 أشياء قد لا تعرفها عن أنواع التوضّع في CSS" />
-<published>2016-12-05T00:00:00+03:00</published>
-<updated>2016-12-05T00:00:00+03:00</updated>
-<id>https://mulham.github.io/css-positioning-types</id>
-<content type="html" xml:base="https://mulham.github.io/css-positioning-types/">&lt;p&gt;مرحباً ..
+&lt;p&gt;&lt;strong&gt;هذه المقالة منقولة مع بعض التعديلات، يمكنك الاطلاع على &lt;a href=&quot;http://ace.net.nz/tech/TechFileFormat.html&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">ستجد في الجداول أدناه معظم صيغ وامتدادات ملفات الحاسوب مرتبة أبجدياً مع شرح كل امتداد والبرنامج التابع له.</summary></entry><entry><title type="html">5 أشياء قد لا تعرفها عن أنواع التوضّع في CSS</title><link href="http://localhost:4000/css-positioning-types/" rel="alternate" type="text/html" title="5 أشياء قد لا تعرفها عن أنواع التوضّع في CSS" /><published>2016-12-05T00:00:00+03:00</published><updated>2016-12-05T00:00:00+03:00</updated><id>http://localhost:4000/css-positioning-types</id><content type="html" xml:base="http://localhost:4000/css-positioning-types/">&lt;p&gt;مرحباً ..
 يمكن في هذه الأيام أن يقوم المطورون ببناء هيكليّة معقدة لصفحة الوب باستخدام تقنيات CSS المتعددة. لبعض هذه التقنيات تاريخ طويل (مثل floats)، بينما حاز البعض الآخر على الشعبية في السنوات الأخيرة (مثل flexbox).&lt;/p&gt;
 
 &lt;p&gt;سأقوم عزيزي القارئ في هذا المقال بإلقاء الضوء أكثر على تقنيات CSS الغير مشهورة تماماً والمتعلقة بطريقة تنسيق توضّع الحقول والمحتويات ضمن صفحة الوب.&lt;/p&gt;
@@ -2736,24 +3096,24 @@
 &lt;p&gt;ولكن قبل البدء بذلك دعنا نلقِ نظرة سريعة وضرورية على أنواع التوضّع المتاحة..&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#css&quot; id=&quot;markdown-toc-css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#position&quot; id=&quot;markdown-toc-position&quot;&gt;خيارات خاصيّة التوضّع ‘position’&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#css-1&quot; id=&quot;markdown-toc-css-1&quot;&gt;الاختلافات الرئيسية لخاصية التوضّع في CSS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot; id=&quot;markdown-toc-مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#خيارات-خاصيّة-التوضّع-position&quot; id=&quot;markdown-toc-خيارات-خاصيّة-التوضّع-position&quot;&gt;خيارات خاصيّة التوضّع ‘position’&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#الاختلافات-الرئيسية-لخاصية-التوضّع-في-css&quot; id=&quot;markdown-toc-الاختلافات-الرئيسية-لخاصية-التوضّع-في-css&quot;&gt;الاختلافات الرئيسية لخاصية التوضّع في CSS&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#absolute&quot; id=&quot;markdown-toc-absolute&quot;&gt;توضّع العناصر وفق النوع Absolute&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#float----&quot; id=&quot;markdown-toc-float----&quot;&gt;تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#block&quot; id=&quot;markdown-toc-block&quot;&gt;العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;توضّع العناصر بالبيكسل والنسب المئويّة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;في النهاية ..&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#توضّع-العناصر-وفق-النوع-absolute&quot; id=&quot;markdown-toc-توضّع-العناصر-وفق-النوع-absolute&quot;&gt;توضّع العناصر وفق النوع Absolute&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#تجاهل-خاصية-float-للعناصر-المتوضّعة-بشكل-مطلق&quot; id=&quot;markdown-toc-تجاهل-خاصية-float-للعناصر-المتوضّعة-بشكل-مطلق&quot;&gt;تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#العناصر-المضمّنة-المتوضّعة-بشكل-مطلق-تكون-كعناصر-مستوى-block&quot; id=&quot;markdown-toc-العناصر-المضمّنة-المتوضّعة-بشكل-مطلق-تكون-كعناصر-مستوى-block&quot;&gt;العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الهوامش-غير-قابلة-للطي-في-العناصر-المتوضّعة-بشكل-مطلق&quot; id=&quot;markdown-toc-الهوامش-غير-قابلة-للطي-في-العناصر-المتوضّعة-بشكل-مطلق&quot;&gt;الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#توضّع-العناصر-بالبيكسل-والنسب-المئويّة&quot; id=&quot;markdown-toc-توضّع-العناصر-بالبيكسل-والنسب-المئويّة&quot;&gt;توضّع العناصر بالبيكسل والنسب المئويّة&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#في-النهاية-&quot; id=&quot;markdown-toc-في-النهاية-&quot;&gt;في النهاية ..&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/h1&gt;
+&lt;h1 id=&quot;مراجعة-ﻷنواع-التوضّع-المتاحة-في-css&quot;&gt;مراجعة ﻷنواع التوضّع المتاحة في CSS&lt;/h1&gt;
 
 &lt;p&gt;تتيح لنا خاصية &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; في CSS تحديد نوع التوضّع لعنصر ما.&lt;/p&gt;
 
-&lt;h2 id=&quot;position&quot;&gt;خيارات خاصيّة التوضّع ‘position’&lt;/h2&gt;
+&lt;h2 id=&quot;خيارات-خاصيّة-التوضّع-position&quot;&gt;خيارات خاصيّة التوضّع ‘position’&lt;/h2&gt;
 
 &lt;p&gt;إن القيمة الافتراضية لهذه الخاصية هي &lt;strong&gt;static&lt;/strong&gt;. هذه القيمة تعني أن العنصر لم يتم تحديد موقعه، لتحديد توضعّه يجب تغيير هذه القيمة الافتراضية ﻷحد القيم التالية:&lt;/p&gt;
 
@@ -2793,17 +3153,16 @@
 
 &lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;div.relative {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;div.relative {
     position: relative;
     right: 30px;
     top: 10px;
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;عليك دائماً أن تتذكر أن العنصر الذي تكون قيمة الخاصيّة &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; له هي &lt;code class=&quot;highlighter-rouge&quot;&gt;absolute&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;fixed&lt;/code&gt; يدعى العنصر المتوضّع بشكل مطلق/ أو العنصر مطلق التوضّع. يعني أنك لا يمكن أن تستخدم خصائص الإزاحة مع هذه القيم. لاحظ أيضاً أن العنصر المتوضّع يمكن أن يستخدم خاصيّة &lt;code class=&quot;highlighter-rouge&quot;&gt;z-index&lt;/code&gt; والتي تحدد ترتيبه وأوليته في العرض (فوق الكل أم أسفل شيئ معين وما إلى ذلك، مثل ترتيب الطبقات في برامج التصميم).&lt;/p&gt;
 
-&lt;h2 id=&quot;css-1&quot;&gt;الاختلافات الرئيسية لخاصية التوضّع في CSS&lt;/h2&gt;
+&lt;h2 id=&quot;الاختلافات-الرئيسية-لخاصية-التوضّع-في-css&quot;&gt;الاختلافات الرئيسية لخاصية التوضّع في CSS&lt;/h2&gt;
 
 &lt;p&gt;دعنا الآن نناقش باختصار فروقات ثلاث رئيسية بين أنواع التوضّع المتاحة:&lt;/p&gt;
 
@@ -2831,7 +3190,7 @@
   &lt;p&gt;لا تزال وضعية التوضع sticky تعتبر تقنية تجريبية وتدعمها متصفحات محدودة فقط. يمكنك استخدام خاصية polyfill (مثل stickyfill) لإضافة هذه الميزة للمتصفحات التي لا تدعم sticky.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&quot;absolute&quot;&gt;توضّع العناصر وفق النوع Absolute&lt;/h1&gt;
+&lt;h1 id=&quot;توضّع-العناصر-وفق-النوع-absolute&quot;&gt;توضّع العناصر وفق النوع Absolute&lt;/h1&gt;
 
 &lt;p&gt;قد يعرف الكثير منكم كيف يعمل هذا النوع من التوضّع، ولكن في بعض الأحيان يكون هذا النوع غير مفهوم ومربك للمصممين الجدد.&lt;/p&gt;
 
@@ -2846,11 +3205,11 @@
 
 &lt;p&gt;أعطينا في هذا العرض الصندوق الأخضر (الدائري) نوع توضّع مبدئي absolute مع قيم إزاحة &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom:0&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;left:0&lt;/code&gt;. كما لم نحدّد نوع التوضّع للعنصر الأب (الصندوق الأحمر). إلا أنّنا قمنا بتحديد توضّع الكود الخارجي (outer wrapper) مثل العنصر ضمن صنف &lt;code class=&quot;highlighter-rouge&quot;&gt;jumbotron&lt;/code&gt;. لاحظ اختلاف توضّع الصندوق الأخضر باختلاف نوع التوضّع للعناصر الأب.&lt;/p&gt;
 
-&lt;h1 id=&quot;float----&quot;&gt;تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق&lt;/h1&gt;
+&lt;h1 id=&quot;تجاهل-خاصية-float-للعناصر-المتوضّعة-بشكل-مطلق&quot;&gt;تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق&lt;/h1&gt;
 
 &lt;p&gt;إذا كان العنصر يحوي خاصية float ليظهر إلى اليمين أو اليسار وقمنا بجعل نوعية توضّعه absolute أو fixed، فإن قيمة الخاصية float ستصبح &lt;code class=&quot;highlighter-rouge&quot;&gt;none&lt;/code&gt; (يتم تجاهلها). وفي المقابل، فإذا جعلنا نوعيّة توضّعه relative فلن تتأثر قيمة float.&lt;/p&gt;
 
-&lt;h1 id=&quot;block&quot;&gt;العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block&lt;/h1&gt;
+&lt;h1 id=&quot;العناصر-المضمّنة-المتوضّعة-بشكل-مطلق-تكون-كعناصر-مستوى-block&quot;&gt;العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block&lt;/h1&gt;
 
 &lt;p&gt;أي أن سلوكها كالعناصر التي تكون ككتلة، أي block-level .. غير واضح؟&lt;/p&gt;
 
@@ -2863,7 +3222,7 @@
 
 &lt;p&gt;وعند جعل وضع التوضّع absolute أو fixed فإن العنصر (الأحمر) يظهر ﻷن سلوكه أصبح من مستوى block-level.&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق&lt;/h1&gt;
+&lt;h1 id=&quot;الهوامش-غير-قابلة-للطي-في-العناصر-المتوضّعة-بشكل-مطلق&quot;&gt;الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق&lt;/h1&gt;
 
 &lt;p&gt;عند تلامس هامشان عموديان مع بعضهما فإنهما افتراضياً ينطويان ضمن هامش واحد تكون قيمتة محددّة بحسب قيمة الهامش الأكبر. يُعرف هذا السلوك باسم طيّ الهامش (margin collapsin).&lt;/p&gt;
 
@@ -2882,7 +3241,7 @@
 
 &lt;p&gt;حسناً .. يجب علينا وضع شيئ يمنعهم من ذلك. لنقل على سبيل المثال بعض الملء &lt;code class=&quot;highlighter-rouge&quot;&gt;padding&lt;/code&gt; أو الحدود &lt;code class=&quot;highlighter-rouge&quot;&gt;border&lt;/code&gt; (يجب علينا تطبيق ذلك على العناصر الرئيسية “الأب” أو “الابن” أي العناصر المُضمّنة). كما يوجد حل آخر وهو إضافة الصنف &lt;code class=&quot;highlighter-rouge&quot;&gt;clearfix&lt;/code&gt; (والموجود في مثالنا) للعنصر الأب.&lt;/p&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;توضّع العناصر بالبيكسل والنسب المئويّة&lt;/h1&gt;
+&lt;h1 id=&quot;توضّع-العناصر-بالبيكسل-والنسب-المئويّة&quot;&gt;توضّع العناصر بالبيكسل والنسب المئويّة&lt;/h1&gt;
 
 &lt;p&gt;هل استخدمت سابقاً النسب المئويّة بدلاً من البيكسل لتحديد إزاحة عنصر ما؟ إذا كان جوابك نعم فربما لاحظت أن قيم الإزاحة المحسوبة تختلف بحسب وحدات CSS التي تختارها (بيكسل أو وحدة مئوية).&lt;/p&gt;
 
@@ -2907,22 +3266,11 @@
 
 &lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: كما تعلم، فإن خاصية &lt;code class=&quot;highlighter-rouge&quot;&gt;transform&lt;/code&gt; (بالإضافة لخصائص &lt;code class=&quot;highlighter-rouge&quot;&gt;translate&lt;/code&gt; المختلفة) تتيح لنا أيضاً تغيرر موضع العنصر. ولكن يجب الانتباه إلى أنه عند اختيارنا للنسب المئويّة كوحدة CSS، فإن العنصر سيتوضّع وفقاً لأبعاده وليس وفقاً لأبعاد العنصر الأب (خلافاً للإزاحات).&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;في النهاية ..&lt;/h1&gt;
+&lt;h1 id=&quot;في-النهاية-&quot;&gt;في النهاية ..&lt;/h1&gt;
 
 &lt;p&gt;أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :)&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;https://scotch.io/bar-talk/5-things-you-might-not-know-about-the-css-positioning-types&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-</content>
-<summary>مرحباً ..يمكن في هذه الأيام أن يقوم المطورون ببناء هيكليّة معقدة لصفحة الوب باستخدام تقنيات CSS المتعددة. لبعض هذه التقنيات تاريخ طويل (مثل floats)، بينما حاز البعض الآخر على الشعبية في السنوات الأخيرة (مثل flexbox).سأقوم عزيزي القارئ في هذا المقال بإلقاء الضوء أكثر على تقنيات CSS الغير مشهورة تماماً والمتعلقة بطريقة تنسيق توضّع الحقول والمحتويات ضمن صفحة الوب.ولكن قبل البدء بذلك دعنا نلقِ نظرة سريعة وضرورية على أنواع التوضّع المتاحة..  مراجعة ﻷنواع التوضّع المتاحة في CSS          خيارات خاصيّة التوضّع ‘position’      الاختلافات الرئيسية لخاصية التوضّع في CSS        توضّع العناصر وفق النوع Absolute  تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق  العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block  الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق  توضّع العناصر بالبيكسل والنسب المئويّة  في النهاية ..مراجعة ﻷنواع التوضّع المتاحة في CSSتتيح لنا خاصية position في CSS تحديد نوع التوضّع لعنصر ما.خيارات خاصيّة التوضّع ‘position’إن القيمة الافتراضية لهذه الخاصية هي static. هذه القيمة تعني أن العنصر لم يتم تحديد موقعه، لتحديد توضعّه يجب تغيير هذه القيمة الافتراضية ﻷحد القيم التالية:      relative        absolute        fixed        sticky  يمكننا بعد ذلك استخدام خصائص الإزاحة لتحديد الموضع المطلوب للعنصر، وهذه الخصائص هي :      top        right        bottom        left  مع العلم أن القيمة المبدئيّة لهذه الخصائص هي autoمثال:div.relative {    position: relative;    right: 30px;    top: 10px;}عليك دائماً أن تتذكر أن العنصر الذي تكون قيمة الخاصيّة position له هي absolute أو fixed يدعى العنصر المتوضّع بشكل مطلق/ أو العنصر مطلق التوضّع. يعني أنك لا يمكن أن تستخدم خصائص الإزاحة مع هذه القيم. لاحظ أيضاً أن العنصر المتوضّع يمكن أن يستخدم خاصيّة z-index والتي تحدد ترتيبه وأوليته في العرض (فوق الكل أم أسفل شيئ معين وما إلى ذلك، مثل ترتيب الطبقات في برامج التصميم).الاختلافات الرئيسية لخاصية التوضّع في CSSدعنا الآن نناقش باختصار فروقات ثلاث رئيسية بين أنواع التوضّع المتاحة:      العنصر الذي تكون قيمة توضّعه absolute يكون محذوف بشكل كامل من العرض الطبيعي وتحتل مكانه العناصر المجاورة.        العنصر الذي تكون قيمة توضّعه relative أو sticky يحجز مكاناً خاصاً له ولا يمكن للعناصر المجاورة أن تحتل أي جزء من المساحة المجحوزة. ولكن إذا تم تطبيق أحد خصائص الإزاحة فإن هذه الإزاحة لا تحجز مكاناً خاصاً بحيث يتم تجاهلها من قبل باقي العناصر وقد يسبب ذلك تداخل العناصر فوق بعضها!        العنصر الذي تكون قيمة توضّعه fixed يتوضع دائماً بشكل ملائم للعرض (فيما عدا العناصر التي تحمل الخاصيّة transform والتي تدعمها جميع الإصدارات الأخيرة لمتصفحات الوب).        العنصر الذي تكون قيمة توضّعه sticky يتوضّع بشكل ملائم بالنسبة للعناصر المجاورة التي تحوي مربع التمرير (مثل خاصية overflow: auto). وإذا لم يتواجد مثل هذا العنصر فيتوضع بشكل ملائم للعرض.  أعرف أنك لم تفهم شيئأ .. وهذا ما أتوقعه أصلاً .. دعنا نجرب بشكل حي، فبالمثال والتجربة يزول الإشكال:See the Pen Overview of the available positioning types by Mulham (@mulham94) on CodePen.  لا تزال وضعية التوضع sticky تعتبر تقنية تجريبية وتدعمها متصفحات محدودة فقط. يمكنك استخدام خاصية polyfill (مثل stickyfill) لإضافة هذه الميزة للمتصفحات التي لا تدعم sticky.توضّع العناصر وفق النوع Absoluteقد يعرف الكثير منكم كيف يعمل هذا النوع من التوضّع، ولكن في بعض الأحيان يكون هذا النوع غير مفهوم ومربك للمصممين الجدد.لهذا السبب قررت الحديث عنه في قائمة المفاهيم الغير معروفة كثيراً وإرفاق إطار للتجريب أيضاً.وكما ذكرت سابقاً، العنصر الذي يكون نوع توضّعه absolute يكون عرضه ملائم لأقرب عنصر يحتويه. وطبعاً هذا في حالة أن العنصر الأب (الحاوي لعنصرنا من نوع absolute) لا يساوي نوع توضعه static. وبهذا، إن لم يكن لدى العنصر أي عنصر أب له قيمة توضع غير الافتراضية (static)، فسيتوضع هذا العنصر بشكل ملائم للعرض ككل.لفهم ذلك أكثر دعنا نجرب هذا السلوك في العرض أدناه:See the Pen Little-known thing #1 - Positioning elements with absolute positioning type by Mulham (@mulham94) on CodePen.أعطينا في هذا العرض الصندوق الأخضر (الدائري) نوع توضّع مبدئي absolute مع قيم إزاحة bottom:0 و left:0. كما لم نحدّد نوع التوضّع للعنصر الأب (الصندوق الأحمر). إلا أنّنا قمنا بتحديد توضّع الكود الخارجي (outer wrapper) مثل العنصر ضمن صنف jumbotron. لاحظ اختلاف توضّع الصندوق الأخضر باختلاف نوع التوضّع للعناصر الأب.تجاهل خاصية float للعناصر المتوضّعة بشكل مطلقإذا كان العنصر يحوي خاصية float ليظهر إلى اليمين أو اليسار وقمنا بجعل نوعية توضّعه absolute أو fixed، فإن قيمة الخاصية float ستصبح none (يتم تجاهلها). وفي المقابل، فإذا جعلنا نوعيّة توضّعه relative فلن تتأثر قيمة float.العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى blockأي أن سلوكها كالعناصر التي تكون ككتلة، أي block-level .. غير واضح؟العناصر المضمّنة التي يكون نوع توضّعها absolute أو fixed يكون لها خواص العناصر ذات المستوى block-level أي المستوى الأعلى وفي حال تعارض التوضّع فستوضع فوق العناصر ذات المستوى الأدنى. لإيضاح ذلك لدينا الجدول في الأسفل يلخِّص أنواع العناصر التي تُحوَّل إلى العناصر ذات مستوى block-level:See the Pen Little-known thing #3 - The inline elements which are absolutely positioned behave as block-level elements by Mulham (@mulham94) on CodePen.في هذه الحالة، قمنا بتعريف عنصرين مختلفين، الأوّل (الصندوق الأخضر) هو عنصر من متسوى block-level (مثل div) والثاني (الصندوق الأحمر) عنصر مضمّن (مثل span). وبالتالي لاحظ في البداية أن الصندوق الأخضر فقط هو الذي يظهر، بينما الأحمر غير ظاهر فعلياً ﻷننا أعطيناه عرض width وارتفاع height يمكن أن يُطبّقوا فقط على العناصر ذو المستوى block-level و inline-block، بالإضافة إلى أنه عنصر فارغ (لا يحوي عناصر ضمنه مثل مقطع نصي).وعند جعل وضع التوضّع absolute أو fixed فإن العنصر (الأحمر) يظهر ﻷن سلوكه أصبح من مستوى block-level.الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلقعند تلامس هامشان عموديان مع بعضهما فإنهما افتراضياً ينطويان ضمن هامش واحد تكون قيمتة محددّة بحسب قيمة الهامش الأكبر. يُعرف هذا السلوك باسم طيّ الهامش (margin collapsin).وكما يحدث للهوامش في العناصر العائمة (ذات الخاصية float) فإن هوامش العناصر المتوضعة بشكل مطلق absolute لا تنطوي مع أي هامش آخر.لنعاين المثال التالي:See the Pen Little-known thing #4 - The margins don’t collapse on absolutely positioned elements by Mulham (@mulham94) on CodePen.يجوي العنصر في هذا المثال هامش يساوي 20px، وإن هامشه العلوي top ينطوي (يتَّحد) مع الهامش العلوي top للعنصر الأب والذي قيمته أيضاً 20px. وكما ترى، فعند اختيار نوع التوضع كمطلق absolute فإن الهامش top لا ينطوي مع الهوامش المناسبة للعناصر التي يقع ضمنها.طبعاً واضح أن هذا السلوك هو المطلوب فنحن غالباً لا نريد للهوامش أن تتحد مع بعض.سؤال: كيف يمكنني منع الهوامش من الاتحاد؟حسناً .. يجب علينا وضع شيئ يمنعهم من ذلك. لنقل على سبيل المثال بعض الملء padding أو الحدود border (يجب علينا تطبيق ذلك على العناصر الرئيسية “الأب” أو “الابن” أي العناصر المُضمّنة). كما يوجد حل آخر وهو إضافة الصنف clearfix (والموجود في مثالنا) للعنصر الأب.توضّع العناصر بالبيكسل والنسب المئويّةهل استخدمت سابقاً النسب المئويّة بدلاً من البيكسل لتحديد إزاحة عنصر ما؟ إذا كان جوابك نعم فربما لاحظت أن قيم الإزاحة المحسوبة تختلف بحسب وحدات CSS التي تختارها (بيكسل أو وحدة مئوية).غير واضح؟ دعنا نرى أولاً ما يقوله الموقع الرسمي عن الإزاحات المعطاة بالنسب المئويّة:  الإزاحة هي نسبة مئويّة لعرض الصندوق المحتوي للعنصر (left أو right) أو ارتفاعه (top أو bottom). بالنسبة للعناصر ذات التوضّع sticky فإن الإزاحة فيها هي النسبة المئويّة لتدفق عرض الجذر root (left أو right) أو ارتفاعه (top أو bottom).مسموح بالقيم السلبيّة كذلك.أي أننا عندما نحدّد قيم الإزاحة بالنسب المئويّة، فإن مكان العنصر يتحدّد اعتماداً على العرض يميناً ويساراً (للإزاحات left و right) والارتفاع (للإزاحات top و bottom) للعنصر الأب.يظهر المثال التالي هذا الاختلاف:See the Pen Little-known thing #5 - The difference between positioning elements with pixels and percentages by Mulham (@mulham94) on CodePen.استخدمنا في هذا المثال البيكسل والنسب المئوية لتحريك العنصر. كن متأكداً بأنه عند تحديد الإزاحة بالبيكسل فإن العنصر يتحرك للمكان الذي نتوقعه.. جيد إلى هنا!الآن عندما نختار السنب المئوية الوحدة CSS المطلوبة للإزاحة، فإن مكان العنصر سيعتمد على أبعاد العنصر الأب. في الأسفل رسم يبيّن حساب الموقع الجديد (بالنسب المئويّة):ملاحظة: كما تعلم، فإن خاصية transform (بالإضافة لخصائص translate المختلفة) تتيح لنا أيضاً تغيرر موضع العنصر. ولكن يجب الانتباه إلى أنه عند اختيارنا للنسب المئويّة كوحدة CSS، فإن العنصر سيتوضّع وفقاً لأبعاده وليس وفقاً لأبعاد العنصر الأب (خلافاً للإزاحات).في النهاية ..أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :)هذه المقالة مترجمة وبتصرّف، يمكنك الاطلاع على المصدر</summary>
-</entry>
-<entry>
-<title>كيفية الإجابة على السؤال (لماذا تستحق المنحة) عند التقدم للمنح الدراسية</title>
-<link href="https://mulham.github.io/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9/" rel="alternate" type="text/html" title="كيفية الإجابة على السؤال (لماذا تستحق المنحة) عند التقدم للمنح الدراسية" />
-<published>2016-11-26T00:00:00+03:00</published>
-<updated>2016-11-26T00:00:00+03:00</updated>
-<id>https://mulham.github.io/لماذا-تستحق-المنحة</id>
-<content type="html" xml:base="https://mulham.github.io/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9/">&lt;p&gt;&lt;strong&gt;بعض المنح تطلب منك أن تصف في رسالة “لماذا تستحق برأيك هذه المنحة” .. مالذي يجب أن تكتبه في هذه الرسالة (رسالة الدوافع)؟&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;https://scotch.io/bar-talk/5-things-you-might-not-know-about-the-css-positioning-types&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">مرحباً .. يمكن في هذه الأيام أن يقوم المطورون ببناء هيكليّة معقدة لصفحة الوب باستخدام تقنيات CSS المتعددة. لبعض هذه التقنيات تاريخ طويل (مثل floats)، بينما حاز البعض الآخر على الشعبية في السنوات الأخيرة (مثل flexbox). سأقوم عزيزي القارئ في هذا المقال بإلقاء الضوء أكثر على تقنيات CSS الغير مشهورة تماماً والمتعلقة بطريقة تنسيق توضّع الحقول والمحتويات ضمن صفحة الوب. ولكن قبل البدء بذلك دعنا نلقِ نظرة سريعة وضرورية على أنواع التوضّع المتاحة.. مراجعة ﻷنواع التوضّع المتاحة في CSS خيارات خاصيّة التوضّع ‘position’ الاختلافات الرئيسية لخاصية التوضّع في CSS توضّع العناصر وفق النوع Absolute تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق توضّع العناصر بالبيكسل والنسب المئويّة في النهاية .. مراجعة ﻷنواع التوضّع المتاحة في CSS تتيح لنا خاصية position في CSS تحديد نوع التوضّع لعنصر ما. خيارات خاصيّة التوضّع ‘position’ إن القيمة الافتراضية لهذه الخاصية هي static. هذه القيمة تعني أن العنصر لم يتم تحديد موقعه، لتحديد توضعّه يجب تغيير هذه القيمة الافتراضية ﻷحد القيم التالية: relative absolute fixed sticky يمكننا بعد ذلك استخدام خصائص الإزاحة لتحديد الموضع المطلوب للعنصر، وهذه الخصائص هي : top right bottom left مع العلم أن القيمة المبدئيّة لهذه الخصائص هي auto مثال: div.relative { position: relative; right: 30px; top: 10px; } عليك دائماً أن تتذكر أن العنصر الذي تكون قيمة الخاصيّة position له هي absolute أو fixed يدعى العنصر المتوضّع بشكل مطلق/ أو العنصر مطلق التوضّع. يعني أنك لا يمكن أن تستخدم خصائص الإزاحة مع هذه القيم. لاحظ أيضاً أن العنصر المتوضّع يمكن أن يستخدم خاصيّة z-index والتي تحدد ترتيبه وأوليته في العرض (فوق الكل أم أسفل شيئ معين وما إلى ذلك، مثل ترتيب الطبقات في برامج التصميم). الاختلافات الرئيسية لخاصية التوضّع في CSS دعنا الآن نناقش باختصار فروقات ثلاث رئيسية بين أنواع التوضّع المتاحة: العنصر الذي تكون قيمة توضّعه absolute يكون محذوف بشكل كامل من العرض الطبيعي وتحتل مكانه العناصر المجاورة. العنصر الذي تكون قيمة توضّعه relative أو sticky يحجز مكاناً خاصاً له ولا يمكن للعناصر المجاورة أن تحتل أي جزء من المساحة المجحوزة. ولكن إذا تم تطبيق أحد خصائص الإزاحة فإن هذه الإزاحة لا تحجز مكاناً خاصاً بحيث يتم تجاهلها من قبل باقي العناصر وقد يسبب ذلك تداخل العناصر فوق بعضها! العنصر الذي تكون قيمة توضّعه fixed يتوضع دائماً بشكل ملائم للعرض (فيما عدا العناصر التي تحمل الخاصيّة transform والتي تدعمها جميع الإصدارات الأخيرة لمتصفحات الوب). العنصر الذي تكون قيمة توضّعه sticky يتوضّع بشكل ملائم بالنسبة للعناصر المجاورة التي تحوي مربع التمرير (مثل خاصية overflow: auto). وإذا لم يتواجد مثل هذا العنصر فيتوضع بشكل ملائم للعرض. أعرف أنك لم تفهم شيئأ .. وهذا ما أتوقعه أصلاً .. دعنا نجرب بشكل حي، فبالمثال والتجربة يزول الإشكال: See the Pen Overview of the available positioning types by Mulham (@mulham94) on CodePen. لا تزال وضعية التوضع sticky تعتبر تقنية تجريبية وتدعمها متصفحات محدودة فقط. يمكنك استخدام خاصية polyfill (مثل stickyfill) لإضافة هذه الميزة للمتصفحات التي لا تدعم sticky. توضّع العناصر وفق النوع Absolute قد يعرف الكثير منكم كيف يعمل هذا النوع من التوضّع، ولكن في بعض الأحيان يكون هذا النوع غير مفهوم ومربك للمصممين الجدد. لهذا السبب قررت الحديث عنه في قائمة المفاهيم الغير معروفة كثيراً وإرفاق إطار للتجريب أيضاً. وكما ذكرت سابقاً، العنصر الذي يكون نوع توضّعه absolute يكون عرضه ملائم لأقرب عنصر يحتويه. وطبعاً هذا في حالة أن العنصر الأب (الحاوي لعنصرنا من نوع absolute) لا يساوي نوع توضعه static. وبهذا، إن لم يكن لدى العنصر أي عنصر أب له قيمة توضع غير الافتراضية (static)، فسيتوضع هذا العنصر بشكل ملائم للعرض ككل. لفهم ذلك أكثر دعنا نجرب هذا السلوك في العرض أدناه: See the Pen Little-known thing #1 - Positioning elements with absolute positioning type by Mulham (@mulham94) on CodePen. أعطينا في هذا العرض الصندوق الأخضر (الدائري) نوع توضّع مبدئي absolute مع قيم إزاحة bottom:0 و left:0. كما لم نحدّد نوع التوضّع للعنصر الأب (الصندوق الأحمر). إلا أنّنا قمنا بتحديد توضّع الكود الخارجي (outer wrapper) مثل العنصر ضمن صنف jumbotron. لاحظ اختلاف توضّع الصندوق الأخضر باختلاف نوع التوضّع للعناصر الأب. تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق إذا كان العنصر يحوي خاصية float ليظهر إلى اليمين أو اليسار وقمنا بجعل نوعية توضّعه absolute أو fixed، فإن قيمة الخاصية float ستصبح none (يتم تجاهلها). وفي المقابل، فإذا جعلنا نوعيّة توضّعه relative فلن تتأثر قيمة float. العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block أي أن سلوكها كالعناصر التي تكون ككتلة، أي block-level .. غير واضح؟ العناصر المضمّنة التي يكون نوع توضّعها absolute أو fixed يكون لها خواص العناصر ذات المستوى block-level أي المستوى الأعلى وفي حال تعارض التوضّع فستوضع فوق العناصر ذات المستوى الأدنى. لإيضاح ذلك لدينا الجدول في الأسفل يلخِّص أنواع العناصر التي تُحوَّل إلى العناصر ذات مستوى block-level: See the Pen Little-known thing #3 - The inline elements which are absolutely positioned behave as block-level elements by Mulham (@mulham94) on CodePen. في هذه الحالة، قمنا بتعريف عنصرين مختلفين، الأوّل (الصندوق الأخضر) هو عنصر من متسوى block-level (مثل div) والثاني (الصندوق الأحمر) عنصر مضمّن (مثل span). وبالتالي لاحظ في البداية أن الصندوق الأخضر فقط هو الذي يظهر، بينما الأحمر غير ظاهر فعلياً ﻷننا أعطيناه عرض width وارتفاع height يمكن أن يُطبّقوا فقط على العناصر ذو المستوى block-level و inline-block، بالإضافة إلى أنه عنصر فارغ (لا يحوي عناصر ضمنه مثل مقطع نصي). وعند جعل وضع التوضّع absolute أو fixed فإن العنصر (الأحمر) يظهر ﻷن سلوكه أصبح من مستوى block-level. الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق عند تلامس هامشان عموديان مع بعضهما فإنهما افتراضياً ينطويان ضمن هامش واحد تكون قيمتة محددّة بحسب قيمة الهامش الأكبر. يُعرف هذا السلوك باسم طيّ الهامش (margin collapsin). وكما يحدث للهوامش في العناصر العائمة (ذات الخاصية float) فإن هوامش العناصر المتوضعة بشكل مطلق absolute لا تنطوي مع أي هامش آخر. لنعاين المثال التالي: See the Pen Little-known thing #4 - The margins don’t collapse on absolutely positioned elements by Mulham (@mulham94) on CodePen. يجوي العنصر في هذا المثال هامش يساوي 20px، وإن هامشه العلوي top ينطوي (يتَّحد) مع الهامش العلوي top للعنصر الأب والذي قيمته أيضاً 20px. وكما ترى، فعند اختيار نوع التوضع كمطلق absolute فإن الهامش top لا ينطوي مع الهوامش المناسبة للعناصر التي يقع ضمنها. طبعاً واضح أن هذا السلوك هو المطلوب فنحن غالباً لا نريد للهوامش أن تتحد مع بعض. سؤال: كيف يمكنني منع الهوامش من الاتحاد؟ حسناً .. يجب علينا وضع شيئ يمنعهم من ذلك. لنقل على سبيل المثال بعض الملء padding أو الحدود border (يجب علينا تطبيق ذلك على العناصر الرئيسية “الأب” أو “الابن” أي العناصر المُضمّنة). كما يوجد حل آخر وهو إضافة الصنف clearfix (والموجود في مثالنا) للعنصر الأب. توضّع العناصر بالبيكسل والنسب المئويّة هل استخدمت سابقاً النسب المئويّة بدلاً من البيكسل لتحديد إزاحة عنصر ما؟ إذا كان جوابك نعم فربما لاحظت أن قيم الإزاحة المحسوبة تختلف بحسب وحدات CSS التي تختارها (بيكسل أو وحدة مئوية). غير واضح؟ دعنا نرى أولاً ما يقوله الموقع الرسمي عن الإزاحات المعطاة بالنسب المئويّة: الإزاحة هي نسبة مئويّة لعرض الصندوق المحتوي للعنصر (left أو right) أو ارتفاعه (top أو bottom). بالنسبة للعناصر ذات التوضّع sticky فإن الإزاحة فيها هي النسبة المئويّة لتدفق عرض الجذر root (left أو right) أو ارتفاعه (top أو bottom).مسموح بالقيم السلبيّة كذلك. أي أننا عندما نحدّد قيم الإزاحة بالنسب المئويّة، فإن مكان العنصر يتحدّد اعتماداً على العرض يميناً ويساراً (للإزاحات left و right) والارتفاع (للإزاحات top و bottom) للعنصر الأب. يظهر المثال التالي هذا الاختلاف: See the Pen Little-known thing #5 - The difference between positioning elements with pixels and percentages by Mulham (@mulham94) on CodePen. استخدمنا في هذا المثال البيكسل والنسب المئوية لتحريك العنصر. كن متأكداً بأنه عند تحديد الإزاحة بالبيكسل فإن العنصر يتحرك للمكان الذي نتوقعه.. جيد إلى هنا! الآن عندما نختار السنب المئوية الوحدة CSS المطلوبة للإزاحة، فإن مكان العنصر سيعتمد على أبعاد العنصر الأب. في الأسفل رسم يبيّن حساب الموقع الجديد (بالنسب المئويّة): ملاحظة: كما تعلم، فإن خاصية transform (بالإضافة لخصائص translate المختلفة) تتيح لنا أيضاً تغيرر موضع العنصر. ولكن يجب الانتباه إلى أنه عند اختيارنا للنسب المئويّة كوحدة CSS، فإن العنصر سيتوضّع وفقاً لأبعاده وليس وفقاً لأبعاد العنصر الأب (خلافاً للإزاحات). في النهاية .. أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :) هذه المقالة مترجمة وبتصرّف، يمكنك الاطلاع على المصدر</summary></entry><entry><title type="html">كيفية الإجابة على السؤال (لماذا تستحق المنحة) عند التقدم للمنح الدراسية</title><link href="http://localhost:4000/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9/" rel="alternate" type="text/html" title="كيفية الإجابة على السؤال (لماذا تستحق المنحة) عند التقدم للمنح الدراسية" /><published>2016-11-26T00:00:00+03:00</published><updated>2016-11-26T00:00:00+03:00</updated><id>http://localhost:4000/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9</id><content type="html" xml:base="http://localhost:4000/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9/">&lt;p&gt;&lt;strong&gt;بعض المنح تطلب منك أن تصف في رسالة “لماذا تستحق برأيك هذه المنحة” .. مالذي يجب أن تكتبه في هذه الرسالة (رسالة الدوافع)؟&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;إليك الجواب (حسب رأي بعض الأشخاص):&lt;/em&gt;&lt;/p&gt;
 
@@ -2938,35 +3286,24 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;خلاصة: في رسالة الدوافع قم بذكر: الإنجازات السابقة والاهتمامات الحاليّة ومقدار الحماس والرؤية الإيجابيّة للمستقبل.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</content>
-<summary>بعض المنح تطلب منك أن تصف في رسالة “لماذا تستحق برأيك هذه المنحة” .. مالذي يجب أن تكتبه في هذه الرسالة (رسالة الدوافع)؟إليك الجواب (حسب رأي بعض الأشخاص):يجب أن تكون اللجنة مقتنعة بأنك ستنفق المال بشكل جيّد. وبالتالي من الأفضل أن تذكر بأنك ستنفق المال لكي تصبح أفضل في مجال الدراسة المحدّد (عبر شراء المحاضرات والكتب، حضور المؤتمرات، الدفع مقابل بعض المناهج والشهادات، نشر المقالات والأبحاث في المجلات..). ولكن انتبه، لا تحاول أن تكون مثالياً! فهذا سينعكس سلباً بالطبع.يجب أيضاً أن تُقنع اللجنة أنّك ستبلي بلاءً حسناً في دراستك، ومنه أن تذكر نتائج دراساتك السابقة والإنجازات أو التقديرات التي حصلت عليها.كما يجب أن تُقنع اللجنة أنك تحب مجال دراستك ومتحمس له وستواصل العمل بجد. إذا استفدت من دراستك سابقاً في العمل فاذكر ذلك. واذكر أيضاً أهدافك على المدى القصير والبعيد، التعليمية منها والمهنية.كما يمكن أن تذكر نقاط القوة في شخصيتك وتعطي أدلة عليها (مثال: القدرة على القيادة، حيث أنك قمت بإدارة وقيادة فريق من الطلاب في مشروع س والذي كان ناجحاً).أي أنّ رسالة الدوافع motivation letter بشكل عام يجب أن تكون إجابة على السؤال “لماذا تستحق المنحة الدراسية؟”.  خلاصة: في رسالة الدوافع قم بذكر: الإنجازات السابقة والاهتمامات الحاليّة ومقدار الحماس والرؤية الإيجابيّة للمستقبل.</summary>
-</entry>
-<entry>
-<title>تطوير تطبيقات أندرويد</title>
-<link href="https://mulham.github.io/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF/" rel="alternate" type="text/html" title="تطوير تطبيقات أندرويد" />
-<published>2016-07-01T00:00:00+03:00</published>
-<updated>2016-07-01T00:00:00+03:00</updated>
-<id>https://mulham.github.io/تطوير-تطبيقات-أندرويد</id>
-<content type="html" xml:base="https://mulham.github.io/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF/">&lt;h1 id=&quot;section&quot;&gt;بناء تطبيقك الأوّل&lt;/h1&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">بعض المنح تطلب منك أن تصف في رسالة “لماذا تستحق برأيك هذه المنحة” .. مالذي يجب أن تكتبه في هذه الرسالة (رسالة الدوافع)؟ إليك الجواب (حسب رأي بعض الأشخاص): يجب أن تكون اللجنة مقتنعة بأنك ستنفق المال بشكل جيّد. وبالتالي من الأفضل أن تذكر بأنك ستنفق المال لكي تصبح أفضل في مجال الدراسة المحدّد (عبر شراء المحاضرات والكتب، حضور المؤتمرات، الدفع مقابل بعض المناهج والشهادات، نشر المقالات والأبحاث في المجلات..). ولكن انتبه، لا تحاول أن تكون مثالياً! فهذا سينعكس سلباً بالطبع. يجب أيضاً أن تُقنع اللجنة أنّك ستبلي بلاءً حسناً في دراستك، ومنه أن تذكر نتائج دراساتك السابقة والإنجازات أو التقديرات التي حصلت عليها. كما يجب أن تُقنع اللجنة أنك تحب مجال دراستك ومتحمس له وستواصل العمل بجد. إذا استفدت من دراستك سابقاً في العمل فاذكر ذلك. واذكر أيضاً أهدافك على المدى القصير والبعيد، التعليمية منها والمهنية. كما يمكن أن تذكر نقاط القوة في شخصيتك وتعطي أدلة عليها (مثال: القدرة على القيادة، حيث أنك قمت بإدارة وقيادة فريق من الطلاب في مشروع س والذي كان ناجحاً). أي أنّ رسالة الدوافع motivation letter بشكل عام يجب أن تكون إجابة على السؤال “لماذا تستحق المنحة الدراسية؟”. خلاصة: في رسالة الدوافع قم بذكر: الإنجازات السابقة والاهتمامات الحاليّة ومقدار الحماس والرؤية الإيجابيّة للمستقبل.</summary></entry><entry><title type="html">تطوير تطبيقات أندرويد</title><link href="http://localhost:4000/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF/" rel="alternate" type="text/html" title="تطوير تطبيقات أندرويد" /><published>2016-07-01T00:00:00+03:00</published><updated>2016-07-01T00:00:00+03:00</updated><id>http://localhost:4000/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF</id><content type="html" xml:base="http://localhost:4000/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF/">&lt;h1 id=&quot;بناء-تطبيقك-الأوّل&quot;&gt;بناء تطبيقك الأوّل&lt;/h1&gt;
 
 &lt;p&gt;أهلاً بك في سلسلة دروس “تطوير تطبيقات أندرويد”!&lt;/p&gt;
 
 &lt;p&gt;ستُعلّمك هذه الدروس كيفية بناء تطبيقك الأوّل لنظام أندرويد، كما ستتعلّم كيفية إنشاء مشروع على أندرويد وكيفية تشغيل التطبيق بوضعيّة التنقيح (debugging)، كما ستتعلّّم بعض الأساسيّات لتصميم تطبيق أندرويد بما في ذلك كيفيّة بناء واجهة مستخدم بسيطة والتعامل مع إدخالات المستخدم. &lt;strong&gt;كل ذلك بدون أيّة معرفة مسبقة!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;بناء تطبيقك الأوّل&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;تجهيز بيئة العمل&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-تطبيقك-الأوّل&quot; id=&quot;markdown-toc-بناء-تطبيقك-الأوّل&quot;&gt;بناء تطبيقك الأوّل&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#تجهيز-بيئة-العمل&quot; id=&quot;markdown-toc-تجهيز-بيئة-العمل&quot;&gt;تجهيز بيئة العمل&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;إنشاء مشروع أندرويد&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;إنشاء مشروع باستخدام استديو أندرويد&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#إنشاء-مشروع-أندرويد&quot; id=&quot;markdown-toc-إنشاء-مشروع-أندرويد&quot;&gt;إنشاء مشروع أندرويد&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#إنشاء-مشروع-باستخدام-استديو-أندرويد&quot; id=&quot;markdown-toc-إنشاء-مشروع-باستخدام-استديو-أندرويد&quot;&gt;إنشاء مشروع باستخدام استديو أندرويد&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;تجهيز بيئة العمل&lt;/h2&gt;
+&lt;h2 id=&quot;تجهيز-بيئة-العمل&quot;&gt;تجهيز بيئة العمل&lt;/h2&gt;
 
 &lt;p&gt;قبل البدء، عليك بتنصيب البرمجيّات التي سنعمل عليها سويةً، حيث ستحتاج إلى:&lt;/p&gt;
 
@@ -2985,7 +3322,7 @@
 
 &lt;p&gt;قم بتنصيب المتطلّبات أعلاه ثم عد إلى هنا كي نبدأ سويةً.&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;إنشاء مشروع أندرويد&lt;/h1&gt;
+&lt;h1 id=&quot;إنشاء-مشروع-أندرويد&quot;&gt;إنشاء مشروع أندرويد&lt;/h1&gt;
 
 &lt;p&gt;يحتوي مشروع أندرويد على جميع الملفّات التي تُشكّل الكود المصدريّ لتطبيق أندرويد.&lt;/p&gt;
 
@@ -2995,7 +3332,7 @@
   &lt;p&gt;معلومة إضافيّة: SDK هي اختصار لـ Software Development Kit أو ما معناه “عِدّة تطوير البرمجيّات” وهي فعليّاً مجموعة من أدوات التطوير التي تتيح إنشاء تطبيقات لبرمجيّات أو أنظمة مُحدّدة.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;section-3&quot;&gt;إنشاء مشروع باستخدام استديو أندرويد&lt;/h2&gt;
+&lt;h2 id=&quot;إنشاء-مشروع-باستخدام-استديو-أندرويد&quot;&gt;إنشاء مشروع باستخدام استديو أندرويد&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -3126,672 +3463,4 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;notice&quot;&gt;تم إيقاف ترجمة باقي الدروس نظراً لوجود بدائل في المواقع العربية، يمكنك مع هذا &lt;a href=&quot;/about/request&quot;&gt;طلب استكمال الترجمة&lt;/a&gt; إن أحببت.&lt;/p&gt;
-
-</content>
-<summary>بناء تطبيقك الأوّلأهلاً بك في سلسلة دروس “تطوير تطبيقات أندرويد”!ستُعلّمك هذه الدروس كيفية بناء تطبيقك الأوّل لنظام أندرويد، كما ستتعلّم كيفية إنشاء مشروع على أندرويد وكيفية تشغيل التطبيق بوضعيّة التنقيح (debugging)، كما ستتعلّّم بعض الأساسيّات لتصميم تطبيق أندرويد بما في ذلك كيفيّة بناء واجهة مستخدم بسيطة والتعامل مع إدخالات المستخدم. كل ذلك بدون أيّة معرفة مسبقة!  بناء تطبيقك الأوّل          تجهيز بيئة العمل        إنشاء مشروع أندرويد          إنشاء مشروع باستخدام استديو أندرويد      تجهيز بيئة العملقبل البدء، عليك بتنصيب البرمجيّات التي سنعمل عليها سويةً، حيث ستحتاج إلى:      تنصيب استديو أندرويد (Android studio)        تنصيب آخر برمجيّات وأدوات SDK باستخدام مدير SDK    ملاحظة: على الرغم من أن معظم هذه الدروس تشرح التعليمات باستخدام استديو أندرويد، إلا أن جزء منها يعتمد على استخدام أدوات SDK عبر موجّه الأوامر.قم بتنصيب المتطلّبات أعلاه ثم عد إلى هنا كي نبدأ سويةً.إنشاء مشروع أندرويديحتوي مشروع أندرويد على جميع الملفّات التي تُشكّل الكود المصدريّ لتطبيق أندرويد.سيوضِّح لك هذا الدرس عمليّة إنشاء مشروع جديد وذلك إمّا باستخدام استديو أندرويد أو باستخدام أدوات SDk من خلال موجِّه الأوامر. هيّا نبدأ  معلومة إضافيّة: SDK هي اختصار لـ Software Development Kit أو ما معناه “عِدّة تطوير البرمجيّات” وهي فعليّاً مجموعة من أدوات التطوير التي تتيح إنشاء تطبيقات لبرمجيّات أو أنظمة مُحدّدة.إنشاء مشروع باستخدام استديو أندرويد      قم بإنشاء مشروع جديد على استديو أندرويد:                  إذا لم يكن لديك مشروع مفتوح مسبقاً، فاضغط على New Project في شاشة الترحيب (الشاشة الرئيسيّة للبرنامج).                    إذا كان هناك مشروع مفتوح مسبقاً، فاختر New project من القائمة File في الأعلى.              الآن يجب أن تكون ظهرت لديك نافذة Create New Project        املأ الحقول الظاهرة على الشاشة ثم اضغط Next    يُستحسن لسهولة استخدام هذه الدروس إدخال القيم التالية:                  في حقل Application Name وهو اسم التطبيق الذي تريد بناؤه، أدخل حالياً My First APP                    Company domain:  تُزوّد القيمة المُدخلة في هذا الحقل مُعرّفاً يتم إرفاقه باسم الحزمة، سيتذكّر استديو أندرويد هذا المعرّف لكل مشروع جديد ستُنشئه.                    Package name: هنا يُدخَل الاسم الكامل المُؤهِّل للمشروع (باتباع نفس قواعد تسمية الحِزَم في لغة برمجة جافا). يجب أن يكون اسم حزمتك فريد بين جميع الحزم المُنصَّبة على نظام أندرويد. يمكنك تعديل هذه القيمة (Edit) بشكل مستقل عن قِيَم الحقلين السابقين.                    قواعد التسمية: طبعاً أن تكون أحرف إنجليزيّة، وصغيرة، يُسمح بالأرقام والشرطة العلويّة - والسفليّة _ ولكن يجب ألّا يبدأ الاسم برقم. يجب على الشركات عكس اسم موقعهم المُستضيف للحزمة، فيجب مثلاً كتابة: com.example.mypackage لحزمة اسمها mypackge مُنشأة على موقع example.com وفي حال بدء اسم الحزمة برقم فيوضع شرطة سفليّة قبله، مثلاً موقع الحزمة على الإنترنت سيكون: 123name.example.com وبالتالي نُسمّي الحزمة: com.example._123name              Project location: هنا يُوضع مسار المجلّد الذي يحوي ملفات المشروع في حاسوبك.            قم بالتأشير على المربع بجانب Phone and Tablets أسفل حقل Select the form factors your app will run on (أين أنك تريد لتطبيقك أن يعمل على الجوّالات والأجهزة اللوحيّة).        بالنسبة لـ Minimum SDK، اختر API 8: Android 2.2 (Froyo)    إنّ أقل إصدار SDK مطلوب هو أقدم إصدار أندرويد يدعمه تطبيقك. والمُوضّح باستخدام مستوى API. إذا أردت لتطبيقك أن يدعم أكبر عدد ممكن من الأجهزة، فقم باختيار أقدم إصدار متاح والذي يسمح لتطبيقك بتقديم المزايا الأساسيّة (فهناك مزايا لا تعمل إلا على الإصدارات الحديثة من أندرويد). إذا كان هناك مزايا في تطبيقك لا تعتبرها أساسيّة ولا تعمل إلا على الإصدارات الحديثة من أندرويد، فمازال بإمكانك وضع إصدارات أقدم في هذا الحقل مع تفعيل المزايا المتقدمة فقط عندما يعمل التطبيق ضمن إصدارات حديثة.          مستوى API: (بالإنجليزيّة API Level) وهو عدد صحيح يُعرّف تغييرات بنية API المُقدَّمة بواسطة إصدار أندرويد (بدأَ أولاً بـ 1 وازداد مع كل إصدار جديد لأندرويد). يمكنك الاطلّاع على جدول أسفل هذه الفقرة والموضِّح لإصدارات أندرويد ومستوى API الموافق لكل منها.            أبقِِ على جميع الخيارات الأخرى (TV,Wear, and Glass) بدون تأشير، واضغط Next        أسفل حقل Add an activity to &amp;lt;template&amp;gt;**, اختر **Blank Activity واضغط Next        أسفل حقل Customize th Activity، قم بتغيير Activity Name إلى MyActivity. وسترى أن حقل Layout Name قد تغيّر إلى activity_my وحقل Title إلى MyActivity، كذلك Menu Resourcr Name يجب أن يصبح menu_my.        اضغط على زر Finish لإنشاء المشروع.          النشاط (Activity) هو أحد الملامح المُميِّزة لنظام أندرويد. تتيح الأنشطة للمستخدم الوصول لتطبيقك، وقد يكون هناك العديد من الأنشطة. سيحوي التطبيق غالباً على نشاط رئيسي وهو عند تشغيله من قبل المستخدم، ونشاط آخر وهو على سبيل المثال عندما يختار المستخدم محتوى ما لعرضه. ونشاطات أخرى تتضمن قيام المستخدم بالتنقل بين نوافذ وخيارات التطبيق أو إعطائه مهام لتنفيذها وما إلى ذلك.        إنّ مشروع أندرويد الخاص بك الآن هو عبارة عن تطبيق بِدائيّ بسيط يحوي بعض الملفات الافتراضيّة. دعنا نُخصّص دقيقتين من وقتنا لإلقاء نظرة على أهم هذه الملفات (سأضع المسار الكامل للملف وذلك انطلاقاً من المجلد الأساسيّ للمشروع)    app/src/main/res/layout/activity_my.xml    هذا الملف التنسيقيّ بلاحقة xml هو للنشاط الذي أضفتَه عند إنشاءك للمشروع على استديو أندرويد. وباتّباع مراحل إنشاء المشروع الجديد، فإنّ استديو أندرويد يعرض هذا الملف مع كلٍّ من العرض النصّي وعرض واجهة المستخدم على الشاشة. يحوي هذا الملف بعض عناصر الواجهة الافتراضيّة المأخوذة من مكتبة التصميم في استديو أندرويد، من هذه العناصر الشريط الرئيسيّ للتطبيق وزر تفاعليّ، كما تتضمّن ملف تنسيقيّ منفصل يحوي المحتوى الأساسيّ.    app/src/main/res/layout/content_my.xml    ملف التنسيق هذا بلاحقة xml يكمن في الملف السابق (يتم استدعاؤه منه)، ويحوي بعض الإعدادات وعنصر للعرض النصّي والذي يعرض رسالة “Hello world!” أي بما معناه “أهلاً بكم” (وهي الرسالة الافتراضية بالإنجليزيّة لأي مشروع أو موقع وب جديد).    app/src/main/java/com.mycompany.myfirstapp/MyActivity.java    يَظهر في استديو أندرويد شريط لهذا الملف عندما تنتهي عمليّة إنشاء المشروع الجديد. عند تحديدك للملف سترى تعريف الصِنف للنشاط الذي أنشأتَه. عند بناءك وتشغيلك للتطبيق، فإن صنف Activity يبدأ النشاط ويُحمِّل ملف التنسيق الذي يعرض رسالة “Hello World!”.    app/src/main/AndroidManifest.xml    يُحدّد هذا الملف الملامح الأساسيّة للتطبيق ويُعرّف كلّ مكّوناتها. ستقوم بالرجوع لهذا الملف عند استكمالك لهذه الدروس لإضافة مكوّنات إضافيّة لتطبيقك.    app/build.gradle    يستخدم استديو أندرويد هذا الملف (Gradle) لتفسير وبناء تطبيقك (حيث تحتاج تطبيقات الحاسوب لتفسيرها (compile) للغة الآلة قبل تصديرها لتكون جاهزة للتشغيل). هناك ملف بنفس الاسم build.gradle لكل منظومة من مشروعك، بالإضافة إلى ملف build.gradle للمشروع بأكمله. ستكون _أنت_ عادةً مهتم بملف build.gradle الخاص بالمنظومة، وفي هذه الحالة نتكلّم عن الملف الخاص بمنظومة التطبيق. فيما يلي الإعدادات التي توضع بها اعتماديّات بناء تطبيقك، بما في ذلك إعدادات التكوين الإفتراضيّة defaultConfig:                  compiledSdkVersion وهو إصدار المنصّة التي ستبني تطبيقك لها بحيث يدعم العمل عليها. تكون هذه محدّدة افتراضيّاً على آخر إصدار أندرويد متاح بالنسبة لأدوات SDK التي تستخدمها. (يجب أن يكون أندرويد 4.1 أو أحدث، إذا لم تكن هذه الإصدارات متاحة فعليك تنصيب أحدهم باستخدام مديرSDK “SDK Manager”) ما زال بإمكانك بناء تطبيقك بحيث يدعم إصدارات أقدم، ولكن ضبط هذا الخيار على الإصدار الأخير يتيح لك تفعيل المزايا الجديدة وتحسين تطبيقك لأفضل تجربة ممكنة للمستخدم على الأجهزة الأحدث.                    applicationId وهو اسم الحزمة الكامل لتطبيقك والذي حدّدتَه خلال إنشاء المشروع الجديد.                    minSdkVersion وهو أدنى إصدار SDK قمتَ بتحديده خلال إنشاءك للمشروع الجديد، وهو أقدم إصدار من أندرويد يدعمه تطبيقك.                    targetSdkVersion يحدد أحدث إصدار أندرويد والذي قمتَ بتجربة تطبيقك عليه. يتوجّب عليك تجربة تطبيقك على الإصدارات الجديدة لأندرويد التي يتم إطلاقها، وتحديث هذه القيمة لتلائم آخر مستوى API وبالتالي الاستفادة من مزايا الإصدارات الجديدة.              لاحظ أيضاً الملفات الفرعية ضمن /res والتي تحوي موارد تطبيقك:    drawable-&amp;lt;density&amp;gt;/    يحوي هذا المسار المجلدات لموارد الرسوميات (drawable resources) _عدا أيقونات التشغيل_ والمصممة لأبعاد (densities) مختلفة.    layout/    يحوي هذا المجلّد الملفّات التي تُعرّف واجهة المستخدم لتطبيقك، مثل ملف activity_my.xml والمذكور أعلاه، والذي يصف التنسيق الأساسيّ لصنف MyActivity    menu/    مجلد الملفّات التي تُعرّف عناصر قائمة التطبيق.    mipmap/    توجد أيقونات المُشغّل في هذا المجلد بدلأ من المجلد drawable/ . حيث يحوي هذا المجلد صورة ic_launcher.png والتي تظهر عند تشغيل التطبيق الإفتراضيّ (الغير مُخصَّص)    vlaues/    مجلد لملفات xml الأخرى والتي تحوي مجموعة من الموارد، مثل تعريفات الألوان والعبارات.  تم إيقاف ترجمة باقي الدروس نظراً لوجود بدائل في المواقع العربية، يمكنك مع هذا طلب استكمال الترجمة إن أحببت.</summary>
-</entry>
-<entry>
-<title>أساسيات التعامل مع Git</title>
-<link href="https://mulham.github.io/git-basics/" rel="alternate" type="text/html" title="أساسيات التعامل مع Git" />
-<published>2016-06-25T00:00:00+03:00</published>
-<updated>2016-06-25T00:00:00+03:00</updated>
-<id>https://mulham.github.io/git-basics</id>
-<content type="html" xml:base="https://mulham.github.io/git-basics/">&lt;p&gt;&lt;img src=&quot;/assets/git.png&quot; alt=&quot;جِت-git&quot; /&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;ماهي جِت؟&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#git&quot; id=&quot;markdown-toc-git&quot;&gt;تنصيب Git&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;إنشاء حزمة جديدة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;الوصول لحزمة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;طريقة العمل&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-4&quot; id=&quot;markdown-toc-section-4&quot;&gt;إضافة وتعديل&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-5&quot; id=&quot;markdown-toc-section-5&quot;&gt;إرسال التغييرات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-6&quot; id=&quot;markdown-toc-section-6&quot;&gt;عرض الإختلاف&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-7&quot; id=&quot;markdown-toc-section-7&quot;&gt;أوامر أخرى&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-8&quot; id=&quot;markdown-toc-section-8&quot;&gt;معرفة الحالة&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-9&quot; id=&quot;markdown-toc-section-9&quot;&gt;الأفرع&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-10&quot; id=&quot;markdown-toc-section-10&quot;&gt;روابط خارجية&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-11&quot; id=&quot;markdown-toc-section-11&quot;&gt;اقرأ أيضاً&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;ماهي جِت؟&lt;/h1&gt;
-
-&lt;p&gt;تسمح جِت لمجموعة من الأشخاص بالعمل سويةً، وباستخدام نفس الملفات، والتعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها.&lt;/p&gt;
-
-&lt;p&gt;لنفترض أن هناك شركة مؤلفة من صاحب الشركة وعدة موظفين، جميعهم يعملون على تطوير برنامج ما، وذلك عبر موقع Github وهو موقع مبني على git، يبدأ الموظف بتحميل ملفات البرنامج المعمول عليه من الموقع (من السيرفر على الإنترنت) ويصبح لديه نسخة محلية للملفات (على جهازه الخاص)، والموظفين الآخرين كل شخص منهم لديه نسخة محلية، وصاحب الشركة كذلك.&lt;/p&gt;
-
-&lt;p&gt;الآن، إذا قام أحد الموظفين بإجراء تغييرات على أحد الملفات، فسيقوم برفعها على الملفات الأساسية على الإنترنت، ولكنه يجب أن يتأكد أولاً إذا قام أحد غيره بالتعديل وإن كان هناك تعديلات تتعارض مع تعديلاته، كل هذا يتم خطوة خطوة من خلال الأوامر، وهذا ما سنتعلمه هنا، ورغم وجود واجهة للمستخدمين للتعامل مع جِت، إلا أن استخدام الأوامر يبقى هو الأساس (وهو ليس بالأمر الصعب ..)&lt;/p&gt;
-
-&lt;h1 id=&quot;git&quot;&gt;تنصيب Git&lt;/h1&gt;
-
-&lt;p&gt;لتنصيب git على أنظمة لينكس ، ويندوز ، ماك .. راجع الشرح &lt;a href=&quot;/github/intro#git&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;إنشاء حزمة جديدة&lt;/h1&gt;
-
-&lt;p&gt;حزمة يعني مجموعة ملفات نعمل عليها، كما في المثال السابق فالحزمة هي ملفات البرنامج التي تعمل الشركة على تطويره.&lt;/p&gt;
-
-&lt;p&gt;إنشاء حزمة يعني في مثالنا أنك أنت صاحب العمل والآن تقوم بوضع حجر الأساس!&lt;/p&gt;
-
-&lt;p&gt;قم بإنشاء مجلد جديد على جهازك واذهب لمسار المجلد في التيرمينال من خلال الأمر :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	cd folder/path
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;طبعا مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;folder/path&lt;/code&gt; بمسار المجلد.&lt;/p&gt;
-
-&lt;p&gt;الآن ، ولإنشاء حزمة جديدة نفذ الأمر :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git init
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;هل هذا صعب؟&lt;/p&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;الوصول لحزمة&lt;/h1&gt;
-
-&lt;p&gt;هنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git clone /path/to/repository 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;هذا هو الشكل العام للأمر، استبدل username باسمك على جِتهب والـ /path/to/repository بمسار الحزمة على جتهب، مثلاً لتحميل حزمة هذا الموقع (والذي هو موجود كحزمة على جتهب) سوف أكتب:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/mulham/mulham.github.io&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;section-3&quot;&gt;طريقة العمل&lt;/h1&gt;
-
-&lt;p&gt;(طريقة العمل هذه للفهم النظري، وليست مهمة للتطبيق العملي)&lt;/p&gt;
-
-&lt;p&gt;إن حزمتك المحلية مؤلفة من ثلاث “شجرات” مختزنة من قبل git. الأولى هي المجلد الذي نعمل ضمنه ، والذي يحوي على ملفات الحزمة. و الثانية هي ملف ال index والذي نتعامل معه كمسرح العمل. وأخيراً الرأس Head والذي يشير لآخر تعديل قمت به.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/trees.png&quot; alt=&quot;شرح مبدأ عمل git&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;section-4&quot;&gt;إضافة وتعديل&lt;/h1&gt;
-
-&lt;p&gt;إذاً بعد إنشاء حزمة على جهازك الخاص أو تحميلها من الإنترنت لجهازك، ستقوم الآن بالتعديل على ملفات الحزمة ثم رفع هذه التعديلات للحزمة الأساسية على الإنترنت.&lt;/p&gt;
-
-&lt;p&gt;لإضافة التغييرات التي قمت بها إلى خشبة المسرح، استخدم الأمر:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add &amp;lt;filename&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;filename&amp;gt;&lt;/code&gt; باسم الملف أو المسار ثم اسم الملف، إذا أردت إضافة كل شيئ، ضع نجمة &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; بدل اسم الملف:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add * 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;أو إذا أردت إضافة جميع الملفات ذات الصيغة المحددة، أي مثلاً التي تكون بلاحقة html، فاكتب:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add *.html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;على العموم للسهولة يمكن دائماً استخدام الأمر الثاني أي إضافة كل شيئ.&lt;/p&gt;
-
-&lt;p&gt;الآن لتنفيذ هذه التعديلات (أو لنقل للسهولة لإعطاء رسالة لتوضيح سبب أو محتوى التعديل - الخطوة إجبارية) استخدم الأمر:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;Commit message&quot; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;commit message&lt;/code&gt; بين قوسين، أي مثلاً &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;modify&quot;&lt;/code&gt; هنا أعطيت رسالة بأنني قمت بتعديل ما.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;لأفضل استخدام، اجعل هذه الرسالة تعبر بوضوح عن التغييرات التي أجريتها، فالرسالة ستظهر على الإنترنت، وعند مراجعتك لأرشيف التغييرات لاحقاً ستُبين لك تسلسل العمليات وتوضح لك الأمور إن كانت مكتوبة بشكل جيد.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;كل هذا مازلنا نعمل محلياً، بقيت لدينا الخطوة الأخيرة أو الأمر الأخير وهو رفع التعديلات للحزمة الموجودة على الإنترنت.&lt;/p&gt;
-
-&lt;h1 id=&quot;section-5&quot;&gt;إرسال التغييرات&lt;/h1&gt;
-
-&lt;p&gt;لإرسال التغييرات التي أجريناها إلى الحزمة البعيدة على الإنترنت، نفذ الأمر :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;حيث &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; هو اسم مجلد الحزمة و &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; اسم الفرع (branch) الذي تريد إرسال التغييرات إليه.&lt;/p&gt;
-
-&lt;p&gt;الجزء &lt;code class=&quot;highlighter-rouge&quot;&gt;-u&lt;/code&gt; من الأمر هو لحفظ الفرع الموجود على الجهاز المحلي (origin) والموجود على الإنترنت (master)، أي أنك ستكتب هذا الأمر مرة واحدة فقط، أما لاحقاً فستكتب لرفع تعديلاتك التالي فقط:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git push
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;(سيطلب منك في كل عملية رفع اسم المستخدم وكلمة المرور الخاصين بك على موقع جِتهَب)&lt;/p&gt;
-
-&lt;h1 id=&quot;section-6&quot;&gt;عرض الإختلاف&lt;/h1&gt;
-
-&lt;p&gt;لقد قلت لك في السطر الأول من هذا الشرح أن جِت تسمح بـ “&lt;em&gt;التعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها&lt;/em&gt;”&lt;/p&gt;
-
-&lt;p&gt;إذا لقد قمت أنت بالتعديل على أحد الملفات، يجب أولاً (وإن كنت جزء من فريق يعمل على تطوير الحزمة ولست لوحدك) بالاتصال بالحزمة الأساسية الموجودة على الإنترنت ومعرفة إن كان أحدهم قام بالتعديل على نفس الملف وإن كان هناك تعارضات، كل هذا بالأمر:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git pull
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;في حال وجود أي تعارضات فستُعرض لك حينها ملف بملف، سطر بسطر، ويمكنك عندها دمج أو حل هذه التعارضات، ثم تقوم بعدها برفع تغييراتك باستخدام &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;section-7&quot;&gt;أوامر أخرى&lt;/h1&gt;
-
-&lt;h2 id=&quot;section-8&quot;&gt;معرفة الحالة&lt;/h2&gt;
-
-&lt;p&gt;يمكنك دائماً معرفة حالة الحزمة، أي عرض التعديلات (إن وُجدت) التي قمت بها والغير موجودة على خشبة المسرح، أي التي لم تضيفها بعد لتُرفع للإنترنت&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git status
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;هذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.&lt;/p&gt;
-
-&lt;h2 id=&quot;section-9&quot;&gt;الأفرع&lt;/h2&gt;
-
-&lt;p&gt;هناك العديد من الأوامر المفيدة، ومنها مثلاً لاستعادة تغييرات لزمن محدد أو حالة محددة. ولكن ربما أكثرهم إفادة هي الأفرع. لنقل مثلاً اننا كفريق نعمل على تطوير برنامج للترجمة، وقد خطرت لك فكرة رائعة للبرنامج ولكنها تحتاج لإجراء تغييرات أساسية على البرنامج، أي على الكود الموجود حالياً، وقد تتخوف من عمل ذلك، ولكن في الحقيقة لا داعي للقلق، يمكنك إنشاء فرع جديد من الحزمة!&lt;/p&gt;
-
-&lt;p&gt;أولاً يمكنك تفقد الأفرع الموجودة حالياً على جهازك&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git branch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;وسيكون الناتج مثلاً:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	master*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;أي أنه يوجد حالياً فرع واحد فقط يحوي الحزمة نفسها. وعلامة النجمة تعني بأنه الفرع الذي تعمل به حالياً، الآن لإنشاء فرع جديد:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git branch perfectdict
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;وبالتالي تكون قد أنشأت نسخة لجميع الملفات الموجودة في الفرع الأصلي master. لتنتقل الآن لفرع الجديد الذي أنشأته&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git checkout perfectdict
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;يمكنك إعادة إظهار الأفرع الموجودة حالياً&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&amp;gt; git branch
-	master
-	perfectdict*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;كما تلاحظ فقد عرض لنا فرعين، والنجمة موضوعة على الفرع الجديد أي أنك الآن ضمنه.&lt;/p&gt;
-
-&lt;p&gt;الآن يمكنك إجراء التغييرات التي تريد وكيفما تريد دون قلق فأنت الآن ضمن فرع مستقل ولن تُحدث الفوضى في الحزمة أو الفرع الأساسي.&lt;/p&gt;
-
-&lt;p&gt;بعد انتهاءك من العمل على الفرع الجديد، يمكنك الانتقال للفرع الأصلي ودمج التغييرات&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&amp;gt; git checkout master
-	&amp;gt; git branch
-	master*
-	perfectdict
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;هنا انتقلنا للفرع الأساسي master وتأكدنا بوجود النجمة بجواره أي أننا فعلاً ضمنه الآن. لنقم بالدمج&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git merge perfectdict
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;وبهذا تم دمج الكود في الفرع الذي أنشأته &lt;code class=&quot;highlighter-rouge&quot;&gt;perfectdict&lt;/code&gt; مع الكود الأصلي في الحزمة &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. كل هذا مازال محلياً، لرفع التغييرات الآن إلى الإنترنت:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&amp;gt; git pull
-	&amp;gt; git add *
-	&amp;gt; git commit -m &quot;added new cool feature!&quot;
-	&amp;gt; git push
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;section-10&quot;&gt;روابط خارجية&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;لقد قام الأخ وليد بعمل &lt;a href=&quot;https://www.arabicgit.com/git-cheat-sheet/&quot;&gt;ورقة&lt;/a&gt; واحدة تتضمن أهم أوامر جِت للرجوع إليها عند الحاجة&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;كما قام موقع codeschool (التجاري) بعمل &lt;a href=&quot;https://try.github.io/levels/1/challenges/1&quot;&gt;شرح&lt;/a&gt; مُبسط مجاني لتعلم أوامر جِت (بالإنجليزي).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-11&quot;&gt;اقرأ أيضاً&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/github/intro&quot;&gt;سلسلة دروس جِت هَب&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/markdown&quot;&gt;أساسيات لغة ماركداون&lt;/a&gt;، حيث أن موقع جتهب يعتمد على هذه اللغة التنسيقية في نموذج التعليقات وغيره، كما أنك ستحتاج هذه اللغة التنسيقية البسيطة إذا أردت استضافة موقعك على جِتهَب.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</content>
-<summary>  ماهي جِت؟  تنصيب Git  إنشاء حزمة جديدة  الوصول لحزمة  طريقة العمل  إضافة وتعديل  إرسال التغييرات  عرض الإختلاف  أوامر أخرى          معرفة الحالة      الأفرع        روابط خارجية  اقرأ أيضاًماهي جِت؟تسمح جِت لمجموعة من الأشخاص بالعمل سويةً، وباستخدام نفس الملفات، والتعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها.لنفترض أن هناك شركة مؤلفة من صاحب الشركة وعدة موظفين، جميعهم يعملون على تطوير برنامج ما، وذلك عبر موقع Github وهو موقع مبني على git، يبدأ الموظف بتحميل ملفات البرنامج المعمول عليه من الموقع (من السيرفر على الإنترنت) ويصبح لديه نسخة محلية للملفات (على جهازه الخاص)، والموظفين الآخرين كل شخص منهم لديه نسخة محلية، وصاحب الشركة كذلك.الآن، إذا قام أحد الموظفين بإجراء تغييرات على أحد الملفات، فسيقوم برفعها على الملفات الأساسية على الإنترنت، ولكنه يجب أن يتأكد أولاً إذا قام أحد غيره بالتعديل وإن كان هناك تعديلات تتعارض مع تعديلاته، كل هذا يتم خطوة خطوة من خلال الأوامر، وهذا ما سنتعلمه هنا، ورغم وجود واجهة للمستخدمين للتعامل مع جِت، إلا أن استخدام الأوامر يبقى هو الأساس (وهو ليس بالأمر الصعب ..)تنصيب Gitلتنصيب git على أنظمة لينكس ، ويندوز ، ماك .. راجع الشرح هنا.إنشاء حزمة جديدةحزمة يعني مجموعة ملفات نعمل عليها، كما في المثال السابق فالحزمة هي ملفات البرنامج التي تعمل الشركة على تطويره.إنشاء حزمة يعني في مثالنا أنك أنت صاحب العمل والآن تقوم بوضع حجر الأساس!قم بإنشاء مجلد جديد على جهازك واذهب لمسار المجلد في التيرمينال من خلال الأمر :	cd folder/pathطبعا مع استبدال folder/path بمسار المجلد.الآن ، ولإنشاء حزمة جديدة نفذ الأمر :	git initهل هذا صعب؟الوصول لحزمةهنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:	git clone /path/to/repository هذا هو الشكل العام للأمر، استبدل username باسمك على جِتهب والـ /path/to/repository بمسار الحزمة على جتهب، مثلاً لتحميل حزمة هذا الموقع (والذي هو موجود كحزمة على جتهب) سوف أكتب:git clone https://github.com/mulham/mulham.github.ioطريقة العمل(طريقة العمل هذه للفهم النظري، وليست مهمة للتطبيق العملي)إن حزمتك المحلية مؤلفة من ثلاث “شجرات” مختزنة من قبل git. الأولى هي المجلد الذي نعمل ضمنه ، والذي يحوي على ملفات الحزمة. و الثانية هي ملف ال index والذي نتعامل معه كمسرح العمل. وأخيراً الرأس Head والذي يشير لآخر تعديل قمت به.إضافة وتعديلإذاً بعد إنشاء حزمة على جهازك الخاص أو تحميلها من الإنترنت لجهازك، ستقوم الآن بالتعديل على ملفات الحزمة ثم رفع هذه التعديلات للحزمة الأساسية على الإنترنت.لإضافة التغييرات التي قمت بها إلى خشبة المسرح، استخدم الأمر:	git add &amp;lt;filename&amp;gt;مع استبدال &amp;lt;filename&amp;gt; باسم الملف أو المسار ثم اسم الملف، إذا أردت إضافة كل شيئ، ضع نجمة * بدل اسم الملف:	git add * أو إذا أردت إضافة جميع الملفات ذات الصيغة المحددة، أي مثلاً التي تكون بلاحقة html، فاكتب:	git add *.htmlعلى العموم للسهولة يمكن دائماً استخدام الأمر الثاني أي إضافة كل شيئ.الآن لتنفيذ هذه التعديلات (أو لنقل للسهولة لإعطاء رسالة لتوضيح سبب أو محتوى التعديل - الخطوة إجبارية) استخدم الأمر:git commit -m &quot;Commit message&quot; مع استبدال commit message بين قوسين، أي مثلاً git commit -m &quot;modify&quot; هنا أعطيت رسالة بأنني قمت بتعديل ما.  لأفضل استخدام، اجعل هذه الرسالة تعبر بوضوح عن التغييرات التي أجريتها، فالرسالة ستظهر على الإنترنت، وعند مراجعتك لأرشيف التغييرات لاحقاً ستُبين لك تسلسل العمليات وتوضح لك الأمور إن كانت مكتوبة بشكل جيد.كل هذا مازلنا نعمل محلياً، بقيت لدينا الخطوة الأخيرة أو الأمر الأخير وهو رفع التعديلات للحزمة الموجودة على الإنترنت.إرسال التغييراتلإرسال التغييرات التي أجريناها إلى الحزمة البعيدة على الإنترنت، نفذ الأمر :git push -u origin masterحيث origin هو اسم مجلد الحزمة و master اسم الفرع (branch) الذي تريد إرسال التغييرات إليه.الجزء -u من الأمر هو لحفظ الفرع الموجود على الجهاز المحلي (origin) والموجود على الإنترنت (master)، أي أنك ستكتب هذا الأمر مرة واحدة فقط، أما لاحقاً فستكتب لرفع تعديلاتك التالي فقط:	git push(سيطلب منك في كل عملية رفع اسم المستخدم وكلمة المرور الخاصين بك على موقع جِتهَب)عرض الإختلافلقد قلت لك في السطر الأول من هذا الشرح أن جِت تسمح بـ “التعامل مع التداخل الحاصل عند تعديل عدة أشخاص للملفات ذاتها”إذا لقد قمت أنت بالتعديل على أحد الملفات، يجب أولاً (وإن كنت جزء من فريق يعمل على تطوير الحزمة ولست لوحدك) بالاتصال بالحزمة الأساسية الموجودة على الإنترنت ومعرفة إن كان أحدهم قام بالتعديل على نفس الملف وإن كان هناك تعارضات، كل هذا بالأمر:	git pullفي حال وجود أي تعارضات فستُعرض لك حينها ملف بملف، سطر بسطر، ويمكنك عندها دمج أو حل هذه التعارضات، ثم تقوم بعدها برفع تغييراتك باستخدام git add و git commit.أوامر أخرىمعرفة الحالةيمكنك دائماً معرفة حالة الحزمة، أي عرض التعديلات (إن وُجدت) التي قمت بها والغير موجودة على خشبة المسرح، أي التي لم تضيفها بعد لتُرفع للإنترنت	git statusهذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.الأفرعهناك العديد من الأوامر المفيدة، ومنها مثلاً لاستعادة تغييرات لزمن محدد أو حالة محددة. ولكن ربما أكثرهم إفادة هي الأفرع. لنقل مثلاً اننا كفريق نعمل على تطوير برنامج للترجمة، وقد خطرت لك فكرة رائعة للبرنامج ولكنها تحتاج لإجراء تغييرات أساسية على البرنامج، أي على الكود الموجود حالياً، وقد تتخوف من عمل ذلك، ولكن في الحقيقة لا داعي للقلق، يمكنك إنشاء فرع جديد من الحزمة!أولاً يمكنك تفقد الأفرع الموجودة حالياً على جهازك	git branchوسيكون الناتج مثلاً:	master*أي أنه يوجد حالياً فرع واحد فقط يحوي الحزمة نفسها. وعلامة النجمة تعني بأنه الفرع الذي تعمل به حالياً، الآن لإنشاء فرع جديد:	git branch perfectdictوبالتالي تكون قد أنشأت نسخة لجميع الملفات الموجودة في الفرع الأصلي master. لتنتقل الآن لفرع الجديد الذي أنشأته	git checkout perfectdictيمكنك إعادة إظهار الأفرع الموجودة حالياً	&amp;gt; git branch	master	perfectdict*كما تلاحظ فقد عرض لنا فرعين، والنجمة موضوعة على الفرع الجديد أي أنك الآن ضمنه.الآن يمكنك إجراء التغييرات التي تريد وكيفما تريد دون قلق فأنت الآن ضمن فرع مستقل ولن تُحدث الفوضى في الحزمة أو الفرع الأساسي.بعد انتهاءك من العمل على الفرع الجديد، يمكنك الانتقال للفرع الأصلي ودمج التغييرات	&amp;gt; git checkout master	&amp;gt; git branch	master*	perfectdictهنا انتقلنا للفرع الأساسي master وتأكدنا بوجود النجمة بجواره أي أننا فعلاً ضمنه الآن. لنقم بالدمج	git merge perfectdictوبهذا تم دمج الكود في الفرع الذي أنشأته perfectdict مع الكود الأصلي في الحزمة master. كل هذا مازال محلياً، لرفع التغييرات الآن إلى الإنترنت:	&amp;gt; git pull	&amp;gt; git add *	&amp;gt; git commit -m &quot;added new cool feature!&quot;	&amp;gt; git pushروابط خارجية      لقد قام الأخ وليد بعمل ورقة واحدة تتضمن أهم أوامر جِت للرجوع إليها عند الحاجة        كما قام موقع codeschool (التجاري) بعمل شرح مُبسط مجاني لتعلم أوامر جِت (بالإنجليزي).  اقرأ أيضاً      سلسلة دروس جِت هَب        أساسيات لغة ماركداون، حيث أن موقع جتهب يعتمد على هذه اللغة التنسيقية في نموذج التعليقات وغيره، كما أنك ستحتاج هذه اللغة التنسيقية البسيطة إذا أردت استضافة موقعك على جِتهَب.  </summary>
-</entry>
-<entry>
-<title>كيفية تنصيب مشاريع الوب الجاهزة</title>
-<link href="https://mulham.github.io/installing-web-project-on-server/" rel="alternate" type="text/html" title="كيفية تنصيب مشاريع الوب الجاهزة" />
-<published>2016-06-23T00:00:00+03:00</published>
-<updated>2016-06-23T00:00:00+03:00</updated>
-<id>https://mulham.github.io/installing-web-project-on-server</id>
-<content type="html" xml:base="https://mulham.github.io/installing-web-project-on-server/">&lt;p&gt;سأقوم هنا بشرح كيفية تنصيب سكريبت جاهز (وورد بريس - جوملة - دروبال ..) على السيرفر المحلي localhost على منصة لينُكس وكذلك على الاستضافة، بالإضافة لحل أبرز المشاكل التي تعترض هذه العملية.&lt;/p&gt;
-
-&lt;p&gt;طبعاً تنصيب سكريبت على السيرفر المحلي يأتي عادة ﻷغراض تجريبية.&lt;/p&gt;
-
-&lt;p&gt;بالنسبة لتنصيب سكريبت على الاستضافة فيكون بنفس الخطوات مع اختلاف بسيط سوف أوضحه هنا. فلنبدأ!&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تنصيب السكريبت على السيرفر المحلي&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;تنصيب سكريبت على الإستضافة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;مشاكل وحلول&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;للقراءة فقط&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#settingsphp&quot; id=&quot;markdown-toc-settingsphp&quot;&gt;لا يوجد ملف إعدادات settings.php&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#php&quot; id=&quot;markdown-toc-php&quot;&gt;تقييدات PHP&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بتحميل السكريبت المطلوب من الموقع الرسمي له.&lt;/p&gt;
-
-    &lt;p&gt;هناك العديد من مشاريع الوب الجاهزة، قد يكون أشهرها &lt;a href=&quot;https://wordpress.org/&quot;&gt;ووردبريس&lt;/a&gt; وهو للمدونات، وهناك &lt;a href=&quot;https://www.joomla.org/&quot;&gt;جملة&lt;/a&gt; (Joomla) للمواقع ويصلح أيضاً للمدونات، بالنسبة للمنتديات الحديثة فيوجد &lt;a href=&quot;https://vanillaforums.org/&quot;&gt;فانيللا&lt;/a&gt;، ولمواقع السؤال وجواب فـ &lt;a href=&quot;https://sourceforge.net/projects/pligg/&quot;&gt;بليج&lt;/a&gt; (pligg) ويوجد غيرهم الكثير بالطبع، إن سألتني عن الأفضل فأنا أقول &lt;a href=&quot;https://www.drupal.org/&quot;&gt;دروبال&lt;/a&gt;، وهو يصلح لأي شيئ! فبه خيارات للتخصيص لا حصر لها، وبما أنه كذلك، فهو أصعب للمبتدئين، إن كنت مبتدءاً في هذا المجال ولا تريد أن تجلب الألم لرأسك، فاستخدم المشاريع الأخرى التي ذكرتها وبحسب هدفك.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;الخطوات التالية ستختلف بحسب التنصيب على الإستضافة أو السيرفر المحلي&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;تنصيب السكريبت على السيرفر المحلي&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بفك الضغط عن الملف المُحمَّل وانقل المجلد الناتج لمجلد السيرفر المحلي: /var/www/html/&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;افتح برنامج phpmyadmin وقم بإنشاء قاعدة بيانات جديدة : قم بالدخول لـ phpmyadmin باستعمال اسم المستخدم وكلمة المرور المنشأة عند تنزيل البرنامج ، ثم اضغط في القائمة العلوية على خيار databases ، اكتب اسم قاعدة البيانات المراد إنشاؤها (وليكن اسمها على اسم الكريبت المحمل) واضغط على زر create .&lt;/p&gt;
-
-    &lt;p&gt;للمزيد راجع : &lt;a href=&quot;/phpmyadmin&quot;&gt;إدارة قواعد البيانات باستخدام phpmyadmin&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;أذهب لمجلد السكريبت في السيرفر المحلي: أدخل في المتصفح العنوان : 127.0.0.1/foldername ، مع استبدال foldername باسم المجلد الخاص بالسكريبت.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اتبع تعليمات التنصيب&lt;/p&gt;
-
-    &lt;p&gt;سيطلب منك معلومات عن اسم الموقع ووصفه كما تريد أن يظهر لمحركات البحث، وكذلك بريدك الإلكتروني لإرسال رسائل معلومات تتعلق بموقعك، واسم قاعدة البيانات التي أنشأتها، ومعلومات أخرى عن الموقع، بما في ذلك كلمة سر المدير. وطبعاً بعدها سيقوم تلقائياً بالتنصيب بعد التعرف على قاعدة البيانات بشكل صحيح، وسترى أخيراً موقعك جاهزاً للعمل! وعليك حينها الذهاب للوحة تحكم الوقع من خلال الرابط الذي سيعطيك إياه في نهاية عملية التنصيب، والبدء بالتخصيص وإضافة المحتوى.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;تنصيب سكريبت على الإستضافة&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم برفع المجلدات والملفات الناتجة بعد فك الضغط عن ملف المشروع إلى المجلد الرئيسي للموقع (htdocs)، أو إلى مجلد فرعي إن رغبت بذلك (إن كنت تريد وضع أكثر من مشروع أو برمجية في موقعك - غير مستحسن!)&lt;/p&gt;
-
-    &lt;p&gt;طبعاً الرفع يتم أسهل عن طريق بروتوكول ftp (راجع &lt;a href=&quot;/ftp&quot;&gt;الطريقة&lt;/a&gt; إن كنت جديداً في هذا المجال، &lt;em&gt;إنه أمر بسيط جداً&lt;/em&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اذهب للمتصفح وقم بالوصول لواجهة الاستضافة التي تتعامل معها، وهناك يجب أن ترى خيار إنشاء قاعدة بيانات MySQL (بالإنجليزي MySQL Database) اذهب لهذا الخيار وأنشئ قاعدة بيانات جديدة وذلك بكتابة اسمها والضغط على Ok أو Create أو ما شابه، وليكن اسم قاعدة البيانات باسم المشروع مثلاً.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;الآن ما زلنا في المتصفح، افتح نافذة جديدة وأدخل عنوان موقعك (أو عنوان موقعك يليه اسم المجلد إن كنت رفعت السكريبت لمجلد فرعي، مثل: www.example.com/folder)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اتبع تعليمات التنصيب&lt;/p&gt;
-
-    &lt;p&gt;سيطلب منك معلومات عن اسم الموقع ووصفه كما تريد أن يظهر لمحركات البحث، وكذلك بريدك الإلكتروني لإرسال رسائل معلومات تتعلق بموقعك، واسم قاعدة البيانات التي أنشأتها، ومعلومات أخرى عن الموقع، بما في ذلك كلمة سر المدير. وطبعاً بعدها سيقوم تلقائياً بالتنصيب بعد التعرف على قاعدة البيانات بشكل صحيح، وسترى أخيراً موقعك جاهزاً للعمل! وعليك حينها الذهاب للوحة تحكم الوقع من خلال الرابط الذي سيعطيك إياه في نهاية عملية التنصيب، والبدء بالتخصيص وإضافة المحتوى.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;مشاكل وحلول&lt;/h1&gt;
-
-&lt;blockquote class=&quot;notice&quot;&gt;
-  &lt;p&gt;هذا القسم خاص في حال التنصيب على السيرفر المحلي وتحت منصة لينكس.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;section-3&quot;&gt;للقراءة فقط&lt;/h2&gt;
-
-&lt;p&gt;قد يعرض لك السكريبت أثناء عملية التنزيل خطأ تفيد بأن الملفات للقراءة فقط و غير قابلة للكتابة.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt; افتح الطرفية Ctrl+Alt+T واكتب :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo groupadd conakyuser
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;بهذا تكون أنشأت مجموعة جديدة من المستخدمين، قم بإضافة مستخدمين لهذه المجموعة :&lt;/p&gt;
-
-&lt;p&gt;استبدل user1 باسمك الحالي على النظام (مكتوب في الطرفية قبل الـ @).&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo usermod -a -G tomandruser user1
-	sudo usermod -a -G tomandruser admin
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;الآن قم بإعطاء الصلاحية للمجموعة المنشأة. هذه الخطوة هي فقط التي ستحتاج لتكرارها لاحقاً عند كل عملية تنصيب سكريبت أو تغيير يدوي في ملفاته.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo chgrp -R conakyuser /var/www/html
-	sudo chmod -R 777 /var/www/html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;settingsphp&quot;&gt;لا يوجد ملف إعدادات settings.php&lt;/h2&gt;
-
-&lt;p&gt;هذه المشكلة غالباً ما تحصل مع سكريبت دروبال، قم بالذهاب للمسار الموجود به ملف الإعدادات الافتراضية default.settings.php ، إن كنت تنصب دروبال فسيكون الملف في المسار /var/www/html/foldername/sites/default .&lt;/p&gt;
-
-&lt;p&gt;الآن قم بإنشاء ملف جديد وسمه settings.php وافتح الملف default.settings.php وانسخ ما فيه والصقه في الملف المنشأ.&lt;/p&gt;
-
-&lt;h2 id=&quot;php&quot;&gt;تقييدات PHP&lt;/h2&gt;
-
-&lt;p&gt;قد يكون السكريبت الذي تنزله يحتاج لمتطلبات سيرفر أعلى من الإعدادات الافتراضية. فقد يطلب السكريبت ذاكرة تخزين php مؤقتة أكبر . حد أقصى لوقت الإدخال أكبر .. وما إلى ذلك.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt; اذهب لملف إعداد php في السيرفر المحلي . ستجده في المسار etc/php5/apache2 طبعاً باعتبار أن إصدار php المنزل هو الخامس وإصدار سيرفر أباتشي هو الثاني.&lt;/p&gt;
-
-&lt;p&gt;الآن افتح ملف php.ini وهنا تكمن جميع القيم التي قد يطلب السكريبت تغييرها. اقرأ رسالة الخطأ في السكريبت، سيعطيك ما يجب تغييره والقيمة التي يجب تغييرها له. أي ستجد في رسالة الخطأ مثل max_input_time وسيذكر بعدها قيمة عددية كـ 120.&lt;/p&gt;
-
-&lt;p&gt;قم بالبحث ضمن ملف php.ini على المتغير المطلوب وقم بتغيير القيمة بعد إشارة = للقيمة المطلوبة. احفظ الملف.&lt;/p&gt;
-
-&lt;p&gt;الآن يجب إعادة تشغيل سيرفر أباتشي ، للقيام بذلك نفذ الأمر :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo service apache2 restart
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;أو الأمر التالي يقوم بنفس الغرض :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo restart apache2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;هل هناك نقص بالشرح؟ هل واجهتك مشكلة غير مذكورة هنا؟ الرجاء لا تتردد في طرح استفساراتك أو اقتراحاتك في التعليقات أدناه أو عبر مراسلتي.&lt;/p&gt;
-</content>
-<summary>سأقوم هنا بشرح كيفية تنصيب سكريبت جاهز (وورد بريس - جوملة - دروبال ..) على السيرفر المحلي localhost على منصة لينُكس وكذلك على الاستضافة، بالإضافة لحل أبرز المشاكل التي تعترض هذه العملية.طبعاً تنصيب سكريبت على السيرفر المحلي يأتي عادة ﻷغراض تجريبية.بالنسبة لتنصيب سكريبت على الاستضافة فيكون بنفس الخطوات مع اختلاف بسيط سوف أوضحه هنا. فلنبدأ!  تنصيب السكريبت على السيرفر المحلي  تنصيب سكريبت على الإستضافة  مشاكل وحلول          للقراءة فقط      لا يوجد ملف إعدادات settings.php      تقييدات PHP            قم بتحميل السكريبت المطلوب من الموقع الرسمي له.    هناك العديد من مشاريع الوب الجاهزة، قد يكون أشهرها ووردبريس وهو للمدونات، وهناك جملة (Joomla) للمواقع ويصلح أيضاً للمدونات، بالنسبة للمنتديات الحديثة فيوجد فانيللا، ولمواقع السؤال وجواب فـ بليج (pligg) ويوجد غيرهم الكثير بالطبع، إن سألتني عن الأفضل فأنا أقول دروبال، وهو يصلح لأي شيئ! فبه خيارات للتخصيص لا حصر لها، وبما أنه كذلك، فهو أصعب للمبتدئين، إن كنت مبتدءاً في هذا المجال ولا تريد أن تجلب الألم لرأسك، فاستخدم المشاريع الأخرى التي ذكرتها وبحسب هدفك.  الخطوات التالية ستختلف بحسب التنصيب على الإستضافة أو السيرفر المحليتنصيب السكريبت على السيرفر المحلي      قم بفك الضغط عن الملف المُحمَّل وانقل المجلد الناتج لمجلد السيرفر المحلي: /var/www/html/        افتح برنامج phpmyadmin وقم بإنشاء قاعدة بيانات جديدة : قم بالدخول لـ phpmyadmin باستعمال اسم المستخدم وكلمة المرور المنشأة عند تنزيل البرنامج ، ثم اضغط في القائمة العلوية على خيار databases ، اكتب اسم قاعدة البيانات المراد إنشاؤها (وليكن اسمها على اسم الكريبت المحمل) واضغط على زر create .    للمزيد راجع : إدارة قواعد البيانات باستخدام phpmyadmin        أذهب لمجلد السكريبت في السيرفر المحلي: أدخل في المتصفح العنوان : 127.0.0.1/foldername ، مع استبدال foldername باسم المجلد الخاص بالسكريبت.        اتبع تعليمات التنصيب    سيطلب منك معلومات عن اسم الموقع ووصفه كما تريد أن يظهر لمحركات البحث، وكذلك بريدك الإلكتروني لإرسال رسائل معلومات تتعلق بموقعك، واسم قاعدة البيانات التي أنشأتها، ومعلومات أخرى عن الموقع، بما في ذلك كلمة سر المدير. وطبعاً بعدها سيقوم تلقائياً بالتنصيب بعد التعرف على قاعدة البيانات بشكل صحيح، وسترى أخيراً موقعك جاهزاً للعمل! وعليك حينها الذهاب للوحة تحكم الوقع من خلال الرابط الذي سيعطيك إياه في نهاية عملية التنصيب، والبدء بالتخصيص وإضافة المحتوى.  تنصيب سكريبت على الإستضافة      قم برفع المجلدات والملفات الناتجة بعد فك الضغط عن ملف المشروع إلى المجلد الرئيسي للموقع (htdocs)، أو إلى مجلد فرعي إن رغبت بذلك (إن كنت تريد وضع أكثر من مشروع أو برمجية في موقعك - غير مستحسن!)    طبعاً الرفع يتم أسهل عن طريق بروتوكول ftp (راجع الطريقة إن كنت جديداً في هذا المجال، إنه أمر بسيط جداً)        اذهب للمتصفح وقم بالوصول لواجهة الاستضافة التي تتعامل معها، وهناك يجب أن ترى خيار إنشاء قاعدة بيانات MySQL (بالإنجليزي MySQL Database) اذهب لهذا الخيار وأنشئ قاعدة بيانات جديدة وذلك بكتابة اسمها والضغط على Ok أو Create أو ما شابه، وليكن اسم قاعدة البيانات باسم المشروع مثلاً.        الآن ما زلنا في المتصفح، افتح نافذة جديدة وأدخل عنوان موقعك (أو عنوان موقعك يليه اسم المجلد إن كنت رفعت السكريبت لمجلد فرعي، مثل: www.example.com/folder)        اتبع تعليمات التنصيب    سيطلب منك معلومات عن اسم الموقع ووصفه كما تريد أن يظهر لمحركات البحث، وكذلك بريدك الإلكتروني لإرسال رسائل معلومات تتعلق بموقعك، واسم قاعدة البيانات التي أنشأتها، ومعلومات أخرى عن الموقع، بما في ذلك كلمة سر المدير. وطبعاً بعدها سيقوم تلقائياً بالتنصيب بعد التعرف على قاعدة البيانات بشكل صحيح، وسترى أخيراً موقعك جاهزاً للعمل! وعليك حينها الذهاب للوحة تحكم الوقع من خلال الرابط الذي سيعطيك إياه في نهاية عملية التنصيب، والبدء بالتخصيص وإضافة المحتوى.  مشاكل وحلول  هذا القسم خاص في حال التنصيب على السيرفر المحلي وتحت منصة لينكس.للقراءة فقطقد يعرض لك السكريبت أثناء عملية التنزيل خطأ تفيد بأن الملفات للقراءة فقط و غير قابلة للكتابة.الحل: افتح الطرفية Ctrl+Alt+T واكتب :	sudo groupadd conakyuserبهذا تكون أنشأت مجموعة جديدة من المستخدمين، قم بإضافة مستخدمين لهذه المجموعة :استبدل user1 باسمك الحالي على النظام (مكتوب في الطرفية قبل الـ @).	sudo usermod -a -G tomandruser user1	sudo usermod -a -G tomandruser adminالآن قم بإعطاء الصلاحية للمجموعة المنشأة. هذه الخطوة هي فقط التي ستحتاج لتكرارها لاحقاً عند كل عملية تنصيب سكريبت أو تغيير يدوي في ملفاته.	sudo chgrp -R conakyuser /var/www/html	sudo chmod -R 777 /var/www/htmlلا يوجد ملف إعدادات settings.phpهذه المشكلة غالباً ما تحصل مع سكريبت دروبال، قم بالذهاب للمسار الموجود به ملف الإعدادات الافتراضية default.settings.php ، إن كنت تنصب دروبال فسيكون الملف في المسار /var/www/html/foldername/sites/default .الآن قم بإنشاء ملف جديد وسمه settings.php وافتح الملف default.settings.php وانسخ ما فيه والصقه في الملف المنشأ.تقييدات PHPقد يكون السكريبت الذي تنزله يحتاج لمتطلبات سيرفر أعلى من الإعدادات الافتراضية. فقد يطلب السكريبت ذاكرة تخزين php مؤقتة أكبر . حد أقصى لوقت الإدخال أكبر .. وما إلى ذلك.الحل: اذهب لملف إعداد php في السيرفر المحلي . ستجده في المسار etc/php5/apache2 طبعاً باعتبار أن إصدار php المنزل هو الخامس وإصدار سيرفر أباتشي هو الثاني.الآن افتح ملف php.ini وهنا تكمن جميع القيم التي قد يطلب السكريبت تغييرها. اقرأ رسالة الخطأ في السكريبت، سيعطيك ما يجب تغييره والقيمة التي يجب تغييرها له. أي ستجد في رسالة الخطأ مثل max_input_time وسيذكر بعدها قيمة عددية كـ 120.قم بالبحث ضمن ملف php.ini على المتغير المطلوب وقم بتغيير القيمة بعد إشارة = للقيمة المطلوبة. احفظ الملف.الآن يجب إعادة تشغيل سيرفر أباتشي ، للقيام بذلك نفذ الأمر :	sudo service apache2 restartأو الأمر التالي يقوم بنفس الغرض :	sudo restart apache2هل هناك نقص بالشرح؟ هل واجهتك مشكلة غير مذكورة هنا؟ الرجاء لا تتردد في طرح استفساراتك أو اقتراحاتك في التعليقات أدناه أو عبر مراسلتي.</summary>
-</entry>
-<entry>
-<title>برنامج التحميل الأفضل إكستريم داونلود مانيجر</title>
-<link href="https://mulham.github.io/xtreme-download-manager/" rel="alternate" type="text/html" title="برنامج التحميل الأفضل إكستريم داونلود مانيجر" />
-<published>2016-06-23T00:00:00+03:00</published>
-<updated>2016-06-23T00:00:00+03:00</updated>
-<id>https://mulham.github.io/xtreme-download-manager</id>
-<content type="html" xml:base="https://mulham.github.io/xtreme-download-manager/">&lt;p&gt;&lt;img src=&quot;/assets/xdm.png&quot; alt=&quot;لقطة برنامج إكستريم داونلود مانيجر&quot; title=&quot;لقطة برنامج إكستريم داونلود مانيجر&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;إكستريم داونلود مانيجر، البديل المجاني لبرنامج التحميل الشهير إنترنت داونلود مانيجر. وأعتقد أنه أفضل برنامج تحميل من الإنترنت.&lt;/p&gt;
-
-&lt;p&gt;برنامج Xtreme Download Manager عبارة عن برنامج جديد ومجاني تماماً ومفتوح المصدر.&lt;/p&gt;
-
-&lt;p&gt;البرنامج هذا يعتبر سريع في التحميل وغالباً يدعم الاستكمال، ويمكن من خلاله تحميل الملفات من كافة المواقع بما فيها الشهيرة منها كيوتيوب.&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تحميل البرنامج&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;كيفية التحميل والإستكمال&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;تحميل الملفات&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;تحميل من اليوتيوب&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#section-4&quot; id=&quot;markdown-toc-section-4&quot;&gt;استكمال التحميل&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;تحميل البرنامج&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://xdman.sourceforge.net/xdm_4.0.exe&quot;&gt;تحميل البرنامج لنظام ويندوز&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;لتحميل البرنامج لنظام لينكس:&lt;/p&gt;
-
-    &lt;p&gt;البرنامج على اللينكس يتطلب تنصيب حزمة openjdk-7-jdk، لتنصيبها:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo add-apt-repository ppa:openjdk-r/ppa 
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;اضغط Enter عند الطلب. ثم نفذ الأمرين&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get update
-	sudo apt-get install openjdk-7-jdk
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;ثم تابع ..&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;الطريقة التالية باتت قديمة أو للإصدارات القديمة، انزل قليلاً للأسفل&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;فقط افتح التيرمينال واكتب الأوامر التالية:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo add-apt-repository ppa:noobslab/apps
-    sudo apt-get update
-    sudo apt-get install xdman
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;الطريقة المستخدمة حالياً:&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;قم بتحميل الإصدار الأخير من &lt;a href=&quot;http://tenet.dl.sourceforge.net/project/xdman/xdman.deb&quot;&gt;هنا&lt;/a&gt; ثم نفذ الأوامر التالية على الطرفية:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	cd Downloads  #الانتقال للمجلد الذي يحوي الملف المُحمل
-	sudo dpkg -i xdman.deb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;بعد التنصيب (بعد تنصيب openjdk-7-jdk) قد تظهر رسائل خطأ من قبل البرنامج الذي يُنشئ تقارير الأخطاء على أبونتو، يمكنك حذف البرنامج بشكل عام فهو مُزعج وبلا فائدة!&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get remove apport
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;الآن، لتنصيب إضافة برنامج إكستريم داونلود مانيجر لمتصفح الفايرفوكس افتح البرنامج ثم اذهب للمتصفح واكتب في شريط العناوين :&lt;/p&gt;
-
-&lt;p&gt;http://localhost:9614/xdmff.xpi&lt;/p&gt;
-
-&lt;p&gt;أو في الإصدار الحديث من البرنامج اضغط على File ثم Advanced Youtube Manager وذلك للتعرف على الفيديوهات المفتوحة على المتصفح، أغلق النافذة عند الإنتهاء من ذلك.&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;كيفية التحميل والإستكمال&lt;/h1&gt;
-
-&lt;p&gt;في الواقع هناك خيارات كثيرة في البرنامج سأشرح بعضها وأهمها هنا وسأترك الباقي لك.&lt;/p&gt;
-
-&lt;h2 id=&quot;section-2&quot;&gt;تحميل الملفات&lt;/h2&gt;
-
-&lt;p&gt;لتحميل الملفات والتي تحوي لاحقة واضحة في الرابط (أي رابط جاهز ومباشر للملف) اذهب للبرنامج واضغط على قائمة File في الأعلى، ثم Add url، إذا قمت بنسخ الرابط في المتصفح فسترى الرابط جاهز هنا، فقط اضغط على Download.&lt;/p&gt;
-
-&lt;h2 id=&quot;section-3&quot;&gt;تحميل من اليوتيوب&lt;/h2&gt;
-
-&lt;p&gt;للتحميل من اليوتيوب انسخ رابط الفيديو ثم اذهب للبرنامج واضغط على File ثم Youtube Download ثم أدخل الرابط ثم Get Video! ، سوف يقوم البرنامج بتحميل روابط جميع الملفات المتعلقة بالفيديو (بحسب الدقة) ثم ستظهر قائمة مرتبة، أعلاها هي أعلى دقة للفيديو وأسفلها هي أخفض دقة، وطبعا سيتخلف الحجم بحسب الدقة المطلوبة، اختر الدقة التي تريدها ثم اضغط على Download&lt;/p&gt;
-
-&lt;h2 id=&quot;section-4&quot;&gt;استكمال التحميل&lt;/h2&gt;
-
-&lt;p&gt;يمكن استكمال التحميل في هذا البرنامج (غالباً) ، ولكن قد تحتاج لتحديث الرابط، وخاصة عند التحميل من اليوتيوب، فيمكنك توقيف التحميل متى شئت واستكماله لاحقاً، لتحديث الرابط على اليوتيوب عليك بالعودة للموقع ونسخ رابط الفيديو الذي أردت تحميله ثم الذهاب للبرنامج و الضغط على file ثم Youtube Download ثم اختيار نفس الدقة التي بدأنا بتحميلها ثم الضغط على Download، ولكن أوقف هذا التحميل مباشرة، ثم في واجهة البرنامج الرئيسية سترى التحميل الجديد الذي أنشأته، اضغط عليه باليمين ثم copy url ، الآن اذهب للتحميل الذي تريد استكماله، اضغط علىيه باليمين ثم Refresh link ثم الصق الرابط في الحقل المحدد بالضغط على ctrl + V ، الآن اضغط على الملف نفسه باليمين ثم resume وسيبدأ بالاستكمال.&lt;/p&gt;
-</content>
-<summary>إكستريم داونلود مانيجر، البديل المجاني لبرنامج التحميل الشهير إنترنت داونلود مانيجر. وأعتقد أنه أفضل برنامج تحميل من الإنترنت.برنامج Xtreme Download Manager عبارة عن برنامج جديد ومجاني تماماً ومفتوح المصدر.البرنامج هذا يعتبر سريع في التحميل وغالباً يدعم الاستكمال، ويمكن من خلاله تحميل الملفات من كافة المواقع بما فيها الشهيرة منها كيوتيوب.  تحميل البرنامج  كيفية التحميل والإستكمال          تحميل الملفات      تحميل من اليوتيوب      استكمال التحميل      تحميل البرنامج      تحميل البرنامج لنظام ويندوز        لتحميل البرنامج لنظام لينكس:    البرنامج على اللينكس يتطلب تنصيب حزمة openjdk-7-jdk، لتنصيبها:      sudo add-apt-repository ppa:openjdk-r/ppa       اضغط Enter عند الطلب. ثم نفذ الأمرين	sudo apt-get update	sudo apt-get install openjdk-7-jdkثم تابع ..  الطريقة التالية باتت قديمة أو للإصدارات القديمة، انزل قليلاً للأسفلفقط افتح التيرمينال واكتب الأوامر التالية:    sudo add-apt-repository ppa:noobslab/apps    sudo apt-get update    sudo apt-get install xdman  الطريقة المستخدمة حالياً:قم بتحميل الإصدار الأخير من هنا ثم نفذ الأوامر التالية على الطرفية:	cd Downloads  #الانتقال للمجلد الذي يحوي الملف المُحمل	sudo dpkg -i xdman.debبعد التنصيب (بعد تنصيب openjdk-7-jdk) قد تظهر رسائل خطأ من قبل البرنامج الذي يُنشئ تقارير الأخطاء على أبونتو، يمكنك حذف البرنامج بشكل عام فهو مُزعج وبلا فائدة!	sudo apt-get remove apportالآن، لتنصيب إضافة برنامج إكستريم داونلود مانيجر لمتصفح الفايرفوكس افتح البرنامج ثم اذهب للمتصفح واكتب في شريط العناوين :http://localhost:9614/xdmff.xpiأو في الإصدار الحديث من البرنامج اضغط على File ثم Advanced Youtube Manager وذلك للتعرف على الفيديوهات المفتوحة على المتصفح، أغلق النافذة عند الإنتهاء من ذلك.كيفية التحميل والإستكمالفي الواقع هناك خيارات كثيرة في البرنامج سأشرح بعضها وأهمها هنا وسأترك الباقي لك.تحميل الملفاتلتحميل الملفات والتي تحوي لاحقة واضحة في الرابط (أي رابط جاهز ومباشر للملف) اذهب للبرنامج واضغط على قائمة File في الأعلى، ثم Add url، إذا قمت بنسخ الرابط في المتصفح فسترى الرابط جاهز هنا، فقط اضغط على Download.تحميل من اليوتيوبللتحميل من اليوتيوب انسخ رابط الفيديو ثم اذهب للبرنامج واضغط على File ثم Youtube Download ثم أدخل الرابط ثم Get Video! ، سوف يقوم البرنامج بتحميل روابط جميع الملفات المتعلقة بالفيديو (بحسب الدقة) ثم ستظهر قائمة مرتبة، أعلاها هي أعلى دقة للفيديو وأسفلها هي أخفض دقة، وطبعا سيتخلف الحجم بحسب الدقة المطلوبة، اختر الدقة التي تريدها ثم اضغط على Downloadاستكمال التحميليمكن استكمال التحميل في هذا البرنامج (غالباً) ، ولكن قد تحتاج لتحديث الرابط، وخاصة عند التحميل من اليوتيوب، فيمكنك توقيف التحميل متى شئت واستكماله لاحقاً، لتحديث الرابط على اليوتيوب عليك بالعودة للموقع ونسخ رابط الفيديو الذي أردت تحميله ثم الذهاب للبرنامج و الضغط على file ثم Youtube Download ثم اختيار نفس الدقة التي بدأنا بتحميلها ثم الضغط على Download، ولكن أوقف هذا التحميل مباشرة، ثم في واجهة البرنامج الرئيسية سترى التحميل الجديد الذي أنشأته، اضغط عليه باليمين ثم copy url ، الآن اذهب للتحميل الذي تريد استكماله، اضغط علىيه باليمين ثم Refresh link ثم الصق الرابط في الحقل المحدد بالضغط على ctrl + V ، الآن اضغط على الملف نفسه باليمين ثم resume وسيبدأ بالاستكمال.</summary>
-</entry>
-<entry>
-<title>إعادة تنصيب أندرويد</title>
-<link href="https://mulham.github.io/reinstall-android/" rel="alternate" type="text/html" title="إعادة تنصيب أندرويد" />
-<published>2016-06-22T00:00:00+03:00</published>
-<updated>2016-06-22T00:00:00+03:00</updated>
-<id>https://mulham.github.io/reinstall-android</id>
-<content type="html" xml:base="https://mulham.github.io/reinstall-android/">&lt;p&gt;إذا قمت &lt;a href=&quot;/installing-ubuntu-touch&quot;&gt;بتنصيب أبونتو&lt;/a&gt; (أو أي نظام آخر) على جهازك اللوحي أو هاتفك، فبإمكانك إعادة تنصيب أندرويد (والذي سيحذف أبونتو). طبعاً إعادة التنصيب يكون من خلال وصل الجهاز مع حاسوب يعمل على نظام لينكس (والشرح هنا على توزيعة أبونتو).&lt;/p&gt;
-
-&lt;p class=&quot;notice&quot;&gt;تحذير: سيتم حذف جميع تطبيقات وبيانات أبونتو، بما في ذلك بيانات المستخدم.&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;تحميل ملفات نسخة أندرويد&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;استخراج الملفات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;الذهاب لمُحمل الإقلاع&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;إعادة تنصيب أندرويد&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-4&quot; id=&quot;markdown-toc-section-4&quot;&gt;استعادة بيانات وتطبيقات أندرويد (اختياري)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#section-5&quot; id=&quot;markdown-toc-section-5&quot;&gt;قفل الجهاز (اختياري)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;تحميل ملفات نسخة أندرويد&lt;/h1&gt;
-
-&lt;p&gt;يمكنك في أي وقت تحميل ملفات أندرويد المطلوبة لاستعادة نظامك.
-يعرض هذا الجدول روابط لإصدارات أندرويد الشائعة (إذا لم تجد جهازك في الجدول فاطلب رابط النسخة الخاصة لجهازك هنا أو من خلال مراسلتي - على العموم يمكنك البحث بعد إدخال القيم المطلوبة الخاصة بجهازك والحبث عن نسخة أندرويد له).&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;الجهاز&lt;/th&gt;
-      &lt;th&gt;نسخة أندرويد بحسب النوع&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Nexus 4&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#occam&quot;&gt;occam&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Nexus 10&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#mantaray&quot;&gt;mantaray&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Nexus 7 2013 WiFi&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#razor&quot;&gt;razor&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Galaxy Nexus&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#takju&quot;&gt;takju&lt;/a&gt; أو &lt;a href=&quot;https://developers.google.com/android/nexus/images#yakju&quot;&gt;yakju&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Nexus 7&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://developers.google.com/android/nexus/images#nakasi&quot;&gt;nakasi&lt;/a&gt; أو &lt;a href=&quot;https://developers.google.com/android/nexus/images#nakasig&quot;&gt;nakasig&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;قم بتحميل النسخة المطلوبة، مع ملاحظة أنه يجب اختيار رقم الإصدار (build version) والذي كان موجود أصلاً على جهازك. ومنه يمكنك تحديثه بعد تنصيب أندرويد.&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;استخراج الملفات&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم باستخراج النظام المُحمل. مثلاً إذا كان اسم الملف الذي تم تحميله &lt;code class=&quot;highlighter-rouge&quot;&gt;razor-kot49h-factory-ebb4918e.tgz&lt;/code&gt; فاستخرجه بالأمر:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ tar -xzf razor-kot49h-factory-ebb4918e.tgz
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;انتقل للمجلد المستخرج&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ cd razor-kot49h
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;الذهاب لمُحمل الإقلاع&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بوصل جهازك اللوحي بحاسوب أبونتو عبر الـ USB .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;تأكد من أن النظام (أو بالأحرى أداة adb) تعرف على الجهاز&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ adb devices
- List of devices attached
- 025d138e2f521413 device
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;أي يجب ان يكون ناتج الأمر في السطر الأول شبيه بالسطرين الثاني والثالث.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بإعادة تشغيل الجهاز اللوحي لمُحمِّل الإقلاع&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ adb reboot bootloader
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;section-3&quot;&gt;إعادة تنصيب أندرويد&lt;/h1&gt;
-
-&lt;p&gt;يجب أن تكون في المجلد المستخرج لنسخة أندرويد لبدء العملية.&lt;/p&gt;
-
-&lt;p&gt;نفذ الأمر:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	$ sudo ./flash-all.sh
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;انتظر حتى اكتمال العملية وإقلاع أندرويد لشاشة الترحيب.&lt;/p&gt;
-
-&lt;h1 id=&quot;section-4&quot;&gt;استعادة بيانات وتطبيقات أندرويد (اختياري)&lt;/h1&gt;
-
-&lt;p&gt;إذا قمت سابقاً بعمل نسخة احتياطية لتطبيقات وبيانات أندرويد، كما هو موضح هنا، فيمكنك استعادة هذه النسخة الاحتياطية :
-1. يجب أن تقوم أولاً بتفعيل وضع تحسين أخطاء USB في نظام أندرويد ، وتوصيل جهاز أندرويد لسطح مكتب أبونتو عبر USB (انظر &lt;a href=&quot;https://mulham.github.io/installing-ubuntu-touch#usb&quot;&gt;هنا&lt;/a&gt;).&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;افتح الطرفية في سطح مكتب أبونتو Ctrrl + Alt + T&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اذهب باستخدام الأمر cd للمجلد الذي يحوي ملف النسخة الاحتياطية backup.ab.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم باستعادة ملف backup.ab لأندرويد :&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ adb restore backup.ab
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;section-5&quot;&gt;قفل الجهاز (اختياري)&lt;/h1&gt;
-
-&lt;p&gt;لقد قمت سابقاً لتنصيب أبونتو بإلغاء قفل الجهاز، يمكنك الآن اختيارياً قفله.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;أطفئ الجهاز من زر الطاقة.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;أعد التشغيل لمحمل الإقلاع بالضغط على مجموعة الأزرار الصحيحة لنوع جهازك كما هو مذكور &lt;a href=&quot;https://source.android.com/source/building-devices.html#booting-into-fastboot-mode&quot;&gt;هنا&lt;/a&gt; (بالإنجليزية) :&lt;/p&gt;
-
-    &lt;p&gt;تأكد من أن الجهاز متصل بوضع fastboot كالتالي:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ fastboot devices
- 025d138e2f521413 fastboot
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اقفل الجهاز :&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ fastboot oem lock
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;أعد التشغيل لأندرويد :&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ fastboot reboot
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</content>
-<summary>إذا قمت بتنصيب أبونتو (أو أي نظام آخر) على جهازك اللوحي أو هاتفك، فبإمكانك إعادة تنصيب أندرويد (والذي سيحذف أبونتو). طبعاً إعادة التنصيب يكون من خلال وصل الجهاز مع حاسوب يعمل على نظام لينكس (والشرح هنا على توزيعة أبونتو).تحذير: سيتم حذف جميع تطبيقات وبيانات أبونتو، بما في ذلك بيانات المستخدم.  تحميل ملفات نسخة أندرويد  استخراج الملفات  الذهاب لمُحمل الإقلاع  إعادة تنصيب أندرويد  استعادة بيانات وتطبيقات أندرويد (اختياري)  قفل الجهاز (اختياري)تحميل ملفات نسخة أندرويديمكنك في أي وقت تحميل ملفات أندرويد المطلوبة لاستعادة نظامك.يعرض هذا الجدول روابط لإصدارات أندرويد الشائعة (إذا لم تجد جهازك في الجدول فاطلب رابط النسخة الخاصة لجهازك هنا أو من خلال مراسلتي - على العموم يمكنك البحث بعد إدخال القيم المطلوبة الخاصة بجهازك والحبث عن نسخة أندرويد له).            الجهاز      نسخة أندرويد بحسب النوع                  Nexus 4      occam              Nexus 10      mantaray              Nexus 7 2013 WiFi      razor              Galaxy Nexus      takju أو yakju              Nexus 7      nakasi أو nakasig      قم بتحميل النسخة المطلوبة، مع ملاحظة أنه يجب اختيار رقم الإصدار (build version) والذي كان موجود أصلاً على جهازك. ومنه يمكنك تحديثه بعد تنصيب أندرويد.استخراج الملفات      قم باستخراج النظام المُحمل. مثلاً إذا كان اسم الملف الذي تم تحميله razor-kot49h-factory-ebb4918e.tgz فاستخرجه بالأمر:     $ tar -xzf razor-kot49h-factory-ebb4918e.tgz            انتقل للمجلد المستخرج     $ cd razor-kot49h      الذهاب لمُحمل الإقلاع      قم بوصل جهازك اللوحي بحاسوب أبونتو عبر الـ USB .        تأكد من أن النظام (أو بالأحرى أداة adb) تعرف على الجهاز     $ adb devices List of devices attached 025d138e2f521413 device        أي يجب ان يكون ناتج الأمر في السطر الأول شبيه بالسطرين الثاني والثالث.        قم بإعادة تشغيل الجهاز اللوحي لمُحمِّل الإقلاع     $ adb reboot bootloader      إعادة تنصيب أندرويديجب أن تكون في المجلد المستخرج لنسخة أندرويد لبدء العملية.نفذ الأمر:	$ sudo ./flash-all.shانتظر حتى اكتمال العملية وإقلاع أندرويد لشاشة الترحيب.استعادة بيانات وتطبيقات أندرويد (اختياري)إذا قمت سابقاً بعمل نسخة احتياطية لتطبيقات وبيانات أندرويد، كما هو موضح هنا، فيمكنك استعادة هذه النسخة الاحتياطية :1. يجب أن تقوم أولاً بتفعيل وضع تحسين أخطاء USB في نظام أندرويد ، وتوصيل جهاز أندرويد لسطح مكتب أبونتو عبر USB (انظر هنا).      افتح الطرفية في سطح مكتب أبونتو Ctrrl + Alt + T        اذهب باستخدام الأمر cd للمجلد الذي يحوي ملف النسخة الاحتياطية backup.ab.        قم باستعادة ملف backup.ab لأندرويد :     $ adb restore backup.ab      قفل الجهاز (اختياري)لقد قمت سابقاً لتنصيب أبونتو بإلغاء قفل الجهاز، يمكنك الآن اختيارياً قفله.      أطفئ الجهاز من زر الطاقة.        أعد التشغيل لمحمل الإقلاع بالضغط على مجموعة الأزرار الصحيحة لنوع جهازك كما هو مذكور هنا (بالإنجليزية) :    تأكد من أن الجهاز متصل بوضع fastboot كالتالي:     $ fastboot devices 025d138e2f521413 fastboot            اقفل الجهاز :     $ fastboot oem lock            أعد التشغيل لأندرويد :     $ fastboot reboot      </summary>
-</entry>
-</feed>
+&lt;p class=&quot;notice&quot;&gt;تم إيقاف ترجمة باقي الدروس نظراً لوجود بدائل في المواقع العربية.&lt;/p&gt;</content><author><name></name></author><summary type="html">بناء تطبيقك الأوّل أهلاً بك في سلسلة دروس “تطوير تطبيقات أندرويد”! ستُعلّمك هذه الدروس كيفية بناء تطبيقك الأوّل لنظام أندرويد، كما ستتعلّم كيفية إنشاء مشروع على أندرويد وكيفية تشغيل التطبيق بوضعيّة التنقيح (debugging)، كما ستتعلّّم بعض الأساسيّات لتصميم تطبيق أندرويد بما في ذلك كيفيّة بناء واجهة مستخدم بسيطة والتعامل مع إدخالات المستخدم. كل ذلك بدون أيّة معرفة مسبقة! بناء تطبيقك الأوّل تجهيز بيئة العمل إنشاء مشروع أندرويد إنشاء مشروع باستخدام استديو أندرويد تجهيز بيئة العمل قبل البدء، عليك بتنصيب البرمجيّات التي سنعمل عليها سويةً، حيث ستحتاج إلى: تنصيب استديو أندرويد (Android studio) تنصيب آخر برمجيّات وأدوات SDK باستخدام مدير SDK ملاحظة: على الرغم من أن معظم هذه الدروس تشرح التعليمات باستخدام استديو أندرويد، إلا أن جزء منها يعتمد على استخدام أدوات SDK عبر موجّه الأوامر. قم بتنصيب المتطلّبات أعلاه ثم عد إلى هنا كي نبدأ سويةً. إنشاء مشروع أندرويد يحتوي مشروع أندرويد على جميع الملفّات التي تُشكّل الكود المصدريّ لتطبيق أندرويد. سيوضِّح لك هذا الدرس عمليّة إنشاء مشروع جديد وذلك إمّا باستخدام استديو أندرويد أو باستخدام أدوات SDk من خلال موجِّه الأوامر. هيّا نبدأ معلومة إضافيّة: SDK هي اختصار لـ Software Development Kit أو ما معناه “عِدّة تطوير البرمجيّات” وهي فعليّاً مجموعة من أدوات التطوير التي تتيح إنشاء تطبيقات لبرمجيّات أو أنظمة مُحدّدة. إنشاء مشروع باستخدام استديو أندرويد قم بإنشاء مشروع جديد على استديو أندرويد: إذا لم يكن لديك مشروع مفتوح مسبقاً، فاضغط على New Project في شاشة الترحيب (الشاشة الرئيسيّة للبرنامج). إذا كان هناك مشروع مفتوح مسبقاً، فاختر New project من القائمة File في الأعلى. الآن يجب أن تكون ظهرت لديك نافذة Create New Project املأ الحقول الظاهرة على الشاشة ثم اضغط Next يُستحسن لسهولة استخدام هذه الدروس إدخال القيم التالية: في حقل Application Name وهو اسم التطبيق الذي تريد بناؤه، أدخل حالياً My First APP Company domain: تُزوّد القيمة المُدخلة في هذا الحقل مُعرّفاً يتم إرفاقه باسم الحزمة، سيتذكّر استديو أندرويد هذا المعرّف لكل مشروع جديد ستُنشئه. Package name: هنا يُدخَل الاسم الكامل المُؤهِّل للمشروع (باتباع نفس قواعد تسمية الحِزَم في لغة برمجة جافا). يجب أن يكون اسم حزمتك فريد بين جميع الحزم المُنصَّبة على نظام أندرويد. يمكنك تعديل هذه القيمة (Edit) بشكل مستقل عن قِيَم الحقلين السابقين. قواعد التسمية: طبعاً أن تكون أحرف إنجليزيّة، وصغيرة، يُسمح بالأرقام والشرطة العلويّة - والسفليّة _ ولكن يجب ألّا يبدأ الاسم برقم. يجب على الشركات عكس اسم موقعهم المُستضيف للحزمة، فيجب مثلاً كتابة: com.example.mypackage لحزمة اسمها mypackge مُنشأة على موقع example.com وفي حال بدء اسم الحزمة برقم فيوضع شرطة سفليّة قبله، مثلاً موقع الحزمة على الإنترنت سيكون: 123name.example.com وبالتالي نُسمّي الحزمة: com.example._123name Project location: هنا يُوضع مسار المجلّد الذي يحوي ملفات المشروع في حاسوبك. قم بالتأشير على المربع بجانب Phone and Tablets أسفل حقل Select the form factors your app will run on (أين أنك تريد لتطبيقك أن يعمل على الجوّالات والأجهزة اللوحيّة). بالنسبة لـ Minimum SDK، اختر API 8: Android 2.2 (Froyo) إنّ أقل إصدار SDK مطلوب هو أقدم إصدار أندرويد يدعمه تطبيقك. والمُوضّح باستخدام مستوى API. إذا أردت لتطبيقك أن يدعم أكبر عدد ممكن من الأجهزة، فقم باختيار أقدم إصدار متاح والذي يسمح لتطبيقك بتقديم المزايا الأساسيّة (فهناك مزايا لا تعمل إلا على الإصدارات الحديثة من أندرويد). إذا كان هناك مزايا في تطبيقك لا تعتبرها أساسيّة ولا تعمل إلا على الإصدارات الحديثة من أندرويد، فمازال بإمكانك وضع إصدارات أقدم في هذا الحقل مع تفعيل المزايا المتقدمة فقط عندما يعمل التطبيق ضمن إصدارات حديثة. مستوى API: (بالإنجليزيّة API Level) وهو عدد صحيح يُعرّف تغييرات بنية API المُقدَّمة بواسطة إصدار أندرويد (بدأَ أولاً بـ 1 وازداد مع كل إصدار جديد لأندرويد). يمكنك الاطلّاع على جدول أسفل هذه الفقرة والموضِّح لإصدارات أندرويد ومستوى API الموافق لكل منها. أبقِِ على جميع الخيارات الأخرى (TV,Wear, and Glass) بدون تأشير، واضغط Next أسفل حقل Add an activity to &amp;lt;template&amp;gt;**, اختر **Blank Activity واضغط Next أسفل حقل Customize th Activity، قم بتغيير Activity Name إلى MyActivity. وسترى أن حقل Layout Name قد تغيّر إلى activity_my وحقل Title إلى MyActivity، كذلك Menu Resourcr Name يجب أن يصبح menu_my. اضغط على زر Finish لإنشاء المشروع. النشاط (Activity) هو أحد الملامح المُميِّزة لنظام أندرويد. تتيح الأنشطة للمستخدم الوصول لتطبيقك، وقد يكون هناك العديد من الأنشطة. سيحوي التطبيق غالباً على نشاط رئيسي وهو عند تشغيله من قبل المستخدم، ونشاط آخر وهو على سبيل المثال عندما يختار المستخدم محتوى ما لعرضه. ونشاطات أخرى تتضمن قيام المستخدم بالتنقل بين نوافذ وخيارات التطبيق أو إعطائه مهام لتنفيذها وما إلى ذلك. إنّ مشروع أندرويد الخاص بك الآن هو عبارة عن تطبيق بِدائيّ بسيط يحوي بعض الملفات الافتراضيّة. دعنا نُخصّص دقيقتين من وقتنا لإلقاء نظرة على أهم هذه الملفات (سأضع المسار الكامل للملف وذلك انطلاقاً من المجلد الأساسيّ للمشروع) app/src/main/res/layout/activity_my.xml هذا الملف التنسيقيّ بلاحقة xml هو للنشاط الذي أضفتَه عند إنشاءك للمشروع على استديو أندرويد. وباتّباع مراحل إنشاء المشروع الجديد، فإنّ استديو أندرويد يعرض هذا الملف مع كلٍّ من العرض النصّي وعرض واجهة المستخدم على الشاشة. يحوي هذا الملف بعض عناصر الواجهة الافتراضيّة المأخوذة من مكتبة التصميم في استديو أندرويد، من هذه العناصر الشريط الرئيسيّ للتطبيق وزر تفاعليّ، كما تتضمّن ملف تنسيقيّ منفصل يحوي المحتوى الأساسيّ. app/src/main/res/layout/content_my.xml ملف التنسيق هذا بلاحقة xml يكمن في الملف السابق (يتم استدعاؤه منه)، ويحوي بعض الإعدادات وعنصر للعرض النصّي والذي يعرض رسالة “Hello world!” أي بما معناه “أهلاً بكم” (وهي الرسالة الافتراضية بالإنجليزيّة لأي مشروع أو موقع وب جديد). app/src/main/java/com.mycompany.myfirstapp/MyActivity.java يَظهر في استديو أندرويد شريط لهذا الملف عندما تنتهي عمليّة إنشاء المشروع الجديد. عند تحديدك للملف سترى تعريف الصِنف للنشاط الذي أنشأتَه. عند بناءك وتشغيلك للتطبيق، فإن صنف Activity يبدأ النشاط ويُحمِّل ملف التنسيق الذي يعرض رسالة “Hello World!”. app/src/main/AndroidManifest.xml يُحدّد هذا الملف الملامح الأساسيّة للتطبيق ويُعرّف كلّ مكّوناتها. ستقوم بالرجوع لهذا الملف عند استكمالك لهذه الدروس لإضافة مكوّنات إضافيّة لتطبيقك. app/build.gradle يستخدم استديو أندرويد هذا الملف (Gradle) لتفسير وبناء تطبيقك (حيث تحتاج تطبيقات الحاسوب لتفسيرها (compile) للغة الآلة قبل تصديرها لتكون جاهزة للتشغيل). هناك ملف بنفس الاسم build.gradle لكل منظومة من مشروعك، بالإضافة إلى ملف build.gradle للمشروع بأكمله. ستكون _أنت_ عادةً مهتم بملف build.gradle الخاص بالمنظومة، وفي هذه الحالة نتكلّم عن الملف الخاص بمنظومة التطبيق. فيما يلي الإعدادات التي توضع بها اعتماديّات بناء تطبيقك، بما في ذلك إعدادات التكوين الإفتراضيّة defaultConfig: compiledSdkVersion وهو إصدار المنصّة التي ستبني تطبيقك لها بحيث يدعم العمل عليها. تكون هذه محدّدة افتراضيّاً على آخر إصدار أندرويد متاح بالنسبة لأدوات SDK التي تستخدمها. (يجب أن يكون أندرويد 4.1 أو أحدث، إذا لم تكن هذه الإصدارات متاحة فعليك تنصيب أحدهم باستخدام مديرSDK “SDK Manager”) ما زال بإمكانك بناء تطبيقك بحيث يدعم إصدارات أقدم، ولكن ضبط هذا الخيار على الإصدار الأخير يتيح لك تفعيل المزايا الجديدة وتحسين تطبيقك لأفضل تجربة ممكنة للمستخدم على الأجهزة الأحدث. applicationId وهو اسم الحزمة الكامل لتطبيقك والذي حدّدتَه خلال إنشاء المشروع الجديد. minSdkVersion وهو أدنى إصدار SDK قمتَ بتحديده خلال إنشاءك للمشروع الجديد، وهو أقدم إصدار من أندرويد يدعمه تطبيقك. targetSdkVersion يحدد أحدث إصدار أندرويد والذي قمتَ بتجربة تطبيقك عليه. يتوجّب عليك تجربة تطبيقك على الإصدارات الجديدة لأندرويد التي يتم إطلاقها، وتحديث هذه القيمة لتلائم آخر مستوى API وبالتالي الاستفادة من مزايا الإصدارات الجديدة. لاحظ أيضاً الملفات الفرعية ضمن /res والتي تحوي موارد تطبيقك: drawable-&amp;lt;density&amp;gt;/ يحوي هذا المسار المجلدات لموارد الرسوميات (drawable resources) _عدا أيقونات التشغيل_ والمصممة لأبعاد (densities) مختلفة. layout/ يحوي هذا المجلّد الملفّات التي تُعرّف واجهة المستخدم لتطبيقك، مثل ملف activity_my.xml والمذكور أعلاه، والذي يصف التنسيق الأساسيّ لصنف MyActivity menu/ مجلد الملفّات التي تُعرّف عناصر قائمة التطبيق. mipmap/ توجد أيقونات المُشغّل في هذا المجلد بدلأ من المجلد drawable/ . حيث يحوي هذا المجلد صورة ic_launcher.png والتي تظهر عند تشغيل التطبيق الإفتراضيّ (الغير مُخصَّص) vlaues/ مجلد لملفات xml الأخرى والتي تحوي مجموعة من الموارد، مثل تعريفات الألوان والعبارات. تم إيقاف ترجمة باقي الدروس نظراً لوجود بدائل في المواقع العربية.</summary></entry></feed>
