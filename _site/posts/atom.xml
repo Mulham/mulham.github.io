@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2018-05-07T13:47:25+03:00</updated>
+	<updated>2018-05-08T21:46:28+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -42,6 +42,8 @@
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -149,6 +151,8 @@ FROM Products;
 FROM Products;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;count-avg-sum&quot;&gt;دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -182,6 +186,8 @@ FROM Products;
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -280,6 +286,8 @@ LIMIT 3;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
 WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;التالي: &lt;a href=&quot;min-max&quot;&gt;دالات MIN و MAX&lt;/a&gt;&lt;/p&gt;
 
@@ -6472,6 +6480,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;تستخدم عبارة WHERE لترشيح (فلترة) التسجيلات .&lt;/p&gt;
@@ -6566,6 +6576,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;التالي: &lt;a href=&quot;and-or&quot;&gt;عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
@@ -6600,6 +6612,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -6698,6 +6712,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -6805,6 +6821,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT DISTINCT&lt;/code&gt; للحصول على القيم المختلفة فقط .&lt;/p&gt;
@@ -6878,6 +6896,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -6988,6 +7008,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -7128,6 +7150,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -7239,6 +7263,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح DELETE لحذف تسجيلات من جدول .&lt;/p&gt;
@@ -7334,6 +7360,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -7420,6 +7448,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;التالي : &lt;a href=&quot;select&quot;&gt;تصريح SELECT&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
@@ -7454,6 +7484,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -7513,6 +7545,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
     AND (City='Berlin' OR City='München');
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;التالي: &lt;a href=&quot;order-by&quot;&gt;دالة Order By&lt;/a&gt;&lt;/p&gt;
 
