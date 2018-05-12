@@ -85,4 +85,4 @@ comments: true
 	SELECT SUM(Quantity)
 	FROM OrderDetails;
 
-
+التالي: [عامل LIKE](like)
