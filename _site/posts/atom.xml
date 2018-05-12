@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2018-05-12T12:18:16+03:00</updated>
+	<updated>2018-05-12T15:38:15+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -55,6 +55,13 @@
   &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#أمثلة-على-like-في-sql&quot; id=&quot;markdown-toc-أمثلة-على-like-في-sql&quot;&gt;أمثلة على LIKE في SQL&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;style&gt;
+
+table {
+  direction: ltr;
+}
+&lt;/style&gt;
 
 &lt;h1 id=&quot;عامل-like-في-sql&quot;&gt;عامل LIKE في SQL&lt;/h1&gt;
 
