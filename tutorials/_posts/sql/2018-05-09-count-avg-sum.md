@@ -4,6 +4,7 @@ layout: post
 date: 2018-05-09
 title: سلسلة دروس SQL|دالات COUNT و AVG و SUM
 hidden: true
+type: tutorial
 comments: true
 ---
 

@@ -4,6 +4,7 @@ layout: post
 date: 2018-05-06
 title: سلسلة دروس SQL|TOP-LIMIT-ROWNUM
 hidden: true
+type: tutorial
 comments: true
 ---
 

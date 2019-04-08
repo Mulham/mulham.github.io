@@ -4,6 +4,7 @@ layout: post
 date: 2016-06-16
 title: سلسلة دروس جِت هَب|إنشاء حزمة
 hidden: true
+type: tutorial
 comments: true
 ---
  
