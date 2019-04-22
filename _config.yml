@@ -31,7 +31,7 @@ disqus_shortname:   mulham-1
 # Social
 # if you don't have any of social below, comment the line.
 google:		
-  plus:            MulhamEB
+  plus:            
   analytics:	UA-80564042-1
   #verify:
   #ad-client:
@@ -42,7 +42,7 @@ email:			mulham94@gmail.com
 #facebook:           username
 github:             mulham
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:          mulham-alibrahim-37b389121
+linkedin:          
 #xing:              username
 #instagram:          username
 #lastfm:            username
