@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: compress
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -24,7 +24,7 @@ layout: post
                 <div class="post-list">
                     {% for post in site.posts %} 
                         {% if post.type == 'tutorial' %}
-			{% unless page.hidden == 'true' %}
+			{% unless post.hidden == 'true' %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
