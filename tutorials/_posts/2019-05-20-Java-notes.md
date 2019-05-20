@@ -98,7 +98,7 @@ public abstract class Person {
 
 {% endhighlight %} 
 
-مع ملاحظة هنا الدالة work من نوع abstract ودائما بس عنا دالة من هالنوع التابع كله لازم يكون abstract إجباري، بس مو شرط للتابع abstract انو يحوي abstract methods
+مع ملاحظة هنا الدالة work من نوع abstract، ودائما بس عنا دالة من هالنوع فالـ class كله لازم يكون abstract إجباري، بس مو شرط للـ  abstract class انو يحوي abstract methods
 
  
 
@@ -149,9 +149,9 @@ public class Employee extends Person {
 
 # ملاحظات متفرقة
 
-عندما يكون في الكلاس الرئيسي superclass دالة اساسية (Konstruktormethode) تتطلب ٢ سترينع إجباري رح نكتب في الـ Subclaase دالة super، مثال:
+عندما يكون في الكلاس الرئيسي superclass دالة اساسية (Konstruktormethode) تتطلب ٢ سترينع، فإجباري رح نكتب في الـدالة الرئيسية في الـ Subclaase دالة super والتي يجب أن تكون في أول سطر فيها ، مثال:
 
-		Super(" ", " ");
+		super(" ", " ");
 
 
 الدالات من نوع static بامكاننا نستدعيها من كلاس تاني بدون انشاء عنصر من الكلاس، يعني بدل ما نكتب:
