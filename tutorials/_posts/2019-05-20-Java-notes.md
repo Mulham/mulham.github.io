@@ -155,9 +155,11 @@ public class Employee extends Person {
 
 
 الدالات من نوع static بامكاننا نستدعيها من كلاس تاني بدون انشاء عنصر من الكلاس، يعني بدل ما نكتب:
-		Student s = new Student();
-		s.hawa()
 
+{% highlight java %}
+Student s = new Student();
+s.hawa();
+{% endhighlight %} 
 منكتب
 
 
