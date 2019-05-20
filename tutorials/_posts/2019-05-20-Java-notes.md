@@ -3,7 +3,7 @@ layout: post
 date: 2019-05-20
 title: ملاحظات جافا
 type: tutorial
-comments: true
+comments: false
 
 ---
 
