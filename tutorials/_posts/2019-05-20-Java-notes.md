@@ -2,8 +2,7 @@
 layout: post
 date: 2019-05-20
 title: ملاحظات جافا
-description: ملاحظات هامة لمبتدئي لغة جافا والفروقات الرئيسية بين بعض أنواع الأصناف 
-(interface classes vs abstract classes..)
+description: ملاحظات هامة لمبتدئي لغة جافا والفروقات الرئيسية بين بعض أنواع الأصناف (interface classes vs abstract classes..)
 type: tutorial
 comments: true
 
