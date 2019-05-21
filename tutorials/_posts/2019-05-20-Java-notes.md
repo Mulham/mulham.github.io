@@ -2,8 +2,10 @@
 layout: post
 date: 2019-05-20
 title: ملاحظات جافا
+description: ملاحظات هامة لمبتدئي لغة جافا والفروقات الرئيسية بين بعض أنواع الأصناف 
+(interface classes vs abstract classes..)
 type: tutorial
-comments: false
+comments: true
 
 ---
 
@@ -12,35 +14,36 @@ comments: false
 
 
 # interface class
-الكلاسة من هالنوع تعرف أول الشي كالتالي:
+يُعرّف الصنف من هذا النوع على الشكل التالي:
 
 		public interface Name
 
-تحتوي على Methoden بدون body أي فقط تعريف للدالات على الشكل مثلا:
+تحتوي على دالّات Methods بدون متن body أي فقط تعريف للدالات، مثلًا على الشكل:
 
 		public boolean add(String s);
 
-وهذا النوع من ال methods الذي لا يحوي body يدعى abstract methods
+وهذا النوع من الدالات methods الذي لا يحوي متن body يدعى abstract methods
 
-وبالتالي :  Interface class is a collection of abstract methods
+وبالتالي تكون الدالات من نوع interface عبارة عن مجموعة من التوابع ذات النوع abstract أي collection of abtract methods
 
-an interface may also contain constants (تعريف متغيرات مع قيمهم), default methods (Konstruktormethoden), static methods
+يمكن أن تحتوي دالات الـ interface على ثوابت أيضا، أي تعريف متغيرات مع إعطاء قيمهم، وأيضًا توابع رئيسية default methods وتوابع ثابتة static methods 
 
-الـ interface class بتحل مشكلة، وهو إن التوريث بالجافا غير ممكن ﻷكثر من كلاس، هذا يعني، **لاااا** يمكن كتابة:
+الـ interface class تحل مشكلة التوريث في لغة جافا، حيث أنه غير ممكن لصنف أن يرث من أكثر من صنف آخر، هذا يعني أنه **لا** يمكن كتابة:
 
 		public class Name extends name1, name2{
 
-ولكن **يمكن** كتابة
+ولكن **يمكن** كتابة:
 
 		public class Name implements name1, name2{
 
-لماذا التوريث غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا كلاس تأخذ من كلاسين في نفس الوقت ويكون بين تلك الكلاسين تعارض فأي دالة أو أمر يجب أن ينفذ الكلاس الوريث؟ وبالتالي كلاسات ال interface لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن ال methoden
-ولكن! ال interface يمكن أن تحوي contants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر  compiler error
+لماذا التوريث غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا صنف class يرث صنفين في نفس الوقت ويكون بين تلك الأصناف تعارض فلا يمكن تحديد أي دالة أو أمر يجب أن ينفذ الصنف الوارث! وبالتالي  لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن التوابع methods.
+
+ولكن! الـ interface يمكن أن تحوي constants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر  compiling error
 ولن يتم بناء البرنامج
 
-وظيفتها (الصورة لدي غير مكتلمة هنا) تعمل بشكل قالب بيحدد الوظائف اللي لازم تكون بالكلاسات التابعة.
+وظيفة أصناف ال interface:  تعمل بشكل قالب يحدد الوظائف التي يجب أن تكون بالأصناف التابعة.
 
-مثال على كلاس interface وكلاس تابعة
+مثال على صنف interface وصنف تابع له
 {% highlight java %}
  public interface ExampleInterface {
     public void doAction();
@@ -63,11 +66,11 @@ an interface may also contain constants (تعريف متغيرات مع قيمه
 
 # Abtract class
 
-نفس ال interface بس بتحوي تعليمات ضمن ال methods وكمان لا يمكن إنشاء عنصر object منها يعني عنا مثلا كلاس student من نوع abtract فـ **ما منحسن** نقول
+نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر object منها، يعني لدينا مثلا صنف student من نوع abtract فـ **لايمكن** كتابة:
 
 		Student s = new Student();
 
- An abstract class can have an abstract method without body and it can have methods with implementation (with body) also.
+يمكن للصنف من نوع abstract أن يحوي توابع abstract methods بمتن body أو توابع بدون متن.
 
 مثال:
 
@@ -98,7 +101,7 @@ public abstract class Person {
 
 {% endhighlight %} 
 
-مع ملاحظة هنا الدالة work من نوع abstract، ودائما بس عنا دالة من هالنوع فالـ class كله لازم يكون abstract إجباري، بس مو شرط للـ  abstract class انو يحوي abstract methods
+مع ملاحظة هنا أن الدالة work من نوع abstract، ودائما عندما يكون لدينا دالة من هذا النوع فالـ class كله يجب أن يكون abstract بشكل إجباريّ، والعكس غير صحيح، أي ليس من الشرط على الـ  abstract class أن تحوي abstract methods
 
  
 
@@ -141,33 +144,35 @@ public class Employee extends Person {
 {% endhighlight %} 
 
 
-الـ subclass **لازم ويجب أن** ينفذ كل ال abstract methods يعني يرجع يكتبن ويعبيهن بالتعليمات، إلا إذا كان ال subclass أيضا abstract class، وهاد تقريبا الفرق إذا عملنا extends ل abstract class أو كلاس عادية.
+الـ subclass **يجب أن** ينفّذ كل ال abstract methods، أي يعيد كتابتهم وملأهم بالتعليمات، إلّا إذا كان التابع الوارث subclass أيضا abstract class، وهذا هو تقريبا الفرق بين عمل extends لـ abstract class أو صنف عادي.
 
 يمكن لل abtract class أن تحوي main methods
 
-وظيفتها تقديم دالات مع أوامرها جاهزة افتراضيا لاستخدامها بالتوابع الورثة.
+وظيفتها تقديم دالات مع أوامرها جاهزة افتراضيًا لاستخدامها بالتوابع الورثة.
 
 # ملاحظات متفرقة
 
-عندما يكون في الكلاس الرئيسي superclass دالة اساسية (Konstruktormethode) تتطلب ٢ سترينع، فإجباري رح نكتب في الـدالة الرئيسية في الـ Subclaase دالة super والتي يجب أن تكون في أول سطر فيها ، مثال:
+عندما يكون في الكلاس الرئيسي المُوَرِّث superclass دالة رئيسيّة (default method) تتطلب ٢ سترينع (نص) مثلًا، فيجب أن نكتب في أول سطر في الـدالة الرئيسية في الـتابع الوارث Subclaase دالة ()super، مثال:
 
-		super(" ", " ");
+		super("a", "b");
 
 
-الدالات من نوع static بامكاننا نستدعيها من كلاس تاني بدون انشاء عنصر من الكلاس، يعني بدل ما نكتب:
+الدالات من نوع static بامكاننا أن نستدعيها من صنف آخر بدون انشاء عنصر من الصنف، أي بدلًا من كتابة:
 
 {% highlight java %}
 Student s = new Student();
 s.hawa();
 {% endhighlight %} 
-منكتب
+نكتب:
 
 
 		Student.hawa();
 
-المتغير من نوع final مامنحسن نغير قيمته
+المتغيرات من نوع final لايمكننا تغيير قيمتها
 
+*****************
 
+هل لديك سؤال أو معلومة إضافية؟ يرجى مشاركتنا إياها في التعليقات لإضافتها للنص الأصلي
 
 # المراجع
 
