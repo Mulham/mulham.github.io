@@ -4,13 +4,103 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2019-06-22T12:02:06+03:00</updated>
+	<updated>2019-06-22T20:13:05+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>أنواع أنظمة الملفات وكيفية الاختيار بينهم</title>
+			<link href="http://mulham.github.io/File-Systems/"/>
+			<updated>2019-06-22T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//File-Systems</id>
+			<content type="html">&lt;p&gt;أهلًا بكم في درس جديد حول أنظمة الملفات File Systems والتي هي الأساس لتنظيم الملفات في وحدات التخزين (الأقراص الصلبة).&lt;/p&gt;
+
+&lt;p&gt;يوجد اليوم العديد من أنظمة الملفات المستخدمة ويعود لك قرار اختيار أحدها عند تهيئته القرص الصلب وذلك وفقًا لـ :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;نظام التشغيل&lt;/li&gt;
+  &lt;li&gt;نوع القرص الذي تقوم بتهيئته&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;دعونا في البداية نفهم سريعًا وظيفة أنظمة الملفات.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#وظيفة-أنظمة-الملفات&quot; id=&quot;markdown-toc-وظيفة-أنظمة-الملفات&quot;&gt;وظيفة أنظمة الملفات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fat12-fat16--fat32&quot; id=&quot;markdown-toc-fat12-fat16--fat32&quot;&gt;FAT12, FAT16 &amp;amp; FAT32&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#المراجع&quot; id=&quot;markdown-toc-المراجع&quot;&gt;المراجع&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;وظيفة-أنظمة-الملفات&quot;&gt;وظيفة أنظمة الملفات&lt;/h1&gt;
+
+&lt;p&gt;تقوم بتقسيم مساحة القرص إلى حجرات (أقسام صغيرة) افتراضية وتعطي لكل ملف رقم تسلسلي يعبر عن مكان تواجده في القرص الصلب.&lt;/p&gt;
+
+&lt;p&gt;الصورة التالية توضح العملية حيث تعبر المربعات عن الحجرات وتعبر المساحات الحمراء عن حجم الملفات في كل حجرة&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/file-systems.jpg&quot; alt=&quot;File-Systems&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(للمزيد حول فهم الموضوع نظريًا اقرأ عنه في &lt;a href=&quot;https://ar.wikipedia.org/wiki/نظام_الملفات&quot;&gt;ويكيبيديا&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;fat12-fat16--fat32&quot;&gt;FAT12, FAT16 &amp;amp; FAT32&lt;/h1&gt;
+
+&lt;p&gt;أقدم أنواع الملفات في هذه القائمة وهو FAT12 المُصدر عام 1980 وبعدها FAT16 عام 1984 من قبل IBM وميكروسوفت ثم FAT32 من قبل ميكروسوفت عام 1996.
+إن FAT اختصار لـ (File allocation table) وتعني جدول توزيع الملفات، الأنواع الرئيسية لها هي المذكورة هنا (FAT12-16-32) بحيث يشير ازدياد الرقم إلى زيادة في عدد الحجرات والحجم الأعظمي للملف الواحد ولحجم القرص بالكامل. وفيما يلي جدول يوضح ذلك:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;الحجم الأعظمي للملف الواحد&lt;/th&gt;
+      &lt;th&gt;الحجم الأعظمي للقرص&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FAT12&lt;/td&gt;
+      &lt;td&gt;32MB&lt;/td&gt;
+      &lt;td&gt;32MB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FAT16&lt;/td&gt;
+      &lt;td&gt;2GB/4GB&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FAT32&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;32GB (تهيئة ويندوز)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;2TB (أنظمة أخرى)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16TB (نظريًا)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;المراجع&quot;&gt;المراجع&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Comparison_of_file_systems&quot;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_h30HBYxtws&quot;&gt;ExplainigComputer channel on YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;الإصدارات المختلفة ل FAT16 محدودة لحجم ملفات أعظمي 2GB,4GB مع حجم قرص أعظمي 2GB أو 4 أو 8 أو 16 جيغابايت وذلك بحسب حجم القسم والحجرة. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<title>ملاحظات جافا</title>
