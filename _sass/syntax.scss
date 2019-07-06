@@ -4,6 +4,7 @@ pre.highlight {
 
 .highlight {
 	background-color: #49483e;
+	direction: ltr;
 	font-family: $font2;
 	@include font-size(14);
 	color: #f8f8f2;
