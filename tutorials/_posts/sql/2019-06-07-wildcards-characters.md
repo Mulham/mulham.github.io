@@ -50,12 +50,12 @@ _|     تمثل حرفا واحدا |     العبارة h_t تجد hot, hat, و
 
 عبارة تحوي عامل LIKE | الوصف
 ------|--------
-<p dir="ltr">WHERE CustomerName LIKE 'a%' </p>| تجد أي قيمة تبدأ بـ a
-<p dir="ltr">WHERE CustomerName LIKE '%a' </p>| تجد أي قيمة تنتهي بـ a
-<p dir="ltr">WHERE CustomerName LIKE '%or%' </p>| تجد أي قيمة تحوي العبارة or في أي موضع
-<p dir="ltr">WHERE CustomerName LIKE '_r%' </p>| تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)
-<p dir="ltr">WHERE CustomerName LIKE 'a_%_%' </p>| تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)
-<p dir="ltr">WHERE ContactName LIKE 'a%o'</p> | تجد أي قيمة تبدأ بـ a وتنتهي بـ o
+<pre style="direction: ltr;">WHERE CustomerName LIKE 'a%' </pre>| تجد أي قيمة تبدأ بـ a
+<pre style="direction: ltr;">WHERE CustomerName LIKE '%a' </pre>| تجد أي قيمة تنتهي بـ a
+<pre style="direction: ltr;">WHERE CustomerName LIKE '%or%' </pre>| تجد أي قيمة تحوي العبارة or في أي موضع
+<pre style="direction: ltr;">WHERE CustomerName LIKE '_r%' </pre>| تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)
+<pre style="direction: ltr;">WHERE CustomerName LIKE 'a_%_%' </pre>| تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)
+<pre style="direction: ltr;">WHERE ContactName LIKE 'a%o'</pre> | تجد أي قيمة تبدأ بـ a وتنتهي بـ o
 
 # استعراض قاعدة  بيانات
 
