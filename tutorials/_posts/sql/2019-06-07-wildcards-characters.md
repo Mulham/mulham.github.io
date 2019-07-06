@@ -49,14 +49,19 @@ _|     تمثل حرفا واحدا |     العبارة h_t تجد hot, hat, و
 
 
 
-عبارة تحوي عامل LIKE | الوصف
-------|--------
- `WHERE CustomerName LIKE 'a%'` | تجد أي قيمة تبدأ بـ a
- WHERE CustomerName LIKE '%a' | تجد أي قيمة تنتهي بـ a
- WHERE CustomerName LIKE '%or%' | تجد أي قيمة تحوي العبارة or في أي موضع
- WHERE CustomerName LIKE '_r%' | تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)
- WHERE CustomerName LIKE 'a_%_%' | تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)
- WHERE ContactName LIKE 'a%o' | تجد أي قيمة تبدأ بـ a وتنتهي بـ o
+
+
+<table>
+<tr><td style="font-weight: bold">عبارة تحوي عامل LIKE</td>
+<td style="font-weight: bold">الوصف </td></tr>
+<tr><td style="direction: ltr; text-align: right">WHERE CustomerName LIKE 'a%'</td><td>تجد أي قيمة تبدأ بـ a</td></tr>
+<tr><td style="direction: ltr; text-align: right">WHERE CustomerName LIKE '%a'</td><td>تجد أي قيمة تنتهي بـ a</td></tr>
+<tr><td style="direction: ltr; text-align: right">WHERE CustomerName LIKE '%or%'</td><td>تجد أي قيمة تحوي العبارة or في أي موضع</td></tr>
+<tr><td style="direction: ltr; text-align: right">WHERE CustomerName LIKE '_r%'</td><td>تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)</td></tr>
+<tr><td style="direction: ltr; text-align: right"> WHERE CustomerName LIKE 'a_%_%'</td><td>تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)</td></tr>
+<tr><td style="direction: ltr; text-align: right"> WHERE ContactName LIKE 'a%o'</td><td>تجد أي قيمة تبدأ بـ a وتنتهي بـ o</td></tr>
+
+</table>
 
 
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-22T20:13:05+03:00</updated><id>http://localhost:4000/</id><title type="html">موقع ملهم</title><subtitle>شغف المعرفة</subtitle><entry><title type="html">أنواع أنظمة الملفات وكيفية الاختيار بينهم</title><link href="http://localhost:4000/File-Systems/" rel="alternate" type="text/html" title="أنواع أنظمة الملفات وكيفية الاختيار بينهم" /><published>2019-06-22T00:00:00+03:00</published><updated>2019-06-22T00:00:00+03:00</updated><id>http://localhost:4000/File-Systems</id><content type="html" xml:base="http://localhost:4000/File-Systems/">&lt;p&gt;أهلًا بكم في درس جديد حول أنظمة الملفات File Systems والتي هي الأساس لتنظيم الملفات في وحدات التخزين (الأقراص الصلبة).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-07T01:50:58+03:00</updated><id>http://localhost:4000/</id><title type="html">موقع ملهم</title><subtitle>شغف المعرفة</subtitle><entry><title type="html">أنواع أنظمة الملفات وكيفية الاختيار بينهم</title><link href="http://localhost:4000/File-Systems/" rel="alternate" type="text/html" title="أنواع أنظمة الملفات وكيفية الاختيار بينهم" /><published>2019-06-22T00:00:00+03:00</published><updated>2019-06-22T00:00:00+03:00</updated><id>http://localhost:4000/File-Systems</id><content type="html" xml:base="http://localhost:4000/File-Systems/">&lt;p&gt;أهلًا بكم في درس جديد حول أنظمة الملفات File Systems والتي هي الأساس لتنظيم الملفات في وحدات التخزين (الأقراص الصلبة).&lt;/p&gt;
 
 &lt;p&gt;يوجد اليوم العديد من أنظمة الملفات المستخدمة ويعود لك قرار اختيار أحدها عند تهيئته القرص الصلب وذلك وفقًا لـ :&lt;/p&gt;
 
@@ -7,11 +7,19 @@
   &lt;li&gt;نوع القرص الذي تقوم بتهيئته&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;ستجد في هذا المقال تغطية لـ 12 نوع شائع لنظام الملفات&lt;/p&gt;
+
 &lt;p&gt;دعونا في البداية نفهم سريعًا وظيفة أنظمة الملفات.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#وظيفة-أنظمة-الملفات&quot; id=&quot;markdown-toc-وظيفة-أنظمة-الملفات&quot;&gt;وظيفة أنظمة الملفات&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#fat12-fat16--fat32&quot; id=&quot;markdown-toc-fat12-fat16--fat32&quot;&gt;FAT12, FAT16 &amp;amp; FAT32&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ntfs&quot; id=&quot;markdown-toc-ntfs&quot;&gt;NTFS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#exfat&quot; id=&quot;markdown-toc-exfat&quot;&gt;exFAT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ext2-ext3--ext4&quot; id=&quot;markdown-toc-ext2-ext3--ext4&quot;&gt;ext2, ext3 &amp;amp; ext4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hfs-hfs--apfs&quot; id=&quot;markdown-toc-hfs-hfs--apfs&quot;&gt;HFS, HFS+ &amp;amp; APFS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#zfs&quot; id=&quot;markdown-toc-zfs&quot;&gt;ZFS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#كيفية-اختيار-نظام-الملفات&quot; id=&quot;markdown-toc-كيفية-اختيار-نظام-الملفات&quot;&gt;كيفية اختيار نظام الملفات&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#المراجع&quot; id=&quot;markdown-toc-المراجع&quot;&gt;المراجع&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -47,7 +55,7 @@
     &lt;tr&gt;
       &lt;td&gt;FAT16&lt;/td&gt;
       &lt;td&gt;2GB/4GB&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16GB&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;FAT32&lt;/td&gt;
@@ -67,6 +75,69 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: نظام الملفات FAT32 شائع جدًا بسبب توافقه مع أنظمة التشغيل المختلفة ويُستخدم كثيرًا لوحدات التخزين الخارجية من USB Flash وكروت الذاكرة للهواتف وما إلى ذلك..&lt;/p&gt;
+
+&lt;h1 id=&quot;ntfs&quot;&gt;NTFS&lt;/h1&gt;
+&lt;p&gt;اختصار لـ New Technology File System وهو الأكثر شيوعًا ﻷنظمة ويندوز وتم إطلاقه عام 1993 لتجاوز حد حجم الملفات الموجود في FAT32 حيث أصبح الحد الأعظمي لحجم الملف الواحد 16 exabytes، والإكسابايت EB هي مليون تيرابايت، مما يعني أنه عمليا لايوجد حد لحجم الملف!&lt;/p&gt;
+
+&lt;p&gt;هذا النوع من أنظمة الملفات هو journaling File System أي يحتفظ بسجل للتغييرات وبالتالي يتم تجنب تلف البيانات ويتم الاستعادة في حال حدوث خلل في النظام أو في الطاقة الكهربائية.
+وليس كما في FAT32، يدعم نظام الملفات هنا الصلاحية، مما يعني أنه يمكن مثلا الإشارة لملف ما على أنه للقراءة فقط، كما يدعم تشفير البيانات. مما يجعله مناسب أكثر لاستخدامه نظاما للملفات ﻷنظمة التشغيل، ولذا &lt;strong&gt;يجب&lt;/strong&gt; تنصيب الويندوز على قرص ذو نوع نظام ملفات NTFS.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: غير متوافق مع الإصدارات القديمة لويندوز وكذلك غير متوافق مع الأنظمة الأخرى، مثلا تظهر أقراص NTFS على أنها للقراءة فقط في نظام macOS والأنظمة القديمة من لينكس. وقد لاتكون قابلة للقراءة نهائيًا لأجهزة مشغلات الفيديو مثلًا. بالتالي يجب عدم استخدامها للأقراص الخارجية&lt;/p&gt;
+
+&lt;h1 id=&quot;exfat&quot;&gt;exFAT&lt;/h1&gt;
+
+&lt;p&gt;اختصار لـ Extended File Allocation Table تم إطلاقه من قِبَل ميكروسوفت عام 2006 كنظام مُحسَّن لأقراص USB كبيرة السعة وكروت الذاكرة.&lt;/p&gt;
+
+&lt;p&gt;نظام الملفات هذا أقل تطوّرًا من NTFS ولكن يحوي مزايا إضافية بالمقارنة مع FAT32. 
+الحد الأعظمي لحجم الملف الواحد هنا هو 16EX أي عمليا لا يوجد حد. مما يجعله أفضل خيار لكروت الذاكرة التي تٌسجَّل عليها ملفات الفيديو. ولهذا السبب تم اختياره كنظام ملفات افتراضي لكروت ذاكرة SDXC&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: يتوافق بشكل أفضل مع الأنظمة المختلفة بالمقارنة مع NTFS. بما في ذلك القراءة والكتابة على أنظمة ماك macOS والإصدارات الحديثة من أندرويد. وعلى اللينكس فستحتاج لتنزيل حزم إضافية للوصول لأقراص exFAT.&lt;/p&gt;
+
+&lt;h1 id=&quot;ext2-ext3--ext4&quot;&gt;ext2, ext3 &amp;amp; ext4&lt;/h1&gt;
+
+&lt;p&gt;اختصار لـ extended File System وتم إطلاقه حصرًا ﻷنظمة لينكس عام 1992 حيث أُطلق نظام الملفات ext.
+بعدها بعام أُطلق ext2 والذي كان لسنوات عديدة نظام الملفات الافتراضي للعديد من توزيعات لينكس.
+عام 2001 تم إصدار ext3 والذي وفَّر journaling File System المذكور سابقّا لتجنب تلف البيانات.
+وتم طرح أخيرًا ext4 عام 2008 الأحدث لتاريخ هذه الصفحة والافتراضي ﻷنظمة لينكس.
+أقصى حد لحجم الملف هو 16TB ولحجم القرص 1EB&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: كونه مخصص لأنظمة لينكس فهو غير متوافق بشكل افتراضي مع أنظمة تشغيل ويندوز وماك، ولكن قد يصبح قابل للقراءة أو حتى الكتابة باستخدام برامج اضافية.&lt;/p&gt;
+
+&lt;h1 id=&quot;hfs-hfs--apfs&quot;&gt;HFS, HFS+ &amp;amp; APFS&lt;/h1&gt;
+
+&lt;p&gt;حيث HFS اختصار لـ hierarchical File System أي نظام الملفات الهرمي وتم إطلاقه من أبّل عام 1995 لنظام ماك. ويدعم حجم أعظمي للملف 2GB وحجم أعظمي للقرص 2TB ويُعرف أيضًا بـ Mac OS standard.
+وتم إطلاق HFS+ عام 1998 والذي يُعرف أيضًا بـ HFS Extended أو Mac OS Extended والذي يوفّر journaling لتجنب تلف البيانات ويدعم حجم أعظمي للملف والقرص 8EB عند استخدام نظام macOS 10 أو أحدث.
+عام 2017 تم طرح نظام ملفات أبل Apple File System واختصارا APFS والمٌحسَّن ﻷقراص SSD.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: جميعهم لا يدعمون افتراضيًا الأنظمة الأخرى الغير تابعة لشركة أبّل&lt;/p&gt;
+
+&lt;h1 id=&quot;zfs&quot;&gt;ZFS&lt;/h1&gt;
+
+&lt;p&gt;و zed file system الذي تم إطلاقه مبدأيًا عام 2006 من قِبَل Sun Microsystems ولكن منذ عام 2013 أصبح تطويره من قِبَل OpenZFS project.&lt;/p&gt;
+
+&lt;p&gt;يختلف نظام الملفات هذا عن باقي الأنظمة كونه يقوم بدمج مدير أقراص للتحكم بالأقراص المرتبطة بالحاسب. ومن خلال دمج إدارة القرص مع نظام الملفات، يوفّر ZFS حماية أكبر ضد فقد أو تلف البيانات.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: متوافق حاليًا مع لينكس و FreeBSD و TrueOS وقد يدعم ويندوز وماك لاحقًا.&lt;/p&gt;
+
+&lt;h1 id=&quot;كيفية-اختيار-نظام-الملفات&quot;&gt;كيفية اختيار نظام الملفات&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;في حالة الأقراص التي سيتم تشغيل أنظمة التشغيل عليها فلا يوجد خيار هنا، حيث يجب عليك اختيار نوع نظام الملفات المٌختار أصلا من قبل نظام التشغيل الذي ستنصّبه. هذا يعني NTFS لويندوز و ext4 للينكس و HFS+ أو APFS للماك.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;بالنسبة ﻷقراص USB وكروت الذاكرة فإن نظام الملفات FAT32 هو الخيار الأفضل للأقراص ذات السعة الأقل من 32 جيغابايت وذلك ﻷن له توافق مع مختلف الأنظمة (مع الانتباه إلى أن الحجم الأعظمي للملف كما هو مذكور 4 جيغابايت).&lt;/p&gt;
+
+    &lt;p&gt;أما لأقراص الـ USB وكروت الذاكرة ذات السعة أكبر من 32 جيغا أو إذا أردنا تخزين ملفات أكبر من 4 جيغا للملف الواحد فإن نظام الملفات exFAT هو الأفضل&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;للأقراص الخارجية عمومًا وأقراص SSD استخدم NTFS إذا كان الاستعمال يقتصر على أجهزة ويندوز، أو exFAT للاستعمال على كلا الويندوز والماك&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;آمل أن تكون قد حصلت على فائدة، إذا كان لديك أي سؤال فاطرحه في التعليقات، ﻷي تعديل أو اقتراح يمكن طرحه أيضًا في الأسفل أو تعديل الصفحة مباشرة من خلال الزر أعلى الصفحة.&lt;/p&gt;
+
 &lt;h1 id=&quot;المراجع&quot;&gt;المراجع&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Comparison_of_file_systems&quot;&gt;Wikipedia&lt;/a&gt;&lt;/li&gt;
@@ -79,7 +150,7 @@
       &lt;p&gt;الإصدارات المختلفة ل FAT16 محدودة لحجم ملفات أعظمي 2GB,4GB مع حجم قرص أعظمي 2GB أو 4 أو 8 أو 16 جيغابايت وذلك بحسب حجم القسم والحجرة. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">أهلًا بكم في درس جديد حول أنظمة الملفات File Systems والتي هي الأساس لتنظيم الملفات في وحدات التخزين (الأقراص الصلبة). يوجد اليوم العديد من أنظمة الملفات المستخدمة ويعود لك قرار اختيار أحدها عند تهيئته القرص الصلب وذلك وفقًا لـ : نظام التشغيل نوع القرص الذي تقوم بتهيئته دعونا في البداية نفهم سريعًا وظيفة أنظمة الملفات. وظيفة أنظمة الملفات FAT12, FAT16 &amp;amp; FAT32 المراجع وظيفة أنظمة الملفات تقوم بتقسيم مساحة القرص إلى حجرات (أقسام صغيرة) افتراضية وتعطي لكل ملف رقم تسلسلي يعبر عن مكان تواجده في القرص الصلب. الصورة التالية توضح العملية حيث تعبر المربعات عن الحجرات وتعبر المساحات الحمراء عن حجم الملفات في كل حجرة (للمزيد حول فهم الموضوع نظريًا اقرأ عنه في ويكيبيديا) FAT12, FAT16 &amp;amp; FAT32 أقدم أنواع الملفات في هذه القائمة وهو FAT12 المُصدر عام 1980 وبعدها FAT16 عام 1984 من قبل IBM وميكروسوفت ثم FAT32 من قبل ميكروسوفت عام 1996. إن FAT اختصار لـ (File allocation table) وتعني جدول توزيع الملفات، الأنواع الرئيسية لها هي المذكورة هنا (FAT12-16-32) بحيث يشير ازدياد الرقم إلى زيادة في عدد الحجرات والحجم الأعظمي للملف الواحد ولحجم القرص بالكامل. وفيما يلي جدول يوضح ذلك:   الحجم الأعظمي للملف الواحد الحجم الأعظمي للقرص FAT12 32MB 32MB FAT16 2GB/4GB1   FAT32 4GB 32GB (تهيئة ويندوز)     2TB (أنظمة أخرى)     16TB (نظريًا) المراجع Wikipedia ExplainigComputer channel on YouTube الإصدارات المختلفة ل FAT16 محدودة لحجم ملفات أعظمي 2GB,4GB مع حجم قرص أعظمي 2GB أو 4 أو 8 أو 16 جيغابايت وذلك بحسب حجم القسم والحجرة. &amp;#8617;</summary></entry><entry><title type="html">ملاحظات جافا</title><link href="http://localhost:4000/Java-notes/" rel="alternate" type="text/html" title="ملاحظات جافا" /><published>2019-05-20T00:00:00+03:00</published><updated>2019-05-20T00:00:00+03:00</updated><id>http://localhost:4000/Java-notes</id><content type="html" xml:base="http://localhost:4000/Java-notes/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">أهلًا بكم في درس جديد حول أنظمة الملفات File Systems والتي هي الأساس لتنظيم الملفات في وحدات التخزين (الأقراص الصلبة). يوجد اليوم العديد من أنظمة الملفات المستخدمة ويعود لك قرار اختيار أحدها عند تهيئته القرص الصلب وذلك وفقًا لـ : نظام التشغيل نوع القرص الذي تقوم بتهيئته ستجد في هذا المقال تغطية لـ 12 نوع شائع لنظام الملفات دعونا في البداية نفهم سريعًا وظيفة أنظمة الملفات. وظيفة أنظمة الملفات FAT12, FAT16 &amp;amp; FAT32 NTFS exFAT ext2, ext3 &amp;amp; ext4 HFS, HFS+ &amp;amp; APFS ZFS كيفية اختيار نظام الملفات المراجع وظيفة أنظمة الملفات تقوم بتقسيم مساحة القرص إلى حجرات (أقسام صغيرة) افتراضية وتعطي لكل ملف رقم تسلسلي يعبر عن مكان تواجده في القرص الصلب. الصورة التالية توضح العملية حيث تعبر المربعات عن الحجرات وتعبر المساحات الحمراء عن حجم الملفات في كل حجرة (للمزيد حول فهم الموضوع نظريًا اقرأ عنه في ويكيبيديا) FAT12, FAT16 &amp;amp; FAT32 أقدم أنواع الملفات في هذه القائمة وهو FAT12 المُصدر عام 1980 وبعدها FAT16 عام 1984 من قبل IBM وميكروسوفت ثم FAT32 من قبل ميكروسوفت عام 1996. إن FAT اختصار لـ (File allocation table) وتعني جدول توزيع الملفات، الأنواع الرئيسية لها هي المذكورة هنا (FAT12-16-32) بحيث يشير ازدياد الرقم إلى زيادة في عدد الحجرات والحجم الأعظمي للملف الواحد ولحجم القرص بالكامل. وفيما يلي جدول يوضح ذلك:   الحجم الأعظمي للملف الواحد الحجم الأعظمي للقرص FAT12 32MB 32MB FAT16 2GB/4GB1 16GB FAT32 4GB 32GB (تهيئة ويندوز)     2TB (أنظمة أخرى)     16TB (نظريًا) التوافق مع أنظمة التشغيل: نظام الملفات FAT32 شائع جدًا بسبب توافقه مع أنظمة التشغيل المختلفة ويُستخدم كثيرًا لوحدات التخزين الخارجية من USB Flash وكروت الذاكرة للهواتف وما إلى ذلك.. NTFS اختصار لـ New Technology File System وهو الأكثر شيوعًا ﻷنظمة ويندوز وتم إطلاقه عام 1993 لتجاوز حد حجم الملفات الموجود في FAT32 حيث أصبح الحد الأعظمي لحجم الملف الواحد 16 exabytes، والإكسابايت EB هي مليون تيرابايت، مما يعني أنه عمليا لايوجد حد لحجم الملف! هذا النوع من أنظمة الملفات هو journaling File System أي يحتفظ بسجل للتغييرات وبالتالي يتم تجنب تلف البيانات ويتم الاستعادة في حال حدوث خلل في النظام أو في الطاقة الكهربائية. وليس كما في FAT32، يدعم نظام الملفات هنا الصلاحية، مما يعني أنه يمكن مثلا الإشارة لملف ما على أنه للقراءة فقط، كما يدعم تشفير البيانات. مما يجعله مناسب أكثر لاستخدامه نظاما للملفات ﻷنظمة التشغيل، ولذا يجب تنصيب الويندوز على قرص ذو نوع نظام ملفات NTFS. التوافق مع أنظمة التشغيل: غير متوافق مع الإصدارات القديمة لويندوز وكذلك غير متوافق مع الأنظمة الأخرى، مثلا تظهر أقراص NTFS على أنها للقراءة فقط في نظام macOS والأنظمة القديمة من لينكس. وقد لاتكون قابلة للقراءة نهائيًا لأجهزة مشغلات الفيديو مثلًا. بالتالي يجب عدم استخدامها للأقراص الخارجية exFAT اختصار لـ Extended File Allocation Table تم إطلاقه من قِبَل ميكروسوفت عام 2006 كنظام مُحسَّن لأقراص USB كبيرة السعة وكروت الذاكرة. نظام الملفات هذا أقل تطوّرًا من NTFS ولكن يحوي مزايا إضافية بالمقارنة مع FAT32. الحد الأعظمي لحجم الملف الواحد هنا هو 16EX أي عمليا لا يوجد حد. مما يجعله أفضل خيار لكروت الذاكرة التي تٌسجَّل عليها ملفات الفيديو. ولهذا السبب تم اختياره كنظام ملفات افتراضي لكروت ذاكرة SDXC التوافق مع أنظمة التشغيل: يتوافق بشكل أفضل مع الأنظمة المختلفة بالمقارنة مع NTFS. بما في ذلك القراءة والكتابة على أنظمة ماك macOS والإصدارات الحديثة من أندرويد. وعلى اللينكس فستحتاج لتنزيل حزم إضافية للوصول لأقراص exFAT. ext2, ext3 &amp;amp; ext4 اختصار لـ extended File System وتم إطلاقه حصرًا ﻷنظمة لينكس عام 1992 حيث أُطلق نظام الملفات ext. بعدها بعام أُطلق ext2 والذي كان لسنوات عديدة نظام الملفات الافتراضي للعديد من توزيعات لينكس. عام 2001 تم إصدار ext3 والذي وفَّر journaling File System المذكور سابقّا لتجنب تلف البيانات. وتم طرح أخيرًا ext4 عام 2008 الأحدث لتاريخ هذه الصفحة والافتراضي ﻷنظمة لينكس. أقصى حد لحجم الملف هو 16TB ولحجم القرص 1EB التوافق مع أنظمة التشغيل: كونه مخصص لأنظمة لينكس فهو غير متوافق بشكل افتراضي مع أنظمة تشغيل ويندوز وماك، ولكن قد يصبح قابل للقراءة أو حتى الكتابة باستخدام برامج اضافية. HFS, HFS+ &amp;amp; APFS حيث HFS اختصار لـ hierarchical File System أي نظام الملفات الهرمي وتم إطلاقه من أبّل عام 1995 لنظام ماك. ويدعم حجم أعظمي للملف 2GB وحجم أعظمي للقرص 2TB ويُعرف أيضًا بـ Mac OS standard. وتم إطلاق HFS+ عام 1998 والذي يُعرف أيضًا بـ HFS Extended أو Mac OS Extended والذي يوفّر journaling لتجنب تلف البيانات ويدعم حجم أعظمي للملف والقرص 8EB عند استخدام نظام macOS 10 أو أحدث. عام 2017 تم طرح نظام ملفات أبل Apple File System واختصارا APFS والمٌحسَّن ﻷقراص SSD. التوافق مع أنظمة التشغيل: جميعهم لا يدعمون افتراضيًا الأنظمة الأخرى الغير تابعة لشركة أبّل ZFS و zed file system الذي تم إطلاقه مبدأيًا عام 2006 من قِبَل Sun Microsystems ولكن منذ عام 2013 أصبح تطويره من قِبَل OpenZFS project. يختلف نظام الملفات هذا عن باقي الأنظمة كونه يقوم بدمج مدير أقراص للتحكم بالأقراص المرتبطة بالحاسب. ومن خلال دمج إدارة القرص مع نظام الملفات، يوفّر ZFS حماية أكبر ضد فقد أو تلف البيانات. التوافق مع أنظمة التشغيل: متوافق حاليًا مع لينكس و FreeBSD و TrueOS وقد يدعم ويندوز وماك لاحقًا. كيفية اختيار نظام الملفات في حالة الأقراص التي سيتم تشغيل أنظمة التشغيل عليها فلا يوجد خيار هنا، حيث يجب عليك اختيار نوع نظام الملفات المٌختار أصلا من قبل نظام التشغيل الذي ستنصّبه. هذا يعني NTFS لويندوز و ext4 للينكس و HFS+ أو APFS للماك. بالنسبة ﻷقراص USB وكروت الذاكرة فإن نظام الملفات FAT32 هو الخيار الأفضل للأقراص ذات السعة الأقل من 32 جيغابايت وذلك ﻷن له توافق مع مختلف الأنظمة (مع الانتباه إلى أن الحجم الأعظمي للملف كما هو مذكور 4 جيغابايت). أما لأقراص الـ USB وكروت الذاكرة ذات السعة أكبر من 32 جيغا أو إذا أردنا تخزين ملفات أكبر من 4 جيغا للملف الواحد فإن نظام الملفات exFAT هو الأفضل للأقراص الخارجية عمومًا وأقراص SSD استخدم NTFS إذا كان الاستعمال يقتصر على أجهزة ويندوز، أو exFAT للاستعمال على كلا الويندوز والماك آمل أن تكون قد حصلت على فائدة، إذا كان لديك أي سؤال فاطرحه في التعليقات، ﻷي تعديل أو اقتراح يمكن طرحه أيضًا في الأسفل أو تعديل الصفحة مباشرة من خلال الزر أعلى الصفحة. المراجع Wikipedia ExplainigComputer channel on YouTube الإصدارات المختلفة ل FAT16 محدودة لحجم ملفات أعظمي 2GB,4GB مع حجم قرص أعظمي 2GB أو 4 أو 8 أو 16 جيغابايت وذلك بحسب حجم القسم والحجرة. &amp;#8617;</summary></entry><entry><title type="html">ملاحظات جافا</title><link href="http://localhost:4000/Java-notes/" rel="alternate" type="text/html" title="ملاحظات جافا" /><published>2019-05-20T00:00:00+03:00</published><updated>2019-05-20T00:00:00+03:00</updated><id>http://localhost:4000/Java-notes</id><content type="html" xml:base="http://localhost:4000/Java-notes/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#interface-class&quot; id=&quot;markdown-toc-interface-class&quot;&gt;interface class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#abtract-class&quot; id=&quot;markdown-toc-abtract-class&quot;&gt;Abtract class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ملاحظات-متفرقة&quot; id=&quot;markdown-toc-ملاحظات-متفرقة&quot;&gt;ملاحظات متفرقة&lt;/a&gt;&lt;/li&gt;
@@ -251,7 +322,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/8064322/what-is-difference-to-extend-abstract-class-and-non-abstract-class&quot;&gt;stackoverflow&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.journaldev.com/1582/abstract-class-in-java&quot;&gt;journaldev&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">interface class Abtract class ملاحظات متفرقة المراجع interface class يُعرّف الصنف من هذا النوع على الشكل التالي: public interface Name تحتوي على دالّات Methods بدون متن body أي فقط تعريف للدالات، مثلًا على الشكل: public boolean add(String s); وهذا النوع من الدالات methods الذي لا يحوي متن body يدعى abstract methods وبالتالي تكون الدالات من نوع interface عبارة عن مجموعة من التوابع ذات النوع abstract أي collection of abtract methods يمكن أن تحتوي دالات الـ interface على ثوابت أيضا، أي تعريف متغيرات مع إعطاء قيمهم، وأيضًا توابع رئيسية default methods وتوابع ثابتة static methods الـ interface class تحل مشكلة التوريث في لغة جافا، حيث أنه غير ممكن لصنف أن يرث من أكثر من صنف آخر، هذا يعني أنه لا يمكن كتابة: public class Name extends name1, name2{ ولكن يمكن كتابة: public class Name implements name1, name2{ لماذا التوريث غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا صنف class يرث صنفين في نفس الوقت ويكون بين تلك الأصناف تعارض فلا يمكن تحديد أي دالة أو أمر يجب أن ينفذ الصنف الوارث! وبالتالي لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن التوابع methods. ولكن! الـ interface يمكن أن تحوي constants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر compiling error ولن يتم بناء البرنامج وظيفة أصناف ال interface: تعمل بشكل قالب يحدد الوظائف التي يجب أن تكون بالأصناف التابعة. مثال على صنف interface وصنف تابع له public interface ExampleInterface { public void doAction(); public String doThis(int number); } public class sub implements ExampleInterface { public void doAction() { //specify what must happen } public String doThis(int number) { //specfiy what must happen } } Abtract class نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر object منها، يعني لدينا مثلا صنف student من نوع abtract فـ لايمكن كتابة: Student s = new Student(); يمكن للصنف من نوع abstract أن يحوي توابع abstract methods بمتن body أو توابع بدون متن. مثال: //abstract class public abstract class Person { private String name; private String gender; public Person(String nm, String gen){ this.name=nm; this.gender=gen; } //abstract method public abstract void work(); @Override public String toString(){ return &quot;Name=&quot;+this.name+&quot;::Gender=&quot;+this.gender; } public void changeName(String newName) { this.name = newName; } } مع ملاحظة هنا أن الدالة work من نوع abstract، ودائما عندما يكون لدينا دالة من هذا النوع فالـ class كله يجب أن يكون abstract بشكل إجباريّ، والعكس غير صحيح، أي ليس من الشرط على الـ abstract class أن تحوي abstract methods ومثال للتابع الوريث subclass: package com.journaldev.design; public class Employee extends Person { private int empId; public Employee(String nm, String gen, int id) { super(nm, gen); this.empId=id; } @Override public void work() { if(empId == 0){ System.out.println(&quot;Not working&quot;); }else{ System.out.println(&quot;Working as employee!!&quot;); } } public static void main(String args[]){ //coding in terms of abstract classes Person student = new Employee(&quot;Dove&quot;,&quot;Female&quot;,0); Person employee = new Employee(&quot;Pankaj&quot;,&quot;Male&quot;,123); student.work(); employee.work(); //using method implemented in abstract class - inheritance employee.changeName(&quot;Pankaj Kumar&quot;); System.out.println(employee.toString()); } } الـ subclass يجب أن ينفّذ كل ال abstract methods، أي يعيد كتابتهم وملأهم بالتعليمات، إلّا إذا كان التابع الوارث subclass أيضا abstract class، وهذا هو تقريبا الفرق بين عمل extends لـ abstract class أو صنف عادي. يمكن لل abtract class أن تحوي main methods وظيفتها تقديم دالات مع أوامرها جاهزة افتراضيًا لاستخدامها بالتوابع الورثة. ملاحظات متفرقة عندما يكون في الكلاس الرئيسي المُوَرِّث superclass دالة رئيسيّة (default method) تتطلب ٢ سترينع (نص) مثلًا، فيجب أن نكتب في أول سطر في الـدالة الرئيسية في الـتابع الوارث Subclaase دالة ()super، مثال: super(&quot;a&quot;, &quot;b&quot;); الدالات من نوع static بامكاننا أن نستدعيها من صنف آخر بدون انشاء عنصر من الصنف، أي بدلًا من كتابة: Student s = new Student(); s.hawa(); نكتب: Student.hawa(); المتغيرات من نوع final لايمكننا تغيير قيمتها هل لديك سؤال أو معلومة إضافية؟ يرجى مشاركتنا إياها في التعليقات لإضافتها للنص الأصلي المراجع Stackoverflow Quora stackoverflow journaldev</summary></entry><entry><title type="html">سلسلة دروس SQL| عامل LIKE</title><link href="http://localhost:4000/sql/like" rel="alternate" type="text/html" title="سلسلة دروس SQL| عامل LIKE" /><published>2018-05-12T00:00:00+03:00</published><updated>2018-05-12T00:00:00+03:00</updated><id>http://localhost:4000/sql/like</id><content type="html" xml:base="http://localhost:4000/sql/like">&lt;p&gt;الفهرس :&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">interface class Abtract class ملاحظات متفرقة المراجع interface class يُعرّف الصنف من هذا النوع على الشكل التالي: public interface Name تحتوي على دالّات Methods بدون متن body أي فقط تعريف للدالات، مثلًا على الشكل: public boolean add(String s); وهذا النوع من الدالات methods الذي لا يحوي متن body يدعى abstract methods وبالتالي تكون الدالات من نوع interface عبارة عن مجموعة من التوابع ذات النوع abstract أي collection of abtract methods يمكن أن تحتوي دالات الـ interface على ثوابت أيضا، أي تعريف متغيرات مع إعطاء قيمهم، وأيضًا توابع رئيسية default methods وتوابع ثابتة static methods الـ interface class تحل مشكلة التوريث في لغة جافا، حيث أنه غير ممكن لصنف أن يرث من أكثر من صنف آخر، هذا يعني أنه لا يمكن كتابة: public class Name extends name1, name2{ ولكن يمكن كتابة: public class Name implements name1, name2{ لماذا التوريث غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا صنف class يرث صنفين في نفس الوقت ويكون بين تلك الأصناف تعارض فلا يمكن تحديد أي دالة أو أمر يجب أن ينفذ الصنف الوارث! وبالتالي لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن التوابع methods. ولكن! الـ interface يمكن أن تحوي constants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر compiling error ولن يتم بناء البرنامج وظيفة أصناف ال interface: تعمل بشكل قالب يحدد الوظائف التي يجب أن تكون بالأصناف التابعة. مثال على صنف interface وصنف تابع له public interface ExampleInterface { public void doAction(); public String doThis(int number); } public class sub implements ExampleInterface { public void doAction() { //specify what must happen } public String doThis(int number) { //specfiy what must happen } } Abtract class نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر object منها، يعني لدينا مثلا صنف student من نوع abtract فـ لايمكن كتابة: Student s = new Student(); يمكن للصنف من نوع abstract أن يحوي توابع abstract methods بمتن body أو توابع بدون متن. مثال: //abstract class public abstract class Person { private String name; private String gender; public Person(String nm, String gen){ this.name=nm; this.gender=gen; } //abstract method public abstract void work(); @Override public String toString(){ return &quot;Name=&quot;+this.name+&quot;::Gender=&quot;+this.gender; } public void changeName(String newName) { this.name = newName; } } مع ملاحظة هنا أن الدالة work من نوع abstract، ودائما عندما يكون لدينا دالة من هذا النوع فالـ class كله يجب أن يكون abstract بشكل إجباريّ، والعكس غير صحيح، أي ليس من الشرط على الـ abstract class أن تحوي abstract methods ومثال للتابع الوريث subclass: package com.journaldev.design; public class Employee extends Person { private int empId; public Employee(String nm, String gen, int id) { super(nm, gen); this.empId=id; } @Override public void work() { if(empId == 0){ System.out.println(&quot;Not working&quot;); }else{ System.out.println(&quot;Working as employee!!&quot;); } } public static void main(String args[]){ //coding in terms of abstract classes Person student = new Employee(&quot;Dove&quot;,&quot;Female&quot;,0); Person employee = new Employee(&quot;Pankaj&quot;,&quot;Male&quot;,123); student.work(); employee.work(); //using method implemented in abstract class - inheritance employee.changeName(&quot;Pankaj Kumar&quot;); System.out.println(employee.toString()); } } الـ subclass يجب أن ينفّذ كل ال abstract methods، أي يعيد كتابتهم وملأهم بالتعليمات، إلّا إذا كان التابع الوارث subclass أيضا abstract class، وهذا هو تقريبا الفرق بين عمل extends لـ abstract class أو صنف عادي. يمكن لل abtract class أن تحوي main methods وظيفتها تقديم دالات مع أوامرها جاهزة افتراضيًا لاستخدامها بالتوابع الورثة. ملاحظات متفرقة عندما يكون في الكلاس الرئيسي المُوَرِّث superclass دالة رئيسيّة (default method) تتطلب ٢ سترينع (نص) مثلًا، فيجب أن نكتب في أول سطر في الـدالة الرئيسية في الـتابع الوارث Subclaase دالة ()super، مثال: super(&quot;a&quot;, &quot;b&quot;); الدالات من نوع static بامكاننا أن نستدعيها من صنف آخر بدون انشاء عنصر من الصنف، أي بدلًا من كتابة: Student s = new Student(); s.hawa(); نكتب: Student.hawa(); المتغيرات من نوع final لايمكننا تغيير قيمتها هل لديك سؤال أو معلومة إضافية؟ يرجى مشاركتنا إياها في التعليقات لإضافتها للنص الأصلي المراجع Stackoverflow Quora stackoverflow journaldev</summary></entry><entry><title type="html">سلسلة دروس SQL| الرموز البديلة</title><link href="http://localhost:4000/sql/wildcard_characters" rel="alternate" type="text/html" title="سلسلة دروس SQL| الرموز البديلة" /><published>2018-05-12T00:00:00+03:00</published><updated>2018-05-12T00:00:00+03:00</updated><id>http://localhost:4000/sql/wildcards-characters</id><content type="html" xml:base="http://localhost:4000/sql/wildcard_characters">&lt;p&gt;الفهرس :&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -280,6 +351,218 @@
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-ميكروسوفت-أكسس&quot; id=&quot;markdown-toc-الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql-server&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة--بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-&quot; id=&quot;markdown-toc-استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-_&quot; id=&quot;markdown-toc-استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-رمز-القائمة--&quot; id=&quot;markdown-toc-استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز--&quot; id=&quot;markdown-toc-استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/h1&gt;
+
+&lt;p&gt;يُقصد بالرمز البديل (بالإنجليزية wildcard characters) الذي ينوب عن الأحرف. وتُستخدم لاستبدال حرف أو أكثر في عبارة نصيّة&lt;/p&gt;
+
+&lt;p&gt;تُستخدم الرموز البديلة مع عامل LIKE والتي تستخدم مع عبارة where للبحث عن نمط معين في عمود ما.&lt;/p&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الرمز&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+      &lt;th&gt;مثال&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
+      &lt;td&gt;العبارة *bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
+      &lt;td&gt;العبارة h?t تجد hot, hat, و hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;h[!oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
+      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;#&lt;/td&gt;
+      &lt;td&gt;تمثل أي رقما واحدا&lt;/td&gt;
+      &lt;td&gt;2#5 تجد 205, 215, 225, 235, 245, 255, 265, 275, 285, و 295&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الرمز&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+      &lt;th&gt;مثال&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;%&lt;/td&gt;
+      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
+      &lt;td&gt;العبارة %bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_&lt;/td&gt;
+      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
+      &lt;td&gt;العبارة h_t تجد hot, hat, و hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;h[^oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
+      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;جميع الرموز يمكن أن تُستخدم سويةً مع بضعها البعض في نفس العبارة!&lt;/p&gt;
+
+&lt;p&gt;فيما يلي بعض الأمثلة التي تُظهر عوامل LIKE مختلفة مع الرموز % و _ :&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;td style=&quot;font-weight: bold&quot;&gt;عبارة تحوي عامل LIKE&lt;/td&gt;
+&lt;td style=&quot;font-weight: bold&quot;&gt;الوصف &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE 'a%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%a'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تنتهي بـ a&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%or%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي العبارة or في أي موضع&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '_r%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE CustomerName LIKE 'a_%_%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE ContactName LIKE 'a%o'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وتنتهي بـ o&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ ber&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE 'ber%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;كذلك عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تحوي es&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '%es%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/h1&gt;
+
+&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بأي حرف متبوعاً بـ ondon&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '_ondon';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بالحرف L متبوعا بأي حرف، متبوعا بـ n، متبوعا بأي حرف، متبوعا بـ on&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE 'L_n_on';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ a أو b أو c&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[a-c]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city &lt;strong&gt;لا&lt;/strong&gt; تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[!bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو لنفس الغرض يمكن كتابة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City NOT LIKE '[bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE الدرس الخامس عشر: الرموز البديلة الرموز البديلة في Sql الرموز البديلة في ميكروسوفت أكسس الرموز البديلة في SQL Server استعراض قاعدة بيانات استخدام الرمز % استخدام الرمز _ استخدام رمز القائمة [ ] استخدام الرمز [ !] الرموز البديلة في Sql يُقصد بالرمز البديل (بالإنجليزية wildcard characters) الذي ينوب عن الأحرف. وتُستخدم لاستبدال حرف أو أكثر في عبارة نصيّة تُستخدم الرموز البديلة مع عامل LIKE والتي تستخدم مع عبارة where للبحث عن نمط معين في عمود ما. الرموز البديلة في ميكروسوفت أكسس الرمز الوصف مثال * تُمثِّل عدد حروف صفر أو أكثر العبارة *bl تجد الكلمات bl و black و blue, و blob ? تمثل حرفا واحدا العبارة h?t تجد hot, hat, و hit [] تمثل أي حرف ضمن الأقواس العبارة h[oa]t تجد hot و hat, لكن ليس hit ! تمثل أي حرف عدا الذي ضمن الأقواس h[!oa]t تجد hit, لكن ليس hot و hat - تمثل مجال من الأحرف بحسب الترتيب الألفبائي c[a-b]t تجد cat و cbt # تمثل أي رقما واحدا 2#5 تجد 205, 215, 225, 235, 245, 255, 265, 275, 285, و 295 الرموز البديلة في SQL Server الرمز الوصف مثال % تُمثِّل عدد حروف صفر أو أكثر العبارة %bl تجد الكلمات bl و black و blue, و blob _ تمثل حرفا واحدا العبارة h_t تجد hot, hat, و hit [] تمثل أي حرف ضمن الأقواس العبارة h[oa]t تجد hot و hat, لكن ليس hit ^ تمثل أي حرف عدا الذي ضمن الأقواس h[^oa]t تجد hit, لكن ليس hot و hat - تمثل مجال من الأحرف بحسب الترتيب الألفبائي c[a-b]t تجد cat و cbt جميع الرموز يمكن أن تُستخدم سويةً مع بضعها البعض في نفس العبارة! فيما يلي بعض الأمثلة التي تُظهر عوامل LIKE مختلفة مع الرموز % و _ : عبارة تحوي عامل LIKE الوصف WHERE CustomerName LIKE 'a%'تجد أي قيمة تبدأ بـ a WHERE CustomerName LIKE '%a'تجد أي قيمة تنتهي بـ a WHERE CustomerName LIKE '%or%'تجد أي قيمة تحوي العبارة or في أي موضع WHERE CustomerName LIKE '_r%'تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف) WHERE CustomerName LIKE 'a_%_%'تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a) WHERE ContactName LIKE 'a%o'تجد أي قيمة تبدأ بـ a وتنتهي بـ o استعراض قاعدة بيانات في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind استخدام الرمز % عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ ber SELECT * FROM Customers WHERE City LIKE 'ber%'; كذلك عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تحوي es SELECT * FROM Customers WHERE City LIKE '%es%'; استخدام الرمز _ والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بأي حرف متبوعاً بـ ondon SELECT * FROM Customers WHERE City LIKE '_ondon'; والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بالحرف L متبوعا بأي حرف، متبوعا بـ n، متبوعا بأي حرف، متبوعا بـ on SELECT * FROM Customers WHERE City LIKE 'L_n_on'; استخدام رمز القائمة [ ] عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـأحد الأحرف b أو s أو p SELECT * FROM Customers WHERE City LIKE '[bsp]%'; عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ a أو b أو c SELECT * FROM Customers WHERE City LIKE '[a-c]%'; استخدام الرمز [ !] عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city لا تبدأ بـأحد الأحرف b أو s أو p SELECT * FROM Customers WHERE City LIKE '[!bsp]%'; أو لنفس الغرض يمكن كتابة: SELECT * FROM Customers WHERE City NOT LIKE '[bsp]%';</summary></entry><entry><title type="html">سلسلة دروس SQL| عامل LIKE</title><link href="http://localhost:4000/sql/like" rel="alternate" type="text/html" title="سلسلة دروس SQL| عامل LIKE" /><published>2018-05-12T00:00:00+03:00</published><updated>2018-05-12T00:00:00+03:00</updated><id>http://localhost:4000/sql/like</id><content type="html" xml:base="http://localhost:4000/sql/like">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -410,7 +693,9 @@ WHERE ContactName LIKE 'a%o';
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
 WHERE CustomerName NOT LIKE 'a%';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE عامل LIKE في SQL استخدام LIKE استعراض قاعدة البيانات أمثلة على LIKE في SQL عامل LIKE في SQL يُستخدم عامل LIKE مع عبارة WHERE للبحث عن نمط محدَّد في عمود ما. ويوجد علامتين تُستخدم جنبًا إلى جنب مع عامل LIKE: % علامة النسبة المئوية وتُمثّل الصفر أو الواحد أو عدة أحرف. _ علامة الخط السفلي ويُمثّل حرفًا واحدًا ملاحظة: يستخدم ميكروسوفت Access علامة الاستفهام ? بدلًا من الخط السفلي _ ويمكن استخدام العلامتين معًا بنفس الوقت! استخدام LIKE SELECT column1, column2, ... FROM table_name WHERE columnN LIKE pattern; معلومة: يمكنك أيضًا جمع أي عدد من الشروط باستخدام عوامل AND أو OR. وهنا بعض الأمثلة تُظهر عوامل LIKE مختلفة مع علامات % و _: LIKE عامل الوصف WHERE CustomerName LIKE ‘a%’ للبحث عن أي قيمة تبدأ بالحرف “a” WHERE CustomerName LIKE ‘%a’ للبحث عن أي قيمة تنتهي بالحرف “a” WHERE CustomerName LIKE ‘%or%’ للبحث عن أي قيمة تحوي “or” في أي موضع WHERE CustomerName LIKE ‘_r%’ للبحث عن أي قيمة تحوي “r” في الموضع الثاني WHERE CustomerName LIKE ‘a_%_%’ للبحث عن أي قيمة تحوي “a” وهذه القيمة هي على الأقل ذات ثلاث أحرف WHERE ContactName LIKE ‘a%o’ للبحث عن أي قيمة تبدأ بـ “a” وتنتهي بـ “o” استعراض قاعدة البيانات في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind أمثلة على LIKE في SQL عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يبدأ بحرف a SELECT * FROM Customers WHERE CustomerName LIKE 'a%'; وعبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName ينتهي بحرف a SELECT * FROM Customers WHERE CustomerName LIKE '%a'; والعبارة التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يحوي “or” في أي موضع: SELECT * FROM Customers WHERE CustomerName LIKE '%or%'; والعبارة التالية من SQL تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يحوي الحرف “r” في الموضع الثاني SELECT * FROM Customers WHERE CustomerName LIKE '_r%'; عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يبدأ بالحرف “a” ويتكون على الأقل من ثلاث أحرف SELECT * FROM Customers WHERE CustomerName LIKE 'a_%_%'; عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم جهة الاتصال ContactName يبدأ بـ “a” وينتهي بـ “o” SELECT * FROM Customers WHERE ContactName LIKE 'a%o'; والعبارة التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName لا يبدأ بالحرف “a” SELECT * FROM Customers WHERE CustomerName NOT LIKE 'a%';</summary></entry><entry><title type="html">سلسلة دروس SQL|دالات COUNT و AVG و SUM</title><link href="http://localhost:4000/sql/count-avg-sum" rel="alternate" type="text/html" title="سلسلة دروس SQL|دالات COUNT و AVG و SUM" /><published>2018-05-09T00:00:00+03:00</published><updated>2018-05-09T00:00:00+03:00</updated><id>http://localhost:4000/sql/count-avg-sum</id><content type="html" xml:base="http://localhost:4000/sql/count-avg-sum">&lt;p&gt;الفهرس :&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;wildcard_characters&quot;&gt;الرموز البديلة &lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE الدرس الخامس عشر: الرموز البديلة عامل LIKE في SQL استخدام LIKE استعراض قاعدة البيانات أمثلة على LIKE في SQL عامل LIKE في SQL يُستخدم عامل LIKE مع عبارة WHERE للبحث عن نمط محدَّد في عمود ما. ويوجد علامتين تُستخدم جنبًا إلى جنب مع عامل LIKE: % علامة النسبة المئوية وتُمثّل الصفر أو الواحد أو عدة أحرف. _ علامة الخط السفلي ويُمثّل حرفًا واحدًا ملاحظة: يستخدم ميكروسوفت Access علامة الاستفهام ? بدلًا من الخط السفلي _ ويمكن استخدام العلامتين معًا بنفس الوقت! استخدام LIKE SELECT column1, column2, ... FROM table_name WHERE columnN LIKE pattern; معلومة: يمكنك أيضًا جمع أي عدد من الشروط باستخدام عوامل AND أو OR. وهنا بعض الأمثلة تُظهر عوامل LIKE مختلفة مع علامات % و _: LIKE عامل الوصف WHERE CustomerName LIKE ‘a%’ للبحث عن أي قيمة تبدأ بالحرف “a” WHERE CustomerName LIKE ‘%a’ للبحث عن أي قيمة تنتهي بالحرف “a” WHERE CustomerName LIKE ‘%or%’ للبحث عن أي قيمة تحوي “or” في أي موضع WHERE CustomerName LIKE ‘_r%’ للبحث عن أي قيمة تحوي “r” في الموضع الثاني WHERE CustomerName LIKE ‘a_%_%’ للبحث عن أي قيمة تحوي “a” وهذه القيمة هي على الأقل ذات ثلاث أحرف WHERE ContactName LIKE ‘a%o’ للبحث عن أي قيمة تبدأ بـ “a” وتنتهي بـ “o” استعراض قاعدة البيانات في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind أمثلة على LIKE في SQL عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يبدأ بحرف a SELECT * FROM Customers WHERE CustomerName LIKE 'a%'; وعبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName ينتهي بحرف a SELECT * FROM Customers WHERE CustomerName LIKE '%a'; والعبارة التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يحوي “or” في أي موضع: SELECT * FROM Customers WHERE CustomerName LIKE '%or%'; والعبارة التالية من SQL تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يحوي الحرف “r” في الموضع الثاني SELECT * FROM Customers WHERE CustomerName LIKE '_r%'; عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يبدأ بالحرف “a” ويتكون على الأقل من ثلاث أحرف SELECT * FROM Customers WHERE CustomerName LIKE 'a_%_%'; عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم جهة الاتصال ContactName يبدأ بـ “a” وينتهي بـ “o” SELECT * FROM Customers WHERE ContactName LIKE 'a%o'; والعبارة التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName لا يبدأ بالحرف “a” SELECT * FROM Customers WHERE CustomerName NOT LIKE 'a%'; التالي: الرموز البديلة</summary></entry><entry><title type="html">سلسلة دروس SQL|دالات COUNT و AVG و SUM</title><link href="http://localhost:4000/sql/count-avg-sum" rel="alternate" type="text/html" title="سلسلة دروس SQL|دالات COUNT و AVG و SUM" /><published>2018-05-09T00:00:00+03:00</published><updated>2018-05-09T00:00:00+03:00</updated><id>http://localhost:4000/sql/count-avg-sum</id><content type="html" xml:base="http://localhost:4000/sql/count-avg-sum">&lt;p&gt;الفهرس :&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -439,6 +724,8 @@ WHERE CustomerName NOT LIKE 'a%';
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -613,7 +900,7 @@ FROM Products;
 FROM OrderDetails;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;التالي: &lt;a href=&quot;like&quot;&gt;عامل LIKE&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE دالّات COUNT() و AVG() و SUM() في SQL استخدام دالة COUNT() استخدام دالة AVG() استخدام دالة SUM() استعراض قاعدة البيانات مثال على استخدام COUNT() مثال على استخدام AVG() استعراض قاعدة البيانات مثال على استخدام SUM() دالّات COUNT() و AVG() و SUM() في SQL تُعطي دالة COUNT() عدد الأسطر من جدول ما والتي تُطابق معيار محدد. وتُعطي دالة AVG() القيمة المتوسطة لعمود رقمي (يحوي أرقام). كما تُعطي دالة SUM() المجموع الكُلّي لعمود رقمي. استخدام دالة COUNT() SELECT COUNT(column_name) FROM table_name WHERE condition; استخدام دالة AVG() SELECT AVG(column_name) FROM table_name WHERE condition; استخدام دالة SUM() SELECT SUM(column_name) FROM table_name WHERE condition; استعراض قاعدة البيانات في الأسفل تحديد من جدول “Products” (المنتجات) في قاعدة البيانات النموذجية Northwind ProductID ProductName SupplierID CategoryID Unit Price 1 Chais 1 1 10 boxes x 20 bags 18 2 Chang 1 1 24 - 12 oz bottles 19 3 Aniseed Syrup 1 2 12 - 550 ml bottles 10 4 Chef Anton’s Cajun Seasoning 2 2 48 - 6 oz jars 22 5 Chef Anton’s Gumbo Mix 2 2 36 boxes 21.35 مثال على استخدام COUNT() تُعطي عبارة SQL التالية عدد المنتجات: SELECT COUNT(ProductID) FROM Products; مثال على استخدام AVG() تُعطي عبارة SQL التالية القيمة المتوسطة ﻷسعار جميع المنتجات: SELECT AVG(Price) FROM Products; استعراض قاعدة البيانات فيما يلي تحديد من جدول “OrderDetails” أو تفاصيل الطلب في قاعدة البيانات النموذجية Northwind، والذي يعرض رقم الطلب ورقم المنتَج والكمية OrderDetailID OrderID ProductID Quantity 1 10248 11 12 2 10248 42 10 3 10248 72 5 4 10249 14 9 5 10249 51 40 مثال على استخدام SUM() تُعطي عبارة SQL التالية مجموع القيم في عمود Quantity أي الكمية في الجدول أعلاه SELECT SUM(Quantity) FROM OrderDetails; التالي: عامل LIKE</summary></entry><entry><title type="html">سلسلة دروس SQL|Min and Max</title><link href="http://localhost:4000/sql/min-max" rel="alternate" type="text/html" title="سلسلة دروس SQL|Min and Max" /><published>2018-05-07T00:00:00+03:00</published><updated>2018-05-07T00:00:00+03:00</updated><id>http://localhost:4000/sql/min-max</id><content type="html" xml:base="http://localhost:4000/sql/min-max">&lt;p&gt;الفهرس :&lt;/p&gt;
+&lt;p&gt;التالي: &lt;a href=&quot;like&quot;&gt;عامل LIKE&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE الدرس الخامس عشر: الرموز البديلة دالّات COUNT() و AVG() و SUM() في SQL استخدام دالة COUNT() استخدام دالة AVG() استخدام دالة SUM() استعراض قاعدة البيانات مثال على استخدام COUNT() مثال على استخدام AVG() استعراض قاعدة البيانات مثال على استخدام SUM() دالّات COUNT() و AVG() و SUM() في SQL تُعطي دالة COUNT() عدد الأسطر من جدول ما والتي تُطابق معيار محدد. وتُعطي دالة AVG() القيمة المتوسطة لعمود رقمي (يحوي أرقام). كما تُعطي دالة SUM() المجموع الكُلّي لعمود رقمي. استخدام دالة COUNT() SELECT COUNT(column_name) FROM table_name WHERE condition; استخدام دالة AVG() SELECT AVG(column_name) FROM table_name WHERE condition; استخدام دالة SUM() SELECT SUM(column_name) FROM table_name WHERE condition; استعراض قاعدة البيانات في الأسفل تحديد من جدول “Products” (المنتجات) في قاعدة البيانات النموذجية Northwind ProductID ProductName SupplierID CategoryID Unit Price 1 Chais 1 1 10 boxes x 20 bags 18 2 Chang 1 1 24 - 12 oz bottles 19 3 Aniseed Syrup 1 2 12 - 550 ml bottles 10 4 Chef Anton’s Cajun Seasoning 2 2 48 - 6 oz jars 22 5 Chef Anton’s Gumbo Mix 2 2 36 boxes 21.35 مثال على استخدام COUNT() تُعطي عبارة SQL التالية عدد المنتجات: SELECT COUNT(ProductID) FROM Products; مثال على استخدام AVG() تُعطي عبارة SQL التالية القيمة المتوسطة ﻷسعار جميع المنتجات: SELECT AVG(Price) FROM Products; استعراض قاعدة البيانات فيما يلي تحديد من جدول “OrderDetails” أو تفاصيل الطلب في قاعدة البيانات النموذجية Northwind، والذي يعرض رقم الطلب ورقم المنتَج والكمية OrderDetailID OrderID ProductID Quantity 1 10248 11 12 2 10248 42 10 3 10248 72 5 4 10249 14 9 5 10249 51 40 مثال على استخدام SUM() تُعطي عبارة SQL التالية مجموع القيم في عمود Quantity أي الكمية في الجدول أعلاه SELECT SUM(Quantity) FROM OrderDetails; التالي: عامل LIKE</summary></entry><entry><title type="html">سلسلة دروس SQL|Min and Max</title><link href="http://localhost:4000/sql/min-max" rel="alternate" type="text/html" title="سلسلة دروس SQL|Min and Max" /><published>2018-05-07T00:00:00+03:00</published><updated>2018-05-07T00:00:00+03:00</updated><id>http://localhost:4000/sql/min-max</id><content type="html" xml:base="http://localhost:4000/sql/min-max">&lt;p&gt;الفهرس :&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -642,6 +929,8 @@ FROM OrderDetails;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -749,7 +1038,7 @@ FROM Products;
 FROM Products;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;التالي: &lt;a href=&quot;count-avg-sum&quot;&gt;دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE دالّات MIN() و MAX() في SQL استخدام دالّة MIN() استخدام دالة MAX() استعراض قاعدة البيانات مثال على استخدام MIN() مثال على استخدام MAX() دالّات MIN() و MAX() في SQL تُعطي دالة MIN() أصغر قيمة من العمود المُحدَّد في قاعدة البيانات. وتُعطي دالة MAX() أكبر قيمة من العمود المُحدَّد. استخدام دالّة MIN() SELECT MIN(column_name) FROM table_name WHERE condition; استخدام دالة MAX() SELECT MAX(column_name) FROM table_name WHERE condition; استعراض قاعدة البيانات في الأسفل تحديد من جدول “Products” (المنتجات) في قاعدة البيانات النموذجية Northwind ProductID ProductName SupplierID CategoryID Unit Price 1 Chais 1 1 10 boxes x 20 bags 18 2 Chang 1 1 24 - 12 oz bottles 19 3 Aniseed Syrup 1 2 12 - 550 ml bottles 10 4 Chef Anton’s Cajun Seasoning 2 2 48 - 6 oz jars 22 5 Chef Anton’s Gumbo Mix 2 2 36 boxes 21.35 مثال على استخدام MIN() تُعطي عبارة SQL التالية سعر أرخص منتج: SELECT MIN(Price) AS SmallestPrice FROM Products; مثال على استخدام MAX() تُعطي عبارة SQL التالية سعر أغلى منتج: SELECT MAX(Price) AS LargestPrice FROM Products; التالي: دالات COUNT و AVG و SUM</summary></entry><entry><title type="html">سلسلة دروس SQL|TOP-LIMIT-ROWNUM</title><link href="http://localhost:4000/sql/top-limit-rownum" rel="alternate" type="text/html" title="سلسلة دروس SQL|TOP-LIMIT-ROWNUM" /><published>2018-05-06T00:00:00+03:00</published><updated>2018-05-06T00:00:00+03:00</updated><id>http://localhost:4000/sql/top-limit-rownum</id><content type="html" xml:base="http://localhost:4000/sql/top-limit-rownum">&lt;p&gt;الفهرس :&lt;/p&gt;
+&lt;p&gt;التالي: &lt;a href=&quot;count-avg-sum&quot;&gt;دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE الدرس الخامس عشر: الرموز البديلة دالّات MIN() و MAX() في SQL استخدام دالّة MIN() استخدام دالة MAX() استعراض قاعدة البيانات مثال على استخدام MIN() مثال على استخدام MAX() دالّات MIN() و MAX() في SQL تُعطي دالة MIN() أصغر قيمة من العمود المُحدَّد في قاعدة البيانات. وتُعطي دالة MAX() أكبر قيمة من العمود المُحدَّد. استخدام دالّة MIN() SELECT MIN(column_name) FROM table_name WHERE condition; استخدام دالة MAX() SELECT MAX(column_name) FROM table_name WHERE condition; استعراض قاعدة البيانات في الأسفل تحديد من جدول “Products” (المنتجات) في قاعدة البيانات النموذجية Northwind ProductID ProductName SupplierID CategoryID Unit Price 1 Chais 1 1 10 boxes x 20 bags 18 2 Chang 1 1 24 - 12 oz bottles 19 3 Aniseed Syrup 1 2 12 - 550 ml bottles 10 4 Chef Anton’s Cajun Seasoning 2 2 48 - 6 oz jars 22 5 Chef Anton’s Gumbo Mix 2 2 36 boxes 21.35 مثال على استخدام MIN() تُعطي عبارة SQL التالية سعر أرخص منتج: SELECT MIN(Price) AS SmallestPrice FROM Products; مثال على استخدام MAX() تُعطي عبارة SQL التالية سعر أغلى منتج: SELECT MAX(Price) AS LargestPrice FROM Products; التالي: دالات COUNT و AVG و SUM</summary></entry><entry><title type="html">سلسلة دروس SQL|TOP-LIMIT-ROWNUM</title><link href="http://localhost:4000/sql/top-limit-rownum" rel="alternate" type="text/html" title="سلسلة دروس SQL|TOP-LIMIT-ROWNUM" /><published>2018-05-06T00:00:00+03:00</published><updated>2018-05-06T00:00:00+03:00</updated><id>http://localhost:4000/sql/top-limit-rownum</id><content type="html" xml:base="http://localhost:4000/sql/top-limit-rownum">&lt;p&gt;الفهرس :&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
 
@@ -778,6 +1067,8 @@ FROM Products;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -879,7 +1170,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;hr /&gt;
 
-&lt;p&gt;التالي: &lt;a href=&quot;min-max&quot;&gt;دالات MIN و MAX&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE عبارة SELECT TOP في SQL بناء التصريح في سيرفر SQL أو ميكروسوفت Access بناء التصريح في MySQL بناء التصريح في Oracle استعراض قاعدة بيانات أمثلة على SQL TOP و LIMIT و ROWNUM مثال على SQL TOP PERCENT إضافة تصريح WHERE عبارة SELECT TOP في SQL تستخدم عبارة SELECT TOP لتحديد عدد القيم المراد استخراجها من قاعدة البيانات (الحصول عليها) ، هذه العبارة مفيدة في حالة الجداول الضخمة التي تحتوي على آلاف القيم، مع ملاحظة أن استخراج عدد كبير من القيم قد يؤثر على الأداء. ملاحظة: لا تدعم جميع أنظمة قواعد البيانات عبارة SELECT TOP. وبذلك تدعم لغة MySQL العبارة LIMIT لتحديد عدد محدد من القيم، بينما تستخدم Oracle العبارة ROWNUM. بناء التصريح في سيرفر SQL أو ميكروسوفت Access SELECT TOP number|percent column_name(s) FROM table_name WHERE condition; بناء التصريح في MySQL SELECT column_name(s) FROM table_name WHERE condition LIMIT number; بناء التصريح في Oracle SELECT column_name(s) FROM table_name WHERE ROWNUM &amp;lt;= number; استعراض قاعدة بيانات في الأسفل تحديد من جدول الزبائن Customers أمثلة على SQL TOP و LIMIT و ROWNUM تحدد عبارة SQL التالية أول ثلاث قيم من جدول “Customers”: SELECT TOP 3 * FROM Customers; تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT: SELECT * FROM Customers LIMIT 3; كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM: SELECT * FROM Customers WHERE ROWNUM &amp;lt;= 3; مثال على SQL TOP PERCENT تُحدِّد عبارة SQL التالية أول 50% من القيم في جدول “Customers”: SELECT TOP 50 PERCENT * FROM Customers; إضافة تصريح WHERE تُحدِّد عبارة SQL التالية أول ثلاث قيم من جدول “Customers” حيث البلد هو “Germany”: SELECT TOP 3 * FROM Customers WHERE Country='Germany'; تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT: SELECT * FROM Customers WHERE Country='Germany' LIMIT 3; كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM: SELECT * FROM Customers WHERE Country='Germany' AND ROWNUM &amp;lt;= 3; التالي: دالات MIN و MAX</summary></entry><entry><title type="html">المـــوت</title><link href="http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA/" rel="alternate" type="text/html" title="المـــوت" /><published>2018-04-21T00:00:00+03:00</published><updated>2018-04-21T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA</id><content type="html" xml:base="http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA/">&lt;p&gt;لماذا نحزن عندما نرى مُضِيَّ الأيام وزوالها وتغير الزمن وكِبَر عُمرنا وتغير شكلنا شيئاً فشيئاً، عندما نرى من نُحب يهرم ويشيخ وتتغير معالم شكله وتظهر تجاعيد وجهه ويشيب رأسه..
+&lt;p&gt;التالي: &lt;a href=&quot;min-max&quot;&gt;دالات MIN و MAX&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">الفهرس : الدرس الأول : التعريف بـ SQL الدرس الثاني : بناء SQL الدرس الثالث : تصريح SELECT الدرس الرابع : تصريح تحديد الاختلاف في SQL الدرس الخامس : عبارة WHERE في SQL الدرس السادس : عمليات AND &amp;amp; OR في SQL الدرس السابع : دالة ORDER BY في SQL الدرس الثامن: تصريح INSERT INTO في SQL الدرس التاسع: تصريح UPDATE في SQL الدرس العاشر: تصريح DELETE في SQL الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM الدرس الثاني عشر: دالات Mix و MAX الدرس الثالث عشر: دالات COUNT و AVG و SUM الدرس الرابع عشر: عامل LIKE الدرس الخامس عشر: الرموز البديلة عبارة SELECT TOP في SQL بناء التصريح في سيرفر SQL أو ميكروسوفت Access بناء التصريح في MySQL بناء التصريح في Oracle استعراض قاعدة بيانات أمثلة على SQL TOP و LIMIT و ROWNUM مثال على SQL TOP PERCENT إضافة تصريح WHERE عبارة SELECT TOP في SQL تستخدم عبارة SELECT TOP لتحديد عدد القيم المراد استخراجها من قاعدة البيانات (الحصول عليها) ، هذه العبارة مفيدة في حالة الجداول الضخمة التي تحتوي على آلاف القيم، مع ملاحظة أن استخراج عدد كبير من القيم قد يؤثر على الأداء. ملاحظة: لا تدعم جميع أنظمة قواعد البيانات عبارة SELECT TOP. وبذلك تدعم لغة MySQL العبارة LIMIT لتحديد عدد محدد من القيم، بينما تستخدم Oracle العبارة ROWNUM. بناء التصريح في سيرفر SQL أو ميكروسوفت Access SELECT TOP number|percent column_name(s) FROM table_name WHERE condition; بناء التصريح في MySQL SELECT column_name(s) FROM table_name WHERE condition LIMIT number; بناء التصريح في Oracle SELECT column_name(s) FROM table_name WHERE ROWNUM &amp;lt;= number; استعراض قاعدة بيانات في الأسفل تحديد من جدول الزبائن Customers أمثلة على SQL TOP و LIMIT و ROWNUM تحدد عبارة SQL التالية أول ثلاث قيم من جدول “Customers”: SELECT TOP 3 * FROM Customers; تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT: SELECT * FROM Customers LIMIT 3; كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM: SELECT * FROM Customers WHERE ROWNUM &amp;lt;= 3; مثال على SQL TOP PERCENT تُحدِّد عبارة SQL التالية أول 50% من القيم في جدول “Customers”: SELECT TOP 50 PERCENT * FROM Customers; إضافة تصريح WHERE تُحدِّد عبارة SQL التالية أول ثلاث قيم من جدول “Customers” حيث البلد هو “Germany”: SELECT TOP 3 * FROM Customers WHERE Country='Germany'; تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح LIMIT: SELECT * FROM Customers WHERE Country='Germany' LIMIT 3; كما تعرض عبارة SQL التالية المثال نفسه ولكن باستخدام تصريح ROWNUM: SELECT * FROM Customers WHERE Country='Germany' AND ROWNUM &amp;lt;= 3; التالي: دالات MIN و MAX</summary></entry><entry><title type="html">المـــوت</title><link href="http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA/" rel="alternate" type="text/html" title="المـــوت" /><published>2018-04-21T00:00:00+03:00</published><updated>2018-04-21T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA</id><content type="html" xml:base="http://localhost:4000/%D8%A7%D9%84%D9%85%D9%88%D8%AA/">&lt;p&gt;لماذا نحزن عندما نرى مُضِيَّ الأيام وزوالها وتغير الزمن وكِبَر عُمرنا وتغير شكلنا شيئاً فشيئاً، عندما نرى من نُحب يهرم ويشيخ وتتغير معالم شكله وتظهر تجاعيد وجهه ويشيب رأسه..
 لماذا نبكي عندما يموت من نحب، أو.. لماذا نخاف من الموت؟ ربما ﻷننا لا ندرك حقيقته..&lt;/p&gt;
 
 &lt;p&gt;الموت! كلمة جميلة لو فهمنا معناها، لو فهمنا حقيقة الدنيا التي نعيش بها، حقيقة الموت، وحقيقة ما بعده..&lt;/p&gt;
@@ -1072,33 +1363,4 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;strong&gt;هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على &lt;a href=&quot;http://oneminutelist.com/11-computer-tricks-everyone-should-know-about&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p class=&quot;notice&quot;&gt;هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.&lt;/p&gt;</content><author><name></name></author><summary type="html">زر الويندوز Shift + Windows لقفل الشاشة (على منصةّ ويندوز). زر الويندوز + P لتثبيث جهاز إسقاط أو شاشة ثانية (على منصّة ويندوز). عند مشاهدة مقطع فيديو على برنامج VLC، إذا كان هناك فارق زمني بين الصوت والصورة فيمكنك الضغط على زرّي K و J لتأخير أو تسبيق الصوت عن الصورة. في برنامج الفوتوشوب عند استعمال أداة marquee tool لرسم الأشكال الهندسية، يمكنك الضغط على زر الفراغ لسحب الشكل بدون فقدان إمكانية تحجيمه. عند تنصيب البرامج اختر دائماً تنصيب مخصّص custom لمنع البرامج من تنصيب أدوات إضافية قد تكون مزعجة مثل شريط الأدوات في المتصفح أو غيرها. عند كتابة عنوان موقع في متصفح الإنترنت، يمكنك الضغط على Ctrl + Enter وسيقوم تلقائياً بإضافة http://www. قبل ما كتبته وكذلك .com بعده. عند تنصيب نظام ويندوز جديد على الحاسوب فيمكنك توفير الوقت باستخدام Ninite لتنصيب/تحديث عدة برامج مرّة واحدة (لم أجربه شخصياً - استخدامه محدود بشكل مجاني). الضغط على Ctrl + Shift + Esc سيفتح مدير المهام مباشرةً. عند ملئ النموذج على الإنترنت أو على برامج تحرير المستندات مثل إكسل، فالضغط على زر tab سينقل المؤشر لحقل الإدخال التالي، والضغط على Shift + Tab سينقل المؤشر لحقل الإدخال السابق. يمكنك دائماً استعمال الاختصار Ctrl + L أو F6 ضمن متصفح الوب للانتقال لشريط العناوين مباشرةَ. يعمل زر Caps Lock وفق مستوى الهاردوير، بحيث يمكنك تحديد إذا كان الجهاز لا يستجيب أم أن المشكلة في بعض التطبيقات التي تسبب البطئ أو أخطاء في العرض. فقط اضغط على زر Caps Lock وإذا ظهر ضوء الزر على لوحة المفاتيح فهذا يعني أن الجهاز مازال يستجيب ويعمل. هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على المصدر هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.</summary></entry><entry><title type="html">8 مواقع إنجليزية لاكتساب مهارات جديدة مجاناً</title><link href="http://localhost:4000/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7/" rel="alternate" type="text/html" title="8 مواقع إنجليزية لاكتساب مهارات جديدة مجاناً" /><published>2017-02-25T00:00:00+03:00</published><updated>2017-02-25T00:00:00+03:00</updated><id>http://localhost:4000/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7</id><content type="html" xml:base="http://localhost:4000/8-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%84%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%A8-%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7/">&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.duolingo.com/&quot;&gt;Duolingo&lt;/a&gt; - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.codecademy.com/&quot;&gt;Codecademy&lt;/a&gt; - تعلّم البرمجة بسهولة&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://ocw.mit.edu/courses/&quot;&gt;MIT Courses&lt;/a&gt; - مناهج مفتوحة من قبل دكاترة معهد MIT التقني&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://education-portal.com/&quot;&gt;Education Portal&lt;/a&gt; - اختر بين عدة مناهج ويمكنك الحصول على تقدير جامعي حقيقي&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://edx.org&quot;&gt;Edx&lt;/a&gt; - مناهج مجانيّة متعدّدة في مجالات مختلفة مع شهادات مدفوعة&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/&quot;&gt;coursera&lt;/a&gt; - كما هو مذكور في موقعهم: “أفضل المناهج في العالم عبر الإنترنت وبالمجان”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.khanacademy.org/&quot;&gt;Khan Academy&lt;/a&gt; - مناهج في مجالات مختلفة بما فيها علم الحاسوب والرياضيّات&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://diy.org/skills&quot;&gt;DIY.com&lt;/a&gt; - اختر بين مهارات عديدة وتعلمهم.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;em&gt;إضافة&lt;/em&gt;: موقع حروب الكود &lt;a href=&quot;http://codewars.com/&quot;&gt;codewars&lt;/a&gt; لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;http://oneminlist.com/7-sites-where-you-can-learn-new-skills-for-free/&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Duolingo - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة. Codecademy - تعلّم البرمجة بسهولة MIT Courses - مناهج مفتوحة من قبل دكاترة معهد MIT التقني Education Portal - اختر بين عدة مناهج ويمكنك الحصول على تقدير جامعي حقيقي Edx - مناهج مجانيّة متعدّدة في مجالات مختلفة مع شهادات مدفوعة coursera - كما هو مذكور في موقعهم: “أفضل المناهج في العالم عبر الإنترنت وبالمجان” Khan Academy - مناهج في مجالات مختلفة بما فيها علم الحاسوب والرياضيّات DIY.com - اختر بين مهارات عديدة وتعلمهم. إضافة: موقع حروب الكود codewars لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء. هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على المصدر</summary></entry></feed>
+&lt;p class=&quot;notice&quot;&gt;هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.&lt;/p&gt;</content><author><name></name></author><summary type="html">زر الويندوز Shift + Windows لقفل الشاشة (على منصةّ ويندوز). زر الويندوز + P لتثبيث جهاز إسقاط أو شاشة ثانية (على منصّة ويندوز). عند مشاهدة مقطع فيديو على برنامج VLC، إذا كان هناك فارق زمني بين الصوت والصورة فيمكنك الضغط على زرّي K و J لتأخير أو تسبيق الصوت عن الصورة. في برنامج الفوتوشوب عند استعمال أداة marquee tool لرسم الأشكال الهندسية، يمكنك الضغط على زر الفراغ لسحب الشكل بدون فقدان إمكانية تحجيمه. عند تنصيب البرامج اختر دائماً تنصيب مخصّص custom لمنع البرامج من تنصيب أدوات إضافية قد تكون مزعجة مثل شريط الأدوات في المتصفح أو غيرها. عند كتابة عنوان موقع في متصفح الإنترنت، يمكنك الضغط على Ctrl + Enter وسيقوم تلقائياً بإضافة http://www. قبل ما كتبته وكذلك .com بعده. عند تنصيب نظام ويندوز جديد على الحاسوب فيمكنك توفير الوقت باستخدام Ninite لتنصيب/تحديث عدة برامج مرّة واحدة (لم أجربه شخصياً - استخدامه محدود بشكل مجاني). الضغط على Ctrl + Shift + Esc سيفتح مدير المهام مباشرةً. عند ملئ النموذج على الإنترنت أو على برامج تحرير المستندات مثل إكسل، فالضغط على زر tab سينقل المؤشر لحقل الإدخال التالي، والضغط على Shift + Tab سينقل المؤشر لحقل الإدخال السابق. يمكنك دائماً استعمال الاختصار Ctrl + L أو F6 ضمن متصفح الوب للانتقال لشريط العناوين مباشرةَ. يعمل زر Caps Lock وفق مستوى الهاردوير، بحيث يمكنك تحديد إذا كان الجهاز لا يستجيب أم أن المشكلة في بعض التطبيقات التي تسبب البطئ أو أخطاء في العرض. فقط اضغط على زر Caps Lock وإذا ظهر ضوء الزر على لوحة المفاتيح فهذا يعني أن الجهاز مازال يستجيب ويعمل. هذه المقالة مترجمة وبتصرّف، يمكنك الإطّلاع على المصدر هل لديك أيّة معلومة إضافيّة؟ يرجى مشاركتها بمراسلتي لإضافتها هنا.</summary></entry></feed>

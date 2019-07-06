@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2019-06-22T20:13:05+03:00</updated>
+	<updated>2019-07-07T01:50:58+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -26,11 +26,19 @@
   &lt;li&gt;نوع القرص الذي تقوم بتهيئته&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;ستجد في هذا المقال تغطية لـ 12 نوع شائع لنظام الملفات&lt;/p&gt;
+
 &lt;p&gt;دعونا في البداية نفهم سريعًا وظيفة أنظمة الملفات.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#وظيفة-أنظمة-الملفات&quot; id=&quot;markdown-toc-وظيفة-أنظمة-الملفات&quot;&gt;وظيفة أنظمة الملفات&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#fat12-fat16--fat32&quot; id=&quot;markdown-toc-fat12-fat16--fat32&quot;&gt;FAT12, FAT16 &amp;amp; FAT32&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ntfs&quot; id=&quot;markdown-toc-ntfs&quot;&gt;NTFS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#exfat&quot; id=&quot;markdown-toc-exfat&quot;&gt;exFAT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ext2-ext3--ext4&quot; id=&quot;markdown-toc-ext2-ext3--ext4&quot;&gt;ext2, ext3 &amp;amp; ext4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hfs-hfs--apfs&quot; id=&quot;markdown-toc-hfs-hfs--apfs&quot;&gt;HFS, HFS+ &amp;amp; APFS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#zfs&quot; id=&quot;markdown-toc-zfs&quot;&gt;ZFS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#كيفية-اختيار-نظام-الملفات&quot; id=&quot;markdown-toc-كيفية-اختيار-نظام-الملفات&quot;&gt;كيفية اختيار نظام الملفات&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#المراجع&quot; id=&quot;markdown-toc-المراجع&quot;&gt;المراجع&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -66,7 +74,7 @@
     &lt;tr&gt;
       &lt;td&gt;FAT16&lt;/td&gt;
       &lt;td&gt;2GB/4GB&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16GB&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;FAT32&lt;/td&gt;
@@ -85,6 +93,69 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: نظام الملفات FAT32 شائع جدًا بسبب توافقه مع أنظمة التشغيل المختلفة ويُستخدم كثيرًا لوحدات التخزين الخارجية من USB Flash وكروت الذاكرة للهواتف وما إلى ذلك..&lt;/p&gt;
+
+&lt;h1 id=&quot;ntfs&quot;&gt;NTFS&lt;/h1&gt;
+&lt;p&gt;اختصار لـ New Technology File System وهو الأكثر شيوعًا ﻷنظمة ويندوز وتم إطلاقه عام 1993 لتجاوز حد حجم الملفات الموجود في FAT32 حيث أصبح الحد الأعظمي لحجم الملف الواحد 16 exabytes، والإكسابايت EB هي مليون تيرابايت، مما يعني أنه عمليا لايوجد حد لحجم الملف!&lt;/p&gt;
+
+&lt;p&gt;هذا النوع من أنظمة الملفات هو journaling File System أي يحتفظ بسجل للتغييرات وبالتالي يتم تجنب تلف البيانات ويتم الاستعادة في حال حدوث خلل في النظام أو في الطاقة الكهربائية.
+وليس كما في FAT32، يدعم نظام الملفات هنا الصلاحية، مما يعني أنه يمكن مثلا الإشارة لملف ما على أنه للقراءة فقط، كما يدعم تشفير البيانات. مما يجعله مناسب أكثر لاستخدامه نظاما للملفات ﻷنظمة التشغيل، ولذا &lt;strong&gt;يجب&lt;/strong&gt; تنصيب الويندوز على قرص ذو نوع نظام ملفات NTFS.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: غير متوافق مع الإصدارات القديمة لويندوز وكذلك غير متوافق مع الأنظمة الأخرى، مثلا تظهر أقراص NTFS على أنها للقراءة فقط في نظام macOS والأنظمة القديمة من لينكس. وقد لاتكون قابلة للقراءة نهائيًا لأجهزة مشغلات الفيديو مثلًا. بالتالي يجب عدم استخدامها للأقراص الخارجية&lt;/p&gt;
+
+&lt;h1 id=&quot;exfat&quot;&gt;exFAT&lt;/h1&gt;
+
+&lt;p&gt;اختصار لـ Extended File Allocation Table تم إطلاقه من قِبَل ميكروسوفت عام 2006 كنظام مُحسَّن لأقراص USB كبيرة السعة وكروت الذاكرة.&lt;/p&gt;
+
+&lt;p&gt;نظام الملفات هذا أقل تطوّرًا من NTFS ولكن يحوي مزايا إضافية بالمقارنة مع FAT32. 
+الحد الأعظمي لحجم الملف الواحد هنا هو 16EX أي عمليا لا يوجد حد. مما يجعله أفضل خيار لكروت الذاكرة التي تٌسجَّل عليها ملفات الفيديو. ولهذا السبب تم اختياره كنظام ملفات افتراضي لكروت ذاكرة SDXC&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: يتوافق بشكل أفضل مع الأنظمة المختلفة بالمقارنة مع NTFS. بما في ذلك القراءة والكتابة على أنظمة ماك macOS والإصدارات الحديثة من أندرويد. وعلى اللينكس فستحتاج لتنزيل حزم إضافية للوصول لأقراص exFAT.&lt;/p&gt;
+
+&lt;h1 id=&quot;ext2-ext3--ext4&quot;&gt;ext2, ext3 &amp;amp; ext4&lt;/h1&gt;
+
+&lt;p&gt;اختصار لـ extended File System وتم إطلاقه حصرًا ﻷنظمة لينكس عام 1992 حيث أُطلق نظام الملفات ext.
+بعدها بعام أُطلق ext2 والذي كان لسنوات عديدة نظام الملفات الافتراضي للعديد من توزيعات لينكس.
+عام 2001 تم إصدار ext3 والذي وفَّر journaling File System المذكور سابقّا لتجنب تلف البيانات.
+وتم طرح أخيرًا ext4 عام 2008 الأحدث لتاريخ هذه الصفحة والافتراضي ﻷنظمة لينكس.
+أقصى حد لحجم الملف هو 16TB ولحجم القرص 1EB&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: كونه مخصص لأنظمة لينكس فهو غير متوافق بشكل افتراضي مع أنظمة تشغيل ويندوز وماك، ولكن قد يصبح قابل للقراءة أو حتى الكتابة باستخدام برامج اضافية.&lt;/p&gt;
+
+&lt;h1 id=&quot;hfs-hfs--apfs&quot;&gt;HFS, HFS+ &amp;amp; APFS&lt;/h1&gt;
+
+&lt;p&gt;حيث HFS اختصار لـ hierarchical File System أي نظام الملفات الهرمي وتم إطلاقه من أبّل عام 1995 لنظام ماك. ويدعم حجم أعظمي للملف 2GB وحجم أعظمي للقرص 2TB ويُعرف أيضًا بـ Mac OS standard.
+وتم إطلاق HFS+ عام 1998 والذي يُعرف أيضًا بـ HFS Extended أو Mac OS Extended والذي يوفّر journaling لتجنب تلف البيانات ويدعم حجم أعظمي للملف والقرص 8EB عند استخدام نظام macOS 10 أو أحدث.
+عام 2017 تم طرح نظام ملفات أبل Apple File System واختصارا APFS والمٌحسَّن ﻷقراص SSD.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: جميعهم لا يدعمون افتراضيًا الأنظمة الأخرى الغير تابعة لشركة أبّل&lt;/p&gt;
+
+&lt;h1 id=&quot;zfs&quot;&gt;ZFS&lt;/h1&gt;
+
+&lt;p&gt;و zed file system الذي تم إطلاقه مبدأيًا عام 2006 من قِبَل Sun Microsystems ولكن منذ عام 2013 أصبح تطويره من قِبَل OpenZFS project.&lt;/p&gt;
+
+&lt;p&gt;يختلف نظام الملفات هذا عن باقي الأنظمة كونه يقوم بدمج مدير أقراص للتحكم بالأقراص المرتبطة بالحاسب. ومن خلال دمج إدارة القرص مع نظام الملفات، يوفّر ZFS حماية أكبر ضد فقد أو تلف البيانات.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;التوافق مع أنظمة التشغيل&lt;/strong&gt;: متوافق حاليًا مع لينكس و FreeBSD و TrueOS وقد يدعم ويندوز وماك لاحقًا.&lt;/p&gt;
+
+&lt;h1 id=&quot;كيفية-اختيار-نظام-الملفات&quot;&gt;كيفية اختيار نظام الملفات&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;في حالة الأقراص التي سيتم تشغيل أنظمة التشغيل عليها فلا يوجد خيار هنا، حيث يجب عليك اختيار نوع نظام الملفات المٌختار أصلا من قبل نظام التشغيل الذي ستنصّبه. هذا يعني NTFS لويندوز و ext4 للينكس و HFS+ أو APFS للماك.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;بالنسبة ﻷقراص USB وكروت الذاكرة فإن نظام الملفات FAT32 هو الخيار الأفضل للأقراص ذات السعة الأقل من 32 جيغابايت وذلك ﻷن له توافق مع مختلف الأنظمة (مع الانتباه إلى أن الحجم الأعظمي للملف كما هو مذكور 4 جيغابايت).&lt;/p&gt;
+
+    &lt;p&gt;أما لأقراص الـ USB وكروت الذاكرة ذات السعة أكبر من 32 جيغا أو إذا أردنا تخزين ملفات أكبر من 4 جيغا للملف الواحد فإن نظام الملفات exFAT هو الأفضل&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;للأقراص الخارجية عمومًا وأقراص SSD استخدم NTFS إذا كان الاستعمال يقتصر على أجهزة ويندوز، أو exFAT للاستعمال على كلا الويندوز والماك&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;آمل أن تكون قد حصلت على فائدة، إذا كان لديك أي سؤال فاطرحه في التعليقات، ﻷي تعديل أو اقتراح يمكن طرحه أيضًا في الأسفل أو تعديل الصفحة مباشرة من خلال الزر أعلى الصفحة.&lt;/p&gt;
 
 &lt;h1 id=&quot;المراجع&quot;&gt;المراجع&lt;/h1&gt;
 &lt;ul&gt;
@@ -285,6 +356,226 @@
 		</entry>
 	
 		<entry>
+			<title>سلسلة دروس SQL| الرموز البديلة</title>
+			<link href="http://mulham.github.io/sql/wildcard_characters"/>
+			<updated>2018-05-12T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/wildcards-characters</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-ميكروسوفت-أكسس&quot; id=&quot;markdown-toc-الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql-server&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة--بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-&quot; id=&quot;markdown-toc-استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-_&quot; id=&quot;markdown-toc-استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-رمز-القائمة--&quot; id=&quot;markdown-toc-استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز--&quot; id=&quot;markdown-toc-استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/h1&gt;
+
+&lt;p&gt;يُقصد بالرمز البديل (بالإنجليزية wildcard characters) الذي ينوب عن الأحرف. وتُستخدم لاستبدال حرف أو أكثر في عبارة نصيّة&lt;/p&gt;
+
+&lt;p&gt;تُستخدم الرموز البديلة مع عامل LIKE والتي تستخدم مع عبارة where للبحث عن نمط معين في عمود ما.&lt;/p&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الرمز&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+      &lt;th&gt;مثال&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
+      &lt;td&gt;العبارة *bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
+      &lt;td&gt;العبارة h?t تجد hot, hat, و hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;h[!oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
+      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;#&lt;/td&gt;
+      &lt;td&gt;تمثل أي رقما واحدا&lt;/td&gt;
+      &lt;td&gt;2#5 تجد 205, 215, 225, 235, 245, 255, 265, 275, 285, و 295&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الرمز&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+      &lt;th&gt;مثال&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;%&lt;/td&gt;
+      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
+      &lt;td&gt;العبارة %bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_&lt;/td&gt;
+      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
+      &lt;td&gt;العبارة h_t تجد hot, hat, و hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;h[^oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
+      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;جميع الرموز يمكن أن تُستخدم سويةً مع بضعها البعض في نفس العبارة!&lt;/p&gt;
+
+&lt;p&gt;فيما يلي بعض الأمثلة التي تُظهر عوامل LIKE مختلفة مع الرموز % و _ :&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;td style=&quot;font-weight: bold&quot;&gt;عبارة تحوي عامل LIKE&lt;/td&gt;
+&lt;td style=&quot;font-weight: bold&quot;&gt;الوصف &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE 'a%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%a'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تنتهي بـ a&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%or%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي العبارة or في أي موضع&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '_r%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE CustomerName LIKE 'a_%_%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE ContactName LIKE 'a%o'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وتنتهي بـ o&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ ber&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE 'ber%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;كذلك عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تحوي es&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '%es%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/h1&gt;
+
+&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بأي حرف متبوعاً بـ ondon&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '_ondon';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بالحرف L متبوعا بأي حرف، متبوعا بـ n، متبوعا بأي حرف، متبوعا بـ on&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE 'L_n_on';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ a أو b أو c&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[a-c]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city &lt;strong&gt;لا&lt;/strong&gt; تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[!bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو لنفس الغرض يمكن كتابة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City NOT LIKE '[bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</content>
+		</entry>
+	
+		<entry>
 			<title>سلسلة دروس SQL| عامل LIKE</title>
 			<link href="http://mulham.github.io/sql/like"/>
 			<updated>2018-05-12T00:00:00+03:00</updated>
@@ -318,6 +609,8 @@
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -449,6 +742,8 @@ WHERE ContactName LIKE 'a%o';
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
 WHERE CustomerName NOT LIKE 'a%';
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;wildcard_characters&quot;&gt;الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -486,6 +781,8 @@ WHERE CustomerName NOT LIKE 'a%';
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -699,6 +996,8 @@ FROM OrderDetails;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -844,6 +1143,8 @@ FROM Products;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -4888,6 +5189,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#الجداول&quot; id=&quot;markdown-toc-الجداول&quot;&gt;الجداول&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#التعليقات&quot; id=&quot;markdown-toc-التعليقات&quot;&gt;التعليقات&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ملاحظات&quot; id=&quot;markdown-toc-ملاحظات&quot;&gt;ملاحظات&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -5152,6 +5454,14 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;/table&gt;
 
 &lt;p&gt;لاحظ أن العنوان الغليظ ظهر (بشكل غليظ) لأننا وضعنا أسفله 3 شرطات &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; أو أكثر.&lt;/p&gt;
+
+&lt;h1 id=&quot;التعليقات&quot;&gt;التعليقات&lt;/h1&gt;
+
+&lt;p&gt;يمكن كتابة تعليق في الملف النصي بحيث يظهر فقط للمحرر، ولكنه لن يظهر عن التنفيذ على صفحة الوب مثلًا. يُكتب التعليق بالشكل التالي:&lt;/p&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+[comment]: # (هذا عبارة عن تعليق لا يظهر للقارئ)
+&lt;/pre&gt;
 
 &lt;h1 id=&quot;ملاحظات&quot;&gt;ملاحظات&lt;/h1&gt;
 
@@ -7142,6 +7452,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;تستخدم عبارة WHERE لترشيح (فلترة) التسجيلات .&lt;/p&gt;
@@ -7277,6 +7589,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح UPDATE لتحديث تسجيلات موجودة مسبقاً في جدول .&lt;/p&gt;
@@ -7378,6 +7692,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -7489,6 +7805,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT DISTINCT&lt;/code&gt; للحصول على القيم المختلفة فقط .&lt;/p&gt;
@@ -7566,6 +7884,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -7680,6 +8000,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -7824,6 +8146,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -7939,6 +8263,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح DELETE لحذف تسجيلات من جدول .&lt;/p&gt;
@@ -8037,6 +8363,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -8164,6 +8492,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
