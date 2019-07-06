@@ -13,12 +13,6 @@ comments: true
 * Toc
 {:toc}
 
-<style>
-
-table {
-  direction: ltr;
-}
-</style>
 
 
 # الرموز البديلة في Sql
@@ -70,49 +64,49 @@ WHERE ContactName LIKE 'a%o' | تجد أي قيمة تبدأ بـ a وتنتهي
 
 عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ ber
 
-SELECT * FROM Customers
-WHERE City LIKE 'ber%';
+	SELECT * FROM Customers
+	WHERE City LIKE 'ber%';
 
 كذلك عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تحوي es
 
-SELECT * FROM Customers
-WHERE City LIKE '%es%';
+	SELECT * FROM Customers
+	WHERE City LIKE '%es%';
 
 # استخدام الرمز _
 
 
 والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بأي حرف متبوعاً بـ ondon
 
-SELECT * FROM Customers
-WHERE City LIKE '_ondon';
+	SELECT * FROM Customers
+	WHERE City LIKE '_ondon';
 
 والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بالحرف L متبوعا بأي حرف، متبوعا بـ n، متبوعا بأي حرف، متبوعا بـ on
 
-SELECT * FROM Customers
-WHERE City LIKE 'L_n_on';
+	SELECT * FROM Customers
+	WHERE City LIKE 'L_n_on';
 
 # استخدام رمز القائمة [ ]
 
 عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـأحد الأحرف b أو s أو p
 
-SELECT * FROM Customers
-WHERE City LIKE '[bsp]%';
+	SELECT * FROM Customers
+	WHERE City LIKE '[bsp]%';
 
 عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ a أو b أو c
 
-SELECT * FROM Customers
-WHERE City LIKE '[a-c]%';
+	SELECT * FROM Customers
+	WHERE City LIKE '[a-c]%';
 
 # استخدام الرمز [ !]
 
 
 عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city **لا** تبدأ بـأحد الأحرف b أو s أو p
 
-SELECT * FROM Customers
-WHERE City LIKE '[!bsp]%';
+	SELECT * FROM Customers
+	WHERE City LIKE '[!bsp]%';
 
 أو لنفس الغرض يمكن كتابة:
 
-SELECT * FROM Customers
-WHERE City NOT LIKE '[bsp]%';
+	SELECT * FROM Customers
+	WHERE City NOT LIKE '[bsp]%';
 
