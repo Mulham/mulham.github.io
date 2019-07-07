@@ -1,7 +1,7 @@
 ---
 permalink: /sql/wildcard_characters
 layout: post
-date: 2018-05-12
+date: 2019-06-07
 title: سلسلة دروس SQL| الرموز البديلة
 type: tutorial
 hidden: true
@@ -123,3 +123,4 @@ _|     تمثل حرفا واحدا |     العبارة h_t تجد hot, hat, و
 	SELECT * FROM Customers
 	WHERE City NOT LIKE '[bsp]%';
 
+التالي: [عامل IN](in)
