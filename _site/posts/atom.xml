@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2019-07-07T01:50:58+03:00</updated>
+	<updated>2019-07-16T00:48:57+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -170,6 +170,804 @@
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| الرموز البديلة</title>
+			<link href="http://mulham.github.io/sql/wildcard_characters"/>
+			<updated>2019-06-07T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/wildcards-characters</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-ميكروسوفت-أكسس&quot; id=&quot;markdown-toc-الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql-server&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة--بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-&quot; id=&quot;markdown-toc-استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-_&quot; id=&quot;markdown-toc-استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-رمز-القائمة--&quot; id=&quot;markdown-toc-استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز--&quot; id=&quot;markdown-toc-استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/h1&gt;
+
+&lt;p&gt;يُقصد بالرمز البديل (بالإنجليزية wildcard characters) الذي ينوب عن الأحرف. وتُستخدم لاستبدال حرف أو أكثر في عبارة نصيّة&lt;/p&gt;
+
+&lt;p&gt;تُستخدم الرموز البديلة مع عامل LIKE والتي تستخدم مع عبارة where للبحث عن نمط معين في عمود ما.&lt;/p&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الرمز&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+      &lt;th&gt;مثال&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
+      &lt;td&gt;العبارة *bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
+      &lt;td&gt;العبارة h?t تجد hot, hat, و hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;h[!oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
+      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;#&lt;/td&gt;
+      &lt;td&gt;تمثل أي رقما واحدا&lt;/td&gt;
+      &lt;td&gt;2#5 تجد 205, 215, 225, 235, 245, 255, 265, 275, 285, و 295&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الرمز&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+      &lt;th&gt;مثال&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;%&lt;/td&gt;
+      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
+      &lt;td&gt;العبارة %bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_&lt;/td&gt;
+      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
+      &lt;td&gt;العبارة h_t تجد hot, hat, و hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
+      &lt;td&gt;h[^oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
+      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;جميع الرموز يمكن أن تُستخدم سويةً مع بضعها البعض في نفس العبارة!&lt;/p&gt;
+
+&lt;p&gt;فيما يلي بعض الأمثلة التي تُظهر عوامل LIKE مختلفة مع الرموز % و _ :&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;td style=&quot;font-weight: bold&quot;&gt;عبارة تحوي عامل LIKE&lt;/td&gt;
+&lt;td style=&quot;font-weight: bold&quot;&gt;الوصف &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE 'a%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%a'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تنتهي بـ a&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%or%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي العبارة or في أي موضع&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '_r%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE CustomerName LIKE 'a_%_%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE ContactName LIKE 'a%o'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وتنتهي بـ o&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ ber&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE 'ber%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;كذلك عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تحوي es&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '%es%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/h1&gt;
+
+&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بأي حرف متبوعاً بـ ondon&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '_ondon';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بالحرف L متبوعا بأي حرف، متبوعا بـ n، متبوعا بأي حرف، متبوعا بـ on&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE 'L_n_on';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ a أو b أو c&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[a-c]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city &lt;strong&gt;لا&lt;/strong&gt; تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City LIKE '[!bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو لنفس الغرض يمكن كتابة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE City NOT LIKE '[bsp]%';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;in&quot;&gt;عامل IN&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عامل IN</title>
+			<link href="http://mulham.github.io/sql/in"/>
+			<updated>2019-06-07T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/in</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عامل-in-في-sql&quot; id=&quot;markdown-toc-عامل-in-في-sql&quot;&gt;عامل IN في SQl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة--بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-عامل-in&quot; id=&quot;markdown-toc-أمثلة-على-عامل-in&quot;&gt;أمثلة على عامل IN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عامل-in-في-sql&quot;&gt;عامل IN في SQl&lt;/h1&gt;
+
+&lt;p&gt;يتيح لك عامل IN تحديد عدة  قيم ضمن عبارة  Where&lt;/p&gt;
+
+&lt;p&gt;وعامل IN هو اختصار لعبارات OR الشرطية&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;بناء العبارة:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;أمثلة-على-عامل-in&quot;&gt;أمثلة على عامل IN&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن المتواجدين في Germany و France و UK&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE Country IN ('Germany', 'France', 'UK');
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وعبارة SQL التالية تحدد كل الزبائن الغير المتواجدين في Germany و France و UK&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE Country NOT IN ('Germany', 'France', 'UK');
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن المتواجدين في نفس المدن المتواجد بها المزودين (في جدول suppliers)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
+WHERE Country IN (SELECT Country FROM Suppliers);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;between&quot;&gt;عامل Between &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عامل Between</title>
+			<link href="http://mulham.github.io/sql/between"/>
+			<updated>2019-06-07T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/between</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عامل-between-في-sql&quot; id=&quot;markdown-toc-عامل-between-في-sql&quot;&gt;عامل Between في SQl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة--بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-عامل-between&quot; id=&quot;markdown-toc-أمثلة-على-عامل-between&quot;&gt;أمثلة على عامل between&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-not-between&quot; id=&quot;markdown-toc-مثال-على-not-between&quot;&gt;مثال على NOT BETWEEN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-between-مع-in&quot; id=&quot;markdown-toc-مثال-على-between-مع-in&quot;&gt;مثال على Between مع IN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-between-مع-قيم-نصية&quot; id=&quot;markdown-toc-أمثلة-على-between-مع-قيم-نصية&quot;&gt;أمثلة على Between مع قيم نصية&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-not-between-مع-قيم-نصية&quot; id=&quot;markdown-toc-أمثلة-على-not-between-مع-قيم-نصية&quot;&gt;أمثلة على Not Between مع قيم نصية&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-جدول&quot; id=&quot;markdown-toc-استعراض-جدول&quot;&gt;استعراض جدول&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-between-مع-التواريخ&quot; id=&quot;markdown-toc-مثال-على-between-مع-التواريخ&quot;&gt;مثال على between مع التواريخ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;style&gt;
+
+table {
+  direction: ltr;
+}
+&lt;/style&gt;
+
+&lt;h1 id=&quot;عامل-between-في-sql&quot;&gt;عامل Between في SQl&lt;/h1&gt;
+
+&lt;p&gt;عامل between ويعني “بين” يحدد القيم الواقعة في مجال معطى، حيث يمكن للقيم أن تكون أرقام أو عبارات نصية أو تواريخ date&lt;/p&gt;
+
+&lt;p&gt;إن عامل between شامل، أي أن قيم البداية والنهاية مُضمّنة فيه.&lt;/p&gt;
+
+&lt;p&gt;بناء العبارة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول المنتجات Products في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ProductID&lt;/th&gt;
+      &lt;th&gt;ProductName&lt;/th&gt;
+      &lt;th&gt;SupplierID&lt;/th&gt;
+      &lt;th&gt;CategoryID&lt;/th&gt;
+      &lt;th&gt;Unit&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Chais&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;10 boxes x 20 bags&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Chang&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;24 - 12 oz bottles&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Aniseed Syrup&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;12 - 550 ml bottles&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Cajun Seasoning&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;48 - 6 oz jars&lt;/td&gt;
+      &lt;td&gt;22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Gumbo Mix&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;36 boxes&lt;/td&gt;
+      &lt;td&gt;21.35&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-عامل-between&quot;&gt;أمثلة على عامل between&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل المنتجات products حيث يكون السعر بين 10 و 20&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;مثال-على-not-between&quot;&gt;مثال على NOT BETWEEN&lt;/h1&gt;
+
+&lt;p&gt;استخدم NOT Between لعرض المنتجات خارج المجال المعطى في المثال السابق:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Products
+WHERE Price NOT BETWEEN 10 AND 20;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;مثال-على-between-مع-in&quot;&gt;مثال على Between مع IN&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل المنتجات بحيث يكون السعر بين 10 و 20 وبالإضافة لذلك لا تُظهر المنتجات الذي لديهم CategoryID ذو القيمة 1 أو 2 أو 3&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
+AND NOT CategoryID IN (1,2,3);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;أمثلة-على-between-مع-قيم-نصية&quot;&gt;أمثلة على Between مع قيم نصية&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل المنتجات بحيث يكون اسم المنتج بين Carnarvon Tigers و Mozzarella di Giovanni وهذا يعني وفق الترتيب الألفبائي وفقا للحرف الأول فالثاني وماإلى ذلك، أي بعبارة أخرى إذا قمنا بترتيب الاسماء ترتيبا ألفبائيا فستكون القيم الناتجة هي القيم بين الاسمين المعطيين (متضمنة الاسمين المعطيين)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Products
+WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+ORDER BY ProductName;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;أمثلة-على-not-between-مع-قيم-نصية&quot;&gt;أمثلة على Not Between مع قيم نصية&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل المنتجات بحيث يكون اسم المنتج &lt;strong&gt;ليس&lt;/strong&gt; بين Carnarvon Tigers و Mozzarella di Giovanni
+وهذا يعني إذا قمنا بترتيب الاسماء ترتيبا ألفبائيا فستكون القيم الناتجة هي جميع القيم ماعدا القيمتين المعطيتين وما بينهما&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Products
+WHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+ORDER BY ProductName;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-جدول&quot;&gt;استعراض جدول&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الطلبات Orders في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10248&lt;/td&gt;
+      &lt;td&gt;90&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;7/4/1996&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10249&lt;/td&gt;
+      &lt;td&gt;81&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;7/5/1996&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10250&lt;/td&gt;
+      &lt;td&gt;34&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;7/8/1996&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10251&lt;/td&gt;
+      &lt;td&gt;84&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;7/9/1996&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10252&lt;/td&gt;
+      &lt;td&gt;76&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;7/10/1996&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-على-between-مع-التواريخ&quot;&gt;مثال على between مع التواريخ&lt;/h1&gt;
+
+&lt;p&gt;عبارة SQL التالية تحدد كل الطلبات orders حيث يكون تاريخ الطلب في عمود OrderDate بين 01-July-1996 و 31-July-1996&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Orders
+WHERE OrderDate BETWEEN #01/07/1996# AND #31/07/1996#;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو بطريقة أخرى:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Orders
+WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;aliases&quot;&gt;الأسماء المستعارة &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| الأسماء المستعارة</title>
+			<link href="http://mulham.github.io/sql/aliases"/>
+			<updated>2019-06-07T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/aliases</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#الأسماء-المستعارة-في-sql&quot; id=&quot;markdown-toc-الأسماء-المستعارة-في-sql&quot;&gt;الأسماء المستعارة في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة--بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأسماء-المستعارة-مع-الأعمدة&quot; id=&quot;markdown-toc-أمثلة-على-الأسماء-المستعارة-مع-الأعمدة&quot;&gt;أمثلة على الأسماء المستعارة مع الأعمدة&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأسماء-المستعارة-مع-الجداول&quot; id=&quot;markdown-toc-أمثلة-على-الأسماء-المستعارة-مع-الجداول&quot;&gt;أمثلة على الأسماء المستعارة مع الجداول&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;style&gt;
+
+table {
+  direction: ltr;
+}
+&lt;/style&gt;
+
+&lt;h1 id=&quot;الأسماء-المستعارة-في-sql&quot;&gt;الأسماء المستعارة في SQL&lt;/h1&gt;
+
+&lt;p&gt;تٌستخدم الأسماء المستعارة (بالإنجليزية Alias) في SQL لإعطاء جدول أو عمود في جدول اسمًا مؤقتًا.&lt;/p&gt;
+
+&lt;p&gt;وتُستخدم عادة لجعل أسماء الأعمدة أكثر قابلية للقراءة.&lt;/p&gt;
+
+&lt;p&gt;يكون الاسم المستعار صالح فقط خلال فترة تنفيذ الأمر أو الاستعلام QUERY&lt;/p&gt;
+
+&lt;p&gt;بناء العبارة مع تغيير اسم العمود&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT column_name AS alias_name
+FROM table_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;بناء العبارة مع تغيير اسم الجدول&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT column_name(s)
+FROM table_name AS alias_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/h1&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Around the Horn&lt;/td&gt;
+      &lt;td&gt;Thomas Hardy&lt;/td&gt;
+      &lt;td&gt;120 Hanover Sq.&lt;/td&gt;
+      &lt;td&gt;London&lt;/td&gt;
+      &lt;td&gt;WA1 1DP&lt;/td&gt;
+      &lt;td&gt;UK&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;وتحديد من جدول الطلبات Orders:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10354&lt;/td&gt;
+      &lt;td&gt;58&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;1996-11-14&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10355&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;1996-11-15&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10356&lt;/td&gt;
+      &lt;td&gt;86&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;1996-11-18&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأسماء-المستعارة-مع-الأعمدة&quot;&gt;أمثلة على الأسماء المستعارة مع الأعمدة&lt;/h1&gt;
+
+&lt;p&gt;تُنشئ عبارة SQL التالية اسمين مستعارين، أحدهم لعمود CustomerID والآخر لعمود CustomerName&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وتُنشئ عبارة SQL التالية اسمين مستعارين احدهم لعمود CustomerName والآخر لعمود ContactName.
+&lt;strong&gt;ملاحظة&lt;/strong&gt;: إذا كان الاسم المستعار يحوي على فراغ فيجب تضمينه بين علامتي تنصيص مزدوجة “ “ أو أقواس مربعة [ ]&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT CustomerName AS Customer, ContactName AS [Contact Person]
+FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وتُنشئ عبارة SQL التالية الاسم المستعار Address والذي يجمع أربعة أعمدة (Address, PostalCode, City وCountry)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
+FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; لتنفيذ العبارة أعلاه في MySQL اكتب التالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address
+FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأسماء-المستعارة-مع-الجداول&quot;&gt;أمثلة على الأسماء المستعارة مع الجداول&lt;/h1&gt;
+
+&lt;p&gt;تُحدِّد عبارة SQL التالية كل الطلبات orders من جدول الزبائن بحيث الـ CustomerID يساوي 4.
+نستخدم هنا جداول الزبائن Customers والطلبات Orders ونعطيهم أسماء مستعارة c و o على التوالي (وهنا نستخدم الأسماء المستعارة لجعل عبارة SQL أقصر):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT o.OrderID, o.OrderDate, c.CustomerName
+FROM Customers AS c, Orders AS o
+WHERE c.CustomerName=&quot;Around the Horn&quot; AND c.CustomerID=o.CustomerID;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عبارة SQL التالية نفس العبارة أعلاه لكن بدون أسماء مستعارة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerName
+FROM Customers, Orders
+WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerID=Orders.CustomerID;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وبالتالي يمكن للأسماء المستعارة أن تكون مفيدة في هذه الحالات:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;يوجد أكثر من جدول مُضمن في عبارة SQL&lt;/li&gt;
+  &lt;li&gt;الدالات مستخدمة في العبارة&lt;/li&gt;
+  &lt;li&gt;أسماء الأعمدة طويلة أو غير قابلة للقراءة تماما&lt;/li&gt;
+  &lt;li&gt;عند جمع عمودين أو أكثر مع بعض&lt;/li&gt;
+&lt;/ul&gt;
+
 </content>
 		</entry>
 	
@@ -356,261 +1154,47 @@
 		</entry>
 	
 		<entry>
-			<title>سلسلة دروس SQL| الرموز البديلة</title>
-			<link href="http://mulham.github.io/sql/wildcard_characters"/>
-			<updated>2018-05-12T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/wildcards-characters</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-ميكروسوفت-أكسس&quot; id=&quot;markdown-toc-الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#الرموز-البديلة-في-sql-server&quot; id=&quot;markdown-toc-الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة--بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-&quot; id=&quot;markdown-toc-استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز-_&quot; id=&quot;markdown-toc-استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استخدام-رمز-القائمة--&quot; id=&quot;markdown-toc-استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استخدام-الرمز--&quot; id=&quot;markdown-toc-استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;الرموز-البديلة-في-sql&quot;&gt;الرموز البديلة في Sql&lt;/h1&gt;
-
-&lt;p&gt;يُقصد بالرمز البديل (بالإنجليزية wildcard characters) الذي ينوب عن الأحرف. وتُستخدم لاستبدال حرف أو أكثر في عبارة نصيّة&lt;/p&gt;
-
-&lt;p&gt;تُستخدم الرموز البديلة مع عامل LIKE والتي تستخدم مع عبارة where للبحث عن نمط معين في عمود ما.&lt;/p&gt;
-
-&lt;h1 id=&quot;الرموز-البديلة-في-ميكروسوفت-أكسس&quot;&gt;الرموز البديلة في ميكروسوفت أكسس&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;الرمز&lt;/th&gt;
-      &lt;th&gt;الوصف&lt;/th&gt;
-      &lt;th&gt;مثال&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;*&lt;/td&gt;
-      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
-      &lt;td&gt;العبارة *bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;?&lt;/td&gt;
-      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
-      &lt;td&gt;العبارة h?t تجد hot, hat, و hit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[]&lt;/td&gt;
-      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
-      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;!&lt;/td&gt;
-      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
-      &lt;td&gt;h[!oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
-      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;#&lt;/td&gt;
-      &lt;td&gt;تمثل أي رقما واحدا&lt;/td&gt;
-      &lt;td&gt;2#5 تجد 205, 215, 225, 235, 245, 255, 265, 275, 285, و 295&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;الرموز-البديلة-في-sql-server&quot;&gt;الرموز البديلة في SQL Server&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;الرمز&lt;/th&gt;
-      &lt;th&gt;الوصف&lt;/th&gt;
-      &lt;th&gt;مثال&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;%&lt;/td&gt;
-      &lt;td&gt;تُمثِّل عدد حروف صفر أو أكثر&lt;/td&gt;
-      &lt;td&gt;العبارة %bl تجد الكلمات bl و  black و  blue, و blob&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;_&lt;/td&gt;
-      &lt;td&gt;تمثل حرفا واحدا&lt;/td&gt;
-      &lt;td&gt;العبارة h_t تجد hot, hat, و hit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[]&lt;/td&gt;
-      &lt;td&gt;تمثل أي حرف ضمن الأقواس&lt;/td&gt;
-      &lt;td&gt;العبارة h[oa]t  تجد hot و hat, لكن ليس hit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;^&lt;/td&gt;
-      &lt;td&gt;تمثل أي حرف عدا الذي ضمن الأقواس&lt;/td&gt;
-      &lt;td&gt;h[^oa]t تجد hit, لكن ليس  hot و hat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;تمثل مجال من الأحرف بحسب الترتيب الألفبائي&lt;/td&gt;
-      &lt;td&gt;c[a-b]t  تجد cat و cbt&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;جميع الرموز يمكن أن تُستخدم سويةً مع بضعها البعض في نفس العبارة!&lt;/p&gt;
-
-&lt;p&gt;فيما يلي بعض الأمثلة التي تُظهر عوامل LIKE مختلفة مع الرموز % و _ :&lt;/p&gt;
-
-&lt;table&gt;
-&lt;tr&gt;&lt;td style=&quot;font-weight: bold&quot;&gt;عبارة تحوي عامل LIKE&lt;/td&gt;
-&lt;td style=&quot;font-weight: bold&quot;&gt;الوصف &lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE 'a%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%a'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تنتهي بـ a&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '%or%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي العبارة or في أي موضع&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt;WHERE CustomerName LIKE '_r%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تحوي الحرف r في الموقع الثاني (ثاني حرف)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE CustomerName LIKE 'a_%_%'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وطول القيمة على الأقل ثلاثة (مؤلفة من ثلاث أحرف على الأقل أولها a)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&quot;direction: ltr; text-align: right&quot;&gt; WHERE ContactName LIKE 'a%o'&lt;/td&gt;&lt;td&gt;تجد أي قيمة تبدأ بـ a وتنتهي بـ o&lt;/td&gt;&lt;/tr&gt;
-
-&lt;/table&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة--بيانات&quot;&gt;استعراض قاعدة  بيانات&lt;/h1&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;استخدام-الرمز-&quot;&gt;استخدام الرمز %&lt;/h1&gt;
-
-&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ ber&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City LIKE 'ber%';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;كذلك عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تحوي es&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City LIKE '%es%';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;استخدام-الرمز-_&quot;&gt;استخدام الرمز _&lt;/h1&gt;
-
-&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بأي حرف متبوعاً بـ ondon&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City LIKE '_ondon';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;والعبارة التالية تحدد كل الزبائن بحيث تبدأ القيمة الخاصة بهم في العمود city بالحرف L متبوعا بأي حرف، متبوعا بـ n، متبوعا بأي حرف، متبوعا بـ on&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City LIKE 'L_n_on';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;استخدام-رمز-القائمة--&quot;&gt;استخدام رمز القائمة [ ]&lt;/h1&gt;
-
-&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City LIKE '[bsp]%';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city تبدأ بـ a أو b أو c&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City LIKE '[a-c]%';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;استخدام-الرمز--&quot;&gt;استخدام الرمز [ !]&lt;/h1&gt;
-
-&lt;p&gt;عبارة SQL التالية تحدد كل الزبائن بحيث تكون القيمة الخاصة بهم في العمود city &lt;strong&gt;لا&lt;/strong&gt; تبدأ بـأحد الأحرف b أو s أو p&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City LIKE '[!bsp]%';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;أو لنفس الغرض يمكن كتابة:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
-WHERE City NOT LIKE '[bsp]%';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-</content>
-		</entry>
-	
-		<entry>
 			<title>سلسلة دروس SQL| عامل LIKE</title>
 			<link href="http://mulham.github.io/sql/like"/>
 			<updated>2018-05-12T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//sql/like</id>
 			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -754,35 +1338,41 @@ WHERE CustomerName NOT LIKE 'a%';
 			<id>http://mulham.github.io//sql/count-avg-sum</id>
 			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -968,35 +1558,41 @@ FROM OrderDetails;
 			<id>http://mulham.github.io//sql/min-max</id>
 			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -1116,35 +1712,41 @@ FROM Products;
 			<id>http://mulham.github.io//sql/top-limit-rownum</id>
 			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -7157,6 +7759,1212 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 		</entry>
 	
 		<entry>
+			<title>سلسلة دروس SQL|عبارة WHERE</title>
+			<link href="http://mulham.github.io/sql/where"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/where</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;تستخدم عبارة WHERE لترشيح (فلترة) التسجيلات .&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-where-في-sql&quot; id=&quot;markdown-toc-عبارة-where-في-sql&quot;&gt;عبارة WHERE في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-عبارة-where&quot; id=&quot;markdown-toc-بناء-عبارة-where&quot;&gt;بناء عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-عبارة-where&quot; id=&quot;markdown-toc-مثال-على-عبارة-where&quot;&gt;مثال على عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الحقول-النصية--الحقول-العددية&quot; id=&quot;markdown-toc-الحقول-النصية--الحقول-العددية&quot;&gt;الحقول النصية × الحقول العددية&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#العمليات-في-عبارة-where&quot; id=&quot;markdown-toc-العمليات-في-عبارة-where&quot;&gt;العمليات في عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-where-في-sql&quot;&gt;عبارة WHERE في SQL&lt;/h1&gt;
+
+&lt;p&gt;تستخدم عبارة WHERE لاستخراج التسجيلات التي تطابق معيار محدد فقط .&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-عبارة-where&quot;&gt;بناء عبارة WHERE&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
+
+    FROM table_name
+
+    WHERE column_name operator value;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;مثال-على-عبارة-where&quot;&gt;مثال على عبارة WHERE&lt;/h1&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من دولة Mexico ضمن جدول الزبائن&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
+
+    WHERE Country='Mexico';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;الحقول-النصية--الحقول-العددية&quot;&gt;الحقول النصية × الحقول العددية&lt;/h1&gt;
+
+&lt;p&gt;تتطلب SQL علامة تنصيص واحدة  ‘  قبل وبعد القيم النصية ، كما في كلمة Mexico في المثال السابق ( معظم أنظمة قواعد البيانات تسمح بعلامة التنصيص المزدوجة أيضاً “ )&lt;/p&gt;
+
+&lt;p&gt;وبالمقابل ، القيم العددية يجب ألا تكون محاطة بعلامتي تنصيص :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
+
+    WHERE CustomerID=1;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;العمليات-في-عبارة-where&quot;&gt;العمليات في عبارة WHERE&lt;/h1&gt;
+
+&lt;p&gt;يمكن أن تستخدم العمليات التالية في عبارة WHERE&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;العملية&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;الوصف&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;=&lt;/td&gt;
+      &lt;td&gt;يساوي&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;&amp;gt;&lt;/td&gt;
+      &lt;td&gt;لا يساوي . ملاحظة : في بعض إصدارات SQL قد تكتب هذه العملية بالشكل : =!&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;&lt;/td&gt;
+      &lt;td&gt;أكبر من&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;&lt;/td&gt;
+      &lt;td&gt;أصغر من&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;=&lt;/td&gt;
+      &lt;td&gt;أكبر أو يساوي&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;=&lt;/td&gt;
+      &lt;td&gt;أصغر أو يساوي&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;BETWEEN&lt;/td&gt;
+      &lt;td&gt;بين مجموعة خاصة&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LIKE&lt;/td&gt;
+      &lt;td&gt;بحث عن نمط (نموذج)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;IN&lt;/td&gt;
+      &lt;td&gt;لتحديد قيم عديدة ممكنة في عمود&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;and-or&quot;&gt;عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|تصريح UPDATE</title>
+			<link href="http://mulham.github.io/sql/update"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/update</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;يستخدم تصريح UPDATE لتحديث تسجيلات موجودة مسبقاً في جدول .&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-تصريح-update&quot; id=&quot;markdown-toc-بناء-تصريح-update&quot;&gt;بناء تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-تصريح-update&quot; id=&quot;markdown-toc-مثال-على-تصريح-update&quot;&gt;مثال على تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;بناء-تصريح-update&quot;&gt;بناء تصريح UPDATE&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	UPDATE table_name
+
+	SET column1=value1,column2=value2,...
+
+	WHERE some_column=some_value;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;لاحظ عبارة WHERE في تصريح UPDATE !&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;عبارة WHERE تحدد أي تسجيل أو تسجيلات يجب أن تُحدّث ، إذا قمت بحذف عبارة WHERE ، فسوف تُحدّث جميع التسجيلات!&lt;/p&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-على-تصريح-update&quot;&gt;مثال على تصريح UPDATE&lt;/h1&gt;
+
+&lt;p&gt;على فرض أننا نريد تحديث سجل الزبون “Alfreds Futterkiste” لاسم تواصل ContactName ومدينة City جديدين، حينها نستخدم تصريح SQL التالي&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	UPDATE Customers
+
+	SET ContactName='Alfred Schmidt', City='Hamburg'
+
+	WHERE CustomerName='Alfreds Futterkiste';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers3.png&quot; alt=&quot;customers3&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;تحذير! كن حذراً عند تحديث التسجيلات&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;فإذا قمت بحذف عبارة WHERE من المثال السابق، كأن تكتب&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	UPDATE Customers
+
+	SET ContactName='Alfred Schmidt', City='Hamburg';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حينها ،  سيبدو جدول الزبائن على الشكل&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers4.png&quot; alt=&quot;customers4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;delete&quot;&gt;تصريح DELETE&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|تصريح SELECT</title>
+			<link href="http://mulham.github.io/sql/select"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/select</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;يستخدم تصريح SELECT لتحديد بيانات في قاعدة البيانات .&lt;/p&gt;
+
+&lt;p&gt;تُخزن النتائج في جدول للنتائج يدعى مجموعة النتائج result-set&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-تصريح-select&quot; id=&quot;markdown-toc-بناء-تصريح-select&quot;&gt;بناء تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#مثال-على-تحديد-عمود&quot; id=&quot;markdown-toc-مثال-على-تحديد-عمود&quot;&gt;مثال على تحديد عمود&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#مثال-على-تحديد-الكل&quot; id=&quot;markdown-toc-مثال-على-تحديد-الكل&quot;&gt;مثال على تحديد الكل&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#التنقل-في-مجموعة-النتائج&quot; id=&quot;markdown-toc-التنقل-في-مجموعة-النتائج&quot;&gt;التنقل في مجموعة النتائج&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;بناء-تصريح-select&quot;&gt;بناء تصريح SELECT&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
+
+    FROM table_name; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;و&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM table_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : &lt;code class=&quot;highlighter-rouge&quot;&gt;Northwind&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;مثال-على-تحديد-عمود&quot;&gt;مثال على تحديد عمود&lt;/h2&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد اسم الزبون CustomerName و المدينة City من جدول الزبائن&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT CustomerName,City FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;مثال-على-تحديد-الكل&quot;&gt;مثال على تحديد الكل&lt;/h2&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد كافة الأعمدة من جدول الزبائن&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;التنقل-في-مجموعة-النتائج&quot;&gt;التنقل في مجموعة النتائج&lt;/h2&gt;
+
+&lt;p&gt;معظم برامج أنظمة قواعد البيانات تسمح بالتنقل في مجموعة النتائج باستعمل وظائف برمجية مثل :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Move-To-First-Record&lt;/code&gt;: الانتقال للتسجيل الأول&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Get-Record-Content&lt;/code&gt;: الحصول على محتوى التسجيل&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Move-To-Next-Record&lt;/code&gt;: الانتقال للتسجيل التالي&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;إلخ ..&lt;/p&gt;
+
+&lt;p&gt;وظائف برمجية مثل هذه ليست جزء من سلسلة الشروحات هذه ، لتعلم الوصول للبيانات من خلال وظائف برمجية function calls ، يرجى الاطلاع على شروحات خارجية حول لغة البرمجة PHP أو ASP حيث يوجد الكثير من الشروحات العربية حول هذا الموضوع .&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;select-distinct&quot;&gt;تصريح تحديد الإختلاف في sql&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|تصريح SELECT DISTINCT</title>
+			<link href="http://mulham.github.io/sql/select-distinct"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/select-distinct</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;يستخدم تصريح &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT DISTINCT&lt;/code&gt; للحصول على القيم المختلفة فقط .&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#تصريح-select-distinct&quot; id=&quot;markdown-toc-تصريح-select-distinct&quot;&gt;تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-تصريح-select-distinct&quot; id=&quot;markdown-toc-بناء-تصريح-select-distinct&quot;&gt;بناء تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-لتصريح-select-distinct&quot; id=&quot;markdown-toc-مثال-لتصريح-select-distinct&quot;&gt;مثال لتصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;تصريح-select-distinct&quot;&gt;تصريح SELECT DISTINCT&lt;/h1&gt;
+
+&lt;p&gt;إن عمود ما في جدول قد يحوي  على قيم متطابقة ، ولذلك قد تريد في بعض الأحيان عرض القيم المختلفة فقط .&lt;/p&gt;
+
+&lt;p&gt;عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;DISTINCT&lt;/code&gt; يمكن أن تستخدم لاستدعاء القيم المختلفة فقط .&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-تصريح-select-distinct&quot;&gt;بناء تصريح SELECT DISTINCT&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT DISTINCT column_name,column_name
+
+    FROM table_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم في هذا الشرح قاعدة البيانات المعروفة جيداً &lt;code class=&quot;highlighter-rouge&quot;&gt;Northwind&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن &lt;code class=&quot;highlighter-rouge&quot;&gt;Customers&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-لتصريح-select-distinct&quot;&gt;مثال لتصريح SELECT DISTINCT&lt;/h1&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد القيم المختلفة فقط من عمود City في جدول الزبائن Customers&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT DISTINCT City FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;where&quot;&gt;عبارة WHERE&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|دالة ORDER BY</title>
+			<link href="http://mulham.github.io/sql/order-by"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/order-by</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#دالة-order-by-في-sql&quot; id=&quot;markdown-toc-دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-order-by&quot; id=&quot;markdown-toc-بناء-order-by&quot;&gt;بناء ORDER BY&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by&quot; id=&quot;markdown-toc-مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-desc&quot; id=&quot;markdown-toc-مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-لعدة-أعمدة&quot; id=&quot;markdown-toc-مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج&lt;/p&gt;
+
+&lt;h1 id=&quot;دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/h1&gt;
+
+&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج بعمود واحد أو أكثر&lt;/p&gt;
+
+&lt;p&gt;تقوم دالة ORDER BY بفرز التسجيلات افتراضياً بحسب الترتيب الأبجدي (ascending) ، لفرز التسجيلات بعكس الترتيب الأبجدي (descending) ، استعمل دالة DESC .&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-order-by&quot;&gt;بناء ORDER BY&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
+
+    FROM table_name
+
+    ORDER BY column_name,column_name ASC|DESC;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم في هذا الشرح قاعدة البيانات المعروفة جيداً Northwind&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/h1&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب عمود الدولة Country&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
+
+	ORDER BY Country; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/h2&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين عكس الترتيب الأبجدي  بحسب عمود الدولة Country&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
+
+	ORDER BY Country DESC;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/h2&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب أعمدة الدولة Country واسم الزبون CustomerName&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
+
+	ORDER BY Country,CustomerName;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;insert-into&quot;&gt;تصريح INSERT INTO&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|مقدمة</title>
+			<link href="http://mulham.github.io/sql/intro"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/intro</id>
+			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/sql.jpg&quot; alt=&quot;intro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;نقدم هنا سلسلة دروس SQL مترجمة حصرياً لموقع ملهم.&lt;/p&gt;
+
+&lt;p&gt;SQL هي لغة معيارية لتخزين وتعديل البيانات واستخراجها من قواعد البيانات.&lt;/p&gt;
+
+&lt;p&gt;سلسلة الدروس هذه ستعلمك كيفية استخدام لغة &lt;code class=&quot;highlighter-rouge&quot;&gt;SQL&lt;/code&gt; للوصول والتعديل على البيانات في :&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MySQL&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SQL Server&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Access&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Oracle&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Sybase&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DB2&lt;/code&gt; وأنظمة قواعد بيانات أخرى .&lt;/p&gt;
+
+&lt;p&gt;سلسلة الدروس هذه مترجمة من الموقع &lt;a href=&quot;https://www.w3schools.com/sql/default.asp&quot;&gt;w3schools&lt;/a&gt; وخلال قراءتك للأوامر هنا يمكنك تجربتها مباشرة عبر موقعهم على &lt;a href=&quot;https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all&quot;&gt;هذا الرابط&lt;/a&gt; كما يحوي موقعهم أيضًا تمارين على كل درس ستجدهم جميعا على &lt;a href=&quot;https://www.w3schools.com/sql/exercise.asp?filename=exercise_select1&quot;&gt;هذا الرابط&lt;/a&gt; كما يوجد فحص للغة عن انتهائك من تعلمها تجده على &lt;a href=&quot;https://www.w3schools.com/sql/sql_quiz.asp&quot;&gt;هذا الرابط&lt;/a&gt; عند النقر على “Start the SQL Quiz” سيبدأ عداد الوقت بالعمل وانتظار الأجوبة ويمكن من هناك أخذ شهادة من الموقع ذاك وفقا لنتيجة الفحص.&lt;/p&gt;
+
+&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;الدرس الأول : التعريف بـ SQL&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;SQL هي لغة برمجة معيارية للوصول والتعديل على قواعد البيانات .&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#ما-هي-sql&quot; id=&quot;markdown-toc-ما-هي-sql&quot;&gt;ما هي SQL؟&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مالذي-يمكن-فعله-بواسطة-sql&quot; id=&quot;markdown-toc-مالذي-يمكن-فعله-بواسطة-sql&quot;&gt;مالذي يمكن فعله بواسطة SQl؟&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sql-لغة-معيارية--ولكن-&quot; id=&quot;markdown-toc-sql-لغة-معيارية--ولكن-&quot;&gt;SQL لغة معيارية ، ولكن ..&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استخدام-sql-في-موقعك-&quot; id=&quot;markdown-toc-استخدام-sql-في-موقعك-&quot;&gt;استخدام SQL في موقعك :&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#rdbms&quot; id=&quot;markdown-toc-rdbms&quot;&gt;RDBMS&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;ما-هي-sql&quot;&gt;ما هي SQL؟&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQL هي اختصار لـ Structured Query Language والتي تعني “لغة الاستعلامات البنيوية” .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQL تتيح لك الوصول والتعديل على قواعد البيانات .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQL هي لغة معيارية لـ American National Standards Institute) ANSI) ( المعهد الأمريكي الوطني للمعايير) .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;مالذي-يمكن-فعله-بواسطة-sql&quot;&gt;مالذي يمكن فعله بواسطة SQl؟&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL تنفيذ أوامر لقاعدة بيانات  .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL استخراج بيانات من قاعدة بيانات محددة .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL إدخال تسجيلات لقاعدة بيانات .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL تحديث تسجيلات في قاعدة بيانات.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL حذف تسجيلات من قاعدة بيانات .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء قواعد بيانات جديدة .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء جداول جديدة في قواعد بيانات .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء تعليمات مخزنة في قاعدة بيانات .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء عروض في قاعدة بيانات .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن لـ SQL ضبط الصلاحيات للجدوال ، التعليمات والعروض .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;sql-لغة-معيارية--ولكن-&quot;&gt;SQL لغة معيارية ، ولكن ..&lt;/h1&gt;
+
+&lt;p&gt;على الرغم من أن SQL هي لغة معيارية لـ ANSI ، إلا أن هناك إصدارات مختلفة لهذه اللغة .&lt;/p&gt;
+
+&lt;p&gt;على كل حال ، جميع الإصدارات تتفق بالتعليمات الأساسية ( مثل : SELECT, UPDATE, DELETE, INSERT, WHERE) وتتعامل معها بنفس الطريقة .&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;معظم برامج قواعد بيانات SQL يكون لها ملحقات خاصة بها بالإضافة للغة SQL الأساسية!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;استخدام-sql-في-موقعك-&quot;&gt;استخدام SQL في موقعك :&lt;/h1&gt;
+
+&lt;p&gt;لبناء موقع يقوم بعرض بيانات من قاعدة بيانات ، ستحتاج إلى :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;برنامج قواعد بيانات RDBMS ( مثل : MS Access, SQL Server, MySQL )&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;استخدام لغة برمجة تُنفَّذ في الخادم ، مثل PHP ، ASP&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;استخدام لغة SQL للحصول على البيانات المرادة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;استخدام اللغات  HTML/CSS&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h2&gt;
+
+&lt;p&gt;وهي اختصار لـ Relational Database Management System ، وتعني “نظام إدراة قواعد البيانات الترابطية”، وهي الأساس لـ SQL ولجميع الأنظمة الحديثة لقواعد البيانات مثل MS SQL Server, IBM DB2, Oracle, MySQL, و Microsoft Access.&lt;/p&gt;
+
+&lt;p&gt;البيانات في نظام RDBMS تُخزّن في عناصر لقواعد البيانات تدعى الجداول .&lt;/p&gt;
+
+&lt;p&gt;الجداول هي مجموعة من مدخلات البيانات المرتبطة وتتألف من الصفوف والأعمدة .&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;build&quot;&gt;بناء SQL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;سلسلة الدروس هذه بأكملها مترجمة وبتصرّف، يمكنك الاطّلاع على &lt;a href=&quot;https://www.w3schools.com/SQl/sql_intro.asp&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|تصريح INSERT INTO</title>
+			<link href="http://mulham.github.io/sql/insert-into"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/insert-into</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-insert-into&quot; id=&quot;markdown-toc-بناء-insert-into&quot;&gt;بناء INSERT INTO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-insert-into&quot; id=&quot;markdown-toc-مثال-على-insert-into&quot;&gt;مثال على INSERT INTO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#إدراج-بيانات-في-جداول-محددة-فقط&quot; id=&quot;markdown-toc-إدراج-بيانات-في-جداول-محددة-فقط&quot;&gt;إدراج بيانات في جداول محددة فقط&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;يستخدم تصريح INSERT INTO لإدراج تسجيلات جديدة في جدول .&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-insert-into&quot;&gt;بناء INSERT INTO&lt;/h1&gt;
+
+&lt;p&gt;من الممكن كتابة تصريح INSERT INTO بشكلين مختلفين .&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;الشكل الأول لا يحدد أسماء الأعمدة التي ستدرج البيانات بداخلها ، بل يحدد القيم التي سيتم إدراجها فقط&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  INSERT INTO table_name
+
+  VALUES (value1,value2,value3,...);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الشكل الثاني يحد كلاً من أسماء الأعمدة والقيم التي سيتم إدراجها&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  INSERT INTO table_name (column1,column2,column3,...)
+
+  VALUES (value1,value2,value3,...);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-على-insert-into&quot;&gt;مثال على INSERT INTO&lt;/h1&gt;
+
+&lt;p&gt;على افتراض أننا نريد إدراج صف جديد في جدول الزبائن ، فيمكننا استخدام تصريح SQL التالي لذلك&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+
+	VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway'); 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers1.png&quot; alt=&quot;customers1&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;هل لاحظت أننا لم نقم بإدراج أي رقم في حقل CustomerID ؟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;إن عمود CustomerID يتم تحديثه بشكل تلقائي برقم تعدادي لكل تسجيل في الجدول .&lt;/p&gt;
+
+&lt;h1 id=&quot;إدراج-بيانات-في-جداول-محددة-فقط&quot;&gt;إدراج بيانات في جداول محددة فقط&lt;/h1&gt;
+
+&lt;p&gt;من الممكن أيضاً إدراج بيانات في جداول محددة فقط.&lt;/p&gt;
+
+&lt;p&gt;تصريح SQL التالي سيقوم بإدراج صف جديد ، ولكن سيدرج بيانات فقط في الأعمدة CustomerName , City , Country ( وبالطبع حقل CustomerID سيتم تحديثه تلقائياً )&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	INSERT INTO Customers (CustomerName, City, Country)
+
+	VALUES ('Cardinal', 'Stavanger', 'Norway');
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers2.png&quot; alt=&quot;customers2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;update&quot;&gt;تصريح UPDATE&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|تصريح DELETE</title>
+			<link href="http://mulham.github.io/sql/delete"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/delete</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;يستخدم تصريح DELETE لحذف تسجيلات من جدول .&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-delete&quot; id=&quot;markdown-toc-بناء-delete&quot;&gt;بناء DELETE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#لاحظ-عبارة-where-في-تصريح-delete-&quot; id=&quot;markdown-toc-لاحظ-عبارة-where-في-تصريح-delete-&quot;&gt;لاحظ عبارة WHERE في تصريح DELETE !&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-delete&quot; id=&quot;markdown-toc-مثال-على-delete&quot;&gt;مثال على DELETE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#حذف-جميع-البيانات&quot; id=&quot;markdown-toc-حذف-جميع-البيانات&quot;&gt;حذف جميع البيانات&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;بناء-delete&quot;&gt;بناء DELETE&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE FROM table_name
+
+	WHERE some_column=some_value;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;لاحظ-عبارة-where-في-تصريح-delete-&quot;&gt;لاحظ عبارة WHERE في تصريح DELETE !&lt;/h1&gt;
+
+&lt;p&gt;عبارة WHERE تحدد التسجيل أو التسجيلات التي يجب ان تُحذف ، إذا قمت بحذف عبارة WHERE فسيتم حذف جميع التسجيلات!&lt;/p&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-على-delete&quot;&gt;مثال على DELETE&lt;/h1&gt;
+
+&lt;p&gt;على افتراض أننا نريد حذف الزبون “Alfreds Futterkiste” من جدول الزبائن. نستخدم التصريح التالي&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE FROM Customers
+
+	WHERE CustomerName='Alfreds Futterkiste' AND ContactName='Maria Anders';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;الآن ، سيبدو جدول الزبائن على الشكل التالي&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers5.png&quot; alt=&quot;customers5&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;حذف-جميع-البيانات&quot;&gt;حذف جميع البيانات&lt;/h1&gt;
+
+&lt;p&gt;من الممكن حذف جميع الصفوف في جدول بدون حذف الجدول . هذا يعني أن تركيب الجدول وخصائصه وفهارسه ستبقى موجودة وسليمة&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE FROM table_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE * FROM table_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;كن حذراً جداً عند حذف تسجيلات، فلا يمكنك التراجع عن هذا الإجراء!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;top-limit-rownum&quot;&gt;عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|البناء</title>
+			<link href="http://mulham.github.io/sql/build"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/build</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#جداول-قواعد-البيانات&quot; id=&quot;markdown-toc-جداول-قواعد-البيانات&quot;&gt;جداول قواعد البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#تصريحات-sql&quot; id=&quot;markdown-toc-تصريحات-sql&quot;&gt;تصريحات SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#فاصلة-منقوطة-بعد-تصريحات-sql&quot; id=&quot;markdown-toc-فاصلة-منقوطة-بعد-تصريحات-sql&quot;&gt;فاصلة منقوطة بعد تصريحات SQL؟&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;جداول-قواعد-البيانات&quot;&gt;جداول قواعد البيانات&lt;/h1&gt;
+
+&lt;p&gt;تحتوي قاعدة البيانات في معظم الأحيان على جدول واحد أو أكثر . يتم تعريف كل جدول باسم ، على سبيل المثال : “الزبائن” ، “الطلبات” .. تحتوي الجداول على تسجيلات (صفوف) يتم بها الاحتفاظ بالبيانات.&lt;/p&gt;
+
+&lt;p&gt;سوف نستخدم في هذا الشرح قاعدة البيانات الافتراضية والمعروفة جيداً : Northwind ( المضمنة في ميكروسوفت أكسس ، وميكروسوفت SQL سيرفر ) .&lt;/p&gt;
+
+&lt;p&gt;الجدول التالي هو قسم من من جدول الزبائن “Customers” :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;الجدول في اﻷعلى يحوي على خمسة تسجيلات (واحد لكل زبون) ، وسبعة أعمدة (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country)&lt;/p&gt;
+
+&lt;h1 id=&quot;تصريحات-sql&quot;&gt;تصريحات SQL&lt;/h1&gt;
+
+&lt;p&gt;نقصد هنا بـ “تصريحات” أسطر الأوامر لـ sql أي الجملة المؤلفة لأوامر sql  .&lt;/p&gt;
+
+&lt;p&gt;معظم الأمور التي تحتاج القيام بها في قواعد البيانات يمكن تأديتها بواسطة تصريحات (أوامر) SQL&lt;/p&gt;
+
+&lt;p&gt;يختار تصريح SQL التالي جميع التسجيلات في جدول الزبائن :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;سنتعلم في هذه السلسة جميع تصريحات SQL المختلفة .&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;تذكر أن&lt;/p&gt;
+
+  &lt;p&gt;SQL ليست حساسة للأحرف الكبيرة . فـ select هي نفس SELECT بالنسبة لـ SQL.
+سنقوم بسلسلة الشروحات هذه بكتابة جميع أوامر SQL الأساسية بأحرف كبيرة .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;فاصلة-منقوطة-بعد-تصريحات-sql&quot;&gt;فاصلة منقوطة بعد تصريحات SQL؟&lt;/h1&gt;
+
+&lt;p&gt;إن بعض أنظمة قواعد البيانات تتطلب فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .&lt;/p&gt;
+
+&lt;p&gt;الفاصلة المنقوطة ; هي الطريقة الأساسية لفصل عبارات SQL عن بعضها في أنظمة قواعد البيانات التي تسمح بتنفيذ أكثر من عبارة SQL واحدة ضمن الاستدعاء ذاته (الاتصال) للسيرفر (الخادم) .&lt;/p&gt;
+
+&lt;p&gt;في هذه الشروحات سوف نستخدم فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .&lt;/p&gt;
+
+&lt;p&gt;بعض أهم أوامر SQL&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT&lt;/code&gt;: يقوم باستخراج بيانات من قاعدة البيانات&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;UPDATE&lt;/code&gt;: يقوم بتحديث بيانات في قاعدة البيانات&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;: يقوم بحذف بيانات من قاعدة البيانات&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;INSERT INTO&lt;/code&gt;: يقوم بإدراج بيانات جديدة في قاعدة البيانات&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE DATABASE&lt;/code&gt;: يقوم بإنشاء قاعدة بيانات جديدة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ALTER DATABASE&lt;/code&gt;: تقوم بالتعديل على قاعدة البيانات&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE TABLE&lt;/code&gt;: يقوم بإنشاء جدول جديد&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ALTER TABLE&lt;/code&gt;: يقوم بالتعديل على جدول&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DROP TABLE&lt;/code&gt;: يقوم بحذف جدول&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE INDEX&lt;/code&gt;: يقوم بإنشاء فهرس (مفتاح بحث)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DROP INDEX&lt;/code&gt;: يحذف فهرس&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;التالي : &lt;a href=&quot;select&quot;&gt;تصريح SELECT&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL|عمليات AND & OR</title>
+			<link href="http://mulham.github.io/sql/and-or"/>
+			<updated>2016-06-19T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/and-or</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;تستخدم عمليات AND (و) ، OR (أو) لتشريح (فلترة) التسجيلات بناء على أكثر من شرط واحد .&lt;/p&gt;
+
+&lt;p&gt;عمليات AND &amp;amp; OR في SQL&lt;/p&gt;
+
+&lt;p&gt;عملية AND تعرض التسجيل إذا كان كلاً من الشرط الأول والشرط الثاني محققين&lt;/p&gt;
+
+&lt;p&gt;عملية OR تعرض التسجيل اذا كان الشرط الأول أو الشرط الثاني فقط محقق ، أي اذا تحقق أحد الشرطين فقط .&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-عملية-and&quot; id=&quot;markdown-toc-مثال-على-عملية-and&quot;&gt;مثال على عملية AND&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-على-عملية-or&quot; id=&quot;markdown-toc-مثال-على-عملية-or&quot;&gt;مثال على عملية OR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#اجتماع-and--or&quot; id=&quot;markdown-toc-اجتماع-and--or&quot;&gt;اجتماع AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;استعراض قاعدة بيانات&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
+
+&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-على-عملية-and&quot;&gt;مثال على عملية AND&lt;/h1&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من دولة Germany و مدينة Berlin ضمن جدول الزبائن&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
+
+    WHERE Country='Germany'
+
+    AND City='Berlin';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;مثال-على-عملية-or&quot;&gt;مثال على عملية OR&lt;/h1&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من مدينة Berlin أو مدينة München ضمن جدول الزبائن&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
+
+    WHERE City='Berlin'
+
+    OR City='München';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;اجتماع-and--or&quot;&gt;اجتماع AND &amp;amp; OR&lt;/h1&gt;
+
+&lt;p&gt;يمكنك أيضاً جمع AND و OR في تصريح واحد (استخدم الأقواس لتشكيل تعبيرات مركبة )&lt;/p&gt;
+
+&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من دولة Germany والمدينة يجب أن تكون مساوية لـ Berlin أو München ضمن جدول الزبائن .&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
+
+    WHERE Country='Germany'
+
+    AND (City='Berlin' OR City='München');
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;order-by&quot;&gt;دالة Order By&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
 			<title>إدارة الملفات عبر FTP</title>
 			<link href="http://mulham.github.io/ftp/"/>
 			<updated>2016-06-19T00:00:00+03:00</updated>
@@ -7413,1150 +9221,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;لن يُقلع حاسوبك من الفلاشة بشكل افتراضي، ستحتاج لتغيير إعدادات البيوس للقيام بذلك. إذا أعد تشغيل الحاسوب واذهب إلى البيوس بالضغط على زر Del عند بداية الإقلاع - يختلف هذا الزر من جهاز لآخر ويمكن البحث عن الزر المستخدم في جهازك بحسب الشركة المصنعة.&lt;/p&gt;
 
 &lt;p&gt;بعدها اذهب لما يسمى Boot options أي خيارات الإقلاع ستجدها أسفل تبويبة Boot، اجعل الخيار الأول لـ usb ثم احفظ الإعدادات (بالضغط على F10 غالباً) وسيتم إعادة التشغيل وغالباً ستنجح العملية .. وإذا لم تنجح ففي الواقع قد يكون الأمر معقد قليلاً فهناك اسباب عديدة، يمكنك مراسلتي للمناقشة.&lt;/p&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|عبارة WHERE</title>
-			<link href="http://mulham.github.io/sql/where"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/where</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;تستخدم عبارة WHERE لترشيح (فلترة) التسجيلات .&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#عبارة-where-في-sql&quot; id=&quot;markdown-toc-عبارة-where-في-sql&quot;&gt;عبارة WHERE في SQL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-عبارة-where&quot; id=&quot;markdown-toc-بناء-عبارة-where&quot;&gt;بناء عبارة WHERE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-عبارة-where&quot; id=&quot;markdown-toc-مثال-على-عبارة-where&quot;&gt;مثال على عبارة WHERE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#الحقول-النصية--الحقول-العددية&quot; id=&quot;markdown-toc-الحقول-النصية--الحقول-العددية&quot;&gt;الحقول النصية × الحقول العددية&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#العمليات-في-عبارة-where&quot; id=&quot;markdown-toc-العمليات-في-عبارة-where&quot;&gt;العمليات في عبارة WHERE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;عبارة-where-في-sql&quot;&gt;عبارة WHERE في SQL&lt;/h1&gt;
-
-&lt;p&gt;تستخدم عبارة WHERE لاستخراج التسجيلات التي تطابق معيار محدد فقط .&lt;/p&gt;
-
-&lt;h1 id=&quot;بناء-عبارة-where&quot;&gt;بناء عبارة WHERE&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
-
-    FROM table_name
-
-    WHERE column_name operator value;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;مثال-على-عبارة-where&quot;&gt;مثال على عبارة WHERE&lt;/h1&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من دولة Mexico ضمن جدول الزبائن&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
-
-    WHERE Country='Mexico';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;الحقول-النصية--الحقول-العددية&quot;&gt;الحقول النصية × الحقول العددية&lt;/h1&gt;
-
-&lt;p&gt;تتطلب SQL علامة تنصيص واحدة  ‘  قبل وبعد القيم النصية ، كما في كلمة Mexico في المثال السابق ( معظم أنظمة قواعد البيانات تسمح بعلامة التنصيص المزدوجة أيضاً “ )&lt;/p&gt;
-
-&lt;p&gt;وبالمقابل ، القيم العددية يجب ألا تكون محاطة بعلامتي تنصيص :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
-
-    WHERE CustomerID=1;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;العمليات-في-عبارة-where&quot;&gt;العمليات في عبارة WHERE&lt;/h1&gt;
-
-&lt;p&gt;يمكن أن تستخدم العمليات التالية في عبارة WHERE&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;العملية&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;الوصف&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;=&lt;/td&gt;
-      &lt;td&gt;يساوي&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;&amp;gt;&lt;/td&gt;
-      &lt;td&gt;لا يساوي . ملاحظة : في بعض إصدارات SQL قد تكتب هذه العملية بالشكل : =!&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;gt;&lt;/td&gt;
-      &lt;td&gt;أكبر من&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;&lt;/td&gt;
-      &lt;td&gt;أصغر من&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;gt;=&lt;/td&gt;
-      &lt;td&gt;أكبر أو يساوي&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;=&lt;/td&gt;
-      &lt;td&gt;أصغر أو يساوي&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;BETWEEN&lt;/td&gt;
-      &lt;td&gt;بين مجموعة خاصة&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;LIKE&lt;/td&gt;
-      &lt;td&gt;بحث عن نمط (نموذج)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;IN&lt;/td&gt;
-      &lt;td&gt;لتحديد قيم عديدة ممكنة في عمود&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;and-or&quot;&gt;عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|تصريح UPDATE</title>
-			<link href="http://mulham.github.io/sql/update"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/update</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;يستخدم تصريح UPDATE لتحديث تسجيلات موجودة مسبقاً في جدول .&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-تصريح-update&quot; id=&quot;markdown-toc-بناء-تصريح-update&quot;&gt;بناء تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-تصريح-update&quot; id=&quot;markdown-toc-مثال-على-تصريح-update&quot;&gt;مثال على تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;بناء-تصريح-update&quot;&gt;بناء تصريح UPDATE&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	UPDATE table_name
-
-	SET column1=value1,column2=value2,...
-
-	WHERE some_column=some_value;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;لاحظ عبارة WHERE في تصريح UPDATE !&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;عبارة WHERE تحدد أي تسجيل أو تسجيلات يجب أن تُحدّث ، إذا قمت بحذف عبارة WHERE ، فسوف تُحدّث جميع التسجيلات!&lt;/p&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
-
-&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;مثال-على-تصريح-update&quot;&gt;مثال على تصريح UPDATE&lt;/h1&gt;
-
-&lt;p&gt;على فرض أننا نريد تحديث سجل الزبون “Alfreds Futterkiste” لاسم تواصل ContactName ومدينة City جديدين، حينها نستخدم تصريح SQL التالي&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	UPDATE Customers
-
-	SET ContactName='Alfred Schmidt', City='Hamburg'
-
-	WHERE CustomerName='Alfreds Futterkiste';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers3.png&quot; alt=&quot;customers3&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;تحذير! كن حذراً عند تحديث التسجيلات&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;فإذا قمت بحذف عبارة WHERE من المثال السابق، كأن تكتب&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	UPDATE Customers
-
-	SET ContactName='Alfred Schmidt', City='Hamburg';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;حينها ،  سيبدو جدول الزبائن على الشكل&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers4.png&quot; alt=&quot;customers4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;delete&quot;&gt;تصريح DELETE&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|تصريح SELECT</title>
-			<link href="http://mulham.github.io/sql/select"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/select</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;يستخدم تصريح SELECT لتحديد بيانات في قاعدة البيانات .&lt;/p&gt;
-
-&lt;p&gt;تُخزن النتائج في جدول للنتائج يدعى مجموعة النتائج result-set&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-تصريح-select&quot; id=&quot;markdown-toc-بناء-تصريح-select&quot;&gt;بناء تصريح SELECT&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#مثال-على-تحديد-عمود&quot; id=&quot;markdown-toc-مثال-على-تحديد-عمود&quot;&gt;مثال على تحديد عمود&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#مثال-على-تحديد-الكل&quot; id=&quot;markdown-toc-مثال-على-تحديد-الكل&quot;&gt;مثال على تحديد الكل&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#التنقل-في-مجموعة-النتائج&quot; id=&quot;markdown-toc-التنقل-في-مجموعة-النتائج&quot;&gt;التنقل في مجموعة النتائج&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;بناء-تصريح-select&quot;&gt;بناء تصريح SELECT&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
-
-    FROM table_name; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;و&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM table_name;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
-
-&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : &lt;code class=&quot;highlighter-rouge&quot;&gt;Northwind&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;مثال-على-تحديد-عمود&quot;&gt;مثال على تحديد عمود&lt;/h2&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد اسم الزبون CustomerName و المدينة City من جدول الزبائن&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT CustomerName,City FROM Customers;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;مثال-على-تحديد-الكل&quot;&gt;مثال على تحديد الكل&lt;/h2&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد كافة الأعمدة من جدول الزبائن&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;التنقل-في-مجموعة-النتائج&quot;&gt;التنقل في مجموعة النتائج&lt;/h2&gt;
-
-&lt;p&gt;معظم برامج أنظمة قواعد البيانات تسمح بالتنقل في مجموعة النتائج باستعمل وظائف برمجية مثل :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Move-To-First-Record&lt;/code&gt;: الانتقال للتسجيل الأول&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Get-Record-Content&lt;/code&gt;: الحصول على محتوى التسجيل&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Move-To-Next-Record&lt;/code&gt;: الانتقال للتسجيل التالي&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;إلخ ..&lt;/p&gt;
-
-&lt;p&gt;وظائف برمجية مثل هذه ليست جزء من سلسلة الشروحات هذه ، لتعلم الوصول للبيانات من خلال وظائف برمجية function calls ، يرجى الاطلاع على شروحات خارجية حول لغة البرمجة PHP أو ASP حيث يوجد الكثير من الشروحات العربية حول هذا الموضوع .&lt;/p&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;select-distinct&quot;&gt;تصريح تحديد الإختلاف في sql&lt;/a&gt;&lt;/p&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|تصريح SELECT DISTINCT</title>
-			<link href="http://mulham.github.io/sql/select-distinct"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/select-distinct</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;يستخدم تصريح &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT DISTINCT&lt;/code&gt; للحصول على القيم المختلفة فقط .&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#تصريح-select-distinct&quot; id=&quot;markdown-toc-تصريح-select-distinct&quot;&gt;تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-تصريح-select-distinct&quot; id=&quot;markdown-toc-بناء-تصريح-select-distinct&quot;&gt;بناء تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-لتصريح-select-distinct&quot; id=&quot;markdown-toc-مثال-لتصريح-select-distinct&quot;&gt;مثال لتصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;تصريح-select-distinct&quot;&gt;تصريح SELECT DISTINCT&lt;/h1&gt;
-
-&lt;p&gt;إن عمود ما في جدول قد يحوي  على قيم متطابقة ، ولذلك قد تريد في بعض الأحيان عرض القيم المختلفة فقط .&lt;/p&gt;
-
-&lt;p&gt;عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;DISTINCT&lt;/code&gt; يمكن أن تستخدم لاستدعاء القيم المختلفة فقط .&lt;/p&gt;
-
-&lt;h1 id=&quot;بناء-تصريح-select-distinct&quot;&gt;بناء تصريح SELECT DISTINCT&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT DISTINCT column_name,column_name
-
-    FROM table_name;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/h1&gt;
-
-&lt;p&gt;سنستخدم في هذا الشرح قاعدة البيانات المعروفة جيداً &lt;code class=&quot;highlighter-rouge&quot;&gt;Northwind&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن &lt;code class=&quot;highlighter-rouge&quot;&gt;Customers&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;مثال-لتصريح-select-distinct&quot;&gt;مثال لتصريح SELECT DISTINCT&lt;/h1&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد القيم المختلفة فقط من عمود City في جدول الزبائن Customers&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT DISTINCT City FROM Customers;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;where&quot;&gt;عبارة WHERE&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|دالة ORDER BY</title>
-			<link href="http://mulham.github.io/sql/order-by"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/order-by</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#دالة-order-by-في-sql&quot; id=&quot;markdown-toc-دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-order-by&quot; id=&quot;markdown-toc-بناء-order-by&quot;&gt;بناء ORDER BY&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by&quot; id=&quot;markdown-toc-مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-desc&quot; id=&quot;markdown-toc-مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#مثال-على-order-by-لعدة-أعمدة&quot; id=&quot;markdown-toc-مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج&lt;/p&gt;
-
-&lt;h1 id=&quot;دالة-order-by-في-sql&quot;&gt;دالة ORDER BY في SQL&lt;/h1&gt;
-
-&lt;p&gt;تستخدم دالة ORDER BY لفرز مجموعة النتائج بعمود واحد أو أكثر&lt;/p&gt;
-
-&lt;p&gt;تقوم دالة ORDER BY بفرز التسجيلات افتراضياً بحسب الترتيب الأبجدي (ascending) ، لفرز التسجيلات بعكس الترتيب الأبجدي (descending) ، استعمل دالة DESC .&lt;/p&gt;
-
-&lt;h1 id=&quot;بناء-order-by&quot;&gt;بناء ORDER BY&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name,column_name
-
-    FROM table_name
-
-    ORDER BY column_name,column_name ASC|DESC;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة-بيانات&quot;&gt;استعراض قاعدة بيانات&lt;/h1&gt;
-
-&lt;p&gt;سنستخدم في هذا الشرح قاعدة البيانات المعروفة جيداً Northwind&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;مثال-على-order-by&quot;&gt;مثال على ORDER BY&lt;/h1&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب عمود الدولة Country&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
-
-	ORDER BY Country; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/h2&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين عكس الترتيب الأبجدي  بحسب عمود الدولة Country&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
-
-	ORDER BY Country DESC;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;مثال-على-order-by-لعدة-أعمدة&quot;&gt;مثال على ORDER BY لعدة أعمدة&lt;/h2&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من جدول الزبائن ، مرتبين بحسب أعمدة الدولة Country واسم الزبون CustomerName&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT * FROM Customers
-
-	ORDER BY Country,CustomerName;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;insert-into&quot;&gt;تصريح INSERT INTO&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|مقدمة</title>
-			<link href="http://mulham.github.io/sql/intro"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/intro</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/sql.jpg&quot; alt=&quot;intro&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;نقدم هنا سلسلة دروس SQL حصرياً لموقع ملهم.&lt;/p&gt;
-
-&lt;p&gt;SQL هي لغة معيارية للوصول لقواعد البيانات.&lt;/p&gt;
-
-&lt;p&gt;سلسلة الدروس هذه ستعلمك كيفية استخدام لغة &lt;code class=&quot;highlighter-rouge&quot;&gt;SQL&lt;/code&gt; للوصول والتعديل على البيانات في :&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MySQL&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SQL Server&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Access&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Oracle&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Sybase&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DB2&lt;/code&gt; وأنظمة قواعد بيانات أخرى .&lt;/p&gt;
-
-&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;الدرس الأول : التعريف بـ SQL&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;SQL هي لغة برمجة معيارية للوصول والتعديل على قواعد البيانات .&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#ما-هي-sql&quot; id=&quot;markdown-toc-ما-هي-sql&quot;&gt;ما هي SQL؟&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مالذي-يمكن-فعله-بواسطة-sql&quot; id=&quot;markdown-toc-مالذي-يمكن-فعله-بواسطة-sql&quot;&gt;مالذي يمكن فعله بواسطة SQl؟&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#sql-لغة-معيارية--ولكن-&quot; id=&quot;markdown-toc-sql-لغة-معيارية--ولكن-&quot;&gt;SQL لغة معيارية ، ولكن ..&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استخدام-sql-في-موقعك-&quot; id=&quot;markdown-toc-استخدام-sql-في-موقعك-&quot;&gt;استخدام SQL في موقعك :&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#rdbms&quot; id=&quot;markdown-toc-rdbms&quot;&gt;RDBMS&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;ما-هي-sql&quot;&gt;ما هي SQL؟&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;SQL هي اختصار لـ Structured Query Language والتي تعني “لغة الاستعلامات البنيوية” .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SQL تتيح لك الوصول والتعديل على قواعد البيانات .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SQL هي لغة معيارية لـ American National Standards Institute) ANSI) ( المعهد الأمريكي الوطني للمعايير) .&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;مالذي-يمكن-فعله-بواسطة-sql&quot;&gt;مالذي يمكن فعله بواسطة SQl؟&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL تنفيذ أوامر لقاعدة بيانات  .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL استخراج بيانات من قاعدة بيانات محددة .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إدخال تسجيلات لقاعدة بيانات .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL تحديث تسجيلات في قاعدة بيانات.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL حذف تسجيلات من قاعدة بيانات .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء قواعد بيانات جديدة .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء جداول جديدة في قواعد بيانات .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء تعليمات مخزنة في قاعدة بيانات .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء عروض في قاعدة بيانات .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL ضبط الصلاحيات للجدوال ، التعليمات والعروض .&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;sql-لغة-معيارية--ولكن-&quot;&gt;SQL لغة معيارية ، ولكن ..&lt;/h1&gt;
-
-&lt;p&gt;على الرغم من أن SQL هي لغة معيارية لـ ANSI ، إلا أن هناك إصدارات مختلفة لهذه اللغة .&lt;/p&gt;
-
-&lt;p&gt;على كل حال ، جميع الإصدارات تتفق بالتعليمات الأساسية ( مثل : SELECT, UPDATE, DELETE, INSERT, WHERE) وتتعامل معها بنفس الطريقة .&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;معظم برامج قواعد بيانات SQL يكون لها ملحقات خاصة بها بالإضافة للغة SQL الأساسية!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;استخدام-sql-في-موقعك-&quot;&gt;استخدام SQL في موقعك :&lt;/h1&gt;
-
-&lt;p&gt;لبناء موقع يقوم بعرض بيانات من قاعدة بيانات ، ستحتاج إلى :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;برنامج قواعد بيانات RDBMS ( مثل : MS Access, SQL Server, MySQL )&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;استخدام لغة برمجة تُنفَّذ في الخادم ، مثل PHP ، ASP&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;استخدام لغة SQL للحصول على البيانات المرادة&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;استخدام اللغات  HTML/CSS&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h2&gt;
-
-&lt;p&gt;وهي اختصار لـ Relational Database Management System ، وتعني “نظام إدراة قواعد البيانات الترابطية”، وهي الأساس لـ SQL ولجميع الأنظمة الحديثة لقواعد البيانات مثل MS SQL Server, IBM DB2, Oracle, MySQL, و Microsoft Access.&lt;/p&gt;
-
-&lt;p&gt;البيانات في نظام RDBMS تُخزّن في عناصر لقواعد البيانات تدعى الجداول .&lt;/p&gt;
-
-&lt;p&gt;الجداول هي مجموعة من مدخلات البيانات المرتبطة وتتألف من الصفوف والأعمدة .&lt;/p&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;build&quot;&gt;بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;سلسلة الدروس هذه بأكملها مترجمة وبتصرّف، يمكنك الاطّلاع على &lt;a href=&quot;https://www.w3schools.com/SQl/sql_intro.asp&quot;&gt;المصدر&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|تصريح INSERT INTO</title>
-			<link href="http://mulham.github.io/sql/insert-into"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/insert-into</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-insert-into&quot; id=&quot;markdown-toc-بناء-insert-into&quot;&gt;بناء INSERT INTO&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-insert-into&quot; id=&quot;markdown-toc-مثال-على-insert-into&quot;&gt;مثال على INSERT INTO&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#إدراج-بيانات-في-جداول-محددة-فقط&quot; id=&quot;markdown-toc-إدراج-بيانات-في-جداول-محددة-فقط&quot;&gt;إدراج بيانات في جداول محددة فقط&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;يستخدم تصريح INSERT INTO لإدراج تسجيلات جديدة في جدول .&lt;/p&gt;
-
-&lt;h1 id=&quot;بناء-insert-into&quot;&gt;بناء INSERT INTO&lt;/h1&gt;
-
-&lt;p&gt;من الممكن كتابة تصريح INSERT INTO بشكلين مختلفين .&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;الشكل الأول لا يحدد أسماء الأعمدة التي ستدرج البيانات بداخلها ، بل يحدد القيم التي سيتم إدراجها فقط&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  INSERT INTO table_name
-
-  VALUES (value1,value2,value3,...);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;الشكل الثاني يحد كلاً من أسماء الأعمدة والقيم التي سيتم إدراجها&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  INSERT INTO table_name (column1,column2,column3,...)
-
-  VALUES (value1,value2,value3,...);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
-
-&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;مثال-على-insert-into&quot;&gt;مثال على INSERT INTO&lt;/h1&gt;
-
-&lt;p&gt;على افتراض أننا نريد إدراج صف جديد في جدول الزبائن ، فيمكننا استخدام تصريح SQL التالي لذلك&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
-
-	VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway'); 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers1.png&quot; alt=&quot;customers1&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;هل لاحظت أننا لم نقم بإدراج أي رقم في حقل CustomerID ؟&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;إن عمود CustomerID يتم تحديثه بشكل تلقائي برقم تعدادي لكل تسجيل في الجدول .&lt;/p&gt;
-
-&lt;h1 id=&quot;إدراج-بيانات-في-جداول-محددة-فقط&quot;&gt;إدراج بيانات في جداول محددة فقط&lt;/h1&gt;
-
-&lt;p&gt;من الممكن أيضاً إدراج بيانات في جداول محددة فقط.&lt;/p&gt;
-
-&lt;p&gt;تصريح SQL التالي سيقوم بإدراج صف جديد ، ولكن سيدرج بيانات فقط في الأعمدة CustomerName , City , Country ( وبالطبع حقل CustomerID سيتم تحديثه تلقائياً )&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	INSERT INTO Customers (CustomerName, City, Country)
-
-	VALUES ('Cardinal', 'Stavanger', 'Norway');
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers2.png&quot; alt=&quot;customers2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;update&quot;&gt;تصريح UPDATE&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|تصريح DELETE</title>
-			<link href="http://mulham.github.io/sql/delete"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/delete</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;يستخدم تصريح DELETE لحذف تسجيلات من جدول .&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#بناء-delete&quot; id=&quot;markdown-toc-بناء-delete&quot;&gt;بناء DELETE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#لاحظ-عبارة-where-في-تصريح-delete-&quot; id=&quot;markdown-toc-لاحظ-عبارة-where-في-تصريح-delete-&quot;&gt;لاحظ عبارة WHERE في تصريح DELETE !&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-بيانات-&quot; id=&quot;markdown-toc-استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-delete&quot; id=&quot;markdown-toc-مثال-على-delete&quot;&gt;مثال على DELETE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#حذف-جميع-البيانات&quot; id=&quot;markdown-toc-حذف-جميع-البيانات&quot;&gt;حذف جميع البيانات&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;بناء-delete&quot;&gt;بناء DELETE&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE FROM table_name
-
-	WHERE some_column=some_value;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;لاحظ-عبارة-where-في-تصريح-delete-&quot;&gt;لاحظ عبارة WHERE في تصريح DELETE !&lt;/h1&gt;
-
-&lt;p&gt;عبارة WHERE تحدد التسجيل أو التسجيلات التي يجب ان تُحذف ، إذا قمت بحذف عبارة WHERE فسيتم حذف جميع التسجيلات!&lt;/p&gt;
-
-&lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
-
-&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;مثال-على-delete&quot;&gt;مثال على DELETE&lt;/h1&gt;
-
-&lt;p&gt;على افتراض أننا نريد حذف الزبون “Alfreds Futterkiste” من جدول الزبائن. نستخدم التصريح التالي&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE FROM Customers
-
-	WHERE CustomerName='Alfreds Futterkiste' AND ContactName='Maria Anders';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;الآن ، سيبدو جدول الزبائن على الشكل التالي&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers5.png&quot; alt=&quot;customers5&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;حذف-جميع-البيانات&quot;&gt;حذف جميع البيانات&lt;/h1&gt;
-
-&lt;p&gt;من الممكن حذف جميع الصفوف في جدول بدون حذف الجدول . هذا يعني أن تركيب الجدول وخصائصه وفهارسه ستبقى موجودة وسليمة&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE FROM table_name;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;أو&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	DELETE * FROM table_name;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;كن حذراً جداً عند حذف تسجيلات، فلا يمكنك التراجع عن هذا الإجراء!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;top-limit-rownum&quot;&gt;عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|البناء</title>
-			<link href="http://mulham.github.io/sql/build"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/build</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#جداول-قواعد-البيانات&quot; id=&quot;markdown-toc-جداول-قواعد-البيانات&quot;&gt;جداول قواعد البيانات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#تصريحات-sql&quot; id=&quot;markdown-toc-تصريحات-sql&quot;&gt;تصريحات SQL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#فاصلة-منقوطة-بعد-تصريحات-sql&quot; id=&quot;markdown-toc-فاصلة-منقوطة-بعد-تصريحات-sql&quot;&gt;فاصلة منقوطة بعد تصريحات SQL؟&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;جداول-قواعد-البيانات&quot;&gt;جداول قواعد البيانات&lt;/h1&gt;
-
-&lt;p&gt;تحتوي قاعدة البيانات في معظم الأحيان على جدول واحد أو أكثر . يتم تعريف كل جدول باسم ، على سبيل المثال : “الزبائن” ، “الطلبات” .. تحتوي الجداول على تسجيلات (صفوف) يتم بها الاحتفاظ بالبيانات.&lt;/p&gt;
-
-&lt;p&gt;سوف نستخدم في هذا الشرح قاعدة البيانات الافتراضية والمعروفة جيداً : Northwind ( المضمنة في ميكروسوفت أكسس ، وميكروسوفت SQL سيرفر ) .&lt;/p&gt;
-
-&lt;p&gt;الجدول التالي هو قسم من من جدول الزبائن “Customers” :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;الجدول في اﻷعلى يحوي على خمسة تسجيلات (واحد لكل زبون) ، وسبعة أعمدة (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country)&lt;/p&gt;
-
-&lt;h1 id=&quot;تصريحات-sql&quot;&gt;تصريحات SQL&lt;/h1&gt;
-
-&lt;p&gt;نقصد هنا بـ “تصريحات” أسطر الأوامر لـ sql أي الجملة المؤلفة لأوامر sql  .&lt;/p&gt;
-
-&lt;p&gt;معظم الأمور التي تحتاج القيام بها في قواعد البيانات يمكن تأديتها بواسطة تصريحات (أوامر) SQL&lt;/p&gt;
-
-&lt;p&gt;يختار تصريح SQL التالي جميع التسجيلات في جدول الزبائن :&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;سنتعلم في هذه السلسة جميع تصريحات SQL المختلفة .&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;تذكر أن&lt;/p&gt;
-
-  &lt;p&gt;SQL ليست حساسة للأحرف الكبيرة . فـ select هي نفس SELECT بالنسبة لـ SQL.
-سنقوم بسلسلة الشروحات هذه بكتابة جميع أوامر SQL الأساسية بأحرف كبيرة .&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;فاصلة-منقوطة-بعد-تصريحات-sql&quot;&gt;فاصلة منقوطة بعد تصريحات SQL؟&lt;/h1&gt;
-
-&lt;p&gt;إن بعض أنظمة قواعد البيانات تتطلب فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .&lt;/p&gt;
-
-&lt;p&gt;الفاصلة المنقوطة ; هي الطريقة الأساسية لفصل عبارات SQL عن بعضها في أنظمة قواعد البيانات التي تسمح بتنفيذ أكثر من عبارة SQL واحدة ضمن الاستدعاء ذاته (الاتصال) للسيرفر (الخادم) .&lt;/p&gt;
-
-&lt;p&gt;في هذه الشروحات سوف نستخدم فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .&lt;/p&gt;
-
-&lt;p&gt;بعض أهم أوامر SQL&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT&lt;/code&gt;: يقوم باستخراج بيانات من قاعدة البيانات&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;UPDATE&lt;/code&gt;: يقوم بتحديث بيانات في قاعدة البيانات&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;: يقوم بحذف بيانات من قاعدة البيانات&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;INSERT INTO&lt;/code&gt;: يقوم بإدراج بيانات جديدة في قاعدة البيانات&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE DATABASE&lt;/code&gt;: يقوم بإنشاء قاعدة بيانات جديدة&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ALTER DATABASE&lt;/code&gt;: تقوم بالتعديل على قاعدة البيانات&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE TABLE&lt;/code&gt;: يقوم بإنشاء جدول جديد&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ALTER TABLE&lt;/code&gt;: يقوم بالتعديل على جدول&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DROP TABLE&lt;/code&gt;: يقوم بحذف جدول&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE INDEX&lt;/code&gt;: يقوم بإنشاء فهرس (مفتاح بحث)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DROP INDEX&lt;/code&gt;: يحذف فهرس&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;التالي : &lt;a href=&quot;select&quot;&gt;تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>سلسلة دروس SQL|عمليات AND & OR</title>
-			<link href="http://mulham.github.io/sql/and-or"/>
-			<updated>2016-06-18T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/and-or</id>
-			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;intro&quot;&gt;الدرس الأول : التعريف بـ SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;build&quot;&gt;الدرس الثاني : بناء SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select&quot;&gt;الدرس الثالث : تصريح SELECT&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;select-distinct&quot;&gt;الدرس الرابع : تصريح تحديد الاختلاف في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;where&quot;&gt;الدرس الخامس : عبارة WHERE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;and-or&quot;&gt;الدرس السادس : عمليات AND &amp;amp; OR في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;order-by&quot;&gt;الدرس السابع : دالة ORDER BY في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;insert-into&quot;&gt;الدرس الثامن: تصريح INSERT INTO في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;update&quot;&gt;الدرس التاسع: تصريح UPDATE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;delete&quot;&gt;الدرس العاشر: تصريح DELETE في SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;top-limit-rownum&quot;&gt;الدرس الحادي عشر: عبارات Top أو LIMIT أو ROWNUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;min-max&quot;&gt;الدرس الثاني عشر: دالات Mix و MAX&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;count-avg-sum&quot;&gt;الدرس الثالث عشر: دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;like&quot;&gt;الدرس الرابع عشر: عامل LIKE&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;wildcard_characters&quot;&gt;الدرس الخامس عشر: الرموز البديلة &lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;تستخدم عمليات AND (و) ، OR (أو) لتشريح (فلترة) التسجيلات بناء على أكثر من شرط واحد .&lt;/p&gt;
-
-&lt;p&gt;عمليات AND &amp;amp; OR في SQL&lt;/p&gt;
-
-&lt;p&gt;عملية AND تعرض التسجيل إذا كان كلاً من الشرط الأول والشرط الثاني محققين&lt;/p&gt;
-
-&lt;p&gt;عملية OR تعرض التسجيل اذا كان الشرط الأول أو الشرط الثاني فقط محقق ، أي اذا تحقق أحد الشرطين فقط .&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-عملية-and&quot; id=&quot;markdown-toc-مثال-على-عملية-and&quot;&gt;مثال على عملية AND&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#مثال-على-عملية-or&quot; id=&quot;markdown-toc-مثال-على-عملية-or&quot;&gt;مثال على عملية OR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#اجتماع-and--or&quot; id=&quot;markdown-toc-اجتماع-and--or&quot;&gt;اجتماع AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;استعراض قاعدة بيانات&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;سنستخدم قاعدة البيانات المعروفة جيداً : Northwind&lt;/p&gt;
-
-&lt;p&gt;في الأسفل تحديد من جدول الزبائن Customers&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;مثال-على-عملية-and&quot;&gt;مثال على عملية AND&lt;/h1&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من دولة Germany و مدينة Berlin ضمن جدول الزبائن&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
-
-    WHERE Country='Germany'
-
-    AND City='Berlin';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;مثال-على-عملية-or&quot;&gt;مثال على عملية OR&lt;/h1&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من مدينة Berlin أو مدينة München ضمن جدول الزبائن&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
-
-    WHERE City='Berlin'
-
-    OR City='München';
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;اجتماع-and--or&quot;&gt;اجتماع AND &amp;amp; OR&lt;/h1&gt;
-
-&lt;p&gt;يمكنك أيضاً جمع AND و OR في تصريح واحد (استخدم الأقواس لتشكيل تعبيرات مركبة )&lt;/p&gt;
-
-&lt;p&gt;تصريح SQL التالي يحدد جميع الزبائن من دولة Germany والمدينة يجب أن تكون مساوية لـ Berlin أو München ضمن جدول الزبائن .&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM Customers
-
-    WHERE Country='Germany'
-
-    AND (City='Berlin' OR City='München');
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;order-by&quot;&gt;دالة Order By&lt;/a&gt;&lt;/p&gt;
 
 </content>
 		</entry>

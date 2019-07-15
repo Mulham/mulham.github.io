@@ -1,11 +1,12 @@
 ---
 permalink: /sql/select-distinct
 layout: post
-date: 2016-06-18
+date: 2016-06-19
 title: سلسلة دروس SQL|تصريح SELECT DISTINCT
 hidden: true
 type: tutorial
 comments: true
+lesson: 4
 ---
 
 {% include sql-content.html %}

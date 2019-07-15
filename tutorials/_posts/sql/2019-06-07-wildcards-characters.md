@@ -5,6 +5,7 @@ date: 2019-06-07
 title: سلسلة دروس SQL| الرموز البديلة
 type: tutorial
 hidden: true
+lesson: 15
 comments: true
 ---
 

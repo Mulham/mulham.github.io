@@ -1,11 +1,12 @@
 ---
 permalink: /sql/insert-into
 layout: post
-date: 2016-06-18
+date: 2016-06-19
 title: سلسلة دروس SQL|تصريح INSERT INTO
 hidden: true
 type: tutorial
 comments: true
+lesson: 8
 ---
 
 {% include sql-content.html %}
