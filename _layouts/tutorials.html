@@ -8,6 +8,9 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
 </head>
 <body>
     {% include nav.html %}
@@ -41,5 +44,8 @@ layout: compress
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-4752855256699204">
+</amp-auto-ads>
 </body>
 </html>
