@@ -11,17 +11,17 @@ comments: true
 
 1. نقوم أولًا بتحميل المرِّف الصحيح:
 
-	  git clone https://github.com/lwfinger/rtlwifi_new.git
+        git clone https://github.com/lwfinger/rtlwifi_new.git
 
 2. ثم نذهب للمسار الذي قمنا بتحميل الملفات إليه:
 
-	  cd rtlwifi_new
+        cd rtlwifi_new
 
 3. ثم نقوم بالبناء والتنصيب بالأمرين التاليين:
 
-	  make
+        make
 
-	  sudo make install
+        sudo make install
 
 وبذلك نكون قد قمنا بتنصيب المعرِّف الصحيح.
 
@@ -31,17 +31,18 @@ comments: true
 
 4. قم بإلغاء تفعيل المعرِّفات الحالية: 
 
-	  sudo modprobe -rv rtl8723be
+        sudo modprobe -rv rtl8723be
 
 5. الآن قم بتفعيل المعرِّف الجديد مع الإعدادات:
 
-	  sudo modprobe rtl8723be ant_sel=1
+        sudo modprobe rtl8723be ant_sel=1
+
 
 انظر الآن للإشارة، هل كل شيئ على مايرام؟ إذا كان الأمر ليس كذلك أعد الخطوات 4 و 5 مع استبدال ant_sel=1 إلى ant_sel=2 في الخطوة 5
 
 أخيرًا قم بحفظ هذه الإعدادات وجعلها افتراضية بتطبيق الأمر التالي مع استبدال N بـ 1 أو 2 وفقًا لما ناسبك
 
-	echo "options rtl8723be ant_sel=N" | sudo tee /etc/modprobe.d/rtl8723be.conf
+        echo "options rtl8723be ant_sel=N" | sudo tee /etc/modprobe.d/rtl8723be.conf
 
 **ملاحظة**: يجب إعادة بناء المُعرِّف بعد كل تحديث لنواة لينكس أي الـ kernel
 
