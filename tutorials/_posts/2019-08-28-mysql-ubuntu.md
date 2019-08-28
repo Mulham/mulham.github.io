@@ -46,7 +46,9 @@ user@host:~$
 
 		mysql> USE mysql;
 		mysql> SELECT User, Host, plugin FROM mysql.user;
+
 إذا كان الناتج مشابه للتالي:
+
 
 		+------------------+-----------------------+
 		| User             | plugin                |
