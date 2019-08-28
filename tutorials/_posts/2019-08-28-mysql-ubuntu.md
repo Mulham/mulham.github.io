@@ -38,16 +38,15 @@ user@host:~$
 
  لحل هذه المشكلة طريقتين:
 
-1. قم بتنفيذ الأمر التالي
+* قم بتنفيذ الأمر التالي
 
 		sudo mysql -u root
 
-     ثم أدخل أوامر sql التالية:
+ثم أدخل أوامر sql التالية:
 
 		mysql> USE mysql;
 		mysql> SELECT User, Host, plugin FROM mysql.user;
-
-    إذا كان الناتج مشابه للتالي:
+إذا كان الناتج مشابه للتالي:
 
 		+------------------+-----------------------+
 		| User             | plugin                |
@@ -57,25 +56,26 @@ user@host:~$
 		| debian-sys-maint | mysql_native_password |
 		+------------------+-----------------------+
 
-    أي أن المستخدم root يستخدم plugin يونكس المسمى auth_socket وهذا هو سبب المشكلة.
+أي أن المستخدم root يستخدم plugin يونكس المسمى auth_socket وهذا هو سبب المشكلة.
 
-    علينا بتغيير هذا ال plugin إلى mysql_native_password وفق الأوامر التالية:
+علينا بتغيير هذا ال plugin إلى mysql_native_password وفق الأوامر التالية:
 
 		mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
 		mysql> FLUSH PRIVILEGES;
 		mysql> exit;
 
-    ثم قم بإعادة تشغيل mysql
+ثم قم بإعادة تشغيل mysql
 
 		$ service mysql restart
 	
-2. أو يمكن إضافة المستخدم الحالي لقاعدة البيانات وإعطائه الصلاحيات المطلوبة وفقا للأوامر التالية:
+* أو يمكن إضافة المستخدم الحالي لقاعدة البيانات وإعطائه الصلاحيات المطلوبة وفقا للأوامر التالية:
 
 		$ sudo mysql -u root 
 
 		mysql> USE mysql;
 
-    في الأوامر التالية قم بتغيير YOUR_SYSTEM_USER إلى اسم مستخدم النظام الموجود لديك و Password لكلمة السر التي ترغب
+في الأوامر التالية قم بتغيير YOUR_SYSTEM_USER إلى اسم مستخدم النظام الموجود لديك و Password لكلمة السر التي ترغب
+
 		mysql> CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY 'Password';
 		mysql> GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost';
 		mysql> UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER';
