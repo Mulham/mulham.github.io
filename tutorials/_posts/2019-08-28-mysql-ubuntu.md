@@ -16,65 +16,71 @@ comments: true
 
 1. تنصيب mysql
 
-	sudo apt install mysql-server
+		sudo apt install mysql-server
 
 2. تهيئة الإعدادات
 
-	mysql_secure_installation
+		mysql_secure_installation
 
 # حل مشكلة الوصول المرفوض للمستخدم
 
 بعد التنصيبة يجب عند كتابة الأمر التالي وإدخال كلمة سر النظام القدرة على الوصول لسطر أوامر mysql لكتابة أوامر sql هناك، ولكن غالبا ما يتم رفض الوصول لسطر أوامر mysql بعد التنصيب مباشرة، للتأكد أولا من وجود المشكلة أدخل التالي:
 
-	mysql -u root -p
-
+		mysql -u root -p
+	
 وأدخل كلمة سر النظام، جرب أيضا التالي مع استبدال user باسم المستخدم الخاص بك في النظام (والذي يكون مكتوب في الطرفية كالتالي: 
+
 user@host:~$
 
-	mysql -u user -p
+		mysql -u user -p
+
 إذا تم رفض الوصول وأعطاك الخطأ "ERROR 1698 (28000): Access denied for user" فإليك الحل:
 
  لحل هذه المشكلة طريقتين:
 
 1. قم بتنفيذ الأمر التالي
 
-	sudo mysql -u root
+		sudo mysql -u root
+
  	ثم أدخل أوامر sql التالية:
-	mysql> USE mysql;
-	mysql> SELECT User, Host, plugin FROM mysql.user;
+
+		mysql> USE mysql;
+		mysql> SELECT User, Host, plugin FROM mysql.user;
 
 	إذا كان الناتج مشابه للتالي:
 
-	+------------------+-----------------------+
-	| User             | plugin                |
-	+------------------+-----------------------+
-	| root             | auth_socket           |
-	| mysql.sys        | mysql_native_password |
-	| debian-sys-maint | mysql_native_password |
-	+------------------+-----------------------+
+		+------------------+-----------------------+
+		| User             | plugin                |
+		+------------------+-----------------------+
+		| root             | auth_socket           |
+		| mysql.sys        | mysql_native_password |
+		| debian-sys-maint | mysql_native_password |
+		+------------------+-----------------------+
 
 	أي أن المستخدم root يستخدم plugin يونكس المسمى auth_socket وهذا هو سبب المشكلة.
 
 	علينا بتغيير هذا ال plugin إلى mysql_native_password وفق الأوامر التالية:
 
-	mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
-	mysql> FLUSH PRIVILEGES;
-	mysql> exit;
+		mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+		mysql> FLUSH PRIVILEGES;
+		mysql> exit;
 
-	$ service mysql restart
+	ثم قم بإعادة تشغيل mysql
 
+		$ service mysql restart
+	
 2. أو يمكن إضافة المستخدم الحالي لقاعدة البيانات وإعطائه الصلاحيات المطلوبة وفقا للأوامر التالية:
 
-	$ sudo mysql -u root # I had to use "sudo" since is new installation
+		$ sudo mysql -u root # I had to use "sudo" since is new installation
 
-	mysql> USE mysql;
-	mysql> CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY '';
-	mysql> GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost';
-	mysql> UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER';
-	mysql> FLUSH PRIVILEGES;
-	mysql> exit;
+		mysql> USE mysql;
+		mysql> CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY '';
+		mysql> GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost';
+		mysql> UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER';
+		mysql> FLUSH PRIVILEGES;
+		mysql> exit;
 
-	$ service mysql restart
+		$ service mysql restart
 
 وبهذا يجب أن تكون المشكلة قد حُلَّت، ﻷي استفسار اتركه في التعليقات أو راسلني عبر البريد الإلكتروني.
 
