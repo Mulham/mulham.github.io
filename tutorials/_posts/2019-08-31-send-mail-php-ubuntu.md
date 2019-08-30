@@ -19,12 +19,17 @@ comments: true
 
 ستحتاج لتعديل السطر التالي الأول وإضافة الأسطر التي تليه (البيانات وفقًا ل gmail):
 
-mailhub=smtp.gmail.com:587
-UseSTARTTLS=YES
-AuthUser=<YOUR-EMAIL>@gmail.com
-AuthPass=<YOUR-PASSWORD>
 
-قم بتغيير المعلومات أعلاه وفقا لحساب البريد الإلكتروني الخاص وبك وكلمة السر.
+		mailhub=smtp.gmail.com:587
+		UseSTARTTLS=YES
+		AuthUser=<YOUR-EMAIL>@gmail.com
+		AuthPass=<YOUR-PASSWORD>
+
+قم بتغيير المعلومات أعلاه وفقا لحساب البريد الإلكتروني الخاص بك وكلمة السر.
+
+إذا قمت بالتعديل على الملف من سطر الأوامر وفقا للأمر أعلاه فاضغط بعد التعديل على 
+<kbd>ctrl</kbd>+ <kbd>X</kbd>
+ثم <kbd>Y</kbd> ثم <kbd>Enter</kbd>
 
 الآن يتوجب عليك تغيير سطر في إعدادات  php بالتعديل على الملف php.ini وإضافة التالي:
 
