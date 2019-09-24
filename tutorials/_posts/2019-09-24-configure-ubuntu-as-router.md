@@ -40,8 +40,11 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 10.10.6.205 = عنوان IP للمضيف B ، أي كمبيوتر في نفس الشبكة الفرعية.
 
 ![Ubuntu as a router - Configuration of eth0](/assets/ubuntu-as-router2.png)
+
 ![Setting up network on eth0](/assets/ubuntu-as-router3.png)
+
 ![Configuration of eth 1](/assets/ubuntu-as-router4.png)
+
 ![Setting up network on eth 1](/assets/ubuntu-as-router5.png)
 
 # ضبط بطاقات واجهة الشبكة
