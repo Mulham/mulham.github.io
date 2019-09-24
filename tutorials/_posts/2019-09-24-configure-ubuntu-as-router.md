@@ -13,6 +13,10 @@ comments: true
 
 ![Ubuntu as a router](ubuntu-as-router1.jpg)
 
+
+* Toc
+{:toc}
+
 # انشاء بوابة
 
 الشروط المسبقة لإعداد بوابة هي:
