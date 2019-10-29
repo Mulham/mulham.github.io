@@ -100,3 +100,5 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
         # iptables-save > /etc/iptables.rules
 
 سيقوم الأمر أعلاه بتنشيط قواعد iptables المحفوظة مسبقًا عند إعادة تشغيل النظام ، مما يجعل التغييرات دائمة.
+
+هذا المقال مترجم بتصرّف. [المصدر](https://opensourceforu.com/2015/04/how-to-configure-ubuntu-as-a-router/)
