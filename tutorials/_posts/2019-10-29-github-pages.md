@@ -75,9 +75,9 @@ Repository name: username.github.io
 
 لتغيير الصفحة الرئيسية لموقعك وطريقة العرض فيتوجب عليك معرفة بدائية في لغات HTML و CSS، لفهم الموقع ستبدأ من الصفحة الرئيسية index.html وتجد إلى أين تشير وتتبع ذلك. مع ملاحظة أنه عند وجود مثلا عبارة 
 
-<pre style="direction: rtl; text-align: right;">
-        {% include head.html %}
-</pre>
+
+        {% include head.html }
+
 
 أي تبدأ بـ include ضمن أقواس كبيرة فيعني أن الملف موجود في مجلد _includes
 
