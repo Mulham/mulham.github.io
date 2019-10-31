@@ -3,7 +3,7 @@ layout: post
 date: 2019-10-31
 title: نصيحة أمان لحماية الحواسيب المحمولة من السرقة
 type: blog
-feature: /assets/laptop-safety.jpeg
+feature: /assets/Kensington-Security-Slot.jpg
 comments: true
 ---
 
@@ -19,7 +19,7 @@ comments: true
 
 تحتوي هذه الأقفال على قطعة أسطوانية متصلة بكابل معدني طويل. ترتبط تلك القطعة الأسطوانية بالمنفذ باستخدام رقم سري ويمكن توصيل الطرف الآخر من الكبل بأي كائن غير ثابت.
 
-![laptop safety via Kensington lock](/assets/laptop-safety2.jpg)
+![laptop safety via Kensington lock](/assets/laptop-safety2.jpeg)
 
 لن يكون السارق قادرًا على قطع الكابل المعدني أو محاولة كسر القفل لأنه سيضر بالكمبيوتر المحمول ولن يتمكن من إعادة بيعه حينئذِ.
 
