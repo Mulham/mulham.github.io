@@ -4,7 +4,6 @@ date: 2019-10-31
 title: نصيحة أمان لحماية الحواسيب المحمولة من السرقة
 type: blog
 feature: /assets/Kensington-Security-Slot.jpg
-tags: [حماية  , متنوع]
 comments: true
 ---
 
