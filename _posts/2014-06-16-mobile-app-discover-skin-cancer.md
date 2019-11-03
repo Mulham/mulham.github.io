@@ -4,6 +4,7 @@ date: 2014-06-16
 type: blog
 title: تطبيق للجوالات يكشف سرطان الجلد
 comments: true
+tags: تقنية
 ---
 
 

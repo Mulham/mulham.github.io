@@ -4,6 +4,7 @@ date: 2014-06-16
 type: blog
 title: سيارة البيضة من هيونداي
 comments: true
+tags: متنوع
 ---
 
 

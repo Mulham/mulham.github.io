@@ -1,10 +1,11 @@
 ---
 layout: post
-title: برنامج VideoCacheView 
+title: برنامج VideoCacheView لحفظ مقاطع الفيديو التي تمت مشاهدتها على الإنترنت
 date: 2014-06-16
 type: blog
 description: برنامج فيديو كاش فيو لحفظ ملفات الفيديو التي تم مشاهدتها أونلاين
 comments: true
+tags: تقنية
 ---
 
 

@@ -4,6 +4,7 @@ title: كيف تحذف نفسك من نتائج بحث جوجل
 type: blog
 layout: post
 comments: true
+tags: [Google, إنترنت]
 ---
 
 

@@ -4,6 +4,7 @@ date: 2014-06-16
 type: blog
 layout: post
 comments: true
+tags: متنوع
 ---
 
 

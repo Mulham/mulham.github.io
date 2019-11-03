@@ -4,6 +4,7 @@ date: 2014-06-16
 type: blog
 title: أسرار بحث جوجل
 comments: true
+tags: [Google, تقنية, إنترنت]
 ---
 
 

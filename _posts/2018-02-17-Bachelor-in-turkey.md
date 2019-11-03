@@ -5,6 +5,7 @@ description: تفاصيل متطلبات وإجراءات إتمام الأور�
 type: blog
 layout: post
 comments: true
+tags: تعليم
 ---
 
 مرحباً..

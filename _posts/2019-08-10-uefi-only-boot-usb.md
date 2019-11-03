@@ -5,6 +5,7 @@ description: كيفية الإقلاع القسري من الفلاشة usb لت
 title: كيفية الإقلاع من usb في أجهزة الويندوز ضمن وضع UEFI
 type: blog
 comments: true
+tags: [تقنية, أنظمة]
 ---
 
 مرحبًا..
