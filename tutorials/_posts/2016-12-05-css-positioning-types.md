@@ -5,6 +5,7 @@ title: 5 أشياء قد لا تعرفها عن أنواع التوضّع في C
 description: تقنيات CSS المعروفة منها والجديدة لتوضع العناصر 
 type: tutorial
 comments: true
+tags: [إنترنت, تصميم, CSS]
 ---
 
 مرحباً ..

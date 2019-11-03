@@ -5,6 +5,7 @@ title: أساسيات التعامل مع Git
 description: شرح مبسط لاستخدام Git وأهم الأوامر التي تلزم للاستخدامات الأساسية. 
 type: tutorial
 comments: true
+tags: [Git, Github, شبكات, إنترنت]
 ---
 
 ![جِت-git](/assets/git.png)

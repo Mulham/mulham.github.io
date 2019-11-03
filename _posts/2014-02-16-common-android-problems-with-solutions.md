@@ -4,6 +4,7 @@ title: مشاكل شائعة في أندرويد مع الحل
 type: blog
 layout: post
 comments: true
+tags: أندرويد
 ---
 
 <img src="/assets/common-android-problems1.jpg" alt="مشاكل شائعة في أندرويد مع الحل">

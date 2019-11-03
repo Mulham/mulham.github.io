@@ -5,6 +5,7 @@ title: أساسيات جنو grep للمبتدئين
 description: شرح grep والتعابير النمطية regular expression, regex
 type: tutorial
 comments: true
+tags: [لينكس, regex]
 ---
 
 

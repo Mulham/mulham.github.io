@@ -5,6 +5,7 @@ title: إعادة تنصيب أندرويد
 description: شرح مُبسَّط لطريقة تنصيب أندرويد على الأجهزة اللوحية والجوالات 
 type: tutorial
 comments: true
+tags: أندرويد
 ---
 
 

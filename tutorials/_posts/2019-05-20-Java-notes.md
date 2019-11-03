@@ -5,7 +5,7 @@ title: ملاحظات جافا
 description: ملاحظات هامة لمبتدئي لغة جافا والفروقات الرئيسية بين بعض أنواع الأصناف (interface classes vs abstract classes..)
 type: tutorial
 comments: true
-
+tags: [Java, برمجة]
 ---
 
 * Toc

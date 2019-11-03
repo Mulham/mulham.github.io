@@ -4,6 +4,7 @@ date: 2016-06-18
 title: إدارة قواعد البيانات باستخدام phpMyAdmin
 type: tutorial
 comments: true
+tags: [PhpMyAdmin, قواعد بيانات]
 ---
 
 

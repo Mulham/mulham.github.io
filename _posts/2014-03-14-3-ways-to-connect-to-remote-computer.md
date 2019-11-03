@@ -4,6 +4,7 @@ title: 3 طرق للوصول إلى جهاز آخر من خلال جهازك
 type: blog
 layout: post
 comments: true
+tags: [تقنية, شبكات, إنترنت]
 ---
 
 

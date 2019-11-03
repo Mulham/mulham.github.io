@@ -4,6 +4,7 @@ title: كيفية إخفاء القائمة الجانبية "أشخاص قد ت
 type: blog
 layout: post
 comments: true
+tags: [تقنية, إنترنت]
 ---
 
 

@@ -4,6 +4,7 @@ title: الكتاب الإلكتروني القابل للارتداء!
 type: blog
 layout: post
 comments: true
+tags: تقنية
 ---
 
 ![كتاب إلكتروني قابل للارتداء](/assets/Wearable-Ebook1.png "كتاب إلكتروني قابل للارتداء")

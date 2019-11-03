@@ -5,6 +5,7 @@ title: تنصيب أبونتو على الأجهزة اللوحية والجوا
 category: أبونتو
 type: tutorial
 comments: true
+tags: لينكس
 ---
 
 

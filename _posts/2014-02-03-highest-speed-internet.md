@@ -4,6 +4,7 @@ title: الإنترنت الأسرع على الإطلاق 1.4 تيرابايت 
 type: blog
 layout: post
 comments: true
+tags: [إنترنت, تقنية]
 ---
 
 

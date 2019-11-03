@@ -4,6 +4,7 @@ date: 2019-09-24
 title: ضبط أبونتو للعمل كراوتر
 type: tutorial
 comments: true
+tags: [شبكات, إنترنت, لينكس]
 ---
 
 
