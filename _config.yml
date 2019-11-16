@@ -65,6 +65,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-paginate
+
+pagination:
+  enabled: true
+  per_page: 6
+  sort_reverse: true
+  indexpage: page-1
+  permalink: page-:num
+  extension: json
 
 jekyll-mentions:
     base_url: https://github.com
