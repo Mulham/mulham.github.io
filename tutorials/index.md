@@ -3,4 +3,6 @@ layout: tutorials
 title: جميع الدروس
 excerpt: "قائمة الدروس"
 comments: false
+pagination:
+  enabled: true
 ---

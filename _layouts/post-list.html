@@ -22,12 +22,17 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
+                    {% for post in paginator.posts %} 
                         {% if post.type == 'blog' %}
 
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                            
+                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">
+                        {% if post.feature %}
+<img style="float:left; width: 250px; height:250px;border-radius: 8px;" src="{{post.feature}}">
+{% endif %}
+{{ post.title }}</a>
                             <p>{{ post.excerpt | strip_html | truncatewords:75 }}</p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">قراءة المزيد»</a>
                         </li>
@@ -35,6 +40,34 @@ layout: compress
 
                         {% endif %}
                     {% endfor %}
+ <div style="margin-top: 3rem !important;">
+         <!-- Pagination links -->
+            {% if paginator.total_pages > 1 %}
+            <ul class="pagination"> 
+              {% if paginator.previous_page %}
+                <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+              {% else %}
+                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
+              {% endif %}
+
+              {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
+                {% elsif page == 1 %}
+                <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">{{ page }}</a></li>
+                {% else %}
+                <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                {% endif %}
+              {% endfor %}
+
+              {% if paginator.next_page %}
+                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+              {% else %}
+                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
+              {% endif %}
+            </ul>
+            {% endif %}      
+        </div>
                 </div>
             </div>
         </div>
