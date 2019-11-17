@@ -45,7 +45,9 @@
           <a href="{{ site.baseurl }}{{ post.url }}">
               <div class="rel">
                   <h5>{{ post.title }}</h5>
+                   {% if post.feature %}
                   <img width="100%" src="{{post.feature}}">
+                    {% endif %}
               </div>
           </a>
 
