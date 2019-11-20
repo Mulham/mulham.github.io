@@ -9,7 +9,9 @@ layout: compress
 <head>
 	
     {% include head.html %}
-
+    {% if page.feature %}
+  <meta property="og:image" content="{{page.feature}}">
+{% endif %}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
