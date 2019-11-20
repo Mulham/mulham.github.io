@@ -6,3 +6,4 @@ excerpt: "A ton of text to test readability."
 feature: /assets/Kensington-Security-Slot.jpg
 tags: [sample post, readability, test]
 comments: true
+type: blog/tutorial

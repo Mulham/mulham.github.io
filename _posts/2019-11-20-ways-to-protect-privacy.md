@@ -3,6 +3,7 @@ layout: post
 title: "إجراءات حماية الخصوصية على الإنترنت"
 description: "تعرف على طرق وإجراءات هامة يجب اتباعها لحماية خصوصيتك على الإنترنت"
 date: 2019-11-20
+type: blog
 feature: /assets/protect-privacy.jpg
 tags: [إنترنت, تقنية]
 comments: true
