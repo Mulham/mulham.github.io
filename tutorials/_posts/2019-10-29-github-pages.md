@@ -66,12 +66,15 @@ Repository name: username.github.io
 هنا يتوجب عليك فهم بعض الأساسيات في Jekyll حتى تغير وتضيف محتوى لموقعك، سأشرح ذلك هنا باختصار شديد يمكنك من عمل ماتريد بأسرع وقت.
 
 يحتوي قالب jekyll (موقعك) على المجلدات التالية:
+<ul style="direction: ltr">
 
-* /_layouts
-* /_includes
-* /_posts
-* /_site
-* index.html
+<li> /_layouts </li>
+<li> /_includes</li>
+<li> /_posts </li>
+<li> /_site</li>
+<li> index.html</li>
+
+</ul>
 
 بالإضافة لمجلدات وملفات أخرى.
 

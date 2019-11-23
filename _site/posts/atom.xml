@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2019-11-20T19:41:17+03:00</updated>
+	<updated>2019-11-23T15:11:39+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -65,7 +65,7 @@
 
 &lt;h1 id=&quot;5-إضافة-privacy-badger&quot;&gt;5. إضافة Privacy Badger&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/PrivacyBadger.png&quot; alt=&quot;Privacy badger logo&quot; style=&quot;float:right; width: 150px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/PrivacyBadger.png&quot; alt=&quot;Privacy badger logo&quot; style=&quot;float:right; width: 200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;تحوي متصفحات الوب خيار “عدم التتبع” في إعداداتها (تجدها في متصفح كروم في الإعدادات المتقدمة ضمن “الخصوصية والأمان”) ، وفي حالة تفعيل هذا الخيار في المتصفح لديك فسيتم إرسال رسالة للمواقع التي تزورها وشبكات الإعلان طالبةً منهم عدم تتبعك، ولكن في واقع الأمر العديد من المواقع لا يكترث لهذا الخيار. وبالتالي إضافة المتصفح المجانية والمفتوحة المصدر  Privacy Badger تقوم بحجب الإعلانات وملفات تعريف الارتباط “Cookies” في المواقع التي لا تراعي تلك الحالة.&lt;/p&gt;
 
@@ -210,13 +210,14 @@
 &lt;p&gt;هنا يتوجب عليك فهم بعض الأساسيات في Jekyll حتى تغير وتضيف محتوى لموقعك، سأشرح ذلك هنا باختصار شديد يمكنك من عمل ماتريد بأسرع وقت.&lt;/p&gt;
 
 &lt;p&gt;يحتوي قالب jekyll (موقعك) على المجلدات التالية:&lt;/p&gt;
+&lt;ul style=&quot;direction: ltr&quot;&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;/_layouts&lt;/li&gt;
-  &lt;li&gt;/_includes&lt;/li&gt;
-  &lt;li&gt;/_posts&lt;/li&gt;
-  &lt;li&gt;/_site&lt;/li&gt;
-  &lt;li&gt;index.html&lt;/li&gt;
+&lt;li&gt; /_layouts &lt;/li&gt;
+&lt;li&gt; /_includes&lt;/li&gt;
+&lt;li&gt; /_posts &lt;/li&gt;
+&lt;li&gt; /_site&lt;/li&gt;
+&lt;li&gt; index.html&lt;/li&gt;
+
 &lt;/ul&gt;
 
 &lt;p&gt;بالإضافة لمجلدات وملفات أخرى.&lt;/p&gt;
@@ -297,14 +298,9 @@
 
 &lt;p&gt;يستخدم GNU Grep إصدار GNU من التعبيرات النمطية ، وهو مشابه جدًا (ولكن ليس مطابقًا) للتعبيرات المعتادة POSIX. في الواقع ، تتشابه معظم أنواع التعبيرات المعتادة تمامًا ، لكن لها اختلافات في حالات الهروب أو أحرف التعريف أو العوامل الخاصة.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;يحتوي GNU Grep على مجموعتين من ميزات التعبير النمطي: Basic and Extended. في التعبيرات النمطية الأساسية ، تفقد الأحرف الوصفية ؟ و + و { و&lt;/td&gt;
-      &lt;td&gt;و ( و ) معناها الخاص (الذي يرد وصف لاستخداماته لاحقًا في هذه المقالة). وكما هو مذكور أدناه ، للتبديل إلى استخدام التعبيرات النمطية الموسعة تحتاج إلى إضافة الخيار -E إلى الأمر grep.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;يحتوي GNU Grep على مجموعتين من ميزات التعبير النمطي: Basic and Extended.&lt;/p&gt;
+
+&lt;p&gt;في التعبيرات النمطية الأساسية ، تفقد الأحرف الوصفية &lt;code class=&quot;highlighter-rouge&quot;&gt;؟&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;)&lt;/code&gt; معناها الخاص والذي يرد وصف لاستخداماته لاحقًا في هذه المقالة. وكما هو مذكور أدناه ، للتبديل إلى استخدام التعبيرات النمطية الموسعة تحتاج إلى إضافة الخيار E- إلى الأمر grep.&lt;/p&gt;
 
 &lt;p&gt;من المعتاد إحاطة التعبير النمطي بعلامات اقتباس مفردة ، لمنع shell (مثل Bash أو غيرها) من محاولة تفسير التعبير وتوسيعه قبل بدء عملية grep. على سبيل المثال ، إذا لم يتم ذكر زوج من علامات التجزئة في إعادة الاسترداد ، فسوف ينتج عن ذلك النص بين علامات التجزئة التي يتم تنفيذها كعملية فرعية لـ Bash - وإذا حدث أن ذلك أمر صالح ، فالنص المُرجع سيأخذ مكان التعبير النمطي في تعليمة سطر الأوامر المعطاة إلى Grep! وهذا ليس ما نريد.&lt;/p&gt;
 
