@@ -13,4 +13,4 @@ type: blog/tutorial
 * Toc
 {:toc}
 
-:{.notice}
+{: .notice}
