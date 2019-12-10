@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2019-11-23T15:11:39+03:00</updated>
+	<updated>2019-11-27T14:21:32+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -9096,10 +9096,13 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
     FROM table_name; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;و&lt;/p&gt;
+&lt;p&gt;أي استخراج أعمدة محددة وفق أسمائها من جدول محدد.
+و&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT * FROM table_name;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أي استخراج كل البيانات من الجدول المحدد.&lt;/p&gt;
 
 &lt;h1 id=&quot;استعراض-قاعدة-بيانات-&quot;&gt;استعراض قاعدة بيانات :&lt;/h1&gt;
 
@@ -9435,34 +9438,34 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL تنفيذ أوامر لقاعدة بيانات  .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL تنفيذ أوامر لقاعدة بيانات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL استخراج بيانات من قاعدة بيانات محددة .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL استخراج بيانات من قاعدة بيانات محددة.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إدخال تسجيلات لقاعدة بيانات .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL إدخال تسجيلات (بيانات) لقاعدة بيانات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;يمكن لـ SQL تحديث تسجيلات في قاعدة بيانات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL حذف تسجيلات من قاعدة بيانات .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL حذف تسجيلات من قاعدة بيانات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء قواعد بيانات جديدة .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء قواعد بيانات جديدة&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء جداول جديدة في قواعد بيانات .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء جداول جديدة في قواعد بيانات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء تعليمات مخزنة في قاعدة بيانات .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء تعليمات مخزنة في قاعدة بيانات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL إنشاء عروض في قاعدة بيانات .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL إنشاء عروض (عرض نتائج محددة) في قاعدة بيانات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يمكن لـ SQL ضبط الصلاحيات للجدوال ، التعليمات والعروض .&lt;/p&gt;
+    &lt;p&gt;يمكن لـ SQL ضبط الصلاحيات للجداول والتعليمات والعروض.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -9485,7 +9488,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
     &lt;p&gt;برنامج قواعد بيانات RDBMS ( مثل : MS Access, SQL Server, MySQL )&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;استخدام لغة برمجة تُنفَّذ في الخادم ، مثل PHP ، ASP&lt;/p&gt;
+    &lt;p&gt;استخدام لغة برمجة تُنفَّذ في الخادم (السيرفر)، مثل PHP و ASP&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;استخدام لغة SQL للحصول على البيانات المرادة&lt;/p&gt;
@@ -9792,15 +9795,15 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;h1 id=&quot;جداول-قواعد-البيانات&quot;&gt;جداول قواعد البيانات&lt;/h1&gt;
 
-&lt;p&gt;تحتوي قاعدة البيانات في معظم الأحيان على جدول واحد أو أكثر . يتم تعريف كل جدول باسم ، على سبيل المثال : “الزبائن” ، “الطلبات” .. تحتوي الجداول على تسجيلات (صفوف) يتم بها الاحتفاظ بالبيانات.&lt;/p&gt;
+&lt;p&gt;تحتوي قاعدة البيانات في معظم الأحيان على جدول واحد أو أكثر . يتم تعريف كل جدول باسم ، على سبيل المثال : “الزبائن” ، “الطلبات” .. تحتوي الجداول على تسجيلات (صفوف/أسطر) يتم بها الاحتفاظ بالبيانات.&lt;/p&gt;
 
-&lt;p&gt;سوف نستخدم في هذا الشرح قاعدة البيانات الافتراضية والمعروفة جيداً : Northwind ( المضمنة في ميكروسوفت أكسس ، وميكروسوفت SQL سيرفر ) .&lt;/p&gt;
+&lt;p&gt;سوف نستخدم في هذا الشرح قاعدة البيانات الافتراضية والمعروفة جيداً: Northwind ( المُضمَّنة في ميكروسوفت أكسس ، وميكروسوفت SQL سيرفر ) .&lt;/p&gt;
 
 &lt;p&gt;الجدول التالي هو قسم من من جدول الزبائن “Customers” :&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;الجدول في اﻷعلى يحوي على خمسة تسجيلات (واحد لكل زبون) ، وسبعة أعمدة (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country)&lt;/p&gt;
+&lt;p&gt;الجدول في اﻷعلى يحوي على خمسة تسجيلات/أسطر (واحد لكل زبون) ، وسبعة أعمدة (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country)&lt;/p&gt;
 
 &lt;h1 id=&quot;تصريحات-sql&quot;&gt;تصريحات SQL&lt;/h1&gt;
 
@@ -9826,7 +9829,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;إن بعض أنظمة قواعد البيانات تتطلب فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .&lt;/p&gt;
 
-&lt;p&gt;الفاصلة المنقوطة ; هي الطريقة الأساسية لفصل عبارات SQL عن بعضها في أنظمة قواعد البيانات التي تسمح بتنفيذ أكثر من عبارة SQL واحدة ضمن الاستدعاء ذاته (الاتصال) للسيرفر (الخادم) .&lt;/p&gt;
+&lt;p&gt;الفاصلة المنقوطة &lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt; هي الطريقة الأساسيّة لفصل عبارات SQL عن بعضها في أنظمة قواعد البيانات التي تسمح بتنفيذ أكثر من عبارة SQL واحدة ضمن الاستدعاء ذاته (الاتصال) للسيرفر (الخادم) .&lt;/p&gt;
 
 &lt;p&gt;في هذه الشروحات سوف نستخدم فاصلة منقوطة في نهاية كل تصريح (عبارة) SQL .&lt;/p&gt;
 
