@@ -1,4 +1,385 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-27T14:21:32+03:00</updated><id>http://localhost:4000/</id><title type="html">موقع ملهم</title><subtitle>شغف المعرفة</subtitle><entry><title type="html">إجراءات حماية الخصوصية على الإنترنت</title><link href="http://localhost:4000/ways-to-protect-privacy/" rel="alternate" type="text/html" title="إجراءات حماية الخصوصية على الإنترنت" /><published>2019-11-20T00:00:00+03:00</published><updated>2019-11-20T00:00:00+03:00</updated><id>http://localhost:4000/ways-to-protect-privacy</id><content type="html" xml:base="http://localhost:4000/ways-to-protect-privacy/">&lt;p&gt;إليك أهم الإجراءات التي جمعتها هنا لحماية خصوصيتك على الإنترنت، فجميعنا يستخدم الإنترنت بشكل يومي ويتصفح العديد من المواقع وربما يشتري بضائع من الإنترنت، وفي نفس الأثناء هناك من يحاول جمع كل تلك المعلومات عنك وعن المواقع التي تزورها وماتفعله أثناء تواجدك بها وما إلى ذلك، وقد يتطور الأمر في بعض المواقع لسرقة بياناتك الشخصية ومعلومات الحساب أو استغلال بياناتك في أمور غير أخلاقية.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-15T11:24:44+03:00</updated><id>http://localhost:4000/</id><title type="html">موقع ملهم</title><subtitle>شغف المعرفة</subtitle><entry><title type="html">هل يوجد فيروسات لنظام لينكس؟</title><link href="http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3/" rel="alternate" type="text/html" title="هل يوجد فيروسات لنظام لينكس؟" /><published>2020-01-15T00:00:00+03:00</published><updated>2020-01-15T00:00:00+03:00</updated><id>http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3</id><content type="html" xml:base="http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3/">&lt;p&gt;سؤال يُطرح كثيرًا حيث أن مستخدموا لينكس لا يستخدمون مضاد فيروسات كمستخدمي ويندوز ويعتبرون نظام لينكس نظامًا آمنًا، فهل نظام لينكس خالِ من الفيروسات؟&lt;/p&gt;
+
+&lt;p&gt;في الواقع هناك الكثير من الفيروسات لنظام لينكس، ولكن ذلك لا يشكل أهمية لمستخدميه للعديد من الأسباب:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;أولًا فإن مستخدموا لينكس لايقومون بتحميل كراك أو رموز تفعيل للبرامج بغرض سرقتها من مصادر غير شرعية كمستخدمي ويندوز. حيث أن المواقع التي تتيح تحميل البرامج المدفوعة مجانًا (أي البرامج المسروقة) هي أحد أهم مصادر الفيروسات.&lt;/p&gt;
+
+    &lt;p&gt;نظام لينكس في الأصل مجاني ومفتوح المصدر ومعظم البرامج عليه كذلك أي أنها برمجيات حرة ويتم تحميلها وتنصيبها من المتجر الرسمي وبالتالي من مصدر آمن خالِ من الفيروسات.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;مستخدموا لينكس تصلهم تحديثات مجانية باستمرار وبالتالي يبقى نظامهم آمن. بينما مستخدمي النسخ الغير أصلية للويندوز لا يتلقون تحديثات وهذا يؤدي لضعف أمني في النظام.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;من الصعب الوصول لمستوى صلاحيات في نظام لينكس تسمح للفيروس بالتأثير بشكل فعال على النظام. فنظام لينكس يحتاج في كل عملية تنصيب أو حذف أو تغيير شيئ ما في النظام لإدخال كلمة سر الجذر root للحصول على الصلاحيات المطلوبة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;بما أن معظم البرامج على اللينكس هي برمجيات حرة أي مفتوحة المصدر، فأي فيروس سيُكتب لتلك البرامج سيكون مكشوفا للعيان، حيث أن أي شخص يمكن أن يفتح الكود الأصلي ويرى ما كُتِب بداخله. وهذا يجعل صناعة الفيروسات للبرامج مفتوحة المصدر بلا قيمة ومضيعة للوقت حيث أن الكود الخبيث يمكن ﻷي أحد قراءته واكتشافه بسهولة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قد يكون أيضًا أحد الأسباب هو أن مستخدمي لينكس أكثر علمًا عموما في أمور الحاسوب من مستخدمي ويندوز وبالتالي أكثر حذرًا في التعامل مع الإنترنت والروابط المشبوهة التي تكون مصدرًا للفيروسات والبرامج الضارة.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;تجدر الإشارة هنا إلى أن &lt;a href=&quot;https://en.wikipedia.org/wiki/Linux.Encoder.1&quot; target=&quot;_blank&quot;&gt;Linux.Encoder.1&lt;/a&gt; هو أول برنامج خبيث (ransomware Trojan) موجه لأنظمة لينكس وبالتحديد لتلك التي تشغّل منصة التجارة الإلكترونية مفتوحة المصدر “Magento” ويتيح للمخترق من تنصيب وتنفيذ كود PHP خاص على السيرفر مما يقوم بتشفير العديد من الملفات. وطبعا تم اكتشافه لاحقًا.&lt;/p&gt;
+
+&lt;p&gt;المرجع: &lt;a href=&quot;https://www.quora.com/Why-is-there-no-viruses-in-Linux&quot;&gt;Quora&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="لينكس" /><summary type="html">سؤال يُطرح كثيرًا حيث أن مستخدموا لينكس لا يستخدمون مضاد فيروسات كمستخدمي ويندوز ويعتبرون نظام لينكس نظامًا آمنًا، فهل نظام لينكس خالِ من الفيروسات؟ في الواقع هناك الكثير من الفيروسات لنظام لينكس، ولكن ذلك لا يشكل أهمية لمستخدميه للعديد من الأسباب: أولًا فإن مستخدموا لينكس لايقومون بتحميل كراك أو رموز تفعيل للبرامج بغرض سرقتها من مصادر غير شرعية كمستخدمي ويندوز. حيث أن المواقع التي تتيح تحميل البرامج المدفوعة مجانًا (أي البرامج المسروقة) هي أحد أهم مصادر الفيروسات. نظام لينكس في الأصل مجاني ومفتوح المصدر ومعظم البرامج عليه كذلك أي أنها برمجيات حرة ويتم تحميلها وتنصيبها من المتجر الرسمي وبالتالي من مصدر آمن خالِ من الفيروسات. مستخدموا لينكس تصلهم تحديثات مجانية باستمرار وبالتالي يبقى نظامهم آمن. بينما مستخدمي النسخ الغير أصلية للويندوز لا يتلقون تحديثات وهذا يؤدي لضعف أمني في النظام. من الصعب الوصول لمستوى صلاحيات في نظام لينكس تسمح للفيروس بالتأثير بشكل فعال على النظام. فنظام لينكس يحتاج في كل عملية تنصيب أو حذف أو تغيير شيئ ما في النظام لإدخال كلمة سر الجذر root للحصول على الصلاحيات المطلوبة. بما أن معظم البرامج على اللينكس هي برمجيات حرة أي مفتوحة المصدر، فأي فيروس سيُكتب لتلك البرامج سيكون مكشوفا للعيان، حيث أن أي شخص يمكن أن يفتح الكود الأصلي ويرى ما كُتِب بداخله. وهذا يجعل صناعة الفيروسات للبرامج مفتوحة المصدر بلا قيمة ومضيعة للوقت حيث أن الكود الخبيث يمكن ﻷي أحد قراءته واكتشافه بسهولة. قد يكون أيضًا أحد الأسباب هو أن مستخدمي لينكس أكثر علمًا عموما في أمور الحاسوب من مستخدمي ويندوز وبالتالي أكثر حذرًا في التعامل مع الإنترنت والروابط المشبوهة التي تكون مصدرًا للفيروسات والبرامج الضارة. تجدر الإشارة هنا إلى أن Linux.Encoder.1 هو أول برنامج خبيث (ransomware Trojan) موجه لأنظمة لينكس وبالتحديد لتلك التي تشغّل منصة التجارة الإلكترونية مفتوحة المصدر “Magento” ويتيح للمخترق من تنصيب وتنفيذ كود PHP خاص على السيرفر مما يقوم بتشفير العديد من الملفات. وطبعا تم اكتشافه لاحقًا. المرجع: Quora</summary></entry><entry><title type="html">قائمة بجميع الرموز الرياضية والعلمية</title><link href="http://localhost:4000/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%85%D9%88%D8%B2-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/" rel="alternate" type="text/html" title="قائمة بجميع الرموز الرياضية والعلمية" /><published>2020-01-15T00:00:00+03:00</published><updated>2020-01-15T00:00:00+03:00</updated><id>http://localhost:4000/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%85%D9%88%D8%B2-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9</id><content type="html" xml:base="http://localhost:4000/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%85%D9%88%D8%B2-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/">&lt;p&gt;Basic math symbols&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الرمز&lt;/th&gt;
+      &lt;th&gt;الاسم&lt;/th&gt;
+      &lt;th&gt;مثال&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;=&lt;/td&gt;
+      &lt;td&gt;إاشارة المساواة&lt;/td&gt;
+      &lt;td&gt;5 = 2+3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;≠&lt;/td&gt;
+      &lt;td&gt;إشارة اللامساواة&lt;/td&gt;
+      &lt;td&gt;5 ≠ 4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;≈&lt;/td&gt;
+      &lt;td&gt;علامة التقريب&lt;/td&gt;
+      &lt;td&gt;sin(0.01) ≈ 0.01, x ≈ y means x is approximately equal to y&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;منمنتمنت - [ ]&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;الرمز&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;الاسم&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;مثال&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;توضيح&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;=&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;إشارة المساواة&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;|  | مثال | الاسم | الرمز |
+|–|——|——-|——-|&lt;/p&gt;
+
+&lt;p&gt;( ) 	parentheses 	calculate expression inside first 	2 × (3+5) = 16
+[ ] 	brackets 	calculate expression inside first 	[(1+2)×(1+5)] = 18&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;plus sign 	addition 	1 + 1 = 2
+− 	minus sign 	subtraction 	2 − 1 = 1
+± 	plus - minus 	both plus and minus operations 	3 ± 5 = 8 or -2
+± 	minus - plus 	both minus and plus operations 	3 ∓ 5 = -2 or 8&lt;/li&gt;
+  &lt;li&gt;asterisk 	multiplication 	2 * 3 = 6
+× 	times sign 	multiplication 	2 × 3 = 6
+⋅ 	multiplication dot 	multiplication 	2 ⋅ 3 = 6
+÷ 	division sign / obelus 	division 	6 ÷ 2 = 3
+/ 	division slash 	division 	6 / 2 = 3
+— 	horizontal line 	division / fraction 	\frac{6}{2}=3
+mod 	modulo 	remainder calculation 	7 mod 2 = 1
+. 	period 	decimal point, decimal separator 	2.56 = 2+56/100
+ab 	power 	exponent 	23 = 8
+a^b 	caret 	exponent 	2 ^ 3 = 8
+√a 	square root&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;√a ⋅ √a  = a
+	√9 = ±3
+3√a 	cube root 	3√a ⋅ 3√a  ⋅ 3√a  = a 	3√8 = 2
+4√a 	fourth root 	4√a ⋅ 4√a  ⋅ 4√a  ⋅ 4√a  = a 	4√16 = ±2
+n√a 	n-th root (radical) 	  	for n=3, n√8 = 2
+% 	percent 	1% = 1/100 	10% × 30 = 3
+‰ 	per-mille 	1‰ = 1/1000 = 0.1% 	10‰ × 30 = 0.3
+ppm 	per-million 	1ppm = 1/1000000 	10ppm × 30 = 0.0003
+ppb 	per-billion 	1ppb = 1/1000000000 	10ppb × 30 = 3×10-7
+ppt 	per-trillion 	1ppt = 10-12 	10ppt × 30 = 3×10-10
+Geometry symbols
+Symbol 	Symbol Name 	Meaning / definition 	Example
+∠ 	angle 	formed by two rays 	∠ABC = 30°
+	measured angle 	  	ABC = 30°
+	spherical angle 	  	AOB = 30°
+∟ 	right angle 	= 90° 	α = 90°
+° 	degree 	1 turn = 360° 	α = 60°
+deg 	degree 	1 turn = 360deg 	α = 60deg
+′ 	prime 	arcminute, 1° = 60′ 	α = 60°59′
+″ 	double prime 	arcsecond, 1′ = 60″ 	α = 60°59′59″
+	line 	infinite line 	 
+AB 	line segment 	line from point A to point B 	 
+	ray 	line that start from point A 	 
+	arc 	arc from point A to point B 	= 60°
+⊥ 	perpendicular 	perpendicular lines (90° angle) 	AC ⊥ BC
+∥ 	parallel 	parallel lines 	AB ∥ CD
+≅ 	congruent to 	equivalence of geometric shapes and size 	∆ABC≅ ∆XYZ
+~ 	similarity 	same shapes, not same size 	∆ABC~ ∆XYZ
+Δ 	triangle 	triangle shape 	ΔABC≅ ΔBCD
+|x-y| 	distance 	distance between points x and y 	| x-y | = 5
+π 	pi constant 	π = 3.141592654…&lt;/p&gt;
+
+&lt;p&gt;is the ratio between the circumference and diameter of a circle
+	c = π⋅d = 2⋅π⋅r
+rad 	radians 	radians angle unit 	360° = 2π rad
+c 	radians 	radians angle unit 	360° = 2π c
+grad 	gradians / gons 	grads angle unit 	360° = 400 grad
+g 	gradians / gons 	grads angle unit 	360° = 400 g
+Algebra symbols
+Symbol 	Symbol Name 	Meaning / definition 	Example
+x 	x variable 	unknown value to find 	when 2x = 4, then x = 2
+≡ 	equivalence 	identical to 	 
+≜ 	equal by definition 	equal by definition 	 
+:= 	equal by definition 	equal by definition 	 
+~ 	approximately equal 	weak approximation 	11 ~ 10
+≈ 	approximately equal 	approximation 	sin(0.01) ≈ 0.01
+∝ 	proportional to 	proportional to&lt;/p&gt;
+
+&lt;p&gt;y ∝ x when y = kx, k constant
+∞ 	lemniscate 	infinity symbol 	 
+≪ 	much less than 	much less than 	1 ≪ 1000000
+≫ 	much greater than 	much greater than 	1000000 ≫ 1
+( ) 	parentheses 	calculate expression inside first 	2 * (3+5) = 16
+[ ] 	brackets 	calculate expression inside first 	[(1+2)&lt;em&gt;(1+5)] = 18
+{ } 	braces 	set 	 
+⌊x⌋ 	floor brackets 	rounds number to lower integer 	⌊4.3⌋ = 4
+⌈x⌉ 	ceiling brackets 	rounds number to upper integer 	⌈4.3⌉ = 5
+x! 	exclamation mark 	factorial 	4! = 1&lt;/em&gt;2&lt;em&gt;3&lt;/em&gt;4 = 24
+| x | 	single vertical bar 	absolute value 	| -5 | = 5
+f (x) 	function of x 	maps values of x to f(x) 	f (x) = 3x+5
+(f ∘ g) 	function composition 	(f ∘ g) (x) = f (g(x)) 	f (x)=3x,g(x)=x-1 ⇒(f ∘ g)(x)=3(x-1)
+(a,b) 	open interval 	(a,b) = {x | a &amp;lt; x &amp;lt; b} 	x∈ (2,6)
+[a,b] 	closed interval 	[a,b] = {x | a ≤ x ≤ b} 	x ∈ [2,6]
+∆ 	delta 	change / difference 	∆t = t1 - t0
+∆ 	discriminant 	Δ = b2 - 4ac 	 
+∑ 	sigma 	summation - sum of all values in range of series 	∑ xi= x1+x2+…+xn
+∑∑ 	sigma 	double summation 	
+∏ 	capital pi 	product - product of all values in range of series 	∏ xi=x1∙x2∙…∙xn
+e 	e constant / Euler’s number 	e = 2.718281828… 	e = lim (1+1/x)x , x→∞
+γ 	Euler-Mascheroni constant 	γ = 0.5772156649… 	 
+φ 	golden ratio 	golden ratio constant 	 
+π 	pi constant 	π = 3.141592654…&lt;/p&gt;
+
+&lt;p&gt;is the ratio between the circumference and diameter of a circle
+	c = π⋅d = 2⋅π⋅r
+Linear Algebra Symbols
+Symbol 	Symbol Name 	Meaning / definition 	Example
+· 	dot 	scalar product 	a · b
+× 	cross 	vector product 	a × b
+A⊗B 	tensor product 	tensor product of A and B 	A ⊗ B
+\langle x,y \rangle 	inner product 	  	 
+[ ] 	brackets 	matrix of numbers 	 
+( ) 	parentheses 	matrix of numbers 	 
+| A | 	determinant 	determinant of matrix A 	 
+det(A) 	determinant 	determinant of matrix A 	 
+|| x || 	double vertical bars 	norm 	 
+AT 	transpose 	matrix transpose 	(AT)ij = (A)ji
+A† 	Hermitian matrix 	matrix conjugate transpose 	(A†)ij = (A)ji
+A* 	Hermitian matrix 	matrix conjugate transpose 	(A*)ij = (A)ji
+A -1 	inverse matrix 	A A-1 = I 	 
+rank(A) 	matrix rank 	rank of matrix A 	rank(A) = 3
+dim(U) 	dimension 	dimension of matrix A 	dim(U) = 3
+Probability and statistics symbols
+Symbol 	Symbol Name 	Meaning / definition 	Example
+P(A) 	probability function 	probability of event A 	P(A) = 0.5
+P(A ⋂ B) 	probability of events intersection 	probability that of events A and B 	P(A⋂B) = 0.5
+P(A ⋃ B) 	probability of events union 	probability that of events A or B 	P(A⋃B) = 0.5
+P(A | B) 	conditional probability function 	probability of event A given event B occured 	P(A | B) = 0.3
+f (x) 	probability density function (pdf) 	P(a ≤ x ≤ b) = ∫ f (x) dx 	 
+F(x) 	cumulative distribution function (cdf) 	F(x) = P(X≤ x) 	 
+μ 	population mean 	mean of population values 	μ = 10
+E(X) 	expectation value 	expected value of random variable X 	E(X) = 10
+E(X | Y) 	conditional expectation 	expected value of random variable X given Y 	E(X | Y=2) = 5
+var(X) 	variance 	variance of random variable X 	var(X) = 4
+σ2 	variance 	variance of population values 	σ2 = 4
+std(X) 	standard deviation 	standard deviation of random variable X 	std(X) = 2
+σX 	standard deviation 	standard deviation value of random variable X 	σX  = 2
+	median 	middle value of random variable x 	
+cov(X,Y) 	covariance 	covariance of random variables X and Y 	cov(X,Y) = 4
+corr(X,Y) 	correlation 	correlation of random variables X and Y 	corr(X,Y) = 0.6
+ρX,Y 	correlation 	correlation of random variables X and Y 	ρX,Y = 0.6
+∑ 	summation 	summation - sum of all values in range of series 	
+∑∑ 	double summation 	double summation 	
+Mo 	mode 	value that occurs most frequently in population 	 
+MR 	mid-range 	MR = (xmax+xmin)/2 	 
+Md 	sample median 	half the population is below this value 	 
+Q1 	lower / first quartile 	25% of population are below this value 	 
+Q2 	median / second quartile 	50% of population are below this value = median of samples 	 
+Q3 	upper / third quartile 	75% of population are below this value 	 
+x 	sample mean 	average / arithmetic mean 	x = (2+5+9) / 3 = 5.333
+s 2 	sample variance 	population samples variance estimator 	s 2 = 4
+s 	sample standard deviation 	population samples standard deviation estimator 	s = 2
+zx 	standard score 	zx = (x-x) / sx 	 
+X ~ 	distribution of X 	distribution of random variable X 	X ~ N(0,3)
+N(μ,σ2) 	normal distribution 	gaussian distribution 	X ~ N(0,3)
+U(a,b) 	uniform distribution 	equal probability in range a,b  	X ~ U(0,3)
+exp(λ) 	exponential distribution 	f (x) = λe-λx , x≥0 	 
+gamma(c, λ) 	gamma distribution 	f (x) = λ c xc-1e-λx / Γ(c), x≥0 	 
+χ 2(k) 	chi-square distribution 	f (x) = xk/2-1e-x/2 / ( 2k/2 Γ(k/2) ) 	 
+F (k1, k2) 	F distribution 	  	 
+Bin(n,p) 	binomial distribution 	f (k) = nCk pk(1-p)n-k 	 
+Poisson(λ) 	Poisson distribution 	f (k) = λke-λ / k! 	 
+Geom(p) 	geometric distribution 	f (k) =  p(1-p) k 	 
+HG(N,K,n) 	hyper-geometric distribution 	  	 
+Bern(p) 	Bernoulli distribution 	  	 
+Combinatorics Symbols
+Symbol 	Symbol Name 	Meaning / definition 	Example
+n! 	factorial 	n! = 1⋅2⋅3⋅…⋅n 	5! = 1⋅2⋅3⋅4⋅5 = 120
+nPk 	permutation 	&lt;em&gt;{n}P&lt;/em&gt;{k}=\frac{n!}{(n-k)!} 	5P3 = 5! / (5-3)! = 60
+nCk&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;combination 	_{n}C_{k}=\binom{n}{k}=\frac{n!}{k!(n-k)!} 	5C3 = 5!/[3!(5-3)!]=10 Set theory symbols Symbol 	Symbol Name 	Meaning / definition 	Example { } 	set 	a collection of elements 	A = {3,7,9,14}, B = {9,14,28} A ∩ B 	intersection 	objects that belong to set A and set B 	A ∩ B = {9,14} A ∪ B 	union 	objects that belong to set A or set B 	A ∪ B = {3,7,9,14,28} A ⊆ B 	subset 	A is a subset of B. set A is included in set B. 	{9,14,28} ⊆ {9,14,28} A ⊂ B 	proper subset / strict subset 	A is a subset of B, but A is not equal to B. 	{9,14} ⊂ {9,14,28} A ⊄ B 	not subset 	set A is not a subset of set B 	{9,66} ⊄ {9,14,28} A ⊇ B 	superset 	A is a superset of B. set A includes set B 	{9,14,28} ⊇ {9,14,28} A ⊃ B 	proper superset / strict superset 	A is a superset of B, but B is not equal to A. 	{9,14,28} ⊃ {9,14} A ⊅ B 	not superset 	set A is not a superset of set B 	{9,14,28} ⊅ {9,66} 2A 	power set 	all subsets of A 	  \mathcal{P}(A) 	power set 	all subsets of A 	  A = B 	equality 	both sets have the same members 	A={3,9,14}, B={3,9,14}, A=B Ac 	complement 	all the objects that do not belong to set A 	  A \ B 	relative complement 	objects that belong to A and not to B 	A = {3,9,14}, B = {1,2,3}, A-B = {9,14} A - B 	relative complement 	objects that belong to A and not to B 	A = {3,9,14}, B = {1,2,3}, A-B = {9,14} A ∆ B 	symmetric difference 	objects that belong to A or B but not to their intersection 	A = {3,9,14}, B = {1,2,3}, A ∆ B = {1,2,9,14} A ⊖ B 	symmetric difference 	objects that belong to A or B but not to their intersection 	A = {3,9,14}, B = {1,2,3}, A ⊖ B = {1,2,9,14} a∈A 	element of, belongs to 	set membership 	A={3,9,14}, 3 ∈ A x∉A 	not element of 	no set membership 	A={3,9,14}, 1 ∉ A (a,b) 	ordered pair 	collection of 2 elements 	  A×B 	cartesian product 	set of all ordered pairs from A and B 	  |A| 	cardinality 	the number of elements of set A 	A={3,9,14}, |A|=3 #A 	cardinality 	the number of elements of set A 	A={3,9,14}, #A=3
+aleph-null 	infinite cardinality of natural numbers set 	 
+aleph-one 	cardinality of countable ordinal numbers set 	  Ø 	empty set 	Ø = { } 	C = {Ø} \mathbb{U} 	universal set 	set of all possible values 	  \mathbb{N}0 	natural numbers / whole numbers  set (with zero) 	\mathbb{N}0 = {0,1,2,3,4,...} 	0 ∈ \mathbb{N}0 \mathbb{N}1 	natural numbers / whole numbers  set (without zero) 	\mathbb{N}1 = {1,2,3,4,5,...} 	6 ∈ \mathbb{N}1 \mathbb{Z} 	integer numbers set 	\mathbb{Z} = {...-3,-2,-1,0,1,2,3,...} 	-6 ∈ \mathbb{Z} \mathbb{Q} 	rational numbers set 	\mathbb{Q} = {x | x=a/b, a,b∈\mathbb{Z}} 	2/6 ∈ \mathbb{Q} \mathbb{R} 	real numbers set 	\mathbb{R} = {x | -∞ &amp;lt; x &amp;lt;∞} 	6.343434∈\mathbb{R} \mathbb{C} 	complex numbers set 	\mathbb{C} = {z | z=a+bi, -∞&amp;lt;a&amp;lt;∞,      -∞&amp;lt;b&amp;lt;∞} 	6+2i ∈ \mathbb{C} Logic symbols Symbol 	Symbol Name 	Meaning / definition 	Example ⋅ 	and 	and 	x ⋅ y ^ 	caret / circumflex 	and 	x ^ y &amp;amp; 	ampersand 	and 	x &amp;amp; y + 	plus 	or 	x + y ∨ 	reversed caret 	or 	x ∨ y | 	vertical line 	or 	x | y x' 	single quote 	not - negation 	x' x 	bar 	not - negation 	x ¬ 	not 	not - negation 	¬ x ! 	exclamation mark 	not - negation 	! x ⊕ 	circled plus / oplus 	exclusive or - xor 	x ⊕ y ~ 	tilde 	negation 	~ x ⇒ 	implies 	  	  ⇔ 	equivalent 	if and only if (iff) 	  ↔ 	equivalent 	if and only if (iff) 	  ∀ 	for all 	  	  ∃ 	there exists 	  	  ∄ 	there does not exists 	  	  ∴ 	therefore 	  	  ∵ 	because / since 	  	  Calculus &amp;amp; analysis symbols Symbol 	Symbol Name 	Meaning / definition 	Example \lim_{x\to x0}f(x) 	limit 	limit value of a function 	  ε 	epsilon 	represents a very small number, near zero 	ε → 0 e 	e constant / Euler's number 	e = 2.718281828... 	e = lim (1+1/x)x , x→∞ y ' 	derivative 	derivative - Lagrange's notation 	(3x3)' = 9x2 y '' 	second derivative 	derivative of derivative 	(3x3)'' = 18x y(n) 	nth derivative 	n times derivation 	(3x3)(3) = 18 \frac{dy}{dx} 	derivative 	derivative - Leibniz's notation 	d(3x3)/dx = 9x2 \frac{d^2y}{dx^2} 	second derivative 	derivative of derivative 	d2(3x3)/dx2 = 18x \frac{d^ny}{dx^n} 	nth derivative 	n times derivation 	  \dot{y} 	time derivative 	derivative by time - Newton's notation 	 
+time second derivative 	derivative of derivative 	  Dx y 	derivative 	derivative - Euler's notation 	  Dx2y 	second derivative 	derivative of derivative 	  \frac{\partial f(x,y)}{\partial x} 	partial derivative 	  	∂(x2+y2)/∂x = 2x ∫ 	integral 	opposite to derivation 	∫ f(x)dx ∫∫ 	double integral 	integration of function of 2 variables 	∫∫ f(x,y)dxdy ∫∫∫ 	triple integral 	integration of function of 3 variables 	∫∫∫ f(x,y,z)dxdydz ∮ 	closed contour / line integral 	  	  ∯ 	closed surface integral 	  	  ∰ 	closed volume integral 	  	  [a,b] 	closed interval 	[a,b] = {x | a ≤ x ≤ b} 	  (a,b) 	open interval 	(a,b) = {x | a &amp;lt; x &amp;lt; b} 	  i 	imaginary unit 	i ≡ √-1 	z = 3 + 2i z* 	complex conjugate 	z = a+bi → z*=a-bi 	z* = 3 - 2i z 	complex conjugate 	z = a+bi → z = a-bi 	z = 3 - 2i ∇ 	nabla / del 	gradient / divergence operator 	∇f (x,y,z)
+vector 	  	 
+unit vector 	  	  x * y 	convolution 	y(t) = x(t) * h(t) 	 
+Laplace transform 	F(s) = {f (t)} 	 
+Fourier transform 	X(ω) = {f (t)} 	  δ 	delta function 	  	  ∞ 	lemniscate 	infinity symbol 	  Numeral symbols Name 	Western Arabic 	Roman 	Eastern Arabic 	Hebrew zero 	0 	  	٠ 	  one 	1 	I 	١ 	א two 	2 	II 	٢ 	ב three 	3 	III 	٣ 	ג four 	4 	IV 	٤ 	ד five 	5 	V 	٥ 	ה six 	6 	VI 	٦ 	ו seven 	7 	VII 	٧ 	ז eight 	8 	VIII 	٨ 	ח nine 	9 	IX 	٩ 	ט ten 	10 	X 	١٠ 	י eleven 	11 	XI 	١١ 	יא twelve 	12 	XII 	١٢ 	יב thirteen 	13 	XIII 	١٣ 	יג fourteen 	14 	XIV 	١٤ 	יד fifteen 	15 	XV 	١٥ 	טו sixteen 	16 	XVI 	١٦ 	טז seventeen 	17 	XVII 	١٧ 	יז eighteen 	18 	XVIII 	١٨ 	יח nineteen 	19 	XIX 	١٩ 	יט twenty 	20 	XX 	٢٠ 	כ thirty 	30 	XXX 	٣٠ 	ל forty 	40 	XL 	٤٠ 	מ fifty 	50 	L 	٥٠ 	נ sixty 	60 	LX 	٦٠ 	ס seventy 	70 	LXX 	٧٠ 	ע eighty 	80 	LXXX 	٨٠ 	פ ninety 	90 	XC 	٩٠ 	צ one hundred 	100 	C 	١٠٠ 	ק
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Greek alphabet letters
+Upper Case Letter 	Lower Case Letter 	Greek Letter Name 	English Equivalent 	Letter Name Pronounce
+Α 	α 	Alpha 	a 	al-fa
+Β 	β 	Beta 	b 	be-ta
+Γ 	γ 	Gamma 	g 	ga-ma
+Δ 	δ 	Delta 	d 	del-ta
+Ε 	ε 	Epsilon 	e 	ep-si-lon
+Ζ 	ζ 	Zeta 	z 	ze-ta
+Η 	η 	Eta 	h 	eh-ta
+Θ 	θ 	Theta 	th 	te-ta
+Ι 	ι 	Iota 	i 	io-ta
+Κ 	κ 	Kappa 	k 	ka-pa
+Λ 	λ 	Lambda 	l 	lam-da
+Μ 	μ 	Mu 	m 	m-yoo
+Ν 	ν 	Nu 	n 	noo
+Ξ 	ξ 	Xi 	x 	x-ee
+Ο 	ο 	Omicron 	o 	o-mee-c-ron
+Π 	π 	Pi 	p 	pa-yee
+Ρ 	ρ 	Rho 	r 	row
+Σ 	σ 	Sigma 	s 	sig-ma
+Τ 	τ 	Tau 	t 	ta-oo
+Υ 	υ 	Upsilon 	u 	oo-psi-lon
+Φ 	φ 	Phi 	ph 	f-ee
+Χ 	χ 	Chi 	ch 	kh-ee
+Ψ 	ψ 	Psi 	ps 	p-see
+Ω 	ω 	Omega 	o 	o-me-ga
+Roman numerals
+Number 	Roman numeral
+0 	not defined
+1 	I
+2 	II
+3 	III
+4 	IV
+5 	V
+6 	VI
+7 	VII
+8 	VIII
+9 	IX
+10 	X
+11 	XI
+12 	XII
+13 	XIII
+14 	XIV
+15 	XV
+16 	XVI
+17 	XVII
+18 	XVIII
+19 	XIX
+20 	XX
+30 	XXX
+40 	XL
+50 	L
+60 	LX
+70 	LXX
+80 	LXXX
+90 	XC
+100 	C
+200 	CC
+300 	CCC
+400 	CD
+500 	D
+600 	DC
+700 	DCC
+800 	DCCC
+900 	CM
+1000 	M
+5000 	V
+10000 	X
+50000 	L
+100000 	C
+500000 	D
+1000000 	M&lt;/p&gt;</content><author><name></name></author><summary type="html">Basic math symbols الرمز الاسم مثال = إاشارة المساواة 5 = 2+3 ≠ إشارة اللامساواة 5 ≠ 4 ≈ علامة التقريب sin(0.01) ≈ 0.01, x ≈ y means x is approximately equal to y منمنتمنت - [ ] الرمز الاسم مثال توضيح = إشارة المساواة                                                                                     | | مثال | الاسم | الرمز | |–|——|——-|——-| ( ) parentheses calculate expression inside first 2 × (3+5) = 16 [ ] brackets calculate expression inside first [(1+2)×(1+5)] = 18 plus sign addition 1 + 1 = 2 − minus sign subtraction 2 − 1 = 1 ± plus - minus both plus and minus operations 3 ± 5 = 8 or -2 ± minus - plus both minus and plus operations 3 ∓ 5 = -2 or 8 asterisk multiplication 2 * 3 = 6 × times sign multiplication 2 × 3 = 6 ⋅ multiplication dot multiplication 2 ⋅ 3 = 6 ÷ division sign / obelus division 6 ÷ 2 = 3 / division slash division 6 / 2 = 3 — horizontal line division / fraction \frac{6}{2}=3 mod modulo remainder calculation 7 mod 2 = 1 . period decimal point, decimal separator 2.56 = 2+56/100 ab power exponent 23 = 8 a^b caret exponent 2 ^ 3 = 8 √a square root √a ⋅ √a = a √9 = ±3 3√a cube root 3√a ⋅ 3√a ⋅ 3√a = a 3√8 = 2 4√a fourth root 4√a ⋅ 4√a ⋅ 4√a ⋅ 4√a = a 4√16 = ±2 n√a n-th root (radical) for n=3, n√8 = 2 % percent 1% = 1/100 10% × 30 = 3 ‰ per-mille 1‰ = 1/1000 = 0.1% 10‰ × 30 = 0.3 ppm per-million 1ppm = 1/1000000 10ppm × 30 = 0.0003 ppb per-billion 1ppb = 1/1000000000 10ppb × 30 = 3×10-7 ppt per-trillion 1ppt = 10-12 10ppt × 30 = 3×10-10 Geometry symbols Symbol Symbol Name Meaning / definition Example ∠ angle formed by two rays ∠ABC = 30° measured angle ABC = 30° spherical angle AOB = 30° ∟ right angle = 90° α = 90° ° degree 1 turn = 360° α = 60° deg degree 1 turn = 360deg α = 60deg ′ prime arcminute, 1° = 60′ α = 60°59′ ″ double prime arcsecond, 1′ = 60″ α = 60°59′59″ line infinite line AB line segment line from point A to point B ray line that start from point A arc arc from point A to point B = 60° ⊥ perpendicular perpendicular lines (90° angle) AC ⊥ BC ∥ parallel parallel lines AB ∥ CD ≅ congruent to equivalence of geometric shapes and size ∆ABC≅ ∆XYZ ~ similarity same shapes, not same size ∆ABC~ ∆XYZ Δ triangle triangle shape ΔABC≅ ΔBCD |x-y| distance distance between points x and y | x-y | = 5 π pi constant π = 3.141592654… is the ratio between the circumference and diameter of a circle c = π⋅d = 2⋅π⋅r rad radians radians angle unit 360° = 2π rad c radians radians angle unit 360° = 2π c grad gradians / gons grads angle unit 360° = 400 grad g gradians / gons grads angle unit 360° = 400 g Algebra symbols Symbol Symbol Name Meaning / definition Example x x variable unknown value to find when 2x = 4, then x = 2 ≡ equivalence identical to ≜ equal by definition equal by definition := equal by definition equal by definition ~ approximately equal weak approximation 11 ~ 10 ≈ approximately equal approximation sin(0.01) ≈ 0.01 ∝ proportional to proportional to y ∝ x when y = kx, k constant ∞ lemniscate infinity symbol ≪ much less than much less than 1 ≪ 1000000 ≫ much greater than much greater than 1000000 ≫ 1 ( ) parentheses calculate expression inside first 2 * (3+5) = 16 [ ] brackets calculate expression inside first [(1+2)(1+5)] = 18 { } braces set ⌊x⌋ floor brackets rounds number to lower integer ⌊4.3⌋ = 4 ⌈x⌉ ceiling brackets rounds number to upper integer ⌈4.3⌉ = 5 x! exclamation mark factorial 4! = 1234 = 24 | x | single vertical bar absolute value | -5 | = 5 f (x) function of x maps values of x to f(x) f (x) = 3x+5 (f ∘ g) function composition (f ∘ g) (x) = f (g(x)) f (x)=3x,g(x)=x-1 ⇒(f ∘ g)(x)=3(x-1) (a,b) open interval (a,b) = {x | a &amp;lt; x &amp;lt; b} x∈ (2,6) [a,b] closed interval [a,b] = {x | a ≤ x ≤ b} x ∈ [2,6] ∆ delta change / difference ∆t = t1 - t0 ∆ discriminant Δ = b2 - 4ac ∑ sigma summation - sum of all values in range of series ∑ xi= x1+x2+…+xn ∑∑ sigma double summation ∏ capital pi product - product of all values in range of series ∏ xi=x1∙x2∙…∙xn e e constant / Euler’s number e = 2.718281828… e = lim (1+1/x)x , x→∞ γ Euler-Mascheroni constant γ = 0.5772156649… φ golden ratio golden ratio constant π pi constant π = 3.141592654… is the ratio between the circumference and diameter of a circle c = π⋅d = 2⋅π⋅r Linear Algebra Symbols Symbol Symbol Name Meaning / definition Example · dot scalar product a · b × cross vector product a × b A⊗B tensor product tensor product of A and B A ⊗ B \langle x,y \rangle inner product [ ] brackets matrix of numbers ( ) parentheses matrix of numbers | A | determinant determinant of matrix A det(A) determinant determinant of matrix A || x || double vertical bars norm AT transpose matrix transpose (AT)ij = (A)ji A† Hermitian matrix matrix conjugate transpose (A†)ij = (A)ji A* Hermitian matrix matrix conjugate transpose (A*)ij = (A)ji A -1 inverse matrix A A-1 = I rank(A) matrix rank rank of matrix A rank(A) = 3 dim(U) dimension dimension of matrix A dim(U) = 3 Probability and statistics symbols Symbol Symbol Name Meaning / definition Example P(A) probability function probability of event A P(A) = 0.5 P(A ⋂ B) probability of events intersection probability that of events A and B P(A⋂B) = 0.5 P(A ⋃ B) probability of events union probability that of events A or B P(A⋃B) = 0.5 P(A | B) conditional probability function probability of event A given event B occured P(A | B) = 0.3 f (x) probability density function (pdf) P(a ≤ x ≤ b) = ∫ f (x) dx F(x) cumulative distribution function (cdf) F(x) = P(X≤ x) μ population mean mean of population values μ = 10 E(X) expectation value expected value of random variable X E(X) = 10 E(X | Y) conditional expectation expected value of random variable X given Y E(X | Y=2) = 5 var(X) variance variance of random variable X var(X) = 4 σ2 variance variance of population values σ2 = 4 std(X) standard deviation standard deviation of random variable X std(X) = 2 σX standard deviation standard deviation value of random variable X σX = 2 median middle value of random variable x cov(X,Y) covariance covariance of random variables X and Y cov(X,Y) = 4 corr(X,Y) correlation correlation of random variables X and Y corr(X,Y) = 0.6 ρX,Y correlation correlation of random variables X and Y ρX,Y = 0.6 ∑ summation summation - sum of all values in range of series ∑∑ double summation double summation Mo mode value that occurs most frequently in population MR mid-range MR = (xmax+xmin)/2 Md sample median half the population is below this value Q1 lower / first quartile 25% of population are below this value Q2 median / second quartile 50% of population are below this value = median of samples Q3 upper / third quartile 75% of population are below this value x sample mean average / arithmetic mean x = (2+5+9) / 3 = 5.333 s 2 sample variance population samples variance estimator s 2 = 4 s sample standard deviation population samples standard deviation estimator s = 2 zx standard score zx = (x-x) / sx X ~ distribution of X distribution of random variable X X ~ N(0,3) N(μ,σ2) normal distribution gaussian distribution X ~ N(0,3) U(a,b) uniform distribution equal probability in range a,b X ~ U(0,3) exp(λ) exponential distribution f (x) = λe-λx , x≥0 gamma(c, λ) gamma distribution f (x) = λ c xc-1e-λx / Γ(c), x≥0 χ 2(k) chi-square distribution f (x) = xk/2-1e-x/2 / ( 2k/2 Γ(k/2) ) F (k1, k2) F distribution Bin(n,p) binomial distribution f (k) = nCk pk(1-p)n-k Poisson(λ) Poisson distribution f (k) = λke-λ / k! Geom(p) geometric distribution f (k) = p(1-p) k HG(N,K,n) hyper-geometric distribution Bern(p) Bernoulli distribution Combinatorics Symbols Symbol Symbol Name Meaning / definition Example n! factorial n! = 1⋅2⋅3⋅…⋅n 5! = 1⋅2⋅3⋅4⋅5 = 120 nPk permutation {n}P{k}=\frac{n!}{(n-k)!} 5P3 = 5! / (5-3)! = 60 nCk combination _{n}C_{k}=\binom{n}{k}=\frac{n!}{k!(n-k)!} 5C3 = 5!/[3!(5-3)!]=10 Set theory symbols Symbol Symbol Name Meaning / definition Example { } set a collection of elements A = {3,7,9,14}, B = {9,14,28} A ∩ B intersection objects that belong to set A and set B A ∩ B = {9,14} A ∪ B union objects that belong to set A or set B A ∪ B = {3,7,9,14,28} A ⊆ B subset A is a subset of B. set A is included in set B. {9,14,28} ⊆ {9,14,28} A ⊂ B proper subset / strict subset A is a subset of B, but A is not equal to B. {9,14} ⊂ {9,14,28} A ⊄ B not subset set A is not a subset of set B {9,66} ⊄ {9,14,28} A ⊇ B superset A is a superset of B. set A includes set B {9,14,28} ⊇ {9,14,28} A ⊃ B proper superset / strict superset A is a superset of B, but B is not equal to A. {9,14,28} ⊃ {9,14} A ⊅ B not superset set A is not a superset of set B {9,14,28} ⊅ {9,66} 2A power set all subsets of A \mathcal{P}(A) power set all subsets of A A = B equality both sets have the same members A={3,9,14}, B={3,9,14}, A=B Ac complement all the objects that do not belong to set A A \ B relative complement objects that belong to A and not to B A = {3,9,14}, B = {1,2,3}, A-B = {9,14} A - B relative complement objects that belong to A and not to B A = {3,9,14}, B = {1,2,3}, A-B = {9,14} A ∆ B symmetric difference objects that belong to A or B but not to their intersection A = {3,9,14}, B = {1,2,3}, A ∆ B = {1,2,9,14} A ⊖ B symmetric difference objects that belong to A or B but not to their intersection A = {3,9,14}, B = {1,2,3}, A ⊖ B = {1,2,9,14} a∈A element of, belongs to set membership A={3,9,14}, 3 ∈ A x∉A not element of no set membership A={3,9,14}, 1 ∉ A (a,b) ordered pair collection of 2 elements A×B cartesian product set of all ordered pairs from A and B |A| cardinality the number of elements of set A A={3,9,14}, |A|=3 #A cardinality the number of elements of set A A={3,9,14}, #A=3 aleph-null infinite cardinality of natural numbers set aleph-one cardinality of countable ordinal numbers set Ø empty set Ø = { } C = {Ø} \mathbb{U} universal set set of all possible values \mathbb{N}0 natural numbers / whole numbers set (with zero) \mathbb{N}0 = {0,1,2,3,4,...} 0 ∈ \mathbb{N}0 \mathbb{N}1 natural numbers / whole numbers set (without zero) \mathbb{N}1 = {1,2,3,4,5,...} 6 ∈ \mathbb{N}1 \mathbb{Z} integer numbers set \mathbb{Z} = {...-3,-2,-1,0,1,2,3,...} -6 ∈ \mathbb{Z} \mathbb{Q} rational numbers set \mathbb{Q} = {x | x=a/b, a,b∈\mathbb{Z}} 2/6 ∈ \mathbb{Q} \mathbb{R} real numbers set \mathbb{R} = {x | -∞ &amp;lt; x &amp;lt;∞} 6.343434∈\mathbb{R} \mathbb{C} complex numbers set \mathbb{C} = {z | z=a+bi, -∞&amp;lt;a&amp;lt;∞, -∞&amp;lt;b&amp;lt;∞} 6+2i ∈ \mathbb{C} Logic symbols Symbol Symbol Name Meaning / definition Example ⋅ and and x ⋅ y ^ caret / circumflex and x ^ y &amp;amp; ampersand and x &amp;amp; y + plus or x + y ∨ reversed caret or x ∨ y | vertical line or x | y x' single quote not - negation x' x bar not - negation x ¬ not not - negation ¬ x ! exclamation mark not - negation ! x ⊕ circled plus / oplus exclusive or - xor x ⊕ y ~ tilde negation ~ x ⇒ implies ⇔ equivalent if and only if (iff) ↔ equivalent if and only if (iff) ∀ for all ∃ there exists ∄ there does not exists ∴ therefore ∵ because / since Calculus &amp;amp; analysis symbols Symbol Symbol Name Meaning / definition Example \lim_{x\to x0}f(x) limit limit value of a function ε epsilon represents a very small number, near zero ε → 0 e e constant / Euler's number e = 2.718281828... e = lim (1+1/x)x , x→∞ y ' derivative derivative - Lagrange's notation (3x3)' = 9x2 y '' second derivative derivative of derivative (3x3)'' = 18x y(n) nth derivative n times derivation (3x3)(3) = 18 \frac{dy}{dx} derivative derivative - Leibniz's notation d(3x3)/dx = 9x2 \frac{d^2y}{dx^2} second derivative derivative of derivative d2(3x3)/dx2 = 18x \frac{d^ny}{dx^n} nth derivative n times derivation \dot{y} time derivative derivative by time - Newton's notation time second derivative derivative of derivative Dx y derivative derivative - Euler's notation Dx2y second derivative derivative of derivative \frac{\partial f(x,y)}{\partial x} partial derivative ∂(x2+y2)/∂x = 2x ∫ integral opposite to derivation ∫ f(x)dx ∫∫ double integral integration of function of 2 variables ∫∫ f(x,y)dxdy ∫∫∫ triple integral integration of function of 3 variables ∫∫∫ f(x,y,z)dxdydz ∮ closed contour / line integral ∯ closed surface integral ∰ closed volume integral [a,b] closed interval [a,b] = {x | a ≤ x ≤ b} (a,b) open interval (a,b) = {x | a &amp;lt; x &amp;lt; b} i imaginary unit i ≡ √-1 z = 3 + 2i z* complex conjugate z = a+bi → z*=a-bi z* = 3 - 2i z complex conjugate z = a+bi → z = a-bi z = 3 - 2i ∇ nabla / del gradient / divergence operator ∇f (x,y,z) vector unit vector x * y convolution y(t) = x(t) * h(t) Laplace transform F(s) = {f (t)} Fourier transform X(ω) = {f (t)} δ delta function ∞ lemniscate infinity symbol Numeral symbols Name Western Arabic Roman Eastern Arabic Hebrew zero 0 ٠ one 1 I ١ א two 2 II ٢ ב three 3 III ٣ ג four 4 IV ٤ ד five 5 V ٥ ה six 6 VI ٦ ו seven 7 VII ٧ ז eight 8 VIII ٨ ח nine 9 IX ٩ ט ten 10 X ١٠ י eleven 11 XI ١١ יא twelve 12 XII ١٢ יב thirteen 13 XIII ١٣ יג fourteen 14 XIV ١٤ יד fifteen 15 XV ١٥ טו sixteen 16 XVI ١٦ טז seventeen 17 XVII ١٧ יז eighteen 18 XVIII ١٨ יח nineteen 19 XIX ١٩ יט twenty 20 XX ٢٠ כ thirty 30 XXX ٣٠ ל forty 40 XL ٤٠ מ fifty 50 L ٥٠ נ sixty 60 LX ٦٠ ס seventy 70 LXX ٧٠ ע eighty 80 LXXX ٨٠ פ ninety 90 XC ٩٠ צ one hundred 100 C ١٠٠ ק Greek alphabet letters Upper Case Letter Lower Case Letter Greek Letter Name English Equivalent Letter Name Pronounce Α α Alpha a al-fa Β β Beta b be-ta Γ γ Gamma g ga-ma Δ δ Delta d del-ta Ε ε Epsilon e ep-si-lon Ζ ζ Zeta z ze-ta Η η Eta h eh-ta Θ θ Theta th te-ta Ι ι Iota i io-ta Κ κ Kappa k ka-pa Λ λ Lambda l lam-da Μ μ Mu m m-yoo Ν ν Nu n noo Ξ ξ Xi x x-ee Ο ο Omicron o o-mee-c-ron Π π Pi p pa-yee Ρ ρ Rho r row Σ σ Sigma s sig-ma Τ τ Tau t ta-oo Υ υ Upsilon u oo-psi-lon Φ φ Phi ph f-ee Χ χ Chi ch kh-ee Ψ ψ Psi ps p-see Ω ω Omega o o-me-ga Roman numerals Number Roman numeral 0 not defined 1 I 2 II 3 III 4 IV 5 V 6 VI 7 VII 8 VIII 9 IX 10 X 11 XI 12 XII 13 XIII 14 XIV 15 XV 16 XVI 17 XVII 18 XVIII 19 XIX 20 XX 30 XXX 40 XL 50 L 60 LX 70 LXX 80 LXXX 90 XC 100 C 200 CC 300 CCC 400 CD 500 D 600 DC 700 DCC 800 DCCC 900 CM 1000 M 5000 V 10000 X 50000 L 100000 C 500000 D 1000000 M</summary></entry><entry><title type="html">إجراءات حماية الخصوصية على الإنترنت</title><link href="http://localhost:4000/ways-to-protect-privacy/" rel="alternate" type="text/html" title="إجراءات حماية الخصوصية على الإنترنت" /><published>2019-11-20T00:00:00+03:00</published><updated>2019-11-20T00:00:00+03:00</updated><id>http://localhost:4000/ways-to-protect-privacy</id><content type="html" xml:base="http://localhost:4000/ways-to-protect-privacy/">&lt;p&gt;إليك أهم الإجراءات التي جمعتها هنا لحماية خصوصيتك على الإنترنت، فجميعنا يستخدم الإنترنت بشكل يومي ويتصفح العديد من المواقع وربما يشتري بضائع من الإنترنت، وفي نفس الأثناء هناك من يحاول جمع كل تلك المعلومات عنك وعن المواقع التي تزورها وماتفعله أثناء تواجدك بها وما إلى ذلك، وقد يتطور الأمر في بعض المواقع لسرقة بياناتك الشخصية ومعلومات الحساب أو استغلال بياناتك في أمور غير أخلاقية.&lt;/p&gt;
 
 &lt;p&gt;أأمل أن يفيد هذا المقال بحماية خصوصيتك بأكبر قدر ممكن لمنع وقوع حوادث خرق الخصوصية والتي قد تكون نتائجها سيئة.&lt;/p&gt;
 
@@ -810,107 +1191,4 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 
 &lt;p&gt;إذا واجهت مشكلة في تطبيق خطوة ما في الشرح فيمكنك السؤال في التعليقات.&lt;/p&gt;
 
-&lt;p&gt;أيضًا إذا كان لديك أي إضافة يمكنك المساهمة في تحسين هذا المقال بالكتابة في التعليقات أو مراسلتي أو اقتراح تعديل على الصفحة من الزر أعلى الصفحة هنا.&lt;/p&gt;</content><author><name></name></author><category term="تقنية" /><category term="أنظمة" /><summary type="html">مرحبًا.. انتشرت في الآونة الأخيرة حواسيب تحوي نظام ويندوز مسبقًا ولا تقبل الإقلاع من قرص USB أو تثبيت أنظمة أخرى على الجهاز، ذلك ﻷن الـ BIOS الذي اعتدنا على التعامل معه والذي يسمح عادة بالإقلاع من أقراص أخرى قد تم استبداله بـ UEFI وهي واجهة جديدة وتكون الإعدادات فيها مختلفة وتحوي secure boot وإعدادات أخرى تمنع الإقلاع من أقراص أخرى مثل USB. سنتعلم هنا كيفية حل هذه المشكلة والإقلاع من USB ضمن وضع الـ UEFI لتثبيت نظام آخر. 1. تهيئة القرص الإقلاعي USB هذه الخطوة مهمة جدًا، فلجعل القرص قابل للإقلاع وتتعرف عليه واجهة الـ UEFI فيجب اتباع الخطوات التالية (وليس من البرامج التي تقوم بذلك فلن تعمل تلك الطرق في هذه الحالة): أولًا نقوم بتهيئة القرص USB لنظام ملفات FAT32 ثم نضيف له boot flag أي نجعله قرص إقلاعي، هذه العملية تتم عن طريق برنامج gparted أو في الويندوز قم بالبحث عن شبيه له لعمل ذلك. في الصورة أدناه كيفية إضافة boot flag للقرص عن طريق برنامج Gparted بعدها سيكون النظام الذي تود تنصيبه لديك على شكل ملف .iso ، نقوم بفتح ذلك الملف: باللينكس بالنقر عليه مرتين وبالويندوز 10 نضغط عليه باليمين ثم Mount، ستظهر لنا الملفات الموجود في ملف الـ iso نقوم بنسخها ولصقها ببساطة في قرص الـ USB، إذا كان هناك أخطاء في نسخ مجلدات الاختصارات فلا تقلق يمكن تجاهل ذلك! إذا كنت تريد تثبيت نظام لينكس (لا أدري بالنسبة للويندوز ولكن يمكنك عمل هذه الخطوة أيضًا إن أمكن!) فيتوجب عليك الذهاب الآن للفلاشة USB ستجد مجلد اسمه EFI اذهب ضمنه للمجلد BOOT وأضف إليه الملف bootia32.efi الذي ستقوم بتحميله من هنا وبهذا تكون الفلاشة USB جاهزة. 2. تغيير إعدادات الـ BIOS مازالت تتيح لك الـ UEFI الوصول لإعدادات الـ BIOS، للذهاب إليها يجب عند بداية تشغيل الجهاز الضغط على زر معين حسب الجهاز وهو Esc أو زر آخر بحسب نوع جهازك. يمكنك البحث على الإنترنت عن كيفية الوصول لإعدادات البيوس في جهازك. مثلًا على جهازي ال Hometech أضغط على Esc فتظهر هذه الشاشة: بعدها عند الذهاب لخيار SCU ستظهر لك شاشة زرقاء، نذهب ضمنها لتبويبة Boot في الأعلى كما في الصورة: نقوم من هناك بإلغاء تفعيل كلا من الخيارات التالية وذلك بتغيير حالتهم لـ Disabled: Quick Boot Quiet Boot EFI Device First UEFI OS Fast Boot وتأكد من تفعيل خيار USB Boot بأن يكون Enabled. بعد ذلك إذا وجدت أي خيار يحوي Secure Boot قم بإلغاء تفعيله، في جهازي وُضعت هذه الخيارات في شاشة منفصلة كما ترى في الصورة الأولى هناك خيار مستقل Secure Boot Option وقمت بإلغائه من هناك. بعدها كما في الصورة الأولى قمت بالذهاب لخيار Boot Manager، أعتقد في معظم الحواسيب يكون عند الإقلاع بالضغط على Esc عندها ستجد الخيارات المتاحة للإقلاع وستجد القرص USB ضمنهم وبذلك تكون قد حُلَّت المشكلة. إذا واجهت مشكلة في تطبيق خطوة ما في الشرح فيمكنك السؤال في التعليقات. أيضًا إذا كان لديك أي إضافة يمكنك المساهمة في تحسين هذا المقال بالكتابة في التعليقات أو مراسلتي أو اقتراح تعديل على الصفحة من الزر أعلى الصفحة هنا.</summary></entry><entry><title type="html">حل مشكلة ضعف إشارة الوايفاي في أبونتو</title><link href="http://localhost:4000/ubuntu-weak-signal-wifi/" rel="alternate" type="text/html" title="حل مشكلة ضعف إشارة الوايفاي في أبونتو" /><published>2019-08-10T00:00:00+03:00</published><updated>2019-08-10T00:00:00+03:00</updated><id>http://localhost:4000/ubuntu-weak-signal-wifi</id><content type="html" xml:base="http://localhost:4000/ubuntu-weak-signal-wifi/">&lt;p&gt;عند تنصيب أبونتو ﻷول مرة على بعض الأجهزة نجد أحيانًا مشكلة في عدم استقبال إشارة الوايفاي أو ضعفها كثيرا، هذه المشكلة ناجمة عن عدم توافق المعرِّف المستخدم افتراضيا في أبونتو مع جهازك، لحل هذه المشكلة افتح الطرفية Terimal واكتب الأوامر التالية:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;نقوم أولًا بتحميل المرِّف الصحيح:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/lwfinger/rtlwifi_new.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ثم نذهب للمسار الذي قمنا بتحميل الملفات إليه:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; cd rtlwifi_new
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ثم نقوم بالبناء والتنصيب بالأمرين التاليين:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; make
- sudo make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;وبذلك نكون قد قمنا بتنصيب المعرِّف الصحيح:&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: لا تحذف المجلد rtlwifi_new ﻷن استخدام المعرف سيكون من خلاله.&lt;/p&gt;
-
-    &lt;p&gt;الآن لاستخدام الإعدادات الصحيحة للهوائي لديك افعل التالي:&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بإلغاء تفعيل المعرِّفات الحالية:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo modprobe -rv rtl8723be
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;الآن قم بتفعيل المعرِّف الجديد مع الإعدادات:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo modprobe rtl8723be ant_sel=1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;انظر الآن للإشارة، هل كل شيئ على مايرام؟ إذا كان الأمر ليس كذلك أعد الخطوات 4 و 5 مع استبدال ant_sel=1 إلى ant_sel=2 في الخطوة 5&lt;/p&gt;
-
-&lt;p&gt;أخيرًا قم بحفظ هذه الإعدادات وجعلها افتراضية بتطبيق الأمر التالي مع استبدال N بـ 1 أو 2 وفقًا لما ناسبك&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    echo &quot;options rtl8723be ant_sel=N&quot; | sudo tee /etc/modprobe.d/rtl8723be.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: يجب إعادة بناء المُعرِّف بعد كل تحديث لنواة لينكس أي الـ kernel&lt;/p&gt;
-
-&lt;p&gt;ﻷي مشكلة أو إضافة معلومات لا تتردد في الكتابة بالتعليقات أو مراسلتي شخصيًا.&lt;/p&gt;</content><author><name></name></author><category term="لينكس" /><summary type="html">عند تنصيب أبونتو ﻷول مرة على بعض الأجهزة نجد أحيانًا مشكلة في عدم استقبال إشارة الوايفاي أو ضعفها كثيرا، هذه المشكلة ناجمة عن عدم توافق المعرِّف المستخدم افتراضيا في أبونتو مع جهازك، لحل هذه المشكلة افتح الطرفية Terimal واكتب الأوامر التالية: نقوم أولًا بتحميل المرِّف الصحيح: git clone https://github.com/lwfinger/rtlwifi_new.git ثم نذهب للمسار الذي قمنا بتحميل الملفات إليه: cd rtlwifi_new ثم نقوم بالبناء والتنصيب بالأمرين التاليين: make sudo make install وبذلك نكون قد قمنا بتنصيب المعرِّف الصحيح: ملاحظة: لا تحذف المجلد rtlwifi_new ﻷن استخدام المعرف سيكون من خلاله. الآن لاستخدام الإعدادات الصحيحة للهوائي لديك افعل التالي: قم بإلغاء تفعيل المعرِّفات الحالية: sudo modprobe -rv rtl8723be الآن قم بتفعيل المعرِّف الجديد مع الإعدادات: sudo modprobe rtl8723be ant_sel=1 انظر الآن للإشارة، هل كل شيئ على مايرام؟ إذا كان الأمر ليس كذلك أعد الخطوات 4 و 5 مع استبدال ant_sel=1 إلى ant_sel=2 في الخطوة 5 أخيرًا قم بحفظ هذه الإعدادات وجعلها افتراضية بتطبيق الأمر التالي مع استبدال N بـ 1 أو 2 وفقًا لما ناسبك echo &quot;options rtl8723be ant_sel=N&quot; | sudo tee /etc/modprobe.d/rtl8723be.conf ملاحظة: يجب إعادة بناء المُعرِّف بعد كل تحديث لنواة لينكس أي الـ kernel ﻷي مشكلة أو إضافة معلومات لا تتردد في الكتابة بالتعليقات أو مراسلتي شخصيًا.</summary></entry><entry><title type="html">كيفية تصحيح بعض أخطاء الفيديوهات</title><link href="http://localhost:4000/video-errors-correction/" rel="alternate" type="text/html" title="كيفية تصحيح بعض أخطاء الفيديوهات" /><published>2019-08-04T00:00:00+03:00</published><updated>2019-08-04T00:00:00+03:00</updated><id>http://localhost:4000/video-errors-correction</id><content type="html" xml:base="http://localhost:4000/video-errors-correction/">&lt;p&gt;مرحبًا، هناك العديد من الفيديوهات القديمة نوعا ما والموجودة على اليوتيوب مثلا والتي يكون فيها الصوت متأخر قليلا عن الصورة أو العكس، أو يكون الصوت يخرج من سماعة واحد أو مكبر صوت واحد (أي يمين مثلا دون اليسار)، يمكن تصحيح هذه الأخطاء بشكل مباشر للمشاهدة مباشرة دون التعديل على الفيديو، ويمكن أيضًا إن أردنا تصحيحه بشكل دائم وإعادة نشره عبر محررات الفيديو. ولكننا هنا سنتحدث عن التصحيح باستخدام برنامج vlc للمشاهدة فقط، فمن يعمل على محررات الفيديو يعرف كيف يمكنه تصحيح ذلك وتصدير الفيديو بعد تصحيح أخطائه..&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#تصحيح-عدم-تطابق-الصوت-مع-الصورة&quot; id=&quot;markdown-toc-تصحيح-عدم-تطابق-الصوت-مع-الصورة&quot;&gt;تصحيح عدم تطابق الصوت مع الصورة&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#ﻷنظمة-الحاسوب-ويندوز-لينكس-ماك&quot; id=&quot;markdown-toc-ﻷنظمة-الحاسوب-ويندوز-لينكس-ماك&quot;&gt;ﻷنظمة الحاسوب (ويندوز، لينكس، ماك)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#على-اﻷندرويد&quot; id=&quot;markdown-toc-على-اﻷندرويد&quot;&gt;على اﻷندرويد&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#تصحيح-خروج-الصوت-من-جهة-واحدة&quot; id=&quot;markdown-toc-تصحيح-خروج-الصوت-من-جهة-واحدة&quot;&gt;تصحيح خروج الصوت من جهة واحدة&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;تصحيح-عدم-تطابق-الصوت-مع-الصورة&quot;&gt;تصحيح عدم تطابق الصوت مع الصورة&lt;/h1&gt;
-
-&lt;h2 id=&quot;ﻷنظمة-الحاسوب-ويندوز-لينكس-ماك&quot;&gt;ﻷنظمة الحاسوب (ويندوز، لينكس، ماك)&lt;/h2&gt;
-
-&lt;p&gt;نستخدم لهذا الغرض &lt;a href=&quot;https://www.videolan.org/vlc/index.html&quot;&gt;مشغل الفيديو الشهير والمجاني vlc&lt;/a&gt; والذي يعمل على جميع أنظمة الحاسوب والمحمول.
-وهنا إما نقوم بتنزيل الفيديو المطلوب والذي يحوي الأخطاء التي ذكرناها من الإنترنت ليصبح لدينا على الجهاز ومنه نشغله مباشرة باستخدام برنامج vlc أو إذا كان الفيديو على اليوتيوب أو موقع شبيه به يدعم البث video stream فنقوم بتشغيله مباشرة من النت بفتح برنامج vlc والذهاب لـ Media &amp;gt; Open Network Stream كما في الصورة:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/vlc1.png&quot; alt=&quot;open network stream vlc&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ثم نضع رابط الفيديو كما في الصورة أدناه ونضغط على play
-&lt;img src=&quot;/assets/vlc2.png&quot; alt=&quot;open network stream vlc - 2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;والآن بعد تشغيل الفيديو سواء بعد تنزيله من النت أي من الجهاز مباشرة أو من الإنترنت مباشرة، لتصحيح خطأ عدم تزامن الصوت مع الصورة على نظامي الويندوز واللينكس نضغط على الكيبورد على أحد زري &lt;kbd&gt;J&lt;/kbd&gt; و &lt;kbd&gt;K&lt;/kbd&gt; لتأخير وتسبيق الصوت عن الصورة على التوالي. على نظام الماك تكون الاختصارات &lt;kbd&gt;G&lt;/kbd&gt; و &lt;kbd&gt;F&lt;/kbd&gt;
-نستمر في الضغط على أحد هذه الأزرار بحسب الخطأ في الفيديو لنحصل على النتيجة المطلوبة.&lt;/p&gt;
-
-&lt;h2 id=&quot;على-اﻷندرويد&quot;&gt;على اﻷندرويد&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بتحميل تطبيق vlc من &lt;a href=&quot;https://play.google.com/store/apps/details?id=org.videolan.vlc&quot;&gt;Google play&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;قم بفتح الفيديو الموجود على الهاتف أو بنسخ رابط الفيديو من اليوتيوب أو مايشبهه من مواقع الفيديو والذهاب للقائمة الجانبية للبرنامج ثم Stream ولصق الرابط هناك&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;من الخيارات في الأسفل اضغط على الأيقونة الظاهرة في الصورة ثم Audio delay&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/vlc3.jpg&quot; alt=&quot;Audio delay option in vlc Android&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;اضغط على زري &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; للتعديل والحصول على النتيجة المطلوبة&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;تصحيح-خروج-الصوت-من-جهة-واحدة&quot;&gt;تصحيح خروج الصوت من جهة واحدة&lt;/h1&gt;
-
-&lt;p&gt;بعض الفيديوهات تحوي على خطأ في الصوت وهو خروجه من جهة واحدة (اليمين أو اليسار) ويتضح هذا الخطأ تمامًا عند ارتداء سماعات. لتصحيح هذا الخطأ ضمن برنامج vlc ( ﻷنظمة الحاسوب فقط حيث أنني لم أعثر على هذا الخيار في النسخة المخصصة ﻷندرويد) بعد فتح الفيديو المطلوب نضغط باليمين على الشاشة ثم Audio &amp;gt; Stereo Mode &amp;gt; Left كما هو مبين في الصورة:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/vlc4.jpg&quot; alt=&quot;حل مشكلة خروج الصوت من جهة أو منفذ واحد&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;يجدر الإشارة في النهاية إلى أننا قمنا بتغطية ميزتين فقط من مزايا مشغل الفيديو العملاق VLC والذي يحوي مزايا أخرى مثل التحويل بين صيغ الصوت والصورة وتسجيل فيديو للشاشة لعمل فيديوهات تعليمية مثلا وغيرها من المزايا..&lt;/p&gt;</content><author><name></name></author><category term="تقنية" /><summary type="html">مرحبًا، هناك العديد من الفيديوهات القديمة نوعا ما والموجودة على اليوتيوب مثلا والتي يكون فيها الصوت متأخر قليلا عن الصورة أو العكس، أو يكون الصوت يخرج من سماعة واحد أو مكبر صوت واحد (أي يمين مثلا دون اليسار)، يمكن تصحيح هذه الأخطاء بشكل مباشر للمشاهدة مباشرة دون التعديل على الفيديو، ويمكن أيضًا إن أردنا تصحيحه بشكل دائم وإعادة نشره عبر محررات الفيديو. ولكننا هنا سنتحدث عن التصحيح باستخدام برنامج vlc للمشاهدة فقط، فمن يعمل على محررات الفيديو يعرف كيف يمكنه تصحيح ذلك وتصدير الفيديو بعد تصحيح أخطائه.. تصحيح عدم تطابق الصوت مع الصورة ﻷنظمة الحاسوب (ويندوز، لينكس، ماك) على اﻷندرويد تصحيح خروج الصوت من جهة واحدة تصحيح عدم تطابق الصوت مع الصورة ﻷنظمة الحاسوب (ويندوز، لينكس، ماك) نستخدم لهذا الغرض مشغل الفيديو الشهير والمجاني vlc والذي يعمل على جميع أنظمة الحاسوب والمحمول. وهنا إما نقوم بتنزيل الفيديو المطلوب والذي يحوي الأخطاء التي ذكرناها من الإنترنت ليصبح لدينا على الجهاز ومنه نشغله مباشرة باستخدام برنامج vlc أو إذا كان الفيديو على اليوتيوب أو موقع شبيه به يدعم البث video stream فنقوم بتشغيله مباشرة من النت بفتح برنامج vlc والذهاب لـ Media &amp;gt; Open Network Stream كما في الصورة: ثم نضع رابط الفيديو كما في الصورة أدناه ونضغط على play والآن بعد تشغيل الفيديو سواء بعد تنزيله من النت أي من الجهاز مباشرة أو من الإنترنت مباشرة، لتصحيح خطأ عدم تزامن الصوت مع الصورة على نظامي الويندوز واللينكس نضغط على الكيبورد على أحد زري J و K لتأخير وتسبيق الصوت عن الصورة على التوالي. على نظام الماك تكون الاختصارات G و F نستمر في الضغط على أحد هذه الأزرار بحسب الخطأ في الفيديو لنحصل على النتيجة المطلوبة. على اﻷندرويد قم بتحميل تطبيق vlc من Google play. قم بفتح الفيديو الموجود على الهاتف أو بنسخ رابط الفيديو من اليوتيوب أو مايشبهه من مواقع الفيديو والذهاب للقائمة الجانبية للبرنامج ثم Stream ولصق الرابط هناك من الخيارات في الأسفل اضغط على الأيقونة الظاهرة في الصورة ثم Audio delay اضغط على زري + و - للتعديل والحصول على النتيجة المطلوبة تصحيح خروج الصوت من جهة واحدة بعض الفيديوهات تحوي على خطأ في الصوت وهو خروجه من جهة واحدة (اليمين أو اليسار) ويتضح هذا الخطأ تمامًا عند ارتداء سماعات. لتصحيح هذا الخطأ ضمن برنامج vlc ( ﻷنظمة الحاسوب فقط حيث أنني لم أعثر على هذا الخيار في النسخة المخصصة ﻷندرويد) بعد فتح الفيديو المطلوب نضغط باليمين على الشاشة ثم Audio &amp;gt; Stereo Mode &amp;gt; Left كما هو مبين في الصورة: يجدر الإشارة في النهاية إلى أننا قمنا بتغطية ميزتين فقط من مزايا مشغل الفيديو العملاق VLC والذي يحوي مزايا أخرى مثل التحويل بين صيغ الصوت والصورة وتسجيل فيديو للشاشة لعمل فيديوهات تعليمية مثلا وغيرها من المزايا..</summary></entry></feed>
+&lt;p&gt;أيضًا إذا كان لديك أي إضافة يمكنك المساهمة في تحسين هذا المقال بالكتابة في التعليقات أو مراسلتي أو اقتراح تعديل على الصفحة من الزر أعلى الصفحة هنا.&lt;/p&gt;</content><author><name></name></author><category term="تقنية" /><category term="أنظمة" /><summary type="html">مرحبًا.. انتشرت في الآونة الأخيرة حواسيب تحوي نظام ويندوز مسبقًا ولا تقبل الإقلاع من قرص USB أو تثبيت أنظمة أخرى على الجهاز، ذلك ﻷن الـ BIOS الذي اعتدنا على التعامل معه والذي يسمح عادة بالإقلاع من أقراص أخرى قد تم استبداله بـ UEFI وهي واجهة جديدة وتكون الإعدادات فيها مختلفة وتحوي secure boot وإعدادات أخرى تمنع الإقلاع من أقراص أخرى مثل USB. سنتعلم هنا كيفية حل هذه المشكلة والإقلاع من USB ضمن وضع الـ UEFI لتثبيت نظام آخر. 1. تهيئة القرص الإقلاعي USB هذه الخطوة مهمة جدًا، فلجعل القرص قابل للإقلاع وتتعرف عليه واجهة الـ UEFI فيجب اتباع الخطوات التالية (وليس من البرامج التي تقوم بذلك فلن تعمل تلك الطرق في هذه الحالة): أولًا نقوم بتهيئة القرص USB لنظام ملفات FAT32 ثم نضيف له boot flag أي نجعله قرص إقلاعي، هذه العملية تتم عن طريق برنامج gparted أو في الويندوز قم بالبحث عن شبيه له لعمل ذلك. في الصورة أدناه كيفية إضافة boot flag للقرص عن طريق برنامج Gparted بعدها سيكون النظام الذي تود تنصيبه لديك على شكل ملف .iso ، نقوم بفتح ذلك الملف: باللينكس بالنقر عليه مرتين وبالويندوز 10 نضغط عليه باليمين ثم Mount، ستظهر لنا الملفات الموجود في ملف الـ iso نقوم بنسخها ولصقها ببساطة في قرص الـ USB، إذا كان هناك أخطاء في نسخ مجلدات الاختصارات فلا تقلق يمكن تجاهل ذلك! إذا كنت تريد تثبيت نظام لينكس (لا أدري بالنسبة للويندوز ولكن يمكنك عمل هذه الخطوة أيضًا إن أمكن!) فيتوجب عليك الذهاب الآن للفلاشة USB ستجد مجلد اسمه EFI اذهب ضمنه للمجلد BOOT وأضف إليه الملف bootia32.efi الذي ستقوم بتحميله من هنا وبهذا تكون الفلاشة USB جاهزة. 2. تغيير إعدادات الـ BIOS مازالت تتيح لك الـ UEFI الوصول لإعدادات الـ BIOS، للذهاب إليها يجب عند بداية تشغيل الجهاز الضغط على زر معين حسب الجهاز وهو Esc أو زر آخر بحسب نوع جهازك. يمكنك البحث على الإنترنت عن كيفية الوصول لإعدادات البيوس في جهازك. مثلًا على جهازي ال Hometech أضغط على Esc فتظهر هذه الشاشة: بعدها عند الذهاب لخيار SCU ستظهر لك شاشة زرقاء، نذهب ضمنها لتبويبة Boot في الأعلى كما في الصورة: نقوم من هناك بإلغاء تفعيل كلا من الخيارات التالية وذلك بتغيير حالتهم لـ Disabled: Quick Boot Quiet Boot EFI Device First UEFI OS Fast Boot وتأكد من تفعيل خيار USB Boot بأن يكون Enabled. بعد ذلك إذا وجدت أي خيار يحوي Secure Boot قم بإلغاء تفعيله، في جهازي وُضعت هذه الخيارات في شاشة منفصلة كما ترى في الصورة الأولى هناك خيار مستقل Secure Boot Option وقمت بإلغائه من هناك. بعدها كما في الصورة الأولى قمت بالذهاب لخيار Boot Manager، أعتقد في معظم الحواسيب يكون عند الإقلاع بالضغط على Esc عندها ستجد الخيارات المتاحة للإقلاع وستجد القرص USB ضمنهم وبذلك تكون قد حُلَّت المشكلة. إذا واجهت مشكلة في تطبيق خطوة ما في الشرح فيمكنك السؤال في التعليقات. أيضًا إذا كان لديك أي إضافة يمكنك المساهمة في تحسين هذا المقال بالكتابة في التعليقات أو مراسلتي أو اقتراح تعديل على الصفحة من الزر أعلى الصفحة هنا.</summary></entry></feed>
