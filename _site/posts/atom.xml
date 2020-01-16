@@ -4,13 +4,97 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-16T23:34:11+03:00</updated>
+	<updated>2020-01-17T01:16:14+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>أمثلة على شبه الكود Pseudocode</title>
+			<link href="http://mulham.github.io/Pseudocode-examples/"/>
+			<updated>2020-01-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io// Pseudocode-examples</id>
+			<content type="html">&lt;p&gt;فيما يلي أمثلة عملية على شبه الكود سودوكود من خلال ثلاث أسئلة بسيطة مع الحل. الحلول في نهاية الصفحة.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;ليكن لدينا Pseudo-Code التالي، عبر فهم وتنفيذ الخطوات ماهي قيمة Doppler عند الوصول للخطوة الخامسة؟ (الخطوات مكتوبة بالعربي والإنجليزي)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1: Let Variable Loop be 0 und Variable Doppler be 2
+ 2: Add 1 to Loop
+ 3: Multiply Doppler with 2
+ 4: if Loop &amp;lt; 3 go to step 2
+ 5: End
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;أو بالعربي:&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;ليكن المتغير Loop يساوي 0 والمتغير Doppler يساوي 2&lt;/li&gt;
+      &lt;li&gt;أضف 1 إلى المتغير Loop&lt;/li&gt;
+      &lt;li&gt;اضرب المتغير Doppler بـ 2&lt;/li&gt;
+      &lt;li&gt;إذا كان المتغير Loop أصغر من 3 اذهب للخطوة 2&lt;/li&gt;
+      &lt;li&gt;أنهِ&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ليكن لدينا Pseudo-Code التالي، عبر فهم وتنفيذ الخطوات ماهي قيمة Multiple عند الوصول للخطوة الخامسة؟&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1: Let Variable Loop be 0 und Variable Multiple be 0
+ 2: Add 1 to Loop
+ 3: add 3 to Multiple
+ 4: if Loop &amp;lt; 100 go to step 2
+ 5: End
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;أو بالعربي:&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;ليكن المتغير Loop يساوي 0 والمتغير Multiple يساوي 0&lt;/li&gt;
+      &lt;li&gt;أضف 1 إلى المتغير Loop&lt;/li&gt;
+      &lt;li&gt;أضف 3 إلى المتغير Multiple&lt;/li&gt;
+      &lt;li&gt;إذا كان المتغير Loop أصغر من 100 اذهب للخطوة 2&lt;/li&gt;
+      &lt;li&gt;أنهِ&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ليكن لدينا Pseudo-Code التالي، عبر فهم وتنفيذ الخطوات ماهي قيمة Text عند الوصول للخطوة الخامسة؟&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1: Let Variable Loop be 0 und Variable Text be = &quot;ABCDEFG&quot;
+ 2: Add 1 to Loop
+ 3: change letter in Position Loop with letter in Position Loop + 2
+ 4: if Loop &amp;lt; 4 go to step 2
+ 5: End
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;أو بالعربي:&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;ليكن المتغير Loop يساوي 0 والمتغير Text يساوي “ABCDEFG”&lt;/li&gt;
+      &lt;li&gt;أضف 1 إلى المتغير Loop&lt;/li&gt;
+      &lt;li&gt;بدّل الحرف في الموضع Loop إلى مع الحرف في الموضع Loop + 2&lt;/li&gt;
+      &lt;li&gt;إذا كان المتغير Loop أصغر من 4 اذهب للخطوة 2&lt;/li&gt;
+      &lt;li&gt;أنهِ&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;الحلول:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;16&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;300&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;CDEFABG&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>أمثلة عملية في أنطمة العد مع الحل</title>
