@@ -4,13 +4,524 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-15T23:54:00+03:00</updated>
+	<updated>2020-01-16T23:34:11+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>أمثلة عملية في أنطمة العد مع الحل</title>
+			<link href="http://mulham.github.io/%D8%A3%D9%85%D8%AB%D9%84%D8%A9-%D9%81%D9%8A-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF/"/>
+			<updated>2020-01-16T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//أمثلة-في-أنظمة-العد</id>
+			<content type="html">&lt;style&gt;
+table {
+  border-collapse: collapse;
+  text-align: center;
+  direction: ltr;
+}
+table, th, td, tr {
+  border: 1px solid #ddd;
+}
+ tr:hover {background-color: #f5f5f5;} 
+&lt;/style&gt;
+
+&lt;p&gt;فيما يلي أمثلة عملية للتحويل بين أنظمة العد وإجراء العمليات الحسابية في نظام العد الثنائي مع الحلول. لا يهدف الشرح لتعليم أنظمة العد لمن لا يعرفها وإنما إعطاء أمثلة عملية عليها بعد تعلمها نظريًا. إذا كنت تريد تعلم أنظمة العد فهناك شروح كثيرة بالعربية على الإنترنت مكتوبة ومصورة.&lt;/p&gt;
+
+&lt;p&gt;فلنبدأ بالأمثلة:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;حوّل الأعداد الثنائية التالية إلى كل من الترميز العشري والأوكتال والهيكساديسيمال&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+
+ a) 11 0111 0110 1001
+&lt;br /&gt;
+ b) 111,101
+    
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ a:
+ &lt;/p&gt;
+
+    &lt;p&gt;التحويل إلى Oktal:
+ نبدأ من اليمين لليسار بأخذ كل ثلاثة أرقام سوية وإذا انتهينا يسارًا بأقل من ثلاثة أرقام نضيف أصفار للإتمام (هنا أضفنا صفرا واحد يسار الرقم)
+ ثم نجمع الأرقام الناتجة عن كل ثلاث خانات سوية (خانات الأصفار لا تُحسب)&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 33551
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;ملاحظة:&lt;/em&gt; للتأكد يمكن استخدام الموقع &lt;a href=&quot;https://coderstoolbox.net/number/&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;التحويل للهيكساديسيمال: هنا نأخذ كل أربع خانات سويةً&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 3769
+ &lt;/p&gt;
+
+    &lt;p&gt;التحويل للنظام العشري (ديسيمال):&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{13} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{12} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{10} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{9} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{8} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{6} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{5} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 8192 + 4096 + 1024 + 512 + 256 + 64 + 32 + 8 + 1
+ &lt;br /&gt;
+ = 14185
+ &lt;br /&gt;&lt;br /&gt;
+ b: 111,101 
+ &lt;/p&gt;
+
+    &lt;p&gt;التحويل للأوكتال:&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 7,5
+ &lt;/p&gt;
+
+    &lt;p&gt;وبنفس الطريقة، في الهيكساديسيمال:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 7,A
+ &lt;/p&gt;
+
+    &lt;p&gt;وفي الديسيمال:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 7,625
+ &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;حوّل الأرقام العشرية التالية إلى النظام الثنائي:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+
+ a) 6789
+ &lt;br /&gt;
+ b) -435 (Two's complement with 16 Bit)
+ &lt;br /&gt;
+ c) 102,375
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+
+ a. 6789
+ &lt;/p&gt;
+
+    &lt;p&gt;نقسم على اثنان، إذا كان باقي القسمة صفر نضع ضفر، وإلا نضع واحد&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;6789 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;3394 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1692 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;848 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;424 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;212 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;106 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;53 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;26 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;13 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;6 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;3 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;الناتج من الأسفل للأعلي:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 1101010000101
+ &lt;br /&gt;
+ b. -425 = 110110011
+ &lt;/p&gt;
+    &lt;p&gt;المطلوب هو 16 بت، نضيف أصفار لليسار ليصبح العدد مكونا من 16 خانة:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  0000000110110011
+ &lt;/p&gt;
+
+    &lt;p&gt;الآن نحول إلى Two’s Complement بقلب الأصفار لواحدات والعكس&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  
+  1111111001001100
+ &lt;/p&gt;
+
+    &lt;p&gt;ثم نضيف واحد للرقم الناتج ونحصل على الجواب:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  
+  =  1111111001001101
+ &lt;br /&gt;
+ c. 102,375
+ &lt;/p&gt;
+
+    &lt;p&gt;الرقم هنا مؤلف من 102 و 0,375 بالنسبة للـ 102 فحسابه كما هو في الأعلى والناتج:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  
+  1100110
+ &lt;/p&gt;
+
+    &lt;p&gt;أما بالنسبة للرقم ذو الفاصلة العشرية فيُحسب كالتالي: نضرب باثنان إذا كان الناتج واحدًا أو أكبر نضع واحد ونطرح الواحد من العدد، وإلا نضع صفر&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0,375 × 2&lt;/td&gt;
+          &lt;td&gt;= 0,75&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0,75 × 2&lt;/td&gt;
+          &lt;td&gt;= 1.5&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0,5 × 2&lt;/td&gt;
+          &lt;td&gt;= 1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0 × 2&lt;/td&gt;
+          &lt;td&gt;= 0&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;الناتج من الأعلى للأسفل، يصبح الجواب النهائي:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ 102,375 = 1100110,011
+ &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;أجر العمليات الحسابية التالية على الأعداد الثنائية:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ a) 110,0111 + 1101,101
+ &lt;br /&gt;
+ b) 111011 - 10111
+ &lt;br /&gt;
+ c) 110001 - 1101101
+ &lt;br /&gt;
+ d) 11011 * 1011
+ &lt;br /&gt;
+ e) 1011000010 : 1110
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;figure class=&quot;half&quot;&gt;
+ &lt;a href=&quot;/assets/Aufgabe3.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe3.jpg&quot; alt=&quot;جمع الأعداد الثنائية&quot; /&gt;&lt;/a&gt;
+ &lt;a href=&quot;/assets/Aufgabe3_1.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe3_1.jpg&quot; alt=&quot;تقسيم الأعداد الثنائية&quot; /&gt;&lt;/a&gt;
+ &lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;اكتب الأعداد التالية بالشكل IEEE 754 ذو 32 بت&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ a) 102,375
+ &lt;br /&gt;
+ b) -3258
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;في البداية لتعلم طريقة الحل يمكن الاطلاع على &lt;a href=&quot;https://www.youtube.com/watch?v=8afbTaA-gOQ&quot;&gt;هذا الفيديو&lt;/a&gt;&lt;/p&gt;
+
+    &lt;figure class=&quot;half&quot;&gt;
+ &lt;a href=&quot;/assets/Aufgabe4.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe4.jpg&quot; alt=&quot;تمثيل الأعداد وفق IEEE 754&quot; /&gt;&lt;/a&gt;
+ &lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;وفي النهاية أتمنى أن تكون قد استفدت من هذه الأمثلة، ﻷي إضافة أو استفسار لا تتردد في كتابة تعليق في الأسفل.&lt;/p&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>هل يوجد فيروسات لنظام لينكس؟</title>
@@ -109,7 +620,7 @@ table, th, td, tr {
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;مساواة&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p dir=&quot;ltr&quot; align=&quot;right&quot;&gt;5 = 2+3&lt;br /&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; align=&quot;right&quot;&gt;
+				&lt;p dir=&quot;rtl&quot; align=&quot;right&quot;&gt;5 = 2+3&lt;br /&gt;
 5 &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;تساوي
 				&lt;/span&gt;&lt;/font&gt;2+3&lt;/p&gt;
 			&lt;/td&gt;

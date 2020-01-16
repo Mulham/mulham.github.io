@@ -1,4 +1,505 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-15T23:54:00+03:00</updated><id>http://localhost:4000/</id><title type="html">موقع ملهم</title><subtitle>شغف المعرفة</subtitle><entry><title type="html">هل يوجد فيروسات لنظام لينكس؟</title><link href="http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3/" rel="alternate" type="text/html" title="هل يوجد فيروسات لنظام لينكس؟" /><published>2020-01-15T00:00:00+03:00</published><updated>2020-01-15T00:00:00+03:00</updated><id>http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3</id><content type="html" xml:base="http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3/">&lt;p&gt;سؤال يُطرح كثيرًا حيث أن مستخدموا لينكس لا يستخدمون مضاد فيروسات كمستخدمي ويندوز ويعتبرون نظام لينكس نظامًا آمنًا، فهل نظام لينكس خالِ من الفيروسات؟&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-16T23:34:11+03:00</updated><id>http://localhost:4000/</id><title type="html">موقع ملهم</title><subtitle>شغف المعرفة</subtitle><entry><title type="html">أمثلة عملية في أنطمة العد مع الحل</title><link href="http://localhost:4000/%D8%A3%D9%85%D8%AB%D9%84%D8%A9-%D9%81%D9%8A-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF/" rel="alternate" type="text/html" title="أمثلة عملية في أنطمة العد مع الحل" /><published>2020-01-16T00:00:00+03:00</published><updated>2020-01-16T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A3%D9%85%D8%AB%D9%84%D8%A9-%D9%81%D9%8A-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF</id><content type="html" xml:base="http://localhost:4000/%D8%A3%D9%85%D8%AB%D9%84%D8%A9-%D9%81%D9%8A-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF/">&lt;style&gt;
+table {
+  border-collapse: collapse;
+  text-align: center;
+  direction: ltr;
+}
+table, th, td, tr {
+  border: 1px solid #ddd;
+}
+ tr:hover {background-color: #f5f5f5;} 
+&lt;/style&gt;
+
+&lt;p&gt;فيما يلي أمثلة عملية للتحويل بين أنظمة العد وإجراء العمليات الحسابية في نظام العد الثنائي مع الحلول. لا يهدف الشرح لتعليم أنظمة العد لمن لا يعرفها وإنما إعطاء أمثلة عملية عليها بعد تعلمها نظريًا. إذا كنت تريد تعلم أنظمة العد فهناك شروح كثيرة بالعربية على الإنترنت مكتوبة ومصورة.&lt;/p&gt;
+
+&lt;p&gt;فلنبدأ بالأمثلة:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;حوّل الأعداد الثنائية التالية إلى كل من الترميز العشري والأوكتال والهيكساديسيمال&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+
+ a) 11 0111 0110 1001
+&lt;br /&gt;
+ b) 111,101
+    
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ a:
+ &lt;/p&gt;
+
+    &lt;p&gt;التحويل إلى Oktal:
+ نبدأ من اليمين لليسار بأخذ كل ثلاثة أرقام سوية وإذا انتهينا يسارًا بأقل من ثلاثة أرقام نضيف أصفار للإتمام (هنا أضفنا صفرا واحد يسار الرقم)
+ ثم نجمع الأرقام الناتجة عن كل ثلاث خانات سوية (خانات الأصفار لا تُحسب)&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 33551
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;ملاحظة:&lt;/em&gt; للتأكد يمكن استخدام الموقع &lt;a href=&quot;https://coderstoolbox.net/number/&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;التحويل للهيكساديسيمال: هنا نأخذ كل أربع خانات سويةً&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 3769
+ &lt;/p&gt;
+
+    &lt;p&gt;التحويل للنظام العشري (ديسيمال):&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{13} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{12} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{10} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{9} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{8} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{6} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{5} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 8192 + 4096 + 1024 + 512 + 256 + 64 + 32 + 8 + 1
+ &lt;br /&gt;
+ = 14185
+ &lt;br /&gt;&lt;br /&gt;
+ b: 111,101 
+ &lt;/p&gt;
+
+    &lt;p&gt;التحويل للأوكتال:&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
+          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;,&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 7,5
+ &lt;/p&gt;
+
+    &lt;p&gt;وبنفس الطريقة، في الهيكساديسيمال:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 7,A
+ &lt;/p&gt;
+
+    &lt;p&gt;وفي الديسيمال:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 7,625
+ &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;حوّل الأرقام العشرية التالية إلى النظام الثنائي:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+
+ a) 6789
+ &lt;br /&gt;
+ b) -435 (Two's complement with 16 Bit)
+ &lt;br /&gt;
+ c) 102,375
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+
+ a. 6789
+ &lt;/p&gt;
+
+    &lt;p&gt;نقسم على اثنان، إذا كان باقي القسمة صفر نضع ضفر، وإلا نضع واحد&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;6789 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;3394 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1692 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;848 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;424 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;212 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;106 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;53 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;26 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;13 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;6 ÷ 2&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;3 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1 ÷ 2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;الناتج من الأسفل للأعلي:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ = 1101010000101
+ &lt;br /&gt;
+ b. -425 = 110110011
+ &lt;/p&gt;
+    &lt;p&gt;المطلوب هو 16 بت، نضيف أصفار لليسار ليصبح العدد مكونا من 16 خانة:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  0000000110110011
+ &lt;/p&gt;
+
+    &lt;p&gt;الآن نحول إلى Two’s Complement بقلب الأصفار لواحدات والعكس&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  
+  1111111001001100
+ &lt;/p&gt;
+
+    &lt;p&gt;ثم نضيف واحد للرقم الناتج ونحصل على الجواب:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  
+  =  1111111001001101
+ &lt;br /&gt;
+ c. 102,375
+ &lt;/p&gt;
+
+    &lt;p&gt;الرقم هنا مؤلف من 102 و 0,375 بالنسبة للـ 102 فحسابه كما هو في الأعلى والناتج:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+  
+  1100110
+ &lt;/p&gt;
+
+    &lt;p&gt;أما بالنسبة للرقم ذو الفاصلة العشرية فيُحسب كالتالي: نضرب باثنان إذا كان الناتج واحدًا أو أكبر نضع واحد ونطرح الواحد من العدد، وإلا نضع صفر&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0,375 × 2&lt;/td&gt;
+          &lt;td&gt;= 0,75&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0,75 × 2&lt;/td&gt;
+          &lt;td&gt;= 1.5&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0,5 × 2&lt;/td&gt;
+          &lt;td&gt;= 1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0 × 2&lt;/td&gt;
+          &lt;td&gt;= 0&lt;/td&gt;
+          &lt;td&gt;_&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;الناتج من الأعلى للأسفل، يصبح الجواب النهائي:&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ 102,375 = 1100110,011
+ &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;أجر العمليات الحسابية التالية على الأعداد الثنائية:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ a) 110,0111 + 1101,101
+ &lt;br /&gt;
+ b) 111011 - 10111
+ &lt;br /&gt;
+ c) 110001 - 1101101
+ &lt;br /&gt;
+ d) 11011 * 1011
+ &lt;br /&gt;
+ e) 1011000010 : 1110
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;figure class=&quot;half&quot;&gt;
+ &lt;a href=&quot;/assets/Aufgabe3.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe3.jpg&quot; alt=&quot;جمع الأعداد الثنائية&quot; /&gt;&lt;/a&gt;
+ &lt;a href=&quot;/assets/Aufgabe3_1.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe3_1.jpg&quot; alt=&quot;تقسيم الأعداد الثنائية&quot; /&gt;&lt;/a&gt;
+ &lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;اكتب الأعداد التالية بالشكل IEEE 754 ذو 32 بت&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+ a) 102,375
+ &lt;br /&gt;
+ b) -3258
+ &lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;في البداية لتعلم طريقة الحل يمكن الاطلاع على &lt;a href=&quot;https://www.youtube.com/watch?v=8afbTaA-gOQ&quot;&gt;هذا الفيديو&lt;/a&gt;&lt;/p&gt;
+
+    &lt;figure class=&quot;half&quot;&gt;
+ &lt;a href=&quot;/assets/Aufgabe4.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe4.jpg&quot; alt=&quot;تمثيل الأعداد وفق IEEE 754&quot; /&gt;&lt;/a&gt;
+ &lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;وفي النهاية أتمنى أن تكون قد استفدت من هذه الأمثلة، ﻷي إضافة أو استفسار لا تتردد في كتابة تعليق في الأسفل.&lt;/p&gt;</content><author><name></name></author><category term="تعليم" /><summary type="html">فيما يلي أمثلة عملية للتحويل بين أنظمة العد وإجراء العمليات الحسابية في نظام العد الثنائي مع الحلول. لا يهدف الشرح لتعليم أنظمة العد لمن لا يعرفها وإنما إعطاء أمثلة عملية عليها بعد تعلمها نظريًا. إذا كنت تريد تعلم أنظمة العد فهناك شروح كثيرة بالعربية على الإنترنت مكتوبة ومصورة. فلنبدأ بالأمثلة: حوّل الأعداد الثنائية التالية إلى كل من الترميز العشري والأوكتال والهيكساديسيمال a) 11 0111 0110 1001 b) 111,101 الحل: a: التحويل إلى Oktal: نبدأ من اليمين لليسار بأخذ كل ثلاثة أرقام سوية وإذا انتهينا يسارًا بأقل من ثلاثة أرقام نضيف أصفار للإتمام (هنا أضفنا صفرا واحد يسار الرقم) ثم نجمع الأرقام الناتجة عن كل ثلاث خانات سوية (خانات الأصفار لا تُحسب) 0 1 1   0 1 1   1 0 1   1 0 1   0 0 1 \( 2^{2} \) \( 2^{1} \) \( 2^{0} \)   \( 2^{2} \) \( 2^{1} \) \( 2^{0} \)   \( 2^{2} \) \( 2^{1} \) \( 2^{0} \)   \( 2^{2} \) \( 2^{1} \) \( 2^{0} \)   \( 2^{2} \) \( 2^{1} \) \( 2^{0} \) _ 2 1   _ 2 1   4 _ 1   4 _ 1   _ _ 1 _ 3 _   _ 3 _   _ 5 _   _ 5 _   _ 1 _ = 33551 ملاحظة: للتأكد يمكن استخدام الموقع هنا التحويل للهيكساديسيمال: هنا نأخذ كل أربع خانات سويةً 0 0 1 1   0 1 1 1   0 1 1 0   1 0 0 1 \( 2^{3} \) \( 2^{2} \) \( 2^{1} \) \( 2^{0} \)   \( 2^{3} \) \( 2^{2} \) \( 2^{1} \) \( 2^{0} \)   \( 2^{3} \) \( 2^{2} \) \( 2^{1} \) \( 2^{0} \)   \( 2^{3} \) \( 2^{2} \) \( 2^{1} \) \( 2^{0} \) _ 3 _ _   _ 7 _ _   _ 6 _ _   _ 9 _ _ = 3769 التحويل للنظام العشري (ديسيمال): 1 1 0 1 1 1 0 1 1 0 1 0 0 1 \( 2^{13} \) \( 2^{12} \) _ \( 2^{10} \) \( 2^{9} \) \( 2^{8} \) _ \( 2^{6} \) \( 2^{5} \) _ \( 2^{3} \) _ _ \( 2^{0} \) = 8192 + 4096 + 1024 + 512 + 256 + 64 + 32 + 8 + 1 = 14185 b: 111,101 التحويل للأوكتال: 1 1 1 , 1 0 1 \( 2^{2} \) \( 2^{1} \) \( 2^{0} \) , \( 2^{2} \) \( 2^{1} \) \( 2^{0} \) 4 2 1 , 4 _ 1 _ 7 _ , _ 5 _ = 7,5 وبنفس الطريقة، في الهيكساديسيمال: = 7,A وفي الديسيمال: = 7,625 حوّل الأرقام العشرية التالية إلى النظام الثنائي: a) 6789 b) -435 (Two's complement with 16 Bit) c) 102,375 الحل a. 6789 نقسم على اثنان، إذا كان باقي القسمة صفر نضع ضفر، وإلا نضع واحد 6789 ÷ 2 1 3394 ÷ 2 0 1692 ÷ 2 1 848 ÷ 2 0 424 ÷ 2 0 212 ÷ 2 0 106 ÷ 2 0 53 ÷ 2 1 26 ÷ 2 0 13 ÷ 2 1 6 ÷ 2 0 3 ÷ 2 1 1 ÷ 2 1 الناتج من الأسفل للأعلي: = 1101010000101 b. -425 = 110110011 المطلوب هو 16 بت، نضيف أصفار لليسار ليصبح العدد مكونا من 16 خانة: 0000000110110011 الآن نحول إلى Two’s Complement بقلب الأصفار لواحدات والعكس 1111111001001100 ثم نضيف واحد للرقم الناتج ونحصل على الجواب: = 1111111001001101 c. 102,375 الرقم هنا مؤلف من 102 و 0,375 بالنسبة للـ 102 فحسابه كما هو في الأعلى والناتج: 1100110 أما بالنسبة للرقم ذو الفاصلة العشرية فيُحسب كالتالي: نضرب باثنان إذا كان الناتج واحدًا أو أكبر نضع واحد ونطرح الواحد من العدد، وإلا نضع صفر 0,375 × 2 = 0,75 0 0,75 × 2 = 1.5 1 0,5 × 2 = 1 1 0 × 2 = 0 _ الناتج من الأعلى للأسفل، يصبح الجواب النهائي: 102,375 = 1100110,011 أجر العمليات الحسابية التالية على الأعداد الثنائية: a) 110,0111 + 1101,101 b) 111011 - 10111 c) 110001 - 1101101 d) 11011 * 1011 e) 1011000010 : 1110 الحل: اكتب الأعداد التالية بالشكل IEEE 754 ذو 32 بت a) 102,375 b) -3258 الحل: في البداية لتعلم طريقة الحل يمكن الاطلاع على هذا الفيديو وفي النهاية أتمنى أن تكون قد استفدت من هذه الأمثلة، ﻷي إضافة أو استفسار لا تتردد في كتابة تعليق في الأسفل.</summary></entry><entry><title type="html">هل يوجد فيروسات لنظام لينكس؟</title><link href="http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3/" rel="alternate" type="text/html" title="هل يوجد فيروسات لنظام لينكس؟" /><published>2020-01-15T00:00:00+03:00</published><updated>2020-01-15T00:00:00+03:00</updated><id>http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3</id><content type="html" xml:base="http://localhost:4000/%D9%87%D9%84-%D9%8A%D9%88%D8%AC%D8%AF-%D9%81%D9%8A%D8%B1%D9%88%D8%B3%D8%A7%D8%AA-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D9%84%D9%8A%D9%86%D9%83%D8%B3/">&lt;p&gt;سؤال يُطرح كثيرًا حيث أن مستخدموا لينكس لا يستخدمون مضاد فيروسات كمستخدمي ويندوز ويعتبرون نظام لينكس نظامًا آمنًا، فهل نظام لينكس خالِ من الفيروسات؟&lt;/p&gt;
 
 &lt;p&gt;في الواقع هناك الكثير من الفيروسات لنظام لينكس، ولكن ذلك لا يشكل أهمية لمستخدميه للعديد من الأسباب:&lt;/p&gt;
 
@@ -81,7 +582,7 @@ table, th, td, tr {
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;مساواة&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p dir=&quot;ltr&quot; align=&quot;right&quot;&gt;5 = 2+3&lt;br /&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; align=&quot;right&quot;&gt;
+				&lt;p dir=&quot;rtl&quot; align=&quot;right&quot;&gt;5 = 2+3&lt;br /&gt;
 5 &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;تساوي
 				&lt;/span&gt;&lt;/font&gt;2+3&lt;/p&gt;
 			&lt;/td&gt;
@@ -5345,52 +5846,4 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost&quot;&gt;stackoverflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="SQL" /><category term="mysql" /><category term="قواعد بيانات" /><category term="لينكس" /><summary type="html">فيما يلي شرح لتنصيب mysql بشكل صحيح على نظام أبونتو تحديدا ويبقى الشرح ساري المفعول لباقي أنظمة لينكس وباقي الأنظمة أيضاً مع بعض التغييرات. التنصيب تنصيب mysql sudo apt install mysql-server تهيئة الإعدادات mysql_secure_installation حل مشكلة الوصول المرفوض للمستخدم بعد التنصيبة يجب عند كتابة الأمر التالي وإدخال كلمة سر النظام القدرة على الوصول لسطر أوامر mysql لكتابة أوامر sql هناك، ولكن غالبا ما يتم رفض الوصول لسطر أوامر mysql بعد التنصيب مباشرة، للتأكد أولا من وجود المشكلة أدخل التالي: mysql -u root -p وأدخل كلمة سر النظام، جرب أيضا التالي مع استبدال user باسم المستخدم الخاص بك في النظام (والذي يكون مكتوب في الطرفية كالتالي: user@host:~$ mysql -u user -p إذا تم رفض الوصول وأعطاك الخطأ “ERROR 1698 (28000): Access denied for user” فإليك الحل: لحل هذه المشكلة طريقتين: قم بتنفيذ الأمر التالي sudo mysql -u root ثم أدخل أوامر sql التالية: mysql&amp;gt; USE mysql; mysql&amp;gt; SELECT User, Host, plugin FROM mysql.user; إذا كان الناتج مشابه للتالي: +------------------+-----------------------+ | User | plugin | +------------------+-----------------------+ | root | auth_socket | | mysql.sys | mysql_native_password | | debian-sys-maint | mysql_native_password | +------------------+-----------------------+ أي أن المستخدم root يستخدم plugin يونكس المسمى auth_socket وهذا هو سبب المشكلة. علينا بتغيير هذا ال plugin إلى mysql_native_password وفق الأوامر التالية: mysql&amp;gt; UPDATE user SET plugin='mysql_native_password' WHERE User='root'; mysql&amp;gt; FLUSH PRIVILEGES; mysql&amp;gt; exit; ثم قم بإعادة تشغيل mysql $ service mysql restart أو يمكن إضافة المستخدم الحالي لقاعدة البيانات وإعطائه الصلاحيات المطلوبة وفقا للأوامر التالية: $ sudo mysql -u root mysql&amp;gt; USE mysql; في الأوامر التالية قم بتغيير YOUR_SYSTEM_USER إلى اسم مستخدم النظام الموجود لديك و Password لكلمة السر التي ترغب mysql&amp;gt; CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY 'Password'; mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost'; mysql&amp;gt; UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER'; mysql&amp;gt; FLUSH PRIVILEGES; mysql&amp;gt; exit; $ service mysql restart وبهذا يجب أن تكون المشكلة قد حُلَّت، ﻷي استفسار اتركه في التعليقات أو راسلني عبر البريد الإلكتروني. المراجع: stackoverflow</summary></entry><entry><title type="html">كيفية الإقلاع من usb في أجهزة الويندوز ضمن وضع UEFI</title><link href="http://localhost:4000/uefi-only-boot-usb/" rel="alternate" type="text/html" title="كيفية الإقلاع من usb في أجهزة الويندوز ضمن وضع UEFI" /><published>2019-08-10T00:00:00+03:00</published><updated>2019-08-10T00:00:00+03:00</updated><id>http://localhost:4000/uefi-only-boot-usb</id><content type="html" xml:base="http://localhost:4000/uefi-only-boot-usb/">&lt;p&gt;مرحبًا..
-انتشرت في الآونة الأخيرة حواسيب تحوي نظام ويندوز مسبقًا ولا تقبل الإقلاع من قرص USB أو تثبيت أنظمة أخرى على الجهاز، ذلك ﻷن الـ BIOS الذي اعتدنا على التعامل معه والذي يسمح عادة بالإقلاع من أقراص أخرى قد تم استبداله بـ UEFI وهي واجهة جديدة وتكون الإعدادات فيها مختلفة وتحوي secure boot وإعدادات أخرى تمنع الإقلاع من أقراص أخرى مثل USB.&lt;/p&gt;
-
-&lt;p&gt;سنتعلم هنا كيفية حل هذه المشكلة والإقلاع من USB ضمن وضع الـ UEFI لتثبيت نظام آخر.&lt;/p&gt;
-
-&lt;h1 id=&quot;1-تهيئة-القرص-الإقلاعي-usb&quot;&gt;1. تهيئة القرص الإقلاعي USB&lt;/h1&gt;
-
-&lt;p&gt;هذه الخطوة مهمة جدًا، فلجعل القرص قابل للإقلاع وتتعرف عليه واجهة الـ UEFI فيجب اتباع الخطوات التالية (وليس من البرامج التي تقوم بذلك فلن تعمل تلك الطرق في هذه الحالة):&lt;/p&gt;
-
-&lt;p&gt;أولًا نقوم بتهيئة القرص USB &lt;a href=&quot;https://mulham.github.io/File-Systems/&quot;&gt;لنظام ملفات&lt;/a&gt; FAT32 ثم نضيف له boot flag أي نجعله قرص إقلاعي، هذه العملية تتم عن طريق برنامج gparted أو في الويندوز قم بالبحث عن شبيه له لعمل ذلك. في الصورة أدناه كيفية إضافة boot flag للقرص عن طريق برنامج Gparted&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/boot-flag.png&quot; alt=&quot;add boot flag&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;بعدها سيكون النظام الذي تود تنصيبه لديك على شكل ملف .iso ، نقوم بفتح ذلك الملف: باللينكس بالنقر عليه مرتين وبالويندوز 10 نضغط عليه باليمين ثم Mount، ستظهر لنا الملفات الموجود في ملف الـ iso نقوم بنسخها ولصقها ببساطة في قرص الـ USB، إذا كان هناك أخطاء في نسخ مجلدات الاختصارات فلا تقلق يمكن تجاهل ذلك!&lt;/p&gt;
-
-&lt;p&gt;إذا كنت تريد تثبيت نظام لينكس (لا أدري بالنسبة للويندوز ولكن يمكنك عمل هذه الخطوة أيضًا إن أمكن!) فيتوجب عليك الذهاب الآن للفلاشة USB ستجد مجلد اسمه EFI اذهب ضمنه للمجلد BOOT وأضف إليه الملف bootia32.efi الذي ستقوم بتحميله من &lt;a href=&quot;https://github.com/hirotakaster/baytail-bootia32.efi&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;وبهذا تكون الفلاشة USB جاهزة.&lt;/p&gt;
-
-&lt;h1 id=&quot;2-تغيير-إعدادات-الـ-bios&quot;&gt;2. تغيير إعدادات الـ BIOS&lt;/h1&gt;
-
-&lt;p&gt;مازالت تتيح لك الـ UEFI الوصول لإعدادات الـ BIOS، للذهاب إليها يجب عند بداية تشغيل الجهاز الضغط على زر معين حسب الجهاز وهو &lt;kbd&gt;Esc&lt;/kbd&gt; أو زر آخر بحسب نوع جهازك. يمكنك البحث على الإنترنت عن كيفية الوصول لإعدادات البيوس في جهازك.&lt;/p&gt;
-
-&lt;p&gt;مثلًا على جهازي ال Hometech أضغط على &lt;kbd&gt;Esc&lt;/kbd&gt; فتظهر هذه الشاشة:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/uefi1.jpg&quot; alt=&quot;uefi Hometech&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;بعدها عند الذهاب لخيار SCU ستظهر لك شاشة زرقاء، نذهب ضمنها لتبويبة Boot في الأعلى كما في الصورة:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/uefi2.jpg&quot; alt=&quot;إعدادات بيوس لتفعيل الإقلاع من الفلاشة usb&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;نقوم من هناك بإلغاء تفعيل كلا من الخيارات التالية وذلك بتغيير حالتهم لـ Disabled:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Quick Boot&lt;/li&gt;
-  &lt;li&gt;Quiet Boot&lt;/li&gt;
-  &lt;li&gt;EFI Device First&lt;/li&gt;
-  &lt;li&gt;UEFI OS Fast Boot&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;وتأكد من تفعيل خيار USB Boot بأن يكون Enabled.&lt;/p&gt;
-
-&lt;p&gt;بعد ذلك إذا وجدت أي خيار يحوي Secure Boot قم بإلغاء تفعيله، في جهازي وُضعت هذه الخيارات في شاشة منفصلة كما ترى في الصورة الأولى هناك خيار مستقل Secure Boot Option وقمت بإلغائه من هناك.&lt;/p&gt;
-
-&lt;p&gt;بعدها كما في الصورة الأولى قمت بالذهاب لخيار Boot Manager، أعتقد في معظم الحواسيب يكون عند الإقلاع بالضغط على &lt;kbd&gt;Esc&lt;/kbd&gt; عندها ستجد الخيارات المتاحة للإقلاع وستجد القرص USB ضمنهم وبذلك تكون قد حُلَّت المشكلة.&lt;/p&gt;
-
-&lt;p&gt;إذا واجهت مشكلة في تطبيق خطوة ما في الشرح فيمكنك السؤال في التعليقات.&lt;/p&gt;
-
-&lt;p&gt;أيضًا إذا كان لديك أي إضافة يمكنك المساهمة في تحسين هذا المقال بالكتابة في التعليقات أو مراسلتي أو اقتراح تعديل على الصفحة من الزر أعلى الصفحة هنا.&lt;/p&gt;</content><author><name></name></author><category term="تقنية" /><category term="أنظمة" /><summary type="html">مرحبًا.. انتشرت في الآونة الأخيرة حواسيب تحوي نظام ويندوز مسبقًا ولا تقبل الإقلاع من قرص USB أو تثبيت أنظمة أخرى على الجهاز، ذلك ﻷن الـ BIOS الذي اعتدنا على التعامل معه والذي يسمح عادة بالإقلاع من أقراص أخرى قد تم استبداله بـ UEFI وهي واجهة جديدة وتكون الإعدادات فيها مختلفة وتحوي secure boot وإعدادات أخرى تمنع الإقلاع من أقراص أخرى مثل USB. سنتعلم هنا كيفية حل هذه المشكلة والإقلاع من USB ضمن وضع الـ UEFI لتثبيت نظام آخر. 1. تهيئة القرص الإقلاعي USB هذه الخطوة مهمة جدًا، فلجعل القرص قابل للإقلاع وتتعرف عليه واجهة الـ UEFI فيجب اتباع الخطوات التالية (وليس من البرامج التي تقوم بذلك فلن تعمل تلك الطرق في هذه الحالة): أولًا نقوم بتهيئة القرص USB لنظام ملفات FAT32 ثم نضيف له boot flag أي نجعله قرص إقلاعي، هذه العملية تتم عن طريق برنامج gparted أو في الويندوز قم بالبحث عن شبيه له لعمل ذلك. في الصورة أدناه كيفية إضافة boot flag للقرص عن طريق برنامج Gparted بعدها سيكون النظام الذي تود تنصيبه لديك على شكل ملف .iso ، نقوم بفتح ذلك الملف: باللينكس بالنقر عليه مرتين وبالويندوز 10 نضغط عليه باليمين ثم Mount، ستظهر لنا الملفات الموجود في ملف الـ iso نقوم بنسخها ولصقها ببساطة في قرص الـ USB، إذا كان هناك أخطاء في نسخ مجلدات الاختصارات فلا تقلق يمكن تجاهل ذلك! إذا كنت تريد تثبيت نظام لينكس (لا أدري بالنسبة للويندوز ولكن يمكنك عمل هذه الخطوة أيضًا إن أمكن!) فيتوجب عليك الذهاب الآن للفلاشة USB ستجد مجلد اسمه EFI اذهب ضمنه للمجلد BOOT وأضف إليه الملف bootia32.efi الذي ستقوم بتحميله من هنا وبهذا تكون الفلاشة USB جاهزة. 2. تغيير إعدادات الـ BIOS مازالت تتيح لك الـ UEFI الوصول لإعدادات الـ BIOS، للذهاب إليها يجب عند بداية تشغيل الجهاز الضغط على زر معين حسب الجهاز وهو Esc أو زر آخر بحسب نوع جهازك. يمكنك البحث على الإنترنت عن كيفية الوصول لإعدادات البيوس في جهازك. مثلًا على جهازي ال Hometech أضغط على Esc فتظهر هذه الشاشة: بعدها عند الذهاب لخيار SCU ستظهر لك شاشة زرقاء، نذهب ضمنها لتبويبة Boot في الأعلى كما في الصورة: نقوم من هناك بإلغاء تفعيل كلا من الخيارات التالية وذلك بتغيير حالتهم لـ Disabled: Quick Boot Quiet Boot EFI Device First UEFI OS Fast Boot وتأكد من تفعيل خيار USB Boot بأن يكون Enabled. بعد ذلك إذا وجدت أي خيار يحوي Secure Boot قم بإلغاء تفعيله، في جهازي وُضعت هذه الخيارات في شاشة منفصلة كما ترى في الصورة الأولى هناك خيار مستقل Secure Boot Option وقمت بإلغائه من هناك. بعدها كما في الصورة الأولى قمت بالذهاب لخيار Boot Manager، أعتقد في معظم الحواسيب يكون عند الإقلاع بالضغط على Esc عندها ستجد الخيارات المتاحة للإقلاع وستجد القرص USB ضمنهم وبذلك تكون قد حُلَّت المشكلة. إذا واجهت مشكلة في تطبيق خطوة ما في الشرح فيمكنك السؤال في التعليقات. أيضًا إذا كان لديك أي إضافة يمكنك المساهمة في تحسين هذا المقال بالكتابة في التعليقات أو مراسلتي أو اقتراح تعديل على الصفحة من الزر أعلى الصفحة هنا.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="SQL" /><category term="mysql" /><category term="قواعد بيانات" /><category term="لينكس" /><summary type="html">فيما يلي شرح لتنصيب mysql بشكل صحيح على نظام أبونتو تحديدا ويبقى الشرح ساري المفعول لباقي أنظمة لينكس وباقي الأنظمة أيضاً مع بعض التغييرات. التنصيب تنصيب mysql sudo apt install mysql-server تهيئة الإعدادات mysql_secure_installation حل مشكلة الوصول المرفوض للمستخدم بعد التنصيبة يجب عند كتابة الأمر التالي وإدخال كلمة سر النظام القدرة على الوصول لسطر أوامر mysql لكتابة أوامر sql هناك، ولكن غالبا ما يتم رفض الوصول لسطر أوامر mysql بعد التنصيب مباشرة، للتأكد أولا من وجود المشكلة أدخل التالي: mysql -u root -p وأدخل كلمة سر النظام، جرب أيضا التالي مع استبدال user باسم المستخدم الخاص بك في النظام (والذي يكون مكتوب في الطرفية كالتالي: user@host:~$ mysql -u user -p إذا تم رفض الوصول وأعطاك الخطأ “ERROR 1698 (28000): Access denied for user” فإليك الحل: لحل هذه المشكلة طريقتين: قم بتنفيذ الأمر التالي sudo mysql -u root ثم أدخل أوامر sql التالية: mysql&amp;gt; USE mysql; mysql&amp;gt; SELECT User, Host, plugin FROM mysql.user; إذا كان الناتج مشابه للتالي: +------------------+-----------------------+ | User | plugin | +------------------+-----------------------+ | root | auth_socket | | mysql.sys | mysql_native_password | | debian-sys-maint | mysql_native_password | +------------------+-----------------------+ أي أن المستخدم root يستخدم plugin يونكس المسمى auth_socket وهذا هو سبب المشكلة. علينا بتغيير هذا ال plugin إلى mysql_native_password وفق الأوامر التالية: mysql&amp;gt; UPDATE user SET plugin='mysql_native_password' WHERE User='root'; mysql&amp;gt; FLUSH PRIVILEGES; mysql&amp;gt; exit; ثم قم بإعادة تشغيل mysql $ service mysql restart أو يمكن إضافة المستخدم الحالي لقاعدة البيانات وإعطائه الصلاحيات المطلوبة وفقا للأوامر التالية: $ sudo mysql -u root mysql&amp;gt; USE mysql; في الأوامر التالية قم بتغيير YOUR_SYSTEM_USER إلى اسم مستخدم النظام الموجود لديك و Password لكلمة السر التي ترغب mysql&amp;gt; CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY 'Password'; mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost'; mysql&amp;gt; UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER'; mysql&amp;gt; FLUSH PRIVILEGES; mysql&amp;gt; exit; $ service mysql restart وبهذا يجب أن تكون المشكلة قد حُلَّت، ﻷي استفسار اتركه في التعليقات أو راسلني عبر البريد الإلكتروني. المراجع: stackoverflow</summary></entry></feed>
