@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-17T01:16:14+03:00</updated>
+	<updated>2020-01-17T01:38:32+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -15,7 +15,7 @@
 		<entry>
 			<title>أمثلة على شبه الكود Pseudocode</title>
 			<link href="http://mulham.github.io/Pseudocode-examples/"/>
-			<updated>2020-01-16T00:00:00+03:00</updated>
+			<updated>2020-01-17T00:00:00+03:00</updated>
 			<id>http://mulham.github.io// Pseudocode-examples</id>
 			<content type="html">&lt;p&gt;فيما يلي أمثلة عملية على شبه الكود سودوكود من خلال ثلاث أسئلة بسيطة مع الحل. الحلول في نهاية الصفحة.&lt;/p&gt;
 
@@ -205,25 +205,25 @@ table, th, td, tr {
           &lt;td&gt;1&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;1&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
@@ -281,25 +281,25 @@ table, th, td, tr {
           &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;7&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;6&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;9&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
@@ -387,13 +387,13 @@ table, th, td, tr {
           &lt;td&gt;1&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;7&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;,&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
           &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
