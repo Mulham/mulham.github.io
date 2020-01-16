@@ -8,16 +8,7 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-4752855256699204",
-          enable_page_level_ads: true
-     });
-</script>
+
 </head>
 <body>
     {% include nav.html %}
@@ -31,17 +22,7 @@ layout: compress
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- desktop -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
                 <div class="post-list">
                     {% for post in site.posts %} 
                         {% if post.type == 'tutorial' %}
@@ -62,8 +43,6 @@ layout: compress
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
-<amp-auto-ads type="adsense"
-              data-ad-client="ca-pub-4752855256699204">
-</amp-auto-ads>
+
 </body>
 </html>
