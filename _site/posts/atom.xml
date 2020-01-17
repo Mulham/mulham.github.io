@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-17T01:38:32+03:00</updated>
+	<updated>2020-01-17T16:27:15+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -106,6 +106,7 @@ table {
   border-collapse: collapse;
   text-align: center;
   direction: ltr;
+  overflow-x:auto;
 }
 table, th, td, tr {
   border: 1px solid #ddd;
