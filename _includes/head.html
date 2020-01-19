@@ -38,7 +38,7 @@
     <!-- Handheld -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
     <!-- JS -->
@@ -63,3 +63,6 @@
     {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
     <style type="text/css">.feature {background-image:url({{ feature }});}</style>
     {% endif %}
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
