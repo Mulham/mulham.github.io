@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-17T16:27:15+03:00</updated>
+	<updated>2020-01-21T06:18:59+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -122,19 +122,22 @@ table, th, td, tr {
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;حوّل الأعداد الثنائية التالية إلى كل من الترميز العشري والأوكتال والهيكساديسيمال&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
 
- a) 11 0111 0110 1001
-&lt;br /&gt;
- b) 111,101
-    
- &lt;/p&gt;
+   a) 11 0111 0110 1001
+
+   &lt;br /&gt;
+   b) 111,101
+        
+  &lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- a:
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+  a:
+  &lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;التحويل إلى Oktal:
  نبدأ من اليمين لليسار بأخذ كل ثلاثة أرقام سوية وإذا انتهينا يسارًا بأقل من ثلاثة أرقام نضيف أصفار للإتمام (هنا أضفنا صفرا واحد يسار الرقم)
@@ -164,25 +167,25 @@ table, th, td, tr {
           &lt;td&gt;1&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td&gt;_&lt;/td&gt;
@@ -229,9 +232,10 @@ table, th, td, tr {
       &lt;/tbody&gt;
     &lt;/table&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- = 33551
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+= 33551
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;em&gt;ملاحظة:&lt;/em&gt; للتأكد يمكن استخدام الموقع &lt;a href=&quot;https://coderstoolbox.net/number/&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
 
@@ -261,25 +265,25 @@ table, th, td, tr {
           &lt;td&gt;1&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt; &lt;/td&gt;
-          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td&gt; &lt;/td&gt;
@@ -305,9 +309,10 @@ table, th, td, tr {
       &lt;/tbody&gt;
     &lt;/table&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- = 3769
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+= 3769
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;التحويل للنظام العشري (ديسيمال):&lt;/p&gt;
 
@@ -330,31 +335,32 @@ table, th, td, tr {
           &lt;td&gt;1&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;\( 2^{13} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{12} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;13&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;12&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;\( 2^{10} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{9} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{8} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;10&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;9&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;8&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;\( 2^{6} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{5} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;6&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;5&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;\( 2^{3} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt;_&lt;/td&gt;
           &lt;td&gt;_&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- = 8192 + 4096 + 1024 + 512 + 256 + 64 + 32 + 8 + 1
- &lt;br /&gt;
- = 14185
- &lt;br /&gt;&lt;br /&gt;
- b: 111,101 
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+= 8192 + 4096 + 1024 + 512 + 256 + 64 + 32 + 8 + 1
+&lt;br /&gt;
+= 14185
+&lt;br /&gt;&lt;br /&gt;
+b: 111,101
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;التحويل للأوكتال:&lt;/p&gt;
 
@@ -370,13 +376,13 @@ table, th, td, tr {
           &lt;td&gt;1&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
           &lt;td&gt;,&lt;/td&gt;
-          &lt;td&gt;\( 2^{2} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{1} \)&lt;/td&gt;
-          &lt;td&gt;\( 2^{0} \)&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;sup&gt;0&lt;/sup&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td&gt;4&lt;/td&gt;
@@ -399,40 +405,47 @@ table, th, td, tr {
       &lt;/tbody&gt;
     &lt;/table&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- = 7,5
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+= 7,5
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;وبنفس الطريقة، في الهيكساديسيمال:&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- = 7,A
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+= 7,A
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;وفي الديسيمال:&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- = 7,625
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+= 7,625
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;حوّل الأرقام العشرية التالية إلى النظام الثنائي:&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
 
- a) 6789
- &lt;br /&gt;
- b) -435 (Two's complement with 16 Bit)
- &lt;br /&gt;
- c) 102,375
- &lt;/p&gt;
+a) 6789
+&lt;br /&gt;
+b) -435 (Two's complement with 16 Bit)
+&lt;br /&gt;
+c) 102,375
+
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;strong&gt;الحل&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
 
- a. 6789
- &lt;/p&gt;
+a. 6789
+
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;نقسم على اثنان، إذا كان باقي القسمة صفر نضع ضفر، وإلا نضع واحد&lt;/p&gt;
 
@@ -495,39 +508,47 @@ table, th, td, tr {
 
     &lt;p&gt;الناتج من الأسفل للأعلي:&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- = 1101010000101
- &lt;br /&gt;
- b. -425 = 110110011
- &lt;/p&gt;
-    &lt;p&gt;المطلوب هو 16 بت، نضيف أصفار لليسار ليصبح العدد مكونا من 16 خانة:&lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+= 1101010000101
+&lt;br /&gt;
+b. -425 = 110110011
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+المطلوب هو 16 بت، نضيف أصفار لليسار ليصبح العدد مكونا من 16 خانة:&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
-  0000000110110011
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+ 0000000110110011
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;الآن نحول إلى Two’s Complement بقلب الأصفار لواحدات والعكس&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
-  
-  1111111001001100
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+
+1111111001001100
+
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;ثم نضيف واحد للرقم الناتج ونحصل على الجواب:&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
-  
-  =  1111111001001101
- &lt;br /&gt;
- c. 102,375
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+
+= 1111111001001101
+&lt;br /&gt;
+c. 102,375
+
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;الرقم هنا مؤلف من 102 و 0,375 بالنسبة للـ 102 فحسابه كما هو في الأعلى والناتج:&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
-  
-  1100110
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+
+1100110
+
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;أما بالنسبة للرقم ذو الفاصلة العشرية فيُحسب كالتالي: نضرب باثنان إذا كان الناتج واحدًا أو أكبر نضع واحد ونطرح الواحد من العدد، وإلا نضع صفر&lt;/p&gt;
 
@@ -558,53 +579,55 @@ table, th, td, tr {
 
     &lt;p&gt;الناتج من الأعلى للأسفل، يصبح الجواب النهائي:&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- 102,375 = 1100110,011
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+102,375 = 1100110,011
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;أجر العمليات الحسابية التالية على الأعداد الثنائية:&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- a) 110,0111 + 1101,101
- &lt;br /&gt;
- b) 111011 - 10111
- &lt;br /&gt;
- c) 110001 - 1101101
- &lt;br /&gt;
- d) 11011 * 1011
- &lt;br /&gt;
- e) 1011000010 : 1110
- &lt;/p&gt;
+    &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+a) 110,0111 + 1101,101
+&lt;br /&gt;
+b) 111011 - 10111
+&lt;br /&gt;
+c) 110001 - 1101101
+&lt;br /&gt;
+d) 11011 * 1011
+&lt;br /&gt;
+e) 1011000010 : 1110
+&lt;/p&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;figure class=&quot;half&quot;&gt;
- &lt;a href=&quot;/assets/Aufgabe3.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe3.jpg&quot; alt=&quot;جمع الأعداد الثنائية&quot; /&gt;&lt;/a&gt;
- &lt;a href=&quot;/assets/Aufgabe3_1.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe3_1.jpg&quot; alt=&quot;تقسيم الأعداد الثنائية&quot; /&gt;&lt;/a&gt;
- &lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;اكتب الأعداد التالية بالشكل IEEE 754 ذو 32 بت&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p style=&quot;direction: ltr; margin:left&quot;&gt;
- a) 102,375
- &lt;br /&gt;
- b) -3258
- &lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;الحل:&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;في البداية لتعلم طريقة الحل يمكن الاطلاع على &lt;a href=&quot;https://www.youtube.com/watch?v=8afbTaA-gOQ&quot;&gt;هذا الفيديو&lt;/a&gt;&lt;/p&gt;
-
-    &lt;figure class=&quot;half&quot;&gt;
- &lt;a href=&quot;/assets/Aufgabe4.jpg&quot;&gt;&lt;img src=&quot;/assets/Aufgabe4.jpg&quot; alt=&quot;تمثيل الأعداد وفق IEEE 754&quot; /&gt;&lt;/a&gt;
- &lt;/figure&gt;
+    &lt;amp-img width=&quot;300&quot; height=&quot;500&quot; src=&quot;/assets/Aufgabe3.jpg&quot; alt=&quot;جمع الأعداد الثنائية&quot;&gt;
+&lt;a href=&quot;/assets/Aufgabe3_1.jpg&quot;&gt;
+&lt;/a&gt;&lt;/amp-img&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+&lt;amp-img width=&quot;300&quot; height=&quot;500&quot; src=&quot;/assets/Aufgabe3_1.jpg&quot; alt=&quot;تقسيم الأعداد الثنائية&quot;&gt;
 
-&lt;p&gt;وفي النهاية أتمنى أن تكون قد استفدت من هذه الأمثلة، ﻷي إضافة أو استفسار لا تتردد في كتابة تعليق في الأسفل.&lt;/p&gt;
 
+4. **اكتب الأعداد التالية بالشكل IEEE 754 ذو 32 بت**
+
+   &lt;p style=&quot;direction: ltr; float:left&quot;&gt;
+   a) 102,375
+   &lt;br /&gt;
+   b) -3258
+   &lt;/p&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+   **الحل:**
+
+   في البداية لتعلم طريقة الحل يمكن الاطلاع على [هذا الفيديو](https://www.youtube.com/watch?v=8afbTaA-gOQ)
+
+   
+   &lt;amp-img width=&quot;300&quot; height=&quot;500&quot; src=&quot;/assets/Aufgabe4.jpg&quot; alt=&quot;تمثيل الأعداد وفق IEEE 754&quot;&gt;
+
+
+وفي النهاية أتمنى أن تكون قد استفدت من هذه الأمثلة، ﻷي إضافة أو استفسار لا تتردد في كتابة تعليق في الأسفل.
+&lt;/amp-img&gt;&lt;/amp-img&gt;
 </content>
 		</entry>
 	
@@ -985,7 +1008,7 @@ table, th, td, tr {
 				&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;كسر&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_b78c51cdd5e2b1eb.gif&quot; name=&quot;Image1&quot; alt=&quot;\frac{6}{2}=3&quot; align=&quot;bottom&quot; width=&quot;44&quot; height=&quot;37&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_b78c51cdd5e2b1eb.gif&quot; name=&quot;Image1&quot; alt=&quot;\frac{6}{2}=3&quot; align=&quot;bottom&quot; width=&quot;44&quot; height=&quot;37&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -1225,7 +1248,7 @@ table, th, td, tr {
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_a72add20d29822ca.gif&quot; name=&quot;Image2&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_a72add20d29822ca.gif&quot; name=&quot;Image2&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -1236,14 +1259,14 @@ table, th, td, tr {
 				ذات قياس محدد&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_a72add20d29822ca.gif&quot; name=&quot;Image3&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_a72add20d29822ca.gif&quot; name=&quot;Image3&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
 ABC
 				= 30°&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_d9b178e11af56aff.gif&quot; name=&quot;Image4&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_d9b178e11af56aff.gif&quot; name=&quot;Image4&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -1254,7 +1277,7 @@ ABC
 				كروية&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_d9b178e11af56aff.gif&quot; name=&quot;Image5&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_d9b178e11af56aff.gif&quot; name=&quot;Image5&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 AOB
 				= 30°&lt;/p&gt;
 			&lt;/td&gt;
@@ -1336,7 +1359,7 @@ AOB
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_9c859ae601abe290.gif&quot; name=&quot;Image6&quot; align=&quot;bottom&quot; width=&quot;25&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_9c859ae601abe290.gif&quot; name=&quot;Image6&quot; align=&quot;bottom&quot; width=&quot;25&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -1367,7 +1390,7 @@ AOB
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_24b17981808efb31.gif&quot; name=&quot;Image7&quot; align=&quot;bottom&quot; width=&quot;21&quot; height=&quot;25&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_24b17981808efb31.gif&quot; name=&quot;Image7&quot; align=&quot;bottom&quot; width=&quot;21&quot; height=&quot;25&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -1383,7 +1406,7 @@ AOB
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_dbe69b84b3262de3.gif&quot; name=&quot;Image8&quot; align=&quot;bottom&quot; width=&quot;25&quot; height=&quot;29&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_dbe69b84b3262de3.gif&quot; name=&quot;Image8&quot; align=&quot;bottom&quot; width=&quot;25&quot; height=&quot;29&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -1395,7 +1418,7 @@ AOB
 				النقطة &lt;/span&gt;&lt;/font&gt;B&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_dbe69b84b3262de3.gif&quot; name=&quot;Image9&quot; align=&quot;bottom&quot; width=&quot;25&quot; height=&quot;29&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_dbe69b84b3262de3.gif&quot; name=&quot;Image9&quot; align=&quot;bottom&quot; width=&quot;25&quot; height=&quot;29&quot; border=&quot;0&quot; /&gt;
 
 				= 60°&lt;/p&gt;
 			&lt;/td&gt;
@@ -1960,7 +1983,7 @@ AOB
 				&lt;p&gt;double summation&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_2fb8dc8e30b94b9a.gif&quot; name=&quot;Image10&quot; align=&quot;bottom&quot; width=&quot;207&quot; height=&quot;47&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_2fb8dc8e30b94b9a.gif&quot; name=&quot;Image10&quot; align=&quot;bottom&quot; width=&quot;207&quot; height=&quot;47&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -2108,7 +2131,7 @@ AOB
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_2cf2aa9d2128ca62.gif&quot; name=&quot;Image11&quot; alt=&quot;\langle x,y \rangle&quot; align=&quot;bottom&quot; width=&quot;41&quot; height=&quot;20&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_2cf2aa9d2128ca62.gif&quot; name=&quot;Image11&quot; alt=&quot;\langle x,y \rangle&quot; align=&quot;bottom&quot; width=&quot;41&quot; height=&quot;20&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -2501,7 +2524,7 @@ AOB
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_8871d5de0de9f4a3.gif&quot; name=&quot;Image12&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_8871d5de0de9f4a3.gif&quot; name=&quot;Image12&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -2511,7 +2534,7 @@ AOB
 				&lt;p&gt;middle value of random variable x&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_737897b141a110ca.gif&quot; name=&quot;Image13&quot; align=&quot;bottom&quot; width=&quot;51&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_737897b141a110ca.gif&quot; name=&quot;Image13&quot; align=&quot;bottom&quot; width=&quot;51&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -2569,7 +2592,7 @@ AOB
 				&lt;p&gt;summation - sum of all values in range of series&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_4970c6369423757f.gif&quot; name=&quot;Image14&quot; align=&quot;bottom&quot; width=&quot;176&quot; height=&quot;45&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_4970c6369423757f.gif&quot; name=&quot;Image14&quot; align=&quot;bottom&quot; width=&quot;176&quot; height=&quot;45&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -2584,7 +2607,7 @@ AOB
 				&lt;p&gt;double summation&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_2fb8dc8e30b94b9a.gif&quot; name=&quot;Image15&quot; align=&quot;bottom&quot; width=&quot;207&quot; height=&quot;47&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_2fb8dc8e30b94b9a.gif&quot; name=&quot;Image15&quot; align=&quot;bottom&quot; width=&quot;207&quot; height=&quot;47&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -2951,7 +2974,7 @@ AOB
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;&lt;a href=&quot;https://ar.wikipedia.org/wiki/%D8%AA%D8%A8%D8%AF%D9%8A%D9%84_(%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA)&quot;&gt;تباديل&lt;/a&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_eaaf7f691daadf32.gif&quot; name=&quot;Image16&quot; alt=&quot;_{n}P_{k}=\frac{n!}{(n-k)!}&quot; align=&quot;bottom&quot; width=&quot;107&quot; height=&quot;38&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_eaaf7f691daadf32.gif&quot; name=&quot;Image16&quot; alt=&quot;_{n}P_{k}=\frac{n!}{(n-k)!}&quot; align=&quot;bottom&quot; width=&quot;107&quot; height=&quot;38&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -2961,14 +2984,14 @@ AOB
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p style=&quot;margin-bottom: 0.2in&quot;&gt;&lt;sub&gt;&lt;i&gt;n&lt;/i&gt;&lt;/sub&gt;&lt;i&gt;C&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/p&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_4472c0eac315717c.gif&quot; name=&quot;Image17&quot; align=&quot;bottom&quot; width=&quot;33&quot; height=&quot;48&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_4472c0eac315717c.gif&quot; name=&quot;Image17&quot; align=&quot;bottom&quot; width=&quot;33&quot; height=&quot;48&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;&lt;a href=&quot;https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D9%81%D9%8A%D9%82_(%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA)&quot;&gt;توافيق&lt;/a&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_838845fb09672f64.gif&quot; name=&quot;Image18&quot; alt=&quot;_{n}C_{k}=\binom{n}{k}=\frac{n!}{k!(n-k)!}&quot; align=&quot;bottom&quot; width=&quot;176&quot; height=&quot;40&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_838845fb09672f64.gif&quot; name=&quot;Image18&quot; alt=&quot;_{n}C_{k}=\binom{n}{k}=\frac{n!}{k!(n-k)!}&quot; align=&quot;bottom&quot; width=&quot;176&quot; height=&quot;40&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -3163,7 +3186,7 @@ B = {9,14,28}&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_e39c10175304dfb4.gif&quot; name=&quot;Image19&quot; alt=&quot;\mathcal{P}(A)&quot; align=&quot;bottom&quot; width=&quot;47&quot; height=&quot;23&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_e39c10175304dfb4.gif&quot; name=&quot;Image19&quot; alt=&quot;\mathcal{P}(A)&quot; align=&quot;bottom&quot; width=&quot;47&quot; height=&quot;23&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -3380,7 +3403,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_acdfa6ff6305541b.gif&quot; name=&quot;Image20&quot; align=&quot;bottom&quot; width=&quot;28&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_acdfa6ff6305541b.gif&quot; name=&quot;Image20&quot; align=&quot;bottom&quot; width=&quot;28&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -3395,7 +3418,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_aadd764a0cdea71.gif&quot; name=&quot;Image21&quot; align=&quot;bottom&quot; width=&quot;27&quot; height=&quot;27&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_aadd764a0cdea71.gif&quot; name=&quot;Image21&quot; align=&quot;bottom&quot; width=&quot;27&quot; height=&quot;27&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -3427,7 +3450,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_d1362cc50e63b12.gif&quot; name=&quot;Image22&quot; alt=&quot;\mathbb{U}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_d1362cc50e63b12.gif&quot; name=&quot;Image22&quot; alt=&quot;\mathbb{U}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -3443,116 +3466,116 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image23&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image23&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;sub&gt;0&lt;/sub&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;natural numbers / whole numbers&amp;nbsp; set (with zero)&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image24&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image24&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;sub&gt;0&lt;/sub&gt;
 				= {0,1,2,3,4,...}&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;0 ∈ 
-				&lt;img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image25&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;amp-img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image25&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;sub&gt;0&lt;/sub&gt;&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image26&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image26&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;sub&gt;1&lt;/sub&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;natural numbers / whole numbers&amp;nbsp; set (without zero)&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image27&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image27&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;sub&gt;1&lt;/sub&gt;
 				= {1,2,3,4,5,...}&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;6 ∈ 
-				&lt;img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image28&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;amp-img src=&quot;/assets/assss1_html_a29693701f77c318.gif&quot; name=&quot;Image28&quot; alt=&quot;\mathbb{N}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;sub&gt;1&lt;/sub&gt;&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image29&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image29&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;integer numbers set&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image30&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image30&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 
 				= {...-3,-2,-1,0,1,2,3,...}&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;-6 ∈ 
-				&lt;img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image31&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;amp-img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image31&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_eac7a0cad05ac67d.gif&quot; name=&quot;Image32&quot; alt=&quot;\mathbb{Q}&quot; align=&quot;bottom&quot; width=&quot;17&quot; height=&quot;21&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_eac7a0cad05ac67d.gif&quot; name=&quot;Image32&quot; alt=&quot;\mathbb{Q}&quot; align=&quot;bottom&quot; width=&quot;17&quot; height=&quot;21&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;rational numbers set&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_eac7a0cad05ac67d.gif&quot; name=&quot;Image33&quot; alt=&quot;\mathbb{Q}&quot; align=&quot;bottom&quot; width=&quot;17&quot; height=&quot;21&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_eac7a0cad05ac67d.gif&quot; name=&quot;Image33&quot; alt=&quot;\mathbb{Q}&quot; align=&quot;bottom&quot; width=&quot;17&quot; height=&quot;21&quot; border=&quot;0&quot; /&gt;
 
-				= {&lt;i&gt;x &lt;/i&gt;| &lt;i&gt;x&lt;/i&gt;=&lt;i&gt;a&lt;/i&gt;/&lt;i&gt;b&lt;/i&gt;, &lt;i&gt;a&lt;/i&gt;,&lt;i&gt;b&lt;/i&gt;∈&lt;img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image34&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				= {&lt;i&gt;x &lt;/i&gt;| &lt;i&gt;x&lt;/i&gt;=&lt;i&gt;a&lt;/i&gt;/&lt;i&gt;b&lt;/i&gt;, &lt;i&gt;a&lt;/i&gt;,&lt;i&gt;b&lt;/i&gt;∈&lt;amp-img src=&quot;/assets/assss1_html_1d4d4376e4f463bb.gif&quot; name=&quot;Image34&quot; alt=&quot;\mathbb{Z}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 }&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;2/6 ∈ 
-				&lt;img src=&quot;/assets/assss1_html_eac7a0cad05ac67d.gif&quot; name=&quot;Image35&quot; alt=&quot;\mathbb{Q}&quot; align=&quot;bottom&quot; width=&quot;17&quot; height=&quot;21&quot; border=&quot;0&quot; /&gt;
+				&lt;amp-img src=&quot;/assets/assss1_html_eac7a0cad05ac67d.gif&quot; name=&quot;Image35&quot; alt=&quot;\mathbb{Q}&quot; align=&quot;bottom&quot; width=&quot;17&quot; height=&quot;21&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_f62ab534917a989b.gif&quot; name=&quot;Image36&quot; alt=&quot;\mathbb{R}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_f62ab534917a989b.gif&quot; name=&quot;Image36&quot; alt=&quot;\mathbb{R}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;real numbers set&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_f62ab534917a989b.gif&quot; name=&quot;Image37&quot; alt=&quot;\mathbb{R}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_f62ab534917a989b.gif&quot; name=&quot;Image37&quot; alt=&quot;\mathbb{R}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 
 				= {&lt;i&gt;x&lt;/i&gt; | -∞ &amp;lt; &lt;i&gt;x &lt;/i&gt;&amp;lt;∞}&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;6.343434∈&lt;img src=&quot;/assets/assss1_html_f62ab534917a989b.gif&quot; name=&quot;Image38&quot; alt=&quot;\mathbb{R}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;6.343434∈&lt;amp-img src=&quot;/assets/assss1_html_f62ab534917a989b.gif&quot; name=&quot;Image38&quot; alt=&quot;\mathbb{R}&quot; align=&quot;bottom&quot; width=&quot;16&quot; height=&quot;15&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_f1273afffb1f653f.gif&quot; name=&quot;Image39&quot; alt=&quot;\mathbb{C}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_f1273afffb1f653f.gif&quot; name=&quot;Image39&quot; alt=&quot;\mathbb{C}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;complex numbers set&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_f1273afffb1f653f.gif&quot; name=&quot;Image40&quot; alt=&quot;\mathbb{C}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_f1273afffb1f653f.gif&quot; name=&quot;Image40&quot; alt=&quot;\mathbb{C}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
 
 				= {&lt;i&gt;z &lt;/i&gt;| &lt;i&gt;z=a&lt;/i&gt;+&lt;i&gt;bi&lt;/i&gt;, -∞&amp;lt;&lt;i&gt;a&lt;/i&gt;&amp;lt;∞,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
 				-∞&amp;lt;&lt;i&gt;b&lt;/i&gt;&amp;lt;∞}&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;6+2&lt;i&gt;i&lt;/i&gt; ∈ 
-				&lt;img src=&quot;/assets/assss1_html_f1273afffb1f653f.gif&quot; name=&quot;Image41&quot; alt=&quot;\mathbb{C}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
+				&lt;amp-img src=&quot;/assets/assss1_html_f1273afffb1f653f.gif&quot; name=&quot;Image41&quot; alt=&quot;\mathbb{C}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -3888,7 +3911,7 @@ belongs to&lt;/p&gt;
 	&lt;tbody&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_9c176663359a352d.gif&quot; name=&quot;Image42&quot; alt=&quot;\lim_{x\to x0}f(x)&quot; align=&quot;bottom&quot; width=&quot;76&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_9c176663359a352d.gif&quot; name=&quot;Image42&quot; alt=&quot;\lim_{x\to x0}f(x)&quot; align=&quot;bottom&quot; width=&quot;76&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -3982,7 +4005,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_8c0134db1e984ca9.gif&quot; name=&quot;Image43&quot; alt=&quot;\frac{dy}{dx}&quot; align=&quot;bottom&quot; width=&quot;22&quot; height=&quot;42&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_8c0134db1e984ca9.gif&quot; name=&quot;Image43&quot; alt=&quot;\frac{dy}{dx}&quot; align=&quot;bottom&quot; width=&quot;22&quot; height=&quot;42&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -3998,7 +4021,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_828ca11098b3a96f.gif&quot; name=&quot;Image44&quot; alt=&quot;\frac{d^2y}{dx^2}&quot; align=&quot;bottom&quot; width=&quot;29&quot; height=&quot;43&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_828ca11098b3a96f.gif&quot; name=&quot;Image44&quot; alt=&quot;\frac{d^2y}{dx^2}&quot; align=&quot;bottom&quot; width=&quot;29&quot; height=&quot;43&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4015,7 +4038,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_d176871ac79f8754.gif&quot; name=&quot;Image45&quot; alt=&quot;\frac{d^ny}{dx^n}&quot; align=&quot;bottom&quot; width=&quot;31&quot; height=&quot;42&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_d176871ac79f8754.gif&quot; name=&quot;Image45&quot; alt=&quot;\frac{d^ny}{dx^n}&quot; align=&quot;bottom&quot; width=&quot;31&quot; height=&quot;42&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4031,7 +4054,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_a6248dc6dd2f56fe.gif&quot; name=&quot;Image46&quot; alt=&quot;\dot{y}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;18&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_a6248dc6dd2f56fe.gif&quot; name=&quot;Image46&quot; alt=&quot;\dot{y}&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;18&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4047,7 +4070,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_9ac9542ed8c51473.gif&quot; name=&quot;Image47&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;18&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_9ac9542ed8c51473.gif&quot; name=&quot;Image47&quot; align=&quot;bottom&quot; width=&quot;15&quot; height=&quot;18&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4092,7 +4115,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_ff03a9040801fe96.gif&quot; name=&quot;Image48&quot; alt=&quot;\frac{\partial f(x,y)}{\partial x}&quot; align=&quot;bottom&quot; width=&quot;69&quot; height=&quot;44&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_ff03a9040801fe96.gif&quot; name=&quot;Image48&quot; alt=&quot;\frac{\partial f(x,y)}{\partial x}&quot; align=&quot;bottom&quot; width=&quot;69&quot; height=&quot;44&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4285,7 +4308,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_92fb2a97f8032093.gif&quot; name=&quot;Image49&quot; align=&quot;bottom&quot; width=&quot;26&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_92fb2a97f8032093.gif&quot; name=&quot;Image49&quot; align=&quot;bottom&quot; width=&quot;26&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4300,7 +4323,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_f321a4592ca0d020.gif&quot; name=&quot;Image50&quot; align=&quot;bottom&quot; width=&quot;19&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_f321a4592ca0d020.gif&quot; name=&quot;Image50&quot; align=&quot;bottom&quot; width=&quot;19&quot; height=&quot;28&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4329,7 +4352,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_1ff8e8fd33d59d5.gif&quot; name=&quot;Image51&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_1ff8e8fd33d59d5.gif&quot; name=&quot;Image51&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4337,7 +4360,7 @@ belongs to&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;&lt;i&gt;F&lt;/i&gt;(&lt;i&gt;s&lt;/i&gt;) = 
-				&lt;img src=&quot;/assets/assss1_html_1ff8e8fd33d59d5.gif&quot; name=&quot;Image52&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
+				&lt;amp-img src=&quot;/assets/assss1_html_1ff8e8fd33d59d5.gif&quot; name=&quot;Image52&quot; align=&quot;bottom&quot; width=&quot;14&quot; height=&quot;17&quot; border=&quot;0&quot; /&gt;
 {&lt;i&gt;f
 				&lt;/i&gt;(&lt;i&gt;t&lt;/i&gt;)}&lt;/p&gt;
 			&lt;/td&gt;
@@ -4347,7 +4370,7 @@ belongs to&lt;/p&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
-				&lt;p&gt;&lt;img src=&quot;/assets/assss1_html_edb5ccf22da48841.gif&quot; name=&quot;Image53&quot; align=&quot;bottom&quot; width=&quot;18&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;p&gt;&lt;amp-img src=&quot;/assets/assss1_html_edb5ccf22da48841.gif&quot; name=&quot;Image53&quot; align=&quot;bottom&quot; width=&quot;18&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 &lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
@@ -4355,7 +4378,7 @@ belongs to&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in&quot;&gt;
 				&lt;p&gt;&lt;i&gt;X&lt;/i&gt;(&lt;i&gt;ω&lt;/i&gt;) = 
-				&lt;img src=&quot;/assets/assss1_html_edb5ccf22da48841.gif&quot; name=&quot;Image54&quot; align=&quot;bottom&quot; width=&quot;18&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
+				&lt;amp-img src=&quot;/assets/assss1_html_edb5ccf22da48841.gif&quot; name=&quot;Image54&quot; align=&quot;bottom&quot; width=&quot;18&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt;
 {&lt;i&gt;f
 				&lt;/i&gt;(&lt;i&gt;t&lt;/i&gt;)}&lt;/p&gt;
 			&lt;/td&gt;
@@ -5225,15 +5248,6 @@ belongs to&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#2-بيانات-المتصفح&quot; id=&quot;markdown-toc-2-بيانات-المتصفح&quot;&gt;2. بيانات المتصفح&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#3-سِجِل-أنشطتك-على-جوجل&quot; id=&quot;markdown-toc-3-سِجِل-أنشطتك-على-جوجل&quot;&gt;3. سِجِل أنشطتك على جوجل&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#4-وضع-التصفح-الخفي&quot; id=&quot;markdown-toc-4-وضع-التصفح-الخفي&quot;&gt;4. وضع التصفح الخفي&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#5-إضافة-privacy-badger&quot; id=&quot;markdown-toc-5-إضافة-privacy-badger&quot;&gt;5. إضافة Privacy Badger&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#6-التحقق-من-الروابط&quot; id=&quot;markdown-toc-6-التحقق-من-الروابط&quot;&gt;6. التحقق من الروابط&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#7-إلغاء-ربط-الحسابات-ببعضها&quot; id=&quot;markdown-toc-7-إلغاء-ربط-الحسابات-ببعضها&quot;&gt;7. إلغاء ربط الحسابات ببعضها&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#8-تشفير-الملفات-الهامة-والشخصية&quot; id=&quot;markdown-toc-8-تشفير-الملفات-الهامة-والشخصية&quot;&gt;8. تشفير الملفات الهامة والشخصية&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#9-المعلومات-البنكية&quot; id=&quot;markdown-toc-9-المعلومات-البنكية&quot;&gt;9. المعلومات البنكية&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#10-حجب-مشاركة-الملفات&quot; id=&quot;markdown-toc-10-حجب-مشاركة-الملفات&quot;&gt;10. حجب مشاركة الملفات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#11-قفل-الشاشة&quot; id=&quot;markdown-toc-11-قفل-الشاشة&quot;&gt;11. قفل الشاشة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#12-كلمات-السر&quot; id=&quot;markdown-toc-12-كلمات-السر&quot;&gt;12. كلمات السر&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#13-نظام-أبونتو&quot; id=&quot;markdown-toc-13-نظام-أبونتو&quot;&gt;13. نظام أبونتو&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;1-مواقع-التواصل-الاجتماعي&quot;&gt;1. مواقع التواصل الاجتماعي&lt;/h1&gt;
@@ -5256,65 +5270,69 @@ belongs to&lt;/p&gt;
 
 &lt;h1 id=&quot;4-وضع-التصفح-الخفي&quot;&gt;4. وضع التصفح الخفي&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/Incognito.png&quot; alt=&quot;شعار وضع التصفح الخفي&quot; style=&quot;float:left; width: 150px&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/Incognito.png&quot; alt=&quot;شعار وضع التصفح الخفي&quot; style=&quot;float:left; width: 150px&quot;&gt;
 
-&lt;p&gt;معظم المواقع التي نزورها تستخدم ملفات تعريف الارتباط “cookies” لتتبع سجل تصفحنا على الإنترنت وتستخدم ذلك لعرض إعلانات ملائمة لاهتماماتنا. عند استخدامك لوضع التصفح الخفي “Incognito” فسيتم حذف كل ملفات التتبع تلك بالإضافة للملفات المؤقتة وكذلك سجل التصفح بمجرد إغلاقك لنافذة التصفح (أي لنافذة وضع التصفح الخفي).&lt;/p&gt;
+معظم المواقع التي نزورها تستخدم ملفات تعريف الارتباط &quot;cookies&quot; لتتبع سجل تصفحنا على الإنترنت وتستخدم ذلك لعرض إعلانات ملائمة لاهتماماتنا. عند استخدامك لوضع التصفح الخفي &quot;Incognito&quot; فسيتم حذف كل ملفات التتبع تلك بالإضافة للملفات المؤقتة وكذلك سجل التصفح بمجرد إغلاقك لنافذة التصفح (أي لنافذة وضع التصفح الخفي). 
 
-&lt;h1 id=&quot;5-إضافة-privacy-badger&quot;&gt;5. إضافة Privacy Badger&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/PrivacyBadger.png&quot; alt=&quot;Privacy badger logo&quot; style=&quot;float:right; width: 200px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;تحوي متصفحات الوب خيار “عدم التتبع” في إعداداتها (تجدها في متصفح كروم في الإعدادات المتقدمة ضمن “الخصوصية والأمان”) ، وفي حالة تفعيل هذا الخيار في المتصفح لديك فسيتم إرسال رسالة للمواقع التي تزورها وشبكات الإعلان طالبةً منهم عدم تتبعك، ولكن في واقع الأمر العديد من المواقع لا يكترث لهذا الخيار. وبالتالي إضافة المتصفح المجانية والمفتوحة المصدر  Privacy Badger تقوم بحجب الإعلانات وملفات تعريف الارتباط “Cookies” في المواقع التي لا تراعي تلك الحالة.&lt;/p&gt;
 
-&lt;h1 id=&quot;6-التحقق-من-الروابط&quot;&gt;6. التحقق من الروابط&lt;/h1&gt;
 
-&lt;p&gt;في حالة حصولك على رابط وب عبر البريد الإلكتروني أو الوتسأب أو أي موقع آخر ومن مصدر غير موثوق أو شككت في أمر الرابط فيمكن اختبار فيما إذا كان آمنًا أم لا عبر خدمة مثل: &lt;a href=&quot;urlvoid.com&quot;&gt;urlvoid.com&lt;/a&gt; 
-وبالنسبة للملفات المشتبه بها فيمكنك فتحها عبر VirtualMachine (نظام افتراضي داخل نظام التشغيل الأساسي)&lt;/p&gt;
+# 5. إضافة Privacy Badger
 
-&lt;h1 id=&quot;7-إلغاء-ربط-الحسابات-ببعضها&quot;&gt;7. إلغاء ربط الحسابات ببعضها&lt;/h1&gt;
+&lt;amp-img src=&quot;/assets/PrivacyBadger.png&quot; alt=&quot;Privacy badger logo&quot; style=&quot;float:right; width: 200px&quot;&gt;
 
-&lt;p&gt;العديد من المواقع الآن يقدم خيار ربط الحساب مع حسابات أخرى مثل فيسبوك وجوجل وغيرها، ربط حساباتك على الإنترنت بالمواقع الاجتماعية قد يزيد نسبة الخطر، ففي حال تعرض أحد تلك الحسابات للخطر فإن جميع الحسابات المرتبطة بتلك الحساب ستكون معرضة أيضًا لنفس الخطر، ولذلك إلغاء ربط الحسابات ببعضها يزيد من حماية حساباتنا وبياناتنا على الإنترنت.&lt;/p&gt;
+تحوي متصفحات الوب خيار &quot;عدم التتبع&quot; في إعداداتها (تجدها في متصفح كروم في الإعدادات المتقدمة ضمن &quot;الخصوصية والأمان&quot;) ، وفي حالة تفعيل هذا الخيار في المتصفح لديك فسيتم إرسال رسالة للمواقع التي تزورها وشبكات الإعلان طالبةً منهم عدم تتبعك، ولكن في واقع الأمر العديد من المواقع لا يكترث لهذا الخيار. وبالتالي إضافة المتصفح المجانية والمفتوحة المصدر  Privacy Badger تقوم بحجب الإعلانات وملفات تعريف الارتباط &quot;Cookies&quot; في المواقع التي لا تراعي تلك الحالة.
 
-&lt;h1 id=&quot;8-تشفير-الملفات-الهامة-والشخصية&quot;&gt;8. تشفير الملفات الهامة والشخصية&lt;/h1&gt;
+# 6. التحقق من الروابط 
 
-&lt;p&gt;جميع الملفات الشخصية والوثائق الرسمية والتي تحوي:&lt;/p&gt;
+في حالة حصولك على رابط وب عبر البريد الإلكتروني أو الوتسأب أو أي موقع آخر ومن مصدر غير موثوق أو شككت في أمر الرابط فيمكن اختبار فيما إذا كان آمنًا أم لا عبر خدمة مثل: [urlvoid.com](urlvoid.com) 
+وبالنسبة للملفات المشتبه بها فيمكنك فتحها عبر VirtualMachine (نظام افتراضي داخل نظام التشغيل الأساسي)
 
-&lt;ul&gt;
-  &lt;li&gt;الرقم الوطني&lt;/li&gt;
-  &lt;li&gt;تاريخ الميلاد&lt;/li&gt;
-  &lt;li&gt;رقم البطاقة الائتمانية
-رقم التأمين الصحي&lt;/li&gt;
-&lt;/ul&gt;
+# 7. إلغاء ربط الحسابات ببعضها
 
-&lt;p&gt;وغيره من الملفات الحساسة فيجب الموجودة على جهازك يجب إما حذفها أو تشفيرها، لتشفيرها يمكنك استخدام برنامج &lt;a href=&quot;https://www.veracrypt.fr/en/Downloads.html&quot;&gt;Veracrypt&lt;/a&gt; والذي يتيح لك تشفير بعض الملفات أو تشفير القرص بالكامل مثل تشفير قرص USB بأكمله.&lt;/p&gt;
+العديد من المواقع الآن يقدم خيار ربط الحساب مع حسابات أخرى مثل فيسبوك وجوجل وغيرها، ربط حساباتك على الإنترنت بالمواقع الاجتماعية قد يزيد نسبة الخطر، ففي حال تعرض أحد تلك الحسابات للخطر فإن جميع الحسابات المرتبطة بتلك الحساب ستكون معرضة أيضًا لنفس الخطر، ولذلك إلغاء ربط الحسابات ببعضها يزيد من حماية حساباتنا وبياناتنا على الإنترنت.
 
-&lt;h1 id=&quot;9-المعلومات-البنكية&quot;&gt;9. المعلومات البنكية&lt;/h1&gt;
+# 8. تشفير الملفات الهامة والشخصية
 
-&lt;p&gt;لاتقم بإعطاء معلومات الدفع أو تصوير كرت البنك ﻷحد وابقهم في مكان آمن، فهناك مواقع يمكن الدفع بها دون أن يصلك رسالة تأكيد على هاتفك وبالتالي اي شخص لديه معلومات الدفع الخاصة بك يمكنه شراء مايريد دون علمك!&lt;/p&gt;
+جميع الملفات الشخصية والوثائق الرسمية والتي تحوي:
 
-&lt;h1 id=&quot;10-حجب-مشاركة-الملفات&quot;&gt;10. حجب مشاركة الملفات&lt;/h1&gt;
+* الرقم الوطني
+* تاريخ الميلاد
+* رقم البطاقة الائتمانية
+رقم التأمين الصحي
 
-&lt;p&gt;هناك خاصية لتشارك الملفات عبر الشبكة المحلية (شبكة الوايفاي) وهذا مفيد جدا إذا كنت في بيتك مثلا وتريد مشاركة الملفات من جهاز لآخر ضمن أجهزة منزلك، أما إذا كنت خارجًا وقمت بالاتصال بشبكة وايفاي عامة فعليك إيقاف هذا الخيار (فقط إذا قمت بتفعيله فهو مغلق افتراضيًا) وإلا سيكون ﻷي شخص على نفس الشبكة صلاحية مشاهدة الملفات والمجلدات التي قمت بمشاركتها عبر الشبكة.&lt;/p&gt;
+وغيره من الملفات الحساسة فيجب الموجودة على جهازك يجب إما حذفها أو تشفيرها، لتشفيرها يمكنك استخدام برنامج [Veracrypt](https://www.veracrypt.fr/en/Downloads.html) والذي يتيح لك تشفير بعض الملفات أو تشفير القرص بالكامل مثل تشفير قرص USB بأكمله.
 
-&lt;h1 id=&quot;11-قفل-الشاشة&quot;&gt;11. قفل الشاشة&lt;/h1&gt;
+# 9. المعلومات البنكية
 
-&lt;p&gt;إذا كنت تستخدم حاسوبك المحمول مثلًا في مكان عام مثل مكتبة وأردت الذهاب قليلًا فلا تنسى قفل الشاشة (على الويندوز زر &lt;kbd&gt;Windows&lt;/kbd&gt; + &lt;kbd&gt;L&lt;/kbd&gt;) بالتالي لن يستطيع أحد استخدام جهازك بدون كلمة السر.&lt;/p&gt;
+لاتقم بإعطاء معلومات الدفع أو تصوير كرت البنك ﻷحد وابقهم في مكان آمن، فهناك مواقع يمكن الدفع بها دون أن يصلك رسالة تأكيد على هاتفك وبالتالي اي شخص لديه معلومات الدفع الخاصة بك يمكنه شراء مايريد دون علمك!
 
-&lt;h1 id=&quot;12-كلمات-السر&quot;&gt;12. كلمات السر&lt;/h1&gt;
+# 10. حجب مشاركة الملفات
 
-&lt;p&gt;استخدم دائمًا كلمات مرور قوية تحوي أحرف كبيرة وصغيرة ورموز وأرقام، ولا تستعمل نفس كلمة السر في أكثر من موقع&lt;/p&gt;
+هناك خاصية لتشارك الملفات عبر الشبكة المحلية (شبكة الوايفاي) وهذا مفيد جدا إذا كنت في بيتك مثلا وتريد مشاركة الملفات من جهاز لآخر ضمن أجهزة منزلك، أما إذا كنت خارجًا وقمت بالاتصال بشبكة وايفاي عامة فعليك إيقاف هذا الخيار (فقط إذا قمت بتفعيله فهو مغلق افتراضيًا) وإلا سيكون ﻷي شخص على نفس الشبكة صلاحية مشاهدة الملفات والمجلدات التي قمت بمشاركتها عبر الشبكة.
 
-&lt;h1 id=&quot;13-نظام-أبونتو&quot;&gt;13. نظام أبونتو&lt;/h1&gt;
+# 11. قفل الشاشة
 
-&lt;p&gt;&lt;img src=&quot;/assets/ubuntu.png&quot; alt=&quot;شعار نظام أبونتو&quot; style=&quot;float:left; width: 150px&quot; /&gt;&lt;/p&gt;
+إذا كنت تستخدم حاسوبك المحمول مثلًا في مكان عام مثل مكتبة وأردت الذهاب قليلًا فلا تنسى قفل الشاشة (على الويندوز زر &lt;kbd&gt;Windows&lt;/kbd&gt; + &lt;kbd&gt;L&lt;/kbd&gt;) بالتالي لن يستطيع أحد استخدام جهازك بدون كلمة السر.
 
-&lt;p&gt;في الواقع نظام ويندوز الذي يستخدمه الكثير منا يعطي لنفسه صلاحيات لمشاهدة وبيع بياناتك وهذا موجود ضمن سياساته على الموقع الرسمي ويمكنك الاطلاع عليها. لذا إذا أردت استخدام نظام تشغيل قوي وعملي وبديل ويحافظ على الخصوصية فأنصحك بـ &lt;a href=&quot;https://ubuntu.com&quot;&gt;ابونتو&lt;/a&gt; وهو أحد توزيعات اللينكس المجانية والمفتوحة المصدر بالإضافة لكونه نظام مستقر وآمن ويوفر ميزة تشفير القرص بالكامل ويقدم حماية إضافية لبياناتك، وكون أن معظم البرامج ضمنه هي أيضًا مجانيّة ومفتوحة المصدر فيوفر أبونتو خيار تحديث كل برامجك بضغطة زر، وبهذا تبقى جميع برامجك مُحدّثة دائمًا ضد جميع الثغرات والهجمات الشائعة.&lt;/p&gt;
+# 12. كلمات السر
 
-&lt;p&gt;في النهاية علينا معرفة أنه لا يمكننا الحفاظ على خصوصيتنا على الإنترنت 100%، لذا فقط عليك أن تكون عقلانيّا ولا تقم بفتح أي موقع يضعك في موقف سيئ في حال رؤية عائلتك أو صاحب العمل لذلك. هذا الإجراء البسيط والغير مكلف قد يكون من أهم وأقوى ماذكر أعلاه&lt;/p&gt;
+استخدم دائمًا كلمات مرور قوية تحوي أحرف كبيرة وصغيرة ورموز وأرقام، ولا تستعمل نفس كلمة السر في أكثر من موقع 
 
-&lt;p&gt;هل نسيت شيئًا؟ إذا كان لديك أي معلومة إضافية فيرجى مشاركتها هنا ليتم إضافتها واستفادة الجميع منها.
-أيضًا لاتتردد بطرح أي سؤال..&lt;/p&gt;
+# 13. نظام أبونتو
 
+&lt;amp-img src=&quot;/assets/ubuntu.png&quot; alt=&quot;شعار نظام أبونتو&quot; style=&quot;float:left; width: 150px&quot;&gt;
+
+في الواقع نظام ويندوز الذي يستخدمه الكثير منا يعطي لنفسه صلاحيات لمشاهدة وبيع بياناتك وهذا موجود ضمن سياساته على الموقع الرسمي ويمكنك الاطلاع عليها. لذا إذا أردت استخدام نظام تشغيل قوي وعملي وبديل ويحافظ على الخصوصية فأنصحك بـ [ابونتو](https://ubuntu.com) وهو أحد توزيعات اللينكس المجانية والمفتوحة المصدر بالإضافة لكونه نظام مستقر وآمن ويوفر ميزة تشفير القرص بالكامل ويقدم حماية إضافية لبياناتك، وكون أن معظم البرامج ضمنه هي أيضًا مجانيّة ومفتوحة المصدر فيوفر أبونتو خيار تحديث كل برامجك بضغطة زر، وبهذا تبقى جميع برامجك مُحدّثة دائمًا ضد جميع الثغرات والهجمات الشائعة.
+
+في النهاية علينا معرفة أنه لا يمكننا الحفاظ على خصوصيتنا على الإنترنت 100%، لذا فقط عليك أن تكون عقلانيّا ولا تقم بفتح أي موقع يضعك في موقف سيئ في حال رؤية عائلتك أو صاحب العمل لذلك. هذا الإجراء البسيط والغير مكلف قد يكون من أهم وأقوى ماذكر أعلاه
+
+
+هل نسيت شيئًا؟ إذا كان لديك أي معلومة إضافية فيرجى مشاركتها هنا ليتم إضافتها واستفادة الجميع منها.
+أيضًا لاتتردد بطرح أي سؤال..
+
+&lt;/amp-img&gt;&lt;/amp-img&gt;&lt;/amp-img&gt;
 </content>
 		</entry>
 	
@@ -5764,7 +5782,7 @@ belongs to&lt;/p&gt;
 			<content type="html">&lt;p&gt;هل تعلم أنه يمكن ضبط نظام أوبونتو الخاص بك ليكون بمثابة جهاز راوتر(مودم) قوي للغاية؟ تابع القراءة لاكتشاف كيفية تحقيق ذلك من خلال بضع خطوات بسيطة.
 إذا كان لديك بطاقتي واجهة شبكة مثبتتان في نظام Ubuntu (مثلا كرت شبكة سلكي ethernet وآخر وايفاي) أحدهما يوصلك بالإنترنت والآخر بشبكة محلية ، يمكن تحويل نظامك إلى جهاز راوتر قوي للغاية. يمكنك إنشاء NAT (ترجمة عنوان الشبكة) الأساسية ، وتنشيط إعادة توجيه المنفذ ، وتشكيل بروكسي ، وتحديد أولويات حركة المرور من وإلى نظامك حتى لا يتعارض التنزيل مع الألعاب الخاصة بك. توضح هذه المقالة كيفية إعداد نظام Ubuntu الخاص بك كراوتر ، والذي يمكن تهيئته لاحقًا كجدار حماية. سيساعدك الإعداد الناتج على التحكم في حركة المرور عبر المنافذ وجعل نظامك أقل عرضة للمخاطر الأمنية.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/ubuntu-as-router1.jpg&quot; alt=&quot;Ubuntu as a router&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;300&quot; height=&quot;200&quot; alt=&quot;Ubuntu as a router&quot; src=&quot;/assets/ubuntu-as-router1.jpg&quot;&gt;&lt;/amp-img&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#انشاء-بوابة&quot; id=&quot;markdown-toc-انشاء-بوابة&quot;&gt;انشاء بوابة&lt;/a&gt;&lt;/li&gt;
@@ -5799,13 +5817,13 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 10.10.6.204 = عنوان IP الخاص بـ eth1.
 10.10.6.205 = عنوان IP للمضيف B ، أي كمبيوتر في نفس الشبكة الفرعية.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/ubuntu-as-router2.png&quot; alt=&quot;Ubuntu as a router - Configuration of eth0&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;300&quot; height=&quot;500&quot; alt=&quot;Ubuntu as a router - Configuration of eth0&quot; src=&quot;/assets/ubuntu-as-router2.png&quot;&gt;&lt;/amp-img&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/ubuntu-as-router3.png&quot; alt=&quot;Setting up network on eth0&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;300&quot; height=&quot;500&quot; alt=&quot;Setting up network on eth0&quot; src=&quot;/assets/ubuntu-as-router3.png&quot;&gt;&lt;/amp-img&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/ubuntu-as-router4.png&quot; alt=&quot;Configuration of eth 1&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;300&quot; height=&quot;500&quot; alt=&quot;Setting up network on eth 1&quot; src=&quot;/assets/ubuntu-as-router4.png&quot;&gt;&lt;/amp-img&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/ubuntu-as-router5.png&quot; alt=&quot;Setting up network on eth 1&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;300&quot; height=&quot;500&quot; alt=&quot;Ubuntu as a router - Configuration of eth0&quot; src=&quot;/assets/ubuntu-as-router5.png&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;ضبط-بطاقات-واجهة-الشبكة&quot;&gt;ضبط بطاقات واجهة الشبكة&lt;/h1&gt;
 
@@ -5819,25 +5837,27 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
       &lt;li&gt;
         &lt;p&gt;أدخل الأمر التالي لتحرير ملف “الواجهات”:&lt;/p&gt;
 
-        &lt;p&gt;sudo vim /etc/network/interfaces
-ثم قم بتحرير الملف مع الأسطر التالية:&lt;/p&gt;
-
-        &lt;p&gt;auto lo&lt;br /&gt;
-   iface lo inet loopback&lt;br /&gt;
-   auto eth0&lt;br /&gt;
-   iface eth0 inet static&lt;br /&gt;
-   address 10.10.6.203&lt;br /&gt;
-   netmask 255.255.255.0&lt;br /&gt;
-   gateway 10.10.6.203
-   auto eth1&lt;br /&gt;
-   iface eth1 inet static&lt;br /&gt;
-   address 10.10.6.204&lt;br /&gt;
-   netmask 255.255.255.0&lt;br /&gt;
-   gateway 10.10.6.2&lt;/p&gt;
+        &lt;p&gt;sudo vim /etc/network/interfaces&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;ثم قم بتحرير الملف مع الأسطر التالية:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    auto lo  
+    iface lo inet loopback  
+    auto eth0  
+    iface eth0 inet static  
+    address 10.10.6.203  
+    netmask 255.255.255.0  
+    gateway 10.10.6.203
+    auto eth1  
+    iface eth1 inet static  
+    address 10.10.6.204  
+    netmask 255.255.255.0  
+    gateway 10.10.6.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;تمكين-إعادة-توجيه-ip&quot;&gt;تمكين إعادة توجيه IP&lt;/h1&gt;
 
@@ -7229,15 +7249,15 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ExampleInterface&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
- &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;sub&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ExampleInterface&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;sub&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ExampleInterface&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
        &lt;span class=&quot;c1&quot;&gt;//specify what must happen&lt;/span&gt;
      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-     &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
        &lt;span class=&quot;c1&quot;&gt;//specfiy what must happen&lt;/span&gt;
      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -7258,10 +7278,10 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//abstract class&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gender&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gender&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 	
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
 		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gender&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
@@ -7270,11 +7290,11 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;work&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 	
 	&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
 		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Name=&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;::Gender=&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gender&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;changeName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;changeName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;	
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -7285,11 +7305,11 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;journaldev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;design&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 	
 	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;empId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 	
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;empId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
@@ -7297,21 +7317,21 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 	&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
 	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;work&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Not working&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Not working&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Working as employee!!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Working as employee!!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 	
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
 		&lt;span class=&quot;c1&quot;&gt;//coding in terms of abstract classes&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Dove&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Female&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pankaj&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Male&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Dove&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Female&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pankaj&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Male&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 		&lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;work&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 		&lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;work&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 		&lt;span class=&quot;c1&quot;&gt;//using method implemented in abstract class - inheritance&lt;/span&gt;
 		&lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;changeName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pankaj Kumar&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -7331,7 +7351,7 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 
 &lt;p&gt;الدالات من نوع static بامكاننا أن نستدعيها من صنف آخر بدون انشاء عنصر من الصنف، أي بدلًا من كتابة:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hawa&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;نكتب:&lt;/p&gt;
@@ -12390,15 +12410,15 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;user_id&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;user_name&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;user_pass&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;user_email&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;user_email&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;user_date&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;user_level&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;user_level&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;UNIQUE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_name_unique&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;INNODB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -12446,11 +12466,11 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;cat_id&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;cat_name&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;cat_description&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;UNIQUE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cat_name_unique&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;INNODB&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -12461,15 +12481,15 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topics&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;topic_id&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;topic_subject&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;topic_date&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;topic_cat&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;topic_by&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;topic_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;INNODB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -12479,15 +12499,15 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;post_id&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;post_content&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;TEXT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;TEXT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;post_date&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;post_topic&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;post_by&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;INNODB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -15623,24 +15643,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 			<link href="http://mulham.github.io/joomla/create-template"/>
 			<updated>2016-06-18T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//joomla/create-template</id>
-			<content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#مقدمة&quot; id=&quot;markdown-toc-مقدمة&quot;&gt;مقدمة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#إنشاء-مجلد-القالب&quot; id=&quot;markdown-toc-إنشاء-مجلد-القالب&quot;&gt;إنشاء مجلد القالب&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#إنشاء-ملف-templatedetailsxml&quot; id=&quot;markdown-toc-إنشاء-ملف-templatedetailsxml&quot;&gt;إنشاء ملف templateDetails.xml&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#إنشاء-ملف-indexphp&quot; id=&quot;markdown-toc-إنشاء-ملف-indexphp&quot;&gt;إنشاء ملف index.php&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#البداية-&quot; id=&quot;markdown-toc-البداية-&quot;&gt;البداية :&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#رأس-القالب&quot; id=&quot;markdown-toc-رأس-القالب&quot;&gt;رأس القالب&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#جسم-القالب&quot; id=&quot;markdown-toc-جسم-القالب&quot;&gt;جسم القالب&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#module-positions&quot; id=&quot;markdown-toc-module-positions&quot;&gt;Module Positions&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#النهاية&quot; id=&quot;markdown-toc-النهاية&quot;&gt;النهاية&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#صور-مخصصة&quot; id=&quot;markdown-toc-صور-مخصصة&quot;&gt;صور مخصصة:&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#css-مخصص&quot; id=&quot;markdown-toc-css-مخصص&quot;&gt;CSS مخصص&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#اختبار-القالب-&quot; id=&quot;markdown-toc-اختبار-القالب-&quot;&gt;اختبار القالب :&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#تحزيم-قالب-للتنصيب&quot; id=&quot;markdown-toc-تحزيم-قالب-للتنصيب&quot;&gt;تحزيم قالب للتنصيب&lt;/a&gt;&lt;/li&gt;
+			<content type="html">&lt;ul&gt;
+  &lt;li&gt;Toc&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;مقدمة&quot;&gt;مقدمة&lt;/h1&gt;
@@ -15664,9 +15668,8 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;li&gt;
     &lt;p&gt;css/&lt;/p&gt;
 
-    &lt;ul&gt;
-      &lt;li&gt;template.css&lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	* template.css
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;images/&lt;/p&gt;
@@ -15957,7 +15960,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;يمكنك إضافة صورك الخاصة في أي مكان في القالب ، وذلك من خلال إضافة السطر التالي&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/images/stories/myimage.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Custom image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;customImage&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;amp-img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/images/stories/myimage.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Custom image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;customImage&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;فقط قم بتغيير مسار واسم الصورة حسب ما يناسب ..&lt;/p&gt;
 
@@ -15972,7 +15975,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;فيما يلي الملف النهائي لذلك :&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;   &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;defined&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'_JEXEC'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Restricted access'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;
-
 
     &lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 
@@ -16024,7 +16026,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;مجلد يحتوي عدة ملفات مبعثرة ليس طريقة جيدة لعمل حزمة (قالب ، إضافة .. إلخ) . لذا الخطوة الأخيرة هو عمل حزمة . وهي أرشيف مضغوط يحوي المجلد المنشأ وجميع الملفات . يمكن للحزمة أن تكون بلاحقة zip أو tar.gz أو tar.bz2&lt;/p&gt;
 
 &lt;p&gt;وأخيراً ، فقد قمت الآن بعمل قالب بسيط ، قد لا يبدو جميلاً جداً ، لذا فعيلك الآن بدء تجربتك مع التنسيق والستايل css .&lt;/p&gt;
-
 </content>
 		</entry>
 	
@@ -17636,24 +17637,19 @@ ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
 			<link href="http://mulham.github.io/fanus-ramadan/"/>
 			<updated>2014-06-18T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//fanus-ramadan</id>
-			<content type="html">&lt;center&gt;&lt;img src=&quot;/assets/beautiful-islamic-ramadan-widget-for-blogger.png&quot; title=&quot;أضف فانوس رمضان المتحرك لمدونتك&quot; alt=&quot;أضف فانوس رمضان المتحرك لمدونتك&quot; /&gt;&lt;/center&gt;
+			<content type="html">&lt;center&gt;&lt;amp-img src=&quot;/assets/beautiful-islamic-ramadan-widget-for-blogger.png&quot; title=&quot;أضف فانوس رمضان المتحرك لمدونتك&quot; alt=&quot;أضف فانوس رمضان المتحرك لمدونتك&quot;&gt;&amp;lt;/center&amp;gt;
 
-&lt;p&gt;هنا تجد طريقة إضافة فانوس رمضان المتحرك أعلى يسار الصفحة في مدونات بلوجر، كما يمكن إضافته في أي موقع كان.&lt;/p&gt;
+هنا تجد طريقة إضافة فانوس رمضان المتحرك أعلى يسار الصفحة في مدونات بلوجر، كما يمكن إضافته في أي موقع كان.
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;اذهب للوحة تحكم بلوجر&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اذهب لصفحة “القالب” ثم اضغط على زر “تحرير HTML”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ابحث بالضغط على &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;F&lt;/kbd&gt; عن السمة &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;انسخ والصق الكود التالي &lt;strong&gt;فوقها&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+
+1. اذهب للوحة تحكم بلوجر
+
+2. اذهب لصفحة &quot;القالب&quot; ثم اضغط على زر &quot;تحرير HTML&quot;
+
+3. ابحث بالضغط على &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;F&lt;/kbd&gt; عن السمة `&amp;lt;/body&amp;gt;`
+    
+4. انسخ والصق الكود التالي **فوقها**
+
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;     &lt;span class=&quot;c&quot;&gt;&amp;lt;!--  Ramadan Lantern taken from Mulham.github.io --&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;align=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'center'&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -17668,7 +17664,9 @@ ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;&amp;lt;!--  End Ramadan Lantern taken from Mulham.github.io --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;اضغط على حفظ النموذج ثم شاهد النتيجة مباشرة في مدونتك.&lt;/p&gt;
+
+ اضغط على حفظ النموذج ثم شاهد النتيجة مباشرة في مدونتك.
+&lt;/amp-img&gt;&lt;/center&gt;
 </content>
 		</entry>
 	
@@ -17750,11 +17748,12 @@ ctrl + C  ، ثم أغلق التيرمينال&lt;/p&gt;
 			<link href="http://mulham.github.io/strange-coffee/"/>
 			<updated>2014-06-16T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//strange-coffee</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/elephant-coffee.jpg&quot; style=&quot;float: left&quot; alt=&quot;قهوة تصنع من فضلات الفيل&quot; title=&quot;قهوة تصنع من فضلات الفيل&quot; /&gt;&lt;/p&gt;
+			<content type="html">&lt;amp-img src=&quot;/assets/elephant-coffee.jpg&quot; style=&quot;float: left&quot; alt=&quot;قهوة تصنع من فضلات الفيل&quot; title=&quot;قهوة تصنع من فضلات الفيل&quot;&gt;
 
-&lt;p&gt;هذه القهوة التي يطلق عليها “ بلاك ايفوري” تستخرج من فضلات الفيل ويبلغ سعر الكيلو غرام الواحد منها حوالي 1100 دولار وبالتالي تعد أغلى قهوة في العالم !
-وقد نقلت وسائل الإعلام البريطانية ان  “بلايك دينكين” و هو مقاول كندي والبالغ من العمر 42 عام، يقوم بإنتاج هذه القهوة ، ويقول إن السر وراء مذاق قهوته الفريدة هو أن قطيع الفيلة في تايلاند يأكل حبوب القهوة ثم يخرجها مع برازه مما يساهم في التخلص من الطعم المر الذي يوجد فيها. ويضيف دينكين قائلاً:
-عندما يأكل الفيل حبوب القهوة تنتج معدته حمضاً يفكك البروتين في الحبوب، وهو المسؤول عن مذاقها المر، لينتج في الأخر قهوة ذات مذاق سلس للغاية..&lt;/p&gt;
+هذه القهوة التي يطلق عليها &quot; بلاك ايفوري&quot; تستخرج من فضلات الفيل ويبلغ سعر الكيلو غرام الواحد منها حوالي 1100 دولار وبالتالي تعد أغلى قهوة في العالم !
+وقد نقلت وسائل الإعلام البريطانية ان  &quot;بلايك دينكين&quot; و هو مقاول كندي والبالغ من العمر 42 عام، يقوم بإنتاج هذه القهوة ، ويقول إن السر وراء مذاق قهوته الفريدة هو أن قطيع الفيلة في تايلاند يأكل حبوب القهوة ثم يخرجها مع برازه مما يساهم في التخلص من الطعم المر الذي يوجد فيها. ويضيف دينكين قائلاً:
+عندما يأكل الفيل حبوب القهوة تنتج معدته حمضاً يفكك البروتين في الحبوب، وهو المسؤول عن مذاقها المر، لينتج في الأخر قهوة ذات مذاق سلس للغاية..
+&lt;/amp-img&gt;
 </content>
 		</entry>
 	
@@ -17827,7 +17826,7 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 			<link href="http://mulham.github.io/hyundai-egg-car/"/>
 			<updated>2014-06-16T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//hyundai-egg-car</id>
-			<content type="html">&lt;p&gt;&lt;img alt=&quot;سيارة البيضة من هيونداي&quot; src=&quot;/assets/hyundai-e4u-idea.jpg&quot; style=&quot;float: left;&quot; /&gt;&lt;/p&gt;
+			<content type="html">&lt;amp-img alt=&quot;سيارة البيضة من هيونداي&quot; src=&quot;/assets/hyundai-e4u-idea.jpg&quot; style=&quot;float: left;&quot; /&gt;
 
 &lt;p&gt;السيارات أصبحت منتشرة بكثرة في هذه الأوقات .. لذلك وللفت أنظار الناس لسيارة غير اعتيادية فأنت تحتاج لسيارة مثل هيوندا E4U.&lt;/p&gt;
 
@@ -17848,14 +17847,14 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 &lt;p&gt;صور أخرى للسيارة&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;a href=&quot;/assets/egg-car.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car-th.jpg&quot; /&gt;&lt;/a&gt;
-    &lt;a href=&quot;/assets/egg-car2.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car2-th.jpg&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
+    &lt;a href=&quot;/assets/egg-car.jpg&quot;&gt;&lt;amp-img src=&quot;/assets/egg-car-th.jpg&quot;&gt;&amp;lt;/a&amp;gt;
+    &lt;a href=&quot;/assets/egg-car2.jpg&quot;&gt;&lt;amp-img src=&quot;/assets/egg-car2-th.jpg&quot;&gt;&amp;lt;/a&amp;gt;
+&amp;lt;/figure&amp;gt;
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;a href=&quot;/assets/egg-car-3.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car-3-th.jpg&quot; /&gt;&lt;/a&gt;
-    &lt;a href=&quot;/assets/egg-car-4.jpg&quot;&gt;&lt;img src=&quot;/assets/egg-car-4-th.jpg&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
+    &lt;a href=&quot;/assets/egg-car-3.jpg&quot;&gt;&lt;amp-img src=&quot;/assets/egg-car-3-th.jpg&quot;&gt;&amp;lt;/a&amp;gt;
+    &lt;a href=&quot;/assets/egg-car-4.jpg&quot;&gt;&lt;amp-img src=&quot;/assets/egg-car-4-th.jpg&quot;&gt;&amp;lt;/a&amp;gt;
+&amp;lt;/figure&amp;gt;
+&lt;/amp-img&gt;&lt;/a&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/figure&gt;
 </content>
 		</entry>
 	
@@ -18323,144 +18322,118 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 			<link href="http://mulham.github.io/common-android-problems-with-solutions/"/>
 			<updated>2014-02-16T00:00:00+02:00</updated>
 			<id>http://mulham.github.io//common-android-problems-with-solutions</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/common-android-problems1.jpg&quot; alt=&quot;مشاكل شائعة في أندرويد مع الحل&quot; /&gt;&lt;/p&gt;
+			<content type="html">&lt;amp-img src=&quot;/assets/common-android-problems1.jpg&quot; alt=&quot;مشاكل شائعة في أندرويد مع الحل&quot;&gt;
 
-&lt;p&gt;العديد من الهواتف والأجهزة اللوحية تعمل بنظام أندرويد ، حيث انتشر هذا النظام بشكل رهيب في الفترة الأخيرة، ورغم أنه سهل الاستخدام .. إلا أن الكثير من المشاكل ربما تواجه مستخدميه في الكثير من الأمور . إفادة تضع بين العديد من المشاكل الشائعة لأندرويد مع حلولهم&lt;/p&gt;
+العديد من الهواتف والأجهزة اللوحية تعمل بنظام أندرويد ، حيث انتشر هذا النظام بشكل رهيب في الفترة الأخيرة، ورغم أنه سهل الاستخدام .. إلا أن الكثير من المشاكل ربما تواجه مستخدميه في الكثير من الأمور . إفادة تضع بين العديد من المشاكل الشائعة لأندرويد مع حلولهم
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;كيف أوقف مزامنة البيانات في جهازي؟&lt;/strong&gt;&lt;/p&gt;
+1. **كيف أوقف مزامنة البيانات في جهازي؟**
 
-    &lt;p&gt;أحد الخيارات هو برنامج “APNdroid” الذي تجده في سوق أندرويد على الإنترنت حيث يتيح لك إيقاف تشغيل جميع الاتصالات من خلال أداة تظهر على الشاشة الرئيسية ، حيث تجعل تغيير هذه الإعدادات أسرع بكثير من استخدام شاشة الإعدادات الاعتيادية ﻷندرويد.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;جهازي الأندرويد لا يستجيب (جمد).&lt;/strong&gt;&lt;/p&gt;
+   أحد الخيارات هو برنامج &quot;APNdroid&quot; الذي تجده في سوق أندرويد على الإنترنت حيث يتيح لك إيقاف تشغيل جميع الاتصالات من خلال أداة تظهر على الشاشة الرئيسية ، حيث تجعل تغيير هذه الإعدادات أسرع بكثير من استخدام شاشة الإعدادات الاعتيادية ﻷندرويد.
 
-    &lt;p&gt;غالبا ما يتم حل هذه المشكلة بإعادة التشغيل السريعة للجهاز ، ولكن هناك طرق مختلفة على اختلاف الأجهزة . يمكنك تنزيل تطبيق “Fast Reboot” الذي سيقوم بالمهمة عنك بمحاكاة عملية إعادة التشغيل السريعة وإغلاق كافة التطبيقات النشطة بنقرة واحدة.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;لماذا هناك تطبيقات لأندرويد لا أستطيع تنزيلها من سوق أندرويد على الإنترنت؟&lt;/strong&gt;&lt;/p&gt;
+2. **جهازي الأندرويد لا يستجيب (جمد).**
 
-    &lt;p&gt;بعض التطبيقات مصممة لدقة شاشة معينة ، وهذا غير متوفر في جميع الأجهزة رغم أن مصنعي الأجهزة يسعون لتكون هذه الأجهزة تدعم تطبيقات أوسع.&lt;/p&gt;
+   غالبا ما يتم حل هذه المشكلة بإعادة التشغيل السريعة للجهاز ، ولكن هناك طرق مختلفة على اختلاف الأجهزة . يمكنك تنزيل تطبيق &quot;Fast Reboot&quot; الذي سيقوم بالمهمة عنك بمحاكاة عملية إعادة التشغيل السريعة وإغلاق كافة التطبيقات النشطة بنقرة واحدة.
 
-    &lt;p&gt;الهواتف ذات العرض الشاقولي تواجه مشكلة أحيانا في عمل بعض الألعاب والتطبيقات ، وهناك أسباب أخرى لعدم عمل بعض التطبيقات منها توافقها مع أنواع أجهزة معينة ، ولكن الأغلبية الأوسع للتطبيقات يجب أن تعمل على جميع الأجهزة ..&lt;/p&gt;
+3. **لماذا هناك تطبيقات لأندرويد لا أستطيع تنزيلها من سوق أندرويد على الإنترنت؟**
 
-    &lt;p&gt;لذا لا داعي للقلق كثيرا حيال هذا الموضوع.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;اللاسلكي في جهازي الذكي (الواي فاي) لا يبقى متصلا&lt;/strong&gt;&lt;/p&gt;
+   بعض التطبيقات مصممة لدقة شاشة معينة ، وهذا غير متوفر في جميع الأجهزة رغم أن مصنعي الأجهزة يسعون لتكون هذه الأجهزة تدعم تطبيقات أوسع.
 
-    &lt;p&gt;اذهب إلى الوايرلس والشبكات / إعدادات الوايرلس واضغط على زر القائمة (أو النقاط الثلاث العامودية) واختر “متقدم” (Advanced) وغير وضعية الخمول إلى “أبدا” ، هذه الإجراءات تحل المشكلة لمعظم الأشخاص الذين يوجهون مشكلة في بقاء الوايرلس متصلاً.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;لماذا تكون دائما ذاكرة جهازي ممتلئة ؟&lt;/strong&gt;&lt;/p&gt;
+   الهواتف ذات العرض الشاقولي تواجه مشكلة أحيانا في عمل بعض الألعاب والتطبيقات ، وهناك أسباب أخرى لعدم عمل بعض التطبيقات منها توافقها مع أنواع أجهزة معينة ، ولكن الأغلبية الأوسع للتطبيقات يجب أن تعمل على جميع الأجهزة ..
 
-    &lt;p&gt;هناك عدة لهذه المشكلة ، ولكن ربما السبب الرئيسي هو الملفات المؤقتة التي تستهلك كثيرا من الذاكرة والتي تخلفها برامج تصفح الإنترنت وغيرها .. بإمكانك الذهاب يدويا للتطبيقات في الإعدادات ثم الذهاب للتطبيقات التي تحوي ملفات مؤقتة والضغط على زر “محو ذاكرة التخزين المؤقت”&lt;/p&gt;
+   لذا لا داعي للقلق كثيرا حيال هذا الموضوع.
 
-    &lt;p&gt;كما ان تطبيق “cache cleaner” في سوق أندرويد سيوفر عنك العناء ويحل المشكلة بتنظيف الملفات المؤقتة لتطبيقات معينة .&lt;/p&gt;
+4. **اللاسلكي في جهازي الذكي (الواي فاي) لا يبقى متصلا**
 
-    &lt;p&gt;&lt;img src=&quot;/assets/common-android-problems2.jpg&quot; alt=&quot;مشاكل شائعة في أندرويد مع الحل2&quot; title=&quot;مشاكل شائعة في أندرويد مع الحل2&quot; /&gt;&lt;/p&gt;
+   اذهب إلى الوايرلس والشبكات / إعدادات الوايرلس واضغط على زر القائمة (أو النقاط الثلاث العامودية) واختر &quot;متقدم&quot; (Advanced) وغير وضعية الخمول إلى &quot;أبدا&quot; ، هذه الإجراءات تحل المشكلة لمعظم الأشخاص الذين يوجهون مشكلة في بقاء الوايرلس متصلاً.
 
-    &lt;p&gt;ربما ستحتاج أيضا لحذف أو نقل بعض التطبيقات لكرت الذاكرة الإضافية لتوسيع ذاكرة الجهاز الداخلية .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;أستخدم الكثير جدا من البيانات عبر الإنترنت، كيف بإمكاني ضبطها ومراقبتها؟ (لإتصالات الاستهلاك المحدود)&lt;/strong&gt;&lt;/p&gt;
+5. **لماذا تكون دائما ذاكرة جهازي ممتلئة ؟**
 
-    &lt;p&gt;ربما يكون تطبيق “My Data Manager” الحل الأمثل لمعرفة كم كنت تستخدم من البيانات تحديدا ومراقبتها ، كما أنه ينبهك عندما تصل لمستوى معين ويساعدك من التاكد على عدم تجاوزك أبدا لحد البيانات الشهري المسموح به.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;من الصعب جدا استخدام لوحة المفاتيح!&lt;/strong&gt;&lt;/p&gt;
+   هناك عدة لهذه المشكلة ، ولكن ربما السبب الرئيسي هو الملفات المؤقتة التي تستهلك كثيرا من الذاكرة والتي تخلفها برامج تصفح الإنترنت وغيرها .. بإمكانك الذهاب يدويا للتطبيقات في الإعدادات ثم الذهاب للتطبيقات التي تحوي ملفات مؤقتة والضغط على زر &quot;محو ذاكرة التخزين المؤقت&quot;
 
-    &lt;p&gt;ربما تكون لوحة المفاتيح الاعتيادية لأندرويد ليست سهلة الاستخدام ،هناك العديد من البدائل المتاحة ، التطبيق “slidelt” مثلا هو أحد التطبيقات الذي يمكّنك من الكتابة حتى بدون أن ترفع إصبعك عن الشاشة .. فقط دع إصبعك تتنقل بين الأحرف وشاهد السحر ..&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;لم يعد يتم التعرف على كرتي الذاكرة في الجهاز.&lt;/strong&gt;&lt;/p&gt;
+   كما ان تطبيق &quot;cache cleaner&quot; في سوق أندرويد سيوفر عنك العناء ويحل المشكلة بتنظيف الملفات المؤقتة لتطبيقات معينة .
 
-    &lt;p&gt;إن كروت الذاكرة يمكن أن تتعرض للتخريب والطريقة الأكثر فعالية لجعلها تعمل مرة أخرى هي إعادة تهيئتها باستخدام الحاسوب العادي أو المحمول من خلال مستعرض الملفات على الحاسوب ، فقط اضغط بيمين الفأرة على كرت الذاكرة واذهب للخيار “إعادة تهيئة البطاقة” لإعادتها للحياة من جديد .  هذه الطريقة أكثر فعالية من إعادة تهيئة كرت الذاكرة على الجهاز اللوحي أو الهاتف نفسه .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;من الصعب مشاهدة الشاشة خلال الإضاءة القوية للشمس&lt;/strong&gt;&lt;/p&gt;
+   ![مشاكل شائعة في أندرويد مع الحل2](/assets/common-android-problems2.jpg &quot;مشاكل شائعة في أندرويد مع الحل2&quot;)
 
-    &lt;p&gt;إن أفضل خيار هو وضع واقي للشاشة مضاد للسطوع حيث يقلل نسبة السطوع على الشاشة في ظروف الإضاءة القوية.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;بعض الألعاب تعمل بشكل بطيئ جدا على جهازي&lt;/strong&gt;&lt;/p&gt;
+   ربما ستحتاج أيضا لحذف أو نقل بعض التطبيقات لكرت الذاكرة الإضافية لتوسيع ذاكرة الجهاز الداخلية .
 
-    &lt;p&gt;بعض الهواتف تعمل بمعالجات أبطأ من غيرها مما يقلل من سرعة الرسوميات .. الحل الأفضل هو تجربة الهاتف قبل شراؤه حيث أن بعض الهواتف أفضل بكثير من غيرها ، ومن الصعب معرفة أداء الجهاز من المواصفات فقط .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;كيف يتم حذف تطبيق معين؟&lt;/strong&gt;&lt;/p&gt;
+6. **أستخدم الكثير جدا من البيانات عبر الإنترنت، كيف بإمكاني ضبطها ومراقبتها؟ (لإتصالات الاستهلاك المحدود)**
 
-    &lt;p&gt;اذهب إلى الإعدادات &amp;gt; التطبيقات &amp;gt; إدارة التطبيقات ثم اختر التطبيق الذي تريد حذفه وانقر على خيار “حذف التطبيق”.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;شاشة جهازي تعطلت ! هل يجب علي شراء جهاز جديد؟&lt;/strong&gt;&lt;/p&gt;
+   ربما يكون تطبيق &quot;My Data Manager&quot; الحل الأمثل لمعرفة كم كنت تستخدم من البيانات تحديدا ومراقبتها ، كما أنه ينبهك عندما تصل لمستوى معين ويساعدك من التاكد على عدم تجاوزك أبدا لحد البيانات الشهري المسموح به.
 
-    &lt;p&gt;معظم الهواتف الشائعة لديها قطع تبديل متاحة في السوق أو عبر الإنترنت وبإمكانك تركيبها بنفسك .. عملية تركيب الشاشة أبسط بكثير مما تتوقع ، لذا قم بالبحث قبل الشراء .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;إدخال كلمة السر يأخذ وقت طويل&lt;/strong&gt;&lt;/p&gt;
+7. **من الصعب جدا استخدام لوحة المفاتيح!**
 
-    &lt;p&gt;في الإعدادات - الأمن والحماية - ضبط قفل الشاشة ، بإمكانك اختيار إدخال اسلوب/نمط بدلا من كلمة السر و هو ليس فقط أسرع وإنما أكثر أمناً .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;مكاني ليس دائما دقيق في الخرائط&lt;/strong&gt;&lt;/p&gt;
+   ربما تكون لوحة المفاتيح الاعتيادية لأندرويد ليست سهلة الاستخدام ،هناك العديد من البدائل المتاحة ، التطبيق &quot;slidelt&quot; مثلا هو أحد التطبيقات الذي يمكّنك من الكتابة حتى بدون أن ترفع إصبعك عن الشاشة .. فقط دع إصبعك تتنقل بين الأحرف وشاهد السحر ..
 
-    &lt;p&gt;اذهب إلى الإعدادات &amp;gt; المكان وتأكد من وضع علامة في مربع “استخدام الأقمار الصناعية GPS” ، هذا سيضمن دقة أكثر بكثير عند التنقل .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;ضوء الفلاش مزعج جداً&lt;/strong&gt;&lt;/p&gt;
+8. **لم يعد يتم التعرف على كرتي الذاكرة في الجهاز.**
 
-    &lt;p&gt;من السهل إيقاف التنبيه الضوئي في أغلب الهواتف التي تعمل بنظام أندرويد . ببساطة اذهب إلى الإعدادات &amp;gt; العرض &amp;gt; الإشعارات الضوئية (أو ما شابه) وأزل كل التأشيرات من المربعات.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;كيف أحذف جميع بيانات هاتفي بشكل كامل؟&lt;/strong&gt;&lt;/p&gt;
+   إن كروت الذاكرة يمكن أن تتعرض للتخريب والطريقة الأكثر فعالية لجعلها تعمل مرة أخرى هي إعادة تهيئتها باستخدام الحاسوب العادي أو المحمول من خلال مستعرض الملفات على الحاسوب ، فقط اضغط بيمين الفأرة على كرت الذاكرة واذهب للخيار &quot;إعادة تهيئة البطاقة&quot; لإعادتها للحياة من جديد . هذه الطريقة أكثر فعالية من إعادة تهيئة كرت الذاكرة على الجهاز اللوحي أو الهاتف نفسه .
 
-    &lt;p&gt;أفضل طريقة هي استخدام خيار استعادة ضبط المصنع في الإعدادات / تخزين الهاتف والبطاقة . وللتأكد من أن كل شيئ قد تمت إزالته بشكل نهائي ، افعل العملية مرتين .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;لماذا لا أستطيع استخدام سوق أندرويد على جهازي؟&lt;/strong&gt;&lt;/p&gt;
+9. **من الصعب مشاهدة الشاشة خلال الإضاءة القوية للشمس**
 
-    &lt;p&gt;بعض الأجهزة تأتي مع سوق تطبيقات خاص بها أو ربما بدون . ربما تكون إصدارة الأندرويد قديمة جدا أو أن الجهاز بطيئ للتعامل مع العديد من التطبيقات . دائما قم بالبحث قبل الشراء.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;أوقعت هاتفي في الماء!!&lt;/strong&gt;&lt;/p&gt;
+   إن أفضل خيار هو وضع واقي للشاشة مضاد للسطوع حيث يقلل نسبة السطوع على الشاشة في ظروف الإضاءة القوية.
 
-    &lt;p&gt;هذا الحل لن يعمل اذا حصل الأمر فعلاً ، ولكن اذا تم حصوله في المستقبل فقم بإخراج البطارية بأسرع وقت ممكن وحاول تجفيف أكبر عدد من قطع الجهاز تستطيع تجفيفها ، ثم اتركه 72 ساعة في مكان جاف ثم حاول تشغيله ثانية ، ربما يعمل .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;هل أستطيع جعل النص بجهازي الأندرويد أكبر&lt;/strong&gt;&lt;/p&gt;
+10. **بعض الألعاب تعمل بشكل بطيئ جدا على جهازي**
 
-    &lt;p&gt;نعم . في تطبيقات مثل المتصفح بإمكانك الذهاب إلى الإعدادات واستخدام خيار ضبط حجم الخط أو “Set text size” لتكبير حجم النص المعروض . وهناك بعض خيارات إمكانية الوصول الممتازة في سوق أندرويد والتي يمكن أن تساعدك .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;هل أستطيع تحديث التطبيقات بشكل تلقائي؟&lt;/strong&gt;&lt;/p&gt;
+    بعض الهواتف تعمل بمعالجات أبطأ من غيرها مما يقلل من سرعة الرسوميات .. الحل الأفضل هو تجربة الهاتف قبل شراؤه حيث أن بعض الهواتف أفضل بكثير من غيرها ، ومن الصعب معرفة أداء الجهاز من المواصفات فقط .
 
-    &lt;p&gt;في سوق التطبيقات الذي تستخدمه ، اذهب إلى تطبيقاتي ‘My Apps’ في القائمة واختر تطبيق ما ، ستجد خيار في أسفل الشاشة يتيح لك التحديث التلقائي لهذا التطبيق . قم بفعل ذلك بالنسبة للتطبيقات التي تثق بها فقط .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;أين اختفت تطبيقاتي المدفوعة؟&lt;/strong&gt;&lt;/p&gt;
+11. **كيف يتم حذف تطبيق معين؟**
 
-    &lt;p&gt;إذا قمت بتغيير هاتفك ووجدت أن بعض التطبيقات لا تظهر في حسابك على سوق أندرويد ، فتأكد من أنها متوافقة مه الجهاز . إذا لم تعرض بعد تحديث النظام ، فربما سوق أندرويد يرى هاتفك غير مرتبط بحسابك . وعندها يحين الوقت للاتصال بالدعم الخاص بسوق أندرويد.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;كيف يمكنني ضبط العمر الأدنى للتطبيقات&lt;/strong&gt;&lt;/p&gt;
+    اذهب إلى الإعدادات &amp;gt; التطبيقات &amp;gt; إدارة التطبيقات ثم اختر التطبيق الذي تريد حذفه وانقر على خيار &quot;حذف التطبيق&quot;.
 
-    &lt;p&gt;اذهب إلى سوق التطبيقات واضغط على القائمة . اختر إعدادات ‘Settings’ ثم تنقية المحتويات ‘Content filtering’ حيث يمكنك اختيار التطبيقات المسموح بها على جهازك.&lt;/p&gt;
+12. **شاشة جهازي تعطلت ! هل يجب علي شراء جهاز جديد؟**
 
-    &lt;p&gt;&lt;img src=&quot;/assets/common-android-problems3.jpg&quot; alt=&quot;مشاكل شائعة في أندرويد مع الحل3&quot; title=&quot;مشاكل شائعة في أندرويد مع الحل3&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;شاشة اللمس لم تعد دقيقة&lt;/strong&gt;&lt;/p&gt;
+    معظم الهواتف الشائعة لديها قطع تبديل متاحة في السوق أو عبر الإنترنت وبإمكانك تركيبها بنفسك .. عملية تركيب الشاشة أبسط بكثير مما تتوقع ، لذا قم بالبحث قبل الشراء .
 
-    &lt;p&gt;القليل جداً من هواتف أندرويد تسمح لك بمعايرة الشاشة . وهذا يعني أنك إذا كنت تواجه مشاكل بالنقر على النقطة الصحيحة في الشاشة فستحتاج لمحاولة إعادة التشغيل الخفيفة ، إعادة تشغيل كاملة وثم الاتصال بالدعم (إذا تطلب ذلك) لحل المشكلة .&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;أريد إخفاء سجل البحث&lt;/strong&gt;&lt;/p&gt;
+13. **إدخال كلمة السر يأخذ وقت طويل**
 
-    &lt;p&gt;اذهب إلى www.google.com/history عبر متصفح الأندرويد وقم بتسجيل الدخول . يمكنك حينها اختيار حذف سجل البحث الخاص بك وعدم حفظ العبارات التي سيتم البحث عنها في المستقبل .&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+    في الإعدادات - الأمن والحماية - ضبط قفل الشاشة ، بإمكانك اختيار إدخال اسلوب/نمط بدلا من كلمة السر و هو ليس فقط أسرع وإنما أكثر أمناً .
+
+14. **مكاني ليس دائما دقيق في الخرائط**
+
+    اذهب إلى الإعدادات &amp;gt; المكان وتأكد من وضع علامة في مربع &quot;استخدام الأقمار الصناعية GPS&quot; ، هذا سيضمن دقة أكثر بكثير عند التنقل .
+
+15. **ضوء الفلاش مزعج جداً**
+
+    من السهل إيقاف التنبيه الضوئي في أغلب الهواتف التي تعمل بنظام أندرويد . ببساطة اذهب إلى الإعدادات &amp;gt; العرض &amp;gt; الإشعارات الضوئية (أو ما شابه) وأزل كل التأشيرات من المربعات.
+
+16. **كيف أحذف جميع بيانات هاتفي بشكل كامل؟**
+
+    أفضل طريقة هي استخدام خيار استعادة ضبط المصنع في الإعدادات / تخزين الهاتف والبطاقة . وللتأكد من أن كل شيئ قد تمت إزالته بشكل نهائي ، افعل العملية مرتين .
+
+17. **لماذا لا أستطيع استخدام سوق أندرويد على جهازي؟**
+
+    بعض الأجهزة تأتي مع سوق تطبيقات خاص بها أو ربما بدون . ربما تكون إصدارة الأندرويد قديمة جدا أو أن الجهاز بطيئ للتعامل مع العديد من التطبيقات . دائما قم بالبحث قبل الشراء.
+
+18. **أوقعت هاتفي في الماء!!**
+
+    هذا الحل لن يعمل اذا حصل الأمر فعلاً ، ولكن اذا تم حصوله في المستقبل فقم بإخراج البطارية بأسرع وقت ممكن وحاول تجفيف أكبر عدد من قطع الجهاز تستطيع تجفيفها ، ثم اتركه 72 ساعة في مكان جاف ثم حاول تشغيله ثانية ، ربما يعمل .
+
+19. **هل أستطيع جعل النص بجهازي الأندرويد أكبر**
+
+    نعم . في تطبيقات مثل المتصفح بإمكانك الذهاب إلى الإعدادات واستخدام خيار ضبط حجم الخط أو &quot;Set text size&quot; لتكبير حجم النص المعروض . وهناك بعض خيارات إمكانية الوصول الممتازة في سوق أندرويد والتي يمكن أن تساعدك .
+
+20. **هل أستطيع تحديث التطبيقات بشكل تلقائي؟**
+
+    في سوق التطبيقات الذي تستخدمه ، اذهب إلى تطبيقاتي ‘My Apps’ في القائمة واختر تطبيق ما ، ستجد خيار في أسفل الشاشة يتيح لك التحديث التلقائي لهذا التطبيق . قم بفعل ذلك بالنسبة للتطبيقات التي تثق بها فقط .
+
+21. **أين اختفت تطبيقاتي المدفوعة؟**
+
+    إذا قمت بتغيير هاتفك ووجدت أن بعض التطبيقات لا تظهر في حسابك على سوق أندرويد ، فتأكد من أنها متوافقة مه الجهاز . إذا لم تعرض بعد تحديث النظام ، فربما سوق أندرويد يرى هاتفك غير مرتبط بحسابك . وعندها يحين الوقت للاتصال بالدعم الخاص بسوق أندرويد.
+
+22. **كيف يمكنني ضبط العمر الأدنى للتطبيقات**
+
+    اذهب إلى سوق التطبيقات واضغط على القائمة . اختر إعدادات 'Settings' ثم تنقية المحتويات 'Content filtering' حيث يمكنك اختيار التطبيقات المسموح بها على جهازك.
+
+    ![مشاكل شائعة في أندرويد مع الحل3](/assets/common-android-problems3.jpg &quot;مشاكل شائعة في أندرويد مع الحل3&quot;)
+
+23. **شاشة اللمس لم تعد دقيقة**
+
+    القليل جداً من هواتف أندرويد تسمح لك بمعايرة الشاشة . وهذا يعني أنك إذا كنت تواجه مشاكل بالنقر على النقطة الصحيحة في الشاشة فستحتاج لمحاولة إعادة التشغيل الخفيفة ، إعادة تشغيل كاملة وثم الاتصال بالدعم (إذا تطلب ذلك) لحل المشكلة .
+
+24. **أريد إخفاء سجل البحث**
+
+    اذهب إلى www.google.com/history عبر متصفح الأندرويد وقم بتسجيل الدخول . يمكنك حينها اختيار حذف سجل البحث الخاص بك وعدم حفظ العبارات التي سيتم البحث عنها في المستقبل .
+&lt;/amp-img&gt;
 </content>
 		</entry>
 	

@@ -1,97 +1,45 @@
-	<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-		<button class="dl-trigger">عرض القائمة</button>
-		<ul class="dl-menu">
-			<li><a href="{{ site.url }}/">الرئيسيّة</a></li>
-			<li>
-				<a href="#">عن الموقع</a>
-				<ul class="dl-submenu">
-					<li>
-						<img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
-						<h4>{{ site.title }}</h4>
-						<p>{{ site.description }}</p>
-					</li>
-					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">تعرّف أكثر</span></a></li>
-					{% if site.email %}<li>
-                        <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> البريد الإلكتروني</a>
-                    </li>{% endif %}
-                    {% if site.twitter %}<li>
-                        <a href="http://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-twitter-square"></i> تويتر</a>
-                    </li>{% endif %}
-                    {% if site.facebook %}<li>
-                        <a href="http://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-facebook-square"></i> فيسبوك</a>
-                    </li>{% endif %}
-                    {% if site.google.plus %}<li>
-                        <a href="http://plus.google.com/+{{ site.google.plus }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
-                    </li>{% endif %}
-                    {% if site.linkedin %}<li>
-                        <a href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a>
-                    </li>{% endif %}
-                    {% if site.xing %}<li>
-                        <a href="http://www.xing.com/profile/{{ site.xing }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-xing-square"></i> Xing</a>
-                    </li>{% endif %}
-                    {% if site.instagram %}<li>
-                        <a href="http://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
-                    </li>{% endif %}
-                    {% if site.tumblr %}<li>
-                        <a href="http://{{ site.tumblr }}.tumblr.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-tumblr-square"></i> Tumblr</a>
-                    </li>{% endif %}
-                    {% if site.github %}<li>
-                        <a href="http://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github"></i> Github</a>
-                    </li>{% endif %}
-                    {% if site.stackoverflow %}<li>
-                        <a href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-stack-overflow"></i> StackOverflow</a>
-                    </li>{% endif %}
-                    {% if site.lastfm %}<li>
-                        <a href="http://lastfm.com/user/{{ site.lastfm }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-music"></i> LastFm</a>
-                    </li>{% endif %}
-                    {% if site.dribbble %}<li>
-                        <a href="http://dribbble.com/{{ site.dribbble }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-dribbble"></i> Dribble</a>
-                    </li>{% endif %}
-                    {% if site.pinterest %}<li>
-                        <a href="http://www.pinterest.com/{{ site.pinterest }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-pinterest"></i> Pinterest</a>
-                    </li>{% endif %}
-                    {% if site.foursquare %}<li>
-                        <a href="http://foursquare.com/{{ site.foursquare }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-foursquare"></i> Foursquare</a>
-                    </li>{% endif %}
-                    {% if site.steam %}<li>
-                        <a href="http://steamcommunity.com/id/{{ site.steam }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-steam-square"></i> Steam</a>
-                    </li>{% endif %}
-                    {% if site.youtube %}<li>
-                        <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-youtube-square"></i> يوتيوب</a>
-                    </li>{% endif %}
-                    {% if site.soundcloud %}<li>
-                        <a href="http://soundcloud.com/{{ site.soundcloud }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-soundcloud"></i> SoundCloud</a>
-                    </li>{% endif %}
-                    {% if site.weibo %}<li>
-                        <a href="http://www.weibo.com/{{ site.weibo }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-weibo"></i> Weibo</a>
-                    </li>{% endif %}
-                    {% if site.flickr %}<li>
-                        <a href="http://www.flickr.com/{{ site.flickr }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
-                    </li>{% endif %}
-                    {% if site.codepen %}<li>
-                        <a href="http://codepen.io/{{ site.codepen }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-codepen"></i> Codepen</a>
-                    </li>{% endif %}
-                    {% if site.keybase %}<li>
-                        <a href="https://keybase.io/{{ site.keybase }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-key"></i> Keybase</a>
-                    </li>{% endif %}
-                    {% if site.xmpp %}<li>
-                        <a href="xmpp:{{ site.xmpp }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-lightbulb-o"></i> XMPP</a>
-                    </li>{% endif %}
-                    {% if site.hackernews %}<li>
-                        <a href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i> Hacker News</a>
-                    </li>{% endif %}
-				</ul><!-- /.dl-submenu -->
-			</li>
-			<li>
-				<a href="{{ site.url }}/posts/">المدونة</a>
-			</li>
-			{% for link in site.data.navigation %}
-		    {% if link.url contains 'http' %}
-		        {% assign domain = '' %}
-		        {% else %}
-		        {% assign domain = site.url %}
-		    {% endif %}
-		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
-		  {% endfor %}
-		</ul><!-- /.dl-menu -->
-	</nav><!-- /.dl-menuwrapper -->
+ <!-- Start Navbar -->
+ <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
+    <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
+    </div>
+        <a class ="my0 mx-auto" href="{{ site.url }}"><amp-img src="/assets/img/logo.png" width="61.3" height="61.3" layout="fixed" class="my0 mx-auto " alt="موقع ملهم"></amp-img></a>
+       
+        </header>
+
+<!-- Start Sidebar -->
+<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3  " layout="nodisplay">
+  <div class="flex justify-start items-center ampstart-sidebar-header">
+    <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+  </div>
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 ampstart-label">
+          
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/">الرئيسيّة</a></li>
+         
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/about/">عن الموقع</a></li>
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/urls/">روابط مفيدة</a></li>
+    </ul>
+  </nav>
+
+
+
+  <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+   
+        <li>
+            <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="24" height="28.5" /></a>
+        </li>
+        <li>
+            <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML youtube"><amp-img src="/assets/img/youtube.svg" width="24" height="28.5" /></a>
+        </li>
+                    <li>
+                        <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="24" height="28.5" /></a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="24" height="28.5" /></a>
+                    </li>
+    </ul> 
+
+  
+</amp-sidebar>
+<!-- End Sidebar -->
+  <!-- End Navbar -->

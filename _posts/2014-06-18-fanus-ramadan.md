@@ -8,7 +8,7 @@ tags: [إنترنت, تصميم]
 ---
 
 
-<center><img src="/assets/beautiful-islamic-ramadan-widget-for-blogger.png" title="أضف فانوس رمضان المتحرك لمدونتك" alt="أضف فانوس رمضان المتحرك لمدونتك"></center>
+<center><amp-img src="/assets/beautiful-islamic-ramadan-widget-for-blogger.png" title="أضف فانوس رمضان المتحرك لمدونتك" alt="أضف فانوس رمضان المتحرك لمدونتك"></center>
 
 هنا تجد طريقة إضافة فانوس رمضان المتحرك أعلى يسار الصفحة في مدونات بلوجر، كما يمكن إضافته في أي موقع كان.
 

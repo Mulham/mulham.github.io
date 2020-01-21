@@ -9,57 +9,38 @@ layout: compress
 <head>
 	
     {% include head.html %}
-    {% if page.feature %}
-  <meta property="og:image" content="{{page.feature}}">
-{% endif %}
-
-
+   
 </head>
 <body>
-    <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-4752855256699204">
-</amp-auto-ads>
+    
     {% include nav.html %}
 
     <!-- Header -->
-    <header class="header" role="banner">
-        <div class="wrapper animated fadeIn">
-            <div class="content">
-                <div class="post-title {% if page.feature %} feature {% endif %}">
-                    <h1>{{ page.title }}</h1>
-                    <h4>{{ page.date | date_to_string }}</h4>
+    <br><br><br>
+    <main id="content" role="main" class="">
+      <article class="recipe-article">
+        <header class="header" role="banner">
+          <h1 class="mb1 px3" style="text-align: center">{{ page.title }}</h1>
+                  
+                    <h4 style="text-align: center">{{ page.date | date_to_string }}</h4>
                     {% if site.reading_time %}
                     <p class="reading-time">
-                      <i class="fa fa-clock-o"></i>
+                      <amp-img height="16" width="16" src="/assets/img/time.png"></amp-img>
                       {% include read-time.html %}
-                    </p><!-- /.entry-reading-time -->
+                    </p><!-- /.entry-reading-time --><br>
                     {% endif %}
+                    <div style="text-align: center">
                     {% if page.type == 'tutorial' %}
-                    <a class="btn zoombtn" href="{{site.url}}/tutorials/">
+                    <a class="ampstart-btn" href="{{site.url}}/tutorials/">
                     {% else %}
-                    <a class="btn zoombtn" href="{{site.url}}/posts/">
+                    <a class="ampstart-btn" href="{{site.url}}/posts/">
                     {% endif %}
+                    &#8674;</a>
+<a class="ampstart-btn" href="https://github.com/Mulham/mulham.github.io/tree/master/{{page.path}}">عدِّل هذه الصفحة</a>
+                </div><br><br>
 
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-<a class="btn zoombtn" href="https://github.com/Mulham/mulham.github.io/tree/master/{{page.path}}">عدِّل هذه الصفحة</a>
-                </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- desktop -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
                 {{ content }}
-<br><hr><!-- LikeBtn.com BEGIN -->
-<span class="likebtn-wrapper" data-theme="drop" data-lang="ar" data-ef_voting="buzz" data-rich_snippet="true" data-voting_frequency="1" data-addthis_pubid="ra-4ff885424500c510" data-item_url="{{ site.baseurl }}{{ post.url }}" data-item_title="{{ post.title }}" data-item_description="{{ post.description }}" data-item_date="{{ post.date }}"></span>
-<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-<!-- LikeBtn.com END -->
+<br><hr>
 
 
 <div class="rect">
@@ -102,48 +83,50 @@ layout: compress
       {% endif %}
     {% endif %}
   {% endfor %}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- desktop -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
-<div id="mc_embed_signup" style="font:14px;width:100%;">
-<form action="https://github.us5.list-manage.com/subscribe/post?u=ef99ab99e546f6f09993024f4&amp;id=94dda7fbb9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">ابقى على اطلاع على آخر شروحاتنا التقنية</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="يرجى إدخال بريدك الإلكتروني" required>
- 
-    <div class="clear"><input type="submit" value="اشترك" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
 </div>
 
 
                 <div class="entry-meta">
                 {% include meta.html %}
                 </div>
-            </div>
-        </div>
+        
 
-        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
     </header>
-    {% include scripts.html %}
+
     {% if site.mathjax == true %}
     <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
+    <br><br><br>
+  <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+   
+    <li>
+        <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="24" height="28.5" /></a>
+    </li>
+    <li>
+        <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML youtube"><amp-img src="/assets/img/youtube.svg" width="24" height="28.5" /></a>
+    </li>
+                <li>
+                    <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="24" height="28.5" /></a>
+                </li>
+                <li>
+                    <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="24" height="28.5" /></a>
+                </li>
+</ul>    
+
+      </section></article>
+    </main>
+
+  <!-- Start Footer -->
+  <footer>
+
+
+  
+      
+     <center>  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><amp-img width="63" height="25" alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.
+     </center> 
+  </footer>
+  <!-- End Footer -->  
 
 </body>
 </html>

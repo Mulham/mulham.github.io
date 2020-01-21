@@ -5,47 +5,55 @@ layout: compress
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<!--[if gt IE 8]><!--> <html ⚡ lang="ar" class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
 </head>
 <body>
-    {% include nav.html %}
     <!-- Header -->
-    <header class="header flex" role="banner">
 
-        <div class="container animated fadeIn">
             <div class="row">
-                    <a href="{{ site.url }}">
-                        <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn">
+                    <a href="#">
+                        <amp-img src="{{ site.logo }}" width="160" height="160" class="img-circle animated rotateIn">
                     </a>
                     <h3 class="title">
-                        <a class="zoombtn" href="{{ site.url }}">
-                        	<p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
+                        <a href="#">
+                        	<p style="font-size:25px;font-weight:300">{{ site.title }}</p>
 			            </a>
                     </h3>
                     <hr class="hr-line">
                     <h3 class="title">
-                        <a href="{{ site.url }}">
-                        	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
+                        <a href="#">
+                        	<p style="font-size:25px;font-weight:300">{{ site.bio }}</p>
 			            </a>
                     </h3>
-                    {% include social-links.html %}
-                  <hr class="hr-line">
-                  <h3 class="title">
-                         <a class="btn zoombtn" href="{{ site.url }}/about">
+
+                    <ul style="list-style: none;">
+                        <li style="display: inline;">
+                            <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="30" height="35.5" /></a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML youtube"><amp-img src="/assets/img/youtube.svg" width="30" height="35.5" /></a>
+                        </li>
+                                    <li style="display: inline;">
+                                        <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="30" height="35.5" /></a>
+                                    </li>
+                                    <li style="display: inline;">
+                                        <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="30" height="35.5" /></a>
+                                    </li>
+                    </ul>               <hr class="hr-line">
+                  <h3 style="font-size: 25px;" class="title">
+                         <a class="btn" href="{{ site.url }}/about">
                          عن الموقع
                          </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/posts">
+                         <a class="btn" href="{{ site.url }}/posts">
                          المدوّنة
                          </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/tutorials">
+                         <a class="btn" href="{{ site.url }}/tutorials">
                          الدروس
                          </a>
                  </h3>
-            </div>
+            
         </div>
-    </header>
-    {% include scripts.html %}
 </body>
 </html>

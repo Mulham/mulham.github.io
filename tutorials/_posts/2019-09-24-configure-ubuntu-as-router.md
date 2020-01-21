@@ -11,7 +11,7 @@ tags: [شبكات, إنترنت, لينكس]
 هل تعلم أنه يمكن ضبط نظام أوبونتو الخاص بك ليكون بمثابة جهاز راوتر(مودم) قوي للغاية؟ تابع القراءة لاكتشاف كيفية تحقيق ذلك من خلال بضع خطوات بسيطة.
 إذا كان لديك بطاقتي واجهة شبكة مثبتتان في نظام Ubuntu (مثلا كرت شبكة سلكي ethernet وآخر وايفاي) أحدهما يوصلك بالإنترنت والآخر بشبكة محلية ، يمكن تحويل نظامك إلى جهاز راوتر قوي للغاية. يمكنك إنشاء NAT (ترجمة عنوان الشبكة) الأساسية ، وتنشيط إعادة توجيه المنفذ ، وتشكيل بروكسي ، وتحديد أولويات حركة المرور من وإلى نظامك حتى لا يتعارض التنزيل مع الألعاب الخاصة بك. توضح هذه المقالة كيفية إعداد نظام Ubuntu الخاص بك كراوتر ، والذي يمكن تهيئته لاحقًا كجدار حماية. سيساعدك الإعداد الناتج على التحكم في حركة المرور عبر المنافذ وجعل نظامك أقل عرضة للمخاطر الأمنية.
 
-![Ubuntu as a router](/assets/ubuntu-as-router1.jpg)
+<amp-img width="300" height="200" alt="Ubuntu as a router" src="/assets/ubuntu-as-router1.jpg"></amp-img>
 
 
 * Toc
@@ -40,13 +40,18 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 10.10.6.204 = عنوان IP الخاص بـ eth1.
 10.10.6.205 = عنوان IP للمضيف B ، أي كمبيوتر في نفس الشبكة الفرعية.
 
-![Ubuntu as a router - Configuration of eth0](/assets/ubuntu-as-router2.png)
 
-![Setting up network on eth0](/assets/ubuntu-as-router3.png)
+<amp-img width="300" height="500" alt="Ubuntu as a router - Configuration of eth0" src="/assets/ubuntu-as-router2.png"></amp-img>
 
-![Configuration of eth 1](/assets/ubuntu-as-router4.png)
 
-![Setting up network on eth 1](/assets/ubuntu-as-router5.png)
+<amp-img width="300" height="500" alt="Setting up network on eth0" src="/assets/ubuntu-as-router3.png"></amp-img>
+
+
+<amp-img width="300" height="500" alt="Setting up network on eth 1" src="/assets/ubuntu-as-router4.png"></amp-img>
+
+
+<amp-img width="300" height="500" alt="Ubuntu as a router - Configuration of eth0" src="/assets/ubuntu-as-router5.png"></amp-img>
+
 
 # ضبط بطاقات واجهة الشبكة
 
@@ -58,6 +63,7 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 2. أدخل الأمر التالي لتحرير ملف "الواجهات":
 
         sudo vim /etc/network/interfaces
+
 ثم قم بتحرير الملف مع الأسطر التالية:
 
         auto lo  

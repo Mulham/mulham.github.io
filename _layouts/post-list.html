@@ -5,35 +5,38 @@ layout: compress
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<!--[if gt IE 8]><!--> <html ⚡ lang="ar" class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
 </head>
 <body>
     {% include nav.html %}
     <!-- Header -->
+    <br><br><br>
+    <main id="content" role="main" class="">
+      <article class="recipe-article">
     <header class="header" role="banner">
-        <div class="wrapper animated fadeIn">
+       
             <div class="content">
                 <div class="post-title">
                     <h1>{{ page.title }}</h1>
-                    <a class="btn zoombtn" href="{{site.url}}">
-                        <i class="fa fa-home"></i>
+                    <a class="ampstart-btn" href="{{site.url}}">
+                        <amp-img height="24" width="24" src="/assets/img/home.png"></amp-img>
                     </a>
                 </div>
                 <div class="post-list">
                     {% for post in site.posts %} 
                         {% if post.type == 'blog' %}
 
-                    <ul>
+                    <ul style="list-style: none;">
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             
-                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">
+                            <a style="font-size: 33px;" href="{{ site.url }}{{ post.url }}">
                         {% if post.feature %}
 <img style="float:left; width: 250px; height:250px;border-radius: 8px;" src="{{post.feature}}">
 {% endif %}
 {{ post.title }}</a>
-                            <p>{{ post.excerpt | strip_html | truncatewords:75 }}</p>
+                            <p style="font-size: 20px;">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">قراءة المزيد»</a>
                         </li>
                     </ul>
@@ -42,10 +45,7 @@ layout: compress
                     {% endfor %}
                 </div>
             </div>
-        </div>
-    </header>
-    {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
-    <script type="text/javascript">(new WOW).init();</script>
+    </header></article></main>
+   
 </body>
 </html>
