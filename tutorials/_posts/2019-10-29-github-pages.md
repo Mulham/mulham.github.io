@@ -37,7 +37,9 @@ tags: [Github, إنترنت]
 قم باختيار قالب جاهز لموقعك من [هنا](https://jekyllthemes.io/free) أو [هنا](http://jekyllthemes.org/themes/jekyll-theme-prologue/) أو من أي موقع يحوي "free jekyll themes".
 ثم قم بتحميل القالب الذي اخترته لجهازك وذلك بالذهاب لرابطه في جتهب والضغط على الزر الأخضر clone or Download ثم Download ZIP كما في الصورة
 
-![github-rep-download](/assets/github-rep-download.png)
+<amp-img src="/assets/github-rep-download.png" width="500" height="400" alt="github-repository-download"></amp-img>
+
+
   
 بعد ذلك عليك إنشاء حزمة على جتهب (Github) ورفع ملفات القالب بعد التعديل عليه لتلك الحزمة على الإنترنت. للقيام بذلك اتبع التالي:
 
@@ -55,7 +57,8 @@ Repository name: username.github.io
 الآن قم بالذهاب للحزمة التي تم إنشاؤها (سيذهب لها تلقائيا بعد إنشاؤها مباشرة) ستجد على اليمين زر upload files قم بالضغط عليه. ثم من على جهازك اذهب للمجلد الذي يحوي ملف القالب الذي قمت بتحميله وقم بفك الضغط عنه وارفع ملفات المجلد الناتج إلى الحزمة وذلك بسحبهم وإفلاتهم في المتصفح أو بالنقر في المتصفح لتحديد مكانهم.
 اكتب رسالة توضح ما فعلته في حقل Commit changes مثلا "My first commit" أو أي شيئ تريده، أبقِ على خيار Commit directly to the master branch. ثم اضغط على Commit changes لإتمام رفع الملفات. 
 
-![commit-github-changes](/assets/commit-gh-changes.png)
+<amp-img src="/assets/commit-gh-changes.png" width="500" height="400" alt="commit-github-changes"></amp-img>
+
 
 بعد رفع الملفات بنجاح سيكون موقعك بعد حوالي خمس دقائق جاهزًا على الرابط username.github.io طبعًا بعد تغيير username لاسم المستخدم الخاص بك، اي سيكون الرابط نفس اسم الحزمة التي أنشأتها.
 
@@ -66,6 +69,7 @@ Repository name: username.github.io
 هنا يتوجب عليك فهم بعض الأساسيات في Jekyll حتى تغير وتضيف محتوى لموقعك، سأشرح ذلك هنا باختصار شديد يمكنك من عمل ماتريد بأسرع وقت.
 
 يحتوي قالب jekyll (موقعك) على المجلدات التالية:
+
 <ul style="direction: ltr">
 
 <li> /_layouts </li>
@@ -114,5 +118,5 @@ Repository name: username.github.io
 
 والآن هل تريد ربط موقعك بدومين خاص ( هل لديك اسم موقع .com أو غيره خاص بك تريد عرض موقعك المستضاف في صفحات جتهب من خلاله؟). يمكنك ذلك عبر اتباع التعليمات الموجودة في المقال القادم (جاري التحرير)
 
-ﻷي سؤال أو استفسار لا تتردد في طرحه في التعليقات أدناه.   
+
 

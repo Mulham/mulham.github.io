@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-21T07:04:32+03:00</updated>
+	<updated>2020-01-21T14:52:15+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -5396,7 +5396,7 @@ belongs to&lt;/p&gt;
 &lt;p&gt;قم باختيار قالب جاهز لموقعك من &lt;a href=&quot;https://jekyllthemes.io/free&quot;&gt;هنا&lt;/a&gt; أو &lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-theme-prologue/&quot;&gt;هنا&lt;/a&gt; أو من أي موقع يحوي “free jekyll themes”.
 ثم قم بتحميل القالب الذي اخترته لجهازك وذلك بالذهاب لرابطه في جتهب والضغط على الزر الأخضر clone or Download ثم Download ZIP كما في الصورة&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/github-rep-download.png&quot; alt=&quot;github-rep-download&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/github-rep-download.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;github-repository-download&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;بعد ذلك عليك إنشاء حزمة على جتهب (Github) ورفع ملفات القالب بعد التعديل عليه لتلك الحزمة على الإنترنت. للقيام بذلك اتبع التالي:&lt;/p&gt;
 
@@ -5414,7 +5414,7 @@ belongs to&lt;/p&gt;
 &lt;p&gt;الآن قم بالذهاب للحزمة التي تم إنشاؤها (سيذهب لها تلقائيا بعد إنشاؤها مباشرة) ستجد على اليمين زر upload files قم بالضغط عليه. ثم من على جهازك اذهب للمجلد الذي يحوي ملف القالب الذي قمت بتحميله وقم بفك الضغط عنه وارفع ملفات المجلد الناتج إلى الحزمة وذلك بسحبهم وإفلاتهم في المتصفح أو بالنقر في المتصفح لتحديد مكانهم.
 اكتب رسالة توضح ما فعلته في حقل Commit changes مثلا “My first commit” أو أي شيئ تريده، أبقِ على خيار Commit directly to the master branch. ثم اضغط على Commit changes لإتمام رفع الملفات.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/commit-gh-changes.png&quot; alt=&quot;commit-github-changes&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/commit-gh-changes.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;commit-github-changes&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;بعد رفع الملفات بنجاح سيكون موقعك بعد حوالي خمس دقائق جاهزًا على الرابط username.github.io طبعًا بعد تغيير username لاسم المستخدم الخاص بك، اي سيكون الرابط نفس اسم الحزمة التي أنشأتها.&lt;/p&gt;
 
@@ -5425,6 +5425,7 @@ belongs to&lt;/p&gt;
 &lt;p&gt;هنا يتوجب عليك فهم بعض الأساسيات في Jekyll حتى تغير وتضيف محتوى لموقعك، سأشرح ذلك هنا باختصار شديد يمكنك من عمل ماتريد بأسرع وقت.&lt;/p&gt;
 
 &lt;p&gt;يحتوي قالب jekyll (موقعك) على المجلدات التالية:&lt;/p&gt;
+
 &lt;ul style=&quot;direction: ltr&quot;&gt;
 
 &lt;li&gt; /_layouts &lt;/li&gt;
@@ -5472,8 +5473,6 @@ belongs to&lt;/p&gt;
 &lt;p&gt;إذا احتجت ﻷي مساعدة في عمل موقعك أو تخصيصه فيمكنك مراسلتي للعمل على بناؤه سويةً!&lt;/p&gt;
 
 &lt;p&gt;والآن هل تريد ربط موقعك بدومين خاص ( هل لديك اسم موقع .com أو غيره خاص بك تريد عرض موقعك المستضاف في صفحات جتهب من خلاله؟). يمكنك ذلك عبر اتباع التعليمات الموجودة في المقال القادم (جاري التحرير)&lt;/p&gt;
-
-&lt;p&gt;ﻷي سؤال أو استفسار لا تتردد في طرحه في التعليقات أدناه.&lt;/p&gt;
 
 </content>
 		</entry>
@@ -8163,7 +8162,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://mulham.github.io/assets/denklik.jpg&quot; alt=&quot;تعديل الشهادة الثانوية السورية في تركيا&quot; title=&quot;تعديل الشهادة الثانوية السورية في تركيا&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/denklik.jpg&quot; width=&quot;500&quot; height=&quot;800&quot; alt=&quot;تعديل الشهادة الثانوية السورية في تركيا&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;&lt;strong&gt;ملاحظات&lt;/strong&gt;:&lt;/p&gt;
 &lt;ol&gt;
@@ -12400,7 +12399,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;ألقِ نظرة على المخطط أدناه&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/php.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/php.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;يبدو مرتباً أليس كذلك ؟ كل مربع هو عبارة عن جدول في قاعدة البيانات . جميع الأعمدة مدونة داخل كل جدول .. والخطوط بين الجداول تمثل العلاقة بينهم . سوف نشرح ذلك لاحقاً ، لا بأس إن لم تفهم الكثير الآن ..&lt;/p&gt;
 
@@ -12804,7 +12803,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;دعنا الآن ننشئ نموذج اشتراك بسيط بلغة html حيث يمكن للمستخدمين الاشتراك بالمنتدى&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/2.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-2&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-2&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/2.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-2&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;سنحتاج أيضاً لصفحة بلغة php لإرسال بيانات النموذج لقاعدة البيانات وإتمام اشتراك المستخدم. سنقوم باستخدام المتغير  &lt;code class=&quot;highlighter-rouge&quot;&gt;$_SERVER&lt;/code&gt; .
 المتغير &lt;code class=&quot;highlighter-rouge&quot;&gt;$_SERVER&lt;/code&gt; يحوي مجموعة من القيم التي يتم تعيينها تلقائياً مع كل طلب. أحد هذه القيم هو &lt;code class=&quot;highlighter-rouge&quot;&gt;REQUEST_METHOD&lt;/code&gt; . عندما يتم طلب صفحة بواسطة &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt; . فسيحمل هذا المتغير القيمة &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt; . وعندما يتم طلب الصفحة بواسطة &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt; ، فسيحمل المتغير القيمة &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt; . ولذا سنستخدم هذا المتغير لمعرفة إذا تم إرسال النموذج (بواسطة &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;). انظر صفحة الاشتراك signup.php أدناه&lt;/p&gt;
@@ -12986,7 +12985,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mysqli_connect_errno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Failed to connect to MySQL: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mysqli_connect_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
         &lt;span class=&quot;nv&quot;&gt;$sql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;INSERT INTO
                     users(user_name, user_pass, user_email ,user_date, user_level)
                 VALUES('&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mysqli_real_escape_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$conn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_POST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'user_name'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;',
@@ -13045,7 +13044,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;اذا نجحت عملية الاشتراك فستحصل على التالي&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/3.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-3&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-3&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/3.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-3&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;قم بتحديث صفحة قاعدة البيانات في phpMyAdmin ، يجب أن ترى تسجيلاً جديداً في جدول المستخدمين users&lt;/p&gt;
 
@@ -13069,7 +13068,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/6.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-4&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-4&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/6.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-4&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;بالأسفل ملف تسجيل الدخول signin.php . اطلع على التعليقات ضمن الكود لفهم ما يجري&lt;/p&gt;
 
@@ -13245,7 +13244,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mysqli_connect_errno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Failed to connect to MySQL: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mysqli_connect_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
             &lt;span class=&quot;nv&quot;&gt;$sql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;SELECT 
                         user_id,
                         user_name,
@@ -13353,7 +13352,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;نجحت طريقة التفعيل! والآن يبدو منتدانا كالتالي :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/4.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-5&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-5&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/4.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-5&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;سابعاً-إنشاء-تصنيف&quot;&gt;سابعاً: إنشاء تصنيف&lt;/h1&gt;
 
@@ -13403,7 +13402,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;وكما ترى، لقد بدأنا السكريبت بفحص السيرفر $_SERVER ، بعد التأكد من أن المستخدم لديه صلاحيات المدير، والمطلوبة لإنشاء تصنيف، يتم عرض النموذج إذا لم يتم تعبئته وإرساله سابقاً، وإذا تم إرساله، يتم حفظ القيم. مرة أخرى ، يتم تحضير تعليمة SQL وتنفيذها.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/5.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-6&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-6&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/5.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-6&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;ثامناً-إضافة-تصنيفات-للصفحة-الرئيسية-indexphp&quot;&gt;ثامناً: إضافة تصنيفات للصفحة الرئيسية index.php&lt;/h1&gt;
 
@@ -13716,7 +13715,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;ثم يتم إدراج المنشور في جدول المنشورات post table. تبدو هذه العملية مشابهة لعملية المواضيع، الفرق الوحيد بينهما هو أن المنشور يشير إلى الموضوع والموضوع يشير للتصنيف. لقد قررنا من البداية إنشاء تصميم بيانات جيد، وهذه هي النتيجة.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/7.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-7&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-7&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/7.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-7&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;عاشراً--عرض-التصنيفات&quot;&gt;عاشراً : عرض التصنيفات&lt;/h1&gt;
 
@@ -13865,7 +13864,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;وهذه هي النتيجة النهائية لصفحة التصنيفات&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/8.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-8&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-8&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/8.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-8&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;الخطوة-11--عرض-المواضيع&quot;&gt;الخطوة 11 : عرض المواضيع&lt;/h1&gt;
 
@@ -13903,7 +13902,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;العرض الأخير للمواضيع سيبدو على الشكل :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/9.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-9&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-9&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/9.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-9&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;الخطوة-12--إضافة-تعليق&quot;&gt;الخطوة 12 : إضافة تعليق&lt;/h1&gt;
 
@@ -13914,7 +13913,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;submit&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Submit reply&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/10.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-10&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-10&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/10.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-10&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;وفي النهاية سيكون الكود الكامل لملف reply.php كالتالي:&lt;/p&gt;
 
@@ -13965,7 +13964,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;نتأكد أولاً من وجود المستخدم ثم نضيف (ندرج) التعليق لقاعدة البيانات.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/11.png&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-11&quot; title=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-11&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/11.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-11&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;الخطوة-13-تسجيل-الخروج&quot;&gt;الخطوة 13: تسجيل الخروج&lt;/h1&gt;
 
@@ -14571,7 +14570,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 			<link href="http://mulham.github.io/sql/intro"/>
 			<updated>2016-06-19T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//sql/intro</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/sql.jpg&quot; alt=&quot;intro&quot; /&gt;&lt;/p&gt;
+			<content type="html">&lt;amp-img src=&quot;/assets/sql.jpg&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;SQL intro&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;نقدم هنا سلسلة دروس SQL مترجمة حصرياً لموقع ملهم.&lt;/p&gt;
 
@@ -18461,8 +18460,7 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 			<link href="http://mulham.github.io/hide-side-panel-on-facebook/"/>
 			<updated>2014-02-03T00:00:00+02:00</updated>
 			<id>http://mulham.github.io//hide-side-panel-on-facebook</id>
-			<content type="html">&lt;p&gt;السلام عليكم ..
-الكثير من الناس تزعجه اقتراحات الفيس بوك على القائمة الجانبية من “اشخاص قد تعرفهم “ او مجموعات أو صفحات .. حيث تظهر ضمنها صور غير لائقة أو مخلة بالادب ..
+			<content type="html">&lt;p&gt;الكثير من الناس تزعجه اقتراحات الفيس بوك على القائمة الجانبية من “اشخاص قد تعرفهم “ او مجموعات أو صفحات .. حيث تظهر ضمنها صور غير لائقة أو مخلة بالادب ..
 يمكنك ببساطة إخفاء هذه القائمة وذلك من خلال إضافة حجب الإعلانات التي أيضا تحجب جميع الإعلانات المزعجة في جميع المواقع وبمإكانك عرضها في بعض المواقع إذا شئت ذلك.&lt;/p&gt;
 
 &lt;p&gt;سأشرح هنا طريقة العمل لكل متصفح على حدى ..&lt;/p&gt;
@@ -18477,11 +18475,11 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;p&gt;نزّل &lt;a href=&quot;https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom?utm_source=chrome-ntp-icon&quot;&gt;هذه الإضافة&lt;/a&gt;  بالضغط على “Free” ثم “Add” كما في الصورة&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/hide-fb1.jpg&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-1&quot; title=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-1&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/hide-fb1.jpg&quot; width=&quot;600&quot; height=&quot;300&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-1&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;الآن سترى أيقونة الإضافة أصبحت موجودة بجانب شريط العناوين في الأعلى وهي تعمل الآن بحجب كافة الإعلانات في جميع المواقع . أما طريقة إخفاء القائمة في الفيس بوك كما ذكرنا فقم بالنقر على القائمة المراد إخفاؤها باليمين ثم “Adblock” ثم “Block this ad” كما في الصورة&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/hide-fb2.jpg&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-2&quot; title=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-2&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/hide-fb2.jpg&quot; width=&quot;300&quot; height=&quot;600&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-2&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;متصفح-الفايرفوكس&quot;&gt;متصفح الفايرفوكس&lt;/h1&gt;
 
@@ -18489,7 +18487,7 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;p&gt;الآن سترى أيقونة الإضافة أصبحت موجودة بجانب شريط العناوين في الأعلى وهي تعمل الآن بحجب كافة الإعلانات في جميع المواقع . أما طريقة إخفاء القائمة كما ذكرنا في الفيس بوك اضغط على هذه الأيقونة ثم اختار “Select an element to hide” كما في الصورة&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/hide-fb3.jpg&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-3&quot; title=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-3&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/hide-fb3.jpg&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-3&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;ستجد بعدها أنه بإمكانك تحديد أي عنصر بالصفحة .. حدد القائمة الجانبية التي تريد إخفاءها وهنا هي “أشخاص قد تعرفهم “ ليتم حفظ الإعدادت بعدم الظهور مرة أخرى .&lt;/p&gt;
 
@@ -18497,7 +18495,7 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;p&gt;نزّل &lt;a href=&quot;https://addons.opera.com/en/extensions/details/opera-adblock/?display=en&quot;&gt;هذه الإضافة&lt;/a&gt; بالضغط على “Add to Opera” كما في الصورة&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/hide-fb4.jpg&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-4&quot; title=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-4&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/hide-fb4.jpg&quot; width=&quot;500&quot; height=&quot;200&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-4&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;ثم اضغط على “install” لتجد الأيقونة أصبحت بجانب شريط العناوين في الأعلى وهي تعمل الآن بحجب كافة الإعلانات في جميع المواقع . أما طريقة إخفاء القائمة في الفيس بوك كما ذكرنا فقم بالنقر  باليمين على هذه الأيقونة ثم “preferences”  ثم اذهب إلى التبويب “Add your own filters” واكتب العبارة التالية في الحقل الأول :&lt;/p&gt;
 
@@ -18506,7 +18504,7 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;p&gt;ثم اضغط على “Add filter” كما هو مبين في الصورة&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/hide-fb5.jpg&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-5&quot; title=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-5&quot; /&gt;&lt;/p&gt;
+&lt;amp-img src=&quot;/assets/hide-fb5.jpg&quot; width=&quot;500&quot; height=&quot;200&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-5&quot;&gt;&lt;/amp-img&gt;
 
 </content>
 		</entry>
