@@ -33,7 +33,7 @@ layout: compress
                             
                             <a style="font-size: 33px;" href="{{ site.url }}{{ post.url }}">
                         {% if post.feature %}
-<amp-img width="250px" height="250px" style="float:left; border-radius: 50%; margin-top: 30px;" src="{{post.feature}}"></amp-img>
+<amp-img width="250px" height="250px" style="float:left; border-radius: 50%; margin-top: 30px;" src="{{post.feature}}"alt= "{{ post.alt }}"></amp-img>
 {% endif %}
 {{ post.title }}</a>
                             <p style="font-size: 20px;">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
