@@ -2583,13 +2583,26 @@ dt {
      "@id":"{{ page.url }}"
    },
    "headline": "{{ page.title }}",
-  
+   "image": {
+    "@type": "ImageObject",
+    "url": "{{ page.feature }}",
+    "height": 500,
+    "width": 500
+  },
    "datePublished":"{{ page.date }}",
   
    "author": {
      "@type": "Person",
      "name": "Mulham Alibrahim"
-   
+     "publisher": {
+      "@type": "Organization",
+      "name": "Mulham's Site",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mulham.github.io/assets/img/logo.png",
+        "width": 260,
+        "height": 260
+      }
    
    },
    "description": "{{ page.description }}"
