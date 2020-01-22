@@ -29,6 +29,16 @@ tags: تقنية
 والآن بعد تشغيل الفيديو سواء بعد تنزيله من النت أي من الجهاز مباشرة أو من الإنترنت مباشرة، لتصحيح خطأ عدم تزامن الصوت مع الصورة على نظامي الويندوز واللينكس نضغط على الكيبورد على أحد زري <kbd>J</kbd> و <kbd>K</kbd> لتأخير وتسبيق الصوت عن الصورة على التوالي. على نظام الماك تكون الاختصارات <kbd>G</kbd> و <kbd>F</kbd>
 نستمر في الضغط على أحد هذه الأزرار بحسب الخطأ في الفيديو لنحصل على النتيجة المطلوبة.
 
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+
+
 ## على اﻷندرويد
 
 1. قم بتحميل تطبيق vlc من [Google play](https://play.google.com/store/apps/details?id=org.videolan.vlc).

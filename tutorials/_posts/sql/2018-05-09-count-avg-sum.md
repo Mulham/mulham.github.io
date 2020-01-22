@@ -61,6 +61,15 @@ comments: true
 	SELECT COUNT(ProductID)
 	FROM Products;
 
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+
 # مثال على استخدام AVG()
 
 تُعطي عبارة SQL التالية القيمة المتوسطة ﻷسعار جميع المنتجات:

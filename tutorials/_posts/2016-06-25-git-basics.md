@@ -44,6 +44,15 @@ tags: [Git, Github, شبكات, إنترنت]
 
 هل هذا صعب؟
 
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+
 # الوصول لحزمة
 
 هنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:
@@ -63,6 +72,14 @@ tags: [Git, Github, شبكات, إنترنت]
 
 ![شرح مبدأ عمل git](/assets/trees.png)
 
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
 
 # إضافة وتعديل
 
@@ -125,6 +142,15 @@ tags: [Git, Github, شبكات, إنترنت]
 		git status
 
 هذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.
+
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
 
 ## الأفرع
 

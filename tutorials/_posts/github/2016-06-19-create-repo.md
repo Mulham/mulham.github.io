@@ -56,6 +56,14 @@ comments: true
 
 	* الحزم الخاصة تتطلب خطوات بسيطة إضافية للإنشاء. إنها مدفوعة، ومتاحة فقط لك، أي لصاحب الحزمة، بالإضافة للمستخدمين الذين تختارهم أنت لمشاركة الحزمة معهم.
 
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
 
 5. اختر `Initialize this repository with a README`.  أي استهلال الحزمة بملف اقرأني (لوضع معلومات عن الحزمة والتعريف بها وبوظيفتها ..) .
 
@@ -97,6 +105,14 @@ comments: true
 
 	![](https://help.github.com/assets/images/help/repository/edit-readme-preview-changes.png)
 
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
 
 5. راجع التغييرات التي أجريتها للملف ، حيث ستجد المحتوى الجديد الذي أدخلته باللون الأخضر .
 
