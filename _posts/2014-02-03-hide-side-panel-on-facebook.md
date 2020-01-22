@@ -28,7 +28,14 @@ tags: [تقنية, إنترنت]
 
 <amp-img src="/assets/hide-fb2.jpg" width="300" height="600" alt="طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-2"></amp-img>
 
-
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
 
 # متصفح الفايرفوكس
 
@@ -42,6 +49,14 @@ tags: [تقنية, إنترنت]
 
 ستجد بعدها أنه بإمكانك تحديد أي عنصر بالصفحة .. حدد القائمة الجانبية التي تريد إخفاءها وهنا هي "أشخاص قد تعرفهم " ليتم حفظ الإعدادت بعدم الظهور مرة أخرى .
 
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4752855256699204"
+     data-ad-slot="3888202602"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
 # متصفح أوبرا
 
 نزّل [هذه الإضافة](https://addons.opera.com/en/extensions/details/opera-adblock/?display=en) بالضغط على "Add to Opera" كما في الصورة
