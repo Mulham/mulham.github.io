@@ -4,7 +4,7 @@ bio:                'دروس وشروحات قيّمة وحصريّة لا سا
 description:        "شغف المعرفة"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/logo1.svg'
 locale:             ar_SY
 url:                https://mulham.github.io
 
