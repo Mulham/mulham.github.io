@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-23T00:45:43+03:00</updated>
+	<updated>2020-01-23T16:05:13+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -5248,6 +5248,15 @@ belongs to&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#2-بيانات-المتصفح&quot; id=&quot;markdown-toc-2-بيانات-المتصفح&quot;&gt;2. بيانات المتصفح&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#3-سِجِل-أنشطتك-على-جوجل&quot; id=&quot;markdown-toc-3-سِجِل-أنشطتك-على-جوجل&quot;&gt;3. سِجِل أنشطتك على جوجل&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#4-وضع-التصفح-الخفي&quot; id=&quot;markdown-toc-4-وضع-التصفح-الخفي&quot;&gt;4. وضع التصفح الخفي&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#5-إضافة-privacy-badger&quot; id=&quot;markdown-toc-5-إضافة-privacy-badger&quot;&gt;5. إضافة Privacy Badger&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#6-التحقق-من-الروابط&quot; id=&quot;markdown-toc-6-التحقق-من-الروابط&quot;&gt;6. التحقق من الروابط&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#7-إلغاء-ربط-الحسابات-ببعضها&quot; id=&quot;markdown-toc-7-إلغاء-ربط-الحسابات-ببعضها&quot;&gt;7. إلغاء ربط الحسابات ببعضها&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#8-تشفير-الملفات-الهامة-والشخصية&quot; id=&quot;markdown-toc-8-تشفير-الملفات-الهامة-والشخصية&quot;&gt;8. تشفير الملفات الهامة والشخصية&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#9-المعلومات-البنكية&quot; id=&quot;markdown-toc-9-المعلومات-البنكية&quot;&gt;9. المعلومات البنكية&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#10-حجب-مشاركة-الملفات&quot; id=&quot;markdown-toc-10-حجب-مشاركة-الملفات&quot;&gt;10. حجب مشاركة الملفات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#11-قفل-الشاشة&quot; id=&quot;markdown-toc-11-قفل-الشاشة&quot;&gt;11. قفل الشاشة&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#12-كلمات-السر&quot; id=&quot;markdown-toc-12-كلمات-السر&quot;&gt;12. كلمات السر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#13-نظام-أبونتو&quot; id=&quot;markdown-toc-13-نظام-أبونتو&quot;&gt;13. نظام أبونتو&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;1-مواقع-التواصل-الاجتماعي&quot;&gt;1. مواقع التواصل الاجتماعي&lt;/h1&gt;
@@ -5270,69 +5279,77 @@ belongs to&lt;/p&gt;
 
 &lt;h1 id=&quot;4-وضع-التصفح-الخفي&quot;&gt;4. وضع التصفح الخفي&lt;/h1&gt;
 
-&lt;amp-img src=&quot;/assets/Incognito.png&quot; alt=&quot;شعار وضع التصفح الخفي&quot; style=&quot;float:left; width: 150px&quot;&gt;
+&lt;amp-img width=&quot;150px&quot; height=&quot;150px&quot; src=&quot;/assets/Incognito.png&quot; alt=&quot;شعار وضع التصفح الخفي&quot; style=&quot;float:left&quot;&gt;&lt;/amp-img&gt;
 
-معظم المواقع التي نزورها تستخدم ملفات تعريف الارتباط &quot;cookies&quot; لتتبع سجل تصفحنا على الإنترنت وتستخدم ذلك لعرض إعلانات ملائمة لاهتماماتنا. عند استخدامك لوضع التصفح الخفي &quot;Incognito&quot; فسيتم حذف كل ملفات التتبع تلك بالإضافة للملفات المؤقتة وكذلك سجل التصفح بمجرد إغلاقك لنافذة التصفح (أي لنافذة وضع التصفح الخفي). 
+&lt;p&gt;معظم المواقع التي نزورها تستخدم ملفات تعريف الارتباط “cookies” لتتبع سجل تصفحنا على الإنترنت وتستخدم ذلك لعرض إعلانات ملائمة لاهتماماتنا. عند استخدامك لوضع التصفح الخفي “Incognito” فسيتم حذف كل ملفات التتبع تلك بالإضافة للملفات المؤقتة وكذلك سجل التصفح بمجرد إغلاقك لنافذة التصفح (أي لنافذة وضع التصفح الخفي).&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
+&lt;h1 id=&quot;5-إضافة-privacy-badger&quot;&gt;5. إضافة Privacy Badger&lt;/h1&gt;
 
+&lt;amp-img width=&quot;200px&quot; height=&quot;200px&quot; src=&quot;/assets/PrivacyBadger.png&quot; alt=&quot;Privacy badger logo&quot; style=&quot;float:right&quot;&gt;&lt;/amp-img&gt;
 
+&lt;p&gt;تحوي متصفحات الوب خيار “عدم التتبع” في إعداداتها (تجدها في متصفح كروم في الإعدادات المتقدمة ضمن “الخصوصية والأمان”) ، وفي حالة تفعيل هذا الخيار في المتصفح لديك فسيتم إرسال رسالة للمواقع التي تزورها وشبكات الإعلان طالبةً منهم عدم تتبعك، ولكن في واقع الأمر العديد من المواقع لا يكترث لهذا الخيار. وبالتالي إضافة المتصفح المجانية والمفتوحة المصدر  Privacy Badger تقوم بحجب الإعلانات وملفات تعريف الارتباط “Cookies” في المواقع التي لا تراعي تلك الحالة.&lt;/p&gt;
 
-# 5. إضافة Privacy Badger
+&lt;h1 id=&quot;6-التحقق-من-الروابط&quot;&gt;6. التحقق من الروابط&lt;/h1&gt;
 
-&lt;amp-img src=&quot;/assets/PrivacyBadger.png&quot; alt=&quot;Privacy badger logo&quot; style=&quot;float:right; width: 200px&quot;&gt;
+&lt;p&gt;في حالة حصولك على رابط وب عبر البريد الإلكتروني أو الوتسأب أو أي موقع آخر ومن مصدر غير موثوق أو شككت في أمر الرابط فيمكن اختبار فيما إذا كان آمنًا أم لا عبر خدمة مثل: &lt;a href=&quot;urlvoid.com&quot;&gt;urlvoid.com&lt;/a&gt; 
+وبالنسبة للملفات المشتبه بها فيمكنك فتحها عبر VirtualMachine (نظام افتراضي داخل نظام التشغيل الأساسي)&lt;/p&gt;
 
-تحوي متصفحات الوب خيار &quot;عدم التتبع&quot; في إعداداتها (تجدها في متصفح كروم في الإعدادات المتقدمة ضمن &quot;الخصوصية والأمان&quot;) ، وفي حالة تفعيل هذا الخيار في المتصفح لديك فسيتم إرسال رسالة للمواقع التي تزورها وشبكات الإعلان طالبةً منهم عدم تتبعك، ولكن في واقع الأمر العديد من المواقع لا يكترث لهذا الخيار. وبالتالي إضافة المتصفح المجانية والمفتوحة المصدر  Privacy Badger تقوم بحجب الإعلانات وملفات تعريف الارتباط &quot;Cookies&quot; في المواقع التي لا تراعي تلك الحالة.
+&lt;h1 id=&quot;7-إلغاء-ربط-الحسابات-ببعضها&quot;&gt;7. إلغاء ربط الحسابات ببعضها&lt;/h1&gt;
 
-# 6. التحقق من الروابط 
+&lt;p&gt;العديد من المواقع الآن يقدم خيار ربط الحساب مع حسابات أخرى مثل فيسبوك وجوجل وغيرها، ربط حساباتك على الإنترنت بالمواقع الاجتماعية قد يزيد نسبة الخطر، ففي حال تعرض أحد تلك الحسابات للخطر فإن جميع الحسابات المرتبطة بتلك الحساب ستكون معرضة أيضًا لنفس الخطر، ولذلك إلغاء ربط الحسابات ببعضها يزيد من حماية حساباتنا وبياناتنا على الإنترنت.&lt;/p&gt;
 
-في حالة حصولك على رابط وب عبر البريد الإلكتروني أو الوتسأب أو أي موقع آخر ومن مصدر غير موثوق أو شككت في أمر الرابط فيمكن اختبار فيما إذا كان آمنًا أم لا عبر خدمة مثل: [urlvoid.com](urlvoid.com) 
-وبالنسبة للملفات المشتبه بها فيمكنك فتحها عبر VirtualMachine (نظام افتراضي داخل نظام التشغيل الأساسي)
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
-# 7. إلغاء ربط الحسابات ببعضها
+&lt;h1 id=&quot;8-تشفير-الملفات-الهامة-والشخصية&quot;&gt;8. تشفير الملفات الهامة والشخصية&lt;/h1&gt;
 
-العديد من المواقع الآن يقدم خيار ربط الحساب مع حسابات أخرى مثل فيسبوك وجوجل وغيرها، ربط حساباتك على الإنترنت بالمواقع الاجتماعية قد يزيد نسبة الخطر، ففي حال تعرض أحد تلك الحسابات للخطر فإن جميع الحسابات المرتبطة بتلك الحساب ستكون معرضة أيضًا لنفس الخطر، ولذلك إلغاء ربط الحسابات ببعضها يزيد من حماية حساباتنا وبياناتنا على الإنترنت.
+&lt;p&gt;جميع الملفات الشخصية والوثائق الرسمية والتي تحوي:&lt;/p&gt;
 
-# 8. تشفير الملفات الهامة والشخصية
+&lt;ul&gt;
+  &lt;li&gt;الرقم الوطني&lt;/li&gt;
+  &lt;li&gt;تاريخ الميلاد&lt;/li&gt;
+  &lt;li&gt;رقم البطاقة الائتمانية
+رقم التأمين الصحي&lt;/li&gt;
+&lt;/ul&gt;
 
-جميع الملفات الشخصية والوثائق الرسمية والتي تحوي:
+&lt;p&gt;وغيره من الملفات الحساسة فيجب الموجودة على جهازك يجب إما حذفها أو تشفيرها، لتشفيرها يمكنك استخدام برنامج &lt;a href=&quot;https://www.veracrypt.fr/en/Downloads.html&quot;&gt;Veracrypt&lt;/a&gt; والذي يتيح لك تشفير بعض الملفات أو تشفير القرص بالكامل مثل تشفير قرص USB بأكمله.&lt;/p&gt;
 
-* الرقم الوطني
-* تاريخ الميلاد
-* رقم البطاقة الائتمانية
-رقم التأمين الصحي
+&lt;h1 id=&quot;9-المعلومات-البنكية&quot;&gt;9. المعلومات البنكية&lt;/h1&gt;
 
-وغيره من الملفات الحساسة فيجب الموجودة على جهازك يجب إما حذفها أو تشفيرها، لتشفيرها يمكنك استخدام برنامج [Veracrypt](https://www.veracrypt.fr/en/Downloads.html) والذي يتيح لك تشفير بعض الملفات أو تشفير القرص بالكامل مثل تشفير قرص USB بأكمله.
+&lt;p&gt;لاتقم بإعطاء معلومات الدفع أو تصوير كرت البنك ﻷحد وابقهم في مكان آمن، فهناك مواقع يمكن الدفع بها دون أن يصلك رسالة تأكيد على هاتفك وبالتالي اي شخص لديه معلومات الدفع الخاصة بك يمكنه شراء مايريد دون علمك!&lt;/p&gt;
 
-# 9. المعلومات البنكية
+&lt;h1 id=&quot;10-حجب-مشاركة-الملفات&quot;&gt;10. حجب مشاركة الملفات&lt;/h1&gt;
 
-لاتقم بإعطاء معلومات الدفع أو تصوير كرت البنك ﻷحد وابقهم في مكان آمن، فهناك مواقع يمكن الدفع بها دون أن يصلك رسالة تأكيد على هاتفك وبالتالي اي شخص لديه معلومات الدفع الخاصة بك يمكنه شراء مايريد دون علمك!
+&lt;p&gt;هناك خاصية لتشارك الملفات عبر الشبكة المحلية (شبكة الوايفاي) وهذا مفيد جدا إذا كنت في بيتك مثلا وتريد مشاركة الملفات من جهاز لآخر ضمن أجهزة منزلك، أما إذا كنت خارجًا وقمت بالاتصال بشبكة وايفاي عامة فعليك إيقاف هذا الخيار (فقط إذا قمت بتفعيله فهو مغلق افتراضيًا) وإلا سيكون ﻷي شخص على نفس الشبكة صلاحية مشاهدة الملفات والمجلدات التي قمت بمشاركتها عبر الشبكة.&lt;/p&gt;
 
-# 10. حجب مشاركة الملفات
+&lt;h1 id=&quot;11-قفل-الشاشة&quot;&gt;11. قفل الشاشة&lt;/h1&gt;
 
-هناك خاصية لتشارك الملفات عبر الشبكة المحلية (شبكة الوايفاي) وهذا مفيد جدا إذا كنت في بيتك مثلا وتريد مشاركة الملفات من جهاز لآخر ضمن أجهزة منزلك، أما إذا كنت خارجًا وقمت بالاتصال بشبكة وايفاي عامة فعليك إيقاف هذا الخيار (فقط إذا قمت بتفعيله فهو مغلق افتراضيًا) وإلا سيكون ﻷي شخص على نفس الشبكة صلاحية مشاهدة الملفات والمجلدات التي قمت بمشاركتها عبر الشبكة.
+&lt;p&gt;إذا كنت تستخدم حاسوبك المحمول مثلًا في مكان عام مثل مكتبة وأردت الذهاب قليلًا فلا تنسى قفل الشاشة (على الويندوز زر &lt;kbd&gt;Windows&lt;/kbd&gt; + &lt;kbd&gt;L&lt;/kbd&gt;) بالتالي لن يستطيع أحد استخدام جهازك بدون كلمة السر.&lt;/p&gt;
 
-# 11. قفل الشاشة
+&lt;h1 id=&quot;12-كلمات-السر&quot;&gt;12. كلمات السر&lt;/h1&gt;
 
-إذا كنت تستخدم حاسوبك المحمول مثلًا في مكان عام مثل مكتبة وأردت الذهاب قليلًا فلا تنسى قفل الشاشة (على الويندوز زر &lt;kbd&gt;Windows&lt;/kbd&gt; + &lt;kbd&gt;L&lt;/kbd&gt;) بالتالي لن يستطيع أحد استخدام جهازك بدون كلمة السر.
+&lt;p&gt;استخدم دائمًا كلمات مرور قوية تحوي أحرف كبيرة وصغيرة ورموز وأرقام، ولا تستعمل نفس كلمة السر في أكثر من موقع&lt;/p&gt;
 
-# 12. كلمات السر
+&lt;h1 id=&quot;13-نظام-أبونتو&quot;&gt;13. نظام أبونتو&lt;/h1&gt;
 
-استخدم دائمًا كلمات مرور قوية تحوي أحرف كبيرة وصغيرة ورموز وأرقام، ولا تستعمل نفس كلمة السر في أكثر من موقع 
+&lt;amp-img width=&quot;150px&quot; height=&quot;140px&quot; src=&quot;/assets/ubuntu.png&quot; alt=&quot;شعار نظام أبونتو&quot; style=&quot;float:left;&quot;&gt;&lt;/amp-img&gt;
 
-# 13. نظام أبونتو
+&lt;p&gt;في الواقع نظام ويندوز الذي يستخدمه الكثير منا يعطي لنفسه صلاحيات لمشاهدة وبيع بياناتك وهذا موجود ضمن سياساته على الموقع الرسمي ويمكنك الاطلاع عليها. لذا إذا أردت استخدام نظام تشغيل قوي وعملي وبديل ويحافظ على الخصوصية فأنصحك بـ &lt;a href=&quot;https://ubuntu.com&quot;&gt;ابونتو&lt;/a&gt; وهو أحد توزيعات اللينكس المجانية والمفتوحة المصدر بالإضافة لكونه نظام مستقر وآمن ويوفر ميزة تشفير القرص بالكامل ويقدم حماية إضافية لبياناتك، وكون أن معظم البرامج ضمنه هي أيضًا مجانيّة ومفتوحة المصدر فيوفر أبونتو خيار تحديث كل برامجك بضغطة زر، وبهذا تبقى جميع برامجك مُحدّثة دائمًا ضد جميع الثغرات والهجمات الشائعة.&lt;/p&gt;
 
-&lt;amp-img src=&quot;/assets/ubuntu.png&quot; alt=&quot;شعار نظام أبونتو&quot; style=&quot;float:left; width: 150px&quot;&gt;
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
-في الواقع نظام ويندوز الذي يستخدمه الكثير منا يعطي لنفسه صلاحيات لمشاهدة وبيع بياناتك وهذا موجود ضمن سياساته على الموقع الرسمي ويمكنك الاطلاع عليها. لذا إذا أردت استخدام نظام تشغيل قوي وعملي وبديل ويحافظ على الخصوصية فأنصحك بـ [ابونتو](https://ubuntu.com) وهو أحد توزيعات اللينكس المجانية والمفتوحة المصدر بالإضافة لكونه نظام مستقر وآمن ويوفر ميزة تشفير القرص بالكامل ويقدم حماية إضافية لبياناتك، وكون أن معظم البرامج ضمنه هي أيضًا مجانيّة ومفتوحة المصدر فيوفر أبونتو خيار تحديث كل برامجك بضغطة زر، وبهذا تبقى جميع برامجك مُحدّثة دائمًا ضد جميع الثغرات والهجمات الشائعة.
+&lt;p&gt;في النهاية علينا معرفة أنه لا يمكننا الحفاظ على خصوصيتنا على الإنترنت 100%، لذا فقط عليك أن تكون عقلانيّا ولا تقم بفتح أي موقع يضعك في موقف سيئ في حال رؤية عائلتك أو صاحب العمل لذلك. هذا الإجراء البسيط والغير مكلف قد يكون من أهم وأقوى ماذكر أعلاه&lt;/p&gt;
 
-في النهاية علينا معرفة أنه لا يمكننا الحفاظ على خصوصيتنا على الإنترنت 100%، لذا فقط عليك أن تكون عقلانيّا ولا تقم بفتح أي موقع يضعك في موقف سيئ في حال رؤية عائلتك أو صاحب العمل لذلك. هذا الإجراء البسيط والغير مكلف قد يكون من أهم وأقوى ماذكر أعلاه
+&lt;p&gt;هل نسيت شيئًا؟ إذا كان لديك أي معلومة إضافية فيرجى مشاركتها هنا ليتم إضافتها واستفادة الجميع منها.
+أيضًا لاتتردد بطرح أي سؤال..&lt;/p&gt;
 
-
-هل نسيت شيئًا؟ إذا كان لديك أي معلومة إضافية فيرجى مشاركتها هنا ليتم إضافتها واستفادة الجميع منها.
-أيضًا لاتتردد بطرح أي سؤال..
-
-&lt;/amp-img&gt;&lt;/amp-img&gt;&lt;/amp-img&gt;
 </content>
 		</entry>
 	
@@ -5502,6 +5519,10 @@ belongs to&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#استخدام-أوامر-shell-في-تعبيرات--grep&quot; id=&quot;markdown-toc-استخدام-أوامر-shell-في-تعبيرات--grep&quot;&gt;استخدام أوامر shell في تعبيرات  Grep&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h1 id=&quot;التعبيرات-النمطية&quot;&gt;التعبيرات النمطية&lt;/h1&gt;
 
 &lt;p&gt;تعبير نمطي (regular expression) ، غالبًا ما يتم اختصاره إلى “regex” أو “regexp” ، هو طريقة لتحديد نمط (مجموعة معينة من الأحرف أو الكلمات) في النص الذي يمكن تطبيقه على المدخلات المتغيرة للعثور على جميع التكرارات التي تتطابق مع النمط. تعمل Regexes على تعزيز القدرة على معالجة محتوى النص بشكل مفيد ، خاصةً عند دمجها مع أوامر أخرى.
@@ -5519,6 +5540,10 @@ belongs to&lt;/p&gt;
 &lt;p&gt;من المعتاد إحاطة التعبير النمطي بعلامات اقتباس مفردة ، لمنع shell (مثل Bash أو غيرها) من محاولة تفسير التعبير وتوسيعه قبل بدء عملية grep. على سبيل المثال ، إذا لم يتم ذكر زوج من علامات التجزئة في إعادة الاسترداد ، فسوف ينتج عن ذلك النص بين علامات التجزئة التي يتم تنفيذها كعملية فرعية لـ Bash - وإذا حدث أن ذلك أمر صالح ، فالنص المُرجع سيأخذ مكان التعبير النمطي في تعليمة سطر الأوامر المعطاة إلى Grep! وهذا ليس ما نريد.&lt;/p&gt;
 
 &lt;p&gt;مرة أخرى ، نظرًا لسلوك shell ، يمكنك أيضًا تضمين regex في علامات تنصيص مزدوجة - في هذه الحالة ، يمكنك استخدام متغيرات البيئة في regex ، وستقوم shell باستبدالها قبل الاتصال بـ Grep. قد يكون هذا مفيدًا جدًا ، اعتمادًا على ما تحاول القيام به - أو قد يكون مصدر إزعاج. تذكر الفرق في السلوك.&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;الاستخدام-الأساسي&quot;&gt;الاستخدام الأساسي&lt;/h1&gt;
 
@@ -5676,6 +5701,10 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;ومع ذلك ، فإن عوامل التكرار هي جزء من صيغة التعابير النمطية الموسعة الخاصة بـ GNU Grep ، لذلك لاستخدامها بفعالية ، تذكر إضافة خيار E- إلى الأمر .&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h1 id=&quot;قائمة-الأحرف-في-التعبيرات-النمطية&quot;&gt;قائمة الأحرف في التعبيرات النمطية&lt;/h1&gt;
 
 &lt;p&gt;تعد أداة “قائمة الأحرف” واحدة من أكثر ميزات التعبيرات النمطية استخدامًا ومرونة. وهي عبارة عن قائمة ضمن الأقواس &lt;code class=&quot;highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; تحوي الأحرف التي نريد مطابقتها. هناك طريقتان أساسيتان لاستخدام قوائم الأحرف: لتحديد قائمة من الأحرف (على سبيل المثال [aeiou] هي قائمة بالأحرف الصوتية) ، أو نطاق (مثل [m-t] ، يمتد إلى [mnopqrst]). النطاقات تعطي مرونة بحيث توفر كتابة سلسلة كاملة من الحروف.&lt;/p&gt;
@@ -5747,6 +5776,10 @@ belongs to&lt;/p&gt;
     123 456
     ABCD
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;استخدام-أوامر-shell-في-تعبيرات--grep&quot;&gt;استخدام أوامر shell في تعبيرات  Grep&lt;/h1&gt;
 
@@ -6208,6 +6241,10 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 
 &lt;p&gt;والآن بعد تشغيل الفيديو سواء بعد تنزيله من النت أي من الجهاز مباشرة أو من الإنترنت مباشرة، لتصحيح خطأ عدم تزامن الصوت مع الصورة على نظامي الويندوز واللينكس نضغط على الكيبورد على أحد زري &lt;kbd&gt;J&lt;/kbd&gt; و &lt;kbd&gt;K&lt;/kbd&gt; لتأخير وتسبيق الصوت عن الصورة على التوالي. على نظام الماك تكون الاختصارات &lt;kbd&gt;G&lt;/kbd&gt; و &lt;kbd&gt;F&lt;/kbd&gt;
 نستمر في الضغط على أحد هذه الأزرار بحسب الخطأ في الفيديو لنحصل على النتيجة المطلوبة.&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;على-اﻷندرويد&quot;&gt;على اﻷندرويد&lt;/h2&gt;
 
@@ -7510,6 +7547,10 @@ WHERE columnN LIKE pattern;
 
 &lt;p&gt;&lt;img src=&quot;/assets/customers.png&quot; alt=&quot;customers&quot; /&gt;&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h1 id=&quot;أمثلة-على-like-في-sql&quot;&gt;أمثلة على LIKE في SQL&lt;/h1&gt;
 
 &lt;p&gt;عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يبدأ بحرف a&lt;/p&gt;
@@ -7710,6 +7751,10 @@ WHERE condition;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT COUNT(ProductID)
 FROM Products;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;مثال-على-استخدام-avg&quot;&gt;مثال على استخدام AVG()&lt;/h1&gt;
 
@@ -8174,6 +8219,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h2 id=&quot;شهادة-اللغة-التركية&quot;&gt;شهادة اللغة التركية&lt;/h2&gt;
 
 &lt;p&gt;(بالتركية Türkçe yeterlik belgesi) ربما معظم الأجانب بشكل عام يقومون بالتقديم للجامعات التركية من بلدانهم، وعند الحصول على مقعد جامعي يَقْدِمون لتركيا للبدء بدراسة اللغة التركية، ولكن يُعتقد أن وجود شهادة اللغة التركية أثناء التقدم للجامعات يزيد من احتمالية قبولك، لذا فيجب الحصول على شهادة اللغة بأسرع وقت، وكحد أدنى يجب أن تكون في المستوى B2 والكافي للبدء بالدراسة الجامعية.&lt;/p&gt;
@@ -8206,6 +8255,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;الكثير من الجامعات التركية تطلب شهادات إضافية لإمكانية التقدم لها، فالأتراك مثلاً بعد إنهائهم الثانوية يخضعون لفحص مخصص للتقدم للجامعات، والأجانب أيضاً لهم فحص خاص بهم، وهم اثنان:&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h3 id=&quot;اليوس&quot;&gt;اليوس&lt;/h3&gt;
 
 &lt;p&gt;بالتركية YÖS والتي هي اختصار لـ YABANCI UYRUKLU ÖĞRENCİ SINAVI أي فحص الطلاب الأجانب، وهو عبارة عن  رياضيات متقدمة (اشتقاق وتكامل وما إلى ذلك) بالإضافة ﻷسئلة ذكاء أو ما يسمى IQ.&lt;/p&gt;
@@ -8228,6 +8281,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;للتحضير للفحص فهناك كتاب من قبل مؤسسين الاختبار ستجده على الموقع الرسمي، كما يوجد موقع خان أكاديمي المتعاون بشكل رسمي مع مؤسسي الاختبار لوضع مرجع متكامل وكافي للتحضير والتدرب على الفحص عبر الإنترنت وبشكل مجاني تماماً، وأؤكد لك أنه كافي، فقط قم بحل أكبر عدد من الأسئلة عليه يومياً، وقبل شهرين على الأقل من الفحص. الموقع سهل الحفظ ولن أضعه كرابط لقراءته وحفظه: Satpractice.org وسيتم التحويل مباشرة لقسم السات في موقع خان أكاديمي.&lt;/p&gt;
 
 &lt;p&gt;مع العلم أن هناك عدد لا بأس به من الجامعات التي لا تشترط وجود أي من شهادتي هذين الفحصين للتقدم لها، ولكن تبقى الأولوية لمن يملك إحداهما..&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;التقدّم-للجامعات&quot;&gt;التقدّم للجامعات&lt;/h1&gt;
 
@@ -11438,6 +11495,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;هل هذا صعب؟&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h1 id=&quot;الوصول-لحزمة&quot;&gt;الوصول لحزمة&lt;/h1&gt;
 
 &lt;p&gt;هنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:&lt;/p&gt;
@@ -11456,6 +11517,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;إن حزمتك المحلية مؤلفة من ثلاث “شجرات” مختزنة من قبل git. الأولى هي المجلد الذي نعمل ضمنه ، والذي يحوي على ملفات الحزمة. و الثانية هي ملف ال index والذي نتعامل معه كمسرح العمل. وأخيراً الرأس Head والذي يشير لآخر تعديل قمت به.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/trees.png&quot; alt=&quot;شرح مبدأ عمل git&quot; /&gt;&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;إضافة-وتعديل&quot;&gt;إضافة وتعديل&lt;/h1&gt;
 
@@ -11528,6 +11593,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;الأفرع&quot;&gt;الأفرع&lt;/h2&gt;
 
@@ -12042,6 +12111,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;النص العادي يكتب بدون الحاجة لأي أكواد. مع ملاحظة بسيطة هو أنك يجب أن تضع سطر فارغ بين الفقرة والأخرى لكي تُقرأ على أنها بداية سطر جديد. أي بدل الضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;enter&lt;/code&gt; للانتقال للسطر الجديد ستضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;enter&lt;/code&gt; مرتين لترك سطر فارغ وبالتالي ليفهم المفسر أنك تريد الانتقال لسطر جديد.&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h2 id=&quot;العناوين&quot;&gt;العناوين&lt;/h2&gt;
 
 &lt;p&gt;لكتابة العناوين نضع الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; مرة واحدة أو أكثر قبل العنوان (لا تنس الفراغ بين الرمز والعنوان):&lt;/p&gt;
@@ -12098,6 +12171,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;li&gt;عنصر قائمة&lt;/li&gt;
   &lt;li&gt;عنصر قائمة&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h3 id=&quot;قائمة-مُرقّمة&quot;&gt;قائمة مُرقّمة&lt;/h3&gt;
 
@@ -12300,6 +12377,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 [comment]: # (هذا عبارة عن تعليق لا يظهر للقارئ)
 &lt;/pre&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h1 id=&quot;ملاحظات&quot;&gt;ملاحظات&lt;/h1&gt;
 
 &lt;ul&gt;
@@ -12403,7 +12484,11 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;يبدو مرتباً أليس كذلك ؟ كل مربع هو عبارة عن جدول في قاعدة البيانات . جميع الأعمدة مدونة داخل كل جدول .. والخطوط بين الجداول تمثل العلاقة بينهم . سوف نشرح ذلك لاحقاً ، لا بأس إن لم تفهم الكثير الآن ..&lt;/p&gt;
 
-&lt;p&gt;سوف نناقش كل جدول بشرح أوامر Sql . والتي تم إنشاءها تلقائياً مع إنشاء المخطط في الأعلى . لصنع كودك الخاص يمكنك إنشاء مخطط مشابه وستحصل على أوامر الـ Sql التي قامت بإنشاء المخطط أيضاً . بعض محررات قواعد البيانات مثل MySQL Workbench الذي قمنا بإستخدامه لإنتاج ذلك المخطط ينتج ملفات بلاحقة Sql أيضاً . ولكننا ننصح تعلم أوامر Sql حيث ستجد الأمر ممتعاً . لمقدمة حول Sql يمكنك قراءة المشاركة &lt;a href=&quot;/sql/intro&quot;&gt;هنا&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;سوف نناقش كل جدول بشرح أوامر Sql . والتي تم إنشاءها تلقائياً مع إنشاء المخطط في الأعلى . لصنع كودك الخاص يمكنك إنشاء مخطط مشابه وستحصل على أوامر الـ Sql التي قامت بإنشاء المخطط أيضاً . بعض محررات قواعد البيانات مثل MySQL Workbench الذي قمنا بإستخدامه لإنتاج ذلك المخطط ينتج ملفات بلاحقة Sql أيضاً . ولكننا ننصح تعلم أوامر Sql حيث ستجد الأمر ممتعاً . لمقدمة حول Sql يمكنك قراءة المشاركة &lt;a href=&quot;/sql/intro&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;جدول-المستخدمين&quot;&gt;جدول المستخدمين&lt;/h2&gt;
 
@@ -12494,6 +12579,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;هذا الجدول تقريباً نفس الجداول السابقة، باستثناء حقل &lt;code class=&quot;highlighter-rouge&quot;&gt;topic_by&lt;/code&gt; والذي يشير للمستخدم المنشئ للموضوع. وحقل &lt;code class=&quot;highlighter-rouge&quot;&gt;topic_cat&lt;/code&gt; الذي يشير للتصنيف الذي يتبع الموضوع له. لا يمكن تحديد العلاقات بين هذه الحقول بذكر أسماء الحقول فقط. فيجب أن نُعلم قاعدة البيانات أن هذا الحقل (&lt;code class=&quot;highlighter-rouge&quot;&gt;topic_by&lt;/code&gt;) يجب أن يحتوي على الرقم التسلسلي &lt;code class=&quot;highlighter-rouge&quot;&gt;user_id&lt;/code&gt; لمستخدم موجود في جدول المستخدمين، والحقل الآخر (&lt;code class=&quot;highlighter-rouge&quot;&gt;topic_cat&lt;/code&gt;) يجب أن يحتوي على الرقم التسلسلي cat_id لتصنيف موجود في جدول التصنيفات. سنضيف هذه العلاقات بين الحقول والجداول بعد مناقشة جدول التعليقات.&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h2 id=&quot;جدول-التعليقات&quot;&gt;جدول التعليقات&lt;/h2&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
@@ -12536,6 +12625,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topics&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FOREIGN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;topic_cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REFERENCES&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;الجزء الأخير من التعليمة يوضح ما يجري. فعندما يتم حذف التصنيف من قاعدة البيانات، جميع المواضيع المرتبطة بهذا التصنيف سيتم حذفها أيضاً. إذا تم تغيير قيمة cat_id لتصنيف ما، جميع المواضيع المرتبطة بهذا التصنيف سيتم تحديثها أيضاً. وهذا ما تقوم به عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;ON UPDATE CASCADE&lt;/code&gt; . بالطبع يمكنك التراجع عن ذلك لحماية بياناتك، وذلك بجعل حذف تنصيف ما غير ممكن ما زال هناك مواضيع مرتبطة بهذا التصنيف، إذا أردت القيام بذلك، فعليك استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;ON DELETE&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;CASCADE&lt;/code&gt; إلى &lt;code class=&quot;highlighter-rouge&quot;&gt;ON DELETE RESTRICT&lt;/code&gt; . يوجد أيضاً عبارات &lt;code class=&quot;highlighter-rouge&quot;&gt;SET NULL&lt;/code&gt; أي اجعله فارغاً و &lt;code class=&quot;highlighter-rouge&quot;&gt;NO ACTION&lt;/code&gt; أي لا تقم بأي إجراء.&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;p&gt;الآن، كل موضوع أصبح مرتبط بتصنيف ما. لنقم بربط المواضيع بالمستخدمين المنشئين لهم.&lt;/p&gt;
 
@@ -12612,6 +12705,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;كما ترى، إذا لم يحدث أخطاء في الصفحة فستظهر بشكل أنيق. أما اذا كان هناك خطأ، فكل شيئ سيكون مبعثر. ولهذا السبب يجب دائماً التأكد ليس من تنسيق المحتوى فقط، وإنما أيضاً من الأخطاء التي يمكن أن تحدث.&lt;/p&gt;
 
 &lt;p&gt;ميزة أخرى لهذه الطريقة (تضمين ملفي الترويسة والتذييل) هو إمكانية عمل تغييرات سريعة. فسترى أنك وبعد إنهاء هذا الشرح إذا أردت التعديل على ملف التذييل مثلاً footer.php، فسترى أن التذييل سينطبق مباشرة على كل صفحة في المنتدى.&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;p&gt;أخيراً سوف نقوم بإضافة بعض التنسيقات لملف الترويسة header.php والتي تزودنا بإظهارات وترميزات أساسية. لا شيئ معقد هنا، ولا داعي لفهم الكود.&lt;/p&gt;
 
@@ -13032,6 +13129,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;في السطر الأول لدينا عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;INSERT INTO&lt;/code&gt; التي تستخدم لإضافة بيانات لقاعدة البيانات، وتم تحديد اسم الجدول في السطر الثاني. الكلمات التي بين قوسين تحدد أسماء الأعمدة التي نريد إدراج البيانات لها. عبارة VALUES تُخبر قاعدة البيانات أننا انتهينا من تحديد أسماء الأعمدة وجاء وقت تحديد القيم التي ستُضاف لهذه الأعمدة. ولدينا شيئ جديد هنا: &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql_real_escape_string&lt;/code&gt;. تستخدم هذه التعليمة لحماية بيانات المستخدم أثناء إرساله للنموذج، ويجب أن تُستخدم دائماً باستثاء بعض الحالات النادرة. السكريبتات التي لا تستخدم هذه التعليمة يكون اختراقها والوصول لبيانات النموذج المرسلة سهل جداً، فلا تخاطر بذلك واستخدم عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql_real_escape_string()&lt;/code&gt;.&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;إيّاك أن تُدرج كلمة السر في قاعدة البيانات كما هي. يجب عليك دائماً تشفيرها.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -13310,6 +13411,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;من الواضح أننا نقوم بالتأكد من البيانات المدخلة إذا كانت لمستخدم موجود بالفعل. هناك العديد من السكريبتات التي تستخرج كلمة السر من قاعدة البيانات وتقارنها مع تلك المدخلة في النموذج باستخدام php. ولكن القيام بذلك بواسطة تعليمات SQL مباشرة سيجعل العملية أكثر أمناً حيث أن العملية هذه تحصل في وسط قاعدة البيانات وليس ضمن تطبيقنا الوب (منتدانا).&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;p&gt;إذا قام المستخدم بتسجيل الدخول بشكل صحيح، فسنقوم بعمل بضعة أشياء:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
@@ -13403,6 +13508,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;وكما ترى، لقد بدأنا السكريبت بفحص السيرفر $_SERVER ، بعد التأكد من أن المستخدم لديه صلاحيات المدير، والمطلوبة لإنشاء تصنيف، يتم عرض النموذج إذا لم يتم تعبئته وإرساله سابقاً، وإذا تم إرساله، يتم حفظ القيم. مرة أخرى ، يتم تحضير تعليمة SQL وتنفيذها.&lt;/p&gt;
 
 &lt;amp-img src=&quot;/assets/5.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-6&quot;&gt;&lt;/amp-img&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;ثامناً-إضافة-تصنيفات-للصفحة-الرئيسية-indexphp&quot;&gt;ثامناً: إضافة تصنيفات للصفحة الرئيسية index.php&lt;/h1&gt;
 
@@ -13667,6 +13776,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
     &lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;أعتقد أن هذا هو الجزء الغير واضح هنا، والآن كما ترى هو مجرد كود بسيط .&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;معالجة-النموذج&quot;&gt;معالجة النموذج&lt;/h2&gt;
 
@@ -14542,6 +14655,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 	ORDER BY Country; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/h2&gt;
 
@@ -16881,9 +16998,14 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
       &lt;p&gt;الـ IP الداخلية تتغير عند كل تشغيل للراوتر وبالتالي يتوجب عليك دائماً الذهاب لصفحة ARP وإعادة تحديد السرعات حسب الآيبيهات الجديدة.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;الآن وبعد أن عرفنا الآي بي لكل جهاز نعود لصفحة “Traffic Control Rules”  ثم  Add ونضع الآي بي المحدد في الحقلين المسميان “IP Range” وذلك لتحديد السرعة لمستخدم واحد ، او نضع مدى واسع من الآيبيهات ليتم تحديدها لمجموعة مستخدمين مرة واحدة . بعد ذلك ندخل ال Port Range ، الافتراضي هو 80 ، أي اذا لم تكن متقدم في هذه الأمور فقط أكتب 80 في الحقلين ، ثم في مربع الـ Protocol اختر All ثم حدد مدى السرعة في مربع الـ Egress أي الإرسال ومربع الـ Ingress أي الاستقبال ، فمثلا إذا أردنا إعطاء ربع السرعة فقط لمستخدم معين واذا كان لدينا سرعة الإرسال 256 فسوف ندخل 64 في هذا الحقل ، وسرعة الإستقبال بالتالي ستكون 512 سندخل 128 لتحديد ربع السرعة أيضا للاستقبال (على سبيل المثال ) . ونفس الشيئ إذا أردنا تحديد السرعة لمستخدمين آخرين فقط نضغط على Add وندخل المطلوب . وطبعا لا ننسى ان نضغط على Enable لكل نطاق IP ليتم تفعيل تحديد السرعة لهذا المستخدم.&lt;/p&gt;
-  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;الآن وبعد أن عرفنا الآي بي لكل جهاز نعود لصفحة “Traffic Control Rules”  ثم  Add ونضع الآي بي المحدد في الحقلين المسميان “IP Range” وذلك لتحديد السرعة لمستخدم واحد ، او نضع مدى واسع من الآيبيهات ليتم تحديدها لمجموعة مستخدمين مرة واحدة . بعد ذلك ندخل ال Port Range ، الافتراضي هو 80 ، أي اذا لم تكن متقدم في هذه الأمور فقط أكتب 80 في الحقلين ، ثم في مربع الـ Protocol اختر All ثم حدد مدى السرعة في مربع الـ Egress أي الإرسال ومربع الـ Ingress أي الاستقبال ، فمثلا إذا أردنا إعطاء ربع السرعة فقط لمستخدم معين واذا كان لدينا سرعة الإرسال 256 فسوف ندخل 64 في هذا الحقل ، وسرعة الإستقبال بالتالي ستكون 512 سندخل 128 لتحديد ربع السرعة أيضا للاستقبال (على سبيل المثال ) . ونفس الشيئ إذا أردنا تحديد السرعة لمستخدمين آخرين فقط نضغط على Add وندخل المطلوب . وطبعا لا ننسى ان نضغط على Enable لكل نطاق IP ليتم تفعيل تحديد السرعة لهذا المستخدم.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;حجب-بعض-المواقع-عن-المستخدمين-على-الشبكة&quot;&gt;حجب بعض المواقع عن المستخدمين على الشبكة&lt;/h1&gt;
@@ -16903,8 +17025,13 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;&lt;img src=&quot;/assets/opendns3.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-3&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;ثم اضغط على Continue لإنشاء الحساب واتبع التعليمات حيث سيتم إرسال رسالة لبريدك الإلكتروني لتفعيله في الحساب ..
-الآن سنحتاج لربط شبكتنا بالخدمة وذلك عن طريق وضع الـ DNS الخاص بالخدمة في الراوتر لدينا .. للقيام بذلك نذهب لصفحة الراوتر ثم أسفل Advanced Settings سنجد DNS نذهب لهذه الصفحة وإذا كان مربع “Auto DNS Server” مؤشر عليه نزيل الإشارة ونقوم بالتأشير على “ Use the following Static DNS IP address:” ثم ندخل هذه الإعدادات في كل حقل على الترتيب :&lt;/p&gt;
+&lt;p&gt;ثم اضغط على Continue لإنشاء الحساب واتبع التعليمات حيث سيتم إرسال رسالة لبريدك الإلكتروني لتفعيله في الحساب ..&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;p&gt;الآن سنحتاج لربط شبكتنا بالخدمة وذلك عن طريق وضع الـ DNS الخاص بالخدمة في الراوتر لدينا .. للقيام بذلك نذهب لصفحة الراوتر ثم أسفل Advanced Settings سنجد DNS نذهب لهذه الصفحة وإذا كان مربع “Auto DNS Server” مؤشر عليه نزيل الإشارة ونقوم بالتأشير على “ Use the following Static DNS IP address:” ثم ندخل هذه الإعدادات في كل حقل على الترتيب :&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Primary DNS server: 208.67.222.222
 Secondary DNS server: 208.67.220.220
@@ -16921,6 +17048,10 @@ Secondary DNS server: 208.67.220.220
 &lt;p&gt;&lt;img src=&quot;/assets/opendns5.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-5&quot; title=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-5&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;أفضل خيار هو “Moderate” ليكون الحجب بشكل متوسط أي فقط المواقع السيئة والإباحية وما إلى ذلك ، ولكن أيضاً يمكننا اختيار ما نشاء من التصنيفات من خلال الخيار “Custom” ثم نؤشر على التصنيف الذي نرغب بحجبه ثم نضغط على الزر في الأسفل Apply ، سيحتاج التطبيق لثلاث دقائق لكي يتم حفظ الإعدادات في السيرفر وبعدها ستكون خاصية الحجب مفعلة .&lt;/p&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; إن تطبيق الخيارات التي حددتها يتطلب إعلام السيرفر أي موقع OpenDNS بالـ IP الخارجية لك والتي تتغير مع كل تشغيل للراوتر ..وبالتالي وللقيام بذلك بشكل تلقائي عند تشغيلك للجهاز حمل برنامج الخدمة الخفيف والصغير جدا والذي يعمل في الخلفية أي فقط ستجد أيقونة بجوار الساعة ويقوم هذا البرنامج بتحديث الآي بي الخاصة بك في السيرفر لتطبيق الإعدادات التي اخترتها على شبكتك . 
 البرنامج متوفر لنظام الويندوز من &lt;a href=&quot;https://www.opendns.com/download/windows&quot;&gt;هنا&lt;/a&gt; ، ونظام الماك من &lt;a href=&quot;https://www.opendns.com/download/mac&quot;&gt;هنا&lt;/a&gt; 
@@ -17291,6 +17422,13 @@ Secondary DNS server: 208.67.220.220
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;اختر &lt;code class=&quot;highlighter-rouge&quot;&gt;Initialize this repository with a README&lt;/code&gt;.  أي استهلال الحزمة بملف اقرأني (لوضع معلومات عن الحزمة والتعريف بها وبوظيفتها ..) .&lt;/p&gt;
 
@@ -17334,6 +17472,13 @@ Secondary DNS server: 208.67.220.220
 
     &lt;p&gt;&lt;img src=&quot;https://help.github.com/assets/images/help/repository/edit-readme-preview-changes.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;راجع التغييرات التي أجريتها للملف ، حيث ستجد المحتوى الجديد الذي أدخلته باللون الأخضر .&lt;/p&gt;
 
@@ -17883,6 +18028,13 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
   &lt;li&gt;
     &lt;p&gt;إيجاد اسم منتج ، وصفة .. والمزيد مع &lt;strong&gt;بحث الصور العكسي:&lt;/strong&gt; تساعدك هذه الميزة في البحث عن مصدر الصورة والبحث عن معلومات عنها ، مثل معرفة صانع الكرسي الظاهر في الصورة ، كيفية عمل الطبخة الظاهرة في الصورة ..والمزيد . فقط اذهب لبحث الصور في جوجل ستجد في آخر مربع البحث أيقونة على شكل كاميرا .. اضغط عليها وأدخل عنوان الصورة اذا كانت على الإنترنت أو قم برفعها من جهازك لتظهر لك النتائج المتعلقة بتلك الصورة .&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;الحصول على اقتراحات بديلة عبر &lt;strong&gt;الإكمال التلقائي:&lt;/strong&gt; في العديد من محركات البحث المتقدمة تستطيع وضع علامة * للدلاة على “أي شيئ” .. وجوجل أحد هذه المحركات ، ولكنه لا يعمل بالطريقة التي تريدها.. على أية حال، يمكنك الحصول على اقتراحات بديلة وذلك بكتابة عبارة كاملة في مربع بحث جوجل ثم حذف الكلمات التي تريد استبدالها ، على سبيل المثال ، يمكننا البحث عن “كيفية تنظيف جهاز أندرويد “ وحذف أحد الكلمات لرؤية جميع الاقتراحات حول “كيفية * جهاز أندرويد” .&lt;/p&gt;
   &lt;/li&gt;
@@ -17898,6 +18050,13 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;اكتشاف البدائل&lt;/strong&gt; لمواقع مشهورة،تطبيقات، منتجات .. : وذلك بكتابة اسم المنتج أو الشركة أو .. ويليه العبارة vs والتي تعني “مقابل” أو “ضد” وذلك للمقارنة بين شيئين، ثم انتظار الاقتراحات التي سيعطيك إياها جوجل.&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;الوصول لـ “جوجل كاش” مباشرة من مربع البحث:&lt;/strong&gt; لمن لا يعرف جوجل كاش Google cache أو بما معناه “ذاكرة جوجل” ، فهي خدمة رائعة تمكنك من معرفة النسخ القديمة لصفحات المواقع.&lt;/p&gt;
 
@@ -17917,6 +18076,13 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;البحث عن أشخاص عبر صور جوجل:&lt;/strong&gt; بعض أسماء الأشخاص هي أشياء موجودة في الواقع ، على سبيل المثال هناك فتيات اسمهن “وردة” ، إذا كتبنا في مربع البحث في صور جوجل “وردة” سيظهر لنا أشكال لعدة أنواع من الورد .. وليس هذا ما نريده ، فلذلك للبحث عن أشخاص بمثل هذه الأسماء نضغط على Search Tools أو أدوات البحث ثم Type النمط ثم نختار Face وجه وذلك للبحث عن وجوه بهذا الاسم .&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;الحصول على نتائج بحث مبنية على وقت معين:&lt;/strong&gt; ربما وجدت مسبقا الخيار في بحث جوجل الذي يفرز النتائج حسب الوقت ، مثل الساعة أو اليوم أو الاسبوع الماضي . ولكن ماذا إذا كنا نريد تحديد الوقت بدقة أكبر ؟ فقط أضف إلى نهاية الرابط في الأعلى العبارة&lt;/p&gt;
 
@@ -18128,6 +18294,13 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;أضف مستخدمين. ستحتاج إلى ضبط المستخدمين الذين يمكنهم الدخول للجهاز باستخدام الاتصال البعيد . اضغط على تحديد المستخدمين ثم اضغط على زر إضافة.&lt;/p&gt;
   &lt;/li&gt;
@@ -18171,6 +18344,10 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
     &lt;p&gt;اتصل بالجهاز البعيد من خلال الهاتف الذكي أو الجهاز اللوحي . اذا كنت تستعمل ويندوز 8 أو 8.1 فيمكنك الاتصال بسطح المكتب البعيد من خلال تطبيقات ميكروسوفت الرسمية “official Microsoft apps” على نظام iOS و أندرويد . ستحتاج لضبط إعدادات سطح المكتب البعيد في جهازك الكومبيوتر.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;الطريقة-الثانية--ﻷي-نظام---عبر-الإنترنت&quot;&gt;الطريقة الثانية ( ﻷي نظام - عبر الإنترنت)&lt;/h1&gt;
 
@@ -18216,6 +18393,10 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
   &lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h1 id=&quot;الطريقة-الثالثة-ﻷي-نظام---عبر-الإنترنت-&quot;&gt;الطريقة الثالثة (ﻷي نظام - عبر الإنترنت )&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;باستخدام متصفح جوجل كروم&lt;/strong&gt;&lt;/p&gt;
@@ -18243,6 +18424,13 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
     &lt;p&gt;ستسطيع الاختيار فقط من بين الأجهزة التي قمت بربطها بحسابك على جوجل&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;استخدم جهازك البعيد. سطح المكتب لجهازك البعيد سيكون معروض لديك على المتصفح، قد تواجه تأخير بسيط في العرض وذلك حسب سرعة الإنترنت.&lt;/p&gt;
 
@@ -18481,6 +18669,10 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;amp-img src=&quot;/assets/hide-fb2.jpg&quot; width=&quot;300&quot; height=&quot;600&quot; alt=&quot;طريقة إخفاء القائمة الجانبية أشخاص قد تعرفهم في الفيس بوك-2&quot;&gt;&lt;/amp-img&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
+
 &lt;h1 id=&quot;متصفح-الفايرفوكس&quot;&gt;متصفح الفايرفوكس&lt;/h1&gt;
 
 &lt;p&gt;قم بتنزيل &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/adblock-plus&quot;&gt;هذه الإضافة&lt;/a&gt; بالضغط على “Add to Firefox” أو “إضافة للفايرفوكس” كما في الصورة ثم “Install now” أو التنزيل الآن .. بعدها أيضاً نزل &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/elemhidehelper&quot;&gt;هذه الإضافة&lt;/a&gt; بنفس الخطوات مع العلم أن هذه الإضافات لا تحتاج لإعادة تشغيل المتصفح لتعمل.&lt;/p&gt;
@@ -18491,6 +18683,9 @@ $412,500 لتجربة قدرة التطبيق على تحديد ‘قرحة بو
 
 &lt;p&gt;ستجد بعدها أنه بإمكانك تحديد أي عنصر بالصفحة .. حدد القائمة الجانبية التي تريد إخفاءها وهنا هي “أشخاص قد تعرفهم “ ليتم حفظ الإعدادت بعدم الظهور مرة أخرى .&lt;/p&gt;
 
+&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
+  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/amp-ad&gt;
 &lt;h1 id=&quot;متصفح-أوبرا&quot;&gt;متصفح أوبرا&lt;/h1&gt;
 
 &lt;p&gt;نزّل &lt;a href=&quot;https://addons.opera.com/en/extensions/details/opera-adblock/?display=en&quot;&gt;هذه الإضافة&lt;/a&gt; بالضغط على “Add to Opera” كما في الصورة&lt;/p&gt;
