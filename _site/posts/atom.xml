@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-01-24T01:27:08+03:00</updated>
+	<updated>2020-02-01T15:06:24+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -12332,7 +12332,13 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;h1 id=&quot;الجداول&quot;&gt;الجداول&lt;/h1&gt;
 
-&lt;p&gt;لكتابة جدول بلغة الماركداون نستخدم الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; (يُكتب هذا الرمز بالضغط على زر &lt;code class=&quot;highlighter-rouge&quot;&gt;shift&lt;/code&gt; وزر &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; والذي يكون فوق زر الـ &lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt;)، يجب أن تكون كل خانة في الجدول محاطة بالرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; من الجهتين:&lt;/p&gt;
+&lt;p&gt;لكتابة جدول بلغة الماركداون نستخدم الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; (يُكتب هذا الرمز بالضغط على زر 
+&lt;kbd&gt; shift &lt;/kbd&gt;
+  وزر 
+&lt;kbd&gt; \ &lt;/kbd&gt;
+ والذي يكون فوق زر الـ
+&lt;kbd&gt; Enter &lt;/kbd&gt;
+)، يجب أن تكون كل خانة في الجدول محاطة بالرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; من الجهتين:&lt;/p&gt;
 
 &lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
 
