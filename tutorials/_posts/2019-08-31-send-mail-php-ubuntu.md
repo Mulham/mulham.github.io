@@ -6,6 +6,8 @@ description: شرح لكيفية إعداد وتهيئة php لإرسال رسا
 type: tutorial
 comments: true
 tags: [PHP, لينكس, شبكات, إنترنت]
+feature: /assets/posts/mail-server.png
+caption: Image by OpenClipart-Vectors from Pixabay 
 ---
 
 ستتعلم من هذا الدرس كيفية تهيئة إعدادات php في نظام لينكس أبونتو لإرسال رسائل إلكترونية من جهازك أو من أي تطبيق وب php موجود على جهازك مثل وورد بريس ودروبال وجملة وغيره، وسيكون هذا الشرح عن ربط الإعدادات بحساب gmail للإرسال منه ولكن يمكن ربطه بأي بريد آخر وفقاً للبيانات التي يتيحها.

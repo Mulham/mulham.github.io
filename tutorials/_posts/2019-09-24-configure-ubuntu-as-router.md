@@ -5,6 +5,8 @@ title: ضبط أبونتو للعمل كراوتر
 type: tutorial
 comments: true
 tags: [شبكات, إنترنت, لينكس]
+feature: /assets/posts/ubuntu-router.jpg
+caption: "Ubuntu by davidjunyent is licensed under CC BY-NC-ND 2.0"
 ---
 
 

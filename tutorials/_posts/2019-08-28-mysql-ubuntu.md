@@ -6,6 +6,8 @@ description: تنصيب وتهيئة إعدادات mysql بالشكل الصح�
 type: tutorial
 comments: true
 tags: [SQL, mysql, قواعد بيانات, لينكس]
+feature: /assets/posts/mysql.jpg
+caption: "Console by hermzz is licensed under CC BY-SA 2.0"
 ---
 
 

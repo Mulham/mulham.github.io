@@ -6,6 +6,8 @@ description: كل ما تحتاجه لاستضافة موقعك أو مدونت�
 type: tutorial
 comments: true
 tags: [Github, إنترنت]
+feature: /assets/posts/github-pages.jpg
+captipn: "Octocat by Philippe Lin is licensed under CC BY-NC-SA 2.0"
 ---
 
 أحد خدمات موقع Github هي صفحات جتهب (Github pages) والتي تسمح لك باستضافة موقعك على جِتهَب.
