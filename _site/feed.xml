@@ -5,247 +5,9 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Feb 2020 21:41:19 +0300</pubDate>
-    <lastBuildDate>Tue, 04 Feb 2020 21:41:19 +0300</lastBuildDate>
+    <pubDate>Wed, 05 Feb 2020 00:17:57 +0300</pubDate>
+    <lastBuildDate>Wed, 05 Feb 2020 00:17:57 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
-    
-      <item>
-        <title>أمثلة عملية في لغة سي</title>
-        <description>&lt;p&gt;فيما يلي أمثلة عملية في لغة البرمجة سي مع الحلول.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;فيما يلي برنامج بسيط بلغة سي، ما هو ناتج البرنامج عند التنفيذ ولماذا؟&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; #include &amp;lt;stdio.h&amp;gt;
-
- int main() {
-      
-   int k = 54000;
-   short s = k;
-   printf(&quot;%d&quot;, s);
-
-   return 0;
- }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يحوي برنامج سي التالي على أخطاء، قم بتصحيحها&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; #include &amp;lt;stdio
-
- int main() {
-   char c = A;
-   char d = B;
-
-     
-   scanf(&quot;%d&quot;, a);
-
-      
-   if (a % 2 == 0) {
-        printf(&quot;%c: Number is even\n&quot;, c); 
-   else {
-        printf(&quot;%c: Number is odd\n&quot;, d); 
-   }
-      
-      
-   return 0;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;مثال على المدخل:
-  3
- مثال على الناتج: 
- B: Number is odd&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اكتب برنامج يقرأ ثلاثة أعداد صحيحة ويُعطي أكبرهم&lt;/p&gt;
-
-    &lt;p&gt;مثال على المُدخل:
- 8 11 -443
- مثال على الناتج:
- 11&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اكتب برنامجًا يقرأ عدد الدقائق ويُعطي الناتج بشكل ساعات ودقائق&lt;/p&gt;
-
-    &lt;p&gt;مثال على المُدخل: عدد صحيح أكبر من الصفر
- 546
- مثال على الناتج: عدد الساعات والدقائق في حال إعطاء قيمة صحيحة، وإلا يعطي رسالة “Error”
- 9 Hours, 6 Minutes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اكتب برنامجًا يقرأ حرف char ويكون الناتج بحسب المُدخل “رقم” أو “حرف” أو “رمز”&lt;/p&gt;
-
-    &lt;p&gt;مثال على المدخل:
- 8
- مثال على الناتج:
- Number
- مثال على المدخل 2:
- ?
- مثال على الناتج 2:
- Symbol&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ماهو ناتج البرنامج التالي:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; #include &amp;lt;stdio.h&amp;gt;
-
- int a = 60;
- int b;
-
- int foo(int a, int b) {
-     a = a * (-1);
-     b = b + 11;
-        
-     return a;
- }
-
- void faa(int a) {
-     a = a + 3;
- }
-
- int fuu() {
-     return a - 2;
- }
-
-
-
- int main() {
-        
-     int c = 2;
-     b = 3;
-        
-     foo(a,c);
-        
-     c = foo(a,b);
-        
-     faa(c);
-        
-     fuu();
-        
-     printf(&quot;%d&quot;, c);
-        
-     return 0;
- }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;الحل:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;-11536 حيث تم تحويل متغير من نوع INT إلى Short والذي لايتسع للعدد 54000 فتم حذف البتات الزائدة منه ليصبح -11536&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
-
-int main() {
-  char c = 'A';
-  char d = 'B';	
-  int a;
-  // einlesen einer Zahl vom Benutzer
-  scanf(&quot;%d&quot;, &amp;amp;a);
-
-      
-  if (a % 2 == 0) {
-printf(&quot;%c: Number is even\n&quot;, c); 
-  }
-else {
-printf(&quot;%c: Number is odd\n&quot;, d); 
-}
-      
-      
-  return 0;
- }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;3.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    #include &amp;lt;stdio.h&amp;gt;
-
-    int main() {
-      int a,b,c;
-      scanf(&quot;%d&quot;, &amp;amp;a);
-      scanf(&quot;%d&quot;, &amp;amp;b);
-      scanf(&quot;%d&quot;, &amp;amp;c);
-      int grosste_zahl = a;
-      if (b&amp;gt;a){
-        grosste_zahl = b;}
-      if (c&amp;gt;grosste_zahl){
-        grosste_zahl = c;} 
-      printf(&quot;%d\n&quot;,grosste_zahl);
-      return 0;
-      }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
-
-int main() {
-  int a,s,m;
-  scanf(&quot;%d&quot;, &amp;amp;a);
-  if (a &amp;gt;=0){
-      m = a % 60;
-      s = (a-m) / 60;
-      printf(&quot;%d Hours, %d Minutes&quot;, s,m);
-  }
-  else {
-      printf(&quot;Error&quot;);
-  }
-  return 0;
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;5.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    #include &amp;lt;stdio.h&amp;gt;
-
-    int main()
-    {
-        char ch;
-        scanf(&quot;%c&quot;, &amp;amp;ch);
-        if((ch &amp;gt;= 'a' &amp;amp;&amp;amp; ch &amp;lt;= 'z') || (ch &amp;gt;= 'A' &amp;amp;&amp;amp; ch &amp;lt;= 'Z'))
-        {
-            printf(&quot;Buchstabe&quot;);
-        }
-        else if(ch &amp;gt;= '0' &amp;amp;&amp;amp; ch &amp;lt;= '9')
-        {
-            printf(&quot;Zahl&quot;);
-        }
-        else 
-        {
-            printf(&quot;Zeichen&quot;);
-        }
-
-        return 0;
-    }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;-60&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 04 Feb 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/c-language-examples/</link>
-        <guid isPermaLink="true">http://localhost:4000/c-language-examples/</guid>
-        
-        <category>برمجة</category>
-        
-        <category>تعليم</category>
-        
-        
-        <category>tutorials</category>
-        
-      </item>
     
       <item>
         <title>أمثلة على شبه الكود Pseudocode</title>
@@ -6214,6 +5976,67 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
         <category>إنترنت</category>
         
         <category>لينكس</category>
+        
+        
+        <category>tutorials</category>
+        
+      </item>
+    
+      <item>
+        <title>تهيئة PHP لإرسال رسائل إلكترونية عبر سيرفر خارجي</title>
+        <description>&lt;p&gt;ستتعلم من هذا الدرس كيفية تهيئة إعدادات php في نظام لينكس أبونتو لإرسال رسائل إلكترونية من جهازك أو من أي تطبيق وب php موجود على جهازك مثل وورد بريس ودروبال وجملة وغيره، وسيكون هذا الشرح عن ربط الإعدادات بحساب gmail للإرسال منه ولكن يمكن ربطه بأي بريد آخر وفقاً للبيانات التي يتيحها.&lt;/p&gt;
+
+&lt;p&gt;عادةً لعمل سيرفر بريد محلي أو أي شيئ يتعلق بالبريد محليا يتم تنصيب Postfix والذي تكون مهمته تبادل الرسائل بين السيرفر المحلي والسيرفرات على الإنترنت، ولكن Postfix سيكون معقداً وفقا لغرضنا في هذا الشرح، ولذلك سنستخدم برنامج خفيف وسريع التهيئة لغرضنا هذا وهو ssmtp، قم بتنصيبه بالأمر التالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo apt-get install ssmtp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;بعدها قم بالتعديل على الملف /etc/ssmtp/ssmtp.conf بالذهاب للمسار بنفسك أو بالأمر التالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo nano /etc/ssmtp/ssmtp.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ستحتاج لتعديل السطر التالي الأول وإضافة الأسطر التي تليه (البيانات وفقًا ل gmail):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	mailhub=smtp.gmail.com:587
+	UseSTARTTLS=YES
+	AuthUser=&amp;lt;YOUR-EMAIL&amp;gt;@gmail.com
+	AuthPass=&amp;lt;YOUR-PASSWORD&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;قم بتغيير المعلومات أعلاه وفقا لحساب البريد الإلكتروني الخاص بك وكلمة السر.&lt;/p&gt;
+
+&lt;p&gt;إذا قمت بالتعديل على الملف من سطر الأوامر وفقا للأمر أعلاه فاضغط بعد التعديل على 
+&lt;kbd&gt;ctrl&lt;/kbd&gt;+ &lt;kbd&gt;X&lt;/kbd&gt;
+ثم &lt;kbd&gt;Y&lt;/kbd&gt; ثم &lt;kbd&gt;Enter&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;الآن يتوجب عليك تغيير سطر في إعدادات  php بالتعديل على الملف php.ini وإضافة التالي:&lt;/p&gt;
+
+&lt;p&gt;sendmail_path = /usr/sbin/sendmail -t&lt;/p&gt;
+
+&lt;p&gt;يكون الملف غالبًا في المسار /etc/php/7.2/apache2/php.ini لتعديله من سطر الأوامر اكتب قبله sudo nano&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: للربط بـ gmail تحديداً يتوجب عليك الذهاب لإعدادات البريد &lt;a href=&quot;https://myaccount.google.com&quot;&gt;هنا&lt;/a&gt; ثم انقر على “الأمان” من القائمة الجانبية وانزل ﻷسفل الصفحة وقم بتفعيل “وصول التطبيقات الأقل أمانًا”.&lt;/p&gt;
+
+&lt;p&gt;ﻷي استفسار اتركه في التعليقات أو راسلني شخصيا.&lt;/p&gt;
+
+&lt;p&gt;المرجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://askubuntu.com/questions/47609/how-to-have-my-php-send-mail&quot;&gt;askubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 31 Aug 2019 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/send-mail-php-ubuntu/</link>
+        <guid isPermaLink="true">http://localhost:4000/send-mail-php-ubuntu/</guid>
+        
+        <category>PHP</category>
+        
+        <category>لينكس</category>
+        
+        <category>شبكات</category>
+        
+        <category>إنترنت</category>
         
         
         <category>tutorials</category>

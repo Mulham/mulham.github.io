@@ -6,6 +6,8 @@ description: أمثلة عملية على شبه الكود سودوكود من 
 type: tutorial
 comments: true
 tags: تعليم
+feature: /assets/posts/hexagon.png
+caption: Image by janjf93 from Pixabay 
 ---
 
 فيما يلي أمثلة عملية على شبه الكود سودوكود من خلال ثلاث أسئلة بسيطة مع الحل. الحلول في نهاية الصفحة.

@@ -6,6 +6,8 @@ description: ملاحظات هامة لمبتدئي لغة جافا والفرو
 type: tutorial
 comments: true
 tags: [Java, برمجة]
+feature: /assets/posts/java.jpg
+caption: "Java is annoying by Azhaaarry is licensed under CC BY-NC-ND 2.0" 
 ---
 
 * Toc
@@ -63,7 +65,7 @@ tags: [Java, برمجة]
  
 *******
 
-# Abtract class
+# Abstract class
 
 نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر object منها، يعني لدينا مثلا صنف student من نوع abtract فـ **لايمكن** كتابة:
 
@@ -169,7 +171,6 @@ s.hawa();
 
 المتغيرات من نوع final لايمكننا تغيير قيمتها
 
-*****************
 
 هل لديك سؤال أو معلومة إضافية؟ يرجى مشاركتنا إياها في التعليقات لإضافتها للنص الأصلي
 
@@ -181,6 +182,4 @@ s.hawa();
 
 * [stackoverflow](https://stackoverflow.com/questions/8064322/what-is-difference-to-extend-abstract-class-and-non-abstract-class)
 * [journaldev](https://www.journaldev.com/1582/abstract-class-in-java)
-
-
 

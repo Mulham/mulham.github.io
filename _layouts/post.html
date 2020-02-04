@@ -64,6 +64,14 @@ layout: compress
   <div overflow=""></div>
 </amp-ad>
 
+{% if page.feature %}
+<center>
+<figure>
+  <amp-img src="{{ page.feature }}" alt="{{ page.title }}" width="440" height="250"></amp-img>
+  <figcaption>{{ page.caption }}</figcaption>
+</figure>
+</center>
+{% endif %}
                 {{ content }}
 
 <amp-ad width="100vw" height="320"

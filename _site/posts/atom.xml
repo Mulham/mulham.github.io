@@ -4,243 +4,13 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-02-04T21:41:19+03:00</updated>
+	<updated>2020-02-05T00:17:57+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
-	
-		<entry>
-			<title>أمثلة عملية في لغة سي</title>
-			<link href="http://mulham.github.io/c-language-examples/"/>
-			<updated>2020-02-04T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//c-language-examples</id>
-			<content type="html">&lt;p&gt;فيما يلي أمثلة عملية في لغة البرمجة سي مع الحلول.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;فيما يلي برنامج بسيط بلغة سي، ما هو ناتج البرنامج عند التنفيذ ولماذا؟&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; #include &amp;lt;stdio.h&amp;gt;
-
- int main() {
-      
-   int k = 54000;
-   short s = k;
-   printf(&quot;%d&quot;, s);
-
-   return 0;
- }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يحوي برنامج سي التالي على أخطاء، قم بتصحيحها&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; #include &amp;lt;stdio
-
- int main() {
-   char c = A;
-   char d = B;
-
-     
-   scanf(&quot;%d&quot;, a);
-
-      
-   if (a % 2 == 0) {
-        printf(&quot;%c: Number is even\n&quot;, c); 
-   else {
-        printf(&quot;%c: Number is odd\n&quot;, d); 
-   }
-      
-      
-   return 0;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;مثال على المدخل:
-  3
- مثال على الناتج: 
- B: Number is odd&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اكتب برنامج يقرأ ثلاثة أعداد صحيحة ويُعطي أكبرهم&lt;/p&gt;
-
-    &lt;p&gt;مثال على المُدخل:
- 8 11 -443
- مثال على الناتج:
- 11&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اكتب برنامجًا يقرأ عدد الدقائق ويُعطي الناتج بشكل ساعات ودقائق&lt;/p&gt;
-
-    &lt;p&gt;مثال على المُدخل: عدد صحيح أكبر من الصفر
- 546
- مثال على الناتج: عدد الساعات والدقائق في حال إعطاء قيمة صحيحة، وإلا يعطي رسالة “Error”
- 9 Hours, 6 Minutes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;اكتب برنامجًا يقرأ حرف char ويكون الناتج بحسب المُدخل “رقم” أو “حرف” أو “رمز”&lt;/p&gt;
-
-    &lt;p&gt;مثال على المدخل:
- 8
- مثال على الناتج:
- Number
- مثال على المدخل 2:
- ?
- مثال على الناتج 2:
- Symbol&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ماهو ناتج البرنامج التالي:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; #include &amp;lt;stdio.h&amp;gt;
-
- int a = 60;
- int b;
-
- int foo(int a, int b) {
-     a = a * (-1);
-     b = b + 11;
-        
-     return a;
- }
-
- void faa(int a) {
-     a = a + 3;
- }
-
- int fuu() {
-     return a - 2;
- }
-
-
-
- int main() {
-        
-     int c = 2;
-     b = 3;
-        
-     foo(a,c);
-        
-     c = foo(a,b);
-        
-     faa(c);
-        
-     fuu();
-        
-     printf(&quot;%d&quot;, c);
-        
-     return 0;
- }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;الحل:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;-11536 حيث تم تحويل متغير من نوع INT إلى Short والذي لايتسع للعدد 54000 فتم حذف البتات الزائدة منه ليصبح -11536&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
-
-int main() {
-  char c = 'A';
-  char d = 'B';	
-  int a;
-  // einlesen einer Zahl vom Benutzer
-  scanf(&quot;%d&quot;, &amp;amp;a);
-
-      
-  if (a % 2 == 0) {
-printf(&quot;%c: Number is even\n&quot;, c); 
-  }
-else {
-printf(&quot;%c: Number is odd\n&quot;, d); 
-}
-      
-      
-  return 0;
- }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;3.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    #include &amp;lt;stdio.h&amp;gt;
-
-    int main() {
-      int a,b,c;
-      scanf(&quot;%d&quot;, &amp;amp;a);
-      scanf(&quot;%d&quot;, &amp;amp;b);
-      scanf(&quot;%d&quot;, &amp;amp;c);
-      int grosste_zahl = a;
-      if (b&amp;gt;a){
-        grosste_zahl = b;}
-      if (c&amp;gt;grosste_zahl){
-        grosste_zahl = c;} 
-      printf(&quot;%d\n&quot;,grosste_zahl);
-      return 0;
-      }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
-
-int main() {
-  int a,s,m;
-  scanf(&quot;%d&quot;, &amp;amp;a);
-  if (a &amp;gt;=0){
-      m = a % 60;
-      s = (a-m) / 60;
-      printf(&quot;%d Hours, %d Minutes&quot;, s,m);
-  }
-  else {
-      printf(&quot;Error&quot;);
-  }
-  return 0;
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;5.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    #include &amp;lt;stdio.h&amp;gt;
-
-    int main()
-    {
-        char ch;
-        scanf(&quot;%c&quot;, &amp;amp;ch);
-        if((ch &amp;gt;= 'a' &amp;amp;&amp;amp; ch &amp;lt;= 'z') || (ch &amp;gt;= 'A' &amp;amp;&amp;amp; ch &amp;lt;= 'Z'))
-        {
-            printf(&quot;Buchstabe&quot;);
-        }
-        else if(ch &amp;gt;= '0' &amp;amp;&amp;amp; ch &amp;lt;= '9')
-        {
-            printf(&quot;Zahl&quot;);
-        }
-        else 
-        {
-            printf(&quot;Zeichen&quot;);
-        }
-
-        return 0;
-    }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;-60&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-		</entry>
 	
 		<entry>
 			<title>أمثلة على شبه الكود Pseudocode</title>
@@ -7472,7 +7242,7 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 			<id>http://mulham.github.io//Java-notes</id>
 			<content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#interface-class&quot; id=&quot;markdown-toc-interface-class&quot;&gt;interface class&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#abtract-class&quot; id=&quot;markdown-toc-abtract-class&quot;&gt;Abtract class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#abstract-class&quot; id=&quot;markdown-toc-abstract-class&quot;&gt;Abstract class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ملاحظات-متفرقة&quot; id=&quot;markdown-toc-ملاحظات-متفرقة&quot;&gt;ملاحظات متفرقة&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#المراجع&quot; id=&quot;markdown-toc-المراجع&quot;&gt;المراجع&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -7530,7 +7300,7 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;abtract-class&quot;&gt;Abtract class&lt;/h1&gt;
+&lt;h1 id=&quot;abstract-class&quot;&gt;Abstract class&lt;/h1&gt;
 
 &lt;p&gt;نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر object منها، يعني لدينا مثلا صنف student من نوع abtract فـ &lt;strong&gt;لايمكن&lt;/strong&gt; كتابة:&lt;/p&gt;
 
@@ -7626,8 +7396,6 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;المتغيرات من نوع final لايمكننا تغيير قيمتها&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;p&gt;هل لديك سؤال أو معلومة إضافية؟ يرجى مشاركتنا إياها في التعليقات لإضافتها للنص الأصلي&lt;/p&gt;
 

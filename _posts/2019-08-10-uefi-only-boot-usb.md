@@ -6,6 +6,8 @@ title: كيفية الإقلاع من usb في أجهزة الويندوز ضم�
 type: blog
 comments: true
 tags: [تقنية, أنظمة]
+feature: /assets/posts/uefi.jpg
+caption: "20180729_213918_HDR by vincent_kl_tam is licensed under CC BY-SA 2.0"
 ---
 
 مرحبًا..

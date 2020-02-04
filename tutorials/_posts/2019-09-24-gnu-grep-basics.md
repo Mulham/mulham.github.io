@@ -6,6 +6,8 @@ description: شرح grep والتعابير النمطية regular expression, r
 type: tutorial
 comments: true
 tags: [لينكس, regex]
+feature: /assets/posts/grep.jpg 
+caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2.0"
 ---
 
 
