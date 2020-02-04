@@ -61,7 +61,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
-
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-archives
+paginate: 12
+paginate_path: /page:num/
 
 jekyll-mentions:
     base_url: https://github.com

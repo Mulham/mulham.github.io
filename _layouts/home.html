@@ -10,50 +10,42 @@ layout: compress
     {% include head.html %}
 </head>
 <body>
+    {% include nav.html %}
     <!-- Header -->
-
-            <div class="row">
-                    <a href="#">
-                        <amp-img src="{{ site.logo }}" width="160" height="100">
+    <br><br><br>
+    <main id="content" role="main" class="">
+      <article class="recipe-article">
+    <header class="header" role="banner">
+       
+            <div class="content">
+                <div class="post-title">
+                    <h1>{{ page.title }}</h1>
+                    <a class="ampstart-btn" href="{{site.url}}">
+                        <amp-img height="24" width="24" src="/assets/img/home.png"></amp-img>
                     </a>
-                    <h3 class="title">
-                        <a href="#">
-                        	<p style="font-size:25px;font-weight:300">{{ site.title }}</p>
-			            </a>
-                    </h3>
-                    <hr class="hr-line">
-                    <h3 class="title">
-                        <a href="#">
-                        	<p style="font-size:25px;font-weight:300">{{ site.bio }}</p>
-			            </a>
-                    </h3>
+                </div>
+                <div class="post-list">
+                    {% for post in paginator.posts %} 
+
 
                     <ul style="list-style: none;">
-                        <li style="display: inline;">
-                            <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="30" height="35.5" /></a>
+                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            
+                            <a style="font-size: 33px;" href="{{ site.url }}{{ post.url }}">
+                        {% if post.feature %}
+<amp-img width="250px" height="250px" style="float:left; border-radius: 50%; margin-top: 30px;" src="{{post.feature}}"alt= "{{ post.alt }}"></amp-img>
+{% endif %}
+{{ post.title }}</a>
+                            <p style="font-size: 20px;">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
+                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">قراءة المزيد»</a>
                         </li>
-                        <li style="display: inline;">
-                            <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML youtube"><amp-img src="/assets/img/youtube.svg" width="30" height="35.5" /></a>
-                        </li>
-                                    <li style="display: inline;">
-                                        <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="30" height="35.5" /></a>
-                                    </li>
-                                    <li style="display: inline;">
-                                        <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="30" height="35.5" /></a>
-                                    </li>
-                    </ul>               <hr class="hr-line">
-                  <h3 style="font-size: 25px;" class="title">
-                         <a class="btn" href="{{ site.url }}/about">
-                         عن الموقع
-                         </a>
-                         <a class="btn" href="{{ site.url }}/posts">
-                         المدوّنة
-                         </a>
-                         <a class="btn" href="{{ site.url }}/tutorials">
-                         الدروس
-                         </a>
-                 </h3>
-            
-        </div>
+                    </ul>
+
+
+                    {% endfor %}
+                </div>
+            </div>
+    </header></article></main>
+       <center> {% include pagination.html %} </center>
 </body>
 </html>
