@@ -32,10 +32,11 @@ layout: compress
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             
                             <a style="font-size: 33px;" href="{{ site.url }}{{ post.url }}">
+                        {{ post.title }}
                         {% if post.feature %}
 <amp-img width="200px" height="200px" style="float:left; border-radius: 20%; margin-top: 30px;" src="{{post.feature}}"alt= "{{ post.title }}"></amp-img>
 {% endif %}
-{{ post.title }}</a>
+</a>
                             <p style="font-size: 20px;">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn">قراءة المزيد»</a>
                         </li>

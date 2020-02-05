@@ -2579,12 +2579,13 @@ dt {
 <script type="application/ld+json">
   {
    "@context": "http://schema.org",
-   "@type": "Article",
+   "@type": "BlogPosting",
    "mainEntityOfPage":{
      "@type":"WebPage",
      "@id":"{{ page.url }}"
    },
    "headline": "{{ page.title }}",
+   "url":"{{ page.url }}",
    "image": {
     "@type": "ImageObject",
     "url": "{{ page.feature }}",
@@ -2592,7 +2593,7 @@ dt {
     "width": 500
   },
    "datePublished":"{{ page.date }}",
-  
+  "dateModified":"{% if page.modified %}{{ page.modified }}{% else %} {{ page.date }} {% endif %}",
    "author": {
      "@type": "Person",
      "name": "Mulham Alibrahim",
@@ -2602,7 +2603,7 @@ dt {
       "name": "Mulham's Site",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mulham.github.io/assets/img/logo.png",
+        "url": "{{ site.logo }}",
         "width": 260,
         "height": 260
       }
@@ -2611,3 +2612,4 @@ dt {
    "description": "{{ page.description }}"
   }
   </script>
+
