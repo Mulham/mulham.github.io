@@ -13,7 +13,7 @@ layout: compress
     {% include nav.html %}
     <!-- Header -->
     <br><br><br>
-    <main id="content" role="main" class="">
+    <main id="content" role="main">
       <article class="recipe-article">
     <header class="header" role="banner">
        
@@ -33,8 +33,10 @@ layout: compress
                             
                             <a style="font-size: 33px;" href="{{ site.url }}{{ post.url }}">
                         {{ post.title }}
+                        <h4 style="font-size: 18px;color: #8ca29d;">{{ post.description }}</h4>
+                  
                         {% if post.feature %}
-<amp-img width="200px" height="200px" style="float:left; border-radius: 20%; margin-top: 30px;" src="{{post.feature}}"alt= "{{ post.title }}"></amp-img>
+<amp-img width="200px" height="200px" style="float:left; border-radius: 20%;" src="{{post.feature}}"alt= "{{ post.title }}"></amp-img>
 {% endif %}
 </a>
                             <p style="font-size: 20px;">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
@@ -67,7 +69,7 @@ layout: compress
 <ul class="entry-meta inline-list">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  	<li style="font-size:18px"><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
+  	<li style="font-size:18px"><a href="/tags/#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul><br>
      <center>

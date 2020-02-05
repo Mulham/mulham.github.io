@@ -61,7 +61,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-seo-tag
   - jekyll-archives
 paginate: 12
 paginate_path: /page:num/

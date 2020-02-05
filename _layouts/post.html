@@ -48,7 +48,7 @@ layout: compress
                     {% endif %}
                     <div style="text-align: center">
                     {% if page.type == 'tutorial' %}
-                    <a class="ampstart-btn" href="{{site.url}}/tutorials/">
+                    <a class="ampstart-btn" href="{{site.url}}/">
                     {% else %}
                     <a class="ampstart-btn" href="{{site.url}}/posts/">
                     {% endif %}
@@ -67,7 +67,7 @@ layout: compress
 {% if page.feature %}
 <center>
 <figure>
-  <amp-img src="{{ page.feature }}" alt="{{ page.title }}" width="440" height="250"></amp-img>
+  <amp-img src="{{ page.feature }}" alt="{{ page.title }}" width="440" height="400"></amp-img>
   <figcaption>{{ page.caption }}</figcaption>
 </figure>
 </center>
@@ -83,9 +83,9 @@ layout: compress
   <div overflow=""></div>
 </amp-ad>
 <br><hr>
+<br>
 
 
-<div class="rect">
 
   {% assign maxRelated = 4 %}
   {% assign minCommonTags =  1 %}
@@ -111,14 +111,21 @@ layout: compress
     {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
             {% if maxRelatedCounter == 1 %}
                 <h2>اقرأ أيضًا</h2>
+                <br><br><div style="  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;">
             {% endif %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              
-                <li> {{ post.title }} </li>
-                  
-             
-          </a>
-
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 140px; height: 280px; ">
+  <amp-img height="140" width="140" src="{% if post.feature %}{{ post.feature }}{% else %}/assets/posts/pen.jpg{% endif %}" alt="{{ post.title }}" style="border-radius: 5px 5px 0 0;"></amp-img>
+  <div class="container">
+    <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+    
+  </div>
+</div> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         
 
       {% if maxRelatedCounter >= maxRelated %}
         {% break %}
@@ -163,7 +170,7 @@ layout: compress
 <ul class="entry-meta inline-list">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  	<li style="font-size:18px"><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
+  	<li style="font-size:18px"><a href="/tags/#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul><br>
   <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
