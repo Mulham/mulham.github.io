@@ -88,7 +88,7 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
 
 هذا النوع من البحث يعرض فقط الأسطر التي تكون فيها السلسلة المطلوبة كلمة كاملة وليست جزءًا من كلمة أكبر.
 
-البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r <pattern> <path):
+البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r \<pattern\> path):
 
         [manish@clone ~]$ grep -r '456' /root/ 
         /root/testfile:Year is 2010
@@ -120,7 +120,7 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
 
 علامة "معاكسة" إلى -L هي -l أو - الملفات - مع التطابقات ، التي تطبع (فقط) أسماء الملفات التي تحتوي على مطابقات لنمط البحث الخاص بك.
 
-طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A <NUM>):
+طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A NUM):
 
         [manish@clone ~]$ grep -A1 '123'  testfile
         123 456 
@@ -128,14 +128,14 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
 
 يطبع Grep السطر المطابق لكل سطر يطابق البحث، وكذلك السطر التالي بعد المطابقة. يؤدي تغيير الرقم المتاح إلى -A إلى تغيير عدد الأسطر الإضافية الموجودة في الإخراج.
 
-قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B <NUM>):
+قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B NUM):
 
         [manish@clone ~]$ grep -B2 'Abcd' testfile
         practical with grep 
         123 456 
         Abcd
 
-طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C <NUM>):
+طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C NUM):
 
         [manish@clone ~]$ grep -C2 'carry' testfile
         this
@@ -146,7 +146,7 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
 
 كما ترى ، فقد طبع هذا سطرين قبل وبعد المطابقة الفردية الموجودة في الملف ؛ إذا كان هناك تطابقات متعددة ، يقوم Grep بإدراج سطر يحتوي على - بين كل مجموعة من الخطوط (كل تطابق وخطوط السياق الخاصة به).
 
-اطبع اسم الملف لكل مطابقة (grep -H <pattern> filename):
+اطبع اسم الملف لكل مطابقة (grep -H \<pattern\> filename):
 
         [manish@clone ~]$ grep -H 'a' testfile
         testfile:to carry out few regular expressions 
