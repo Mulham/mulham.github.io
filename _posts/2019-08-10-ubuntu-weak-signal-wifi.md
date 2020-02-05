@@ -6,7 +6,7 @@ title: حل مشكلة ضعف إشارة الوايفاي في أبونتو
 type: blog
 comments: true
 tags: لينكس
-feature: /assets/posts/ubuntu.jpg
+feature: /assets/posts/ubuntu.png
 caption: Image by guaxipo from Pixabay 
 ---
 

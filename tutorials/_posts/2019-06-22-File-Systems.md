@@ -6,6 +6,8 @@ description: شرح واضح ﻷشهر أنواع أنظمة الملفات وا
 type: tutorial
 comments: true
 tags: أنظمة
+feature: /assets/posts/hard-disk.jpg
+caption: "11 Platters by Sky Noir is licensed under CC BY-NC 2.0"
 ---
 
 أهلًا بكم في درس جديد حول أنظمة الملفات File Systems والتي هي الأساس لتنظيم الملفات في وحدات التخزين (الأقراص الصلبة).

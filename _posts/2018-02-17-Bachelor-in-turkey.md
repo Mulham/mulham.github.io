@@ -6,6 +6,8 @@ type: blog
 layout: post
 comments: true
 tags: تعليم
+feature: /assets/posts/open-book.jpg
+caption: Image by lil_foot_ from Pixabay 
 ---
 
 مرحباً..
