@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-02-05T22:16:29+03:00</updated>
+	<updated>2020-02-05T23:13:43+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -5366,11 +5366,11 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;هذا المنفذ والذي يُدعى بـ “Kensington Security Slot” هو عبارة عن نظام مضاد للسرقة يسمح لنا بتوصيل الكمبيوتر المحمول الخاص بنا بأي جسم ثابت باستخدام ملحقات معينة مثل قفل Kensington.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/laptop-safety1.jpg&quot; alt=&quot;Kensington lock&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;210&quot; height=&quot;210&quot; src=&quot;/assets/laptop-safety1.jpg&quot; alt=&quot;Kensington lock&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;تحتوي هذه الأقفال على قطعة أسطوانية متصلة بكابل معدني طويل. ترتبط تلك القطعة الأسطوانية بالمنفذ باستخدام رقم سري ويمكن توصيل الطرف الآخر من الكبل بأي كائن غير ثابت.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/laptop-safety2.jpeg&quot; alt=&quot;laptop safety via Kensington lock&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;310&quot; height=&quot;210&quot; src=&quot;/assets/laptop-safety2.jpg&quot; alt=&quot;laptop safety via Kensington lock&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;لن يكون السارق قادرًا على قطع الكابل المعدني أو محاولة كسر القفل لأنه سيضر بالكمبيوتر المحمول ولن يتمكن من إعادة بيعه حينئذِ.&lt;/p&gt;
 
@@ -8364,38 +8364,38 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 			<id>http://mulham.github.io//8-مواقع-إنجليزية-لاكتساب-مهارات-جديدة-مجانا</id>
 			<content type="html">&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.duolingo.com/&quot;&gt;Duolingo&lt;/a&gt; - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.duolingo.com/&quot;&gt;Duolingo&lt;/a&gt;{target=”_blank”} - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.codecademy.com/&quot;&gt;Codecademy&lt;/a&gt; - تعلّم البرمجة بسهولة&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.codecademy.com/&quot;&gt;Codecademy&lt;/a&gt;{target=”_blank”} - تعلّم البرمجة بسهولة&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://ocw.mit.edu/courses/&quot;&gt;MIT Courses&lt;/a&gt; - مناهج مفتوحة من قبل دكاترة معهد MIT التقني&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://ocw.mit.edu/courses/&quot;&gt;MIT Courses&lt;/a&gt;{target=”_blank”} - مناهج مفتوحة من قبل دكاترة معهد MIT التقني&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://education-portal.com/&quot;&gt;Education Portal&lt;/a&gt; - اختر بين عدة مناهج ويمكنك الحصول على تقدير جامعي حقيقي&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://education-portal.com/&quot;&gt;Education Portal&lt;/a&gt;{target=”_blank”} - اختر بين عدة مناهج ويمكنك الحصول على تقدير جامعي حقيقي&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://edx.org&quot;&gt;Edx&lt;/a&gt; - مناهج مجانيّة متعدّدة في مجالات مختلفة مع شهادات مدفوعة&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://edx.org&quot;&gt;Edx&lt;/a&gt;{target=”_blank”} - مناهج مجانيّة متعدّدة في مجالات مختلفة مع شهادات مدفوعة&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/&quot;&gt;coursera&lt;/a&gt; - كما هو مذكور في موقعهم: “أفضل المناهج في العالم عبر الإنترنت وبالمجان”&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/&quot;&gt;coursera&lt;/a&gt;{target=”_blank”} - كما هو مذكور في موقعهم: “أفضل المناهج في العالم عبر الإنترنت وبالمجان”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.khanacademy.org/&quot;&gt;Khan Academy&lt;/a&gt; - مناهج في مجالات مختلفة بما فيها علم الحاسوب والرياضيّات&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.khanacademy.org/&quot;&gt;Khan Academy&lt;/a&gt;{target=”_blank”} - مناهج في مجالات مختلفة بما فيها علم الحاسوب والرياضيّات&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://diy.org/skills&quot;&gt;DIY.com&lt;/a&gt; - اختر بين مهارات عديدة وتعلمهم.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://diy.org/skills&quot;&gt;DIY.com&lt;/a&gt;{target=”_blank”} - اختر بين مهارات عديدة وتعلمهم.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;em&gt;إضافة&lt;/em&gt;:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;موقع حروب الكود &lt;a href=&quot;http://codewars.com/&quot;&gt;codewars&lt;/a&gt; لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء.&lt;/p&gt;
+    &lt;p&gt;موقع حروب الكود &lt;a href=&quot;http://codewars.com/&quot;&gt;codewars&lt;/a&gt;{target=”_blank”} لتعلّم البرمجة بشكل ممتع وتنافسي بين الأعضاء.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://learndigital.withgoogle.com/digitalgarage&quot;&gt;التعلم الإلكتروني مع جوجل&lt;/a&gt; يحوي مناهج عديدة خاصة من جوجل أو من مصادر أكاديمية أخرى&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://learndigital.withgoogle.com/digitalgarage&quot;&gt;التعلم الإلكتروني مع جوجل&lt;/a&gt;{target=”_blank”} يحوي مناهج عديدة خاصة من جوجل أو من مصادر أكاديمية أخرى&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -17594,11 +17594,9 @@ Secondary DNS server: 208.67.220.220
 			<link href="http://mulham.github.io/jdownloader/"/>
 			<updated>2015-02-15T00:00:00+02:00</updated>
 			<id>http://mulham.github.io//jdownloader</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;/assets/jdownloader.jpg&quot; alt=&quot;برنامج جي داونلودر لتحميل الملفات على اللينكس&quot; title=&quot;برنامج جي داونلودر لتحميل الملفات على اللينكس&quot; /&gt;&lt;/p&gt;
+			<content type="html">&lt;p&gt;سوف أشرح هنا كيفية تنصيب برنامج جي داونلودر بديل برنامج إنترنت داونلود مانيجر على لينكس&lt;/p&gt;
 
-&lt;p&gt;سوف أشرح هنا كيفية تنصيب برنامج جي داونلودر بديل برنامج إنترنت داونلود مانيجر على لينكس&lt;/p&gt;
-
-&lt;p&gt;في البداية يجب تنزيل إضافة لمتصفح الفايرفوكس وهي : &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/downloads/latest/220/addon-220-latest.xpi?src=flashgot.ownsite&quot;&gt;Flashgot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;في البداية يجب تنزيل إضافة لمتصفح الفايرفوكس وهي : &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/downloads/latest/220/addon-220-latest.xpi?src=flashgot.ownsite&quot;&gt;Flashgot&lt;/a&gt;{target=”_blank”}&lt;/p&gt;
 
 &lt;p&gt;الآن افتح الطرفية “terminal” واكتب فيها الأوامر التالية كل أمر على حده (أي اكتب السطر الأول أولا بعدها اضغط انتر … ثم السطر الثاني ..)&lt;/p&gt;
 
@@ -17611,9 +17609,9 @@ Secondary DNS server: 208.67.220.220
 
 &lt;p&gt;بعد الانتهاء من التنزيل أغلق الطرفية وابحث عن البرنامج في قائمة البرامج “jdownloader” ستجده هناك، افتحه .. بعد الفتح سوف يقوم بعملية تحديث تلقائية ستستغرق بعض الوقت وبعدها بإمكانك تحميل الملفات عن طريقه، والصورة التالية ستوضح ذلك&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/falshgot-jdownloader-Screenshot.png&quot; alt=&quot;كيفية تنزيل الملفات عبر فلاش جوت وجي داونلودر&quot; title=&quot;كيفية تنزيل الملفات عبر فلاش جوت وجي داونلودر&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;410&quot; height=&quot;300&quot; src=&quot;/assets/falshgot-jdownloader-Screenshot.png&quot; alt=&quot;كيفية تنزيل الملفات عبر فلاش جوت وجي داونلودر&quot;&gt;&lt;/amp-img&gt;
 
-&lt;p&gt;ومبروك عليك ツ&lt;/p&gt;
+&lt;p&gt;انتهى ツ&lt;/p&gt;
 
 </content>
 		</entry>

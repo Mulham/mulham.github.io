@@ -5,8 +5,8 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Feb 2020 22:16:29 +0300</pubDate>
-    <lastBuildDate>Wed, 05 Feb 2020 22:16:29 +0300</lastBuildDate>
+    <pubDate>Wed, 05 Feb 2020 23:13:43 +0300</pubDate>
+    <lastBuildDate>Wed, 05 Feb 2020 23:13:43 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -5386,11 +5386,11 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;هذا المنفذ والذي يُدعى بـ “Kensington Security Slot” هو عبارة عن نظام مضاد للسرقة يسمح لنا بتوصيل الكمبيوتر المحمول الخاص بنا بأي جسم ثابت باستخدام ملحقات معينة مثل قفل Kensington.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/laptop-safety1.jpg&quot; alt=&quot;Kensington lock&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;210&quot; height=&quot;210&quot; src=&quot;/assets/laptop-safety1.jpg&quot; alt=&quot;Kensington lock&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;تحتوي هذه الأقفال على قطعة أسطوانية متصلة بكابل معدني طويل. ترتبط تلك القطعة الأسطوانية بالمنفذ باستخدام رقم سري ويمكن توصيل الطرف الآخر من الكبل بأي كائن غير ثابت.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/laptop-safety2.jpeg&quot; alt=&quot;laptop safety via Kensington lock&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;310&quot; height=&quot;210&quot; src=&quot;/assets/laptop-safety2.jpg&quot; alt=&quot;laptop safety via Kensington lock&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;لن يكون السارق قادرًا على قطع الكابل المعدني أو محاولة كسر القفل لأنه سيضر بالكمبيوتر المحمول ولن يتمكن من إعادة بيعه حينئذِ.&lt;/p&gt;
 
