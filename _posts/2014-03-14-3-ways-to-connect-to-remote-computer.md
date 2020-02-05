@@ -5,6 +5,8 @@ type: blog
 layout: post
 comments: true
 tags: [تقنية, شبكات, إنترنت]
+feature: /assets/posts/network.jpg
+caption: Image by Dimitris Christou from Pixabay
 ---
 
 

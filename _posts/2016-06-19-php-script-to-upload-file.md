@@ -5,6 +5,8 @@ date: 2016-06-19
 type: blog
 comments: true
 tags: [PHP, برمجة]
+feature: /assets/posts/php.png
+caption: Image by OpenClipart-Vectors from Pixabay 
 ---
 
 نقدم لكم سكريبت بسيط بلغة php لرفع ملف .

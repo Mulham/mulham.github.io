@@ -5,13 +5,10 @@ type: blog
 title: أسرار بحث جوجل
 comments: true
 tags: [Google, تقنية, إنترنت]
+feature: /assets/google-search-secrets.jpg
 ---
 
 
-
-
-
-![أسرار بحث جوجل](/assets/google-search-secrets.jpg "أسرار بحث جوجل")
 
 إن خدمة البحث في جوجل هي أداة أكثر ذكاء وقوة مما يعتقد معظم الناس . إليكم 11 طريقة وأداة للبحث لتجعل استخدامكم لجوجل أكثر فاعلية
 
