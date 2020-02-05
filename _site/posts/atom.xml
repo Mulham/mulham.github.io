@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-02-05T00:51:46+03:00</updated>
+	<updated>2020-02-05T08:37:09+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -15444,19 +15444,18 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;li&gt;اذهب الى القائمة واكتب brasero للبحث عن البرنامج ، ثم اضغط عليه لفتحه .&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/brasero1.jpg&quot; alt=&quot;brasero1&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;508&quot; height=&quot;250&quot; src=&quot;/assets/brasero1.jpg&quot; alt=&quot;استخدام برنامج برازيرو&quot;&gt;&lt;/amp-img&gt;
 
 &lt;ol&gt;
   &lt;li&gt;ستفتح لك قائمة البرنامج الرئيسية . اضغط على الزر الأخير Burn Image&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/Brasero2.png&quot; alt=&quot;brasero2&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;527&quot; height=&quot;262&quot; src=&quot;/assets/Brasero2.png&quot; alt=&quot;استخدام برنامج Brasero&quot;&gt;&lt;/amp-img&gt;
 
 &lt;ol&gt;
   &lt;li&gt;ستظهر نافذة تختار منها أولاً الملف .iso ثم مسار القرص المدرج في السواقة والذي غالباً ما يكتشفه البرنامج تلقائياً .&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/brasero3.png&quot; alt=&quot;brasero3&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;500&quot; height=&quot;250&quot; src=&quot;/assets/brasero3.png&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;وأخيراً اضغط على Burn لبدء العملية.&lt;/p&gt;
 

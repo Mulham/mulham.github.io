@@ -33,11 +33,11 @@ layout: compress
                             
                             <a style="font-size: 33px;" href="{{ site.url }}{{ post.url }}">
                         {% if post.feature %}
-<amp-img width="250px" height="250px" style="float:left; border-radius: 20%; margin-top: 30px;" src="{{post.feature}}"alt= "{{ post.alt }}"></amp-img>
+<amp-img width="200px" height="200px" style="float:left; border-radius: 20%; margin-top: 30px;" src="{{post.feature}}"alt= "{{ post.title }}"></amp-img>
 {% endif %}
 {{ post.title }}</a>
                             <p style="font-size: 20px;">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">قراءة المزيد»</a>
+                            <a href="{{ site.url }}{{ post.url }}" class="btn">قراءة المزيد»</a>
                         </li>
                     </ul>
 
@@ -45,7 +45,38 @@ layout: compress
                     {% endfor %}
                 </div>
             </div>
-    </header></article></main>
+    </header></article></main><br>
        <center> {% include pagination.html %} </center>
+    <br><br>
+<h3 class="title">
+                        <a href="#">
+                        	<p style="font-size:25px;font-weight:300">{{ site.title }}</p>
+			            </a>
+                    </h3>
+                    <hr class="hr-line">
+                    <h3 class="title">
+                        <a href="#">
+                        	<p style="font-size:25px;font-weight:300">{{ site.bio }}</p>
+			            </a>
+                    </h3>
+     <center>
+                    <ul style="list-style: none;">
+                        <li style="display: inline;">
+                            <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="30" height="35.5" /></a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML youtube"><amp-img src="/assets/img/youtube.svg" width="30" height="35.5" /></a>
+                        </li>
+                                    <li style="display: inline;">
+                                        <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="30" height="35.5" /></a>
+                                    </li>
+                                    <li style="display: inline;">
+                                        <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="30" height="35.5" /></a>
+                                    </li>
+                    </ul>
+<footer>      
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><amp-img width="63" height="25" alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.
+     </center> 
+  </footer>
 </body>
 </html>
