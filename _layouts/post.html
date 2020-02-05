@@ -142,11 +142,11 @@ layout: compress
     <br><br><br>
 
 
-        <h3 class="index-headline featured"><span>الكاتب</span></h5>
+        <h2 class="index-headline featured"><span>الكاتب</span></h2>
     <amp-img width="120" height="120" style="border-radius:50%" src="/author.png"></amp-img>
         <section class="author">
           <div style="margin-top: -150px;margin-right: 130px;">
-          <h4>ملهم</h4>
+          <h3>ملهم</h3>
           <p class="bio"> طالب هندسة حاسوب من سوريا، أعمل على تأليف وترجمة كل ما أراه مهمًا في هذا المجال</p>
 
           <p> <a href="/about"> تعرَّف أكثر</a>
@@ -156,6 +156,16 @@ layout: compress
           <hr>
             </section></div></div>
     <br><br>
+<h2>تصنيفات الموقع</h2>
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags_list = site_tags | split:',' | sort %}
+
+<ul class="entry-meta inline-list">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  	<li style="font-size:18px"><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
+  {% endunless %}{% endfor %}
+</ul><br>
   <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
    
     <li>

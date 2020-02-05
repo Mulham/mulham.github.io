@@ -60,6 +60,16 @@ layout: compress
                         	<p style="font-size:25px;font-weight:300">{{ site.bio }}</p>
 			            </a>
                     </h3>
+<h2>تصنيفات الموقع</h2>
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags_list = site_tags | split:',' | sort %}
+
+<ul class="entry-meta inline-list">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  	<li style="font-size:18px"><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
+  {% endunless %}{% endfor %}
+</ul><br>
      <center>
                     <ul style="list-style: none;">
                         <li style="display: inline;">
