@@ -1,4 +1,6 @@
 <div style="direction: rtl">
+  
+  
 # قالب مدونة Jekyll أنيق وسريع متوافق مع AMP
 
 لاستعراض القالب مباشرة اضغط [هنا](https://mulham.github.io){target="_blank"}
