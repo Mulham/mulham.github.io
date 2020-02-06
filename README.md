@@ -1,7 +1,7 @@
 
 # قالب مدونة Jekyll أنيق وسريع متوافق مع AMP
 
-لاستعراض القالب مباشرة اضغط [هنا](https://mulham.github.io){target="_blank"}
+لاستعراض القالب مباشرة اضغط [هنا](https://mulham.github.io) 
 
 ## المزايا
 
@@ -46,7 +46,7 @@
 
 ﻷي مساعدة في التنصيب والتخصيص قم بطرح سؤال على هذه الحزمة بالضغط على زر Issues أعلاه.
 
-يمكنك دعمي على [موقع باتريون](https://www.patreon.com/mulham){target="_blank"}
+يمكنك دعمي على [موقع باتريون](https://www.patreon.com/mulham) 
 
 إذا كان لديك أي تعديل أو إضافة على الموقع فيمكنك نسخ الحزمة والتعديل ثم طرح تعديلاتك (pull request) لتُنشر ضمن الحزمة الأساسية إن كانت مفيدة.
 
@@ -61,7 +61,7 @@
 
 
 تم الاستفادة في هذا القالب من كل من 
-[Moon theme](https://github.com/TaylanTatli/Moon){target="_blank"}
+[Moon theme](https://github.com/TaylanTatli/Moon) 
 و 
-[AMP Simple Blog theme](https://amp.dev/documentation/templates/simple_blog){target="_blank"}
+[AMP Simple Blog theme](https://amp.dev/documentation/templates/simple_blog) 
 مع التخصيص للعربية وإضافة مزايا أكثر.

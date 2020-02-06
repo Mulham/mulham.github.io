@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-02-05T23:13:43+03:00</updated>
+	<updated>2020-02-06T09:14:40+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -5576,7 +5576,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;هذا النوع من البحث يعرض فقط الأسطر التي تكون فيها السلسلة المطلوبة كلمة كاملة وليست جزءًا من كلمة أكبر.&lt;/p&gt;
 
-&lt;p&gt;البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r &lt;pattern&gt; &amp;lt;path):&lt;/pattern&gt;&lt;/p&gt;
+&lt;p&gt;البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r &amp;lt;pattern&amp;gt; path):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -r '456' /root/ 
     /root/testfile:Year is 2010
@@ -5611,7 +5611,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;علامة “معاكسة” إلى -L هي -l أو - الملفات - مع التطابقات ، التي تطبع (فقط) أسماء الملفات التي تحتوي على مطابقات لنمط البحث الخاص بك.&lt;/p&gt;
 
-&lt;p&gt;طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A &lt;NUM&gt;):&lt;/NUM&gt;&lt;/p&gt;
+&lt;p&gt;طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -A1 '123'  testfile
     123 456 
@@ -5620,7 +5620,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;يطبع Grep السطر المطابق لكل سطر يطابق البحث، وكذلك السطر التالي بعد المطابقة. يؤدي تغيير الرقم المتاح إلى -A إلى تغيير عدد الأسطر الإضافية الموجودة في الإخراج.&lt;/p&gt;
 
-&lt;p&gt;قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B &lt;NUM&gt;):&lt;/NUM&gt;&lt;/p&gt;
+&lt;p&gt;قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -B2 'Abcd' testfile
     practical with grep 
@@ -5628,7 +5628,7 @@ belongs to&lt;/p&gt;
     Abcd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C &lt;NUM&gt;):&lt;/NUM&gt;&lt;/p&gt;
+&lt;p&gt;طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -C2 'carry' testfile
     this
@@ -5640,7 +5640,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;كما ترى ، فقد طبع هذا سطرين قبل وبعد المطابقة الفردية الموجودة في الملف ؛ إذا كان هناك تطابقات متعددة ، يقوم Grep بإدراج سطر يحتوي على - بين كل مجموعة من الخطوط (كل تطابق وخطوط السياق الخاصة به).&lt;/p&gt;
 
-&lt;p&gt;اطبع اسم الملف لكل مطابقة (grep -H &lt;pattern&gt; filename):&lt;/pattern&gt;&lt;/p&gt;
+&lt;p&gt;اطبع اسم الملف لكل مطابقة (grep -H &amp;lt;pattern&amp;gt; filename):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -H 'a' testfile
     testfile:to carry out few regular expressions 
@@ -8364,7 +8364,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 			<id>http://mulham.github.io//8-مواقع-إنجليزية-لاكتساب-مهارات-جديدة-مجانا</id>
 			<content type="html">&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.duolingo.com/&quot;&gt;Duolingo&lt;/a&gt;{target=”_blank”} - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.duolingo.com/&quot;&gt;Duolingo&lt;/a&gt;{target:”_blank”} - تعلّم اللغات بشكل تفاعلي، يمكنك الاختيار بين 9 لغات للتعلم، كما أن الموقع متاح بـ 21 لغة.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.codecademy.com/&quot;&gt;Codecademy&lt;/a&gt;{target=”_blank”} - تعلّم البرمجة بسهولة&lt;/p&gt;
@@ -11210,7 +11210,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;الآن عندما نختار السنب المئوية الوحدة CSS المطلوبة للإزاحة، فإن مكان العنصر سيعتمد على أبعاد العنصر الأب. في الأسفل رسم يبيّن حساب الموقع الجديد (بالنسب المئويّة):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/New_Position.png&quot; alt=&quot;أنواع توضّع CSS&quot; /&gt;&lt;/p&gt;
+&lt;amp-img width=&quot;600&quot; height=&quot;300&quot; src=&quot;/assets/New_Position.png&quot; alt=&quot;أنواع توضّع CSS&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: كما تعلم، فإن خاصية &lt;code class=&quot;highlighter-rouge&quot;&gt;transform&lt;/code&gt; (بالإضافة لخصائص &lt;code class=&quot;highlighter-rouge&quot;&gt;translate&lt;/code&gt; المختلفة) تتيح لنا أيضاً تغيرر موضع العنصر. ولكن يجب الانتباه إلى أنه عند اختيارنا للنسب المئويّة كوحدة CSS، فإن العنصر سيتوضّع وفقاً لأبعاده وليس وفقاً لأبعاد العنصر الأب (خلافاً للإزاحات).&lt;/p&gt;
 

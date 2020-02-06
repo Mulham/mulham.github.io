@@ -5,8 +5,8 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Feb 2020 23:13:43 +0300</pubDate>
-    <lastBuildDate>Wed, 05 Feb 2020 23:13:43 +0300</lastBuildDate>
+    <pubDate>Thu, 06 Feb 2020 09:14:40 +0300</pubDate>
+    <lastBuildDate>Thu, 06 Feb 2020 09:14:40 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -5608,7 +5608,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;هذا النوع من البحث يعرض فقط الأسطر التي تكون فيها السلسلة المطلوبة كلمة كاملة وليست جزءًا من كلمة أكبر.&lt;/p&gt;
 
-&lt;p&gt;البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r &lt;pattern&gt; &amp;lt;path):&lt;/pattern&gt;&lt;/p&gt;
+&lt;p&gt;البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r &amp;lt;pattern&amp;gt; path):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -r '456' /root/ 
     /root/testfile:Year is 2010
@@ -5643,7 +5643,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;علامة “معاكسة” إلى -L هي -l أو - الملفات - مع التطابقات ، التي تطبع (فقط) أسماء الملفات التي تحتوي على مطابقات لنمط البحث الخاص بك.&lt;/p&gt;
 
-&lt;p&gt;طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A &lt;NUM&gt;):&lt;/NUM&gt;&lt;/p&gt;
+&lt;p&gt;طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -A1 '123'  testfile
     123 456 
@@ -5652,7 +5652,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;يطبع Grep السطر المطابق لكل سطر يطابق البحث، وكذلك السطر التالي بعد المطابقة. يؤدي تغيير الرقم المتاح إلى -A إلى تغيير عدد الأسطر الإضافية الموجودة في الإخراج.&lt;/p&gt;
 
-&lt;p&gt;قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B &lt;NUM&gt;):&lt;/NUM&gt;&lt;/p&gt;
+&lt;p&gt;قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -B2 'Abcd' testfile
     practical with grep 
@@ -5660,7 +5660,7 @@ belongs to&lt;/p&gt;
     Abcd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C &lt;NUM&gt;):&lt;/NUM&gt;&lt;/p&gt;
+&lt;p&gt;طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -C2 'carry' testfile
     this
@@ -5672,7 +5672,7 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;كما ترى ، فقد طبع هذا سطرين قبل وبعد المطابقة الفردية الموجودة في الملف ؛ إذا كان هناك تطابقات متعددة ، يقوم Grep بإدراج سطر يحتوي على - بين كل مجموعة من الخطوط (كل تطابق وخطوط السياق الخاصة به).&lt;/p&gt;
 
-&lt;p&gt;اطبع اسم الملف لكل مطابقة (grep -H &lt;pattern&gt; filename):&lt;/pattern&gt;&lt;/p&gt;
+&lt;p&gt;اطبع اسم الملف لكل مطابقة (grep -H &amp;lt;pattern&amp;gt; filename):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -H 'a' testfile
     testfile:to carry out few regular expressions 
