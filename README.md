@@ -1,5 +1,5 @@
 
-# قالب مدونة Jekyll أنيق وسريع متوافق مع AMP
+# <div dir="rtl"> قالب مدونة Jekyll أنيق وسريع متوافق مع AMP </div>
 
 لاستعراض القالب مباشرة اضغط [هنا](https://mulham.github.io) 
 
