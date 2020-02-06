@@ -1,4 +1,6 @@
-
+<div style="direction: rtl">
+  
+  
 # قالب مدونة Jekyll أنيق وسريع متوافق مع AMP
 
 لاستعراض القالب مباشرة اضغط [هنا](https://mulham.github.io) 
@@ -65,3 +67,5 @@
 و 
 [AMP Simple Blog theme](https://amp.dev/documentation/templates/simple_blog) 
 مع التخصيص للعربية وإضافة مزايا أكثر.
+
+</div>
