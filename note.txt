@@ -10,6 +10,9 @@ caption:
 tags: [sample post, readability, test]
 comments: true
 type: blog/tutorial
+hidden: false
+permalink:
+published: true
 ---
 
 * Toc
