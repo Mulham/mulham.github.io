@@ -6,9 +6,9 @@ description: شرح مبسط لاستخدام Git وأهم الأوامر الت
 type: tutorial
 comments: true
 tags: [Git, Github, شبكات, إنترنت]
+feature: /assets/git.png
 ---
 
-![جِت-git](/assets/git.png)
 
 * Toc
 {:toc}
@@ -70,7 +70,8 @@ tags: [Git, Github, شبكات, إنترنت]
 إن حزمتك المحلية مؤلفة من ثلاث "شجرات" مختزنة من قبل git. الأولى هي المجلد الذي نعمل ضمنه ، والذي يحوي على ملفات الحزمة. و الثانية هي ملف ال index والذي نتعامل معه كمسرح العمل. وأخيراً الرأس Head والذي يشير لآخر تعديل قمت به.
 
 
-![شرح مبدأ عمل git](/assets/trees.png)
+<amp-img height="200" width="600" src="/assets/trees.png" alt="شرح مبدأ عمل جت"></amp-img>
+
 
 <amp-ad width="100vw" height="320"
      type="adsense"

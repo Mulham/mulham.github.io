@@ -23,10 +23,13 @@ caption: "Application-thumbnail-preview by Jeffpro57 is licensed under CC BY 2.0
 نستخدم لهذا الغرض [مشغل الفيديو الشهير والمجاني vlc](https://www.videolan.org/vlc/index.html) والذي يعمل على جميع أنظمة الحاسوب والمحمول.
 وهنا إما نقوم بتنزيل الفيديو المطلوب والذي يحوي الأخطاء التي ذكرناها من الإنترنت ليصبح لدينا على الجهاز ومنه نشغله مباشرة باستخدام برنامج vlc أو إذا كان الفيديو على اليوتيوب أو موقع شبيه به يدعم البث video stream فنقوم بتشغيله مباشرة من النت بفتح برنامج vlc والذهاب لـ Media > Open Network Stream كما في الصورة:
 
-![open network stream vlc](/assets/vlc1.png)
+<amp-img height="250" width="600" src="/assets/vlc1.png" alt="open network stream vlc"></amp-img>
+
 
 ثم نضع رابط الفيديو كما في الصورة أدناه ونضغط على play
-![open network stream vlc - 2](/assets/vlc2.png)
+
+<amp-img height="250" width="600" src="/assets/vlc2.png" alt="open network stream vlc-2"></amp-img>
+
 
 والآن بعد تشغيل الفيديو سواء بعد تنزيله من النت أي من الجهاز مباشرة أو من الإنترنت مباشرة، لتصحيح خطأ عدم تزامن الصوت مع الصورة على نظامي الويندوز واللينكس نضغط على الكيبورد على أحد زري <kbd>J</kbd> و <kbd>K</kbd> لتأخير وتسبيق الصوت عن الصورة على التوالي. على نظام الماك تكون الاختصارات <kbd>G</kbd> و <kbd>F</kbd>
 نستمر في الضغط على أحد هذه الأزرار بحسب الخطأ في الفيديو لنحصل على النتيجة المطلوبة.
@@ -49,7 +52,8 @@ caption: "Application-thumbnail-preview by Jeffpro57 is licensed under CC BY 2.0
 
 3. من الخيارات في الأسفل اضغط على الأيقونة الظاهرة في الصورة ثم Audio delay
 
-![Audio delay option in vlc Android](/assets/vlc3.jpg)
+<amp-img height="400" width="400" src="/assets/vlc3.jpg" alt="Audio delay option in vlc Android"></amp-img>
+
 
 4. اضغط على زري `+` و `-` للتعديل والحصول على النتيجة المطلوبة
 
@@ -58,7 +62,8 @@ caption: "Application-thumbnail-preview by Jeffpro57 is licensed under CC BY 2.0
 
 بعض الفيديوهات تحوي على خطأ في الصوت وهو خروجه من جهة واحدة (اليمين أو اليسار) ويتضح هذا الخطأ تمامًا عند ارتداء سماعات. لتصحيح هذا الخطأ ضمن برنامج vlc ( ﻷنظمة الحاسوب فقط حيث أنني لم أعثر على هذا الخيار في النسخة المخصصة ﻷندرويد) بعد فتح الفيديو المطلوب نضغط باليمين على الشاشة ثم Audio > Stereo Mode > Left كما هو مبين في الصورة:
 
-![حل مشكلة خروج الصوت من جهة أو منفذ واحد](/assets/vlc4.jpg)
+<amp-img height="250" width="600" src="/assets/vlc4.jpg" alt="حل مشكلة خروج الصوت من جهة أو منفذ واحد"></amp-img>
+
 
 
 يجدر الإشارة في النهاية إلى أننا قمنا بتغطية ميزتين فقط من مزايا مشغل الفيديو العملاق VLC والذي يحوي مزايا أخرى مثل التحويل بين صيغ الصوت والصورة وتسجيل فيديو للشاشة لعمل فيديوهات تعليمية مثلا وغيرها من المزايا..

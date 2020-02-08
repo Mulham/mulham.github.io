@@ -44,7 +44,7 @@ comments: true
 
 في الأسفل تحديد من جدول الزبائن Customers
 
-![customers](/assets/customers.png)
+<amp-img height="250" width="600" src="/assets/customers.png" alt="دروس SQL"></amp-img>
 
 # أمثلة على SQL TOP و LIMIT و ROWNUM
 

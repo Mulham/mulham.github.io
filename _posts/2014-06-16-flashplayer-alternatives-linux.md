@@ -5,12 +5,10 @@ type: blog
 title: بديل الفلاش بلاير على اللينكس
 comments: true
 tags: لينكس
+feature: /assets/flashplayer-alternatives-linux.jpg
 ---
 
 
-
-
-![بدائل الفلاش بلاير على اللينكس](/assets/flashplayer-alternatives-linux.jpg "بدائل الفلاش بلاير على اللينكس")
 
 
 هناك العديد من الناس يشتكون من مشغل الفلاش "فلاش بلاير" بسبب مشاكله الكثيرة وخاصة على اللينكس ..

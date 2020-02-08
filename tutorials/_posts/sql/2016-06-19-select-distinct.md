@@ -40,7 +40,7 @@ lesson: 4
 
 في الأسفل تحديد من جدول الزبائن `Customers`
 
-![customers](/assets/customers.png)
+<amp-img height="250" width="600" src="/assets/customers.png" alt="دروس SQL"></amp-img>
 
 # مثال لتصريح SELECT DISTINCT
 

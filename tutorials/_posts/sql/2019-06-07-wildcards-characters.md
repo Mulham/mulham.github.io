@@ -72,7 +72,7 @@ _|     تمثل حرفا واحدا |     العبارة h_t تجد hot, hat, و
 في الأسفل تحديد من جدول الزبائن Customers في قاعدة البيانات النموذجية Northwind
 
 
-![customers](/assets/customers.png) 
+<amp-img height="250" width="600" src="/assets/customers.png" alt="دروس SQL"></amp-img>
 
 # استخدام الرمز %
 

@@ -21,7 +21,8 @@ caption: "20180729_213918_HDR by vincent_kl_tam is licensed under CC BY-SA 2.0"
 
 أولًا نقوم بتهيئة القرص USB [لنظام ملفات](https://mulham.github.io/File-Systems/) FAT32 ثم نضيف له boot flag أي نجعله قرص إقلاعي، هذه العملية تتم عن طريق برنامج gparted أو في الويندوز قم بالبحث عن شبيه له لعمل ذلك. في الصورة أدناه كيفية إضافة boot flag للقرص عن طريق برنامج Gparted
 
-![add boot flag](/assets/boot-flag.png)
+<amp-img  width="500" height="300" src="/assets/boot-flag.png" alt="add boot flag"></amp-img>
+
 
 بعدها سيكون النظام الذي تود تنصيبه لديك على شكل ملف .iso ، نقوم بفتح ذلك الملف: باللينكس بالنقر عليه مرتين وبالويندوز 10 نضغط عليه باليمين ثم Mount، ستظهر لنا الملفات الموجود في ملف الـ iso نقوم بنسخها ولصقها ببساطة في قرص الـ USB، إذا كان هناك أخطاء في نسخ مجلدات الاختصارات فلا تقلق يمكن تجاهل ذلك!
 
@@ -36,11 +37,13 @@ caption: "20180729_213918_HDR by vincent_kl_tam is licensed under CC BY-SA 2.0"
 
 مثلًا على جهازي ال Hometech أضغط على <kbd>Esc</kbd> فتظهر هذه الشاشة:
 
-![uefi Hometech](/assets/uefi1.jpg)
+<amp-img  width="600" height="400" src="/assets/uefi1.jpg" alt="uefi Hometech"></amp-img>
+
 
 بعدها عند الذهاب لخيار SCU ستظهر لك شاشة زرقاء، نذهب ضمنها لتبويبة Boot في الأعلى كما في الصورة:
 
-![إعدادات بيوس لتفعيل الإقلاع من الفلاشة usb](/assets/uefi2.jpg)
+<amp-img  width="600" height="400" src="/assets/uefi2.jpg" alt="إعدادات بيوس لتفعيل الإقلاع من الفلاشة"></amp-img>
+
 
 نقوم من هناك بإلغاء تفعيل كلا من الخيارات التالية وذلك بتغيير حالتهم لـ Disabled:
 

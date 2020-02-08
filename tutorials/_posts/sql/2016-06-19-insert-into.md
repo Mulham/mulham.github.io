@@ -49,7 +49,7 @@ lesson: 8
 في الأسفل تحديد من جدول الزبائن Customers
 
 
-![customers](/assets/customers.png)
+<amp-img height="250" width="600" src="/assets/customers.png" alt="دروس SQL"></amp-img>
 
 # مثال على INSERT INTO
 
@@ -63,7 +63,7 @@ lesson: 8
 
 الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي
 
-![customers1](/assets/customers1.png)
+<amp-img height="250" width="600" src="/assets/customers1.png" alt="دروس SQL"></amp-img>
 
 
 > هل لاحظت أننا لم نقم بإدراج أي رقم في حقل CustomerID ؟
@@ -86,6 +86,6 @@ lesson: 8
 
 الآن ، سيبدو التحديد من جدول الزبائن على الشكل التالي
 
-![customers2](/assets/customers2.png)
+<amp-img height="250" width="600" src="/assets/customers2.png" alt="دروس SQL"></amp-img>
 
 التالي: [تصريح UPDATE](update)

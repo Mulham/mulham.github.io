@@ -30,7 +30,8 @@ caption: "11 Platters by Sky Noir is licensed under CC BY-NC 2.0"
 
 الصورة التالية توضح العملية حيث تعبر المربعات عن الحجرات وتعبر المساحات الحمراء عن حجم الملفات في كل حجرة
 
-![File-Systems](/assets/file-systems.jpg)
+<amp-img height="450" width="275" src="/assets/file-systems.jpg" alt="أنواع أنظمة الملفات وكيفية الاختيار بينهم"></amp-img>
+
 
 (للمزيد حول فهم الموضوع نظريًا اقرأ عنه في [ويكيبيديا](https://ar.wikipedia.org/wiki/نظام_الملفات))
 

@@ -19,3 +19,6 @@ published: true
 {:toc}
 
 {: .notice}
+
+
+<amp-img  width="" height="" src="" alt=""></amp-img>
