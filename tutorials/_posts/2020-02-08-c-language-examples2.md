@@ -171,51 +171,60 @@ hidden: true
 
   مثال على المُدخل:
   
-
+  <div dir="ltr">
   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  </div>
 
   مثال على الناتج:
-
+  <div dir="ltr">
   Wrong Input
-
+  </div>
 
   مثال 2 على المُدخل:
   
-
+  <div dir="ltr">
   ddddddddddabcdddddddddd
+  </div>
 
   مثال 2 على الناتج:
-
+  <div dir="ltr">
   Wrong Input
+  </div>
 
 
   مثال 3 على المُدخل:
   
-
+  <div dir="ltr">
   aabbbccddefg
+  </div>
 
   مثال 3 على الناتج:
-
+  <div dir="ltr">
   'a2b3c2d2'efg
+  </div>
 
   مثال 4 على المُدخل:
   
-
+  <div dir="ltr">
   aabcdefgg
+  </div>
 
   مثال 4 على الناتج:
-
+  <div dir="ltr">
   'a2'bcdef'g2
+  </div>
 
 
   مثال 5 على المُدخل:
   
-
+  <div dir="ltr">
   aabbccdd
+  </div>
 
   مثال 5 على الناتج:
-
+  <div dir="ltr">
   'a2b2c2d2
+  </div>
 
 # الحلول
 
