@@ -36,7 +36,9 @@ hidden: true
 
    <div dir="ltr">
    1 3 4
+
    6 7 4
+
    5 4 7
    </div>
 
@@ -64,8 +66,10 @@ hidden: true
 
   <div dir="ltr">
    9 12 16
-  17 10 49
-  11 38 9
+
+   17 10 49
+
+   11 38 9
   </div>
 
 
@@ -83,7 +87,7 @@ hidden: true
 
   **تلميح:** للتذكير فإن ضرب مصفوفتين يكون كما هو موضح أدناه
 
-  <amp-img width="400" height="200" src="/assets/arrays-multiplication.png" alt="أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين"></amp-img>
+  <amp-img width="500" height="200" src="/assets/arrays-multiplication.png" alt="أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين"></amp-img>
 
 
    مثال على المُدخل:
@@ -98,10 +102,12 @@ hidden: true
    <div dir="ltr">
 
   57 64
+
   89 100
   </div>
 
-4. المطلوب حساب محدد مصفوفة 3x3. 
+4.
+المطلوب حساب محدد مصفوفة 3x3. 
 
 
    * يجب أن يقرأ البرنامج عناصر المصفوفة ذات البعد 3x3 ومن ثم حساب المُحدِّد وإعطاء النتيجة
@@ -110,11 +116,11 @@ hidden: true
 
    ليكن لدينا المصفوفة:
 
-    <amp-img width="200" height="200" src="/assets/array.png" alt="أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة"></amp-img>
+    <amp-img width="200" height="130" src="/assets/array.png" alt="أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة"></amp-img>
 
    يكون المحدد:
 
-    <amp-img width="400" height="100" src="/assets/sarrus.png" alt="أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس"></amp-img>
+    <amp-img width="450" height="100" src="/assets/sarrus.png" alt="أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس"></amp-img>
 
   مثال على المُدخل:
 
@@ -138,16 +144,16 @@ hidden: true
 
   مثال على المُدخل:
   
-  <div dir="ltr">
+
   otto
-  </div>
+
 
 
   مثال على الناتج:
 
-  <div dir="ltr">
+
   yes
-  </div>
+
 
 
 # الحلول
@@ -309,7 +315,7 @@ hidden: true
 
  
     int main(){
-	char s[16];	//maximum 20 Zeichen 
+	char s[16];	//maximum 16 letter 
 
 	
 	
@@ -353,14 +359,14 @@ hidden: true
 	}
 
 	if (j==0){
-		printf("Falsche Eingabe");
+		printf("Wrong Input");
 		
 	}
 	else if (j == 3){
-			printf("nein");
+			printf("no");
 	}
 	else{
-		printf("ja");
+		printf("yes");
 	}
 
 	return 0;
