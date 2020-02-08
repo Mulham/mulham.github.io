@@ -36,9 +36,9 @@ hidden: true
 
    <div dir="ltr">
    1 3 4
-
+   <br>
    6 7 4
-
+   <br>
    5 4 7
    </div>
 
@@ -66,9 +66,9 @@ hidden: true
 
   <div dir="ltr">
    9 12 16
-
+   <br>
    17 10 49
-
+    <br>
    11 38 9
   </div>
 
@@ -87,7 +87,7 @@ hidden: true
 
   **تلميح:** للتذكير فإن ضرب مصفوفتين يكون كما هو موضح أدناه
 
-  <amp-img width="500" height="200" src="/assets/arrays-multiplication.png" alt="أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين"></amp-img>
+   <amp-img width="500" height="200" src="/assets/arrays-multiplication.png" alt="أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين"></amp-img>
 
 
    مثال على المُدخل:
@@ -102,7 +102,7 @@ hidden: true
    <div dir="ltr">
 
   57 64
-
+  <br>
   89 100
   </div>
 
@@ -116,11 +116,11 @@ hidden: true
 
    ليكن لدينا المصفوفة:
 
-    <amp-img width="200" height="130" src="/assets/array.png" alt="أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة"></amp-img>
+  <amp-img width="200" height="130" src="/assets/array.png" alt="أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة"></amp-img>
 
    يكون المحدد:
 
-    <amp-img width="450" height="100" src="/assets/sarrus.png" alt="أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس"></amp-img>
+  <amp-img width="450" height="100" src="/assets/sarrus.png" alt="أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس"></amp-img>
 
   مثال على المُدخل:
 

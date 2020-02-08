@@ -329,7 +329,7 @@ excerpt: فيما يلي أمثلة عملية في لغة البرمجة سي �
           char c = 'A';
           char d = 'B';	
           int a;
-          // einlesen einer Zahl vom Benutzer
+          // لقراءة عدد من المستخدم
           scanf("%d", &a);
 
           
@@ -354,12 +354,12 @@ excerpt: فيما يلي أمثلة عملية في لغة البرمجة سي �
           scanf("%d", &a);
           scanf("%d", &b);
           scanf("%d", &c);
-          int grosste_zahl = a;
+          int biggest_num = a;
           if (b>a){
-            grosste_zahl = b;}
-          if (c>grosste_zahl){
-            grosste_zahl = c;} 
-          printf("%d\n",grosste_zahl);
+            biggest_num = b;}
+          if (c>biggest_num){
+            biggest_num = c;} 
+          printf("%d\n",biggest_num);
           return 0;
           }
     {% endhighlight %}
