@@ -55,7 +55,7 @@ hidden: true
 
   **تلميح:** للتذكير فإن جمع مصفوفتين يكون كما هو موضح أدناه
 
-  <amp-img width="400" height="200" src="/assets/arrays-sum.png" alt="أمثلة وتمارين في لغة البرمجة سي - جمع مصفوفتين"></amp-img>
+  <amp-img layout="responsive" width="400" height="200" src="/assets/arrays-sum.png" alt="أمثلة وتمارين في لغة البرمجة سي - جمع مصفوفتين"></amp-img>
  
 
    مثال على المدخل:
@@ -87,7 +87,7 @@ hidden: true
 
   **تلميح:** للتذكير فإن ضرب مصفوفتين يكون كما هو موضح أدناه
 
-   <amp-img width="500" height="200" src="/assets/arrays-multiplication.png" alt="أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين"></amp-img>
+   <amp-img layout="responsive" width="500" height="200" src="/assets/arrays-multiplication.png" alt="أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين"></amp-img>
 
 
    مثال على المُدخل:
@@ -116,11 +116,11 @@ hidden: true
 
    ليكن لدينا المصفوفة:
 
-  <amp-img width="200" height="130" src="/assets/array.png" alt="أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة"></amp-img>
+  <amp-img layout="responsive" width="200" height="130" src="/assets/array.png" alt="أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة"></amp-img>
 
    يكون المحدد:
 
-  <amp-img width="450" height="100" src="/assets/sarrus.png" alt="أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس"></amp-img>
+  <amp-img layout="responsive" width="450" height="100" src="/assets/sarrus.png" alt="أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس"></amp-img>
 
   مثال على المُدخل:
 

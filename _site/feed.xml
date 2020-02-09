@@ -5,9 +5,282 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Feb 2020 06:17:00 +0300</pubDate>
-    <lastBuildDate>Sat, 08 Feb 2020 06:17:00 +0300</lastBuildDate>
+    <pubDate>Sun, 09 Feb 2020 02:57:56 +0300</pubDate>
+    <lastBuildDate>Sun, 09 Feb 2020 02:57:56 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>أفضل تطبيقات ويندوز 10 المجانية لعام 2020</title>
+        <description>&lt;h1 id=&quot;برامج-تورنت&quot;&gt;برامج تورنت&lt;/h1&gt;
+
+&lt;h2 id=&quot;deluge&quot;&gt;&lt;a href=&quot;https://deluge-torrent.org/&quot;&gt;Deluge&lt;/a&gt;&lt;/h2&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;200&quot; height=&quot;200&quot; src=&quot;/assets/deluge.png&quot; alt=&quot;Deluge برنامج تورنت&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;برنامج تحميل تورنت ذو واجهة أنيقة يهدف لتحسين تجرية μTorrent وإتاحتها للمستخدمين مجانًا، متوفر لأنظمة ويندوز ولينكس وماك.&lt;/p&gt;
+
+&lt;h1 id=&quot;التخزين-السحابي&quot;&gt;التخزين السحابي&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.google.com/drive/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mega.nz/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Feb 2020 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/%D8%A3%D9%81%D8%B6%D9%84-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-10/</link>
+        <guid isPermaLink="true">http://localhost:4000/%D8%A3%D9%81%D8%B6%D9%84-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-10/</guid>
+        
+        <category>تقنية</category>
+        
+        <category>أنظمة</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>أمثلة وتمارين محلولة في لغة جافا</title>
+        <description>&lt;p&gt;إليك تمارين وأمثلة في &lt;a href=&quot;https://ar.wikipedia.org/wiki/برمجة_كائنية_التوجه&quot;&gt;البرمجة الموجهة&lt;/a&gt; في لغة البرمجة جافا مع الحلول.&lt;/p&gt;
+
+&lt;p&gt;(جاري استكمال إضافة باقي الأسئلة)&lt;/p&gt;
+
+&lt;h1 id=&quot;الأسئلة&quot;&gt;الأسئلة&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;يتطلب كتابة برنامج لإدارة الطلاب حيث يتم حفظ الطلاب والمواد الدراسية ويقوم الطلاب لاحقًا بتسجيل أو إلغاء تسجيل أنفسهم في المواد.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;البرنامج الرئيسي يكون في الملف: Main.java (انظر الكود أدناه)&lt;/p&gt;
+
+&lt;p&gt;والمطلوب هو:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;كتابة أصناف (class) للطالب والجامعة: Student.java و University.java&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;حفظ هذه الأصناف في نفس مجلد Main.java&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;كتابة الوظائف المطلوبة أدناه في مكان العبارة TODO&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;في النهاية يجب أن يكون البرنامج قادرًا على إنشاء طلاب وحفظهم وعرضهم.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;    &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;err&quot;&gt;    &lt;/span&gt;  &lt;span class=&quot;nc&quot;&gt;University&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uni&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;University&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// فكر هنا كيف يمكن إضافة الطلاب للجامعة&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// هل يتطلب مصفوفة أم نوع بيانات أخرى؟&lt;/span&gt;
+
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;What Operation do you want to do?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1- add Student&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2- view Students&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;3- search Student&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;4- edit Student info&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5- delete Student&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;6- End Programm&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+                
+                &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+                &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                            &lt;span class=&quot;cm&quot;&gt;/* TODO
+                              أ) اطلب من المستخدم إدخال معلومات الطالب
+                              ب) قم بإنشاء نموذج instance للصنف Student مع هذه المعلومات
+                              ج) احفظ النموذج في برنامجنا نظام إدارة الطلاب
+                            break;
+                    case 2:
+                            /* TODO
+                              أ) قم بعرض رقم الطالب على الشاشة والاسم والكنية لكل الطلاب الذين تم حفظهم 
+                    
+                            */&lt;/span&gt;
+                            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+   
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+
+
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;الحلول&quot;&gt;الحلول&lt;/h1&gt;
+
+&lt;p&gt;1.
+  &lt;strong&gt;Main.java&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;    &lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myproject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+    &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+            &lt;span class=&quot;nc&quot;&gt;University&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uni&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;University&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tau&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  
+
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;What Operation do you want to do?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1- add Student&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2- view Students&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;3- search Student&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;4- edit Student info&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5- delete Student&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                
+                &lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+                &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                           &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter the Name of Student:&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                           &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                           &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter the Surname of Student:&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                           &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                           &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter the Student Number:&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                           &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                           &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                           &lt;span class=&quot;n&quot;&gt;uni&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addstudent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                            &lt;span class=&quot;n&quot;&gt;uni&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;allStudents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;o&quot;&gt;}}&lt;/span&gt;
+
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Student.java&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;    &lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myproject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+        &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;surname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+            &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;n&quot;&gt;surname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+            
+            &lt;span class=&quot;n&quot;&gt;student_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;University.java&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;    &lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myproject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;University&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+
+        &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;adress&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_students&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;University&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+            &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+            &lt;span class=&quot;n&quot;&gt;my_students&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt; 
+
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setAdress&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+            &lt;span class=&quot;n&quot;&gt;adress&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+
+        &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addstudent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+            &lt;span class=&quot;n&quot;&gt;my_students&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;students_number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+            &lt;span class=&quot;n&quot;&gt;students_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;allStudents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students_number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+
+                &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_students&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt; 
+
+                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;surname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;student_number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Sat, 08 Feb 2020 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/%D8%A3%D9%85%D8%AB%D9%84%D8%A9-%D9%81%D9%8A-%D9%84%D8%BA%D8%A9-%D8%AC%D8%A7%D9%81%D8%A7/</link>
+        <guid isPermaLink="true">http://localhost:4000/%D8%A3%D9%85%D8%AB%D9%84%D8%A9-%D9%81%D9%8A-%D9%84%D8%BA%D8%A9-%D8%AC%D8%A7%D9%81%D8%A7/</guid>
+        
+        <category>برمجة</category>
+        
+        <category>تعليم</category>
+        
+        <category>Java</category>
+        
+        
+        <category>tutorials</category>
+        
+      </item>
     
       <item>
         <title>تمارين محلولة في لغة البرمجة سي C</title>
@@ -65,7 +338,7 @@
 
 &lt;p&gt;&lt;strong&gt;تلميح:&lt;/strong&gt; للتذكير فإن جمع مصفوفتين يكون كما هو موضح أدناه&lt;/p&gt;
 
-&lt;amp-img width=&quot;400&quot; height=&quot;200&quot; src=&quot;/assets/arrays-sum.png&quot; alt=&quot;أمثلة وتمارين في لغة البرمجة سي - جمع مصفوفتين&quot;&gt;&lt;/amp-img&gt;
+&lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;200&quot; src=&quot;/assets/arrays-sum.png&quot; alt=&quot;أمثلة وتمارين في لغة البرمجة سي - جمع مصفوفتين&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;مثال على المدخل:&lt;/p&gt;
 
@@ -100,7 +373,7 @@
 
 &lt;p&gt;&lt;strong&gt;تلميح:&lt;/strong&gt; للتذكير فإن ضرب مصفوفتين يكون كما هو موضح أدناه&lt;/p&gt;
 
-&lt;amp-img width=&quot;500&quot; height=&quot;200&quot; layout=&quot;responsive&quot; sizes=&quot;(min-width: 500px) 500px, 100vw&quot;&gt; src=&quot;/assets/arrays-multiplication.png&quot; alt=&quot;أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين&quot;&amp;gt;&lt;/amp-img&gt;
+&lt;amp-img layout=&quot;responsive&quot; width=&quot;500&quot; height=&quot;200&quot; src=&quot;/assets/arrays-multiplication.png&quot; alt=&quot;أمثلة وتمارين في لغة البرمجة سي - ضرب مصفوفتين&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;مثال على المُدخل:&lt;/p&gt;
 
@@ -131,11 +404,11 @@
 
 &lt;p&gt;ليكن لدينا المصفوفة:&lt;/p&gt;
 
-&lt;amp-img width=&quot;200&quot; height=&quot;130&quot; src=&quot;/assets/array.png&quot; layout=&quot;responsive&quot; sizes=&quot;(min-width: 200px) 200px, 100vw&quot;&gt;alt=&quot;أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة&quot;&amp;gt;&lt;/amp-img&gt;
+&lt;amp-img layout=&quot;responsive&quot; width=&quot;200&quot; height=&quot;130&quot; src=&quot;/assets/array.png&quot; alt=&quot;أمثلة وتمارين في لغة البرمجة سي - حساب محدد مصفوفة&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;يكون المحدد:&lt;/p&gt;
 
-&lt;amp-img width=&quot;450&quot; height=&quot;100&quot; src=&quot;/assets/sarrus.png&quot; layout=&quot;responsive&quot; sizes=&quot;(min-width: 450px) 450px, 100vw&quot;&gt;alt=&quot;أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس&quot;&amp;gt;&lt;/amp-img&gt;
+&lt;amp-img layout=&quot;responsive&quot; width=&quot;450&quot; height=&quot;100&quot; src=&quot;/assets/sarrus.png&quot; alt=&quot;أمثلة وتمارين في لغة البرمجة سي - قاعدة ساروس&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;مثال على المُدخل:&lt;/p&gt;
 
@@ -6478,449 +6751,6 @@ belongs to&lt;/p&gt;
         
         <category>تقنية</category>
         
-        
-      </item>
-    
-      <item>
-        <title>استضافة موقعك على صفحات جِتهَب</title>
-        <description>&lt;p&gt;أحد خدمات موقع Github هي صفحات جتهب (Github pages) والتي تسمح لك باستضافة موقعك على جِتهَب.&lt;/p&gt;
-
-&lt;p&gt;قم بتوفير 50 ساعة تعلم بقراءتك لهذا الشرح وتطبيقك المباشر له.&lt;/p&gt;
-
-&lt;p&gt;أضع هذا الشرح لكي تتمكن من إنشاء موقعك وجعله جاهزاً للعمل في غضون خمس دقائق (في حال تريد التطبيق مباشرة) أو نصف ساعة (في حال رغبت بفهم ما يجري). إذاً سأقسم الشرح لقسمين على هذا الأساس.&lt;/p&gt;
-
-&lt;p&gt;بالنسبة للانتقال لـ Github، أي أنه لديك موقع بالفعل وتريد نقله، فيجب أن تسلك نفس المسار، إنشاء موقع أولاً ثم تصدير محتوى موقعك له. ولكن؟ هل أنت حقاً تريد استضافة موقعك على Github؟&lt;/p&gt;
-
-&lt;h1 id=&quot;هل-حقاً-أريد-جِتهَب&quot;&gt;هل حقاً أريد جِتهَب؟&lt;/h1&gt;
-
-&lt;p&gt;لكي تجيب على هذا السؤال، سأقول لك ما يمكن وما لا يمكن لجتهب أن يفعله.&lt;/p&gt;
-
-&lt;p&gt;جِتهب يسمح لك بإنشاء موقع بسيط، يتم التركيز فيه على المحتوى (على النص)، ولا يوجد به أي برمجة (فقط جافاسكريبت)، إذاً لا يمكن أن تُنشئ منتدى باستخدام صفحات جِتهَب ولا أي شكل من أشكال تفاعل المستخدمين عبر موقعك، بما في ذلك التعليقات (فهنا نستخدم خدمات خارجية لإتاحة المستخدمين للتعليق). برمجياً يمكنك استخدام اللغات التنسيقية فقط (HTML و CSS) ولغة البرمجة جافاسكريبت ولكن ليس لغات برمجية مثل PHP. كذلك لا يوجد هنا قواعد بيانات.&lt;/p&gt;
-
-&lt;p&gt;انظر إلى هذا الموقع .. واعلم أن هذا كل ما يمكن أن يقدمه جتهب (مع اختلاف في السمات العامة - أي في الإظهارات اوالتنسيق وطريقة العرض أما الإمكانيات فلن تزيد..)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;إذاً لماذا أستخدم جتهب لاستضافة موقعي؟&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;أعتقد أن البساطة والأناقة هي شعار من يريد استضافة موقعه على جتهب. لا للتعقيد ولقواعد البيانات ولغات البرمجة المتقدمة.. فلنجعل الأمور بسيطة، فلنركز على النص (المحتوى) ونعرضه بأفضل شكل ممكن .. تنسيقات جميلة وجذابة هنا لعرض النص - الأكواد - الاقتباسات - القوائم - الجداول - العناوين ومحتوى الصفحة.&lt;/p&gt;
-
-&lt;p&gt;ولقد قلت بأنه لا يوجد برمجة، ولكن يوجد jekyll والتي تعمل خلف الكواليس.&lt;/p&gt;
-
-&lt;h1 id=&quot;أولاً-إنشاء-موقعك-في-خمس-دقائق&quot;&gt;أولاً: إنشاء موقعك في خمس دقائق&lt;/h1&gt;
-
-&lt;p&gt;أولا يجب العلم أن المقصود هنا أن الموقع سيكون متاح على الإنترنت في غضون حوالي خمس دقائق، على افتراض أن الموقع جاهز (ملفات الموقع) ولكن لتخصيص الموقع وتدوين مشاركات به فهذا أمر آخر ستكلم عنه هنا بإيجاز.&lt;/p&gt;
-
-&lt;p&gt;قم باختيار قالب جاهز لموقعك من &lt;a href=&quot;https://jekyllthemes.io/free&quot;&gt;هنا&lt;/a&gt; أو &lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-theme-prologue/&quot;&gt;هنا&lt;/a&gt; أو من أي موقع يحوي “free jekyll themes”.
-ثم قم بتحميل القالب الذي اخترته لجهازك وذلك بالذهاب لرابطه في جتهب والضغط على الزر الأخضر clone or Download ثم Download ZIP كما في الصورة&lt;/p&gt;
-
-&lt;amp-img src=&quot;/assets/github-rep-download.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;github-repository-download&quot;&gt;&lt;/amp-img&gt;
-
-&lt;p&gt;بعد ذلك عليك إنشاء حزمة على جتهب (Github) ورفع ملفات القالب بعد التعديل عليه لتلك الحزمة على الإنترنت. للقيام بذلك اتبع التالي:&lt;/p&gt;
-
-&lt;h2 id=&quot;إنشاء-موقعك-في-جتهب&quot;&gt;إنشاء موقعك في جتهب&lt;/h2&gt;
-
-&lt;p&gt;إن لم يكن لديك حساب على موقع Github فقم بإنشائه من &lt;a href=&quot;https://github.com/join&quot;&gt;هنا&lt;/a&gt; 
-أثناء إنشاء الحساب احرص أن يكون اسم المستخدم جيدًا ﻷن رابط الموقع (إن لم يكن لديك دومين/اسم موقع خاص) سيكون نفس اسم المستخدم. 
-ثم سيُطلب اختيار نوع الحساب اختره مجاني Free.
-بعد إتمام إنشاء الحساب قم بإنشاء حزمة جديدة من &lt;a href=&quot;https://github.com/new&quot;&gt;هنا&lt;/a&gt; وفقًا للبيانات التالية:&lt;/p&gt;
-
-&lt;p&gt;Repository name: username.github.io&lt;/p&gt;
-
-&lt;p&gt;مع استبدال username باسم المستخدم الخاص بك. ثم اضغط على create repository&lt;/p&gt;
-
-&lt;p&gt;الآن قم بالذهاب للحزمة التي تم إنشاؤها (سيذهب لها تلقائيا بعد إنشاؤها مباشرة) ستجد على اليمين زر upload files قم بالضغط عليه. ثم من على جهازك اذهب للمجلد الذي يحوي ملف القالب الذي قمت بتحميله وقم بفك الضغط عنه وارفع ملفات المجلد الناتج إلى الحزمة وذلك بسحبهم وإفلاتهم في المتصفح أو بالنقر في المتصفح لتحديد مكانهم.
-اكتب رسالة توضح ما فعلته في حقل Commit changes مثلا “My first commit” أو أي شيئ تريده، أبقِ على خيار Commit directly to the master branch. ثم اضغط على Commit changes لإتمام رفع الملفات.&lt;/p&gt;
-
-&lt;amp-img src=&quot;/assets/commit-gh-changes.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;commit-github-changes&quot;&gt;&lt;/amp-img&gt;
-
-&lt;p&gt;بعد رفع الملفات بنجاح سيكون موقعك بعد حوالي خمس دقائق جاهزًا على الرابط username.github.io طبعًا بعد تغيير username لاسم المستخدم الخاص بك، اي سيكون الرابط نفس اسم الحزمة التي أنشأتها.&lt;/p&gt;
-
-&lt;p&gt;ولكنه سيكون تماما كما القالب الذي حملته وبنفس المحتوى، كيف يمكنك تغيير المحتوى وتخصيص العرض ليناسب موقعك كما ترغب؟&lt;/p&gt;
-
-&lt;h3 id=&quot;تخصيص-الموقع&quot;&gt;تخصيص الموقع&lt;/h3&gt;
-
-&lt;p&gt;هنا يتوجب عليك فهم بعض الأساسيات في Jekyll حتى تغير وتضيف محتوى لموقعك، سأشرح ذلك هنا باختصار شديد يمكنك من عمل ماتريد بأسرع وقت.&lt;/p&gt;
-
-&lt;p&gt;يحتوي قالب jekyll (موقعك) على المجلدات التالية:&lt;/p&gt;
-
-&lt;ul style=&quot;direction: ltr&quot;&gt;
-
-&lt;li&gt; /_layouts &lt;/li&gt;
-&lt;li&gt; /_includes&lt;/li&gt;
-&lt;li&gt; /_posts &lt;/li&gt;
-&lt;li&gt; /_site&lt;/li&gt;
-&lt;li&gt; index.html&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;p&gt;بالإضافة لمجلدات وملفات أخرى.&lt;/p&gt;
-
-&lt;p&gt;لتغيير الصفحة الرئيسية لموقعك وطريقة العرض فيتوجب عليك معرفة بدائية في لغات HTML و CSS، لفهم الموقع ستبدأ من الصفحة الرئيسية index.html وتجد إلى أين تشير وتتبع ذلك. مع ملاحظة أنه عند وجود مثلا عبارة&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    include head.html 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;أي تبدأ بـ include ضمن أقواس كبيرة فيعني أن الملف موجود في مجلد _includes&lt;/p&gt;
-
-&lt;p&gt;لتعديل وإضافة مشاركات للموقع (مقالات كالصفحة التي تقرؤها هذه) فيتوجب عليك إنشاء ملف لكل مشاركة في المجلد _posts وسيكون اسم الملف على الشكل التالي:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    2019-10-24-the-name-of-file.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;أي تبدأ بالتاريخ سنة-شهر-يوم-اسم-الملف.md وهكذا.&lt;/p&gt;
-
-&lt;p&gt;سيحوي بداية كل ملف على الأسطر التالية وهي خاصة بلغة jekyll&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ---
-    layout: post
-    date: 2019-10-29
-    title: عنوان الصفحة
-    description: وصف خاص للمشاركة والذي سيظهر في محركات البحث
-    ---
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;كما رأيت في بداية كل مشاركة هناك متغيرات للمشاركة يجب تعريفها مثل التاريخ والعنوان والوصف، بالنسبة للـ  layout فهي هنا post أي أننا نستخدم ملف post.html الموجود في مجلد _layouts&lt;/p&gt;
-
-&lt;p&gt;لمثال كامل عن موقع جاهز للاطلاع على كيفية بناؤه يمكنك مشاهدة حزمة هذا الموقع على جتهب &lt;a href=&quot;https://github.com/Mulham/mulham.github.io&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;طبعا يمكن أيضا إنشاء موقع لشركة مثلا يحوي صفحة رئيسية تعريفية بالشركة وصفحات مثل رؤيتنا وما إلى ذلك. لمثال على ذلك يمكن الاطلاع على حزمة الموقع التالي من &lt;a href=&quot;https://github.com/rawajitqan/rawajitqan.github.io&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;مع ملاحظة أنه إذا أردت تضمين نموذج اتصل بنا مثلا، وﻷن جتهب كما قلنا لايدعم لغات البرمجة مثل php فستضطر لاستخدام خدمات خارجية وتضمين الكود المعطى من قبلهم في موقعك.. مثلا لإنشاء نماذج تواصل فهناك موقع مجاني (ضمن خيارات محدودة) يتيح لك ذلك مثل موقع jotform وغيره الكثير.&lt;/p&gt;
-
-&lt;p&gt;إذا احتجت ﻷي مساعدة في عمل موقعك أو تخصيصه فيمكنك مراسلتي للعمل على بناؤه سويةً!&lt;/p&gt;
-
-&lt;p&gt;والآن هل تريد ربط موقعك بدومين خاص ( هل لديك اسم موقع .com أو غيره خاص بك تريد عرض موقعك المستضاف في صفحات جتهب من خلاله؟). يمكنك ذلك عبر اتباع التعليمات الموجودة في المقال القادم (جاري التحرير)&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 29 Oct 2019 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/github-pages/</link>
-        <guid isPermaLink="true">http://localhost:4000/github-pages/</guid>
-        
-        <category>Github</category>
-        
-        <category>إنترنت</category>
-        
-        
-        <category>tutorials</category>
-        
-      </item>
-    
-      <item>
-        <title>أساسيات جنو grep للمبتدئين</title>
-        <description>&lt;p&gt;تعد Grep واحدة من مجموعة أدوات “Swiss Army knife” الخاصة بإدارة النظام ، وهي مفيدة للغاية للبحث عن السلاسل والأنماط في مجموعة من الملفات ، أو حتى المجلدات الفرعية. يقدم هذا المقال أساسيات Grep ، ويقدم أمثلة على الاستخدام المتقدم ويربطك بمزيد من الصفحات المتعلقة بهذا الموضوع.&lt;/p&gt;
-
-&lt;p&gt;يتم تثبيت Grep (وهو اختصار لـ “Global Regular Expression Print”) افتراضيًا على كل توزيعة ﻷنظمة Linux و BSD و UNIX ، وهو متاح أيضًا لنظام Windows. تقوم GNU ومؤسسة البرمجيات الحرة بتوزيع Grep كجزء من مجموعة أدوات المصادر المفتوحة. يركِّز هذا البرنامج التعليمي في المقام الأول على إصدار جنو هذا ، لأنه الأكثر استخدامًا حاليًا.&lt;/p&gt;
-
-&lt;p&gt;يجد Grep سلسلة في ملف أو إدخال معين ، بسرعة وكفاءة. على الرغم من أن معظم الاستخدامات اليومية للأمر بسيطة ، إلا أن هناك مجموعة متنوعة من الاستخدامات الأكثر تقدّمًا والتي لا يعرفها معظم الأشخاص - بما في ذلك التعبيرات المعتادة وأكثر من ذلك ، والتي قد تصبح معقدة للغاية.&lt;/p&gt;
-
-&lt;p&gt;الأداة لها جذورها في بناء جملة التعبير العادية الموسعة التي تمت إضافتها إلى UNIX بعد تنفيذ التعبير العادي الأصلي من كين تومسون. يبحث الأخير عن أي قائمة من السلاسل الثابتة ، باستخدام خوارزمية Aho-Corasick. يتم تضمين هذه المتغيرات في معظم تطبيقات Grep الحديثة كمفاتيح تبديل لسطر الأوامر (وموحدة كـ -E و -F في POSIX.2). في مثل هذه التطبيقات المدمجة ، قد يتصرف Grep أيضًا بشكل مختلف اعتمادًا على الاسم الذي تم استدعاءه به ، مما يسمح لـ fGrep و eGrep و Grep بأن تكون روابط للبرنامج نفسه.&lt;/p&gt;
-
-&lt;p&gt;هناك طريقتان لتوفير المدخلات إلى Grep ، ولكل منها استخداماته الخاصة.
-أولاً يمكن استخدام Grep للبحث في ملف أو ملفات معينة على نظام (بما في ذلك البحث المتكرر من خلال المجلدات الفرعية). يقبل Grep أيضًا المدخلات (عادةً عبر توجيه) من أمر أو سلسلة أوامر أخرى.&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#التعبيرات-النمطية&quot; id=&quot;markdown-toc-التعبيرات-النمطية&quot;&gt;التعبيرات النمطية&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#الاستخدام-الأساسي&quot; id=&quot;markdown-toc-الاستخدام-الأساسي&quot;&gt;الاستخدام الأساسي&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استخدام-التعبيرات-النمطية&quot; id=&quot;markdown-toc-استخدام-التعبيرات-النمطية&quot;&gt;استخدام التعبيرات النمطية&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#قائمة-الأحرف-في-التعبيرات-النمطية&quot; id=&quot;markdown-toc-قائمة-الأحرف-في-التعبيرات-النمطية&quot;&gt;قائمة الأحرف في التعبيرات النمطية&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#رموز-الأسطر-والحروف&quot; id=&quot;markdown-toc-رموز-الأسطر-والحروف&quot;&gt;رموز الأسطر والحروف&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#استخدام-أوامر-shell-في-تعبيرات--grep&quot; id=&quot;markdown-toc-استخدام-أوامر-shell-في-تعبيرات--grep&quot;&gt;استخدام أوامر shell في تعبيرات  Grep&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
-&lt;h1 id=&quot;التعبيرات-النمطية&quot;&gt;التعبيرات النمطية&lt;/h1&gt;
-
-&lt;p&gt;تعبير نمطي (regular expression) ، غالبًا ما يتم اختصاره إلى “regex” أو “regexp” ، هو طريقة لتحديد نمط (مجموعة معينة من الأحرف أو الكلمات) في النص الذي يمكن تطبيقه على المدخلات المتغيرة للعثور على جميع التكرارات التي تتطابق مع النمط. تعمل Regexes على تعزيز القدرة على معالجة محتوى النص بشكل مفيد ، خاصةً عند دمجها مع أوامر أخرى.
-عادة ، يتم تضمين التعبيرات النمطية في أمر Grep بالتنسيق التالي:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    grep [خيارات] [regexp] [اسم الملف]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;يستخدم GNU Grep إصدار GNU من التعبيرات النمطية ، وهو مشابه جدًا (ولكن ليس مطابقًا) للتعبيرات المعتادة POSIX. في الواقع ، تتشابه معظم أنواع التعبيرات المعتادة تمامًا ، لكن لها اختلافات في حالات الهروب أو أحرف التعريف أو العوامل الخاصة.&lt;/p&gt;
-
-&lt;p&gt;يحتوي GNU Grep على مجموعتين من ميزات التعبير النمطي: Basic and Extended.&lt;/p&gt;
-
-&lt;p&gt;في التعبيرات النمطية الأساسية ، تفقد الأحرف الوصفية &lt;code class=&quot;highlighter-rouge&quot;&gt;؟&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;)&lt;/code&gt; معناها الخاص والذي يرد وصف لاستخداماته لاحقًا في هذه المقالة. وكما هو مذكور أدناه ، للتبديل إلى استخدام التعبيرات النمطية الموسعة تحتاج إلى إضافة الخيار E- إلى الأمر grep.&lt;/p&gt;
-
-&lt;p&gt;من المعتاد إحاطة التعبير النمطي بعلامات اقتباس مفردة ، لمنع shell (مثل Bash أو غيرها) من محاولة تفسير التعبير وتوسيعه قبل بدء عملية grep. على سبيل المثال ، إذا لم يتم ذكر زوج من علامات التجزئة في إعادة الاسترداد ، فسوف ينتج عن ذلك النص بين علامات التجزئة التي يتم تنفيذها كعملية فرعية لـ Bash - وإذا حدث أن ذلك أمر صالح ، فالنص المُرجع سيأخذ مكان التعبير النمطي في تعليمة سطر الأوامر المعطاة إلى Grep! وهذا ليس ما نريد.&lt;/p&gt;
-
-&lt;p&gt;مرة أخرى ، نظرًا لسلوك shell ، يمكنك أيضًا تضمين regex في علامات تنصيص مزدوجة - في هذه الحالة ، يمكنك استخدام متغيرات البيئة في regex ، وستقوم shell باستبدالها قبل الاتصال بـ Grep. قد يكون هذا مفيدًا جدًا ، اعتمادًا على ما تحاول القيام به - أو قد يكون مصدر إزعاج. تذكر الفرق في السلوك.&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
-&lt;h1 id=&quot;الاستخدام-الأساسي&quot;&gt;الاستخدام الأساسي&lt;/h1&gt;
-
-&lt;p&gt;الآن دعنا ننتقل إلى بعض الأمثلة العملية لاستخدام Grep. لفهم النتائج بشكل أفضل ، قمت بإنشاء ملف نصي بسيط سنقوم بتشغيل عمليات البحث الخاصة به في Grep ؛ يحتوي الملف على الأسطر التالية:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Hi 
-    this 
-    is test file 
-    to carry out few regular expressions 
-    practical with grep 
-    123 456 
-    Abcd
-    ABCD
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;بحث غير حساس لحالة الأحرف (grep -i):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -i 'abcd' testfile 
-    Abcd 
-    ABCD
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;كما ترى ، تؤدي العلامة i- إلى البحث عن “abcd” لإرجاع المطابقات التي لها حالات مختلفة للأحرف.&lt;/p&gt;
-
-&lt;p&gt;البحث عن كلمة كاملة (grep -w):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -w 'test' testfile 
-    is test file
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;هذا النوع من البحث يعرض فقط الأسطر التي تكون فيها السلسلة المطلوبة كلمة كاملة وليست جزءًا من كلمة أكبر.&lt;/p&gt;
-
-&lt;p&gt;البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r &amp;lt;pattern&amp;gt; path):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -r '456' /root/ 
-    /root/testfile:Year is 2010
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;البحث العكسي (grep -v):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -v 'practical' testfile 
-    Hi 
-    this 
-    is test file 
-    to carry out few regular expressions 
-    123 456 
-    Abcd 
-    ABCD
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;هذا يعطي جميع الأسطر في الملف ، باستثناء السطر الذي يحتوي على كلمة “practical”.&lt;/p&gt;
-
-&lt;p&gt;من الاستخدامات المثير للاهتمام أيضا هو علامة -L (يمكنك أيضًا استخدام
- –files-without-match
-) ، والتي تقوم بإخراج أسماء الملفات التي لا تحتوي على تطابقات لنمط البحث الخاص بك. لا تتم طباعة المطابقات الخاصة بنمط البحث الخاص بك، ولكن يتم طباعة الأسماء فقط.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -r -L &quot;Network&quot; /var/log/* 
-    /var/log/anaconda.log 
-    /var/log/anaconda.syslog 
-    /var/log/audit/audit.log 
-    /var/log/boot.log 
-    /var/log/boot.log.1 
-    ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;علامة “معاكسة” إلى -L هي -l أو - الملفات - مع التطابقات ، التي تطبع (فقط) أسماء الملفات التي تحتوي على مطابقات لنمط البحث الخاص بك.&lt;/p&gt;
-
-&lt;p&gt;طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A NUM):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -A1 '123'  testfile
-    123 456 
-    Abcd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;يطبع Grep السطر المطابق لكل سطر يطابق البحث، وكذلك السطر التالي بعد المطابقة. يؤدي تغيير الرقم المتاح إلى -A إلى تغيير عدد الأسطر الإضافية الموجودة في الإخراج.&lt;/p&gt;
-
-&lt;p&gt;قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B NUM):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -B2 'Abcd' testfile
-    practical with grep 
-    123 456 
-    Abcd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C NUM):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -C2 'carry' testfile
-    this
-    is test file
-    to carry out few regular expressions
-    practical with grep
-    123 456
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;كما ترى ، فقد طبع هذا سطرين قبل وبعد المطابقة الفردية الموجودة في الملف ؛ إذا كان هناك تطابقات متعددة ، يقوم Grep بإدراج سطر يحتوي على - بين كل مجموعة من الخطوط (كل تطابق وخطوط السياق الخاصة به).&lt;/p&gt;
-
-&lt;p&gt;اطبع اسم الملف لكل مطابقة (grep -H &amp;lt;pattern&amp;gt; filename):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -H 'a' testfile
-    testfile:to carry out few regular expressions 
-    testfile:practical with grep
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;الآن ، لنجري البحث بشكل مختلف قليلاً:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ cat testfile | grep -H 'a' 
-    (standard input):to carry out few regular expressions 
-    (standard input):practical with grep
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;عندما يتم تمرير الدفق الذي يُطلب من Grep بحثه إلى مدخلاته القياسية عبر توجيه من أمر سابق في السلسلة ، يعرض grep -H (الإدخال القياسي) كاسم ملف.&lt;/p&gt;
-
-&lt;p&gt;التشغيل في الوضع “الصامت” (grep -q): عند التشغيل باستخدام هذه العلامة ، لا يكتب Grep أي شيء إلى الإخراج القياسي ، ولكنه يحدد قيمة الإرجاع (المعروفة أيضًا باسم حالة الخروج) لتعكس ما إذا كان قد تم العثور على تطابق أم لا. يستخدم هذا الخيار بشكل أساسي في البرامج النصية التي تحتاج إلى التحقق مما إذا كان الملف المحدد يحتوي على تطابق معين. تشير حالة الإرجاع 0 (صفر) إلى أنه تم العثور على تطابق ؛ 1 يشير إلى أنه لم يتم العثور على تطابق.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -q '2010' testfile 
-    [manish@clone ~]$ echo $? 
-    1
-    [manish@clone ~]$ grep -q '456' testfile 
-    [manish@clone ~]$ echo $? 
-    0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;استخدام-التعبيرات-النمطية&quot;&gt;استخدام التعبيرات النمطية&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep 'c.r' testfile 
-    to carry out few regular expressions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;في البحث أعلاه، يستخدم رمز النقطة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;  لمطابقة أي حرف وحيد - وهذا هو السبب في أنه يطابق “car” في “carry”. يمتلك Grep محركًا قويًا لتطابق التعبيرات النمطية ، والذي لا يمكننا تغطيته بعمق هنا ، لكننا سنتحدث عن بعض النقاط الهامة:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;معظم الأحرف ، بما في ذلك جميع الحروف والأرقام ، هي في الواقع تعبيرات نمطية تتطابق مع نفسها.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يمكن تحويل أي علامة خاصة لها دلالة في grep (مثل النقطة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; في المثال أعلاه) إلى حرف عادي عن طريق وضع علامة &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; قبلها. هذا يجعل Grep يعاملها كحرف عادي.&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  [manish@clone ~]$ grep 'c\.r' testfile 
-  [manish@clone ~]$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;كما ترى، السابقة &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; قبل الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;  أزالت أهميته كرمز خاص.&lt;/p&gt;
-
-&lt;p&gt;يمكن أن يتبع التعبير العادي أحد عوامل التكرار التالية:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;تطابق النقطة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; أي حرف مفرد.&lt;/li&gt;
-  &lt;li&gt;الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;؟&lt;/code&gt; يعني أن العنصر السابق اختياري ، وإذا تم العثور عليه ، فسيتم مطابقته على الأكثر مرة واحدة.&lt;/li&gt;
-  &lt;li&gt;الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; يعني أن العنصر السابق سيتم مطابقته صفر مرة أو أكثر.&lt;/li&gt;
-  &lt;li&gt;الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; يعني أن العنصر السابق سيتم مطابقته مرة واحدة أو أكثر.&lt;/li&gt;
-  &lt;li&gt;الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;{n}&lt;/code&gt; (بما في ذلك الأقواس) يعني أن العنصر السابق يتم مطابقته تمامًا n مرة ، بينما &lt;code class=&quot;highlighter-rouge&quot;&gt;{,n}&lt;/code&gt; يعني أن العنصر يتم مطابقته n مرة أو أكثر. وكذلك &lt;code class=&quot;highlighter-rouge&quot;&gt;{n، m}&lt;/code&gt; تعني أن العنصر السابق يتم مطابقته على الأقل n مرة ، ولكن ليس أكثر من m مرة. &lt;code class=&quot;highlighter-rouge&quot;&gt;{m,}&lt;/code&gt; يعني أن العنصر السابق مُطابَق على الأكثر  m مرة.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ومع ذلك ، فإن عوامل التكرار هي جزء من صيغة التعابير النمطية الموسعة الخاصة بـ GNU Grep ، لذلك لاستخدامها بفعالية ، تذكر إضافة خيار E- إلى الأمر .&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
-&lt;h1 id=&quot;قائمة-الأحرف-في-التعبيرات-النمطية&quot;&gt;قائمة الأحرف في التعبيرات النمطية&lt;/h1&gt;
-
-&lt;p&gt;تعد أداة “قائمة الأحرف” واحدة من أكثر ميزات التعبيرات النمطية استخدامًا ومرونة. وهي عبارة عن قائمة ضمن الأقواس &lt;code class=&quot;highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; تحوي الأحرف التي نريد مطابقتها. هناك طريقتان أساسيتان لاستخدام قوائم الأحرف: لتحديد قائمة من الأحرف (على سبيل المثال [aeiou] هي قائمة بالأحرف الصوتية) ، أو نطاق (مثل [m-t] ، يمتد إلى [mnopqrst]). النطاقات تعطي مرونة بحيث توفر كتابة سلسلة كاملة من الحروف.&lt;/p&gt;
-
-&lt;p&gt;ستتطابق قائمة مؤلفة من حرف واحد مع حرف واحد فقط ؛ ولمطابقة الحرف أكثر من مرة عليك باستخدام عوامل التكرار المشروحة أعلاه، على سبيل المثال للعثور على سلسلة مكونة من 11 حرفًا تحتوي على أحرف أبجدية صغيرة فقط ، سيكون التعبير هو:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [a-z] {11}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;بعبارة أخرى: العثور على أي حرف من a إلى z إحدى عشرة مرة.&lt;/p&gt;
-
-&lt;p&gt;كما ذكرنا سابقًا ، لاستخدام عوامل التكرار ، نحتاج إلى إضافة الخيار E-. لنجرب هذا في ملف الاختبار “testfile”:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ Grep -E '[a-z]{11}' testfile 
-    to carry out few regular expressions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;تعد هنا الكلمة “expressions” هي الوحيدة المكونة من 11 حرفًا في الملف ؛ لذلك هذا هو السطر الوحيد الناتج عن الأمر.&lt;/p&gt;
-
-&lt;p&gt;هناك عدد لا بأس به من قوائم الأحرف التي يتم استخدامها بشكل واسع في التعبيرات النمطية، ويتم إعطاؤها كقوائم معرفة. على سبيل المثال ، تملك القائمة [a-z] من الحروف الأبجدية الصغيرة التي استخدمناها أعلاه،  القائمة المعرفة [:lower:]. وهكذا فإن [:upper:] عبارة عن أحرف كبيرة من A إلى Z ، و [:alpha:] هي كل الأحرف الأبجدية ، أي تكافئ كلا القائمتين [:lower:] و [:upper:] مجتمعتين.
-والقائمة المعرَّفة [:digit:] هي الأرقام من 0 إلى 9 ، و [:alnum:] هي أحرف أبجدية وأرقام أي مزيج من [:alpha:] و [:digit:]. وهناك قوائم معرفة أكثر يمكن إيجادها في دليل Grep الرسمي.&lt;/p&gt;
-
-&lt;p&gt;عندما يتم استخدام الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; في بداية قائمة أحرف، فهذا يمثل نفي للأحرف، بمعنى آخر: “لا شيء من هذه الأحرف”.&lt;/p&gt;
-
-&lt;h1 id=&quot;رموز-الأسطر-والحروف&quot;&gt;رموز الأسطر والحروف&lt;/h1&gt;
-
-&lt;p&gt;يحدد  الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; أن التعبير الذي يليه يجب أن يكون في بداية السطر:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep '^th' testfile 
-    this
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;والرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; يعني أن التعبير الذي يسبقه يجب أن يكون في نهاية السطر&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep 'i$' testfile 
-    Hi
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;العامل &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;\&lt;/code&gt; يحدد بداية الكلمة.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep '\&amp;lt;fe' testfile 
-    to carry out few regular expressions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;وبالمثل فإن العامل &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;\&lt;/code&gt; يحدد نهاية الكلمة&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep 'le\&amp;gt;' testfile 
-    is test file
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;يمكن استخدام العامل &lt;code class=&quot;highlighter-rouge&quot;&gt;b\&lt;/code&gt; (حدود الكلمة) بدلًا من  &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;\&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;\&lt;/code&gt; لتحديد بداية أو/و نهاية الكلمة&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -e '\breg' testfile 
-    to carry out few regular expressions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;وأخيرا ، فإن العامل &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; (عامل التناوب) أو باختصار يعني “أو”، وهو جزء من ميزات regex الموسعة. يطابق النمط الذي يحتوي على هذا العامل الأجزاء (التعبيرات) الموجودة على جانبيه (على يمينه أو يساره) بشكل منفصل؛ إذا تم العثور على أي واحد (أحدهما، هذا “أو” ذاك)، فإن السطر الذي يحتوي عليه هو تطابق. يمكن أن تكون الأجزاء نفسها عبارة عن تعبيرات منتظمة معقدة ، وهذا يعني أنه يمكنك التحقق من كل سطر في ملف بحثًا عن أنماط بحث متعددة في مسار واحد.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -E 'hi|bc' testfile
-    this
-    Abcd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;كان ذلك بسيطًا جدًا ؛ لذلك دعنا نجرب تعبيرا أكثر تعقيدا. هل يمكنك أن تعرف سبب ظهور الأسطر الناتجة الخاصة بـ regex كما هو موضح أدناه؟&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -E '^[t-z]+|[^a-z]+$' testfile 
-    this
-    to carry out few regular expressions
-    123 456
-    ABCD
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
-&lt;h1 id=&quot;استخدام-أوامر-shell-في-تعبيرات--grep&quot;&gt;استخدام أوامر shell في تعبيرات  Grep&lt;/h1&gt;
-
-&lt;p&gt;كما ذكرنا سابقًا ، إذا لم تقم بوضع علامة اقتباس مفردة على التعبير الذي يتم تمريره إلى Grep ، فيمكن تنفيذ أمر shell أو يعني أمرا في موجه الأوامر (التيرمينال) بحيث يتم إعطاء عنصر متغيّر إلى الـ Grep. يمكن القيام بذلك عن قصد ، عندما تدعو الحاجة. دعنا ننظر إلى بعض الأمثلة:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [root@clone ~]# grep &quot;$HOME&quot; /etc/passwd 
-    root:x:0:0:root:/root:/bin/bash 
-    operator:x:11:0:operator:/root:/sbin/nologin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;نستخدم هنا علامات الاقتباس المزدوجة عن قصد لجعل  Bash shell أو موجه الأوامر يستبدل المتغير  HOME$ بالقيمة الفعلية للمتغير (في هذه الحالة: root/). وبالتالي ، يبحث Grep في الملف etc/passwd/ عن النص root/ ، مما يؤدي إلى السطرين المتطابقين في البحث.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [root@clone ~]# grep `whoami` /etc/passwd 
-    root:x:0:0:root:/root:/bin/bash 
-    operator:x:11:0:operator:/root:/sbin/nologin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;الأمر هنا ضمن العلامتين &lt;code class=&quot;highlighter-rouge&quot;&gt;` `&lt;/code&gt; يتم تنفيذه من خلال موجه الأوامر، وبالتالي يتم استبدال الأمر whoami بناتجه والذي هو اسم المستخدم الحالي (root).&lt;/p&gt;
-
-&lt;p&gt;إلى هنا آمل أن يكون الشرح قد أفادك ووضعك في بداية الطريق لاستخدام هذه الأداة الفعالة.&lt;/p&gt;
-
-&lt;p&gt;هذا المقال مترجم وبتصرّف. &lt;a href=&quot;https://opensourceforu.com/2012/06/beginners-guide-gnu-grep-basics/&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 24 Sep 2019 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/gnu-grep-basics/</link>
-        <guid isPermaLink="true">http://localhost:4000/gnu-grep-basics/</guid>
-        
-        <category>لينكس</category>
-        
-        <category>regex</category>
-        
-        
-        <category>tutorials</category>
         
       </item>
     
