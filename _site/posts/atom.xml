@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-03-25T18:49:22+03:00</updated>
+	<updated>2020-03-25T19:00:36+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -312,12 +312,9 @@
 
 &lt;p&gt;بعد ذلك ، يمكننا إنشاء جملة SQL التالية (التي تحتوي على INNER JOIN) ، التي تحدد السجلات التي تحتوي على قيم متطابقة في كلا الجدولين:&lt;/p&gt;
 
-&lt;p&gt;مثال&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
-    FROM Orders
-    INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderDate&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;وسينتج لدينا شيئ مثل هذا:&lt;/p&gt;
 
@@ -387,14 +384,13 @@
 
 &lt;p&gt;أدخل الأجزاء المفقودة في &lt;code class=&quot;highlighter-rouge&quot;&gt;JOIN&lt;/code&gt; لينضم الجدولان &lt;code class=&quot;highlighter-rouge&quot;&gt;Orders&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;Customers&lt;/code&gt;، أستخدم الحقل&lt;code class=&quot;highlighter-rouge&quot;&gt;CustomerID&lt;/code&gt; كعلاقة بين كلا الجدولين.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT *
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
 
-	FROM Orders
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;
 
-	LEFT JOIN Customers
+		&lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
 
-		=	;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+			&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;	&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.w3schools.com/sql/exercise.asp?filename=exercise_join1&quot;&gt;أظهر النتيجة&lt;/a&gt;&lt;/p&gt;
 
