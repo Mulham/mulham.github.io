@@ -4,13 +4,588 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-02-18T14:13:54+03:00</updated>
+	<updated>2020-03-25T18:49:22+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة LEFT JOIN</title>
+			<link href="http://mulham.github.io/sql/left_join"/>
+			<updated>2020-03-25T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/sql-left-join</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-left-join-في-sql&quot; id=&quot;markdown-toc-عبارة-left-join-في-sql&quot;&gt;عبارة LEFT JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال--على-left-join&quot; id=&quot;markdown-toc-مثال--على-left-join&quot;&gt;مثال  على LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-left-join-في-sql&quot;&gt;عبارة LEFT JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;يرجع الكود LEFT JOIN كافة السجلات من الجدول الأيسر (الجدول 1) ، والسجلات المتطابقة من الجدول الأيمن (الجدول 2). والنتيجة هي صفر من الجانب الأيمن، إذا لم يكن هناك تطابق.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;بناء جملة LEFT JOIN&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SELECT column_name(s)
+    FROM table1
+    LEFT JOIN table2
+    ON table1.column_name = table2.column_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; في بعض قواعد البيانات نستعمل LEFT OUTER JOIN بدلا من LEFT JOIN .&lt;/p&gt;
+
+&lt;amp-img layout=&quot;responsive&quot; src=&quot;/assets/sql_left-join.gif&quot; alt=&quot;عبارة left join sql&quot; width=&quot;200&quot; height=&quot;145&quot;&gt;&lt;/amp-img&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم قاعدة البيانات النموذجية Northwind المعروفة.&lt;/p&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “العملاء”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Obere Str. 57&lt;/td&gt;
+      &lt;td&gt;Berlin&lt;/td&gt;
+      &lt;td&gt;12209&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;و مجموعة من جدول “الطلبات”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10308&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;1996-09-18&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10309&lt;/td&gt;
+      &lt;td&gt;37&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1996-09-19&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10310&lt;/td&gt;
+      &lt;td&gt;77&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;1996-09-20&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال--على-left-join&quot;&gt;مثال  على LEFT JOIN&lt;/h1&gt;
+
+&lt;p&gt;ستحدد عبارة SQL التالية جميع العملاء و طلباتهم&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT Customers.CustomerName, Orders.OrderID
+    FROM Customers
+    LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+    ORDER BY Customers.CustomerName;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; يُرجع الكود LEFT JOIN جميع السجلات من الجدول الأيسر (العملاء)، حتى في حالة عدم وجود تطابقات في الجدول الأيمن (الطلبات).&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة JOIN</title>
+			<link href="http://mulham.github.io/sql/join"/>
+			<updated>2020-03-25T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/sql-join</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-join-في-sql&quot; id=&quot;markdown-toc-عبارة-join-في-sql&quot;&gt;عبارة JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أنواع-مختلفة-من-sql-joins&quot; id=&quot;markdown-toc-أنواع-مختلفة-من-sql-joins&quot;&gt;أنواع مختلفة من SQL JOINs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-join-في-sql&quot;&gt;عبارة JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;يتم استخدام عبارة JOIN لدمج الصفوف بين جدولين أو أكثر ، بناءً على عمود مرتبط معهم.&lt;/p&gt;
+
+&lt;p&gt;لنلق نظرة على تحديد من جدول “الطلبات”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10308&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1996-09-18&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10309&lt;/td&gt;
+      &lt;td&gt;37&lt;/td&gt;
+      &lt;td&gt;1996-09-19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10310&lt;/td&gt;
+      &lt;td&gt;77&lt;/td&gt;
+      &lt;td&gt;1996-09-20&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;ثم لننظر إلى تحديد من جدول “العملاء”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;لاحظ أن عمود “CustomerID” في جدول “الطلبات” يشير إلى “CustomerID” في جدول “العملاء”. العلاقة بين الجدولين أعلاه هي عمود “CustomerID”.&lt;/p&gt;
+
+&lt;p&gt;بعد ذلك ، يمكننا إنشاء جملة SQL التالية (التي تحتوي على INNER JOIN) ، التي تحدد السجلات التي تحتوي على قيم متطابقة في كلا الجدولين:&lt;/p&gt;
+
+&lt;p&gt;مثال&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+    FROM Orders
+    INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وسينتج لدينا شيئ مثل هذا:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10308&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;9/18/1996&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10365&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;11/27/1996&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10383&lt;/td&gt;
+      &lt;td&gt;Around the Horn&lt;/td&gt;
+      &lt;td&gt;12/16/1996&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10355&lt;/td&gt;
+      &lt;td&gt;Around the Horn&lt;/td&gt;
+      &lt;td&gt;11/15/1996&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10278&lt;/td&gt;
+      &lt;td&gt;Berglunds snabbköp&lt;/td&gt;
+      &lt;td&gt;8/12/1996&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أنواع-مختلفة-من-sql-joins&quot;&gt;أنواع مختلفة من SQL JOINs&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي الأنواع المختلفة من JOINs في SQL:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;(INNER) JOIN&lt;/strong&gt; : إرجاع السجلات التي تحتوي على قيم متطابقة في كلا الجدولين&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;LEFT (OUTER) JOIN&lt;/strong&gt; : إرجاع كافة السجلات من الجدول الأيسر والسجلات المتطابقة من الجدول الأيمن&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;RIGHT (OUTER) JOIN&lt;/strong&gt; : إرجاع كافة السجلات من الجدول الأيمن والسجلات المتطابقة من الجدول الأيسر&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;FULL (OUTER) JOIN&lt;/strong&gt; : إرجاع كافة السجلات عند وجود تطابق في الجدول الأيمن أو الأيسر&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;amp-img layout=&quot;responsive&quot; width=&quot;850&quot; height=&quot;163&quot; src=&quot;/assets/sql-join.png&quot; alt=&quot;عبارة join في SQL&quot;&gt;&lt;/amp-img&gt;
+
+&lt;p&gt;اختبر نفسك من خلال التمرين التالي:&lt;/p&gt;
+
+&lt;p&gt;تمرين :&lt;/p&gt;
+
+&lt;p&gt;أدخل الأجزاء المفقودة في &lt;code class=&quot;highlighter-rouge&quot;&gt;JOIN&lt;/code&gt; لينضم الجدولان &lt;code class=&quot;highlighter-rouge&quot;&gt;Orders&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;Customers&lt;/code&gt;، أستخدم الحقل&lt;code class=&quot;highlighter-rouge&quot;&gt;CustomerID&lt;/code&gt; كعلاقة بين كلا الجدولين.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT *
+
+	FROM Orders
+
+	LEFT JOIN Customers
+
+		=	;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.w3schools.com/sql/exercise.asp?filename=exercise_join1&quot;&gt;أظهر النتيجة&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;inner_join&quot;&gt;عبارة INNER JOIN &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة INNER JOIN</title>
+			<link href="http://mulham.github.io/sql/inner_join"/>
+			<updated>2020-03-25T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/sql-inner-join</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-inner-join-في-sql&quot; id=&quot;markdown-toc-عبارة-inner-join-في-sql&quot;&gt;عبارة INNER JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال--على-inner-join&quot; id=&quot;markdown-toc-مثال--على-inner-join&quot;&gt;مثال  على INNER JOIN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ربط-ثلاثة-جداول&quot; id=&quot;markdown-toc-ربط-ثلاثة-جداول&quot;&gt;ربط ثلاثة جداول&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-inner-join-في-sql&quot;&gt;عبارة INNER JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;العبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;INNER JOIN&lt;/code&gt; تُسجّل القيم المتطابقة في كلا الجدولين&lt;/p&gt;
+
+&lt;p&gt;بناء عبارة INNER JOIN&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT column_name(s)
+    FROM table1
+    INNER JOIN table2
+    ON table1.column_name = table2.column_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;amp-img layout=&quot;responsive&quot; src=&quot;/assets/sql_inner-join.gif&quot; alt=&quot;عبارة inner join sql&quot; width=&quot;200&quot; height=&quot;145&quot;&gt;&lt;/amp-img&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم قاعدة البيانات النموذجية Northwind المعروفة.&lt;/p&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “Orders”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10308&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;1996-09-18&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10309&lt;/td&gt;
+      &lt;td&gt;37&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1996-09-19&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10310&lt;/td&gt;
+      &lt;td&gt;77&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;1996-09-20&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;و تحديد من جدول “Customers”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Obere Str. 57&lt;/td&gt;
+      &lt;td&gt;Berlin&lt;/td&gt;
+      &lt;td&gt;12209&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال--على-inner-join&quot;&gt;مثال  على INNER JOIN&lt;/h1&gt;
+
+&lt;p&gt;تُحدِّد عبارة SQL التالية جميع الطلبات التي تحتوي على معلومات العملاء:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT column_name(s)
+    FROM table1
+    INNER JOIN table2
+    ON table1.column_name = table2.column_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; يحدد الكود INNER JOIN جميع الصفوف من كلا الجدولين طالما هناك تطابق بين الأعمدة. إذا كانت هناك سجلات في جدول “الطلبات” لا تحتوي على تطابقات في “العملاء” ، فلن يتم عرض هذه الطلبات!&lt;/p&gt;
+
+&lt;h1 id=&quot;ربط-ثلاثة-جداول&quot;&gt;ربط ثلاثة جداول&lt;/h1&gt;
+
+&lt;p&gt;تحدد عبارة SQL التالية جميع الطلبات التي تحتوي على معلومات العميل والمرسل:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+    FROM ((Orders
+    INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+    INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID); 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;left_join&quot;&gt;عبارة LEFT JOIN&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>أفضل تطبيقات ويندوز 10 المجانية لعام 2020</title>
@@ -21,10 +596,6 @@
 يمكن الوصول لمواقع البرامج أدناه بالنقر على أسمائها.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#برامج-تورنت&quot; id=&quot;markdown-toc-برامج-تورنت&quot;&gt;برامج تورنت&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#deluge&quot; id=&quot;markdown-toc-deluge&quot;&gt;Deluge&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#التخزين-السحابي&quot; id=&quot;markdown-toc-التخزين-السحابي&quot;&gt;التخزين السحابي&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#dropbox&quot; id=&quot;markdown-toc-dropbox&quot;&gt;Dropbox&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#google-drive&quot; id=&quot;markdown-toc-google-drive&quot;&gt;Google Drive&lt;/a&gt;&lt;/li&gt;
@@ -35,7 +606,6 @@
       &lt;li&gt;&lt;a href=&quot;#xtreme-download-manager&quot; id=&quot;markdown-toc-xtreme-download-manager&quot;&gt;Xtreme Download Manager&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#برامج-البريد-الإلكتروني&quot; id=&quot;markdown-toc-برامج-البريد-الإلكتروني&quot;&gt;برامج البريد الإلكتروني&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#محررات-ide&quot; id=&quot;markdown-toc-محررات-ide&quot;&gt;محررات IDE&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#atom-ide&quot; id=&quot;markdown-toc-atom-ide&quot;&gt;Atom IDE&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#light-table&quot; id=&quot;markdown-toc-light-table&quot;&gt;Light Table&lt;/a&gt;&lt;/li&gt;
@@ -59,6 +629,10 @@
       &lt;li&gt;&lt;a href=&quot;#lightworks&quot; id=&quot;markdown-toc-lightworks&quot;&gt;Lightworks&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#برامج-تورنت&quot; id=&quot;markdown-toc-برامج-تورنت&quot;&gt;برامج تورنت&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#deluge&quot; id=&quot;markdown-toc-deluge&quot;&gt;Deluge&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#مشغلات-الوسائط&quot; id=&quot;markdown-toc-مشغلات-الوسائط&quot;&gt;مشغلات الوسائط&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#vlc&quot; id=&quot;markdown-toc-vlc&quot;&gt;VLC&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#kodi&quot; id=&quot;markdown-toc-kodi&quot;&gt;Kodi&lt;/a&gt;&lt;/li&gt;
@@ -70,24 +644,21 @@
       &lt;li&gt;&lt;a href=&quot;#wps-office&quot; id=&quot;markdown-toc-wps-office&quot;&gt;WPS Office&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#أدوات-تسجيل-الشاشة&quot; id=&quot;markdown-toc-أدوات-تسجيل-الشاشة&quot;&gt;أدوات تسجيل الشاشة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#متصفحات-الوب&quot; id=&quot;markdown-toc-متصفحات-الوب&quot;&gt;متصفحات الوب&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أدوات-تسجيل-الشاشة&quot; id=&quot;markdown-toc-أدوات-تسجيل-الشاشة&quot;&gt;أدوات تسجيل الشاشة&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#obs-studio&quot; id=&quot;markdown-toc-obs-studio&quot;&gt;OBS Studio&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#متصفحات-الوب&quot; id=&quot;markdown-toc-متصفحات-الوب&quot;&gt;متصفحات الوب&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#فايرفوكس&quot; id=&quot;markdown-toc-فايرفوكس&quot;&gt;فايرفوكس&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#فيفالدي&quot; id=&quot;markdown-toc-فيفالدي&quot;&gt;فيفالدي&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#تطبيقات-تنظيم-المهام&quot; id=&quot;markdown-toc-تطبيقات-تنظيم-المهام&quot;&gt;تطبيقات تنظيم المهام&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#evernote&quot; id=&quot;markdown-toc-evernote&quot;&gt;Evernote&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#everdo&quot; id=&quot;markdown-toc-everdo&quot;&gt;Everdo&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h1 id=&quot;برامج-تورنت&quot;&gt;برامج تورنت&lt;/h1&gt;
-
-&lt;h2 id=&quot;deluge&quot;&gt;&lt;a href=&quot;https://deluge-torrent.org/&quot;&gt;Deluge&lt;/a&gt;&lt;/h2&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;200&quot; height=&quot;200&quot; src=&quot;/assets/deluge.png&quot; alt=&quot;Deluge برنامج تورنت&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;برنامج تحميل تورنت ذو واجهة أنيقة يهدف لتحسين تجرية μTorrent وإتاحتها للمستخدمين مجانًا، متوفر لأنظمة ويندوز ولينكس وماك.&lt;/p&gt;
 
 &lt;h1 id=&quot;التخزين-السحابي&quot;&gt;التخزين السحابي&lt;/h1&gt;
 
@@ -108,8 +679,6 @@
 &lt;h2 id=&quot;xtreme-download-manager&quot;&gt;&lt;a href=&quot;http://xdman.sourceforge.net/&quot;&gt;Xtreme Download Manager&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;برنامج قوي مفتوح المصدر متوفر على الويندوز واللينكس ومكتوب بلغة جافا. متوافق لتحميل  سلسلة من الملفات queues وملفات التورنت وله إضافات للمتصفحات لسهولة التحميل أثناء التصفح. كما يقوم باستكشاف روابط تحميل الفيديو تلقائيًا ويحتوي على مجدول ذكي.&lt;/p&gt;
-
-&lt;h1 id=&quot;برامج-البريد-الإلكتروني&quot;&gt;برامج البريد الإلكتروني&lt;/h1&gt;
 
 &lt;h1 id=&quot;محررات-ide&quot;&gt;محررات IDE&lt;/h1&gt;
 
@@ -169,11 +738,22 @@
 
 &lt;h2 id=&quot;kdenlive&quot;&gt;&lt;a href=&quot;https://kdenlive.org/en/&quot;&gt;Kdenlive&lt;/a&gt;&lt;/h2&gt;
 
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;250&quot; src=&quot;/assets/kdenlive.png&quot; alt=&quot;Kdenlive محرر الفيديو المجاني&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
 &lt;p&gt;يمكن اعتباره أقوى محرر فيديو مجاني وهو محرر احترافي يحوي على مزايا عديدة جدا وواجهة أنيقة في الإصدارات الأخيرة كما أصبح له شروحات كثيرة على اليوتيوب من قبل هواة هذا البرنامج المتميز.&lt;/p&gt;
 
 &lt;h2 id=&quot;lightworks&quot;&gt;&lt;a href=&quot;https://www.lwks.com/&quot;&gt;Lightworks&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;برنامج أنيق وعملي وقوي لتحرير الفيديو بشكل احترافي ويأتي مصحوبًا بمئات التأثيرات للتعامل مع عملية التحرير بسلاسة واحترافية كما أنه برنامج ذو خبرة تفوق 25 عاما.&lt;/p&gt;
+
+&lt;h1 id=&quot;برامج-تورنت&quot;&gt;برامج تورنت&lt;/h1&gt;
+
+&lt;h2 id=&quot;deluge&quot;&gt;&lt;a href=&quot;https://deluge-torrent.org/&quot;&gt;Deluge&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;برنامج تحميل تورنت ذو واجهة أنيقة يهدف لتحسين تجرية μTorrent وإتاحتها للمستخدمين مجانًا، متوفر لأنظمة ويندوز ولينكس وماك.&lt;/p&gt;
 
 &lt;h1 id=&quot;مشغلات-الوسائط&quot;&gt;مشغلات الوسائط&lt;/h1&gt;
 
@@ -183,7 +763,7 @@
 
 &lt;h2 id=&quot;kodi&quot;&gt;&lt;a href=&quot;https://kodi.tv/&quot;&gt;Kodi&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p&gt;من المشغلات الشهيرة ويأتي كمحطة وسائط متكاملة لتشغيل جميع ملفات الوسائط سواء الموجودة محليًا على الجهاز أو عبر الإنترنت.&lt;/p&gt;
+&lt;p&gt;من المشغلات الشهيرة ويأتي كمحطة وسائط متكاملة لتشغيل جميع ملفات الوسائط سواءً الموجودة محليًا على الجهاز أو عبر الإنترنت.&lt;/p&gt;
 
 &lt;h2 id=&quot;clementine&quot;&gt;&lt;a href=&quot;https://www.clementine-player.org/&quot;&gt;Clementine&lt;/a&gt;&lt;/h2&gt;
 
@@ -193,19 +773,54 @@
 
 &lt;h2 id=&quot;ليبر-أوفيس&quot;&gt;&lt;a href=&quot;https://www.libreoffice.org/&quot;&gt;ليبر أوفيس&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p&gt;أشهر وأفضل بديل لمكيروسوفت أوفيس يتم تطويره باستمرار وبه كافة المزايا المطلوبة مع دعم عربي على الإنترنت عمومًا. ويمكن توسيع مزاياه عبر الإضافات الخاصة به.&lt;/p&gt;
+&lt;p&gt;أشهر وأفضل بديل لمكيروسوفت أوفيس يتم تطويره باستمرار وبه كافة المزايا المطلوبة مع دعم عربي على الإنترنت عمومًا. ويمكن توسيع مزاياه عبر الإضافات الخاصّة به.&lt;/p&gt;
 
 &lt;h2 id=&quot;wps-office&quot;&gt;&lt;a href=&quot;https://www.wps.com/&quot;&gt;WPS Office&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p&gt;مجموعة برامج مكتبية ذات واجهة أنيقة وعصريّة.&lt;/p&gt;
+&lt;p&gt;مجموعة برامج مكتبيّة ذات واجهة أنيقة وعصريّة.&lt;/p&gt;
 
 &lt;h1 id=&quot;أدوات-تسجيل-الشاشة&quot;&gt;أدوات تسجيل الشاشة&lt;/h1&gt;
 
+&lt;h2 id=&quot;obs-studio&quot;&gt;&lt;a href=&quot;https://obsproject.com/&quot;&gt;OBS Studio&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;يُعتبر من أفضل مسجّلات الشاشة وهو تطبيق قوي وبه خيارات عديدة لاختيار منافذ الصوت والصورة والتخصيص.&lt;/p&gt;
+
 &lt;h1 id=&quot;متصفحات-الوب&quot;&gt;متصفحات الوب&lt;/h1&gt;
+
+&lt;h2 id=&quot;فايرفوكس&quot;&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/&quot;&gt;فايرفوكس&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;متصفح الوب الأشهر القابل للتخصيص والمعني بالخصوصية. يأتي مرفقًا بشكل افتراضي بميزة عدم التتبع حيث يتم حجب الكثير من الإعلانات وتعطيل أكواد التتبع في المواقع ومنه كود إحصائيات جوجل. ويحوي على ميزة وضع القراءة فقط للتركيز على المحتوى وكذلك أخذ لقطة شاشة وغيره بالإضافة لوجود عدد هائل من الإضافات والإظهارات التي يمكن تنزيلها. ويحوي كذلك على مزايا فريدة مثل تثبيت عرض الفيديو أثناء تصفح الوب (في الإصدارات الحديثة) وغير ذلك. أيضا يأتي مع أدوات خاصة وعديدة للمطورين وسهلة الاستخدام حتى بالنسبة للمبتدئين.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; إذا كنت تهتم بخصوصيتك عبر الإنترنت فالمقال التالي مُوصى لك: &lt;a href=&quot;https://mulham.github.io/ways-to-protect-privacy/&quot;&gt;إجراءات حماية خصوصيتك عبر الإنترنت&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;فيفالدي&quot;&gt;&lt;a href=&quot;https://vivaldi.com/&quot;&gt;فيفالدي&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;هذا المتصفح الجميل المبني على كروم والذي يهدف لتجربة أفضل لمستخدمي كروم ويحوي على مزايا إضافية خاصة به. معروف بقوائمه الملوّنة وسرعته وقلّة استهلاكه للذاكرة. أيضًا متوافق مع لوحات المفاتيح المضيئة بحيث يجعل لون الإضاءة مخصصة ومتوافقة مع اللون المميز للصفحة التي تزورها.&lt;/p&gt;
 
 &lt;h1 id=&quot;تطبيقات-تنظيم-المهام&quot;&gt;تطبيقات تنظيم المهام&lt;/h1&gt;
 
 &lt;h2 id=&quot;evernote&quot;&gt;&lt;a href=&quot;https://everdo.net/&quot;&gt;Evernote&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;برنامج مبني على الإنترنت أي تخزّن الملاحظات على الإنترنت ومُصمَّم لتحسين إنتاجية العمل وتنظيمه من خلال أنماط متعددة من الملاحظات بما في ذلك قوائم المهام وقوائم التذكير.&lt;/p&gt;
+
+&lt;h2 id=&quot;everdo&quot;&gt;&lt;a href=&quot;https://everdo.net/&quot;&gt;Everdo&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;تطبيق أنيق يهتم بأمن المعلومات وقليل الأخطاء. أيضًا مَعني بتحسين الإنتاجيّة من خلال أنماط مختلفة من الملاحظات بما فيها قوائم المهام. إذا لم يتناسب معك التطبيق السابق أعلاه فهذا هو أفضل بديل له.&lt;/p&gt;
+
+&lt;p&gt;وبهذا تكون قد انتهت قائمتنا. إذا فاتني تطبيقًا مهمًّا فيرجى إعلامي به عبر أحد الروابط الموجودة آخر الصفحة. كذلك لا تنسى مشاركة الموضوع مع أصدقائك ليستفيدوا منه ولدعم البرامج المجانية وفكر المحتوى مفتوح المصدر.&lt;/p&gt;
+
+&lt;p&gt;المراجع:&lt;/p&gt;
+
+&lt;p&gt;معظم البرامج الموجودة في القائمة كتبتها لاعتقادي بأنها جيدة وموصى بها من خلال تعاملي الشخصي معها وخبرتي بها. ولكن أيضًا تم الاستفادة من الآراء هنا:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.fossmint.com/most-used-linux-applications/&quot;&gt;FossMint&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.techradar.com/news/the-best-free-screen-recorder&quot;&gt;Techradar&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 </content>
 		</entry>
@@ -8978,6 +9593,12 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -9205,6 +9826,12 @@ WHERE City NOT LIKE '[bsp]%';
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -9305,6 +9932,12 @@ WHERE Country IN (SELECT Country FROM Suppliers);
 &lt;li&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -9557,6 +10190,12 @@ WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
 
 &lt;li&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -9730,6 +10369,7 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
   &lt;li&gt;عند جمع عمودين أو أكثر مع بعض&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;join&quot;&gt;عبارة JOIN &lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -9956,6 +10596,12 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -10138,6 +10784,12 @@ WHERE CustomerName NOT LIKE 'a%';
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -10363,6 +11015,12 @@ FROM OrderDetails;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -10516,6 +11174,12 @@ FROM Products;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -14905,7 +15569,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
     &lt;p&gt;هل تريد أمثلة؟ هناك الكثير، مثلاً الشروحات في هذا الموقع كلها بتنسيق ماركداون. اختر صفحة من &lt;a href=&quot;http://mulham.github.io/tutorials&quot;&gt;الدروس&lt;/a&gt; مثلا واذهب للصفحة المصدر على &lt;a href=&quot;https://github.com/mulham/mulham.github.io/tree/master/tutorials/_posts&quot;&gt;github&lt;/a&gt; وتعلم كيف كُتبت الصفحة.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;تُستخدم لغة التنسيق CSS بجانب لغة ماركداون لإظهار المحتوى بالشكل المطلوب (لتلوين خانات جدول ماركدوان، لتلوين حقل الإقتباس، وما إلى ذلك ..) لو أعجبك الإظهار هنا، أي طريقة إظهار الأكواد والاقتباسات فيمكنك أخذ ملف التنسيق الخاص بالموقع الموجود &lt;a href=&quot;https://github.com/mulham/mulham.github.io/tree/master/css/main.css&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;تُستخدم لغة التنسيق CSS بجانب لغة ماركداون لإظهار المحتوى بالشكل المطلوب (لتلوين خانات جدول ماركدوان، لتلوين حقل الإقتباس، وما إلى ذلك ..) لو أعجبك الإظهار هنا، أي طريقة إظهار الأكواد والاقتباسات فيمكنك أخذ ملف التنسيق الخاص بالموقع الموجود &lt;a href=&quot;https://github.com/mulham/mulham.github.io/tree/master/_includes/head.html&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -16660,6 +17324,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;تستخدم عبارة WHERE لترشيح (فلترة) التسجيلات .&lt;/p&gt;
@@ -16803,6 +17473,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح UPDATE لتحديث تسجيلات موجودة مسبقاً في جدول .&lt;/p&gt;
@@ -16912,6 +17588,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -17034,6 +17716,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT DISTINCT&lt;/code&gt; للحصول على القيم المختلفة فقط .&lt;/p&gt;
@@ -17119,6 +17807,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -17247,6 +17941,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -17399,6 +18099,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -17522,6 +18228,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح DELETE لحذف تسجيلات من جدول .&lt;/p&gt;
@@ -17628,6 +18340,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -17763,6 +18481,12 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
