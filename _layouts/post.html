@@ -83,7 +83,7 @@ layout: compress
      data-full-width="">
   <div overflow=""></div>
 </amp-ad>
-<br><hr>
+<br>
 <br>
 
 
@@ -111,10 +111,11 @@ layout: compress
     {% if sameTagCount >= minCommonTags %}
     {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
             {% if maxRelatedCounter == 1 %}
+                <hr>
                 <h2>اقرأ أيضًا</h2>
                 <br><br><div style="  display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;grid-row-gap: 20px;">
+  padding: 0 20px;grid-row-gap: 20px;grid-column-gap: 20px;">
             {% endif %}
     
  <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
