@@ -151,6 +151,16 @@ layout: compress
 
 
         <h2 class="index-headline featured"><span>الكاتب</span></h2>
+
+    {% if page.author == 'husam' %}
+    <amp-img width="120" height="120" style="border-radius:50%" src="/husam.jpg"></amp-img>
+        <section class="author">
+          <div style="margin-top: -150px;margin-right: 130px;">
+          <h3>حسام الدين</h3>
+          <p class="bio"> طالب هندسة كهرباء وإلكترون من سوريا، أعمل على ترجمة المقالات التعليمية في وقت الفراغ لدعم المحتوى العربي على الإنترنت</p>
+
+
+    {% else %}
     <amp-img width="120" height="120" style="border-radius:50%" src="/author.png"></amp-img>
         <section class="author">
           <div style="margin-top: -150px;margin-right: 130px;">
@@ -158,7 +168,7 @@ layout: compress
           <p class="bio"> طالب هندسة حاسوب من سوريا، أعمل على تأليف وترجمة كل ما أراه مهمًا في هذا المجال</p>
 
           <p> <a href="/about"> تعرَّف أكثر</a>
-           
+    {% endif %}       
           </p>
         </div>
           <hr>
