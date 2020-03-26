@@ -113,16 +113,14 @@ layout: compress
             {% if maxRelatedCounter == 1 %}
                 <hr>
                 <h2>اقرأ أيضًا</h2>
-                <br><br><div style="  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;grid-row-gap: 20px;grid-column-gap: 20px;">
+                <br><br> <div style="display: flex; flex-wrap: wrap; padding: 0 20px;grid-row-gap: 20px;grid-column-gap: 20px;    justify-content: space-around;">
             {% endif %}
     
  <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 5px;width: 140px; height: 280px; ">
   <amp-img height="140" width="140" src="{% if post.feature %}{{ post.feature }}{% else %}/assets/posts/pen.jpg{% endif %}" alt="{{ post.title }}" style="border-radius: 5px 5px 0 0;"></amp-img>
   <div class="container">
-    <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+    <a href="{{ site.baseurl }}{{ post.url }}"><h4 style="margin-top: 10px;">{{ post.title }}</h4></a>
     
   </div>
 </div>
