@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-06-25
+modified: 2020-03-27
 title: أساسيات التعامل مع Git
 description: شرح مبسط لاستخدام Git وأهم الأوامر التي تلزم للاستخدامات الأساسية. 
 type: tutorial
@@ -209,6 +210,8 @@ feature: /assets/git.png
 * كما قام موقع codeschool (التجاري) بعمل [شرح](https://try.github.io/levels/1/challenges/1) مُبسط مجاني لتعلم أوامر جِت (بالإنجليزي).
 
 # اقرأ أيضاً
+
+* [أكثر الأسئلة تداولًا حول git وإجاباتها](git-qa)
 
 * [سلسلة دروس جِت هَب](/github/intro)
 
