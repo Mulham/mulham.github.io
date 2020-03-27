@@ -36,7 +36,7 @@ author: husam
 
 **ملاحظة:** نستعمل في بعض قواعد البيانات  عبارة RIGHT OUTER JOIN بدلا من عبارة RIGHT JOIN.
 
-<amp-img layout="responsive" src="/assets/sql_rightjoin.gif" alt="عبارة left join sql" width="200" height="145"></amp-img>
+<amp-img layout="responsive" src="/assets/sql_rightjoin.gif" alt="عبارة right join sql" width="200" height="145"></amp-img>
 
 # استعراض قاعدة البيانات
 
@@ -60,9 +60,9 @@ author: husam
 | 2 |	Fuller |	Andrew |	2/19/1952 |	EmpID2.pic |
 | 3 |	Leverling |	Janet |	8/30/1963 |	EmpID3.pic |
 
-# مثال عن SQL RIGHT JOIN
+# مثال عن RIGHT JOIN
 
-سترجع عبارة SQL التالية جميع الموظفين مع طلباتهم:
+ستُرجع عبارة SQL التالية جميع الموظفين مع طلباتهم:
 
 
 {% highlight sql %}
@@ -77,6 +77,6 @@ author: husam
 
 {% endhighlight %}
 
-**ملاحظة:** تُرجع العبارة RIGHT JOIN جميع السجلات من الجدول الأيمن (الموظفون) ، حتى إذا لم تكن هناك تطابقات في الجدول الأيسر (الطلبات).
+**ملاحظة:** تُرجع العبارة RIGHT JOIN جميع السجلات من الجدول الأيمن (الموظفون) ، حتى إن لم تكن هناك تطابقات في الجدول الأيسر (الطلبات).
 
 
