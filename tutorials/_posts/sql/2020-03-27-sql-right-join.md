@@ -22,7 +22,7 @@ author: husam
 
 # بناء جملة RIGHT JOIN
 
-{% highlightsql %}
+{% highlight sql %}
 
         SELECT column_name(s)
 
@@ -65,7 +65,7 @@ author: husam
 سترجع عبارة SQL التالية جميع الموظفين مع طلباتهم:
 
 
-{%highlightsql%}
+{% highlight sql %}
 
         SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
 
