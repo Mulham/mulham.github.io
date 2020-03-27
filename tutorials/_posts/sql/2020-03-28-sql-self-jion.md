@@ -19,7 +19,7 @@ author: husam
 
 عبارة SELF JOIN هي نفس عبارة JOIN  ولكن الجدول سيكون مرتبطا بنفسه.
 
-# بناءجملة Self JOIN
+# بناء جملة Self JOIN
 
 {% highlight sql %}
 
