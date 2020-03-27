@@ -4,13 +4,185 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-03-26T05:57:03+03:00</updated>
+	<updated>2020-03-27T05:12:05+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>كيفية التراجع عن آخر اعتماد commit في git</title>
+			<link href="http://mulham.github.io/undo-git-commit/"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//undo-git-commit</id>
+			<content type="html">&lt;p&gt;هل قمت بالخطأ باعتماد commit ملفات خاطئة إلى git محليًا (قبل الرفع للسيرفر)؟&lt;/p&gt;
+
+&lt;p&gt;يمكنك التراجع عن آخر أمر لإجراء اعتماد أو التزام ملفات في git محليا وذلك وفق التالي:&lt;/p&gt;
+
+&lt;p&gt;لنفترض أنك قمت بعمل commit غير مقصود في البداية:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ git commit -m &quot;Something terribly misguided&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;الآن يمكنك التراجع عن هذا الأمر من خلال الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git reset
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;للتأكد من التراجع يمكنك تجربة عمل commit الآن، ستظهر لك في النهاية رسالة “nothing to commit, working tree clean” وبالتالي لا شيئ لاعتماده. الآن يمكنك إضافة ما تريد من ملفات وتغييرات جديدة بالأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; ثم لعمل commit بنفس الرسالة السابقة أو تعديلها يمكنك كتابة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git commit -c ORIG_HEAD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو الأمر التالي يقوم بنفس المهمة، إظهار آخر رسالة commit وإمكانية اعتمادها أو تعديلها(الرسالة فقط وليس الملفات والتغييرات)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git commit --amend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي استفسار يرجى مراسلتي على الإيميل الظاهرة أيقونته أسفل الصفحة.&lt;/p&gt;
+
+&lt;p&gt;ترجمة وبتصرف. &lt;a href=&quot;https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية التراجع عن أمر git add</title>
+			<link href="http://mulham.github.io/undo-git-add/"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//undo-git-add</id>
+			<content type="html">&lt;p&gt;نوضح هنا كيف بإمكانك التراجع عن الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; أي التراجع عن إضافة ملفات لـ git قبل اعتمادها وتنفيذ الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;. إذا قمت باعتمادها وتود التراجع عن ذلك فيمكنك قراءة: &lt;a href=&quot;undo-git-commit&quot;&gt;كيفية التراجع عن آخر اعتماد commit في git&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;يمكنك إذًا ذلك من خلال الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git reset &amp;lt;file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;&lt;/code&gt; باسم الملف الذي أضفته وتود التراجع عن إضافته. سيقوم هذا بحذف الملف من القائمة الحالية (والتي على وشك الاعتماد committed) بدون أي تغيير آخر.&lt;/p&gt;
+
+&lt;p&gt;أو يمكنك أيضًا استخدام الأمر التالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git reset
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;بدون كتابة أي اسم لملف لإلغاء إضافة كل التغييرات الأخيرة.&lt;/p&gt;
+
+&lt;p&gt;في الإصدارات القديمة من git فقد كان الأمرين السابقين بالشكل &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;git reset HEAD &amp;lt;file&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;git reset HEAD&lt;/code&gt; على التوالي.&lt;/p&gt;
+
+&lt;p&gt;ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة أسفل الصفحة.&lt;/p&gt;
+
+&lt;p&gt;ترجمة وبتصرف. &lt;a href=&quot;https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية إعادة تسمية فرع محلي في git</title>
+			<link href="http://mulham.github.io/rename-local-git-branch/"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//rename-local-git-branch</id>
+			<content type="html">&lt;p&gt;لتغيير اسم لفرع محلي على جهازك في git وإذا كنت في أي فرع آخر غير الفرع المراد إعادة تسميته فيمكنك استخدام الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git branch -m &amp;lt;oldname&amp;gt; &amp;lt;newname&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;oldname&amp;gt;&lt;/code&gt; باسم الفرع المراد تغيير اسمه و &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;newname&amp;gt;&lt;/code&gt; بالاسم الجديد له.&lt;/p&gt;
+
+&lt;p&gt;أما لتغيير اسم الفرع الحالي الذي أنت فيه فاستخدم الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git branch -m &amp;lt;newname&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;لاحظ أن &lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt; تعني “move” أو &lt;code class=&quot;highlighter-rouge&quot;&gt;mv&lt;/code&gt; وهي الطريقة التي يتم إعادة التسمية من خلالها.&lt;/p&gt;
+
+&lt;p&gt;إذا كنت تستخدم نظام ويندوز أي نظام لا يهتم بحالة الأحرف الكبيرة والصغيرة، وكان المراد تغييره في الاسم هو مجرد تغيير حالة الأحرف من صغيرة لكبيرة مثلا فستحتاج لاستخدام الخيار &lt;code class=&quot;highlighter-rouge&quot;&gt;-M&lt;/code&gt; وإلا سيعطي git خطأ مفاده أن الفرع موجود بالفعل “branch already exists”:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    git branch -M &amp;lt;newname&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة أسفل الصفحة.&lt;/p&gt;
+
+&lt;p&gt;ترجمة وبتصرف. &lt;a href=&quot;https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>أسئلة وأجوبة حول git</title>
+			<link href="http://mulham.github.io/git-qa/"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//git-qa</id>
+			<content type="html">&lt;p&gt;إليك مجموعة من الأسئلة حول git الأكثر طرحًا أو الأعلى تقييمًا على الإنترنت.&lt;/p&gt;
+
+&lt;p&gt;لتعلم git يمكنك قراءة الشرح: &lt;a href=&quot;/git-basics&quot;&gt;أساسيات git&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/delete-git-branch&quot;&gt;كيفية حذف فرع git محليا ومن السيرفر&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/git-pull-fetch&quot;&gt;الفرق بين git pull و git fetch&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/undo-git-commit&quot;&gt;كيفية التراجع عن آخر اعتماد commit في git&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/undo-git-add&quot;&gt;كيفية التراجع عن أمر git add&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/rename-local-git-branch&quot;&gt;كيفية إعادة تسمية فرع محلي في git&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>الفرق بين git pull و git fetch</title>
+			<link href="http://mulham.github.io/git-pull-fetch/"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//git-pull-fetch</id>
+			<content type="html">&lt;p&gt;إليك الفرق بين الأمرين &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;أبسط عبارة يمكن أن نقولها هو أن الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; ينفّذ الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch&lt;/code&gt; متبوعًا بتنفيذ الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git merge&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;يمكن تنفيذ &lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch&lt;/code&gt; في أي وقت لتحديث الأفرع على السيرفر في refs/remotes/&lt;remote&gt;/. ولا تغير هذه العملية أي فرع (branch) من أفرعك المحلية في refs/heads . وهي آمنة للتنفيذ بدون تغيير النسخة التي تعمل عليها. وهناك بعض الأشخاص الذين يستخدمون الأمر `git fetch` بشكل دوري في الأعمال المُجدولة (cron jobs) رغم أن ذلك غير مستحسن.&lt;/remote&gt;&lt;/p&gt;
+
+&lt;p&gt;أما الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; فهو الذي نقوم به عندما نريد تحديث أو مزامنة الفرع المحلي مع الفرع البعيد على السيرفر.&lt;/p&gt;
+
+&lt;p&gt;ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة أسفل الصفحة.&lt;/p&gt;
+
+&lt;p&gt;ترجمة وبتصرف. &lt;a href=&quot;https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>كيفية حذف فرع git محليا ومن السيرفر</title>
+			<link href="http://mulham.github.io/delete-git-branch/"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//delete-git-branch</id>
+			<content type="html">&lt;p&gt;إليك طريقة حذف فرع branch في git محليا على جهازك وعلى الجهاز البعيد أيضا أو السيرفر.&lt;/p&gt;
+
+&lt;p&gt;باختصار الطريقة عن طريق الأمرين التاليين الأول لحذف الفرع من السيرفر والثان لحذفه محليًا. مع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;remote_name&amp;gt;&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;branch_name&amp;gt;&lt;/code&gt; بالمطلوب:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ git push -d &amp;lt;remote_name&amp;gt; &amp;lt;branch_name&amp;gt;
+    $ git branch -d &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;في معظم الحالات يكون الـ &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;remote_name&amp;gt;&lt;/code&gt; هو &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; وبالتالي سيكون الأمر الأول:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ git push -d origin &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي استفسار يرجى مراسلتي على الإيميل الظاهرة أيقونته أسفل الصفحة.&lt;/p&gt;
+
+&lt;p&gt;ترجمة وبتصرف. &lt;a href=&quot;https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>سلسلة دروس SQL| عبارة LEFT JOIN</title>
@@ -14820,6 +14992,9 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;h1 id=&quot;اقرأ-أيضاً&quot;&gt;اقرأ أيضاً&lt;/h1&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;git-qa&quot;&gt;أكثر الأسئلة تداولًا حول git وإجاباتها&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;/github/intro&quot;&gt;سلسلة دروس جِت هَب&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
