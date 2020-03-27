@@ -1,0 +1,70 @@
+---
+permalink: /sql/self_join
+layout: post
+date: 2020-03-28
+title: سلسلة دروس SQL| عبارة SELF JOIN
+type: tutorial
+lesson: 24
+hidden: true
+comments: true
+author: husam
+---
+
+{% include sql-content.html %}
+
+* Toc
+{:toc}
+
+# عبارة Self JOIN في SQL
+
+عبارة SELF JOIN هي نفس عبارة JOIN  ولكن الجدول سيكون مرتبطا بنفسه.
+
+# بناءجملة Self JOIN
+
+{% highlight sql %}
+
+        SELECT column_name(s)
+
+        FROM table1 T1, table1 T2
+
+        WHERE condition;
+
+{% endhighlight %}
+
+حيث T1 و T2 اسمين مستعارين لنفس الجدول.
+
+# استعراض قاعدة البيانات
+
+سنستخدم في هذا الدرس قاعدة البيانات النموذجية المعروفة Northwind.
+
+فيما يلي تحديد من جدول "العملاء":
+
+| CustomerID 	| CustomerName |	ContactName |	Address |	City |	PostalCode |	Country |
+| ------------ | ------------ | ---------------| ------------ | ----- | -------- | ----------- |
+| 1 | Alfreds Futterkiste 	| Maria Anders |	Obere Str. 57 |	Berlin |	12209 |	Germany |
+| 2 |	Ana Trujillo Emparedados y helados |	Ana Trujillo |	Avda. de la Constitución 2222 |	México D.F. |	05021 |	Mexico |
+|3 |	Antonio Moreno Taquería |	Antonio Moreno |	Mataderos 2312 |	México D.F. |	05023 |	Mexico |
+
+
+# مثال عن Self JOIN في SQL
+
+يعرض بيان SQL التالي جميع العملاء من نفس المدينة
+
+
+{% highlight sql %}
+
+
+        SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+
+        FROM Customers A, Customers B
+
+        WHERE A.CustomerID <> B.CustomerID
+
+        AND A.City = B.City
+
+        ORDER BY A.City;
+
+{% endhighlight %}
+
+
+
