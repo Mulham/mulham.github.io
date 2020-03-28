@@ -66,5 +66,4 @@ author: husam
 
 {% endhighlight %}
 
-
-
+التالي: [عبارة UNION JOIN ](union)

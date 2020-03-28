@@ -36,7 +36,7 @@ author: husam
 
 **ملاحظة:** نستعمل في بعض قواعد البيانات  عبارة RIGHT OUTER JOIN بدلا من عبارة RIGHT JOIN.
 
-<amp-img layout="responsive" src="/assets/sql_rightjoin.gif" alt="عبارة right join sql" width="200" height="145"></amp-img>
+<amp-img src="/assets/sql_rightjoin.gif" alt="عبارة right join sql" width="200" height="145"></amp-img>
 
 # استعراض قاعدة البيانات
 

@@ -30,7 +30,7 @@ author: husam
 
 **ملاحظة:** في بعض قواعد البيانات نستعمل LEFT OUTER JOIN بدلا من LEFT JOIN .
 
-<amp-img layout="responsive" src="/assets/sql_left-join.gif" alt="عبارة left join sql" width="200" height="145"></amp-img>
+<amp-img src="/assets/sql_left-join.gif" alt="عبارة left join sql" width="200" height="145"></amp-img>
 
 # استعراض قاعدة البيانات
 

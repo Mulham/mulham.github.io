@@ -21,7 +21,7 @@ author: husam
 
 **ملاحظة:** من المحتمل أن يرجع FULL OUTER JOIN مجموعات نتائج كبيرة جدًا!
 
-<amp-img layout="responsive" src="/assets/sql_full-join.gif" alt="عبارة full join sql" width="100" height="72"></amp-img>
+<amp-img src="/assets/sql_full-join.gif" alt="عبارة full join sql" width="100" height="72"></amp-img>
 
 # بناء جملة FULL OUTER JOIN
 
