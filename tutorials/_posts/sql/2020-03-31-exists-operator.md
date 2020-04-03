@@ -83,3 +83,4 @@ author: husam
 
 {% endhighlight %}
 
+التالي: [عبارتي ANY و ALL](any-all)
