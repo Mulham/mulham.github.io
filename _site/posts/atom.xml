@@ -4,13 +4,1883 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-03-27T05:12:05+03:00</updated>
+	<updated>2020-04-04T07:44:06+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارتي Any, ALL</title>
+			<link href="http://mulham.github.io/sql/any-all"/>
+			<updated>2020-04-03T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/any-all</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-all-و-any-في-sql&quot; id=&quot;markdown-toc-عبارة-all-و-any-في-sql&quot;&gt;عبارة ALL و ANY في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-جملة-any&quot; id=&quot;markdown-toc-بناء-جملة-any&quot;&gt;بناء جملة ANY&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-جملة-all&quot; id=&quot;markdown-toc-بناء-جملة-all&quot;&gt;بناء جملة ALL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-any-في-sql&quot; id=&quot;markdown-toc-مثال-عن-any-في-sql&quot;&gt;مثال عن ANY في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-all-في-sql&quot; id=&quot;markdown-toc-مثال-عن-all-في-sql&quot;&gt;مثال عن ALL في SQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-all-و-any-في-sql&quot;&gt;عبارة ALL و ANY في SQL&lt;/h1&gt;
+
+&lt;p&gt;تُستخدم عبارتي ANY و ALL مع عبارة WHERE أو HAVING.&lt;/p&gt;
+
+&lt;p&gt;ترجع عبارة ANY القيمة TRUE إذا كانت أي من قيم الاستعلام الفرعي تفي بالشرط.&lt;/p&gt;
+
+&lt;p&gt;ترجع عبارة ALL القيمة TRUE إذا كانت جميع قيم الاستعلام الفرعي تفي بالشرط.&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-جملة-any&quot;&gt;بناء جملة ANY&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ANY&lt;/span&gt;
+
+		&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;بناء-جملة-all&quot;&gt;بناء جملة ALL&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; يجب أن تكون العبارة عامل مقارنة قياسي (&lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;gt;&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;=!&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;=&amp;gt;&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; أو &lt;code class=&quot;highlighter-rouge&quot;&gt;=&amp;lt;&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “المنتجات” في قاعدة البيانات النموذجية Northwind:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ProductID&lt;/th&gt;
+      &lt;th&gt;ProductName&lt;/th&gt;
+      &lt;th&gt;SupplierID&lt;/th&gt;
+      &lt;th&gt;CategoryID&lt;/th&gt;
+      &lt;th&gt;Unit&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Chais&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;10 boxes x 20 bags&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Chang&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;24 - 12 oz bottles&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Aniseed Syrup&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;12 - 550 ml bottles&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Cajun Seasoning&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;48 - 6 oz jars&lt;/td&gt;
+      &lt;td&gt;22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Gumbo Mix&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;36 boxes&lt;/td&gt;
+      &lt;td&gt;21.35&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;و تحديد من جدول “تفاصيل الطلب”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderDetailID&lt;/th&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;ProductID&lt;/th&gt;
+      &lt;th&gt;Quantity&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;10248&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+      &lt;td&gt;12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;10248&lt;/td&gt;
+      &lt;td&gt;42&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;10248&lt;/td&gt;
+      &lt;td&gt;72&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;10249&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;10249&lt;/td&gt;
+      &lt;td&gt;51&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-عن-any-في-sql&quot;&gt;مثال عن ANY في SQL&lt;/h1&gt;
+
+&lt;p&gt;تُرجع العبارة ANY القيمة TRUE إذا كانت أي من قيم الاستعلام الفرعي تفي بالشرط.&lt;/p&gt;
+
+&lt;p&gt;تقوم عبارة SQL التالية بإرجاع TRUE وتسرد أسماء المنتجات الموجودة في جدول “تفاصيل الطلب” وكميتها تساوي 10:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductName&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Products&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ANY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductID&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OrderDetails&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;99&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;مثال-عن-all-في-sql&quot;&gt;مثال عن ALL في SQL&lt;/h1&gt;
+
+&lt;p&gt;ترجع عبارة ALL القيمة TRUE إذا كانت جميع قيم الاستعلام الفرعي تفي بالشرط.&lt;/p&gt;
+
+&lt;p&gt;تقوم عبارة SQL التالية بإرجاع TRUE وتسرد أسماء المنتجات إذا كانت جميع السجلات في جدول “تفاصيل الطلب” تحتوي على كمية = 10 (لذلك ، هذا المثال سيُرجع FALSE ، لأنه ليس لكل السجلات في جدول “تفاصيل الطلب” كمية = 10):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductName&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Products&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductID&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OrderDetails&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة HAVING</title>
+			<link href="http://mulham.github.io/sql/having"/>
+			<updated>2020-03-31T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/having-clause</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-having-في-sql&quot; id=&quot;markdown-toc-عبارة-having-في-sql&quot;&gt;عبارة HAVING في SQL&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#بناء-عبارة-having&quot; id=&quot;markdown-toc-بناء-عبارة-having&quot;&gt;بناء عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-عن-having-في-sql&quot; id=&quot;markdown-toc-أمثلة-عن-having-في-sql&quot;&gt;أمثلة عن HAVING في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات-1&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات-1&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-أخرى-عن-having&quot; id=&quot;markdown-toc-أمثلة-أخرى-عن-having&quot;&gt;أمثلة أخرى عن HAVING&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-having-في-sql&quot;&gt;عبارة HAVING في SQL&lt;/h1&gt;
+
+&lt;p&gt;تمت إضافة عبارة HAVING إلى SQL لأنه تعذر استخدام عبارة WHERE مع الدالات التجميعية.&lt;/p&gt;
+
+&lt;h2 id=&quot;بناء-عبارة-having&quot;&gt;بناء عبارة HAVING&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “العملاء” في قاعدة البيانات النموذجية Northwind:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Obere Str. 57&lt;/td&gt;
+      &lt;td&gt;Berlin&lt;/td&gt;
+      &lt;td&gt;12209&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Around the Horn&lt;/td&gt;
+      &lt;td&gt;Thomas Hardy&lt;/td&gt;
+      &lt;td&gt;120 Hanover Sq.&lt;/td&gt;
+      &lt;td&gt;London&lt;/td&gt;
+      &lt;td&gt;WA1 1DP&lt;/td&gt;
+      &lt;td&gt;UK&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Berglunds snabbköp&lt;/td&gt;
+      &lt;td&gt;Christina Berglund&lt;/td&gt;
+      &lt;td&gt;Berguvsvägen 8&lt;/td&gt;
+      &lt;td&gt;Luleå&lt;/td&gt;
+      &lt;td&gt;S-958 22&lt;/td&gt;
+      &lt;td&gt;Sweden&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-عن-having-في-sql&quot;&gt;أمثلة عن HAVING في SQL&lt;/h1&gt;
+
+&lt;p&gt;يسرد بيان SQL التالي عدد العملاء في كل بلد على أن يكون في كل منها أكثر من 5 عملاء:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;يسرد بيان SQL التالي عدد العملاء في كل بلد ، مرتبة من الأعلى إلى الأسفل (يتضمن فقط البلدان التي بها أكثر من 5 عملاء):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات-1&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “الطلبات” في قاعدة البيانات النموذجية Northwind:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10248&lt;/td&gt;
+      &lt;td&gt;90&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;1996-07-04&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10249&lt;/td&gt;
+      &lt;td&gt;81&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;1996-07-05&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10250&lt;/td&gt;
+      &lt;td&gt;34&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;1996-07-08&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;وتحديد من جدول “الموظفين”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;LastName&lt;/th&gt;
+      &lt;th&gt;FirstName&lt;/th&gt;
+      &lt;th&gt;BirthDate&lt;/th&gt;
+      &lt;th&gt;Photo 	Notes&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Davolio&lt;/td&gt;
+      &lt;td&gt;Nancy&lt;/td&gt;
+      &lt;td&gt;1968-12-08&lt;/td&gt;
+      &lt;td&gt;EmpID1.pic&lt;/td&gt;
+      &lt;td&gt;Education includes a BA….&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Fuller 	Andrew&lt;/td&gt;
+      &lt;td&gt;1952-02-19&lt;/td&gt;
+      &lt;td&gt;EmpID2.pic&lt;/td&gt;
+      &lt;td&gt;Andrew received his BTS….&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Leverling&lt;/td&gt;
+      &lt;td&gt;Janet&lt;/td&gt;
+      &lt;td&gt;1963-08-30&lt;/td&gt;
+      &lt;td&gt;EmpID3.pic&lt;/td&gt;
+      &lt;td&gt;Janet has a BS degree….&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-أخرى-عن-having&quot;&gt;أمثلة أخرى عن HAVING&lt;/h1&gt;
+
+&lt;p&gt;يسرد بيان SQL التالي الموظفين الذين سجلوا أكثر من 10 طلبات:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NumberOfOrders&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LastName&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;تسرد عبارة SQL التالية ما إذا كان الموظفون “Davolio” أو “Fuller” قد سجلوا أكثر من 25 طلبًا:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NumberOfOrders&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeID&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LastName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Davolio'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LastName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Fuller'&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LastName&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;exists&quot;&gt;عامل Exists &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة GROUP BY</title>
+			<link href="http://mulham.github.io/sql/group-by"/>
+			<updated>2020-03-31T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/group-by</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة--group-by-في-sql&quot; id=&quot;markdown-toc-عبارة--group-by-في-sql&quot;&gt;عبارة  GROUP BY في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-عبارة-group-by&quot; id=&quot;markdown-toc-بناء-عبارة-group-by&quot;&gt;بناء عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-عن-group-by-في-sql&quot; id=&quot;markdown-toc-أمثلة-عن-group-by-في-sql&quot;&gt;أمثلة عن GROUP BY في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات-1&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات-1&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-عمل-group-by-مع-join&quot; id=&quot;markdown-toc-مثال-عن-عمل-group-by-مع-join&quot;&gt;مثال عن عمل GROUP BY مع JOIN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة--group-by-في-sql&quot;&gt;عبارة  GROUP BY في SQL&lt;/h1&gt;
+
+&lt;p&gt;تجمع عبارة GROUP BY الأسطر التي لها نفس القيم في أسطر تعرض الملخّص، مثل “البحث عن عدد العملاء في كل بلد”.&lt;/p&gt;
+
+&lt;p&gt;غالبًا ما يتم استخدام عبارة GROUP BY مع الدالات التجميعية (COUNT ، MAX ، MIN ، SUM ، AVG) لتجميع النتيجة التي تم تعيينها بواسطة عمود واحد أو أكثر.&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-عبارة-group-by&quot;&gt;بناء عبارة GROUP BY&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “العملاء” في  قاعدة البيانات النموذجية Northwind:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Obere Str. 57&lt;/td&gt;
+      &lt;td&gt;Berlin&lt;/td&gt;
+      &lt;td&gt;12209&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Around the Horn&lt;/td&gt;
+      &lt;td&gt;Thomas Hardy&lt;/td&gt;
+      &lt;td&gt;120 Hanover Sq.&lt;/td&gt;
+      &lt;td&gt;London 	WA1 1DP&lt;/td&gt;
+      &lt;td&gt;UK&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Berglunds snabbköp&lt;/td&gt;
+      &lt;td&gt;Christina Berglund&lt;/td&gt;
+      &lt;td&gt;Berguvsvägen 8&lt;/td&gt;
+      &lt;td&gt;Luleå&lt;/td&gt;
+      &lt;td&gt;S-958 22&lt;/td&gt;
+      &lt;td&gt;Sweden&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-عن-group-by-في-sql&quot;&gt;أمثلة عن GROUP BY في SQL&lt;/h1&gt;
+
+&lt;p&gt;يسرد بيان SQL التالي عدد العملاء في كل بلد:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;يسرد بيان SQL التالي عدد العملاء في كل بلد، مرتبة من الأعلى إلى الأدنى:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات-1&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “الطلبات” في  قاعدة البيانات النموذجية Northwind:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10248&lt;/td&gt;
+      &lt;td&gt;90&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;1996-07-04&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10249&lt;/td&gt;
+      &lt;td&gt;81&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;1996-07-05&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10250&lt;/td&gt;
+      &lt;td&gt;34&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;1996-07-08&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;و تحديد من جدول “المورِّدين”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+      &lt;th&gt;ShipperName&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Speedy Express&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;United Package&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Federal Shipping&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-عن-عمل-group-by-مع-join&quot;&gt;مثال عن عمل GROUP BY مع JOIN&lt;/h1&gt;
+
+&lt;p&gt;يسرد بيان SQL التالي عدد الطلبات المرسلة من قبل كل مورد:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Shippers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ShipperName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NumberOfOrders&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Shippers&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ShipperID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Shippers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ShipperID&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ShipperName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;having&quot;&gt;عبارة HAVING &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة EXISTS</title>
+			<link href="http://mulham.github.io/sql/exists"/>
+			<updated>2020-03-31T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/exists-operator</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-exists-في-sql&quot; id=&quot;markdown-toc-عبارة-exists-في-sql&quot;&gt;عبارة EXISTS في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-عبارة-exists&quot; id=&quot;markdown-toc-بناء-عبارة-exists&quot;&gt;بناء عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-عن-exists-في-sql&quot; id=&quot;markdown-toc-أمثلة-عن-exists-في-sql&quot;&gt;أمثلة عن EXISTS في SQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-exists-في-sql&quot;&gt;عبارة EXISTS في SQL&lt;/h1&gt;
+
+&lt;p&gt;تستخدم عبارة EXISTS لاختبار وجود أي سجل في استعلام فرعي.&lt;/p&gt;
+
+&lt;p&gt;تُرجع عبارة EXISTS القيمة TRUE (صح) في حال قام الاستعلام الفرعي بإرجاع سجل (نتيجة) واحد أو أكثر.&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-عبارة-exists&quot;&gt;بناء عبارة EXISTS&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt;
+
+		&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “المنتجات” في  قاعدة البيانات النموذجية Northwind:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ProductID&lt;/th&gt;
+      &lt;th&gt;ProductName&lt;/th&gt;
+      &lt;th&gt;SupplierID&lt;/th&gt;
+      &lt;th&gt;CategoryID&lt;/th&gt;
+      &lt;th&gt;Unit&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Chais&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;10 boxes x 20 bags&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Chang&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;24 - 12 oz bottles&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Aniseed Syrup&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;12 - 550 ml bottles&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Cajun Seasoning&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;48 - 6 oz jars&lt;/td&gt;
+      &lt;td&gt;22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Chef Anton’s Gumbo Mix&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;36 boxes&lt;/td&gt;
+      &lt;td&gt;21.35&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;وتحديد من جدول “الموردين”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;SupplierID&lt;/th&gt;
+      &lt;th&gt;SupplierName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Exotic Liquid&lt;/td&gt;
+      &lt;td&gt;Charlotte Cooper&lt;/td&gt;
+      &lt;td&gt;49 Gilbert St.&lt;/td&gt;
+      &lt;td&gt;London 	EC1 4SD&lt;/td&gt;
+      &lt;td&gt;UK&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;New Orleans Cajun Delights&lt;/td&gt;
+      &lt;td&gt;Shelley Burke&lt;/td&gt;
+      &lt;td&gt;P.O. Box 78934&lt;/td&gt;
+      &lt;td&gt;New Orleans&lt;/td&gt;
+      &lt;td&gt;70117&lt;/td&gt;
+      &lt;td&gt;USA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Grandma Kelly’s Homestead&lt;/td&gt;
+      &lt;td&gt;Regina Murphy&lt;/td&gt;
+      &lt;td&gt;707 Oxford Rd.&lt;/td&gt;
+      &lt;td&gt;Ann Arbor&lt;/td&gt;
+      &lt;td&gt;48104&lt;/td&gt;
+      &lt;td&gt;USA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Tokyo Traders&lt;/td&gt;
+      &lt;td&gt;Yoshi Nagase&lt;/td&gt;
+      &lt;td&gt;9-8 Sekimai Musashino-shi&lt;/td&gt;
+      &lt;td&gt;Tokyo&lt;/td&gt;
+      &lt;td&gt;100&lt;/td&gt;
+      &lt;td&gt;Japan&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-عن-exists-في-sql&quot;&gt;أمثلة عن EXISTS في SQL&lt;/h1&gt;
+
+&lt;p&gt;تقوم عبارة SQL التالية بإرجاع القيمة TRUE  وتسرد الموردين بسعر منتج أقل من 20:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SupplierName&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductName&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Products&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Products&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SupplierID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;supplierID&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;تقوم عبارة SQL التالية بإرجاع القيمة TRUE وتسرد الموردين بسعر منتج يساوي 22:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;		&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SupplierName&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProductName&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Products&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Products&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SupplierID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;supplierID&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;any-all&quot;&gt;عبارتي ANY و ALL&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة UNION</title>
+			<link href="http://mulham.github.io/sql/union"/>
+			<updated>2020-03-28T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/union</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-union-في-sql&quot; id=&quot;markdown-toc-عبارة-union-في-sql&quot;&gt;عبارة UNION في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-جملة-union&quot; id=&quot;markdown-toc-بناء-جملة-union&quot;&gt;بناء جملة UNION&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-جملة-union-all&quot; id=&quot;markdown-toc-بناء-جملة-union-all&quot;&gt;بناء جملة UNION ALL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-union&quot; id=&quot;markdown-toc-مثال-عن-union&quot;&gt;مثال عن UNION&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-union-all&quot; id=&quot;markdown-toc-مثال-عن-union-all&quot;&gt;مثال عن UNION ALL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-union-مع-where-في-sql&quot; id=&quot;markdown-toc-عبارة-union-مع-where-في-sql&quot;&gt;عبارة UNION مع WHERE في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-union-all-مع-where-في-sql&quot; id=&quot;markdown-toc-عبارة-union-all-مع-where-في-sql&quot;&gt;عبارة UNION ALL مع WHERE في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-آخر-عن-union&quot; id=&quot;markdown-toc-مثال-آخر-عن-union&quot;&gt;مثال آخر عن UNION&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-union-في-sql&quot;&gt;عبارة UNION في SQL&lt;/h1&gt;
+
+&lt;p&gt;تُستخدم عبارة  UNION لدمج مجموعة النتائج لعبارتي SELECT أو أكثر.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;يجب أن يكون لكل عبارة SELECT داخل UNION نفس عدد الأعمدة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يجب أن تحتوي الأعمدة أيضًا على أنواع بيانات متشابهة&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يجب أن تكون الأعمدة في كل عبارة SELECT بنفس الترتيب&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;بناء-جملة-union&quot;&gt;بناء جملة UNION&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;بناء-جملة-union-all&quot;&gt;بناء جملة UNION ALL&lt;/h1&gt;
+
+&lt;p&gt;تعرض عبارة UNION القيم المختلفة فقط (دون تكرار) بشكل افتراضي. استخدم UNION ALL للسماح بقيم مكررة:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; عادةً ما تكون أسماء الأعمدة في مجموعة النتائج مساوية لأسماء الأعمدة في عبارة SELECT الأولى في UNION.&lt;/p&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم في هذا الدرس قاعدة البيانات النموذجية المعروفة Northwind.&lt;/p&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “العملاء”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Obere Str. 57&lt;/td&gt;
+      &lt;td&gt;Berlin&lt;/td&gt;
+      &lt;td&gt;12209&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;و تحديد من جدول “المُوَرِّدين”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;SupplierID&lt;/th&gt;
+      &lt;th&gt;SupplierName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Exotic Liquid&lt;/td&gt;
+      &lt;td&gt;Charlotte Cooper&lt;/td&gt;
+      &lt;td&gt;49 Gilbert St.&lt;/td&gt;
+      &lt;td&gt;London&lt;/td&gt;
+      &lt;td&gt;EC1 4SD&lt;/td&gt;
+      &lt;td&gt;UK&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;New Orleans Cajun Delights&lt;/td&gt;
+      &lt;td&gt;Shelley Burke&lt;/td&gt;
+      &lt;td&gt;P.O. Box 78934&lt;/td&gt;
+      &lt;td&gt;New Orleans&lt;/td&gt;
+      &lt;td&gt;70117&lt;/td&gt;
+      &lt;td&gt;USA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Grandma Kelly’s Homestead&lt;/td&gt;
+      &lt;td&gt;Regina Murphy&lt;/td&gt;
+      &lt;td&gt;707 Oxford Rd.&lt;/td&gt;
+      &lt;td&gt;Ann Arbor&lt;/td&gt;
+      &lt;td&gt;48104&lt;/td&gt;
+      &lt;td&gt;USA&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-عن-union&quot;&gt;مثال عن UNION&lt;/h1&gt;
+
+&lt;p&gt;تُرجع عبارة SQL التالية جميع المدن (القيم المختلفة فقط) من كلا جدولي “العملاء” و”المورِّدين”:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; إذا كان لدى بعض العملاء أو الموردين نفس المدينة ، فسيتم إدراج كل مدينة مرة واحدة فقط ، لأن UNION تحدد القيم المميزة فقط. استخدم UNION ALL  لتحديد القيم المكررة أيضًا!&lt;/p&gt;
+
+&lt;h1 id=&quot;مثال-عن-union-all&quot;&gt;مثال عن UNION ALL&lt;/h1&gt;
+
+&lt;p&gt;تقوم عبارة SQL التالية بإرجاع المدن (القيم المكررة أيضًا) من كل من جدولي “العملاء” و”الموردين”:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;عبارة-union-مع-where-في-sql&quot;&gt;عبارة UNION مع WHERE في SQL&lt;/h1&gt;
+
+&lt;p&gt;تقوم عبارة SQL التالية بإرجاع المدن الألمانية (القيم المختلفة فقط) من كل من جدولي “العملاء” و”الموردين”:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Germany'&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Germany'&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;عبارة-union-all-مع-where-في-sql&quot;&gt;عبارة UNION ALL مع WHERE في SQL&lt;/h1&gt;
+
+&lt;p&gt;تقوم عبارة SQL التالية بإرجاع المدن الألمانية (القيم المكررة أيضًا) من كل من جدولي “العملاء” و”الموردين”:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Germany'&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Germany'&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;مثال-آخر-عن-union&quot;&gt;مثال آخر عن UNION&lt;/h1&gt;
+
+&lt;p&gt;يسرد بيان SQL التالي كافة العملاء والموردين:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Customer'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;As&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContactName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Supplier'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContactName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Suppliers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;لاحظ أن “AS Type” أعلاه عبارة عن اسم مستعار. تُستخدم &lt;a href=&quot;aliases&quot;&gt;الأسماء المستعارة في SQL&lt;/a&gt; لإعطاء جدول أو عمود اسمًا مؤقتًا ويكون صالح فقط أثناء تنفيذ الأمر.  لذلك أنشأنا هنا عمودًا مؤقتًا باسم “Type” والذي يوضح فيما إذا كانت جهة الاتصال هي “عميل” أو “مورد”.&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;group-by&quot;&gt;عبارة GROUP BY &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة SELF JOIN</title>
+			<link href="http://mulham.github.io/sql/self_join"/>
+			<updated>2020-03-28T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/self-join</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-self-join-في-sql&quot; id=&quot;markdown-toc-عبارة-self-join-في-sql&quot;&gt;عبارة Self JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-جملة-self-join&quot; id=&quot;markdown-toc-بناء-جملة-self-join&quot;&gt;بناء جملة Self JOIN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-self-join-في-sql&quot; id=&quot;markdown-toc-مثال-عن-self-join-في-sql&quot;&gt;مثال عن Self JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-self-join-في-sql&quot;&gt;عبارة Self JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;عبارة SELF JOIN هي نفس عبارة JOIN  ولكن الجدول سيكون مرتبطا بنفسه.&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-جملة-self-join&quot;&gt;بناء جملة Self JOIN&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T2&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;حيث T1 و T2 اسمين مستعارين لنفس الجدول.&lt;/p&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم في هذا الدرس قاعدة البيانات النموذجية المعروفة Northwind.&lt;/p&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “العملاء”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Obere Str. 57&lt;/td&gt;
+      &lt;td&gt;Berlin&lt;/td&gt;
+      &lt;td&gt;12209&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-عن-self-join-في-sql&quot;&gt;مثال عن Self JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;يعرض بيان SQL التالي جميع العملاء من نفس المدينة&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerName1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerName2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;City&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;City&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;union&quot;&gt;عبارة UNION JOIN &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة RIGHT JOIN</title>
+			<link href="http://mulham.github.io/sql/right_join"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/right-join</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-right-join-في-sql&quot; id=&quot;markdown-toc-عبارة-right-join-في-sql&quot;&gt;عبارة RIGHT JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-جملة-right-join&quot; id=&quot;markdown-toc-بناء-جملة-right-join&quot;&gt;بناء جملة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-right-join&quot; id=&quot;markdown-toc-مثال-عن-right-join&quot;&gt;مثال عن RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-right-join-في-sql&quot;&gt;عبارة RIGHT JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;تُرجع العبارة RIGHT JOIN كافة السجلات من الجدول الأيمن (الجدول 2)، والسجلات المتطابقة من الجدول الأيسر (الجدول 1). والنتيجة هي صفر من الجانب الأيسر، عندما لا يكون هناك تطابق.&lt;/p&gt;
+
+&lt;h1 id=&quot;بناء-جملة-right-join&quot;&gt;بناء جملة RIGHT JOIN&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;RIGHT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; نستعمل في بعض قواعد البيانات  عبارة RIGHT OUTER JOIN بدلا من عبارة RIGHT JOIN.&lt;/p&gt;
+
+&lt;amp-img src=&quot;/assets/sql_rightjoin.gif&quot; alt=&quot;عبارة right join sql&quot; width=&quot;200&quot; height=&quot;145&quot;&gt;&lt;/amp-img&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم في هذا الدرس قاعدة البيانات النموذجية المعروفة Northwind.&lt;/p&gt;
+
+&lt;p&gt;فيما يلي تحديد من جدول “الطلبات”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10308&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;1996-09-18&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10309&lt;/td&gt;
+      &lt;td&gt;37&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1996-09-19&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10310&lt;/td&gt;
+      &lt;td&gt;77&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;1996-09-20&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;وتحديد من جدول “الموظفين”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;LastName&lt;/th&gt;
+      &lt;th&gt;FirstName&lt;/th&gt;
+      &lt;th&gt;BirthDate&lt;/th&gt;
+      &lt;th&gt;Photo&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Davolio&lt;/td&gt;
+      &lt;td&gt;Nancy&lt;/td&gt;
+      &lt;td&gt;12/8/1968&lt;/td&gt;
+      &lt;td&gt;EmpID1.pic&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Fuller&lt;/td&gt;
+      &lt;td&gt;Andrew&lt;/td&gt;
+      &lt;td&gt;2/19/1952&lt;/td&gt;
+      &lt;td&gt;EmpID2.pic&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Leverling&lt;/td&gt;
+      &lt;td&gt;Janet&lt;/td&gt;
+      &lt;td&gt;8/30/1963&lt;/td&gt;
+      &lt;td&gt;EmpID3.pic&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-عن-right-join&quot;&gt;مثال عن RIGHT JOIN&lt;/h1&gt;
+
+&lt;p&gt;ستُرجع عبارة SQL التالية جميع الموظفين مع طلباتهم:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FirstName&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;RIGHT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Employees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmployeeID&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; تُرجع العبارة RIGHT JOIN جميع السجلات من الجدول الأيمن (الموظفون) ، حتى إن لم تكن هناك تطابقات في الجدول الأيسر (الطلبات).&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;full_join&quot;&gt;عبارة FULL JOIN &lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة دروس SQL| عبارة FULL OUTER JOIN</title>
+			<link href="http://mulham.github.io/sql/full_join"/>
+			<updated>2020-03-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//sql/full-outer-join</id>
+			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/build&quot;&gt;الدرس 2: سلسلة دروس SQL|البناء&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select&quot;&gt;الدرس 3: سلسلة دروس SQL|تصريح SELECT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/select-distinct&quot;&gt;الدرس 4: سلسلة دروس SQL|تصريح SELECT DISTINCT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/where&quot;&gt;الدرس 5: سلسلة دروس SQL|عبارة WHERE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/and-or&quot;&gt;الدرس 6: سلسلة دروس SQL|عمليات AND &amp;amp; OR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/order-by&quot;&gt;الدرس 7: سلسلة دروس SQL|دالة ORDER BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/insert-into&quot;&gt;الدرس 8: سلسلة دروس SQL|تصريح INSERT INTO&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/update&quot;&gt;الدرس 9: سلسلة دروس SQL|تصريح UPDATE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/delete&quot;&gt;الدرس 10: سلسلة دروس SQL|تصريح DELETE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/top-limit-rownum&quot;&gt;الدرس 11: سلسلة دروس SQL|TOP-LIMIT-ROWNUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/min-max&quot;&gt;الدرس 12: سلسلة دروس SQL|Min and Max&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/count-avg-sum&quot;&gt;الدرس 13: سلسلة دروس SQL|دالات COUNT و AVG و SUM&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/like&quot;&gt;الدرس 14: سلسلة دروس SQL| عامل LIKE&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/wildcard_characters&quot;&gt;الدرس 15: سلسلة دروس SQL| الرموز البديلة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/in&quot;&gt;الدرس 16: سلسلة دروس SQL| عامل IN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/between&quot;&gt;الدرس 17: سلسلة دروس SQL| عامل Between&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/aliases&quot;&gt;الدرس 18: سلسلة دروس SQL| الأسماء المستعارة&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/join&quot;&gt;الدرس 19: سلسلة دروس SQL| عبارة JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#عبارة-full-outer-join-في-sql&quot; id=&quot;markdown-toc-عبارة-full-outer-join-في-sql&quot;&gt;عبارة FULL OUTER JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#بناء-جملة-full-outer-join&quot; id=&quot;markdown-toc-بناء-جملة-full-outer-join&quot;&gt;بناء جملة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#مثال-عن-full-outer-join-في-sql&quot; id=&quot;markdown-toc-مثال-عن-full-outer-join-في-sql&quot;&gt;مثال عن FULL OUTER JOIN في SQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;عبارة-full-outer-join-في-sql&quot;&gt;عبارة FULL OUTER JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;تُرجع العبارة FULL OUTER JOIN كافة السجلات عندما يكون هناك تطابق في سجلات الجدول الأيسر (الجدول 1) أو الأيمن (الجدول 2).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; من المحتمل أن يرجع FULL OUTER JOIN مجموعات نتائج كبيرة جدًا!&lt;/p&gt;
+
+&lt;amp-img src=&quot;/assets/sql_full-join.gif&quot; alt=&quot;عبارة full join sql&quot; width=&quot;100&quot; height=&quot;72&quot;&gt;&lt;/amp-img&gt;
+
+&lt;h1 id=&quot;بناء-جملة-full-outer-join&quot;&gt;بناء جملة FULL OUTER JOIN&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FULL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OUTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
+
+&lt;p&gt;سنستخدم في هذا الدرس قاعدة البيانات النموذجية المعروفة Northwind.&lt;/p&gt;
+
+&lt;p&gt;فيما يلي مجموعة مختارة من جدول “العملاء”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;ContactName&lt;/th&gt;
+      &lt;th&gt;Address&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+      &lt;th&gt;PostalCode&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Maria Anders&lt;/td&gt;
+      &lt;td&gt;Obere Str. 57&lt;/td&gt;
+      &lt;td&gt;Berlin&lt;/td&gt;
+      &lt;td&gt;12209&lt;/td&gt;
+      &lt;td&gt;Germany&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;Ana Trujillo&lt;/td&gt;
+      &lt;td&gt;Avda. de la Constitución 2222&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05021&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;Antonio Moreno&lt;/td&gt;
+      &lt;td&gt;Mataderos 2312&lt;/td&gt;
+      &lt;td&gt;México D.F.&lt;/td&gt;
+      &lt;td&gt;05023&lt;/td&gt;
+      &lt;td&gt;Mexico&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;ومجموعة مختارة من جدول “الطلبات”:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+      &lt;th&gt;CustomerID&lt;/th&gt;
+      &lt;th&gt;EmployeeID&lt;/th&gt;
+      &lt;th&gt;OrderDate&lt;/th&gt;
+      &lt;th&gt;ShipperID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10308&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;1996-09-18&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10309&lt;/td&gt;
+      &lt;td&gt;37&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1996-09-19&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10310&lt;/td&gt;
+      &lt;td&gt;77&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;1996-09-20&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;مثال-عن-full-outer-join-في-sql&quot;&gt;مثال عن FULL OUTER JOIN في SQL&lt;/h1&gt;
+
+&lt;p&gt;تحدد عبارة SQL التالية جميع العملاء وجميع الطلبات:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;        &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;FULL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OUTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;قد تبدو النتائج كما يلي:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CustomerName&lt;/th&gt;
+      &lt;th&gt;OrderID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+      &lt;td&gt;Null&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
+      &lt;td&gt;10308&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
+      &lt;td&gt;10365&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; ترجع العبارة FULL OUTER JOIN جميع السجلات المطابقة من كلا الجدولين سواء كان الجدول الآخر يطابق أم لا. لذا، إذا كانت هناك صفوف في “العملاء” لا تحتوي على تطابقات في “الطلبات”، أو إذا كانت هناك صفوف في “الطلبات” لا تحتوي على تطابقات في “العملاء”، فسيتم إدراج هذه الصفوف أيضًا.&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;self_join&quot;&gt;عبارة SELF JOIN &lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<title>كيفية التراجع عن آخر اعتماد commit في git</title>
@@ -69,7 +1939,7 @@
 
 &lt;p&gt;بدون كتابة أي اسم لملف لإلغاء إضافة كل التغييرات الأخيرة.&lt;/p&gt;
 
-&lt;p&gt;في الإصدارات القديمة من git فقد كان الأمرين السابقين بالشكل &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;git reset HEAD &amp;lt;file&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;git reset HEAD&lt;/code&gt; على التوالي.&lt;/p&gt;
+&lt;p&gt;في الإصدارات القديمة من git فقد كان الأمرين السابقين بالشكل &lt;code class=&quot;highlighter-rouge&quot;&gt;git reset HEAD &amp;lt;file&amp;gt;&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;git reset HEAD&lt;/code&gt; على التوالي.&lt;/p&gt;
 
 &lt;p&gt;ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة أسفل الصفحة.&lt;/p&gt;
 
@@ -188,7 +2058,7 @@
 			<title>سلسلة دروس SQL| عبارة LEFT JOIN</title>
 			<link href="http://mulham.github.io/sql/left_join"/>
 			<updated>2020-03-25T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/sql-left-join</id>
+			<id>http://mulham.github.io//sql/left-join</id>
 			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
@@ -233,6 +2103,22 @@
 
 &lt;li&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -255,7 +2141,7 @@
 
 &lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; في بعض قواعد البيانات نستعمل LEFT OUTER JOIN بدلا من LEFT JOIN .&lt;/p&gt;
 
-&lt;amp-img layout=&quot;responsive&quot; src=&quot;/assets/sql_left-join.gif&quot; alt=&quot;عبارة left join sql&quot; width=&quot;200&quot; height=&quot;145&quot;&gt;&lt;/amp-img&gt;
+&lt;amp-img src=&quot;/assets/sql_left-join.gif&quot; alt=&quot;عبارة left join sql&quot; width=&quot;200&quot; height=&quot;145&quot;&gt;&lt;/amp-img&gt;
 
 &lt;h1 id=&quot;استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/h1&gt;
 
@@ -355,6 +2241,8 @@
 
 &lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; يُرجع الكود LEFT JOIN جميع السجلات من الجدول الأيسر (العملاء)، حتى في حالة عدم وجود تطابقات في الجدول الأيمن (الطلبات).&lt;/p&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;right_join&quot;&gt;عبارة RIGHT JOIN &lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -362,7 +2250,7 @@
 			<title>سلسلة دروس SQL| عبارة JOIN</title>
 			<link href="http://mulham.github.io/sql/join"/>
 			<updated>2020-03-25T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/sql-join</id>
+			<id>http://mulham.github.io//sql/join</id>
 			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
@@ -407,6 +2295,22 @@
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -448,37 +2352,15 @@
 &lt;/table&gt;
 
 &lt;p&gt;ثم لننظر إلى تحديد من جدول “العملاء”:&lt;/p&gt;
+&lt;div style=&quot;overflow-x:auto;&quot;&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;CustomerID&lt;/th&gt;
-      &lt;th&gt;CustomerName&lt;/th&gt;
-      &lt;th&gt;ContactName&lt;/th&gt;
-      &lt;th&gt;Country&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
-      &lt;td&gt;Maria Anders&lt;/td&gt;
-      &lt;td&gt;Germany&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;Ana Trujillo Emparedados y helados&lt;/td&gt;
-      &lt;td&gt;Ana Trujillo&lt;/td&gt;
-      &lt;td&gt;Mexico&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;Antonio Moreno Taquería&lt;/td&gt;
-      &lt;td&gt;Antonio Moreno&lt;/td&gt;
-      &lt;td&gt;Mexico&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+| CustomerID | CustomerName |  	ContactName |  	Country |
+| --- | --- | --- | --- |
+| 1 | Alfreds Futterkiste |  	Maria Anders | Germany |
+| 2 |  	Ana Trujillo Emparedados y helados |  	Ana Trujillo | Mexico |
+| 3 | Antonio Moreno Taquería |  	Antonio Moreno |  	Mexico |
+
+&lt;/div&gt;
 
 &lt;p&gt;لاحظ أن عمود “CustomerID” في جدول “الطلبات” يشير إلى “CustomerID” في جدول “العملاء”. العلاقة بين الجدولين أعلاه هي عمود “CustomerID”.&lt;/p&gt;
 
@@ -546,8 +2428,6 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
 &lt;amp-img layout=&quot;responsive&quot; width=&quot;850&quot; height=&quot;163&quot; src=&quot;/assets/sql-join.png&quot; alt=&quot;عبارة join في SQL&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;اختبر نفسك من خلال التمرين التالي:&lt;/p&gt;
@@ -574,7 +2454,7 @@
 			<title>سلسلة دروس SQL| عبارة INNER JOIN</title>
 			<link href="http://mulham.github.io/sql/inner_join"/>
 			<updated>2020-03-25T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//sql/sql-inner-join</id>
+			<id>http://mulham.github.io//sql/inner-join</id>
 			<content type="html">&lt;p&gt;الفهرس :&lt;/p&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/intro&quot;&gt;الدرس 1: سلسلة دروس SQL|مقدمة&lt;/a&gt;&lt;/li&gt;
@@ -618,6 +2498,22 @@
 &lt;li&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -9764,6 +11660,22 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -9997,6 +11909,22 @@ WHERE City NOT LIKE '[bsp]%';
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -10103,6 +12031,22 @@ WHERE Country IN (SELECT Country FROM Suppliers);
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -10361,6 +12305,22 @@ WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -10369,13 +12329,6 @@ WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
   &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأسماء-المستعارة-مع-الأعمدة&quot; id=&quot;markdown-toc-أمثلة-على-الأسماء-المستعارة-مع-الأعمدة&quot;&gt;أمثلة على الأسماء المستعارة مع الأعمدة&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأسماء-المستعارة-مع-الجداول&quot; id=&quot;markdown-toc-أمثلة-على-الأسماء-المستعارة-مع-الجداول&quot;&gt;أمثلة على الأسماء المستعارة مع الجداول&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;style&gt;
-
-table {
-  direction: ltr;
-}
-&lt;/style&gt;
 
 &lt;h1 id=&quot;الأسماء-المستعارة-في-sql&quot;&gt;الأسماء المستعارة في SQL&lt;/h1&gt;
 
@@ -10767,6 +12720,22 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -10775,14 +12744,6 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
   &lt;li&gt;&lt;a href=&quot;#استعراض-قاعدة-البيانات&quot; id=&quot;markdown-toc-استعراض-قاعدة-البيانات&quot;&gt;استعراض قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#أمثلة-على-like-في-sql&quot; id=&quot;markdown-toc-أمثلة-على-like-في-sql&quot;&gt;أمثلة على LIKE في SQL&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;style&gt;
-
-table{
-     direction: ltr;
-}
-
-&lt;/style&gt;
 
 &lt;h1 id=&quot;عامل-like-في-sql&quot;&gt;عامل LIKE في SQL&lt;/h1&gt;
 
@@ -10955,6 +12916,22 @@ WHERE CustomerName NOT LIKE 'a%';
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -11186,6 +13163,22 @@ FROM OrderDetails;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -11346,6 +13339,22 @@ FROM Products;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -11443,8 +13452,6 @@ LIMIT 3;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM Customers
 WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
 
 &lt;p&gt;التالي: &lt;a href=&quot;min-max&quot;&gt;دالات MIN و MAX&lt;/a&gt;&lt;/p&gt;
 
@@ -14993,7 +17000,7 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;git-qa&quot;&gt;أكثر الأسئلة تداولًا حول git وإجاباتها&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/git-qa&quot;&gt;أكثر الأسئلة تداولًا حول git وإجاباتها&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;/github/intro&quot;&gt;سلسلة دروس جِت هَب&lt;/a&gt;&lt;/p&gt;
@@ -17498,6 +19505,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;تستخدم عبارة WHERE لترشيح (فلترة) التسجيلات .&lt;/p&gt;
@@ -17647,6 +19670,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح UPDATE لتحديث تسجيلات موجودة مسبقاً في جدول .&lt;/p&gt;
@@ -17762,6 +19801,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -17890,6 +19945,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT DISTINCT&lt;/code&gt; للحصول على القيم المختلفة فقط .&lt;/p&gt;
@@ -17981,6 +20052,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -18115,6 +20202,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -18273,6 +20376,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -18402,6 +20521,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;يستخدم تصريح DELETE لحذف تسجيلات من جدول .&lt;/p&gt;
@@ -18514,6 +20649,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
@@ -18655,6 +20806,22 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/inner_join&quot;&gt;الدرس 20: سلسلة دروس SQL| عبارة INNER JOIN&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/left_join&quot;&gt;الدرس 21: سلسلة دروس SQL| عبارة LEFT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/right_join&quot;&gt;الدرس 22: سلسلة دروس SQL| عبارة RIGHT JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/full_join&quot;&gt;الدرس 23: سلسلة دروس SQL| عبارة FULL OUTER JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/self_join&quot;&gt;الدرس 24: سلسلة دروس SQL| عبارة SELF JOIN&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/union&quot;&gt;الدرس 25: سلسلة دروس SQL| عبارة UNION&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/group-by&quot;&gt;الدرس 26: سلسلة دروس SQL| عبارة GROUP BY&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/having&quot;&gt;الدرس 27: سلسلة دروس SQL| عبارة HAVING&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/exists&quot;&gt;الدرس 28: سلسلة دروس SQL| عبارة EXISTS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://localhost:4000/sql/any-all&quot;&gt;الدرس 29: سلسلة دروس SQL| عبارتي Any, ALL&lt;/a&gt;&lt;/li&gt;
 
 &lt;hr /&gt;
 
