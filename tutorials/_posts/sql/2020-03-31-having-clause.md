@@ -3,6 +3,7 @@ permalink: /sql/having
 layout: post
 date: 2020-03-31
 title: سلسلة دروس SQL| عبارة HAVING
+description: عبارة Having مع الدالات التجميعية في SQL مع الأمثلة
 type: tutorial
 lesson: 27
 hidden: true
