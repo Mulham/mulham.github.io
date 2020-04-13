@@ -40,7 +40,7 @@ author: husam
 
 انسخ بعض الأعمدة فقط من جدول واحد إلى جدول آخر:
 
-{% endhighlight %}
+{% highlight sql %}
 
 		INSERT INTO table2 (column1, column2, column3, ...)
 
@@ -86,7 +86,7 @@ author: husam
 
 تقوم جملة SQL التالية بنسخ "الموردين" إلى "العملاء" (املأ جميع الأعمدة):
 
-{% endhighlight %}
+{% highlight sql %}
 
 		INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 
