@@ -1,10 +1,26 @@
+---
+permalink: /sql/select-into
+layout: post
+date: 2020-04-13
+title: سلسلة دروس SQL| عبارة SELECT INTO
+type: tutorial
+lesson: 30
+hidden: true
+comments: true
+author: husam
+---
+
+{% include sql-content.html %}
+
+* Toc
+{:toc}
 # عبارة SELECT INTO في SQL
 
 تقوم عبارة SELECT INTO بنسخ البيانات من جدول واحد إلى جدول جديد.
 
 # بناء جملة SELECT INTO
 
-انسخ كل الأعمدة إلى جدول جديد:
+نسخ كل الأعمدة إلى جدول جديد:
 
 {% highlight sql %}
 
@@ -18,7 +34,7 @@
 
 {% endhighlight %}
 
- انسخ بعض الأعمدة فقط إلى جدول جديد:
+نسخ بعض الأعمدة فقط إلى جدول جديد:
 
 {% highlight sql %}
 
@@ -105,4 +121,3 @@
 
 {% endhighlight %}
 
-***

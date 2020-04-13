@@ -1,7 +1,23 @@
+---
+permalink: /sql/insert-into-select
+layout: post
+date: 2020-04-13
+title: سلسلة دروس SQL| عبارة Insert Into Select
+type: tutorial
+lesson: 31
+hidden: true
+comments: true
+author: husam
+---
+
+{% include sql-content.html %}
+
+* Toc
+{:toc}
+
 # عبارة INSERT INTO SELECT في SQL
 
 تقوم عبارة INSERT INTO SELECT بنسخ البيانات من جدول واحد وإدراجها في جدول آخر.
-
 
 
 * يتطلب INSERT INTO SELECT تطابق أنواع البيانات في جداول كل من المصدر والهدف
@@ -59,7 +75,6 @@
 
 تقوم عبارة SQL التالية بنسخ "الموردين" إلى "العملاء" (ستحتوي الأعمدة التي لم يتم تعبئتها بالبيانات على NULL):
 
-**مثال**
 
 {% highlight sql %}
 
@@ -71,8 +86,6 @@
 
 تقوم جملة SQL التالية بنسخ "الموردين" إلى "العملاء" (املأ جميع الأعمدة):
 
-**مثال**
-
 {% endhighlight %}
 
 		INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
@@ -83,7 +96,6 @@
 
 تقوم عبارة SQL التالية بنسخ الموردين الألمان فقط إلى "العملاء":
 
-**مثال**
 
 {% highlight sql %}
 
@@ -94,11 +106,5 @@
 		WHERE Country='Germany';
 
 {% endhighlight %}
-
-***
-
-
-
-
 
 
