@@ -121,3 +121,4 @@ author: husam
 
 {% endhighlight %}
 
+التالي: [عبارة Insert Into Select ](insert-into-select)

@@ -142,5 +142,5 @@ EXEC SelectAllCustomers @City = 'London', @PostalCode = 'WA1 1DP';
 
 {% endhighlight %}
 
-
+التالي: [التعليقات](comments)
 
