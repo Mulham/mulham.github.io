@@ -19,7 +19,6 @@ author: husam
 
 يتم استخدام عبارة CREATE TABLE لإنشاء جدول جديد في قاعدة البيانات.
 
-# بناء الجملة
 
 {% highlight sql %}
 
