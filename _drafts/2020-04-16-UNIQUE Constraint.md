@@ -1,0 +1,125 @@
+# قيد UNIQUE في SQL
+
+يضمن القيد UNIQUE اختلاف جميع القيم في العمود.
+
+توفر كل من القيود UNIQUE و PRIMARY KEY ضمانًا لتفرد عمود أو مجموعة من الأعمدة.
+
+القيد PRIMARY KEY يحتوي تلقائيًا على القيد UNIQUE.
+
+ومع ذلك يمكن أن يكون لديك العديد من القيود UNIQUE لكل جدول ، ولكن هناك قيد PRIMARY KEY واحد فقط لكل جدول.
+
+# استخدام UNIQUE في CREATE TABLE في SQL
+
+يقوم SQL التالي بإنشاء قيد فريد على عمود "المعرف" عند إنشاء جدول "الأشخاص":
+
+**SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		CREATE TABLE Persons (
+
+    		ID int NOT NULL UNIQUE,
+
+   		 LastName varchar(255) NOT NULL,
+
+   		 FirstName varchar(255),
+
+   		 Age int
+
+		);
+
+{% endhighlight %}
+
+**MySQL:**
+
+{% highlight sql %}
+
+		CREATE TABLE Persons (
+
+    		ID int NOT NULL,
+
+    		LastName varchar(255) NOT NULL,
+
+    		FirstName varchar(255),
+
+   		 Age int,
+
+    		UNIQUE (ID)
+
+		); 
+
+{% endhighlight %}
+
+لتسمية قيود UNIQUE ، ولتحديد قيود UNIQUE على أعمدة متعددة ، استخدم بناء جملة SQL التالي:
+
+**MySQL / SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		CREATE TABLE Persons (
+
+    		ID int NOT NULL,
+
+    		LastName varchar(255) NOT NULL,
+
+    		FirstName varchar(255),
+
+   		 Age int,
+
+    		CONSTRAINT UC_Person UNIQUE (ID,LastName)
+
+		); 
+
+{% endhighlight %}
+
+# استخدام UNIQUE في CREATE TABLE في SQL
+
+لإنشاء قيد UNIQUE على عمود "المعرف" عند إنشاء الجدول  ، استخدم SQL التالية:
+
+**MySQL / SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		ADD UNIQUE (ID); 
+
+{% endhighlight %}
+
+لتسمية قيود UNIQUE ، ولتحديد قيود UNIQUE على أعمدة متعددة ، استخدم بناء جملة SQL التالي:
+
+**MySQL / SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		ADD CONSTRAINT UC_Person UNIQUE (ID,LastName); 
+
+{% endhighlight %}
+
+# ابعاد القيد UNIQUE
+
+لإبعاد القيد UNIQUE ، استخدم SQL التالية:
+
+**MySQL:**
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		DROP INDEX UC_Person;
+
+{% endhighlight %} 
+
+**SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		DROP CONSTRAINT UC_Person; 
+
+{% endhighlight %}
+
+***
