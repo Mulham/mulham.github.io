@@ -9,7 +9,7 @@ lesson: 13
 comments: true
 ---
 
-{% include sql-content.html %}
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
 
 * Toc
 {:toc}

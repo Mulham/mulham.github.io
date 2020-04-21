@@ -1,0 +1,133 @@
+# قيد Constraint في SQL
+
+يتم استخدام قيد CHECK لتحديد نطاق القيمة الذي يمكن وضعه في عمود.
+
+إذا قمت بتعريف قيد CHECK على عمود واحد، فإنه يسمح فقط بقيم معينة لهذا العمود.
+
+إذا قمت بتعريف قيد CHECK على جدول، فيمكنه تحديد القيم في أعمدة معينة بناءً على القيم الموجودة في الأعمدة الأخرى في الصف.
+
+# CHECK في CREATE TABLE
+
+يقوم SQL التالي بإنشاء قيد CHECK على عمود "العمر" عند إنشاء جدول "الأشخاص". يضمن قيد CHECK أن يكون عمر الشخص 18 عامًا أو أكثر:
+
+
+**MySQL:**
+
+{% highlight sql %}
+
+		CREATE TABLE Persons (
+
+    		ID int NOT NULL,
+
+   		 LastName varchar(255) NOT NULL,
+
+ 		   FirstName varchar(255),
+
+ 		   Age int,
+
+ 		   CHECK (Age>=18)
+
+		); 
+
+{% endhighlight %}
+
+**SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		CREATE TABLE Persons (
+
+		    ID int NOT NULL,
+
+		    LastName varchar(255) NOT NULL,
+
+		    FirstName varchar(255),
+
+		    Age int CHECK (Age>=18)
+
+		); 
+
+{% endhighlight %}
+
+للسماح بتسمية قيد CHECK، ولتحديد قيد CHECK على أعمدة متعددة، استخدم بناء جملة SQL التالي:
+
+**MySQL / SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		CREATE TABLE Persons (
+
+		    ID int NOT NULL,
+
+ 		   LastName varchar(255) NOT NULL,
+
+		    FirstName varchar(255),
+
+		    Age int,
+
+ 		   City varchar(255),
+
+		    CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes')
+
+		); 
+
+{% endhighlight %}
+
+# SQL CHECK في ALTER TABLE
+
+لإنشاء قيد CHECK على عمود "العمر" عند إنشاء الجدول، استخدم SQL التالية:
+
+**MySQL / SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		ADD CHECK (Age>=18); 
+
+{% endhighlight %}
+
+للسماح بتسمية قيد CHECK ، ولتحديد قيد CHECK على أعمدة متعددة ، استخدم بناء جملة SQL التالي:
+
+**MySQL / SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		ADD CONSTRAINT CHK_PersonAge CHECK (Age>=18 AND City='Sandnes'); 
+
+{% endhighlight %}
+
+# حذف قيد CHECK
+
+لحذف قيد CHECK، استخدم SQL التالية:
+
+**SQL Server / Oracle / MS Access:**
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		DROP CONSTRAINT CHK_PersonAge; 
+
+{% endhighlight %}
+
+**MySQL:**
+
+
+{% highlight sql %}
+
+		ALTER TABLE Persons
+
+		DROP CHECK CHK_PersonAge; 
+
+{% endhighlight %}
+
+***
+
+
+
+
+
+

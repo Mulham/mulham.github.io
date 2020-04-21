@@ -5,7 +5,6 @@ description: تعلم باختصار كيف يمكنك تغيير اسم فرع 
 title: كيفية إعادة تسمية فرع محلي في git
 type: blog
 hidden: true
-tags: [Git, Github, شبكات ,إنترنت]
 ---
 
 

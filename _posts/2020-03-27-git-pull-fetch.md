@@ -5,7 +5,6 @@ description: تعرف على الفرق بين الأمرين git pull و git fe
 title: الفرق بين git pull و git fetch
 type: blog
 hidden: true
-tags: [Git, Github, شبكات ,إنترنت]
 ---
 
 إليك الفرق بين الأمرين `git pull` و `git fetch`:

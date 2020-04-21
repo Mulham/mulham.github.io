@@ -9,7 +9,7 @@ comments: true
 lesson: 4
 ---
 
-{% include sql-content.html %}
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
 
 يستخدم تصريح `SELECT DISTINCT` للحصول على القيم المختلفة فقط .
 
