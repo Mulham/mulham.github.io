@@ -21,3 +21,4 @@ hidden: true
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
 
+هذا المقال جزء من: [أسئلة وأجوبة حول git](/git-qa)

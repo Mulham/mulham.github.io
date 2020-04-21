@@ -30,3 +30,4 @@ hidden: true
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
 
+هذا المقال جزء من: [أسئلة وأجوبة حول git](/git-qa)

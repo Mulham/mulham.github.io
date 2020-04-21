@@ -23,3 +23,4 @@ hidden: true
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)
 
+هذا المقال جزء من: [أسئلة وأجوبة حول git](/git-qa)

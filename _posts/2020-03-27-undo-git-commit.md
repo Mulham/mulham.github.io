@@ -31,3 +31,4 @@ hidden: true
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 
+هذا المقال جزء من: [أسئلة وأجوبة حول git](/git-qa)

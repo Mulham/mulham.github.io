@@ -28,3 +28,4 @@ hidden: true
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit)
 
+هذا المقال جزء من: [أسئلة وأجوبة حول git](/git-qa)
