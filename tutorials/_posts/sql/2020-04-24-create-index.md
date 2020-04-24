@@ -109,4 +109,6 @@ DROP INDEX index_name;
 		DROP INDEX index_name; 
 
 {% endhighlight %}
-***
+
+
+التالي: [Auto Increment](auto-increment)

@@ -175,4 +175,4 @@ Oracle 10G والإصدارات الأحدث:
 | 2 |	Svendson |	Tove |	Borgvn 23 |	Sandnes |
 | 3 | 	Pettersen |	Kari |	Storgt 20 |	Stavanger |
 
-
+التالي: [القيود](القيود)

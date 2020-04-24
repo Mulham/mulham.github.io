@@ -53,3 +53,4 @@ DROP TABLE table_name;
 
 {% endhighlight %}
 
+التالي: [تعديل جدول](تعديل-جدول)

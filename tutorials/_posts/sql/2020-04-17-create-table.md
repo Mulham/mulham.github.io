@@ -101,4 +101,4 @@ author: husam
 
 {% endhighlight %}
 
-
+التالي: [حذف جدول](حذف-جدول)

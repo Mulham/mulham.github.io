@@ -168,4 +168,4 @@ FOREIGN KEY هو حقل (أو مجموعة من الحقول) في أحد الج
 
 {% endhighlight %}
 
-
+التالي: [Check](check)
