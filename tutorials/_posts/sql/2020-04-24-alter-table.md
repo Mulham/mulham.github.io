@@ -1,7 +1,7 @@
 ---
 permalink: /sql/تعديل-جدول
 layout: post
-date: 2020-04-17
+date: 2020-04-24
 title: سلسلة دروس SQL| تعديل جدول
 type: tutorial
 lesson: 41
