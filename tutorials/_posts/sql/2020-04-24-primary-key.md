@@ -1,3 +1,20 @@
+---
+permalink: /sql/primary-key
+layout: post
+date: 2020-04-24
+title: سلسلة دروس SQL| Primary Key
+type: tutorial
+lesson: 45
+hidden: true
+comments: true
+author: husam
+---
+
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
+
+* Toc
+{:toc}
+
 # قيد PRIMARY KEY في SQL
 
 القيد PRIMARY KEY يعرّف بشكل فريد كل سجل في جدول.
@@ -100,9 +117,9 @@ CREATE TABLE Persons (
 
 **ملاحظة:** إذا كنت تستخدم عبارة ALTER TABLE لإضافة PRIMARY KEY ، فيجب أن يكون عمود (أعمدة) PRIMARY KEY قد تم تعريفه بالفعل على أنه لا يحتوي على قيم NULL (عندما تم إنشاء الجدول لأول مرة).
 
-# ابعاد القيد PRIMARY KEY
+# حذف القيد PRIMARY KEY
 
-لإسقاط قيد PRIMARY KEY ، استخدم SQL التالية:
+لحذف قيد PRIMARY KEY، استخدم عبارة SQL التالية:
 
 **MySQL:**
 
@@ -123,17 +140,6 @@ CREATE TABLE Persons (
 		DROP CONSTRAINT PK_Person; 
 
 {% endhighlight %}
-
-***
-
-
-
-
-
-
-
-
-
 
 
 

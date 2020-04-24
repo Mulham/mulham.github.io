@@ -1,3 +1,20 @@
+---
+permalink: /sql/تعديل-جدول
+layout: post
+date: 2020-04-17
+title: سلسلة دروس SQL| تعديل جدول
+type: tutorial
+lesson: 41
+hidden: true
+comments: true
+author: husam
+---
+
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
+
+* Toc
+{:toc}
+
 # عبارة ALTER TABLE في SQL
 
 يتم استخدام عبارة ALTER TABLE لإضافة أعمدة أو حذفها أو تعديلها في جدول موجود.
@@ -115,8 +132,8 @@ Oracle 10G والإصدارات الأحدث:
 
 | ID |	LastName |	FirstName |	Address |	City |	DateOfBirth |
 | --- | --------- | ------------- | ----------- | ---------- | ------------- |
-| 1 |	Hansen |	Ola |	Timoteivn 10 |	Sandnes |                   |	 
-| 2 |	Svendson |	Tove |	Borgvn 23 |	Sandnes |                   |	 
+| 1 |	Hansen |	Ola |	Timoteivn 10 |	Sandnes |                   |	
+| 2 |	Svendson |	Tove |	Borgvn 23 |	Sandnes |                   |	
 | 3 |	Pettersen |	Kari |	Storgt 20 |	Stavanger |                 |	
 
 # مثال على تغيير نوع البيانات
@@ -157,18 +174,5 @@ Oracle 10G والإصدارات الأحدث:
 | 1 |	Hansen |	Ola |	Timoteivn 10 |	Sandnes |
 | 2 |	Svendson |	Tove |	Borgvn 23 |	Sandnes |
 | 3 | 	Pettersen |	Kari |	Storgt 20 |	Stavanger |
-
-***
-
-
-
-
-
-
-
-
-
-
-
 
 

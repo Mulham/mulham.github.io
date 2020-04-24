@@ -1,4 +1,21 @@
-#عبارة SQL AUTO INCREMENT
+---
+permalink: /sql/auto-increment
+layout: post
+date: 2020-04-24
+title: سلسلة دروس SQL| Auto Increment
+type: tutorial
+lesson: 50
+hidden: true
+comments: true
+author: husam
+---
+
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
+
+* Toc
+{:toc}
+
+# عبارة SQL AUTO INCREMENT
 
 تسمح الزيادة التلقائية بإنشاء رقم فريد تلقائيًا عند إدراج سجل جديد في جدول.
 
@@ -161,14 +178,5 @@ VALUES (seq_person.nextval,'Lars','Monsen');
 {% endhighlight %}
 
 ستقوم عبارة SQL أعلاه بإدراج سجل جديد في جدول "الأشخاص". سيتم تعيين الرقم التالي من تسلسل seq_person لعمود "Personid". سيتم تعيين عمود "الاسم الأول" على "لارس" وسيتم تعيين عمود "الاسم الأخير" على "مونسين".
-
-***
-
-
-
-
-
-
-
 
 

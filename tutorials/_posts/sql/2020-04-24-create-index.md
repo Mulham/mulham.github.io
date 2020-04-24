@@ -1,3 +1,21 @@
+---
+permalink: /sql/create-index
+layout: post
+date: 2020-04-24
+title: سلسلة دروس SQL| Create Index
+type: tutorial
+lesson: 49
+hidden: true
+comments: true
+author: husam
+---
+
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
+
+* Toc
+{:toc}
+
+
 # عبارة SQL  CREATE INDEX
 
 يتم استخدام عبارة CREATE INDEX لإنشاء فهارس في الجداول.
@@ -6,7 +24,7 @@
 
 **ملاحظة:** تحديث الجدول باستخدام الفهارس يستغرق وقتًا أطول من تحديث الجدول بدون (لأن الفهارس تحتاج أيضًا إلى تحديث). لذا، قم فقط بإنشاء فهارس على الأعمدة التي سيتم البحث عنها بشكل متكرر.
 
-# يناء جملةCREATE INDEX
+# يناء جملة CREATE INDEX
 
 إنشاء فهرس على جدول يسمح بقيم مكررة:
 
@@ -18,7 +36,7 @@
 
 {% endhighlight %}
 
-# بناء جملةCREATE UNIQUE INDEX
+# بناء جملة CREATE UNIQUE INDEX
 
 إنشاء فهرس فريد على جدول. القيم المكررة غير مسموح بها:
 
@@ -92,8 +110,3 @@ DROP INDEX index_name;
 
 {% endhighlight %}
 ***
-
-
-
-
-

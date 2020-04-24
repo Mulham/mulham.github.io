@@ -1,3 +1,20 @@
+---
+permalink: /sql/foreign-key
+layout: post
+date: 2020-04-24
+title: سلسلة دروس SQL| FOREIGN KEY
+type: tutorial
+lesson: 46
+hidden: true
+comments: true
+author: husam
+---
+
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
+
+* Toc
+{:toc}
+
 # قيد FOREIGN KEY في SQL
 
 FOREIGN KEY هو مفتاح يستخدم لربط جدولين معًا.
@@ -128,7 +145,7 @@ FOREIGN KEY هو حقل (أو مجموعة من الحقول) في أحد الج
 
 # حذف القيد FOREIGN KEY
 
-لحذف قيد FOREIGN KEY، استخدم SQL التالية:
+لحذف قيد FOREIGN KEY، استخدم عبارة SQL التالية:
 
 **MySQL:**
 

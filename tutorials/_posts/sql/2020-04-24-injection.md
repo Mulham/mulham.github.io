@@ -1,3 +1,20 @@
+---
+permalink: /sql/injection
+layout: post
+date: 2020-04-24
+title: سلسلة دروس SQL| injection
+type: tutorial
+lesson: 53
+hidden: true
+comments: true
+author: husam
+---
+
+هذه المقالة جزء من سلسلة دروس SQL، يمكنك الاطلاع على [الفهرس](intro)
+
+* Toc
+{:toc}
+
 # حقن SQL
 
 حقن SQL هو تقنية إدخال التعليمات البرمجية التي قد تدمر قاعدة البيانات الخاصة بك.
@@ -253,25 +270,6 @@ SQL أعلاه صالحة وستُرجع جميع الصفوف من جدول "ا
 		$stmt->execute();
 
 {% endhighlight %}
-
-***
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
