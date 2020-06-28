@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-06-23T23:49:01+03:00</updated>
+	<updated>2020-06-28T17:46:58+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -13,7 +13,529 @@
 
 	
 		<entry>
-			<title>إنشاء موقع مجاني في خمس دقائق بأفضل التقنيات</title>
+			<title>التخصيص الديناميكي للذاكرة في لغة سي</title>
+			<link href="http://mulham.github.io/%D8%A7%D9%84%D8%AA%D8%AE%D8%B5%D9%8A%D8%B5-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D9%85%D9%8A%D9%83%D9%8A-%D9%84%D9%84%D8%B0%D8%A7%D9%83%D8%B1%D8%A9-%D9%81%D9%8A-%D8%B3%D9%8A/"/>
+			<updated>2020-06-28T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//التخصيص-الديناميكي-للذاكرة-في-سي</id>
+			<content type="html">&lt;p&gt;بما إن لغة سي لغة هيكلية فإن لها قواعد ثابتة في البرمجة، ومن ذلك تغيير حجم مصفوفة.
+المصفوفة هي مجموعة من العناصر المخزنة بأماكن متصلة من الذاكرة (اي ليست بأماكن متقطعة - بأماكن مختلفة من الذاكرة).&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;592&quot; height=&quot;173&quot; src=&quot;/assets/articles/Arrays.png&quot; alt=&quot;مخطط الصنف للصراف الالي&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;كما ترى فإن حجم (طول) المصفوفة أعلاه هو 9. وهو ثابت في حالة المصفوفات. ولكن قد نحتاج إلى تغيير هذا الحجم في حالات مثل:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;في حال كان هناك حاجة لإدخال خمسة عناصر فقط في المصفوفة، في هذه الحالة تكون العناصر الأربعة المتبقية والفارغة هي عبارة عن هدر للذاكرة ونحتاج لتخفيض حجم المصفوفة من 9 إلى 5.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;في حال كانت جميع العناصر التسعة في المصفوفة ممتلئة وكنا نحتاج لإدخال 3 عناصر إضافيين. في هذه الحالة فإننا نحتاج لتوسيع حجم المصفوفة من 9 إلى 12.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;عملية تغيير حجم المصفوفة في لغة سي تدعى “التخصيص الديناميكي للذاكرة” أو بالإنجليزية “Dynamic Memory Allocation” وديناميكي عموما يعني حركي أو متغير أي غير ثابت.&lt;/p&gt;
+
+&lt;p&gt;وبالتالي يُعرّف التخصيص الديناميكي للذاكرة على أنه عملية يتم بها تغيير حجم هيكل بيانات (مثل المصفوفة) مع الزمن.&lt;/p&gt;
+
+&lt;p&gt;وهناك عدة دالات في لغة سي لتحقيق هذه المهمات. وهي أربع دالات ضمن مكتبة &lt;stdlib.h&gt; :&lt;/stdlib.h&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;()malloc&lt;/li&gt;
+  &lt;li&gt;()calloc&lt;/li&gt;
+  &lt;li&gt;()free&lt;/li&gt;
+  &lt;li&gt;()realloc&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;لنلقي نظرة على كل دالة فيهم بشكل أوسع&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#دالة-malloc-في-لغة-سي&quot; id=&quot;markdown-toc-دالة-malloc-في-لغة-سي&quot;&gt;دالة malloc في لغة سي&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#دالة-calloc-في-لغة-سي&quot; id=&quot;markdown-toc-دالة-calloc-في-لغة-سي&quot;&gt;دالة calloc في لغة سي&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#دالة-free-في-لغة-سي&quot; id=&quot;markdown-toc-دالة-free-في-لغة-سي&quot;&gt;دالة free في لغة سي&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#دالة-realloc-في-لغة-سي&quot; id=&quot;markdown-toc-دالة-realloc-في-لغة-سي&quot;&gt;دالة realloc في لغة سي&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;دالة-malloc-في-لغة-سي&quot;&gt;دالة malloc في لغة سي&lt;/h1&gt;
+
+&lt;p&gt;وهي اختصار لـ “memory allocation” وتستخدم لتخصيص حجرة واحدة كبيرة من الذاكرة ديناميكيًا وبحجم محدد (هذا يعني أن الحجم الأولي لهذه الحجرة في الذاكرة يكون محددًّا لكنه قابل للتغيير فيما بعد ولهذا نقول عنه ديناميكي).&lt;/p&gt;
+
+&lt;p&gt;تقوم هذه الدالة بإرجاع مؤشّر من نوع void والذي يمكن تحويله لمؤشر من أي نوع آخر. كما تقوم بتهيئة كل حجرة بقيمة عشوائية افتراضية.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;صيغة الدالة:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ptr = (cast-type*) malloc(byte-size)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ptr = (int*) malloc(100 * sizeof(int));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حيث أن حجم الـ int هو 4 بايت، وبالتالي ستقوم هذه العبارة بتخصيص 400 بايت في الذاكرة. وسيحمل المؤشر ptr عنوان أول بايت في الحجرة المخصصة.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;640&quot; height=&quot;220&quot; src=&quot;/assets/articles/Malloc-function-in-c.png&quot; alt=&quot;دالة malloc في لغة سي&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;إذا كانت الذاكرة غير كافية لعملية التخصيص تلك فستفشل العملية وسيتم إرجاع مؤشر NULL.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;stdlib.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// This pointer will hold the &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// base address of the block created &lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Get the number of elements for the array &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter number of elements: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Dynamically allocate memory using malloc() &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;malloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Check if the memory has been successfully &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// allocated by malloc or not &lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory not allocated.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Memory has been successfully allocated &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory successfully allocated using malloc.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Get the elements of the array &lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Print the elements of the array &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The elements of the array are: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;النتيجة&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Enter number of elements: 5
+    Memory successfully allocated using malloc.
+    The elements of the array are: 1, 2, 3, 4, 5,
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;دالة-calloc-في-لغة-سي&quot;&gt;دالة calloc في لغة سي&lt;/h1&gt;
+
+&lt;p&gt;وهي اختصار لـ “contiguous allocation” أي تخصيص مستمر (متواصل/متجاور) وتستخدم لتخصيص عدد محدد من الحجرات (blocks) في الذاكرة ومن نوع محدد (رقم صحيح أم عشري أم أحرف) ديناميكيًا. وتقوم بتهيئة كل حجرة بالقيمة الافتراضية 0.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;صيغة الدالة:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ptr = (cast-type*)calloc(n, element-size);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ptr = (float*) calloc(25, sizeof(float));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;تقوم هذه العبارة بتخصيص مساحة متواصلة أي متجاورة في الذاكرة لـ 25 عنصر وكل منهم بحجم الـ float (أي 4 بايت).&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;640&quot; height=&quot;220&quot; src=&quot;/assets/articles/calloc-function-in-c.png&quot; alt=&quot;دالة calloc في لغة سي&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;إذا كانت الذاكرة غير كافية لعملية التخصيص تلك فستفشل العملية وسيتم إرجاع مؤشر NULL.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;stdlib.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// This pointer will hold the &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// base address of the block created &lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Get the number of elements for the array &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter number of elements: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Dynamically allocate memory using calloc() &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Check if the memory has been successfully &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// allocated by calloc or not &lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory not allocated.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Memory has been successfully allocated &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory successfully allocated using calloc.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Get the elements of the array &lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Print the elements of the array &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The elements of the array are: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;النتيجة&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Enter number of elements: 5
+    Memory successfully allocated using calloc.
+    The elements of the array are: 1, 2, 3, 4, 5,
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;دالة-free-في-لغة-سي&quot;&gt;دالة free في لغة سي&lt;/h1&gt;
+
+&lt;p&gt;وتستخدم لإلغاء تخصيص الذاكرة ديناميكيًا. فعند تخصيص الذاكرة باستخدام malloc و calloc لا يتم إلغاء تخصيصهم تلقائيًا. لذا فإن هذه الدالة free تستخدم في حالة وجود ذاكرة مخصصة ديناميكيا، وتساعد في تخفيض الهدر أو الإسراف في الذاكرة من خلال إلغاء تخصيصها وجعلها حرة للاستخدام.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;صيغة الدالة:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    free(ptr);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;/assets/articles/Free-function-in-c.png&quot; alt=&quot;دالة free في لغة سي&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;stdlib.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// This pointer will hold the &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// base address of the block created &lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Get the number of elements for the array &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter number of elements: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Dynamically allocate memory using malloc() &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;malloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Dynamically allocate memory using calloc() &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ptr1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Check if the memory has been successfully &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// allocated by malloc or not &lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory not allocated.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Memory has been successfully allocated &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory successfully allocated using malloc.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Free the memory &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;free&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Malloc Memory successfully freed.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Memory has been successfully allocated &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Memory successfully allocated using calloc.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Free the memory &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;free&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Calloc Memory successfully freed.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;النتيجة&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Enter number of elements: 5
+    Memory successfully allocated using malloc.
+    Malloc Memory successfully freed.
+
+    Memory successfully allocated using calloc.
+    Calloc Memory successfully freed.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أي أنه في هذا المثال قمنا بتخصيص ذاكرة باستخدام malloc ثم تحريرها (إلغاء تخصيصها) باستخدام free ثم تخصيص ذاكرة أخرى باستخدام calloc وتحريرها أيضًا باستخدام free.&lt;/p&gt;
+
+&lt;h1 id=&quot;دالة-realloc-في-لغة-سي&quot;&gt;دالة realloc في لغة سي&lt;/h1&gt;
+
+&lt;p&gt;أي “re-allocaion” وتعني إعادة تخصيص وتستخدم لتغيير تخصيص ذاكرة تم تخصيصها من قبل ديناميكيًا. فمثلًا إذا كانت الذاكرة التي تم تخصيصها من قبل باستخدام malloc و calloc لم تعد كافية (احتجنا لإضافة عناصر جديدة وبالتالي توسيعها) فيتم استخدام realloc لإعادة تخصيص الذاكرة ديناميكيًا.&lt;/p&gt;
+
+&lt;p&gt;تحافظ إعادة التخصيص هذه على الذاكرة الموجودة أصلا وقيمها وتقوم بتهئية الحجرات الجديدة بقيمة افتراضية عشوائية.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;صيغة الدالة:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ptr = realloc(ptr, newSize);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حيث يتم إعادة تخصيص ptr وفق الحجم الجديد “newSize”.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;/assets/articles/realloc-function-in-c.png&quot; alt=&quot;دالة realloc في لغة سي&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;إذا كانت الذاكرة غير كافية لعملية التخصيص تلك فستفشل العملية وسيتم إرجاع مؤشر NULL.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;مثال&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;stdlib.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// This pointer will hold the &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// base address of the block created &lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Get the number of elements for the array &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter number of elements: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Dynamically allocate memory using calloc() &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Check if the memory has been successfully &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// allocated by malloc or not &lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory not allocated.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Memory has been successfully allocated &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory successfully allocated using calloc.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Get the elements of the array &lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Print the elements of the array &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The elements of the array are: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Get the new size for the array &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Enter the new size of the array: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Dynamically re-allocate memory using realloc() &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;realloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Memory has been successfully allocated &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Memory successfully re-allocated using realloc.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Get the new elements of the array &lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+		&lt;span class=&quot;c1&quot;&gt;// Print the elements of the array &lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The elements of the array are: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+			&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; 
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+		&lt;span class=&quot;n&quot;&gt;free&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;النتيجة&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Enter number of elements: 5
+    Memory successfully allocated using calloc.
+    The elements of the array are: 1, 2, 3, 4, 5, 
+
+    Enter the new size of the array: 10
+    Memory successfully re-allocated using realloc.
+    The elements of the array are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;يرجى مراسلتي في حال وجود أي استفسار أو إضافة.&lt;/p&gt;
+
+&lt;p&gt;هذا المقال مترجم وبتصرّف، [المصدر])(https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>التعامل مع الملفات بلغة سي</title>
+			<link href="http://mulham.github.io/%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D8%A8%D9%84%D8%BA%D8%A9-%D8%B3%D9%8A/"/>
+			<updated>2020-06-27T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//التعامل-مع-الملفات-بلغة-سي</id>
+			<content type="html">&lt;p&gt;سأشرح في هذا المقال كيفية التعامل مع الملفات في لغة سي ويتضمن ذلك فتح ملف والقراءة منه أو الكتابة فوقه أو إضافة أسطر له ثم إغلاقه.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#فتح-وإغلاق-ملف-وأوضاعهم-في-لغة-سي&quot; id=&quot;markdown-toc-فتح-وإغلاق-ملف-وأوضاعهم-في-لغة-سي&quot;&gt;فتح وإغلاق ملف وأوضاعهم في لغة سي&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الفرق-بين-الوضع-النصي-والوضع-الثنائي-في-لغة-سي&quot; id=&quot;markdown-toc-الفرق-بين-الوضع-النصي-والوضع-الثنائي-في-لغة-سي&quot;&gt;الفرق بين الوضع النصي والوضع الثنائي في لغة سي&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;فتح-وإغلاق-ملف-وأوضاعهم-في-لغة-سي&quot;&gt;فتح وإغلاق ملف وأوضاعهم في لغة سي&lt;/h1&gt;
+
+&lt;p&gt;هناك دالات عدة في لغة سي للقيام بذلك، وسنستخدم هنا دالتي:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fopen() لفتح ملف&lt;/li&gt;
+  &lt;li&gt;fclose() لإغلاقه&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;حيث يشير الحرف f في البداية إلى الكلمة File أي ملف.&lt;/p&gt;
+
+&lt;p&gt;أنماط (أوضاع) فتح الملف مع fopen هي:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;وضع القراءة &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; اختصارا لـ read حيث يقوم بفتح الملف للقراءة فقط، الملف يجب أن يكون موجودًا.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;وضع الكتابة &lt;code class=&quot;highlighter-rouge&quot;&gt;w&lt;/code&gt; اختصارًا لـ write ويقوم بإنشاء ملف فارغ جديد للكتابة. إذا كان الملف موجودا فسيقوم بحذف محتوى الملف واعتباره ملف جديد فارغ.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;وضع الإضافة &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; اختصارًا لـ append ويقوم بإضافة محتوى لنهاية ملف موجود. أو يُنشئ ملفا جديدا في حالة عدم وجوده.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;لنلقي نظرة الآن على الكود التالي وقد قمت بوضع تعليقات ضمنه بالعربية لفهمه:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;# include &amp;lt;stdio.h&amp;gt;
+# include &amp;lt;stdlib.h&amp;gt;
+# include &amp;lt;string.h&amp;gt;
+# include &amp;lt;ctype.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// argc هو عدد المدخلات عند تشغيل البرنامج من موجه الأوامر&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// argv هي مصفوفة المدخلات&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// مثلا عند تشغيل أمر من موجه الأوامر وليكن اسم البرنامج a نكتب:&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ./a arg1 arg2&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// وبالتالي نكون قد أدخلنا مُدخلين للبرنامج&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//mulham.github.io&lt;/span&gt;
+
+	&lt;span class=&quot;cm&quot;&gt;/* ملف الإدحال */&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;FILE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;cm&quot;&gt;/* ملف الإخراج */&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;FILE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;cm&quot;&gt;/* local buffer */&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	&lt;span class=&quot;cm&quot;&gt;/* counter */&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;cm&quot;&gt;/* المعطيات أو المدخلات التي يجب أن تعطى عند تشغيل البرنامج هم اثنان
+    عدا اسم البرنامج نفسه، وإن لم يكن كذلك فسيعطى رسالة خطأ ويتم الخروج من البرنامج
+	*/&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; usage : &amp;lt;name of exe&amp;gt; &amp;lt;inputfiles &amp;gt; &amp;lt;outputfile &amp;gt;!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; Dont forget to create the input file before execution!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;cm&quot;&gt;/* فتح ملف الإدخال للقراءة */&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;cm&quot;&gt;/* في حالة حدوث خطأ بالفتح أعط رسالة خطأ وأنه البرنامج */&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; Error : Can ’t open ’%s’ for read !&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;cm&quot;&gt;/* فتح ملف الإخراج للكتابة حيث سيتم الكتابة فوق الملف الموجود
+	*/&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;f2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;cm&quot;&gt;/* في حالة حدوث خطأ بالفتح أعط رسالة خطأ وأنه البرنامج */&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; Error : can ’t open ’%s’ for write !&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;cm&quot;&gt;/* قراءة ملف الإدخال ضمن 100 بايت وتبديل الأحرف الصغيرة بالكبيرة
+	* إلى أن يصل لنهاية الملف
+	*/&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fgets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;cm&quot;&gt;/* Puffer Zeichen f. Zeichen durchgehen */&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strlen&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;cm&quot;&gt;/* falls Kleinbuchstaben */&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;islower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;cm&quot;&gt;/* dann in den entsp . Grossbuchstaben umwandeln
+				* dies entspricht der Funktion toupper ()
+				*/&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// يمكن استخدام الدالة toUpper() هنا بدلا من هذه الطريقة&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'A'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;fputs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* Puffer in die Ausgabedatei schreiben */&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;cm&quot;&gt;/* إغلاق الملفات وإعطاء رسالة وإنهاء البرنامج */&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;fclose&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;fclose&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; Programm Ende !&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;هل لاحظت وجود rt ؟ والسؤال ماهذه الـ t بعد وضعية القراءة r؟&lt;/p&gt;
+
+&lt;p&gt;حرف t هنا يُشير للوضع النصي “text mode” ويمكن حذفها! حيث لايوجد فرق بين r و rt أو w و wt وذلك ﻷن الوضع النصي يكون هو الافتراضي.&lt;/p&gt;
+
+&lt;p&gt;إذًا هل هناك أوضاع أخرى غير الوضع النصي؟&lt;/p&gt;
+
+&lt;p&gt;نعم يوجد b وهو الوضع الثنائي “binary mode”&lt;/p&gt;
+
+&lt;h1 id=&quot;الفرق-بين-الوضع-النصي-والوضع-الثنائي-في-لغة-سي&quot;&gt;الفرق بين الوضع النصي والوضع الثنائي في لغة سي&lt;/h1&gt;
+
+&lt;p&gt;بالنسبة ﻷنظمة لينكس ويونكس بشكل عام فلا يوجد اختلاف بين r و rb. وبالتحديد فإنه عند فتح ملف باستخدام ()fopen فإن المؤشر pointer له يسلك نفس السلوك في كلا الوضعين.&lt;/p&gt;
+
+&lt;p&gt;وبالنسبة للويندوز أو بشكل عام للأنظمة التي تستخدم أكثر من محرف (المحرف هو حرف أو رقم أو رمز) لتمثيل “أسطر جديدة” فالملف المفتوح باستخدام ()fopen يتصرف وكأن كل هذه المحارف هي محرف واحد n\&lt;/p&gt;
+
+&lt;p&gt;إذا أردت الكتابة أو القراءة من الملفات النصية على أي نظام فاستخدم r و w مع ()fopen (أي بدون تحديد الوضع ثنائي أو نصي) حيث سيضمن ذلك التعامل مع الملف بالشكل الصحيح.&lt;/p&gt;
+
+&lt;p&gt;وإذا كنت تفتح ملف ثنائي binary file استخدم rb و wb وبهذا لن تؤذي ترجمة الأسطر الجديدة الخاطئة ملفاتك.&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>إنشاء موقع وب بأقصر وقت وأفضل التقنيات المجانية</title>
 			<link href="http://mulham.github.io/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D8%A8%D8%A3%D9%82%D9%88%D9%89-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%88%D8%A8%D8%AE%D9%85%D8%B3-%D8%AF%D9%82%D8%A7%D8%A6%D9%82/"/>
 			<updated>2020-06-23T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//إنشاء-موقعك-بأقوى-الخدمات-وبخمس-دقائق</id>
@@ -26,7 +548,7 @@
     &lt;p&gt;نطاق (اسم) الموقع دوت كوم أو ماشابه (اختياري)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;صفحات Gıthub&lt;/p&gt;
+    &lt;p&gt;صفحات Github&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Cloudflare&lt;/p&gt;
@@ -39,13 +561,20 @@
 
 &lt;p&gt;يمكن شراء اسم الموقع (Domain Name) والذي ينتهي ب com. أو net. أو غير ذلك من الكثير من المواقع التي تتيح خدمة شراء النطاقات. ويمكن أن أقترح عليكم هنا موقع namecheap.com حيث أرى أن الأسعار فيه قد تكون أرخص ما يمكن بالإضافة للمزايا التي يقدمها مثل إخفاء معلومات المالك مجانًا. وكما يحوي خدمات أخرى كثيرة مدفوعة.&lt;/p&gt;
 
-&lt;p&gt;بالنسبة لاختيار اسم الموقع فلست متخصصًا في ذلك ولكن لا بأس بذكر ما أعرفه سريعًا. أولًا أشهر النطاقات هي com. فإذا وجدت اسم مناسب متاح لهذا النطاق فالأفضل حجزه بدلًا من غيره. ثانيا يجب أن يكون الاسم قصير قد المستطاع ولكن بنفس الوقت يحوي كلمة مفهومة قابلة للتذكر ومعبرة عن محتوى الموقع ولكن الأخير ليس شرطًا ضروريًا. ولكن الأهم أن لا يكون مجرد أحرف متداخلة مع بعضها غير قابلة للفظ والنطق!.. 
-على سبيل المثال فلقد أحببت أنا أن أقتني موقعًا يهتم بقواعد اللغة العربية والأدب العربي..ففكرت في اسم شخصية معروفة وكان لها اهتمام في هذا المجال فوجدت شخصية العالم “الفراهيدي” والذي هو مؤسس علم العروض كما أنه معروفا في مجال اللغة العربية عموما. ولكن الموقع الذي أردته أردت أن يكون غير تجاري لذلك قمت بشراء الاسم farahidy.org وكالعادة عن اقتناء موقع ينتهي بـ org. فمن الجيد وربما الضروري اقتناء نفس الاسم بلاحقة com. والذي بدوره يقوم بالتحويل تلقائيًا للنطاق الصحيح وهو في حالتنا org. والسبب هو أن المستخدمين عموما يفترضوا أن الموقع ينتهي بـ com. ويقوموا بالذهاب تلقائيا لذلك النطاق. جرب مثلًا اكتب wikipedia.com وستجد كيف يقوم بتحويلك بـ wikipedia.org&lt;/p&gt;
+&lt;p&gt;بالنسبة لاختيار اسم الموقع فلست متخصصًا في ذلك ولكن لا بأس بذكر ما أعرفه سريعًا. أولًا أشهر النطاقات هي com. فإذا وجدت اسم مناسب متاح لهذا النطاق فالأفضل حجزه بدلًا من غيره. ثانيا يجب أن يكون الاسم قصير قدر المستطاع ولكن بنفس الوقت يحوي كلمة مفهومة قابلة للتذكر ومعبرة عن محتوى الموقع ولكن الأخير ليس شرطًا ضروريًا. ولكن الأهم أن لا يكون مجرد أحرف متداخلة مع بعضها غير قابلة للفظ والنطق! وأيضًا أن يكون الاسم لايحوي شخطة &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; أو رقم فذلك أفضل.. 
+على سبيل المثال فلقد أحببت أنا أن أقتني موقعًا يهتم بقواعد اللغة العربية والأدب العربي..ففكرت في اسم شخصية معروفة وكان لها اهتمام في هذا المجال فوجدت شخصية العالم “الفراهيدي” والذي هو مؤسس علم العَروض كما أنه معروفا في مجال اللغة العربية عموما. ولكن الموقع الذي أردته أردت أن يكون غير تجاري لذلك قمت بشراء الاسم farahidy.org وكالعادة عن اقتناء موقع ينتهي بـ org. فمن الجيد وربما الضروري اقتناء نفس الاسم بلاحقة com. والذي بدوره يقوم بالتحويل تلقائيًا للنطاق الصحيح وهو في حالتنا org. والسبب هو أن المستخدمين عموما يفترضوا أن الموقع ينتهي بـ com. ويقوموا بالذهاب تلقائيا لذلك النطاق. جرب مثلًا اكتب wikipedia.com وستجد كيف يقوم بتحويلك لـ wikipedia.org&lt;/p&gt;
 
 &lt;h1 id=&quot;صفحات-github&quot;&gt;صفحات Github&lt;/h1&gt;
 
 &lt;p&gt;الآن وبعد حصولنا على اسم وعنوان الموقع يجب ربطه بالمحتوى المطلوب. وهنا إن لم يكن لديك موقع جاهز فيمكن إنشاء موقع بسهولة عبر قوالب جاهزة وتقوم فقط بملئها بمحتواك الخاص. 
 يجب أن أنوه هنا أنه يوجد لدي مقال منفصل عن صفحات Github فيرجي مراجعته قبل الإكمال من &lt;a href=&quot;/github-pages&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;بعد ذلك لربط صفحات جتهب بنطاق (اسم) موقعك المدفوع ستذهب إلى الحزمة على جتهب ومن القائمة الأفقية أعلى الحزمة ستذهب لزر الإعدادات Settings ثم انزل للأسفل إلى قسم Gihub Pages وأضف اسم موقعك كما في الصورة&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;475&quot; height=&quot;307&quot; src=&quot;/assets/articles/add-custom-domain-to-github-pages.png&quot; alt=&quot;إضافة اسم موقعك المخصص لصفحات جتهب&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h1 id=&quot;cloudflare&quot;&gt;Cloudflare&lt;/h1&gt;
 
@@ -69,23 +598,34 @@
 &lt;/ul&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;&quot; width=&quot;652&quot; height=&quot;389&quot; src=&quot;/assets/articles/cloudflare-add-site.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;652&quot; height=&quot;389&quot; src=&quot;/assets/articles/cloudflare-add-site.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;بعد ذلك ستختار الخطة المناسبة لحسابك، يمكنك اختيار الخطة المجانية Free ثم Continue&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;&quot; width=&quot;509&quot; height=&quot;265&quot; src=&quot;/assets/articles/cloudflare-add-site1.png&quot; alt=&quot;1كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;265&quot; src=&quot;/assets/articles/cloudflare-add-site1.png&quot; alt=&quot;1كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;بعدها ستظهر قائمة طويلة تُظهر تسجيلات DNS. اضغط في الأسفل على Continue&lt;/p&gt;
+&lt;p&gt;بعدها ستظهر قائمة طويلة تُظهر تسجيلات DNS. قم بإضافة عناوين جتهب لها وفق البيانات الموضحة في الصورة التالية (مع استبدال rawajitqan بنطاق موقعك):&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;130&quot; src=&quot;/assets/articles/Cloudflare-github-nameservers.png&quot; alt=&quot;كيفية ربط جتهب مع موقع كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ثم اضغط في الأسفل على Continue&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;معلومة&lt;/strong&gt;: يمكنك أيضًا الحصول على بريد إلكتروني مجاني لاسم موقعك المدفوع من خلال خدمة zoho.com حيث يوفر لك خدمة البريد الإلكتروني و 5 عناوين للبريد الكتروني بشكل مجاني، ولربطها ستحتاج لإضافة بيانات موقع zoho أيضًا من نفس القائمة أعلاه.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;ثم سيعطيك العناوين المطلوب إدخالها في إعدادات نطاق الموقع لربطها مع Cloudflare.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;&quot; width=&quot;620&quot; height=&quot;499&quot; src=&quot;/assets/articles/cloudflare-add-site2.png&quot; alt=&quot;2كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;620&quot; height=&quot;499&quot; src=&quot;/assets/articles/cloudflare-add-site2.png&quot; alt=&quot;2كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -94,7 +634,7 @@
 &lt;/ul&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;&quot; width=&quot;438&quot; height=&quot;211&quot; src=&quot;/assets/articles/Namecheap-set-nameservers.png&quot; alt=&quot;ضبط عنوان السيرفر لنطاق الموقع في Namecheap&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;438&quot; height=&quot;211&quot; src=&quot;/assets/articles/Namecheap-set-nameservers.png&quot; alt=&quot;ضبط عنوان السيرفر لنطاق الموقع في Namecheap&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -103,14 +643,14 @@
 &lt;p&gt;يمكنك أخيرا من إعدادات cloudflare جعل موقع يستخدم الاتصال الآمن HTTPS بشكل دائم من خلال الضغط على اسم الموقع في الصفحة الرئيسية ثم الذهاب في القائمة الأفقية أعلاه لخيار SSL/TLS ثم في القائمة الأفقية أسفلها إلى الخيار Edge Certificates&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;&quot; width=&quot;562&quot; height=&quot;106&quot; src=&quot;/assets/articles/cloudflare-add-site4.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير4&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;562&quot; height=&quot;106&quot; src=&quot;/assets/articles/cloudflare-add-site4.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير4&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;ثم انزل قليلًا للأسفل وفعل خيار Always Use HTTPS&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;&quot; width=&quot;521&quot; height=&quot;215&quot; src=&quot;/assets/articles/cloudflare-add-site3.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير3&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;521&quot; height=&quot;215&quot; src=&quot;/assets/articles/cloudflare-add-site3.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير3&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -7912,6 +8452,8 @@
 
 &lt;p&gt;أرجو أن يكون المقال قد أفادك.&lt;/p&gt;
 
+&lt;p&gt;اقرأ أيضًا: &lt;a href=&quot;/التعامل-مع-الملفات-بلغة-سي&quot;&gt;التعامل مع الملفات بلغة سي&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;المرجع: درس مدخل إلى علم الحاسوب. د.بورجو يلدز - الجامعة التركية الألمانية&lt;/p&gt;
 </content>
 		</entry>
@@ -8439,6 +8981,8 @@
 &lt;p&gt;أرجو أن يكون المقال قد أفادك.&lt;/p&gt;
 
 &lt;p&gt;لمزيد من الأمثلة يرجى &lt;a href=&quot;https://mulham.github.io/c-language-examples2&quot;&gt;الضغط هنا&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;اقرأ أيضًا: &lt;a href=&quot;/التعامل-مع-الملفات-بلغة-سي&quot;&gt;التعامل مع الملفات بلغة سي&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;المرجع: درس مدخل إلى علم الحاسوب. د.بورجو يلدز - الجامعة التركية الألمانية&lt;/p&gt;
 </content>
