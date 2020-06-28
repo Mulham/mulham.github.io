@@ -23,4 +23,4 @@ published: true
 
 <amp-img  width="" height="" src="" alt=""></amp-img>
 
-{% include image.html width="744" height="655" src="/assets/articles/6.png" alt="مخطط الصنف للصراف الالي" %}
+{% include layout="responsive" image.html width="744" height="655" src="/assets/articles/6.png" alt="مخطط الصنف للصراف الالي" %}
