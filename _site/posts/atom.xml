@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-06-30T01:23:49+03:00</updated>
+	<updated>2020-06-30T01:32:18+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -17,9 +17,7 @@
 			<link href="http://mulham.github.io/linux/rmdir"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/rmdir</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;يُستخدم الأمر rmdir (وهو اختصار لـ remove directory) لحذف المجلدات الفارغة &lt;strong&gt;فقط&lt;/strong&gt;. أي مجلد يحوي بداخله مجلد أو ملف فلا يمكن حذفه بالأمر rmdir.&lt;/p&gt;
 
@@ -85,9 +83,7 @@
 			<link href="http://mulham.github.io/linux/rm"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/rm</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;الأمر rm وهو اختصار لـ remove ويُستخدم لحذف الملفات.&lt;/p&gt;
 
@@ -200,9 +196,7 @@
 			<link href="http://mulham.github.io/linux/pwd"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/pwd</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;اﻷمر pwd وهو اختصار لـ “print working directory” أي طباعة المسار الحالي.&lt;/p&gt;
 
@@ -246,9 +240,7 @@
 			<link href="http://mulham.github.io/linux/mv"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/mv</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;يُستخدم الأمر mv لنقل الملفات والمجلدات&lt;/p&gt;
 
@@ -400,9 +392,7 @@
 			<link href="http://mulham.github.io/linux/ls"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/ls</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;يُستخدم الأمر ls (اختصارًا لـ list) لعرض محتويات مجلد العمل الحالي والتي تتضمن الملفات والمجلدات&lt;/p&gt;
 
@@ -620,9 +610,7 @@
 			<link href="http://mulham.github.io/linux/gcc"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/gcc</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;مترجم الكود gcc وهو اختصار لـ “GNU Compiler Collection” وهو مترجم ﻷكواد لغة السي للينكس، أي أنه يقوم بتحويل الكود المكتوب بلغة السي للغة الآلة وجعله قابلًا للتنفيذ.&lt;/p&gt;
 
@@ -714,9 +702,7 @@
 			<link href="http://mulham.github.io/linux/cp"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/cp</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;يُستخدم الأمر cp (وهو اختصار لـ copy) لنسخ الملفات والمجلدات.&lt;/p&gt;
 
@@ -833,9 +819,7 @@
 			<link href="http://mulham.github.io/linux/cd"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//linux/cd</id>
-			<content type="html">&lt;blockquote&gt;
-  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;يُستخدم الأمر cd لتغيير مسار العمل ضمن الطرفية أو موجه سطر الأوامر (التيرمينال).&lt;/p&gt;
 
@@ -924,7 +908,7 @@
 
 &lt;p&gt;يُستخدم الأمر cat لعرض محتوى ملف نصي وكذلك لدمج عدة ملفات نصية في ملف واحد.&lt;/p&gt;
 
-&lt;p&gt;ولايقبل هذا الأمر الملجدات (أي يجب أن تكون القيمة بعد اسم الأمر لملف نصي وليس لمجلد)&lt;/p&gt;
+&lt;p&gt;ولايقبل هذا الأمر المجلدات (أي يجب أن تكون القيمة بعد اسم الأمر لملف نصي وليس لمجلد)&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
@@ -9666,7 +9650,7 @@
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;5.&lt;/p&gt;
+&lt;p&gt;7.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
 #include &amp;lt;time.h&amp;gt;
