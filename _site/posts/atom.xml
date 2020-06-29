@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-06-30T00:56:37+03:00</updated>
+	<updated>2020-06-30T01:23:49+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -14,10 +14,14 @@
 	
 		<entry>
 			<title>شرح الأمر rmdir في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/rmdir/"/>
+			<link href="http://mulham.github.io/linux/rmdir"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//rmdir</id>
-			<content type="html">&lt;p&gt;يُستخدم الأمر rmdir (وهو اختصار لـ remove directory) لحذف المجلدات الفارغة &lt;strong&gt;فقط&lt;/strong&gt;. أي مجلد يحوي بداخله مجلد أو ملف فلا يمكن حذفه بالأمر rmdir.&lt;/p&gt;
+			<id>http://mulham.github.io//linux/rmdir</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر rmdir (وهو اختصار لـ remove directory) لحذف المجلدات الفارغة &lt;strong&gt;فقط&lt;/strong&gt;. أي مجلد يحوي بداخله مجلد أو ملف فلا يمكن حذفه بالأمر rmdir.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
@@ -78,10 +82,14 @@
 	
 		<entry>
 			<title>شرح الأمر rm في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/rm/"/>
+			<link href="http://mulham.github.io/linux/rm"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//rm</id>
-			<content type="html">&lt;p&gt;الأمر rm وهو اختصار لـ remove ويُستخدم لحذف الملفات.&lt;/p&gt;
+			<id>http://mulham.github.io//linux/rm</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;الأمر rm وهو اختصار لـ remove ويُستخدم لحذف الملفات.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
@@ -189,10 +197,19 @@
 	
 		<entry>
 			<title>شرح الأمر pwd في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/pwd/"/>
+			<link href="http://mulham.github.io/linux/pwd"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//pwd</id>
-			<content type="html">&lt;p&gt;اﻷمر pwd وهو اختصار لـ “print working directory” أي طباعة المسار الحالي.&lt;/p&gt;
+			<id>http://mulham.github.io//linux/pwd</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;اﻷمر pwd وهو اختصار لـ “print working directory” أي طباعة المسار الحالي.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-pwd&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-pwd&quot;&gt;أمثلة على الأمر pwd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -226,10 +243,20 @@
 	
 		<entry>
 			<title>شرح الأمر mv في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/mv/"/>
+			<link href="http://mulham.github.io/linux/mv"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//mv</id>
-			<content type="html">&lt;p&gt;يُستخدم الأمر mv لنقل الملفات والمجلدات&lt;/p&gt;
+			<id>http://mulham.github.io//linux/mv</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر mv لنقل الملفات والمجلدات&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-mv&quot; id=&quot;markdown-toc-خيارات-الأمر-mv&quot;&gt;خيارات الأمر mv&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-mv&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-mv&quot;&gt;أمثلة على الأمر mv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -300,10 +327,12 @@
 	
 		<entry>
 			<title>شرح الأمر mkdir في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/mkdir/"/>
+			<link href="http://mulham.github.io/linux/mkdir"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//mkdir</id>
-			<content type="html">&lt;p&gt;يُستخدم الأمر mkdir لإنشاء مجلدات جديدة.&lt;/p&gt;
+			<id>http://mulham.github.io//linux/mkdir</id>
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;يُستخدم الأمر mkdir لإنشاء مجلدات جديدة.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
@@ -368,10 +397,20 @@
 	
 		<entry>
 			<title>شرح الأمر ls في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/ls/"/>
+			<link href="http://mulham.github.io/linux/ls"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//ls</id>
-			<content type="html">&lt;p&gt;يُستخدم الأمر ls (اختصارًا لـ list) لعرض محتويات مجلد العمل الحالي والتي تتضمن الملفات والمجلدات&lt;/p&gt;
+			<id>http://mulham.github.io//linux/ls</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر ls (اختصارًا لـ list) لعرض محتويات مجلد العمل الحالي والتي تتضمن الملفات والمجلدات&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-ls&quot; id=&quot;markdown-toc-خيارات-الأمر-ls&quot;&gt;خيارات الأمر ls&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-ls&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-ls&quot;&gt;أمثلة على الأمر ls&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -498,9 +537,9 @@
 	
 		<entry>
 			<title>سلسلة أساسيات أوامر لينكس</title>
-			<link href="http://mulham.github.io/intro/"/>
+			<link href="http://mulham.github.io/linux/intro"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//intro</id>
+			<id>http://mulham.github.io//linux/intro</id>
 			<content type="html">&lt;p&gt;سأشرح في هذه السلسلة العديد من الأوامر الأساسية في سطر أوامر لينكس، كل أمر على حدى ومع الأمثلة للتوضيح.&lt;/p&gt;
 
 &lt;p&gt;في البداية لا بد من معرفة بعض الأمور قبل الدخول في تفاصيل كل أمر&lt;/p&gt;
@@ -543,13 +582,34 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/cat&quot;&gt;الأمر cat&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/cat&quot;&gt;الأمر cat&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/cp&quot;&gt;الأمر cp&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/cp&quot;&gt;الأمر cp&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/cd&quot;&gt;الأمر cd&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/ls&quot;&gt;الأمر ls&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/pwd&quot;&gt;الأمر pwd&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/mv&quot;&gt;الأمر mv&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/rm&quot;&gt;الأمر rm&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/rmdir&quot;&gt;الأمر rmdir&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/mkdir&quot;&gt;الأمر mkdir&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </content>
@@ -557,10 +617,20 @@
 	
 		<entry>
 			<title>شرح الأمر gcc في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/gcc/"/>
+			<link href="http://mulham.github.io/linux/gcc"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//gcc</id>
-			<content type="html">&lt;p&gt;مترجم الكود gcc وهو اختصار لـ “GNU Compiler Collection” وهو مترجم ﻷكواد لغة السي للينكس، أي أنه يقوم بتحويل الكود المكتوب بلغة السي للغة الآلة وجعله قابلًا للتنفيذ.&lt;/p&gt;
+			<id>http://mulham.github.io//linux/gcc</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;مترجم الكود gcc وهو اختصار لـ “GNU Compiler Collection” وهو مترجم ﻷكواد لغة السي للينكس، أي أنه يقوم بتحويل الكود المكتوب بلغة السي للغة الآلة وجعله قابلًا للتنفيذ.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-gcc&quot; id=&quot;markdown-toc-خيارات-الأمر-gcc&quot;&gt;خيارات الأمر gcc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-gcc&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-gcc&quot;&gt;أمثلة على الأمر gcc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -641,10 +711,21 @@
 	
 		<entry>
 			<title>شرح الأمر cp في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/cp/"/>
+			<link href="http://mulham.github.io/linux/cp"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//cp</id>
-			<content type="html">&lt;p&gt;يُستخدم الأمر cp (وهو اختصار لـ copy) لنسخ الملفات والمجلدات.&lt;/p&gt;
+			<id>http://mulham.github.io//linux/cp</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر cp (وهو اختصار لـ copy) لنسخ الملفات والمجلدات.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-cp&quot; id=&quot;markdown-toc-خيارات-الأمر-cp&quot;&gt;خيارات الأمر cp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-cp&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-cp&quot;&gt;أمثلة على الأمر cp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#المراجع&quot; id=&quot;markdown-toc-المراجع&quot;&gt;المراجع&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -749,12 +830,21 @@
 	
 		<entry>
 			<title>شرح الأمر cd في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/cd/"/>
+			<link href="http://mulham.github.io/linux/cd"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//cd</id>
-			<content type="html">&lt;p&gt;يُستخدم الأمر cd لتغيير مسار العمل ضمن الطرفية أو موجه سطر الأوامر (التيرمينال).&lt;/p&gt;
+			<id>http://mulham.github.io//linux/cd</id>
+			<content type="html">&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر cd لتغيير مسار العمل ضمن الطرفية أو موجه سطر الأوامر (التيرمينال).&lt;/p&gt;
 
 &lt;p&gt;ويمكنك أثناء كتابة اسم المجلد الضغط على زر &lt;kbd&gt;tab&lt;/kbd&gt; لإكماله تلقائيًا.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-cd&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-cd&quot;&gt;أمثلة على الأمر cd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -827,10 +917,12 @@
 	
 		<entry>
 			<title>شرح الأمر cat في لينكس مع الأمثلة</title>
-			<link href="http://mulham.github.io/cat/"/>
+			<link href="http://mulham.github.io/linux/cat"/>
 			<updated>2020-06-29T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//cat</id>
-			<content type="html">&lt;p&gt;يُستخدم الأمر cat لعرض محتوى ملف نصي وكذلك لدمج عدة ملفات نصية في ملف واحد.&lt;/p&gt;
+			<id>http://mulham.github.io//linux/cat</id>
+			<content type="html">&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;يُستخدم الأمر cat لعرض محتوى ملف نصي وكذلك لدمج عدة ملفات نصية في ملف واحد.&lt;/p&gt;
 
 &lt;p&gt;ولايقبل هذا الأمر الملجدات (أي يجب أن تكون القيمة بعد اسم الأمر لملف نصي وليس لمجلد)&lt;/p&gt;
 

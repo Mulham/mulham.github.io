@@ -5,13 +5,17 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jun 2020 00:56:37 +0300</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2020 00:56:37 +0300</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2020 01:23:49 +0300</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2020 01:23:49 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
         <title>شرح الأمر rmdir في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;يُستخدم الأمر rmdir (وهو اختصار لـ remove directory) لحذف المجلدات الفارغة &lt;strong&gt;فقط&lt;/strong&gt;. أي مجلد يحوي بداخله مجلد أو ملف فلا يمكن حذفه بالأمر rmdir.&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر rmdir (وهو اختصار لـ remove directory) لحذف المجلدات الفارغة &lt;strong&gt;فقط&lt;/strong&gt;. أي مجلد يحوي بداخله مجلد أو ملف فلا يمكن حذفه بالأمر rmdir.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
@@ -69,8 +73,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/rmdir/</link>
-        <guid isPermaLink="true">http://localhost:4000/rmdir/</guid>
+        <link>http://localhost:4000/linux/rmdir</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/rmdir</guid>
         
         
         <category>tutorials</category>
@@ -79,7 +83,11 @@
     
       <item>
         <title>شرح الأمر rm في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;الأمر rm وهو اختصار لـ remove ويُستخدم لحذف الملفات.&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;الأمر rm وهو اختصار لـ remove ويُستخدم لحذف الملفات.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
@@ -184,8 +192,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/rm/</link>
-        <guid isPermaLink="true">http://localhost:4000/rm/</guid>
+        <link>http://localhost:4000/linux/rm</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/rm</guid>
         
         
         <category>tutorials</category>
@@ -194,7 +202,16 @@
     
       <item>
         <title>شرح الأمر pwd في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;اﻷمر pwd وهو اختصار لـ “print working directory” أي طباعة المسار الحالي.&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;اﻷمر pwd وهو اختصار لـ “print working directory” أي طباعة المسار الحالي.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-pwd&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-pwd&quot;&gt;أمثلة على الأمر pwd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -225,8 +242,8 @@
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/pwd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/pwd/</link>
-        <guid isPermaLink="true">http://localhost:4000/pwd/</guid>
+        <link>http://localhost:4000/linux/pwd</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/pwd</guid>
         
         
         <category>tutorials</category>
@@ -235,7 +252,17 @@
     
       <item>
         <title>شرح الأمر mv في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;يُستخدم الأمر mv لنقل الملفات والمجلدات&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر mv لنقل الملفات والمجلدات&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-mv&quot; id=&quot;markdown-toc-خيارات-الأمر-mv&quot;&gt;خيارات الأمر mv&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-mv&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-mv&quot;&gt;أمثلة على الأمر mv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -303,8 +330,8 @@
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/mv/</link>
-        <guid isPermaLink="true">http://localhost:4000/mv/</guid>
+        <link>http://localhost:4000/linux/mv</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/mv</guid>
         
         
         <category>tutorials</category>
@@ -313,7 +340,9 @@
     
       <item>
         <title>شرح الأمر mkdir في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;يُستخدم الأمر mkdir لإنشاء مجلدات جديدة.&lt;/p&gt;
+        <description>&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;يُستخدم الأمر mkdir لإنشاء مجلدات جديدة.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
@@ -375,8 +404,8 @@
 &lt;p&gt;هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/mkdir/</link>
-        <guid isPermaLink="true">http://localhost:4000/mkdir/</guid>
+        <link>http://localhost:4000/linux/mkdir</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/mkdir</guid>
         
         
         <category>tutorials</category>
@@ -385,7 +414,17 @@
     
       <item>
         <title>شرح الأمر ls في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;يُستخدم الأمر ls (اختصارًا لـ list) لعرض محتويات مجلد العمل الحالي والتي تتضمن الملفات والمجلدات&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر ls (اختصارًا لـ list) لعرض محتويات مجلد العمل الحالي والتي تتضمن الملفات والمجلدات&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-ls&quot; id=&quot;markdown-toc-خيارات-الأمر-ls&quot;&gt;خيارات الأمر ls&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-ls&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-ls&quot;&gt;أمثلة على الأمر ls&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -509,8 +548,8 @@
 
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/ls/</link>
-        <guid isPermaLink="true">http://localhost:4000/ls/</guid>
+        <link>http://localhost:4000/linux/ls</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/ls</guid>
         
         
         <category>tutorials</category>
@@ -561,19 +600,40 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/cat&quot;&gt;الأمر cat&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/cat&quot;&gt;الأمر cat&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/cp&quot;&gt;الأمر cp&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/cp&quot;&gt;الأمر cp&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/cd&quot;&gt;الأمر cd&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/ls&quot;&gt;الأمر ls&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/pwd&quot;&gt;الأمر pwd&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/mv&quot;&gt;الأمر mv&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/rm&quot;&gt;الأمر rm&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/rmdir&quot;&gt;الأمر rmdir&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/linux/mkdir&quot;&gt;الأمر mkdir&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/intro/</link>
-        <guid isPermaLink="true">http://localhost:4000/intro/</guid>
+        <link>http://localhost:4000/linux/intro</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/intro</guid>
         
         <category>لينكس</category>
         
@@ -586,7 +646,17 @@
     
       <item>
         <title>شرح الأمر gcc في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;مترجم الكود gcc وهو اختصار لـ “GNU Compiler Collection” وهو مترجم ﻷكواد لغة السي للينكس، أي أنه يقوم بتحويل الكود المكتوب بلغة السي للغة الآلة وجعله قابلًا للتنفيذ.&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;مترجم الكود gcc وهو اختصار لـ “GNU Compiler Collection” وهو مترجم ﻷكواد لغة السي للينكس، أي أنه يقوم بتحويل الكود المكتوب بلغة السي للغة الآلة وجعله قابلًا للتنفيذ.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-gcc&quot; id=&quot;markdown-toc-خيارات-الأمر-gcc&quot;&gt;خيارات الأمر gcc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-gcc&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-gcc&quot;&gt;أمثلة على الأمر gcc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -664,8 +734,8 @@
 
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/gcc/</link>
-        <guid isPermaLink="true">http://localhost:4000/gcc/</guid>
+        <link>http://localhost:4000/linux/gcc</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/gcc</guid>
         
         
         <category>tutorials</category>
@@ -674,7 +744,18 @@
     
       <item>
         <title>شرح الأمر cp في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;يُستخدم الأمر cp (وهو اختصار لـ copy) لنسخ الملفات والمجلدات.&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر cp (وهو اختصار لـ copy) لنسخ الملفات والمجلدات.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-cp&quot; id=&quot;markdown-toc-خيارات-الأمر-cp&quot;&gt;خيارات الأمر cp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-cp&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-cp&quot;&gt;أمثلة على الأمر cp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#المراجع&quot; id=&quot;markdown-toc-المراجع&quot;&gt;المراجع&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -776,8 +857,8 @@
 
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/cp/</link>
-        <guid isPermaLink="true">http://localhost:4000/cp/</guid>
+        <link>http://localhost:4000/linux/cp</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/cp</guid>
         
         
         <category>tutorials</category>
@@ -786,9 +867,18 @@
     
       <item>
         <title>شرح الأمر cd في لينكس مع الأمثلة</title>
-        <description>&lt;p&gt;يُستخدم الأمر cd لتغيير مسار العمل ضمن الطرفية أو موجه سطر الأوامر (التيرمينال).&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;هذا المقال جزء من &lt;a href=&quot;/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;يُستخدم الأمر cd لتغيير مسار العمل ضمن الطرفية أو موجه سطر الأوامر (التيرمينال).&lt;/p&gt;
 
 &lt;p&gt;ويمكنك أثناء كتابة اسم المجلد الضغط على زر &lt;kbd&gt;tab&lt;/kbd&gt; لإكماله تلقائيًا.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-cd&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-cd&quot;&gt;أمثلة على الأمر cd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
 
@@ -858,8 +948,8 @@
 &lt;p&gt;المقال مترجم وبتصرّف. &lt;a href=&quot;https://www.rapidtables.com/code/linux/cd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/cd/</link>
-        <guid isPermaLink="true">http://localhost:4000/cd/</guid>
+        <link>http://localhost:4000/linux/cd</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/cd</guid>
         
         
         <category>tutorials</category>

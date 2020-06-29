@@ -514,7 +514,7 @@ hidden: true
     }
     {% endhighlight %}
 
-5.
+7.
     {% highlight c %}
 
 #include <stdio.h>
