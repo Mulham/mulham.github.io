@@ -4,13 +4,1007 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-06-28T17:46:58+03:00</updated>
+	<updated>2020-06-30T00:56:37+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>شرح الأمر rmdir في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/rmdir/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//rmdir</id>
+			<content type="html">&lt;p&gt;يُستخدم الأمر rmdir (وهو اختصار لـ remove directory) لحذف المجلدات الفارغة &lt;strong&gt;فقط&lt;/strong&gt;. أي مجلد يحوي بداخله مجلد أو ملف فلا يمكن حذفه بالأمر rmdir.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-rm&quot; id=&quot;markdown-toc-خيارات-الأمر-rm&quot;&gt;خيارات الأمر rm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-rmdir&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-rmdir&quot;&gt;أمثلة على الأمر rmdir&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rmdir [options] dir
+    $ rmdir [options] dir1 dir2 dirN
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-rm&quot;&gt;خيارات الأمر rm&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rmdir -p&lt;/td&gt;
+      &lt;td&gt;لإعطاء مسار يتم حذف كافة مجلداته إن كانت فارغة وبدءا من المجلد الأخير&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rmdir -v&lt;/td&gt;
+      &lt;td&gt;يٌعطي معلومات عن كل مجلد يتم معالجته للحذف&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rmdir –ignore-fail-on-non-empty&lt;/td&gt;
+      &lt;td&gt;لعدم إظهار رسالة الخطأ في حال تعذر حذف المجلد بسبب عدم خلوه&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-rmdir&quot;&gt;أمثلة على الأمر rmdir&lt;/h1&gt;
+
+&lt;p&gt;حذف جميع المجلدات في المسار المعطى بدءا من المجلد الابن (الأخير في المسار)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    rmdir -p mydir/mydir1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حذف المجلدات mydir1 و mydir2 و mydir3 في حال كانوا فارغين من أي مجلد أو ملف بداخلهم. إذا كان أحدهم غير فارغ فلن يتم حذفه وسيتم حذف المجلدين الفارغين الآخرين&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    rmdir mydir1 mydir2 mydir3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;المرجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/rmdir-command-in-linux-with-examples/&quot;&gt;https://www.geeksforgeeks.org/rmdir-command-in-linux-with-examples/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر rm في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/rm/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//rm</id>
+			<content type="html">&lt;p&gt;الأمر rm وهو اختصار لـ remove ويُستخدم لحذف الملفات.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-rm&quot; id=&quot;markdown-toc-خيارات-الأمر-rm&quot;&gt;خيارات الأمر rm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-rm&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-rm&quot;&gt;أمثلة على الأمر rm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#تمرين&quot; id=&quot;markdown-toc-تمرين&quot;&gt;تمرين&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    rm [options] file1 file2 fileN
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وبالتالي يمكن حذف ملف واحد أو أكثر من ملف بأمر واحد.&lt;/p&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-rm&quot;&gt;خيارات الأمر rm&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rm -i&lt;/td&gt;
+      &lt;td&gt;حذف تفاعلي أي السؤال قبل حذف أي ملف&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rm -f&lt;/td&gt;
+      &lt;td&gt;حذف الملفات بشكل إجباري للملفات المحمية ضد الكتابة&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rm -r&lt;/td&gt;
+      &lt;td&gt;الحذف التكراري ويعني حذف جميع الملفات والمجلدات الفرعية بجميع محتوياتهم&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-rm&quot;&gt;أمثلة على الأمر rm&lt;/h1&gt;
+
+&lt;p&gt;حذف الملف a.txt&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rm a.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حذف الملفين b.txt و c.txt&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rm b.txt c.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;استخدام حيار التفاعل والذي يسأل المستخدم قبل الحذف&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rm -i d.txt
+    rm: remove regular empty file 'd.txt'? y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عند الضغط على y سيحذف الملف وأي زر آخر يعني عدم الموافقة على حذفه.&lt;/p&gt;
+
+&lt;p&gt;حذف جميع الملفات في المجلد الحالي&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rm *
+    rm: cannot remove 'B': Is a directory
+    rm: cannot remove 'C': Is a directory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نلاحظ ظهور رسالتي خطأ وهي أن B و C مجلدات وليست ملفات والأمر rm لا يستخدم عادة لحذف المجلدات، ولكن لجعله يحذف المجلدات أيضًا وبجميع محتوياتهم نكتب:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rm -r *
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;تمرين&quot;&gt;تمرين&lt;/h1&gt;
+
+&lt;p&gt;اكتب الأمر الذي يقوم بحذف ملف اسمه &lt;code class=&quot;highlighter-rouge&quot;&gt;file.txt-&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;الحل:&lt;/p&gt;
+
+&lt;p&gt;نلاحظ أن الاسم يبدأ بالرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; وكما نعلم أن هذا الرمز يُستخدم لتحديد خيارات الأوامر في اللينكس، إذا كيف سنعرف الأمر بأن هذا الرمز تابع لاسم الملف وليس مقصود به ذكر خيار من خيارات الأمر؟&lt;/p&gt;
+
+&lt;p&gt;أي إذا حاولنا كتابة التالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rm -file.txt
+    rm: unknown option -- l
+    Try 'rm ./-file.txt' to remove the file '-file.txt'.
+    Try 'rm --help' for more information.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نجد أنه لم يحذف الملف وأعطى رسالة خطأ تفيد بأنه لايوجد خيار للأمر rm بهذا الاسم.&lt;/p&gt;
+
+&lt;p&gt;لحل هذه المشكلة نضيف شخطتين &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; قبل الاسم للتمييز بين خيارات الأمر وبين الشخطة الخاصة باسم الملف، وبالتالي نكتب:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ rm -- -file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي استفسار أو إضافة لا تتردد بمراسلتي&lt;/p&gt;
+
+&lt;p&gt;المرجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/rm-command-linux-examples/&quot;&gt;https://www.geeksforgeeks.org/rm-command-linux-examples/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر pwd في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/pwd/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//pwd</id>
+			<content type="html">&lt;p&gt;اﻷمر pwd وهو اختصار لـ “print working directory” أي طباعة المسار الحالي.&lt;/p&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ pwd [option]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-pwd&quot;&gt;أمثلة على الأمر pwd&lt;/h1&gt;
+
+&lt;p&gt;تغيير المسار إلى المجلد الجذر وطباعة المسار الحالي&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd /
+    $ pwd
+    /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;الذهاب لمجلد المنزل وطباعة المسار الحالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd /
+    $ pwd
+    /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;للحصول على المسار الحالي عند كتابة سكريبت معين يمكن استخدام التالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    dir=$(PWD)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/pwd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر mv في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/mv/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//mv</id>
+			<content type="html">&lt;p&gt;يُستخدم الأمر mv لنقل الملفات والمجلدات&lt;/p&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv [options] source dest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-mv&quot;&gt;خيارات الأمر mv&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mv -f&lt;/td&gt;
+      &lt;td&gt;إجبار عملية النقل بالكتابة فوق الملف الهدف بدون سؤال&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mv -i&lt;/td&gt;
+      &lt;td&gt;نقل تفاعلي بحيث يعرض سؤال للكتابة فوق الملف الموجود&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mv -u&lt;/td&gt;
+      &lt;td&gt;تحديث - النقل فقط في حال كان الملف المصدر أحدث من الملف الهدف&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-mv&quot;&gt;أمثلة على الأمر mv&lt;/h1&gt;
+
+&lt;p&gt;نقل الملفات main.c و def.h إلى المسار /home/usr/rapid/&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv main.c def.h /home/usr/rapid/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نقل جميع الملفات ذات اللاحقة c. من المجلد الحالي إلى المجلد الفرعي bak:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv *.c bak
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نقل جميع الملفات من المجلد الفرعي bak للمجلد الحالي&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv bak/* .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عند النقل من اسم لاسم فينتج لدينا عملية إعادة التسمية.
+المثال التالي هو إعادة تسمية الملف main.c إلى الاسم main.bak&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv main.c main.bak
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;إعادة تسمية المجلد bak إلى bak2&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv bak bak2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;مثال على التحديث - انقل في حال كان الملف main.c في المجلد الحالي أحدث من الذي في المجلد الفرعي bak&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv -u main.c bak
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر mkdir في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/mkdir/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//mkdir</id>
+			<content type="html">&lt;p&gt;يُستخدم الأمر mkdir لإنشاء مجلدات جديدة.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-mkdir&quot; id=&quot;markdown-toc-خيارات-الأمر-mkdir&quot;&gt;خيارات الأمر mkdir&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-mkdir&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-mkdir&quot;&gt;أمثلة على الأمر mkdir&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mkdir [options...] [directories ...]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-mkdir&quot;&gt;خيارات الأمر mkdir&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mkdir -v&lt;/td&gt;
+      &lt;td&gt;يٌعطي معلومات عن كل مجلد يتم إنشاؤه&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mkdir -p&lt;/td&gt;
+      &lt;td&gt;يقوم بإنشاء كل المجلدات المذكورين في المسار المعطى&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mkdir -m&lt;/td&gt;
+      &lt;td&gt;لإعطاء صلاحيات للمجلد المُنشأ&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-mkdir&quot;&gt;أمثلة على الأمر mkdir&lt;/h1&gt;
+
+&lt;p&gt;إنشاء مجلد first بداخله مجلد second بداخله مجلد third أي سيقوم بإنشاء هذه المجلدات الثلاثة&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mkdir -p first/second/third
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;لاحظ أنه بدون الخيار p- سيظهر لنا خطأ يفيد بعدم وجود المجلد first والمجلد second&lt;/p&gt;
+
+&lt;p&gt;ولإنشاء مجلد باسم dir وإعطاء جميع المستخدمين صلاحيات القراءة والكتابة وتنفيذ المحتويات المُنشأة بداخله نكتب:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mkdir -m a=rwx dir
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حيث r تعني read أي صلاحية القراءة و w تعني write أي صلاحية الكتابة و x تعني execute أي صلاحية تنفيذ المحتويات التي ربما ستكون بداخل المجلد لاحقًا.&lt;/p&gt;
+
+&lt;p&gt;فلو أردنا إعطاء جميع المستخدمين صلاحيات القراءة فقط نكتب:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mkdir -m a=r dir
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;هذا المقال مترجم وبتصرّف، يمكنك الاطلاع على &lt;a href=&quot;https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر ls في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/ls/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//ls</id>
+			<content type="html">&lt;p&gt;يُستخدم الأمر ls (اختصارًا لـ list) لعرض محتويات مجلد العمل الحالي والتي تتضمن الملفات والمجلدات&lt;/p&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls [options] [file|dir]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-ls&quot;&gt;خيارات الأمر ls&lt;/h1&gt;
+
+&lt;p&gt;الخيارات الأساسية لهذا الأمر تشمل:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls -a&lt;/td&gt;
+      &lt;td&gt;عرض جميع الملفات بما فيها المخفية&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls -l&lt;/td&gt;
+      &lt;td&gt;عرض مع التفاصيل وصلاحيات الملفات&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls -r&lt;/td&gt;
+      &lt;td&gt;عرض مع عكس الترتيب&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls -s&lt;/td&gt;
+      &lt;td&gt;عرض حجم الملفات&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls -S&lt;/td&gt;
+      &lt;td&gt;ترتيب العرض بحسب حجم الملفات&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls -t&lt;/td&gt;
+      &lt;td&gt;ترتيب الملفات بحسب الوقت والتاريخ&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-ls&quot;&gt;أمثلة على الأمر ls&lt;/h1&gt;
+
+&lt;p&gt;يمكنك أثناء كتابة اسم المجلد الضغط على زر &lt;kbd&gt;tab&lt;/kbd&gt; لإكماله تلقائيًا.&lt;/p&gt;
+
+&lt;p&gt;عرض محتوى مجلد Books باستخدام مسار نسبي (مرتبط بمسار العمل الحالي):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls Documents/Books
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض محتوى مجلد Books باستخدام مسار مطلق (بدءا من المجلد الجذر):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls /home/user/Documents/Books
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض محتوى المجلد الجذر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض محتوى المجلد الأب للمجلد الحالي:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض محتوى مجلد المنزل&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls ~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض محتوى المجلد الحالي بتفاصيل موسعة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls -l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض الملفات المخفية أيضا للمجلد الحالي&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;دمج الأمرين السابقين مع بعض:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls -la
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض محتويات المجلدات الفرعية:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls *
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض recursive أو تكراري، وهو عرض جميع الملفات بما في ذلك التي داخل المجلدات الفرعية ومجلداتهم الفرعية أيضًا..إلخ&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls -R
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض الملفات اللتي لها لاحقة .txt فقط&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls *.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حفظ محتوى ناتج الأمر لملف out.txt (بدلا من عرض الناتج على الطرفية)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls &amp;gt; out.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض المجلدات فقط&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls -d */
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عرض الملفات والمجلدات مع مساراتهم المطلقة (التي تبدأ من المجلد الجذر)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ls -d $PWD/*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/ls.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>سلسلة أساسيات أوامر لينكس</title>
+			<link href="http://mulham.github.io/intro/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//intro</id>
+			<content type="html">&lt;p&gt;سأشرح في هذه السلسلة العديد من الأوامر الأساسية في سطر أوامر لينكس، كل أمر على حدى ومع الأمثلة للتوضيح.&lt;/p&gt;
+
+&lt;p&gt;في البداية لا بد من معرفة بعض الأمور قبل الدخول في تفاصيل كل أمر&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;أن سطر أوامر لينكس حساس للأحرف الكبيرة والصغيرة، أي مثلا ‘name’ لاتساوي ‘Name’ لاتساوي ‘NAME’.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن التعرف على أي أمر ومعرفة خياراته من التوثيق (manual) الخاص به عبر الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;man&lt;/code&gt; يليه اسم الأمر المراد قراءة معلوماته. مثلا&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; man ls
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن معرفة إصدار أي أمر باستخدام الخيار &lt;code class=&quot;highlighter-rouge&quot;&gt;version--&lt;/code&gt; بعد اسمه، مثلًا:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ls --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;ويمكن عرض المساعدة عنه باستخدام الخيار &lt;code class=&quot;highlighter-rouge&quot;&gt;help--&lt;/code&gt; مثلا:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ls --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;سترى أن لكل أمر عدة خيارات تُتكب بعد كتابة اسم الأمر، يمكن لهذه الخيارات كتابتها سوية. مثلًا للأمر ls الخيار l- والخيار -a فيمكن أن نكتب&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls -a -l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;أو الأسهل:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls -al
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;والآن لنأتي لفهرس الأوامر:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/cat&quot;&gt;الأمر cat&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/cp&quot;&gt;الأمر cp&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر gcc في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/gcc/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//gcc</id>
+			<content type="html">&lt;p&gt;مترجم الكود gcc وهو اختصار لـ “GNU Compiler Collection” وهو مترجم ﻷكواد لغة السي للينكس، أي أنه يقوم بتحويل الكود المكتوب بلغة السي للغة الآلة وجعله قابلًا للتنفيذ.&lt;/p&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ gcc [options] [source files] [object files] [-o output file]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-gcc&quot;&gt;خيارات الأمر gcc&lt;/h1&gt;
+
+&lt;p&gt;الخيارات الأساسية لهذا الأمر تتضمن:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gcc -c&lt;/td&gt;
+      &lt;td&gt;ترجمة الملفات المصدر دون الربط بينهم&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gcc -o output&lt;/td&gt;
+      &lt;td&gt;ترجمة الكود للملف المحدد المعطى (الناتج يكون بالاسم المعطى وليس افتراضيا بنفس اسم الملف الأصل)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gcc -g&lt;/td&gt;
+      &lt;td&gt;توليد معلومات الأخطاء debug لاستخدامها من قبل GDB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gcc -w&lt;/td&gt;
+      &lt;td&gt;تعطيل كل الرسائل التحذيرية&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gcc -Wall&lt;/td&gt;
+      &lt;td&gt;تفعيل كل الرسائل التحذيرية&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-gcc&quot;&gt;أمثلة على الأمر gcc&lt;/h1&gt;
+
+&lt;p&gt;أكثر الخيارات التي استخدمها أنا شخصيًا هي o- لتحديد اسم الملف الناتج، فلو كان لدي كود باسم mycode.c وأردت الملف الناتج أن يكون اسمه name مثلا:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    gcc mycode.c -o name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;لاحظ أن خيار o- يمكن أن يُكتب قبل ذكر اسم الملف المصدر أو بعده فالأمر السابق يمكن أن يُكتب أيضا هكذا:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    gcc -o name mycode.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ترجمة ملفي الكود file1.c و file2.c وجعل الملف الناتج القابل للتنفيذ هو execfile:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ gcc file1.c file2.c -o execfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;لتشغيل الملف الناتج:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ ./execfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ترجمة ملفي الكود file1.c و file2.c بدون إعطاء اسم الملف الناتج (سيكون اسمه باسم الملف المصدر)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ gcc -c file1.c file2.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ترجمة الكود myfile.c وإعطاء معلومات الأخطاء وجعل الملف الناتج باسم execfile&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ gcc -g myfile.c -o execfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/gcc.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر cp في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/cp/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//cp</id>
+			<content type="html">&lt;p&gt;يُستخدم الأمر cp (وهو اختصار لـ copy) لنسخ الملفات والمجلدات.&lt;/p&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;p&gt;نسخ من المصدر “source” للوجهة “dest”:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp [options] source dest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نسخ عدة ملفات إلى مجلد&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    cp [options] Source-1 Source-2 Source-3 Source-n Directory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ومع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;[options]&lt;/code&gt; بالخيار المطلوب، والخيارات اختيارية وليست إجبارية لتنفيذ الأمر.&lt;/p&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-cp&quot;&gt;خيارات الأمر cp&lt;/h1&gt;
+
+&lt;p&gt;الخيارات الرئيسية للأمر cp هي:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cp -i&lt;/td&gt;
+      &lt;td&gt;نسخ تفاعلي (السؤال قبل استبدال ملف موجود مسبقا)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cp -f&lt;/td&gt;
+      &lt;td&gt;اختصار لـ force أي إجبار النسخ حتى لو اضطر لحذف الملف الوجهة والكتابة فوقه&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cp -l&lt;/td&gt;
+      &lt;td&gt;أي link وهي مثل إنشاء اختصار بدل من النسخ&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cp -R&lt;/td&gt;
+      &lt;td&gt;نسخ تكراري، ويستخدم لنسخ المجلدات بمحتوياتها بما في ذلك الملفات المخفية&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cp -u&lt;/td&gt;
+      &lt;td&gt;أي update وبالتالي انسخ في حالة المصدر كان أحدث من الوجهة&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cp -v&lt;/td&gt;
+      &lt;td&gt;أي verbose وهو نسخ مع عرض معلومات عن العملية&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-cp&quot;&gt;أمثلة على الأمر cp&lt;/h1&gt;
+
+&lt;p&gt;نسخ ملف واحد “main.c” إلى المجلد الهدف “bak”&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp main.c bak
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نسخ ملفين “main.c” و “def.h” إلى المجلد rapid باستخدام المسار المطلق (والذي يبدأ من المجلد الجذر)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp main.c def.h /home/usr/rapid/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نسخ كل الملفات ذات اللاحقة “c.” إلى المجلد الفرعي bak&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp *.c bak
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نسخ المجلد src الموجود في المسار الحالي إلى المجلد rapid ذو المسار المطلق: (المسار المطلق يبدأ من المجلد الجذر ويُستخدم عمومًا في حال عدم وجود المجلد أو الملف في مسار العمل الحالي)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp src /home/usr/rapid/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نسخ جميع الملفات والمجلدات في المجلد dev إلى المجلد الفرعي bak (بدون الخيار R- سيعطي خطأ)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp -R dev bak
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;نسخ تفاعلي للسؤال قبل النسخ فوق ملفات موجودة:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp -i test.c bak
+    cp: overwrite 'bak/test.c'? y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;تحديث جميع الملفات في المجلد bak، أي نسخ الملفات الأحدث فقط من المجلد الحالي للمجلد bak&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp -u * bak
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;المراجع&quot;&gt;المراجع&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.rapidtables.com/code/linux/cp.html&quot;&gt;https://www.rapidtables.com/code/linux/cp.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/cp-command-linux-examples/&quot;&gt;https://www.geeksforgeeks.org/cp-command-linux-examples/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر cd في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/cd/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//cd</id>
+			<content type="html">&lt;p&gt;يُستخدم الأمر cd لتغيير مسار العمل ضمن الطرفية أو موجه سطر الأوامر (التيرمينال).&lt;/p&gt;
+
+&lt;p&gt;ويمكنك أثناء كتابة اسم المجلد الضغط على زر &lt;kbd&gt;tab&lt;/kbd&gt; لإكماله تلقائيًا.&lt;/p&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd [directory]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حيث يتم استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;[directory]&lt;/code&gt; بمسار المجلد المطلوب الذهاب له.&lt;/p&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-cd&quot;&gt;أمثلة على الأمر cd&lt;/h1&gt;
+
+&lt;p&gt;المسار أو المجلد الافتراضي عند فتح الطرفيّة هو مجلد المنزل “Home” لذا إن كنت على الطرفية في مسار آخر وأردت الذهاب لملجد المنزل فيكفي كتابة الأمر نفسه فقط:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;والأمر التالي أيضًا يمكن استخدامه للذهاب لمجلد المنزل&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd ~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;للذهاب لملجد الجذر root والذي يحوي مجلد المنزل ومجلدات النظام أيضًا فنكتب الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;والآن إذا كنا في مجلد فرعي وأردنا الذهاب للمسار الأعلى منه أو يمسى المجلد الأب فنكتب:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; النقطتين &lt;code class=&quot;highlighter-rouge&quot;&gt;..&lt;/code&gt; هنا تدل على المسار (المجلد) الأب وجدير بالذكر أن النقطة الواحدة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; تدل دائمًا على المجلد أو المسار الحالي.&lt;/p&gt;
+
+&lt;p&gt;للذهاب لمجلد فرعي موجود ضمن المسار الحالي الذي نحن فيه: (على فرض وجود مجلد باسم Documents)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd Documents
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;للذهاب لمسار فرعي (على فرض وجود مجلد ضمن المجلد الحالي اسمه Documents ويحوي بداخله مجلد باسم Books)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd Documents/Books
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;الذهاب لمسار باستخدام المسار المطلق (absolute path) أي بغض النظر عن المسار الحالي وبالتالي بدءا من المجلد الجذر&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd /home/user/Desktop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;مع استبدال user أعلاه باسم المستخدم الفعلي&lt;/p&gt;
+
+&lt;p&gt;والآن إذا أردنا الذهاب لمجلد يحتوي اسمه على فراغات مثل “My Images” فلدينا عدة خيارات:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd My\ Images
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd &quot;My Images&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أو&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd 'My Images'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي سؤال أو إضافة لا تتردد بمراسلتي&lt;/p&gt;
+
+&lt;p&gt;المقال مترجم وبتصرّف. &lt;a href=&quot;https://www.rapidtables.com/code/linux/cd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح الأمر cat في لينكس مع الأمثلة</title>
+			<link href="http://mulham.github.io/cat/"/>
+			<updated>2020-06-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//cat</id>
+			<content type="html">&lt;p&gt;يُستخدم الأمر cat لعرض محتوى ملف نصي وكذلك لدمج عدة ملفات نصية في ملف واحد.&lt;/p&gt;
+
+&lt;p&gt;ولايقبل هذا الأمر الملجدات (أي يجب أن تكون القيمة بعد اسم الأمر لملف نصي وليس لمجلد)&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-cat&quot; id=&quot;markdown-toc-خيارات-الأمر-cat&quot;&gt;خيارات الأمر cat&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-cat&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-cat&quot;&gt;أمثلة على الأمر cat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cat [options] file1 [file2...]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حيث يتم استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;[options]&lt;/code&gt; بالخيار المطلوب (وهذا اختياري أي يمكننا عدم استخدام أي خيار) و&lt;code class=&quot;highlighter-rouge&quot;&gt;file1&lt;/code&gt; باسم الملف النصي كاملا مع لاحقته (txt مثلا) ويمكن كتابة أسماء ملفات أخرى بعد اسم الملف الأول للدمج.&lt;/p&gt;
+
+&lt;h1 id=&quot;خيارات-الأمر-cat&quot;&gt;خيارات الأمر cat&lt;/h1&gt;
+
+&lt;p&gt;فيما يلي الخيارات الأساسية لهذا الأمر (يمكن الاطلاع على جميع الخيارات عبر الأمر man cat حيث يستخدم الأمر man لعرض خيارات أي أمر آخر)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الخيار&lt;/th&gt;
+      &lt;th&gt;الوصف&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cat -b&lt;/td&gt;
+      &lt;td&gt;إضافة أرقام الأسطر للأسطر الغير فارغة&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cat -n&lt;/td&gt;
+      &lt;td&gt;إضافة أرقام الأسطر لكل الأسطر&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cat -s&lt;/td&gt;
+      &lt;td&gt;ضغط الأسطر الفارغة المتتالية لسطر واحد&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cat -E&lt;/td&gt;
+      &lt;td&gt;إظهار العلامة $ في نهاية كل سطر&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cat -T&lt;/td&gt;
+      &lt;td&gt;إظهار العلامتين &lt;code class=&quot;highlighter-rouge&quot;&gt;^|&lt;/code&gt; بدلا من ال tabs (أربع أو ثماني فراغات متتالية)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;أمثلة-على-الأمر-cat&quot;&gt;أمثلة على الأمر cat&lt;/h1&gt;
+
+&lt;p&gt;استعراض محتوى ملف نصي&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cat list1.txt
+    milk
+    bread
+    apples
+
+    $ cat list2.txt
+    house
+    car
+
+    $
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;استعراض محتوى ملفين نصيين سوية&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cat list1.txt list2.txt
+    milk
+    bread
+    apples
+
+    house
+    car
+
+    $
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;دمج محتوى ملفين نصيين لملف ثالث&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cat list1.txt list2.txt &amp;gt; todo.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي استفسار يمكنك مراسلتي&lt;/p&gt;
+
+&lt;p&gt;المقال مترجم وبتصرّف، يمكنك مشاهدة &lt;a href=&quot;https://www.rapidtables.com/code/linux/cat.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>الفرق بين ()malloc و ()calloc بالأمثلة</title>
+			<link href="http://mulham.github.io/%D8%A7%D9%84%D9%81%D8%B1%D9%82-%D9%8A%D8%A8%D9%86-malloc-%D9%88-calloc-%D8%A8%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84%D8%A9/"/>
+			<updated>2020-06-28T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//الفرق-يبن-malloc-و-calloc-بالأمثلة</id>
+			<content type="html">&lt;p&gt;هذا المقال متعلق بالمقال السابق: &lt;a href=&quot;/التخصيص-الديناميكي-للذاكرة-في-سي&quot;&gt;التخصيص الديناميكي للذاكرة في سي&lt;/a&gt;
+ويجب قراءته لفهم هذا المقال&lt;/p&gt;
+
+&lt;p&gt;إن كلتا دالتي ()malloc و ()calloc تقومان بتخصيص جزء من الذاكر بشكل ديناميكي (قابل للتغيير). وهذا يعني أن الذاكرة يتم تخصيصها خلال زمن العمل (تنفيذ البرنامج) من الـ heap segment أو بالعربي قد نترجمها لـ “قطعة التكدس” (لايهم كيف تترجم المهم أنها جزء من الذاكرة).&lt;/p&gt;
+
+&lt;p&gt;الفروقات بين الدالتين المذكورتين نكمن في النقاط التالية:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;التهيئة: إن الدالة ()malloc تقوم بتخصيص حجرة (block) من الذاكرة بحجم معطى (بالبايتات) وتقوم بإرجاع مؤشر (pointer) يشير لبداية تلك الحجرة. ولا تقوم ()malloc بتهيئة الذاكرة المخصصة بقيمة محددة. لذا فإذا حاولنا الوصول لمحتوى حجرة الذاكرة التي تم تخصيصها فسنحصل على خطأ فشل تجزئة أو يسمى (segmentation fault error) أو ربما نحصل على قيم عشوائية.&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  void* malloc(size_t size); 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;في حين أن ()calloc تقوم بتخصيص الذاكرة وتهيئة الحجرة المخصصة بالقيمة صفر 0. فإذا حاولنا الوصول لمحتوى الحجرة المخصصة سنحصل على القيمة 0.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    void* calloc(size_t num, size_t size); 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;عدد المعطيات: المعطيات وهي “arguments” (وهي عدد المتغيرات الموجودة بين قوسين في العبارتين أعلاه) فكما لاحظنا أن ()malloc تتطلب معطى وحيد بينما ()calloc تتطلب معطيين وهما:&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;عدد الحجرات التي سيتم تخصيصها&lt;/li&gt;
+      &lt;li&gt;حجم كل حجرة (جميع الحجرات ستكون متساوية ولها هذا الحجم)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قيمة الإرجاع: أو القيمة المرجعة عند استدعاء الدالة. تقوم كلتا الدالتين ()malloc و ()calloc  بعد التخصيص الناجح للذاكرة بإرجاع مؤشر (pointer) يشير لبداية الحجرة المخصصة، أما في حالة فشل التخصيص فتُرجع القيمة NULL.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;إذا أردنا على سبيل المثال تخصيص ذاكرة لمصفوفة من خمس عناصر عددية integer فسنكتب التالي:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// C program to demonstrate the use of calloc() &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// and malloc() &lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;stdlib.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// malloc() allocate the memory for 5 integers &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// containing garbage values &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;malloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 5*4bytes = 20 bytes &lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;// Deallocates memory previously allocated by malloc() function &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;free&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// calloc() allocate the memory for 5 integers and &lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// set 0 to all of them &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Deallocates memory previously allocated by calloc() function &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;free&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;يمكننا الحصول على نفس الوظيفة التي تقوم بها الدالة ()calloc باستخدام الدالة ()malloc متبوعة بالدالة ()memset&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ptr = malloc(size); 
+    memset(ptr, 0, size); 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;يمكنك قراءة المزيد عن ()memset &lt;a href=&quot;/memset&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; من الأفضل بشكل عام استخدام malloc بدلًا من calloc إلا في حال أردنا التهيئة بالقيمة صفر، ﻷن malloc أسرع من calloc. لذا إذا أردنا نسخ بعض البيانات فقط أو شيئ ما لا يتطلب ملء الحجرات بالقيمة صفر، فاستخدام malloc سيكون الخيار الأفضل.&lt;/p&gt;
+
+&lt;p&gt;هذا المقال مترجم وبتصرّف. يمكنك الاطلاع على &lt;a href=&quot;https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>التخصيص الديناميكي للذاكرة في لغة سي</title>
@@ -387,10 +1381,137 @@
     The elements of the array are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;strong&gt;سؤال متعلق بالموضوع&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ماهو الفرق بين ()malloc و ()calloc وما هي الدالة في لغة سي التي يجب أن نستخدمها بعد استخدام ()malloc لنصل لنفس وظيفة ()calloc؟&lt;/p&gt;
+
+&lt;p&gt;للإجابة على الشق الأول من السؤال يرجى قراءة المقال:&lt;a href=&quot;/الفرق-يبن-malloc-و-calloc-بالأمثلة&quot;&gt;الفرق بين calloc و malloc بالأمثلة&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;أما بالنسبة للدالة التي تحقق نفس وظيفة ()calloc بعد استخدام ()malloc فهي ()memset وذلك لتهيئة العناصر بالقيمة الأولية صفر كما تفعل ()calloc. للمزيد يمكنك قراءة المقال التالي عن memset &lt;a href=&quot;/memset&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;يرجى مراسلتي في حال وجود أي استفسار أو إضافة.&lt;/p&gt;
 
-&lt;p&gt;هذا المقال مترجم وبتصرّف، [المصدر])(https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)&lt;/p&gt;
+&lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 
+</content>
+		</entry>
+	
+		<entry>
+			<title>شرح دالة ()memset في لغة سي بالأمثلة</title>
+			<link href="http://mulham.github.io/memset/"/>
+			<updated>2020-06-28T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//memset</id>
+			<content type="html">&lt;p&gt;تُستخدم دالة ()memset لملء حجرة من الذاكرة بقيمة محددة.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;صيغة الدالة:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    void *memset(void *ptr, int x, size_t n);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;حيث يشير:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ptr إلى عنوان بداية الذاكرة المطلوب ملؤها&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;x  القيمة التي سيتم الملء بها&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;n عدد البايتات التي سيتم ملؤها بدءًا من العنوان ptr&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ولاحظ أن ptr هو مؤشر (pointer) من نوع void وبالتالي يمكن تمرير مؤشر من أي نوع في هذه الدالة.&lt;/p&gt;
+
+&lt;p&gt;لنلقِ نظرة الآن على مثال بسيطة لتوضيح عمل الدالة ()memset:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// C program to demonstrate working of memset() &lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;string.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;GeeksForGeeks is for programming geeks.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Before memset(): %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Fill 8 characters starting from str[13] with '.' &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;memset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;After memset(): %s&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;الناتج:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Before memset(): GeeksForGeeks is for programming geeks.
+    After memset(): GeeksForGeeks........programming geeks.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;التوضيح&lt;/strong&gt;: تشير (str + 13) إلى بداية الموضع الذي نريد تغيير قيمته. بعبارة أخرى، كتبنا في البداية str وهو بداية عنوان الجملة التي لدينا في الذاكرة عمومًا، ثم +13 أي نبدأ من أول حرف في الجملة وبعد 13 خانة (حرف) نبدأ بتغيير القيم للنقظة “.”، يستمر وضع النقط لثمان خانات فقط، ونلاحظ أن رقم ثمانية مضروب بحجم الـ char ولكن كون حجم الـ char هو 1 بايت فيبقى الرقم هو 8.
+وفي النهاية نحصل على الناتج أعلاه.&lt;/p&gt;
+
+&lt;p&gt;مثال آخر:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// C program to demonstrate working of memset() &lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;string.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;printArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+   &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Fill whole array with 0. &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;memset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]));&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Array after memset()&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;الناتج&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    0 0 0 0 0 0 0 0 0 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;تمرين&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;قم بتخمين ناتج البرنامج التالي:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// C program to demonstrate working of memset() &lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt; 
+#include &amp;lt;string.h&amp;gt; 
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;printArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; 
+
+	&lt;span class=&quot;c1&quot;&gt;// Fill whole array with 10. &lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;memset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]));&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Array after memset()&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;printArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;لاحظ أن الكود أعلاه لا يضبط قيم المصفوفة على القيمة 10 وذلك ﻷن طريقة ضبط memset هو حرف حرف وأن ال integer يحوي أكثر من بايت واحد (حرف واحد) (حيث الـ integer هو 4 بايت في الذاكرة)&lt;/p&gt;
+
+&lt;p&gt;ولكن إذا استبدلنا رقم 10 بـ 1- فسنحصل على قيم 1- ﻷن تمثيل العدد 1- يحوي بالكامل على واحدات (1s) في كلا حالتي الـ char والـ int.&lt;/p&gt;
+
+&lt;p&gt;هذه المقالة مترجمة وبتصرّف. يرجى الاطلاع على &lt;a href=&quot;https://www.geeksforgeeks.org/memset-c-example/&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -8166,6 +9287,9 @@
   'a2b2c2d2
   &lt;/div&gt;
 
+&lt;p&gt;7.
+ اكتب برنامجًا بلغة سي لعد الثواني (مع أجزاء الثانية) بشكل مستمر.&lt;/p&gt;
+
 &lt;h1 id=&quot;الحلول&quot;&gt;الحلول&lt;/h1&gt;
 
 &lt;p&gt;1.&lt;/p&gt;
@@ -8448,6 +9572,26 @@
 	&lt;span class=&quot;nl&quot;&gt;Ende:&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;5.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;time.h&amp;gt;
+#define NO_SEC 15
+&lt;/span&gt;    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CLOCKS_PER_SEC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NO_SEC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;time_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CLOCKS_PER_SEC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%f&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+
     &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;أرجو أن يكون المقال قد أفادك.&lt;/p&gt;
