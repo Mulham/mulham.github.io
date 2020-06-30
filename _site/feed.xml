@@ -5,8 +5,8 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jun 2020 01:32:18 +0300</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2020 01:32:18 +0300</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2020 19:25:28 +0300</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2020 19:25:28 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -69,6 +69,9 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/rmdir-command-in-linux-with-examples/&quot;&gt;https://www.geeksforgeeks.org/rmdir-command-in-linux-with-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;التالي:  &lt;a href=&quot;/linux/mkdir&quot;&gt;الأمر mkdir&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/rmdir</link>
@@ -186,6 +189,9 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/rm-command-linux-examples/&quot;&gt;https://www.geeksforgeeks.org/rm-command-linux-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/rmdir&quot;&gt;الأمر rmdir&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/rm</link>
@@ -234,6 +240,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/pwd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/mv&quot;&gt;الأمر mv&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/pwd</link>
@@ -320,6 +329,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/rm&quot;&gt;الأمر rm&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/mv</link>
@@ -536,6 +548,8 @@
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/ls.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/pwd&quot;&gt;الأمر pwd&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/ls</link>
@@ -620,6 +634,9 @@
     &lt;p&gt;&lt;a href=&quot;/linux/mkdir&quot;&gt;الأمر mkdir&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;اقرأ أيضًا: &lt;a href=&quot;/gnu-grep-basics&quot;&gt;أساسيات الأمر grep للمبتدئين&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/intro</link>
@@ -719,6 +736,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/gcc.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/cd&quot;&gt;الأمر cd&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
@@ -841,6 +860,8 @@
   &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/cp-command-linux-examples/&quot;&gt;https://www.geeksforgeeks.org/cp-command-linux-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/cp</link>
@@ -930,6 +951,9 @@
 &lt;p&gt;ﻷي سؤال أو إضافة لا تتردد بمراسلتي&lt;/p&gt;
 
 &lt;p&gt;المقال مترجم وبتصرّف. &lt;a href=&quot;https://www.rapidtables.com/code/linux/cd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/ls&quot;&gt;الأمر ls&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/cd</link>

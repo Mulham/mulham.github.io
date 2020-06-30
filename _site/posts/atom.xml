@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-06-30T01:32:18+03:00</updated>
+	<updated>2020-06-30T19:25:28+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -75,6 +75,9 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/rmdir-command-in-linux-with-examples/&quot;&gt;https://www.geeksforgeeks.org/rmdir-command-in-linux-with-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;التالي:  &lt;a href=&quot;/linux/mkdir&quot;&gt;الأمر mkdir&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -188,6 +191,9 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/rm-command-linux-examples/&quot;&gt;https://www.geeksforgeeks.org/rm-command-linux-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/rmdir&quot;&gt;الأمر rmdir&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -232,6 +238,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/pwd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/mv&quot;&gt;الأمر mv&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -314,6 +323,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/rm&quot;&gt;الأمر rm&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -522,6 +534,8 @@
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/ls.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/pwd&quot;&gt;الأمر pwd&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -602,6 +616,9 @@
     &lt;p&gt;&lt;a href=&quot;/linux/mkdir&quot;&gt;الأمر mkdir&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;اقرأ أيضًا: &lt;a href=&quot;/gnu-grep-basics&quot;&gt;أساسيات الأمر grep للمبتدئين&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -693,6 +710,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/gcc.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/cd&quot;&gt;الأمر cd&lt;/a&gt;&lt;/p&gt;
 
 </content>
 		</entry>
@@ -811,6 +830,8 @@
   &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/cp-command-linux-examples/&quot;&gt;https://www.geeksforgeeks.org/cp-command-linux-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -896,6 +917,9 @@
 &lt;p&gt;ﻷي سؤال أو إضافة لا تتردد بمراسلتي&lt;/p&gt;
 
 &lt;p&gt;المقال مترجم وبتصرّف. &lt;a href=&quot;https://www.rapidtables.com/code/linux/cd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/ls&quot;&gt;الأمر ls&lt;/a&gt;&lt;/p&gt;
+
 </content>
 		</entry>
 	
@@ -995,6 +1019,8 @@
 &lt;p&gt;ﻷي استفسار يمكنك مراسلتي&lt;/p&gt;
 
 &lt;p&gt;المقال مترجم وبتصرّف، يمكنك مشاهدة &lt;a href=&quot;https://www.rapidtables.com/code/linux/cat.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;التالي: &lt;a href=&quot;/linux/cp&quot;&gt;الأمر cp&lt;/a&gt;&lt;/p&gt;
 
 </content>
 		</entry>
@@ -15696,14 +15722,32 @@ belongs to&lt;/p&gt;
 			<id>http://mulham.github.io//gnu-grep-basics</id>
 			<content type="html">&lt;p&gt;تعد Grep واحدة من مجموعة أدوات “Swiss Army knife” الخاصة بإدارة النظام، وهي مفيدة للغاية للبحث عن السلاسل والأنماط ( عبارات تحوي حرف أو مجموعة أحرف أو رموز معينة) في مجموعة من الملفات أو حتى المجلدات الفرعية. يقدم هذا المقال أساسيات Grep، ويقدم أمثلة على الاستخدام المتقدم ويربطك بمزيد من الصفحات المتعلقة بهذا الموضوع.&lt;/p&gt;
 
-&lt;p&gt;يتم تثبيت Grep (وهو اختصار لـ “Global Regular Expression Print”) افتراضيًا على كل توزيعة ﻷنظمة Linux و BSD و UNIX، وهو متاح أيضًا لنظام Windows. تقوم GNU ومؤسسة البرمجيات الحرة بتوزيع Grep كجزء من مجموعة أدوات المصادر المفتوحة. يركِّز هذا المقال التعليمي في المقام الأول على إصدار جنو هذا، لأنه الأكثر استخدامًا حاليًا.&lt;/p&gt;
+&lt;p&gt;قبل البدء بالشرح يجب أن أشرح بعض المصطلحات هنا حتى نفهم الشرح جيدًا:&lt;/p&gt;
 
-&lt;p&gt;يعثر Grep على نمط في ملف أو إدخال معين بسرعة وكفاءة. على الرغم من أن معظم الاستخدامات اليومية للأمر بسيطة، إلا أن هناك مجموعة متنوعة من الاستخدامات الأكثر تقدّمًا والتي لا يعرفها معظم الأشخاص - بما في ذلك التعبيرات المعتادة والتي قد تصبح معقدة للغاية.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;النمط أو بالإنجليزية pattern كما ذكرت هو مجموعة أحرف أو رموز أو أرقام (أو جميعهم مع بعض)، مثلا عندما أريد البحث عن حرفي “sd” في الملف أو عبارة “.?why” فهذه العبارة نعتبرها نمطًا ﻷننا نبحث في ملف أو مجموعة ملفات عن كل كلمة تحوي هذه العبارة أو هذا الرمز أو الحرف..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;التعبيرات النمطية أو بالإنجليزية regular expression هي باختصار شديد عبارة يتم كتابتها وفق قواعد معينة لتكون نتائج البحث كما نرغب، يعني مثلا نريد البحث عن كل كلمة تبدأ بحرف “a” وتنتهي بحرف “d”، كما لاحظت فلا يمكن تمثيل هذا الشيئ بالأنماط المذكورة أعلاه ﻷننا لم نحدد الأحرف التي ستكون بين الحرفين “a” و “d” ولهذا نستخدم هنا لهذا الغرض التعبيرات النمطية ويكون شكلها مثلا “$a*d^” حيث يشير الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; لبداية الكلمة والرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; لنهايتها وما إلى ذلك..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الهدف الأساسي من الأمر grep هو البحث كما ذكرنا، وتتعامل grep مع التعبيرات النمطية التي شرحتها أعلاه وذلك للبحث المتقدم في الملفات.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;الأداة لها جذورها في بناء جملة التعبير العادية الموسعة التي تمت إضافتها إلى UNIX بعد تنفيذ التعبير العادي الأصلي من “كين تومسون”. يبحث الأخير عن أي قائمة من السلاسل الثابتة باستخدام خوارزمية Aho-Corasick. يتم تضمين هذه المتغيرات في معظم تطبيقات Grep الحديثة كمفاتيح تبديل لسطر الأوامر (وموحدة كـ -E و -F في POSIX.2). قد يتصرف Grep أيضًا في مثل هذه التطبيقات المدمجة بشكل مختلف اعتمادًا على الاسم الذي تم استدعاءه به، مما يسمح لـ fGrep و eGrep و Grep بأن تكون روابط للبرنامج نفسه.&lt;/p&gt;
+&lt;p&gt;لنكمل الآن الشرح..&lt;/p&gt;
+
+&lt;p&gt;يتم تثبيت Grep (وهو اختصار لـ “Global Regular Expression Print”) افتراضيًا على كل توزيعة ﻷنظمة Linux و BSD و UNIX، وهو متاح أيضًا لنظام Windows. تقوم GNU ومؤسسة البرمجيات الحرة بتوزيع Grep كجزء من مجموعة أدوات المصادر المفتوحة. يركِّز هذا المقال التعليمي في المقام الأول على إصدار جنو، لأنه الأكثر استخدامًا حاليًا.&lt;/p&gt;
+
+&lt;p&gt;يعثر Grep على نمط في ملف أو عبارة مُدخلة من المستخدم بسرعة وكفاءة. على الرغم من أن معظم الاستخدامات اليومية للأمر بسيطة، إلا أن هناك مجموعة متنوعة من الاستخدامات الأكثر تقدّمًا والتي لا يعرفها معظم الأشخاص، بما في ذلك التعبيرات المعتادة والتي قد تصبح معقدة للغاية.&lt;/p&gt;
+
+&lt;p&gt;الأداة لها جذورها في بناء جملة التعبيرات النمطية (regular expression) الموسعة التي تمت إضافتها إلى UNIX بعد تطبيق التعبير النمطي الأصلي من قبل “كين تومسون”. حيث يبحث تطبيق “كين تومسون” عن أي قائمة من العبارات النصية الثابتة باستخدام خوارزمية Aho-Corasick. يتم تضمين هذه المتغيرات في معظم تطبيقات Grep الحديثة كمفاتيح تبديل لسطر الأوامر (وموحدة مثل خيارات E- و F- في POSIX.2). قد يتصرف Grep أيضًا في مثل هذه التطبيقات المدمجة بشكل مختلف اعتمادًا على الاسم الذي تم استدعاءه به، مما يسمح لـ fGrep و eGrep و Grep بأن تكون روابط للبرنامج نفسه.&lt;/p&gt;
 
 &lt;p&gt;هناك طريقتان لتوفير المدخلات إلى Grep ولكل منها استخداماته الخاصة.
-أولاً: يمكن استخدام Grep للبحث في ملف أو ملفات معينة على النظام (بما في ذلك البحث المتكرر من خلال المجلدات الفرعية). يقبل Grep أيضًا المدخلات من أمر أو سلسلة أوامر أخرى.&lt;/p&gt;
+أولاً: يمكن استخدام Grep للبحث في ملف أو ملفات معينة في النظام (بما في ذلك البحث المتكرر من خلال المجلدات الفرعية).&lt;/p&gt;
+
+&lt;p&gt;يقبل Grep أيضًا المدخلات من أمر أو سلسلة أوامر أخرى.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#التعبيرات-النمطية&quot; id=&quot;markdown-toc-التعبيرات-النمطية&quot;&gt;التعبيرات النمطية&lt;/a&gt;&lt;/li&gt;
@@ -15720,7 +15764,7 @@ belongs to&lt;/p&gt;
 
 &lt;h1 id=&quot;التعبيرات-النمطية&quot;&gt;التعبيرات النمطية&lt;/h1&gt;
 
-&lt;p&gt;التعبير النمطي (regular expression) غالبًا ما يتم اختصاره إلى “regex” أو “regexp” وهو طريقة لتحديد نمط (مجموعة معينة من الأحرف أو الكلمات) في النص الذي يمكن تطبيقه على المدخلات المتغيرة للعثور على جميع التكرارات التي تتطابق مع النمط. تعمل Regexes على تعزيز القدرة على معالجة محتوى النص بشكل مفيد خاصةً عند دمجها مع أوامر أخرى.
+&lt;p&gt;التعبير النمطي (regular expression) غالبًا ما يتم اختصاره إلى “regex” أو “regexp” وهو كما شرحناه في الأعلى. تعمل Regexes بشكل متقدم في معالجة محتوى النص بشكل مفيد خاصةً عند دمجها مع أوامر أخرى.
 يتم عادةً تضمين التعبيرات النمطية في أمر Grep بالتنسيق التالي:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    grep [خيارات] [regexp] [اسم الملف]
@@ -15732,9 +15776,9 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;في التعبيرات النمطية الأساسية: تفقد الأحرف الوصفية &lt;code class=&quot;highlighter-rouge&quot;&gt;؟&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;)&lt;/code&gt; معناها الخاص والذي يرد وصف لاستخداماته لاحقًا في هذه المقالة. وكما هو مذكور أدناه، للتبديل إلى استخدام التعبيرات النمطية الموسعة تحتاج إلى إضافة الخيار E- إلى الأمر grep.&lt;/p&gt;
 
-&lt;p&gt;من المعتاد إحاطة التعبير النمطي بعلامات اقتباس مفردة لمنع shell (مثل Bash أو غيرها) من محاولة تفسير التعبير وتوسيعه قبل بدء عملية grep. على سبيل المثال إذا لم يتم ذكر زوج من علامات التجزئة في إعادة الاسترداد فسوف ينتج عن ذلك النص بين علامات التجزئة التي يتم تنفيذها كعملية فرعية لـ Bash - وإذا حدث أن ذلك أمر صالح فالنص المُرجع سيأخذ مكان التعبير النمطي في تعليمة سطر الأوامر المعطاة إلى Grep! وليس هذا مانريد.&lt;/p&gt;
+&lt;p&gt;من المعتاد إحاطة التعبير النمطي بعلامات تنصيص مفردة (أي &lt;code class=&quot;highlighter-rouge&quot;&gt;' '&lt;/code&gt;) لمنع موجه الأوامر shell (مثل Bash أو غيرها) من محاولة تفسير التعبير وتوسيعه قبل بدء عملية grep. على سبيل المثال إذا لم يتم تضمين الرمز  &lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt; بعلامتي تنصيص مفردة &lt;code class=&quot;highlighter-rouge&quot;&gt;' '&lt;/code&gt; فسوف يتم تنفيذ النص بين علامتي &lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt; كعملية فرعية لـ Bash - وإذا حدث أن ذلك أمر صالح فالنص المُرجع سيأخذ مكان التعبير النمطي في تعليمة سطر الأوامر المعطاة إلى Grep! وليس هذا مانريد.&lt;/p&gt;
 
-&lt;p&gt;مرة أخرى، نظرًا لسلوك shell يمكنك أيضًا تضمين regex في علامات تنصيص مزدوجة - وفي هذه الحالة يمكنك استخدام متغيرات البيئة في regex، وستقوم shell باستبدالها قبل الاتصال بـ Grep. قد يكون هذا مفيدًا جدًا اعتمادًا على ما تحاول القيام به - أو قد يكون مصدر إزعاج. تذكر الفرق في السلوك.&lt;/p&gt;
+&lt;p&gt;مرة أخرى، نظرًا لسلوك shell يمكنك أيضًا تضمين regex في علامات تنصيص مزدوجة &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot; &quot;&lt;/code&gt; وفي هذه الحالة يمكنك استخدام متغيرات البيئة في regex، وستقوم shell باستبدالها قبل تنفيذ Grep. قد يكون هذا مفيدًا جدًا اعتمادًا على ما تحاول القيام به، أو قد يكون مصدر إزعاج. تذكر الفرق في السلوك.&lt;/p&gt;
 
 &lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
   &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
@@ -15742,7 +15786,7 @@ belongs to&lt;/p&gt;
 
 &lt;h1 id=&quot;الاستخدام-الأساسي&quot;&gt;الاستخدام الأساسي&lt;/h1&gt;
 
-&lt;p&gt;الآن دعنا ننتقل إلى بعض الأمثلة العملية لاستخدام Grep. ولفهم النتائج بشكل أفضل قمت بإنشاء ملف نصي بسيط سنقوم بتشغيل عمليات البحث الخاصة به في Grep؛ يحتوي الملف على الأسطر التالية:&lt;/p&gt;
+&lt;p&gt;دعنا ننتقل الآن إلى بعض الأمثلة العملية لاستخدام Grep. ولفهم النتائج بشكل أفضل قمت بإنشاء ملف نصي بسيط سنقوم بتشغيل عمليات البحث الخاصة به في Grep. يحتوي الملف على الأسطر التالية:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Hi 
     this 
@@ -15756,30 +15800,30 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;بحث غير حساس لحالة الأحرف (grep -i):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -i 'abcd' testfile 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ grep -i 'abcd' testfile 
     Abcd 
     ABCD
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;كما ترى ، تؤدي العلامة i- إلى البحث عن “abcd” لإرجاع المطابقات التي لها حالات مختلفة للأحرف.&lt;/p&gt;
+&lt;p&gt;كما ترى فالخيار i- يؤدي للبحث عن “abcd” لإرجاع المطابقات التي لها حالات مختلفة للأحرف (أي سواء كانت الأحرف كبيرة أو صغيرة).&lt;/p&gt;
 
 &lt;p&gt;البحث عن كلمة كاملة (grep -w):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -w 'test' testfile 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ grep -w 'test' testfile 
     is test file
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;هذا النوع من البحث يعرض فقط الأسطر التي تكون فيها السلسلة المطلوبة كلمة كاملة وليست جزءًا من كلمة أكبر.&lt;/p&gt;
+&lt;p&gt;هذا النوع من البحث يعرض فقط الأسطر التي تكون فيها العبارة المطلوبة كلمة كاملة وليست جزءًا من كلمة (مثلا حرفين من كلمة).&lt;/p&gt;
 
 &lt;p&gt;البحث بشكل متكرر من خلال المجلدات الفرعية (grep -r &amp;lt;pattern&amp;gt; path):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -r '456' /root/ 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ grep -r '456' /root/ 
     /root/testfile:Year is 2010
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;البحث العكسي (grep -v):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -v 'practical' testfile 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ grep -v 'practical' testfile 
     Hi 
     this 
     is test file 
@@ -15789,11 +15833,11 @@ belongs to&lt;/p&gt;
     ABCD
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;هذا يعطي جميع الأسطر في الملف ، باستثناء السطر الذي يحتوي على كلمة “practical”.&lt;/p&gt;
+&lt;p&gt;الأمر أعلاه يعطي جميع الأسطر في الملف، باستثناء السطر الذي يحتوي على كلمة “practical”.&lt;/p&gt;
 
-&lt;p&gt;من الاستخدامات المثير للاهتمام أيضا هو علامة -L (يمكنك أيضًا استخدام
+&lt;p&gt;من الاستخدامات المثيرة للاهتمام أيضا هي علامة L- (يمكنك أيضًا استخدام
  –files-without-match
-) ، والتي تقوم بإخراج أسماء الملفات التي لا تحتوي على تطابقات لنمط البحث الخاص بك. لا تتم طباعة المطابقات الخاصة بنمط البحث الخاص بك، ولكن يتم طباعة الأسماء فقط.&lt;/p&gt;
+) ، والذي يعطي أسماء الملفات التي &lt;strong&gt;لا&lt;/strong&gt; تحتوي على تطابقات لنمط البحث الخاص بك. لا تتم طباعة العبارات التي تتطابق مع نمط البحث بل يتم طباعة أسماء ملفاتها فقط.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -r -L &quot;Network&quot; /var/log/* 
     /var/log/anaconda.log 
@@ -15804,18 +15848,18 @@ belongs to&lt;/p&gt;
     ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;علامة “معاكسة” إلى -L هي -l أو - الملفات - مع التطابقات ، التي تطبع (فقط) أسماء الملفات التي تحتوي على مطابقات لنمط البحث الخاص بك.&lt;/p&gt;
+&lt;p&gt;الخيار المعاكس لـ L- هو l- أو files-with-matches– والذي يطبع (فقط) أسماء الملفات التي تحتوي على تطابق لنمط البحث الخاص بك.&lt;/p&gt;
 
-&lt;p&gt;طباعة أسطر سياق إضافية (زائدة) بعد المطابقة (grep -A NUM):&lt;/p&gt;
+&lt;p&gt;طباعة أسطر إضافية (زائدة) بعد المطابقة (grep -A NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -A1 '123'  testfile
     123 456 
     Abcd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;يطبع Grep السطر المطابق لكل سطر يطابق البحث، وكذلك السطر التالي بعد المطابقة. يؤدي تغيير الرقم المتاح إلى -A إلى تغيير عدد الأسطر الإضافية الموجودة في الإخراج.&lt;/p&gt;
+&lt;p&gt;يطبع Grep السطر المطابق لكل سطر يطابق البحث، وكذلك السطر الذي يليه. يؤدي تغيير الرقم المعطى إلى A- إلى تغيير عدد الأسطر الإضافية الموجودة في الخرج.&lt;/p&gt;
 
-&lt;p&gt;قم بطباعة خطوط سياق (بادئة) إضافية قبل المطابقة (grep -B NUM):&lt;/p&gt;
+&lt;p&gt;لطباعة أسطر سابقة إضافية (قبل السطر الذي يحوي التطابق) (grep -B NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -B2 'Abcd' testfile
     practical with grep 
@@ -15823,7 +15867,7 @@ belongs to&lt;/p&gt;
     Abcd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;طباعة أسطر سياق إضافية (بادئة وخلفية) قبل وبعد المطابقة (grep -C NUM):&lt;/p&gt;
+&lt;p&gt;طباعة أسطر إضافية (سابقة ولاحقة) قبل وبعد المطابقة (grep -C NUM):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -C2 'carry' testfile
     this
@@ -15833,16 +15877,16 @@ belongs to&lt;/p&gt;
     123 456
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;كما ترى ، فقد طبع هذا سطرين قبل وبعد المطابقة الفردية الموجودة في الملف ؛ إذا كان هناك تطابقات متعددة ، يقوم Grep بإدراج سطر يحتوي على - بين كل مجموعة من الخطوط (كل تطابق وخطوط السياق الخاصة به).&lt;/p&gt;
+&lt;p&gt;كما ترى ، فقد طبع هذا الأمر سطرين قبل وبعد سطر المطابقة الموجود في الملف. إذا كان هناك تطابقات متعددة فسيقوم Grep بإدراج سطر يحتوي على الرمزين &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; بين كل مجموعة من الأسطر (كل تطابق وأسطره الخاصة به).&lt;/p&gt;
 
-&lt;p&gt;اطبع اسم الملف لكل مطابقة (grep -H &amp;lt;pattern&amp;gt; filename):&lt;/p&gt;
+&lt;p&gt;طباعة اسم الملف لكل مطابقة (grep -H &amp;lt;pattern&amp;gt; filename):&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -H 'a' testfile
     testfile:to carry out few regular expressions 
     testfile:practical with grep
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;الآن ، لنجري البحث بشكل مختلف قليلاً:&lt;/p&gt;
+&lt;p&gt;لنجري الآن البحث بشكل مختلف قليلاً:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ cat testfile | grep -H 'a' 
     (standard input):to carry out few regular expressions 
