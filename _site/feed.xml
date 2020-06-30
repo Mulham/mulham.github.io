@@ -5,9 +5,132 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jun 2020 19:25:28 +0300</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2020 19:25:28 +0300</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2020 22:45:05 +0300</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2020 22:45:05 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>كيفية تبادل ومشاركة الملفات مع أبونتو على الفيرجوال بوكس</title>
+        <description>&lt;p&gt;إليك شرح بالصور لكيفية مشاركة مجلد أو أكثر بين الجهاز المُضيف ولينكس الموجود على الفيرجوال بوكس&lt;/p&gt;
+
+&lt;p&gt;1.
+ افتح الفيرجوال بوكس (virtual box) ثم اختار نظام لينكس من القائمة الجانبية له واضغط في الأعلى على “Settings” كما في الصورة:&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;604&quot; height=&quot;287&quot; src=&quot;/assets/articles/share-folder-vbox1.png&quot; alt=&quot;مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;2.
+ اضغط من القائمة الجانبية على “shared folders” ثم على اليمين اضغط على علامة الزائد لإضافة مجلد جديد ومشاركته مع النظام على الفيرجوال بوكس&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;602&quot; height=&quot;377&quot; src=&quot;/assets/articles/share-folder-vbox2.png&quot; alt=&quot;2 مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;3.
+ اختر المجلد الذي تريد مشاركته ونؤشر على الخيار “Auto mount”&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;308&quot; height=&quot;233&quot; src=&quot;/assets/articles/share-folder-vbox3.png&quot; alt=&quot;3 مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;4.
+ بعد ذلك نبدأ تشغيل النظام على الفيرجوال بوكس ونضغط في الأعلى على خيار Devices ثم “Install Guest Additions”&lt;/p&gt;
+
+&lt;p&gt;5.
+ ثم على الأبونتو ضمن الفيرجوال بوكس نشغل الطرفية من الأيقونة الخاصة بها أو بالضغط على ctrl + Alt + T ثم نكتب الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo adduser user vboxsf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;مع استبدال user باسم المستخدم الخاص بك على أبونتو والذي يظهر قبل علامة الـ @ على الطرفية.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;602&quot; height=&quot;377&quot; src=&quot;/assets/articles/share-folder-vbox4.png&quot; alt=&quot;4 مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ثم نعيد تشغيل النظام على الفيرجوال بوكس بشكل اعتيادي أو بكتابة الأمر على الطرفية&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وبعدها ستجد المجلد المشترك عند فتح متصفح الملفات (في أبونتو على الفيرجوال بوكس) في القائمة الجانبية، أو إذا لم يظهر قم بالذهاب لـ “File System” الموجود في القائمة الجانبية والذهاب من هناك لمجلد media أو مجلد mnt سيظهر حتمًا في أحدهما.&lt;/p&gt;
+
+&lt;p&gt;المرجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=TcrfrVNNGMU&quot;&gt;https://www.youtube.com/watch?v=TcrfrVNNGMU&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 30 Jun 2020 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D8%A8%D9%8A%D9%86-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-%D9%88%D9%81%D9%8A%D8%B1%D8%AC%D9%88%D8%A7%D9%84-%D8%A8%D9%88%D9%83%D8%B3-%D8%A3%D8%A8%D9%88%D9%86%D8%AA%D9%88/</link>
+        <guid isPermaLink="true">http://localhost:4000/%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D8%A8%D9%8A%D9%86-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-%D9%88%D9%81%D9%8A%D8%B1%D8%AC%D9%88%D8%A7%D9%84-%D8%A8%D9%88%D9%83%D8%B3-%D8%A3%D8%A8%D9%88%D9%86%D8%AA%D9%88/</guid>
+        
+        <category>تعليم</category>
+        
+        <category>أنظمة</category>
+        
+        <category>لينكس</category>
+        
+        
+        <category>tutorials</category>
+        
+      </item>
+    
+      <item>
+        <title>حل مشكلة بطء أبونتو على الفيرجوال بوكس</title>
+        <description>&lt;p&gt;قد يكون أبونتو أو نظام لينكس عموما الذي نزلته ضمن الفيرجوال بوكس بطيئ للغاية والنوافذ فيه والتطبيقات عموما بطيئة الاستجابة. لنتعرف هنا على سبب هذه المشكلة وحلها المحتمل!&lt;/p&gt;
+
+&lt;h1 id=&quot;السبب&quot;&gt;السبب&lt;/h1&gt;
+
+&lt;p&gt;غالبًا يكون بسبب بطئ استجابة واجهة أبونتو على الفيرجوال بوكس&lt;/p&gt;
+
+&lt;h1 id=&quot;الحل&quot;&gt;الحل&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;افتح تطبيق الفيرجوال بوكس&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بالتحديث لآخر إصدار من قائمة المساعدة “Help &amp;gt; Check for Updates”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط في الأعلى على “Settings”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;في القائمة الجانبية اضغط على “Display” ومنها ستجد خيار “Enable 3D acceleration” قم بوضع صح عليه.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أعد تشغيل أبونتو (على الفيرجوال بوكس)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;أرجو أن يكون المقال قد أفادك وإلا فيرجى مراسلتي&lt;/p&gt;
+
+&lt;p&gt;المرجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.rapidtables.com/code/linux/virtualbox-ubuntu-slow.html&quot;&gt;https://www.rapidtables.com/code/linux/virtualbox-ubuntu-slow.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 30 Jun 2020 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/%D8%A3%D8%A8%D9%88%D9%86%D8%AA%D9%88-%D8%A8%D8%B7%D9%8A%D8%A6-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%81%D9%8A%D8%B1%D8%AC%D9%88%D8%A7%D9%84-%D8%A8%D9%88%D9%83%D8%B3/</link>
+        <guid isPermaLink="true">http://localhost:4000/%D8%A3%D8%A8%D9%88%D9%86%D8%AA%D9%88-%D8%A8%D8%B7%D9%8A%D8%A6-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%81%D9%8A%D8%B1%D8%AC%D9%88%D8%A7%D9%84-%D8%A8%D9%88%D9%83%D8%B3/</guid>
+        
+        <category>تعليم</category>
+        
+        <category>أنظمة</category>
+        
+        <category>لينكس</category>
+        
+        
+      </item>
     
       <item>
         <title>شرح الأمر rmdir في لينكس مع الأمثلة</title>
@@ -743,221 +866,6 @@
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/linux/gcc</link>
         <guid isPermaLink="true">http://localhost:4000/linux/gcc</guid>
-        
-        
-        <category>tutorials</category>
-        
-      </item>
-    
-      <item>
-        <title>شرح الأمر cp في لينكس مع الأمثلة</title>
-        <description>&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;يُستخدم الأمر cp (وهو اختصار لـ copy) لنسخ الملفات والمجلدات.&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-cp&quot; id=&quot;markdown-toc-خيارات-الأمر-cp&quot;&gt;خيارات الأمر cp&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-cp&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-cp&quot;&gt;أمثلة على الأمر cp&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#المراجع&quot; id=&quot;markdown-toc-المراجع&quot;&gt;المراجع&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
-
-&lt;p&gt;نسخ من المصدر “source” للوجهة “dest”:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp [options] source dest
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;نسخ عدة ملفات إلى مجلد&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    cp [options] Source-1 Source-2 Source-3 Source-n Directory
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;ومع استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;[options]&lt;/code&gt; بالخيار المطلوب، والخيارات اختيارية وليست إجبارية لتنفيذ الأمر.&lt;/p&gt;
-
-&lt;h1 id=&quot;خيارات-الأمر-cp&quot;&gt;خيارات الأمر cp&lt;/h1&gt;
-
-&lt;p&gt;الخيارات الرئيسية للأمر cp هي:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;الخيار&lt;/th&gt;
-      &lt;th&gt;الوصف&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cp -i&lt;/td&gt;
-      &lt;td&gt;نسخ تفاعلي (السؤال قبل استبدال ملف موجود مسبقا)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cp -f&lt;/td&gt;
-      &lt;td&gt;اختصار لـ force أي إجبار النسخ حتى لو اضطر لحذف الملف الوجهة والكتابة فوقه&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cp -l&lt;/td&gt;
-      &lt;td&gt;أي link وهي مثل إنشاء اختصار بدل من النسخ&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cp -R&lt;/td&gt;
-      &lt;td&gt;نسخ تكراري، ويستخدم لنسخ المجلدات بمحتوياتها بما في ذلك الملفات المخفية&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cp -u&lt;/td&gt;
-      &lt;td&gt;أي update وبالتالي انسخ في حالة المصدر كان أحدث من الوجهة&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cp -v&lt;/td&gt;
-      &lt;td&gt;أي verbose وهو نسخ مع عرض معلومات عن العملية&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;أمثلة-على-الأمر-cp&quot;&gt;أمثلة على الأمر cp&lt;/h1&gt;
-
-&lt;p&gt;نسخ ملف واحد “main.c” إلى المجلد الهدف “bak”&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp main.c bak
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;نسخ ملفين “main.c” و “def.h” إلى المجلد rapid باستخدام المسار المطلق (والذي يبدأ من المجلد الجذر)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp main.c def.h /home/usr/rapid/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;نسخ كل الملفات ذات اللاحقة “c.” إلى المجلد الفرعي bak&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp *.c bak
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;نسخ المجلد src الموجود في المسار الحالي إلى المجلد rapid ذو المسار المطلق: (المسار المطلق يبدأ من المجلد الجذر ويُستخدم عمومًا في حال عدم وجود المجلد أو الملف في مسار العمل الحالي)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp src /home/usr/rapid/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;نسخ جميع الملفات والمجلدات في المجلد dev إلى المجلد الفرعي bak (بدون الخيار R- سيعطي خطأ)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp -R dev bak
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;نسخ تفاعلي للسؤال قبل النسخ فوق ملفات موجودة:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp -i test.c bak
-    cp: overwrite 'bak/test.c'? y
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;تحديث جميع الملفات في المجلد bak، أي نسخ الملفات الأحدث فقط من المجلد الحالي للمجلد bak&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cp -u * bak
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;المراجع&quot;&gt;المراجع&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.rapidtables.com/code/linux/cp.html&quot;&gt;https://www.rapidtables.com/code/linux/cp.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/cp-command-linux-examples/&quot;&gt;https://www.geeksforgeeks.org/cp-command-linux-examples/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;/linux/gcc&quot;&gt;الأمر gcc&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/linux/cp</link>
-        <guid isPermaLink="true">http://localhost:4000/linux/cp</guid>
-        
-        
-        <category>tutorials</category>
-        
-      </item>
-    
-      <item>
-        <title>شرح الأمر cd في لينكس مع الأمثلة</title>
-        <description>&lt;p class=&quot;notice&quot;&gt;هذا المقال جزء من &lt;a href=&quot;/linux/intro&quot;&gt;سلسلة أساسيات أوامر لينكس&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;يُستخدم الأمر cd لتغيير مسار العمل ضمن الطرفية أو موجه سطر الأوامر (التيرمينال).&lt;/p&gt;
-
-&lt;p&gt;ويمكنك أثناء كتابة اسم المجلد الضغط على زر &lt;kbd&gt;tab&lt;/kbd&gt; لإكماله تلقائيًا.&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-cd&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-cd&quot;&gt;أمثلة على الأمر cd&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd [directory]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;حيث يتم استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;[directory]&lt;/code&gt; بمسار المجلد المطلوب الذهاب له.&lt;/p&gt;
-
-&lt;h1 id=&quot;أمثلة-على-الأمر-cd&quot;&gt;أمثلة على الأمر cd&lt;/h1&gt;
-
-&lt;p&gt;المسار أو المجلد الافتراضي عند فتح الطرفيّة هو مجلد المنزل “Home” لذا إن كنت على الطرفية في مسار آخر وأردت الذهاب لملجد المنزل فيكفي كتابة الأمر نفسه فقط:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;والأمر التالي أيضًا يمكن استخدامه للذهاب لمجلد المنزل&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd ~
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;للذهاب لملجد الجذر root والذي يحوي مجلد المنزل ومجلدات النظام أيضًا فنكتب الأمر:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd /
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;والآن إذا كنا في مجلد فرعي وأردنا الذهاب للمسار الأعلى منه أو يمسى المجلد الأب فنكتب:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd ..
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; النقطتين &lt;code class=&quot;highlighter-rouge&quot;&gt;..&lt;/code&gt; هنا تدل على المسار (المجلد) الأب وجدير بالذكر أن النقطة الواحدة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; تدل دائمًا على المجلد أو المسار الحالي.&lt;/p&gt;
-
-&lt;p&gt;للذهاب لمجلد فرعي موجود ضمن المسار الحالي الذي نحن فيه: (على فرض وجود مجلد باسم Documents)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd Documents
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;للذهاب لمسار فرعي (على فرض وجود مجلد ضمن المجلد الحالي اسمه Documents ويحوي بداخله مجلد باسم Books)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd Documents/Books
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;الذهاب لمسار باستخدام المسار المطلق (absolute path) أي بغض النظر عن المسار الحالي وبالتالي بدءا من المجلد الجذر&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd /home/user/Desktop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;مع استبدال user أعلاه باسم المستخدم الفعلي&lt;/p&gt;
-
-&lt;p&gt;والآن إذا أردنا الذهاب لمجلد يحتوي اسمه على فراغات مثل “My Images” فلدينا عدة خيارات:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd My\ Images
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;أو&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd &quot;My Images&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;أو&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ cd 'My Images'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;ﻷي سؤال أو إضافة لا تتردد بمراسلتي&lt;/p&gt;
-
-&lt;p&gt;المقال مترجم وبتصرّف. &lt;a href=&quot;https://www.rapidtables.com/code/linux/cd.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;التالي: &lt;a href=&quot;/linux/ls&quot;&gt;الأمر ls&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 29 Jun 2020 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/linux/cd</link>
-        <guid isPermaLink="true">http://localhost:4000/linux/cd</guid>
         
         
         <category>tutorials</category>

@@ -4,13 +4,118 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-06-30T19:25:28+03:00</updated>
+	<updated>2020-06-30T22:45:05+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
 		<email>mulham94@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>كيفية تبادل ومشاركة الملفات مع أبونتو على الفيرجوال بوكس</title>
+			<link href="http://mulham.github.io/%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D8%A8%D9%8A%D9%86-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-%D9%88%D9%81%D9%8A%D8%B1%D8%AC%D9%88%D8%A7%D9%84-%D8%A8%D9%88%D9%83%D8%B3-%D8%A3%D8%A8%D9%88%D9%86%D8%AA%D9%88/"/>
+			<updated>2020-06-30T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//مشاركة-الملفات-بين-ويندوز-وفيرجوال-بوكس-أبونتو</id>
+			<content type="html">&lt;p&gt;إليك شرح بالصور لكيفية مشاركة مجلد أو أكثر بين الجهاز المُضيف ولينكس الموجود على الفيرجوال بوكس&lt;/p&gt;
+
+&lt;p&gt;1.
+ افتح الفيرجوال بوكس (virtual box) ثم اختار نظام لينكس من القائمة الجانبية له واضغط في الأعلى على “Settings” كما في الصورة:&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;604&quot; height=&quot;287&quot; src=&quot;/assets/articles/share-folder-vbox1.png&quot; alt=&quot;مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;2.
+ اضغط من القائمة الجانبية على “shared folders” ثم على اليمين اضغط على علامة الزائد لإضافة مجلد جديد ومشاركته مع النظام على الفيرجوال بوكس&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;602&quot; height=&quot;377&quot; src=&quot;/assets/articles/share-folder-vbox2.png&quot; alt=&quot;2 مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;3.
+ اختر المجلد الذي تريد مشاركته ونؤشر على الخيار “Auto mount”&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;308&quot; height=&quot;233&quot; src=&quot;/assets/articles/share-folder-vbox3.png&quot; alt=&quot;3 مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;4.
+ بعد ذلك نبدأ تشغيل النظام على الفيرجوال بوكس ونضغط في الأعلى على خيار Devices ثم “Install Guest Additions”&lt;/p&gt;
+
+&lt;p&gt;5.
+ ثم على الأبونتو ضمن الفيرجوال بوكس نشغل الطرفية من الأيقونة الخاصة بها أو بالضغط على ctrl + Alt + T ثم نكتب الأمر:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo adduser user vboxsf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;مع استبدال user باسم المستخدم الخاص بك على أبونتو والذي يظهر قبل علامة الـ @ على الطرفية.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;602&quot; height=&quot;377&quot; src=&quot;/assets/articles/share-folder-vbox4.png&quot; alt=&quot;4 مشاركة الملفات مع أبونتو على الفيرجوال بوكس&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ثم نعيد تشغيل النظام على الفيرجوال بوكس بشكل اعتيادي أو بكتابة الأمر على الطرفية&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sudo reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وبعدها ستجد المجلد المشترك عند فتح متصفح الملفات (في أبونتو على الفيرجوال بوكس) في القائمة الجانبية، أو إذا لم يظهر قم بالذهاب لـ “File System” الموجود في القائمة الجانبية والذهاب من هناك لمجلد media أو مجلد mnt سيظهر حتمًا في أحدهما.&lt;/p&gt;
+
+&lt;p&gt;المرجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=TcrfrVNNGMU&quot;&gt;https://www.youtube.com/watch?v=TcrfrVNNGMU&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>حل مشكلة بطء أبونتو على الفيرجوال بوكس</title>
+			<link href="http://mulham.github.io/%D8%A3%D8%A8%D9%88%D9%86%D8%AA%D9%88-%D8%A8%D8%B7%D9%8A%D8%A6-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%81%D9%8A%D8%B1%D8%AC%D9%88%D8%A7%D9%84-%D8%A8%D9%88%D9%83%D8%B3/"/>
+			<updated>2020-06-30T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//أبونتو-بطيئ-على-الفيرجوال-بوكس</id>
+			<content type="html">&lt;p&gt;قد يكون أبونتو أو نظام لينكس عموما الذي نزلته ضمن الفيرجوال بوكس بطيئ للغاية والنوافذ فيه والتطبيقات عموما بطيئة الاستجابة. لنتعرف هنا على سبب هذه المشكلة وحلها المحتمل!&lt;/p&gt;
+
+&lt;h1 id=&quot;السبب&quot;&gt;السبب&lt;/h1&gt;
+
+&lt;p&gt;غالبًا يكون بسبب بطئ استجابة واجهة أبونتو على الفيرجوال بوكس&lt;/p&gt;
+
+&lt;h1 id=&quot;الحل&quot;&gt;الحل&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;افتح تطبيق الفيرجوال بوكس&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بالتحديث لآخر إصدار من قائمة المساعدة “Help &amp;gt; Check for Updates”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;اضغط في الأعلى على “Settings”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;في القائمة الجانبية اضغط على “Display” ومنها ستجد خيار “Enable 3D acceleration” قم بوضع صح عليه.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أعد تشغيل أبونتو (على الفيرجوال بوكس)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;أرجو أن يكون المقال قد أفادك وإلا فيرجى مراسلتي&lt;/p&gt;
+
+&lt;p&gt;المرجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.rapidtables.com/code/linux/virtualbox-ubuntu-slow.html&quot;&gt;https://www.rapidtables.com/code/linux/virtualbox-ubuntu-slow.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>شرح الأمر rmdir في لينكس مع الأمثلة</title>
@@ -15893,9 +15998,9 @@ belongs to&lt;/p&gt;
     (standard input):practical with grep
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;عندما يتم تمرير الدفق الذي يُطلب من Grep بحثه إلى مدخلاته القياسية عبر توجيه من أمر سابق في السلسلة ، يعرض grep -H (الإدخال القياسي) كاسم ملف.&lt;/p&gt;
+&lt;p&gt;عندما يتم تمرير الدفق (ملف أو مجموعة ملفات) الذي يُطلب من Grep بحثه إلى مدخلاته القياسية عبر توجيه من أمر سابق في السلسلة، يعرض grep -H (الإدخال القياسي) كاسم ملف.&lt;/p&gt;
 
-&lt;p&gt;التشغيل في الوضع “الصامت” (grep -q): عند التشغيل باستخدام هذه العلامة ، لا يكتب Grep أي شيء إلى الإخراج القياسي ، ولكنه يحدد قيمة الإرجاع (المعروفة أيضًا باسم حالة الخروج) لتعكس ما إذا كان قد تم العثور على تطابق أم لا. يستخدم هذا الخيار بشكل أساسي في البرامج النصية التي تحتاج إلى التحقق مما إذا كان الملف المحدد يحتوي على تطابق معين. تشير حالة الإرجاع 0 (صفر) إلى أنه تم العثور على تطابق ؛ 1 يشير إلى أنه لم يتم العثور على تطابق.&lt;/p&gt;
+&lt;p&gt;التنفيذ في الوضع “الصامت” (grep -q): عند التنفيذ باستخدام هذا الخيار فلا يطبع Grep أي شيء إلى الخرج القياسي، بل يحدد قيمة الإرجاع لتعكس ما إذا كان قد تم العثور على تطابق أم لا. يستخدم هذا الخيار بشكل أساسي في البرامج النصية التي تحتاج إلى التحقق مما إذا كان الملف المحدد يحتوي على تطابق معين أم لا. تشير حالة الإرجاع 0 (صفر) إلى أنه تم العثور على تطابق ؛ 1 يشير إلى أنه لم يتم العثور على تطابق.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [manish@clone ~]$ grep -q '2010' testfile 
     [manish@clone ~]$ echo $? 
@@ -15911,11 +16016,11 @@ belongs to&lt;/p&gt;
     to carry out few regular expressions
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;في البحث أعلاه، يستخدم رمز النقطة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;  لمطابقة أي حرف وحيد - وهذا هو السبب في أنه يطابق “car” في “carry”. يمتلك Grep محركًا قويًا لتطابق التعبيرات النمطية ، والذي لا يمكننا تغطيته بعمق هنا ، لكننا سنتحدث عن بعض النقاط الهامة:&lt;/p&gt;
+&lt;p&gt;في البحث أعلاه، يستخدم رمز النقطة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;  لمطابقة أي حرف مفرد، وهذا هو السبب في أنه يطابق “car” في “carry”. يمتلك Grep محركًا قويًا لتطابق التعبيرات النمطية، والذي لا يمكننا تغطيته بعمق هنا، لكننا سنتحدث عن بعض النقاط الهامة:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;معظم الأحرف ، بما في ذلك جميع الحروف والأرقام ، هي في الواقع تعبيرات نمطية تتطابق مع نفسها.&lt;/p&gt;
+    &lt;p&gt;معظم الأحرف بما في ذلك جميع الحروف والأرقام هي في الواقع تعبيرات نمطية تتطابق مع نفسها.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;يمكن تحويل أي علامة خاصة لها دلالة في grep (مثل النقطة &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; في المثال أعلاه) إلى حرف عادي عن طريق وضع علامة &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; قبلها. هذا يجعل Grep يعاملها كحرف عادي.&lt;/p&gt;
