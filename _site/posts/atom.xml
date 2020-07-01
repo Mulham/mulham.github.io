@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-06-30T23:48:12+03:00</updated>
+	<updated>2020-07-01T03:28:27+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -683,6 +683,17 @@
     &lt;p&gt;أو الأسهل:&lt;/p&gt;
 
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls -al
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يُستخدم الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; لكتابة ناتج الأمر لملف معينة بدلًا من طباعته على الشاشة، مثلًا&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls &amp;gt; file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;ويقوم هذا الأمر بإنشاء ملف جديد “file.txt” أو إذا كان الملف موجودًا فسيقوم بحذف محتوى الملف والكتابة فوقه، لذا يُستخدم الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt; للإضافة لملف موجودا بدلًا من الكتابة فوقه:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls &amp;gt;&amp;gt; file.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;

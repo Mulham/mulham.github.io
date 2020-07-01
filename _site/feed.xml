@@ -5,8 +5,8 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jun 2020 23:48:12 +0300</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2020 23:48:12 +0300</lastBuildDate>
+    <pubDate>Wed, 01 Jul 2020 03:28:27 +0300</pubDate>
+    <lastBuildDate>Wed, 01 Jul 2020 03:28:27 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -719,6 +719,17 @@
     &lt;p&gt;أو الأسهل:&lt;/p&gt;
 
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls -al
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;يُستخدم الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; لكتابة ناتج الأمر لملف معينة بدلًا من طباعته على الشاشة، مثلًا&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls &amp;gt; file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;ويقوم هذا الأمر بإنشاء ملف جديد “file.txt” أو إذا كان الملف موجودًا فسيقوم بحذف محتوى الملف والكتابة فوقه، لذا يُستخدم الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt; للإضافة لملف موجودا بدلًا من الكتابة فوقه:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls &amp;gt;&amp;gt; file.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
