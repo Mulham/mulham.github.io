@@ -227,8 +227,6 @@ hidden: true
   'a2b2c2d2
   </div>
 
-7.
- اكتب برنامجًا بلغة سي لعد الثواني (مع أجزاء الثانية) بشكل مستمر.
 
 # الحلول
 
@@ -514,26 +512,7 @@ hidden: true
     }
     {% endhighlight %}
 
-7.
-    {% highlight c %}
 
-#include <stdio.h>
-#include <time.h>
-#define NO_SEC 15
-    int main(){
-    double sec;
-    int cnt=0,period;
-    period=(int)CLOCKS_PER_SEC*NO_SEC;
-    time_t start,current=0;
-    start=clock();
-    while(current<period){
-        current=clock();
-        sec=(double)(current-start)/CLOCKS_PER_SEC;
-        printf("%f\n",sec);
-    }
-} 
-
-    {% endhighlight %}
 
 أرجو أن يكون المقال قد أفادك.
 
