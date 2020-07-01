@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-02-04
+modified: 2020-07-01
 title: أمثلة عملية في لغة سي
 description: أمثلة عملية في لغة البرمجة سي مع الحل مأخوذة من دروس جامعية أكاديمية
 type: tutorial
