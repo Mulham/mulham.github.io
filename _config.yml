@@ -62,6 +62,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-archives
+
 paginate: 12
 paginate_path: /page:num/
 
