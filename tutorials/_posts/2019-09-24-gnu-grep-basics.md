@@ -38,14 +38,6 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
 * Toc
 {:toc}
 
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
 
 # التعبيرات النمطية
 
@@ -64,14 +56,6 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
 
 مرة أخرى، نظرًا لسلوك shell يمكنك أيضًا تضمين regex في علامات تنصيص مزدوجة `" "` وفي هذه الحالة يمكنك استخدام متغيرات البيئة في regex، وستقوم shell باستبدالها قبل تنفيذ Grep. قد يكون هذا مفيدًا جدًا اعتمادًا على ما تحاول القيام به، أو قد يكون مصدر إزعاج. تذكر الفرق في السلوك.
 
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
 
 # الاستخدام الأساسي
 
@@ -208,14 +192,6 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
 
 ومع ذلك ، فإن عوامل التكرار هي جزء من صيغة التعابير النمطية الموسعة الخاصة بـ GNU Grep ، لذلك لاستخدامها بفعالية ، تذكر إضافة خيار E- إلى الأمر .
 
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
 
 # قائمة الأحرف في التعبيرات النمطية
 
@@ -280,15 +256,6 @@ caption: "grep-command-linux by laboratoriolinux is licensed under CC BY-NC-SA 2
         123 456
         ABCD
 
-
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
 
 # استخدام أوامر shell في تعبيرات  Grep
 

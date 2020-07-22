@@ -45,14 +45,6 @@ feature: /assets/git.png
 
 هل هذا صعب؟
 
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
 
 # الوصول لحزمة
 
@@ -74,14 +66,6 @@ feature: /assets/git.png
 <amp-img height="200" width="600" src="/assets/trees.png" alt="شرح مبدأ عمل جت"></amp-img>
 
 
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
 
 # إضافة وتعديل
 
@@ -145,14 +129,6 @@ feature: /assets/git.png
 
 هذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.
 
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-4752855256699204"
-     data-ad-slot="3888202602"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
 
 ## الأفرع
 
