@@ -5,8 +5,8 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Jul 2020 16:20:53 +0300</pubDate>
-    <lastBuildDate>Sat, 04 Jul 2020 16:20:53 +0300</lastBuildDate>
+    <pubDate>Tue, 01 Sep 2020 19:37:13 +0300</pubDate>
+    <lastBuildDate>Tue, 01 Sep 2020 19:37:13 +0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -600,6 +600,7 @@
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-mv&quot; id=&quot;markdown-toc-خيارات-الأمر-mv&quot;&gt;خيارات الأمر mv&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-mv&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-mv&quot;&gt;أمثلة على الأمر mv&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#تمرين&quot; id=&quot;markdown-toc-تمرين&quot;&gt;تمرين&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
@@ -665,7 +666,40 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv -u main.c bak
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;تمرين&quot;&gt;تمرين&lt;/h1&gt;
+
+&lt;p&gt;يتطلب إعادة تسمية عدة ملفات في مجلد بحيث يتم حذف أحرف معينة من الاسم، هذه الأحرف هي “min-“ أي مثال كل صورة تكون على الاسم التالي “image-min.jpg” ويتطلب تغيير الاسم إلى “image.jpg” ولكن تغيير أسماء كل الصور في المجلد بالشكل المطلوب وبأمر/سكريبت واحد.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;الحل&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;إنّ موجّه الأوامر في لينكس يقبل السكريبت أي الكود، فيمكن كتابة كود بسيطة وتنفيذه مباشرة في التيرمينال، هذا الكود سيحوي الأمر mv كما شرحنا لإعادة تسمية الملفات. الكود هو:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    for file in *
+    do
+        mv -i &quot;${file}&quot; &quot;${file/-min/}&quot;
+    done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;في السطر الأول نبحث عن كل الملفات في المجلد بلا استثناء لذلك وضعنا النجمة &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; ويمكن تغيير ذلك، مثلا للبحث عن كل الملفات التي يبدأ اسمها بالحرف a نكتب “*a” وهكذا..&lt;/p&gt;
+
+&lt;p&gt;ثم نفذنا الأمر mv لكل من هذه الملفات حيث نطبق على المتغير “{file}$” وهو الملف العبارة&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &quot;${file/-min/}&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وتعني استبدل التالي “min-“ بولا شيئ! لو أردنا مثلا استبداله بـ “max-“ نكتب تصبح العبارة الأخيرة&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;${file/-min/-max}&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي استفسار لا تتردد بمراسلتي&lt;/p&gt;
+
+&lt;p&gt;المراجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;https://www.rapidtables.com/code/linux/mv.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unix.stackexchange.com/questions/102647/how-to-rename-multiple-files-in-single-command-or-script-in-unix&quot;&gt;https://unix.stackexchange.com/questions/102647/how-to-rename-multiple-files-in-single-command-or-script-in-unix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;التالي: &lt;a href=&quot;/linux/rm&quot;&gt;الأمر rm&lt;/a&gt;&lt;/p&gt;
 

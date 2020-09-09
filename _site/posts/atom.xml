@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-07-04T16:20:53+03:00</updated>
+	<updated>2020-09-01T19:37:13+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -564,6 +564,7 @@
   &lt;li&gt;&lt;a href=&quot;#صيغة-الأمر&quot; id=&quot;markdown-toc-صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#خيارات-الأمر-mv&quot; id=&quot;markdown-toc-خيارات-الأمر-mv&quot;&gt;خيارات الأمر mv&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#أمثلة-على-الأمر-mv&quot; id=&quot;markdown-toc-أمثلة-على-الأمر-mv&quot;&gt;أمثلة على الأمر mv&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#تمرين&quot; id=&quot;markdown-toc-تمرين&quot;&gt;تمرين&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;صيغة-الأمر&quot;&gt;صيغة الأمر&lt;/h1&gt;
@@ -629,7 +630,40 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ mv -u main.c bak
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;هذا المقال مترجم وبتصرّف، &lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;تمرين&quot;&gt;تمرين&lt;/h1&gt;
+
+&lt;p&gt;يتطلب إعادة تسمية عدة ملفات في مجلد بحيث يتم حذف أحرف معينة من الاسم، هذه الأحرف هي “min-“ أي مثال كل صورة تكون على الاسم التالي “image-min.jpg” ويتطلب تغيير الاسم إلى “image.jpg” ولكن تغيير أسماء كل الصور في المجلد بالشكل المطلوب وبأمر/سكريبت واحد.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;الحل&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;إنّ موجّه الأوامر في لينكس يقبل السكريبت أي الكود، فيمكن كتابة كود بسيطة وتنفيذه مباشرة في التيرمينال، هذا الكود سيحوي الأمر mv كما شرحنا لإعادة تسمية الملفات. الكود هو:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    for file in *
+    do
+        mv -i &quot;${file}&quot; &quot;${file/-min/}&quot;
+    done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;في السطر الأول نبحث عن كل الملفات في المجلد بلا استثناء لذلك وضعنا النجمة &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; ويمكن تغيير ذلك، مثلا للبحث عن كل الملفات التي يبدأ اسمها بالحرف a نكتب “*a” وهكذا..&lt;/p&gt;
+
+&lt;p&gt;ثم نفذنا الأمر mv لكل من هذه الملفات حيث نطبق على المتغير “{file}$” وهو الملف العبارة&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &quot;${file/-min/}&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وتعني استبدل التالي “min-“ بولا شيئ! لو أردنا مثلا استبداله بـ “max-“ نكتب تصبح العبارة الأخيرة&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;${file/-min/-max}&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ﻷي استفسار لا تتردد بمراسلتي&lt;/p&gt;
+
+&lt;p&gt;المراجع:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.rapidtables.com/code/linux/mv.html&quot;&gt;https://www.rapidtables.com/code/linux/mv.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unix.stackexchange.com/questions/102647/how-to-rename-multiple-files-in-single-command-or-script-in-unix&quot;&gt;https://unix.stackexchange.com/questions/102647/how-to-rename-multiple-files-in-single-command-or-script-in-unix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;التالي: &lt;a href=&quot;/linux/rm&quot;&gt;الأمر rm&lt;/a&gt;&lt;/p&gt;
 
@@ -11238,7 +11272,7 @@ e) 1011000010 : 1110
 			<content type="html">&lt;p&gt;فيما يلي 11 جدول لمعظم الرموز في علوم الجبر والمنطق والتحليل والاحتمالات والأرقام الرومانية والأحرف اليونانية.&lt;/p&gt;
 
 &lt;p&gt;اسحب لليمين على الهاتف لمشاهدة الأمثلة.
-تُقرأ الأمثلة من اليسار لليمين&lt;/p&gt;
+تُقرأ الأمثلة (التي لاتحوي وصف عربي ضمن خانة المثال) من اليسار لليمين&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#رموز-الرياضيات-الأساسيّة&quot; id=&quot;markdown-toc-رموز-الرياضيات-الأساسيّة&quot;&gt;رموز الرياضيات الأساسيّة&lt;/a&gt;&lt;/li&gt;
@@ -16106,10 +16140,6 @@ belongs to&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#استخدام-أوامر-shell-في-تعبيرات--grep&quot; id=&quot;markdown-toc-استخدام-أوامر-shell-في-تعبيرات--grep&quot;&gt;استخدام أوامر shell في تعبيرات  Grep&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h1 id=&quot;التعبيرات-النمطية&quot;&gt;التعبيرات النمطية&lt;/h1&gt;
 
 &lt;p&gt;التعبير النمطي (regular expression) غالبًا ما يتم اختصاره إلى “regex” أو “regexp” وهو كما شرحناه في الأعلى. تعمل Regexes بشكل متقدم في معالجة محتوى النص بشكل مفيد خاصةً عند دمجها مع أوامر أخرى.
@@ -16127,10 +16157,6 @@ belongs to&lt;/p&gt;
 &lt;p&gt;من المعتاد إحاطة التعبير النمطي بعلامات تنصيص مفردة (أي &lt;code class=&quot;highlighter-rouge&quot;&gt;' '&lt;/code&gt;) لمنع موجه الأوامر shell (مثل Bash أو غيرها) من محاولة تفسير التعبير وتوسيعه قبل بدء عملية grep. على سبيل المثال إذا لم يتم تضمين الرمز  &lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt; بعلامتي تنصيص مفردة &lt;code class=&quot;highlighter-rouge&quot;&gt;' '&lt;/code&gt; فسوف يتم تنفيذ النص بين علامتي &lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt; كعملية فرعية لـ Bash - وإذا حدث أن ذلك أمر صالح فالنص المُرجع سيأخذ مكان التعبير النمطي في تعليمة سطر الأوامر المعطاة إلى Grep! وليس هذا مانريد.&lt;/p&gt;
 
 &lt;p&gt;مرة أخرى، نظرًا لسلوك shell يمكنك أيضًا تضمين regex في علامات تنصيص مزدوجة &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot; &quot;&lt;/code&gt; وفي هذه الحالة يمكنك استخدام متغيرات البيئة في regex، وستقوم shell باستبدالها قبل تنفيذ Grep. قد يكون هذا مفيدًا جدًا اعتمادًا على ما تحاول القيام به، أو قد يكون مصدر إزعاج. تذكر الفرق في السلوك.&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;الاستخدام-الأساسي&quot;&gt;الاستخدام الأساسي&lt;/h1&gt;
 
@@ -16288,10 +16314,6 @@ belongs to&lt;/p&gt;
 
 &lt;p&gt;ومع ذلك ، فإن عوامل التكرار هي جزء من صيغة التعابير النمطية الموسعة الخاصة بـ GNU Grep ، لذلك لاستخدامها بفعالية ، تذكر إضافة خيار E- إلى الأمر .&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h1 id=&quot;قائمة-الأحرف-في-التعبيرات-النمطية&quot;&gt;قائمة الأحرف في التعبيرات النمطية&lt;/h1&gt;
 
 &lt;p&gt;تعد أداة “قائمة الأحرف” واحدة من أكثر ميزات التعبيرات النمطية استخدامًا ومرونة. وهي عبارة عن قائمة ضمن الأقواس &lt;code class=&quot;highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; تحوي الأحرف التي نريد مطابقتها. هناك طريقتان أساسيتان لاستخدام قوائم الأحرف: لتحديد قائمة من الأحرف (على سبيل المثال [aeiou] هي قائمة بالأحرف الصوتية) ، أو نطاق (مثل [m-t] ، يمتد إلى [mnopqrst]). النطاقات تعطي مرونة بحيث توفر كتابة سلسلة كاملة من الحروف.&lt;/p&gt;
@@ -16363,10 +16385,6 @@ belongs to&lt;/p&gt;
     123 456
     ABCD
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;استخدام-أوامر-shell-في-تعبيرات--grep&quot;&gt;استخدام أوامر shell في تعبيرات  Grep&lt;/h1&gt;
 
@@ -16829,10 +16847,6 @@ eth0 = محول الشبكة المتصل بجهاز كمبيوتر في نفس 
 
 &lt;p&gt;والآن بعد تشغيل الفيديو سواء بعد تنزيله من النت أي من الجهاز مباشرة أو من الإنترنت مباشرة، لتصحيح خطأ عدم تزامن الصوت مع الصورة على نظامي الويندوز واللينكس نضغط على الكيبورد على أحد زري &lt;kbd&gt;J&lt;/kbd&gt; و &lt;kbd&gt;K&lt;/kbd&gt; لتأخير وتسبيق الصوت عن الصورة على التوالي. على نظام الماك تكون الاختصارات &lt;kbd&gt;G&lt;/kbd&gt; و &lt;kbd&gt;F&lt;/kbd&gt;
 نستمر في الضغط على أحد هذه الأزرار بحسب الخطأ في الفيديو لنحصل على النتيجة المطلوبة.&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;على-اﻷندرويد&quot;&gt;على اﻷندرويد&lt;/h2&gt;
 
@@ -17930,10 +17944,6 @@ WHERE columnN LIKE pattern;
 
 &lt;amp-img height=&quot;250&quot; width=&quot;600&quot; src=&quot;/assets/customers.png&quot; alt=&quot;دروس SQL&quot;&gt;&lt;/amp-img&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h1 id=&quot;أمثلة-على-like-في-sql&quot;&gt;أمثلة على LIKE في SQL&lt;/h1&gt;
 
 &lt;p&gt;عبارة SQL التالية تُحدِّد جميع الزبائن customers حيث اسم الزبون CustomerName يبدأ بحرف a&lt;/p&gt;
@@ -18096,10 +18106,6 @@ WHERE condition;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT COUNT(ProductID)
 FROM Products;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;مثال-على-استخدام-avg&quot;&gt;مثال على استخدام AVG()&lt;/h1&gt;
 
@@ -21507,6 +21513,108 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 		</entry>
 	
 		<entry>
+			<title>باسل بن عبد الرحمن جاسر - مقال</title>
+			<link href="http://mulham.github.io/%D8%A8%D8%A7%D8%B3%D9%84-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D8%AC%D8%A7%D8%B3%D8%B1/"/>
+			<updated>2016-07-22T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//باسل-بن-عبد-الرحمن-جاسر</id>
+			<content type="html">&lt;p&gt;باسل بن عبد الرَّحمن بن ياسين بن عبد الرَّحمن الجاسر، وُلد في مدينة حلب في 3/4 /1396هـ ، الموافق لـ 3/4/ 1976م.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#دراساته&quot; id=&quot;markdown-toc-دراساته&quot;&gt;دراساته&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#أعماله&quot; id=&quot;markdown-toc-أعماله&quot;&gt;أعماله&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#وفاته&quot; id=&quot;markdown-toc-وفاته&quot;&gt;وفاته&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#المصادر&quot; id=&quot;markdown-toc-المصادر&quot;&gt;المصادر&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;دراساته&quot;&gt;دراساته&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;أتمّ حفظ القرآن الكريم في سنٍّ مبكِّرةٍ؛ وأخذ العلم عن جماعة من كبار علماء حلب؛ وروى عنهم الحديث بالسَّند المتَّصل إلى رسول الله صلَّى الله عليه وسلَّم ونال منهم إجازاتٍ محفوظة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;حاز الشَّهادة الثَّانويّة العلميَّة في عام: 1415هـ ، 1994م.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;تابع تحصيله الأكاديمي في المجمع العالي / جامعة العلوم الإسلاميَّة والعربيَّة في دمشق، غير أنَّ الجامعة أُغلقت في السنة الأخيرة ( الرابعة)، قبل أن يُمنح الشَّهادة، غير أنَّه مُنح وثائق تثبت إتمامه السنين الثلاثة الأولى.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;أعماله&quot;&gt;أعماله&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;درَّس الموادَّ الشَّرعيَّة في عدد من ثانويَّات حلب العلميَّة والشَّرعيَّة والصِّناعيَّة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;تولَّى الإمامة والخطابة والتَّدريس في عدد من مساجد مدينة حلب وقُراها لمدَّة تقرب من خمسة عشر عاماً؛ فبعد العديد من المساجد التي كان يخطب فيها تطوعاً، تولى رسمياً:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;الإمامة في جامع زكي باشا من أوائل عام 1415 هـ إلى رمضان عام 1422هـ.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الإمامة في جامع خراق الجلوم حتى عام 1424هـ.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;وقد كان لهذين الجامعين شأن كبير في فترة توليه الإمامة في كلٍّ منهما، لا سيَّما جامع زكي باشا الذي فاق فيه عدد الدروس والمحاضرات التي ألقاها الشيخ ما أُلقي فيه منذ تأسيسه، وقد تنوَّعت فيه مجالس العلم؛ من فقه و عقيدة إلى سيرة وتفسير إلى دروس النحو والصرف وعلوم الحاسوب وغيرها؛ كما أنَّه كان أشبه بجامعة يرتادها الشباب بكافِّة اختصاصاتهم؛ من طلاب الشهادتين الإعدادية والثانوية إلى طلاب الطبٍّ والهندسة والآدابٍ واللغات المختلفة. كان الشيخ يساعدهم في فهم بعض المواد التي يجدون صعوبةً فيها، بالإضافة إلى اتباعه منهج ( تراتبية التعليم ) فكان طلاب الصفوف الدراسية المتقدِّمة يساعدون من هم أصغر منهم، فضلاً عن مساعدته لهم في وضع البرامج وحلِّ مشكلاتهم الدِّراسية والاجتماعية..&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;كما تولَّى الخطابة في مساجد: سلمان الفارسي – الإمام أحمد بن حنبل – البواكب ثم في جامع سوق النحاسين.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;فضلاً عن نشاطه الكبير في مجال الدعوة؛ فقد أسلم على يديه عشرات الرجال والنساء من جنسيات مختلفة وبلدان شتَّى، كما له مئات الدروس والمحاضرات في مساجد حلب وقراها ومراكزها الثقافية؛ بالإضافة إلى عدَّة مجالس علم دورية في مختلف المحافظات السورية، مثل دمشق وحمص وحماه.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;تلقَّى دعوة من إحدى المجمعات الإسلامية (مجمَّع لوتاه) في الإمارات العربيّة المتحدة فسافر إليها، ودرّس العلوم الشّرعيّة في مدارسها، وتسلّم الإمامة في أحد مساجدها.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;بعد ذلك سافر إلى الهند بناءً على دعوة تلقَّاها من دار العلوم (ندوة العلماء) في مدينة “لكناو” بصفة محاضر زائر، ومكث فيها ما يقارب ثلاثة أشهر، ألقى خلالها محاضرات في بعض جامعات الهند، كجامعة السيّد أحمد عرفان الشهيد، وزار معظم مناطق الهند، وتعرّف عن كثب على كثيرٍ من الطّوائف والفرق المسلمة وغير المسلمة، ممّا أكسبه فوائد دعويّة كبيرةً جدّاً.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;وفاته&quot;&gt;وفاته&lt;/h1&gt;
+
+&lt;p&gt;تلقى دعوات من جامعات عدّة في الهند للتدريس فيها، غير أنّه آثر أن يكرّس جهوده الدعوية في بلاده خدمةً لأهلها، فعاد إلى حلب وإلى طلابه الذين طالما ناشدوه العودة إليهم، لينهلوا من علمه ومنهجه التربوي المتكامل؛ غير أنّه لم يمكث بينهم طويلاً؛ فقد أنهكه مرضٌ عضال أجبره على البقاء في فراشه في آخر شهرين من حياته، ثمّ وافته المنية في الرابع عشر من رمضان 1427هـ.&lt;/p&gt;
+
+&lt;p&gt;توفي تاركاً إرثاً علميّاً غزيراً والذي يُعدُّ بمئات الدروس الصوتية والمرئية، والتي ركّز فيها على أمراض النفوس وتزكيتها، بالإضافة إلى المحاضرات والخطب الفكرية والكتب المخطوطة التي تُعنى ببناء الفرد والمجتمع الإسلامي بناءً سليماً موافقاً لمنهج كتاب الله وسُنّة رسول الله صلى الله عليه وسلّم.&lt;/p&gt;
+
+&lt;p&gt;وقد تم بث العديد من هذه المحاضرات على بعض المحطات الإذاعية والتلفازية منها قناة حلب اليوم.&lt;/p&gt;
+
+&lt;h1 id=&quot;المصادر&quot;&gt;المصادر&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.arab-eng.org/vb/t279362.html&quot;&gt;http://www.arab-eng.org/vb/t279362.html&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://alhasebat.net/vb/archive/index.php/t-3344.html&quot;&gt;http://alhasebat.net/vb/archive/index.php/t-3344.html&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UC7FbNLMioKp8F_cPoMJKrLQ&quot;&gt;قناته على اليوتيوب والتي تتضمن عدداً من محاضراته&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://fikrwatazkiya.com&quot;&gt;موقع فكر وتزكية&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://audio.islamweb.net/audio/index.php?page=lecview&amp;amp;sid=1981&quot;&gt;موقع إسلام وب&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://starmust2.ahlamontada.com/t20735-topic&quot;&gt;http://starmust2.ahlamontada.com/t20735-topic&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.islamsyria.com/portal/article/show/531&quot;&gt;رابطة العلماء السوريين&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
+	
+		<entry>
 			<title>تطوير تطبيقات أندرويد</title>
 			<link href="http://mulham.github.io/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF/"/>
 			<updated>2016-07-01T00:00:00+03:00</updated>
@@ -21748,10 +21856,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;هل هذا صعب؟&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h1 id=&quot;الوصول-لحزمة&quot;&gt;الوصول لحزمة&lt;/h1&gt;
 
 &lt;p&gt;هنا في حالة أنك لم تنشئ الحزمة، أي في مثالنا أنت الموظف وتريد أن تبدأ بتحميل الحزمة من الإنترنت لجهازك والبدأ بالتعديل والتطوير، إذاً لتحميل الحزمة:&lt;/p&gt;
@@ -21770,10 +21874,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;إن حزمتك المحلية مؤلفة من ثلاث “شجرات” مختزنة من قبل git. الأولى هي المجلد الذي نعمل ضمنه ، والذي يحوي على ملفات الحزمة. و الثانية هي ملف ال index والذي نتعامل معه كمسرح العمل. وأخيراً الرأس Head والذي يشير لآخر تعديل قمت به.&lt;/p&gt;
 
 &lt;amp-img height=&quot;200&quot; width=&quot;600&quot; src=&quot;/assets/trees.png&quot; alt=&quot;شرح مبدأ عمل جت&quot;&gt;&lt;/amp-img&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;إضافة-وتعديل&quot;&gt;إضافة وتعديل&lt;/h1&gt;
 
@@ -21846,10 +21946,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;هذا الأمر فقط لعرض الحالة، فلا تتردد باستخدامه متى شئت.&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;الأفرع&quot;&gt;الأفرع&lt;/h2&gt;
 
@@ -22365,10 +22461,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;النص العادي يكتب بدون الحاجة لأي أكواد. مع ملاحظة بسيطة هو أنك يجب أن تضع سطر فارغ بين الفقرة والأخرى لكي تُقرأ على أنها بداية سطر جديد. أي بدل الضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;enter&lt;/code&gt; للانتقال للسطر الجديد ستضغط على &lt;code class=&quot;highlighter-rouge&quot;&gt;enter&lt;/code&gt; مرتين لترك سطر فارغ وبالتالي ليفهم المفسر أنك تريد الانتقال لسطر جديد.&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h2 id=&quot;العناوين&quot;&gt;العناوين&lt;/h2&gt;
 
 &lt;p&gt;لكتابة العناوين نضع الرمز &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; مرة واحدة أو أكثر قبل العنوان (لا تنس الفراغ بين الرمز والعنوان):&lt;/p&gt;
@@ -22425,10 +22517,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
   &lt;li&gt;عنصر قائمة&lt;/li&gt;
   &lt;li&gt;عنصر قائمة&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h3 id=&quot;قائمة-مُرقّمة&quot;&gt;قائمة مُرقّمة&lt;/h3&gt;
 
@@ -22638,10 +22726,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 [comment]: # (هذا عبارة عن تعليق لا يظهر للقارئ)
 &lt;/pre&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h1 id=&quot;ملاحظات&quot;&gt;ملاحظات&lt;/h1&gt;
 
 &lt;ul&gt;
@@ -22761,10 +22845,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;سوف نناقش كل جدول بشرح أوامر Sql . والتي تم إنشاءها تلقائياً مع إنشاء المخطط في الأعلى . لصنع كودك الخاص يمكنك إنشاء مخطط مشابه وستحصل على أوامر الـ Sql التي قامت بإنشاء المخطط أيضاً . بعض محررات قواعد البيانات مثل MySQL Workbench الذي قمنا بإستخدامه لإنتاج ذلك المخطط ينتج ملفات بلاحقة Sql أيضاً . ولكننا ننصح تعلم أوامر Sql حيث ستجد الأمر ممتعاً . لمقدمة حول Sql يمكنك قراءة المشاركة &lt;a href=&quot;/sql/intro&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h2 id=&quot;جدول-المستخدمين&quot;&gt;جدول المستخدمين&lt;/h2&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
@@ -22854,10 +22934,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;هذا الجدول تقريباً نفس الجداول السابقة، باستثناء حقل &lt;code class=&quot;highlighter-rouge&quot;&gt;topic_by&lt;/code&gt; والذي يشير للمستخدم المنشئ للموضوع. وحقل &lt;code class=&quot;highlighter-rouge&quot;&gt;topic_cat&lt;/code&gt; الذي يشير للتصنيف الذي يتبع الموضوع له. لا يمكن تحديد العلاقات بين هذه الحقول بذكر أسماء الحقول فقط. فيجب أن نُعلم قاعدة البيانات أن هذا الحقل (&lt;code class=&quot;highlighter-rouge&quot;&gt;topic_by&lt;/code&gt;) يجب أن يحتوي على الرقم التسلسلي &lt;code class=&quot;highlighter-rouge&quot;&gt;user_id&lt;/code&gt; لمستخدم موجود في جدول المستخدمين، والحقل الآخر (&lt;code class=&quot;highlighter-rouge&quot;&gt;topic_cat&lt;/code&gt;) يجب أن يحتوي على الرقم التسلسلي cat_id لتصنيف موجود في جدول التصنيفات. سنضيف هذه العلاقات بين الحقول والجداول بعد مناقشة جدول التعليقات.&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;h2 id=&quot;جدول-التعليقات&quot;&gt;جدول التعليقات&lt;/h2&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
@@ -22900,10 +22976,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topics&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FOREIGN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;topic_cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REFERENCES&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;الجزء الأخير من التعليمة يوضح ما يجري. فعندما يتم حذف التصنيف من قاعدة البيانات، جميع المواضيع المرتبطة بهذا التصنيف سيتم حذفها أيضاً. إذا تم تغيير قيمة cat_id لتصنيف ما، جميع المواضيع المرتبطة بهذا التصنيف سيتم تحديثها أيضاً. وهذا ما تقوم به عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;ON UPDATE CASCADE&lt;/code&gt; . بالطبع يمكنك التراجع عن ذلك لحماية بياناتك، وذلك بجعل حذف تنصيف ما غير ممكن ما زال هناك مواضيع مرتبطة بهذا التصنيف، إذا أردت القيام بذلك، فعليك استبدال &lt;code class=&quot;highlighter-rouge&quot;&gt;ON DELETE&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;CASCADE&lt;/code&gt; إلى &lt;code class=&quot;highlighter-rouge&quot;&gt;ON DELETE RESTRICT&lt;/code&gt; . يوجد أيضاً عبارات &lt;code class=&quot;highlighter-rouge&quot;&gt;SET NULL&lt;/code&gt; أي اجعله فارغاً و &lt;code class=&quot;highlighter-rouge&quot;&gt;NO ACTION&lt;/code&gt; أي لا تقم بأي إجراء.&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;p&gt;الآن، كل موضوع أصبح مرتبط بتصنيف ما. لنقم بربط المواضيع بالمستخدمين المنشئين لهم.&lt;/p&gt;
 
@@ -22980,10 +23052,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;كما ترى، إذا لم يحدث أخطاء في الصفحة فستظهر بشكل أنيق. أما اذا كان هناك خطأ، فكل شيئ سيكون مبعثر. ولهذا السبب يجب دائماً التأكد ليس من تنسيق المحتوى فقط، وإنما أيضاً من الأخطاء التي يمكن أن تحدث.&lt;/p&gt;
 
 &lt;p&gt;ميزة أخرى لهذه الطريقة (تضمين ملفي الترويسة والتذييل) هو إمكانية عمل تغييرات سريعة. فسترى أنك وبعد إنهاء هذا الشرح إذا أردت التعديل على ملف التذييل مثلاً footer.php، فسترى أن التذييل سينطبق مباشرة على كل صفحة في المنتدى.&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;p&gt;أخيراً سوف نقوم بإضافة بعض التنسيقات لملف الترويسة header.php والتي تزودنا بإظهارات وترميزات أساسية. لا شيئ معقد هنا، ولا داعي لفهم الكود.&lt;/p&gt;
 
@@ -23404,10 +23472,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;في السطر الأول لدينا عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;INSERT INTO&lt;/code&gt; التي تستخدم لإضافة بيانات لقاعدة البيانات، وتم تحديد اسم الجدول في السطر الثاني. الكلمات التي بين قوسين تحدد أسماء الأعمدة التي نريد إدراج البيانات لها. عبارة VALUES تُخبر قاعدة البيانات أننا انتهينا من تحديد أسماء الأعمدة وجاء وقت تحديد القيم التي ستُضاف لهذه الأعمدة. ولدينا شيئ جديد هنا: &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql_real_escape_string&lt;/code&gt;. تستخدم هذه التعليمة لحماية بيانات المستخدم أثناء إرساله للنموذج، ويجب أن تُستخدم دائماً باستثاء بعض الحالات النادرة. السكريبتات التي لا تستخدم هذه التعليمة يكون اختراقها والوصول لبيانات النموذج المرسلة سهل جداً، فلا تخاطر بذلك واستخدم عبارة &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql_real_escape_string()&lt;/code&gt;.&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;blockquote&gt;
   &lt;p&gt;إيّاك أن تُدرج كلمة السر في قاعدة البيانات كما هي. يجب عليك دائماً تشفيرها.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -23686,10 +23750,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 &lt;p&gt;من الواضح أننا نقوم بالتأكد من البيانات المدخلة إذا كانت لمستخدم موجود بالفعل. هناك العديد من السكريبتات التي تستخرج كلمة السر من قاعدة البيانات وتقارنها مع تلك المدخلة في النموذج باستخدام php. ولكن القيام بذلك بواسطة تعليمات SQL مباشرة سيجعل العملية أكثر أمناً حيث أن العملية هذه تحصل في وسط قاعدة البيانات وليس ضمن تطبيقنا الوب (منتدانا).&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;p&gt;إذا قام المستخدم بتسجيل الدخول بشكل صحيح، فسنقوم بعمل بضعة أشياء:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
@@ -23783,10 +23843,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;p&gt;وكما ترى، لقد بدأنا السكريبت بفحص السيرفر $_SERVER ، بعد التأكد من أن المستخدم لديه صلاحيات المدير، والمطلوبة لإنشاء تصنيف، يتم عرض النموذج إذا لم يتم تعبئته وإرساله سابقاً، وإذا تم إرساله، يتم حفظ القيم. مرة أخرى ، يتم تحضير تعليمة SQL وتنفيذها.&lt;/p&gt;
 
 &lt;amp-img src=&quot;/assets/5.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;كيفية عمل منتدى باستخدام php و MySQL من الصفر-6&quot;&gt;&lt;/amp-img&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h1 id=&quot;ثامناً-إضافة-تصنيفات-للصفحة-الرئيسية-indexphp&quot;&gt;ثامناً: إضافة تصنيفات للصفحة الرئيسية index.php&lt;/h1&gt;
 
@@ -24051,10 +24107,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
     &lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;أعتقد أن هذا هو الجزء الغير واضح هنا، والآن كما ترى هو مجرد كود بسيط .&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;معالجة-النموذج&quot;&gt;معالجة النموذج&lt;/h2&gt;
 
@@ -24740,10 +24792,6 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 
 	ORDER BY Country; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;h2 id=&quot;مثال-على-order-by-desc&quot;&gt;مثال على ORDER BY DESC&lt;/h2&gt;
 
@@ -27000,14 +27048,9 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
       &lt;p&gt;الـ IP الداخلية تتغير عند كل تشغيل للراوتر وبالتالي يتوجب عليك دائماً الذهاب لصفحة ARP وإعادة تحديد السرعات حسب الآيبيهات الجديدة.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;الآن وبعد أن عرفنا الآي بي لكل جهاز نعود لصفحة “Traffic Control Rules”  ثم  Add ونضع الآي بي المحدد في الحقلين المسميان “IP Range” وذلك لتحديد السرعة لمستخدم واحد ، او نضع مدى واسع من الآيبيهات ليتم تحديدها لمجموعة مستخدمين مرة واحدة . بعد ذلك ندخل ال Port Range ، الافتراضي هو 80 ، أي اذا لم تكن متقدم في هذه الأمور فقط أكتب 80 في الحقلين ، ثم في مربع الـ Protocol اختر All ثم حدد مدى السرعة في مربع الـ Egress أي الإرسال ومربع الـ Ingress أي الاستقبال ، فمثلا إذا أردنا إعطاء ربع السرعة فقط لمستخدم معين واذا كان لدينا سرعة الإرسال 256 فسوف ندخل 64 في هذا الحقل ، وسرعة الإستقبال بالتالي ستكون 512 سندخل 128 لتحديد ربع السرعة أيضا للاستقبال (على سبيل المثال ) . ونفس الشيئ إذا أردنا تحديد السرعة لمستخدمين آخرين فقط نضغط على Add وندخل المطلوب . وطبعا لا ننسى ان نضغط على Enable لكل نطاق IP ليتم تفعيل تحديد السرعة لهذا المستخدم.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;الآن وبعد أن عرفنا الآي بي لكل جهاز نعود لصفحة “Traffic Control Rules”  ثم  Add ونضع الآي بي المحدد في الحقلين المسميان “IP Range” وذلك لتحديد السرعة لمستخدم واحد ، او نضع مدى واسع من الآيبيهات ليتم تحديدها لمجموعة مستخدمين مرة واحدة . بعد ذلك ندخل ال Port Range ، الافتراضي هو 80 ، أي اذا لم تكن متقدم في هذه الأمور فقط أكتب 80 في الحقلين ، ثم في مربع الـ Protocol اختر All ثم حدد مدى السرعة في مربع الـ Egress أي الإرسال ومربع الـ Ingress أي الاستقبال ، فمثلا إذا أردنا إعطاء ربع السرعة فقط لمستخدم معين واذا كان لدينا سرعة الإرسال 256 فسوف ندخل 64 في هذا الحقل ، وسرعة الإستقبال بالتالي ستكون 512 سندخل 128 لتحديد ربع السرعة أيضا للاستقبال (على سبيل المثال ) . ونفس الشيئ إذا أردنا تحديد السرعة لمستخدمين آخرين فقط نضغط على Add وندخل المطلوب . وطبعا لا ننسى ان نضغط على Enable لكل نطاق IP ليتم تفعيل تحديد السرعة لهذا المستخدم.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;حجب-بعض-المواقع-عن-المستخدمين-على-الشبكة&quot;&gt;حجب بعض المواقع عن المستخدمين على الشبكة&lt;/h1&gt;
@@ -27029,10 +27072,6 @@ adb : تزوّد اتصال عبر الطرفية للجهاز اللوحي عن
 
 &lt;p&gt;ثم اضغط على Continue لإنشاء الحساب واتبع التعليمات حيث سيتم إرسال رسالة لبريدك الإلكتروني لتفعيله في الحساب ..&lt;/p&gt;
 
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
 &lt;p&gt;الآن سنحتاج لربط شبكتنا بالخدمة وذلك عن طريق وضع الـ DNS الخاص بالخدمة في الراوتر لدينا .. للقيام بذلك نذهب لصفحة الراوتر ثم أسفل Advanced Settings سنجد DNS نذهب لهذه الصفحة وإذا كان مربع “Auto DNS Server” مؤشر عليه نزيل الإشارة ونقوم بالتأشير على “ Use the following Static DNS IP address:” ثم ندخل هذه الإعدادات في كل حقل على الترتيب :&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Primary DNS server: 208.67.222.222
@@ -27050,10 +27089,6 @@ Secondary DNS server: 208.67.220.220
 &lt;amp-img width=&quot;600&quot; height=&quot;300&quot; src=&quot;/assets/opendns5.jpg&quot; alt=&quot;شرح موقع opendns للسيطرة على الشبكة المحلية-5&quot;&gt;&lt;/amp-img&gt;
 
 &lt;p&gt;أفضل خيار هو “Moderate” ليكون الحجب بشكل متوسط أي فقط المواقع السيئة والإباحية وما إلى ذلك ، ولكن أيضاً يمكننا اختيار ما نشاء من التصنيفات من خلال الخيار “Custom” ثم نؤشر على التصنيف الذي نرغب بحجبه ثم نضغط على الزر في الأسفل Apply ، سيحتاج التطبيق لثلاث دقائق لكي يتم حفظ الإعدادات في السيرفر وبعدها ستكون خاصية الحجب مفعلة .&lt;/p&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
 
 &lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; إن تطبيق الخيارات التي حددتها يتطلب إعلام السيرفر أي موقع OpenDNS بالـ IP الخارجية لك والتي تتغير مع كل تشغيل للراوتر ..وبالتالي وللقيام بذلك بشكل تلقائي عند تشغيلك للجهاز حمل برنامج الخدمة الخفيف والصغير جدا والذي يعمل في الخلفية أي فقط ستجد أيقونة بجوار الساعة ويقوم هذا البرنامج بتحديث الآي بي الخاصة بك في السيرفر لتطبيق الإعدادات التي اخترتها على شبكتك . 
 البرنامج متوفر لنظام الويندوز من &lt;a href=&quot;https://www.opendns.com/download/windows&quot;&gt;هنا&lt;/a&gt; ، ونظام الماك من &lt;a href=&quot;https://www.opendns.com/download/mac&quot;&gt;هنا&lt;/a&gt; 
@@ -27424,13 +27459,6 @@ Secondary DNS server: 208.67.220.220
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
-&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;اختر &lt;code class=&quot;highlighter-rouge&quot;&gt;Initialize this repository with a README&lt;/code&gt;.  أي استهلال الحزمة بملف اقرأني (لوضع معلومات عن الحزمة والتعريف بها وبوظيفتها ..) .&lt;/p&gt;
 
@@ -27474,13 +27502,6 @@ Secondary DNS server: 208.67.220.220
 
     &lt;p&gt;&lt;img src=&quot;https://help.github.com/assets/images/help/repository/edit-readme-preview-changes.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;amp-ad width=&quot;100vw&quot; height=&quot;320&quot; type=&quot;adsense&quot; data-ad-client=&quot;ca-pub-4752855256699204&quot; data-ad-slot=&quot;3888202602&quot; data-auto-format=&quot;rspv&quot; data-full-width=&quot;&quot;&gt;
-  &lt;div overflow=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/amp-ad&gt;
-
-&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;راجع التغييرات التي أجريتها للملف ، حيث ستجد المحتوى الجديد الذي أدخلته باللون الأخضر .&lt;/p&gt;
 

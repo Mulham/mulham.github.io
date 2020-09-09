@@ -249,6 +249,10 @@
 <lastmod>2016-07-01T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/%D8%A8%D8%A7%D8%B3%D9%84-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D8%AC%D8%A7%D8%B3%D8%B1/</loc>
+<lastmod>2016-07-22T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%86%D8%AD%D8%A9/</loc>
 <lastmod>2016-11-26T00:00:00+03:00</lastmod>
 </url>
@@ -652,6 +656,12 @@
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
+<loc>http://localhost:4000/ask/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/construction-companies-in-ksa/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/tags/</loc>
 </url>
 <url>
@@ -665,6 +675,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/tutorials/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/support/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/urls/</loc>
@@ -689,6 +702,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/page8/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/WebGL/</loc>
+<lastmod>2020-09-01T14:28:16+03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/google50f28f949b2557cc.html</loc>
