@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-09-01T19:37:13+03:00</updated>
+	<updated>2020-09-09T04:49:00+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -21935,6 +21935,10 @@ WHERE Country='Germany' AND ROWNUM &amp;lt;= 3;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;في حال وجود أي تعارضات فستُعرض لك حينها ملف بملف، سطر بسطر، ويمكنك عندها دمج أو حل هذه التعارضات، ثم تقوم بعدها برفع تغييراتك باستخدام &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; و &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ملاحظة هامة&lt;/strong&gt;: إن الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; يقوم بتحميل التعديلات التي قام بها الآخرون على الحزمة ودمجها مباشرة بشكل تلقائي مع الحزمة الموجودة محليًا. إن كنت ترغب باستعراض التعديلات قبل الدمج فيمكنك استخدام الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch&lt;/code&gt; والذي يقوم بتحميل التعديلات من الحزمة على الإنترنت دون دمجها مع الحزمة المحلية، ثم لاستعراض تلك التعديلات استخدم الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout&lt;/code&gt; وأخيرا للدمج يمكنك استخدام الأمر &lt;code class=&quot;highlighter-rouge&quot;&gt;git merge&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;أوامر-أخرى&quot;&gt;أوامر أخرى&lt;/h1&gt;
 
