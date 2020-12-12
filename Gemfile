@@ -9,3 +9,4 @@ gem 'jekyll-paginate-v2'
 gem 'jekyll-paginate'
 gem 'jekyll-archives'
 gem 'jekyll-admin', group: :jekyll_plugins
+gem "kramdown-parser-gfm"
