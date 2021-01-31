@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2020-12-12T16:19:13+03:00</updated>
+	<updated>2021-01-31T14:05:39+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -2339,9 +2339,13 @@
 
 &lt;p&gt;&lt;strong&gt;ما هو مخطط الصنف؟&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;يوفر UML CLASS DIAGRAM نظرة عامة على نظام برمجي وذلك من خلال عرض الأصناف والمتغيرات والعمليات (الدالات) وعلاقاتها، يتضمن هذا الرسم التخطيطي اسم الصنف والمتغيرات والعمليات في حجرات محددة منفصلة.&lt;/p&gt;
+&lt;p&gt;دعني أبسط لك الموضوع قبل الدخول في مصطلحات جديدة. عندما نريد أن نبني بناء نقوم أولا بعمل مخطط معماري لذلك البناء، وهنا أيضا عندما نريد أن نبرمج تطبيقا للحاسوب أو الجوال فنقوم في البداية بعمل هيكلية للتطبيق باستخدام مخطط UML الذي يوضح بناء التطبيق والأصناف والمتغيرات التي سيحويها وكل تلك التفاصيل، عندها يمكن الشروع في البرمجة وفقا لتلك المخططات&lt;/p&gt;
 
-&lt;p&gt;يحدد مخطط الصنف أنواع العناصر في النظام و العلاقات الموجودة بينها، كما يعطي رؤية عالية المستوى للتطبيق كما يمكن تشغيل طريقة النمذجة هذه مع الطرق كائنية التوجه تقريبًا.
+&lt;p class=&quot;notice&quot;&gt;ملاحظة: هناك الكثير من أنواع المخططات لـ UML مثل مخطط حالات الاستخدام “Use Case Diagram” ومخطط الأنشطة “Activity Diagram” وغيرهم. موضوع المقال هنا هو مخطط الصنف “Class Diagram” وهو مطلوب دائمًا عند عمل أي تطبيق بشكل هندسي منظم&lt;/p&gt;
+
+&lt;p&gt;يوفر UML CLASS DIAGRAM نظرة عامة على نظام برمجي (تطبيق للحاسوب مثلا) وذلك من خلال عرض الأصناف كمربعات مسقلة تحوي ضمنها المتغيرات والعمليات (الدالات) الخاصة بكل صنف (مربع) والعلاقات بين تلك الأصناف والتي تكون عبارة عن خطوط تصل بين تلك المربعات.&lt;/p&gt;
+
+&lt;p&gt;يحدد مخطط الصنف أنواع المتغيرات في النظام. يمكن استخدام المخطط هذا مع جميع اللغات كائنية التوجه تقريبًا (أي مع لغات البرمجة التي يمكن استخدام البرمجة كائنية التوجه فيها مثل لغة الجافا).
 يمكن أن يشير الصنف إلى صنف آخر، كما يمكن أن يكون للصنف عناصره الخاصة أو قد يرث من أصناف أخرى.&lt;/p&gt;
 
 &lt;p&gt;يساعد Class Diagram في بناء الكود لتطوير تطبيق برمجي ما.&lt;/p&gt;
@@ -2363,7 +2367,7 @@
   &lt;li&gt;&lt;a href=&quot;#أصناف-مجردة&quot; id=&quot;markdown-toc-أصناف-مجردة&quot;&gt;أصناف مجردة&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#مثال-على-مخطط-الصنف-في-uml&quot; id=&quot;markdown-toc-مثال-على-مخطط-الصنف-في-uml&quot;&gt;مثال على مخطط الصنف في UML&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#مخطط-الصنف-في-دورة-حياة-تطوير-البرمجيات&quot; id=&quot;markdown-toc-مخطط-الصنف-في-دورة-حياة-تطوير-البرمجيات&quot;&gt;مخطط الصنف في دورة حياة تطوير البرمجيات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#أفضل-التطبيقات-لتصميم-مخطط-الصنف&quot; id=&quot;markdown-toc-أفضل-التطبيقات-لتصميم-مخطط-الصنف&quot;&gt;أفضل التطبيقات لتصميم مخطط الصنف&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الطريقة-الأفضل-لتصميم-مخطط-الصنف&quot; id=&quot;markdown-toc-الطريقة-الأفضل-لتصميم-مخطط-الصنف&quot;&gt;الطريقة الأفضل لتصميم مخطط الصنف&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#النهاية-والملخص&quot; id=&quot;markdown-toc-النهاية-والملخص&quot;&gt;النهاية والملخص&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2371,10 +2375,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;يوضح مخطط الصنف جميع نماذج البيانات في أنظمة المعلومات حتى تلك المعقدة منها&lt;/p&gt;
+    &lt;p&gt;يوضح مخطط الصنف جميع نماذج البيانات في النظام البرمجي حتى تلك المعقدة منها&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يوفر نظرة عامة حول كيفية هيكلة التطبيق قبل دراسة الكود الفعلي، مما يجعل وقت العمل أسهل و أقل بكثير&lt;/p&gt;
+    &lt;p&gt;يوفر نظرة عامة حول كيفية هيكلة التطبيق قبل دراسة الكود الفعلي، مما يجعل وقت العمل أسهل وأقل بكثير&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;يساعد على فهم أفضل للتخطيطات العامة للتطبيق&lt;/p&gt;
@@ -2410,7 +2414,7 @@
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;اسم الصنف مطلوب فقط في التمثيل الرسومي للصنف و نلاحظ أنه موجود في الجزء العلوي لمستطيل الصنف، الصنف هو مخطط عنصر يمكن أن يشترك في نفس العلاقات والمتغيرات والعمليات والدلالات، يتم تقديم الصنف كمستطيل، بما في ذلك اسمه ومتغيراته وعملياته في حجرات متفرقة.&lt;/p&gt;
+&lt;p&gt;اسم الصنف مطلوب فقط في التمثيل الرسومي للصنف و نلاحظ أنه موجود في الجزء العلوي لمستطيل الصنف ، حيث يُقسم مستطيل الصنف لثلاثة أقسام من الأعلى للأسفل: الأول الاسم والثاني المتغيرات وأنواعها والثالث العمليات (الدالات)،&lt;/p&gt;
 
 &lt;p&gt;يجب مراعاة القواعد التالية أثناء تمثيل الصنف:&lt;/p&gt;
 
@@ -2438,7 +2442,7 @@
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;يتم احتساب بعض المتغيرات من خلال متغيرات أخرى، على سبيل المثال يمكن حساب عمر الطالب بسهولة من تاريخ ميلاده.&lt;/p&gt;
+&lt;p&gt;يتم حساب بعض المتغيرات من خلال متغيرات أخرى، على سبيل المثال يمكن حساب عمر الطالب بسهولة من تاريخ ميلاده.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
   &lt;amp-img layout=&quot;&quot; width=&quot;166&quot; height=&quot;264&quot; src=&quot;/assets/articles/student2.png&quot; alt=&quot;   سمات الطالب مع العمر&quot;&gt;&lt;/amp-img&gt;
@@ -2455,7 +2459,7 @@
     &lt;p&gt;أنواع الرؤية هي: Public و  private و protected و package ويُشار إليها بالعلامات &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; و &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; و &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; و &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~&lt;/code&gt; على التوالي.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;تصف الرؤية إمكانية الوصول إلى متغير الصنف.&lt;/p&gt;
+    &lt;p&gt;تصف الرؤية إمكانية الوصول إلى متغير الصنف (من قِبَل أصناف أخرى).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;يجب أن يكون للمتغيرات اسم ذو معنى يصف استخدامها في الصنف.&lt;/p&gt;
@@ -2468,13 +2472,13 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;التبعيات&lt;/p&gt;
+    &lt;p&gt;التبعيات (Dependencies)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;التعميمات&lt;/p&gt;
+    &lt;p&gt;التعميمات (Generalizations)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;الارتباطات&lt;/p&gt;
+    &lt;p&gt;الارتباطات (Associations)&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -2483,6 +2487,8 @@
 &lt;p&gt;التبعية تعني العلاقة بين صنفين أو أكثر حيث قد يؤدي التغيير في صنف إلى فرض تغييرات في الآخر و تعتبر هذه علاقة ضعيفة حيث تشير التبعية إلى أن صنف واحد يعتمد على صنف أخر.&lt;/p&gt;
 
 &lt;p&gt;في المثال التالي ، يعتمد الطالب على الكلية التي يتبع لها&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;انتبه لشكل الخط أو السهم بين الصنفين فهو الذي يوضح نوع العلاقة، هنا مثلا يتم تمثيل العلاقة بشكل سهم متقطع&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
   &lt;amp-img layout=&quot;&quot; width=&quot;450&quot; height=&quot;88&quot; src=&quot;/assets/articles/dependency.png&quot; alt=&quot; التبعية&quot;&gt;&lt;/amp-img&gt;
@@ -2496,19 +2502,21 @@
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;يساعد التعميم على توصيل صنف فرعي (subclass) بصنفه الأعلى (superclass)، يستمد الصنف الفرعي بياناته (يرث) من الصنف الأعلى، لكن لا يمكن استخدام علاقة التعميم هذه لنمذجة تنفيذ الواجهة (interface implementation)، و من الجدير بالذكر أيضاً أن مخطط الصنف يسمح بإستمداد البيانات (التوريث) من عدة أصناف أعلى.&lt;/p&gt;
+&lt;p&gt;يساعد التعميم على توصيل صنف فرعي (subclass) بصنفه الأعلى (superclass)، يستمد الصنف الفرعي متغيراته (يرث) من الصنف الأعلى، لكن لا يمكن استخدام علاقة التعميم هذه لنمذجة تنفيذ الواجهة (interface implementation)، ومن الجدير بالذكر أيضاً أن مخطط الصنف يسمح بإستمداد المتغيرات (التوريث) من عدة أصناف أعلى.&lt;/p&gt;
 
 &lt;p&gt;في هذا المثال، يتم تعميم الطالب في الفصل الدراسي من صنف الشخص.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; عند كتابة المتغير نفسه الموجود في الصنف الأعلى (الموَرِّث)أو الشخص (person)في مثالنا هنا في الصنف الأسفل (الوارث) (أو الطالب هنا)، فهذا يعني أننا نريد إلغاء توريث هذا المتغير تحديدا وإعطاء قيمة جديدة مختلفة لهذا المتغير من قيمته التي تكون في الصنف الأعلى.&lt;/p&gt;
 
 &lt;h3 id=&quot;الارتباطات&quot;&gt;الارتباطات&lt;/h3&gt;
 
 &lt;p&gt;يمثل هذا النوع من العلاقات علاقات ثابتة بين الفئتين “أ” و “ب”. يعني مثلا موظف يعمل في منظمة.&lt;/p&gt;
 
-&lt;p&gt;فيما يلي بعض قواعد الارتباط:&lt;/p&gt;
+&lt;p&gt;فيما يلي بعض قواعد الارتباط (الكتابة التي تظهر على الخط الواصل بين صنفين والتي تحدد العلاقة بينهما):&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;الاقتران هو في الغالب فعل أو جملة فعلية أو جملة إسمية أو اسم.&lt;/p&gt;
+    &lt;p&gt;الارتباط هو في الغالب فعل أو جملة فعلية أو جملة اسمية أو اسم.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;يجب تسميته للإشارة إلى الدور الذي يلعبه الصنف المرفق في نهاية مسار الارتباط.&lt;/p&gt;
@@ -2518,7 +2526,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;في هذا المثال ، تظهر العلاقة بين الطالب والكلية وهي الدراسات.&lt;/p&gt;
+&lt;p&gt;في هذا المثال تظهر العلاقة بين الطالب والكلية وهي الدراسات.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
   &lt;amp-img layout=&quot;&quot; width=&quot;164&quot; height=&quot;209&quot; src=&quot;/assets/articles/1.png&quot; alt=&quot; العلاقة بين الطالب و الكلية&quot;&gt;&lt;/amp-img&gt;
@@ -2532,20 +2540,18 @@
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;التعددية هي عامل مرتبط بمتغير، يحدد عدد مثيلات المتغيرات التي يتم إنشاؤها عند بدء الصنف، إذا لم يتم تحديد التعددية فإنه بشكل افتراضي تعتبر التعددية افتراضية.&lt;/p&gt;
-
-&lt;p&gt;لنفترض أن هناك 100 طالب في كلية واحدة حيث يمكن أن يكون لهذه الكلية العديد من الطلاب.&lt;/p&gt;
+&lt;p&gt;التعددية تحدد عدد مثيلات المتغيرات التي يتم إنشاؤها عند بدء الصنف، إذا لم يتم تحديد التعددية فإنه بشكل افتراضي تعتبر التعددية افتراضية. مثلا يبين الشكل أعلاه رمز النجمة عند الخط بالقرب من صنف الطالب، وهذا يعني أن الكلية تحوي عدد غير محدد من الطلاب، يمكن أن نضع بدل النجمة عدد محدد أو مثلا 3-1 أي تحوي من طالبا إلى ثلاثة طلاب أو عموما n-m أي من عدد n طالب إلى عدد أقصاه m طالب وما إلى ذلك.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;التجميع&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;التجميع هو نوع خاص من الارتباط يمثل نموذجًا لعلاقة كاملة بين المجموع وأجزائه.&lt;/p&gt;
+&lt;p&gt;التجميع (Aggregation) هو نوع خاص من الارتباط يمثل نموذجًا لعلاقة كاملة بين المجموع وأجزائه.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
   &lt;amp-img layout=&quot;&quot; width=&quot;466&quot; height=&quot;96&quot; src=&quot;/assets/articles/3.png&quot; alt=&quot;التجميع&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;على سبيل المثال، يتكون صنف الكلية من طالب واحد أو أكثر،  لا تعتمد الأصناف المتضمنة في التجميع بشكل كامل على المحتويات حيث سنرى هناأنه سيظل صنف الكلية حتى لو لم يكن الطالب متاحًا.&lt;/p&gt;
+&lt;p&gt;على سبيل المثال، يتكون صنف الكلية من طالب واحد أو أكثر،  لا تعتمد الأصناف المتضمنة في التجميع بشكل كامل على المحتويات حيث سنرى هنا أنه سيظل صنف الكلية حتى لو لم يكن الطالب متاحًا.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;التكوين&lt;/strong&gt;&lt;/p&gt;
 
@@ -2554,7 +2560,7 @@
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;التكوين هو نوع خاص من التجميع الذي يشير إلى ملكية قوية بين صنفين عندما يكون صنف واحد جزءًا من صنف أخر.&lt;/p&gt;
+&lt;p&gt;التكوين (Composition) هو نوع خاص من التجميع الذي يشير إلى ملكية قوية بين صنفين عندما يكون صنف واحد جزءًا من صنف أخر.&lt;/p&gt;
 
 &lt;p&gt;على سبيل المثال، إذا كانت الكلية تتكون من فصول للطلبة حيث يمكن أن تحتوي الكلية على العديد من الطلاب، بينما ينتمي كل طالب إلى كلية واحدة فقط، لذلك إذا كانت الكلية لا تعمل فقد تمت إزالة جميع الطلاب أيضًا.&lt;/p&gt;
 
@@ -2569,7 +2575,7 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;يشير التجميع إلى علاقة  يمكن أن يكون الطفل فيها موجودًا بشكل منفصل عن صنف الوالدين. مثال: السيارات (الأصل) والسيارة (الطفل)، لذا إذا قمت بحذف السيارات، فإن السيارة الفرعية لا تزال موجودة.&lt;/td&gt;
+      &lt;td&gt;يشير التجميع إلى علاقة  يمكن أن يكون الصنف الطفل فيها موجودًا بشكل منفصل عن الصنف الوالد. مثال: السيارات (الأصل) والسيارة (الطفل)، لذا إذا قمت بحذف السيارات، فإن السيارة الفرعية لا تزال موجودة.&lt;/td&gt;
       &lt;td&gt;علاقة تركيب ثابت حيث لن يكون الطفل موجودًا بشكل مستقل عن الوالد. مثال: المنزل (الوالد) والغرفة (الطفل)، لذلك نحن نعلم أنه لن تنفصل الغرف  عن المنزل أبدًا.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -2609,17 +2615,17 @@
 
 &lt;p&gt;يمكن استخدام مخطط الصنف في مراحل تطوير البرامج المختلفة كما أنه يساعد في نمذجة الرسوم البيانية لمخططات الأصناف في ثلاث وجهات نظر مختلفة.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1. المنظور المفاهيمي:&lt;/strong&gt; تصف المخططات المفاهيمية الأشياء في العالم الحقيقي حيث أنه يجب عليك رسم مخطط يمثل المفاهيم في المجال الذي هو  قيد الدراسة حاليا كما أن هذه المفاهيم تتعلق دائما بالصنف و لا علاقة لها باللغة.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. المنظور المفاهيمي:&lt;/strong&gt; تصف المخططات المفاهيمية الأشياء في العالم الحقيقي حيث أنه يجب عليك رسم مخطط يمثل المفاهيم في المجال الذي هو قيد الدراسة حاليا كما أن هذه المفاهيم تتعلق دائما بالصنف و لا علاقة لها باللغة.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;2. منظور المواصفات:&lt;/strong&gt; يصف منظور المواصفات ملخصات البرامج أو المكونات التي تحتوي على مواصفات و واجهات غير أنه لا يلزم القيام بإجراء معين.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. منظور المواصفات:&lt;/strong&gt; يصف منظور المواصفات ملخصات البرامج أو المكونات التي تحتوي على مواصفات وواجهات غير أنه لا يلزم القيام بإجراء معين.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;3. منظور التنفيذ:&lt;/strong&gt; يستخدم هذا النوع من مخطط الصنف في عمليات التنفيذ التي تعتمد على لغة أو تطبيق معين حيث أنه يستخدم منظور التنفيذ لتنفيذ البرامج.&lt;/p&gt;
 
-&lt;h1 id=&quot;أفضل-التطبيقات-لتصميم-مخطط-الصنف&quot;&gt;أفضل التطبيقات لتصميم مخطط الصنف&lt;/h1&gt;
+&lt;h1 id=&quot;الطريقة-الأفضل-لتصميم-مخطط-الصنف&quot;&gt;الطريقة الأفضل لتصميم مخطط الصنف&lt;/h1&gt;
 
 &lt;p&gt;مخططات الأصناف هي أهم مخططات مستخدمة في UML لتطوير تطبيقات البرمجيات حيث أنه هناك العديد من الخصائص التي يجب أخذها في عين الإعتبار أثناء رسم مخطط الصنف حيث أنها تمثل جوانب مختلفة من تطبيق البرمجيات.&lt;/p&gt;
 
-&lt;p&gt;إليك بعض النقاط التي يجب وضعها في عين الاعتبار أثناء رسم مخطط الفصل:&lt;/p&gt;
+&lt;p&gt;إليك بعض النقاط التي يجب وضعها في عين الاعتبار أثناء رسم مخطط الصنف:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2635,14 +2641,14 @@
     &lt;p&gt;يجب تحديد الحد الأدنى من الخصائص لكل صنف لأنه يمكن أن تجعل الخصائص غير المرغوب فيها مخطط الصنف معقدًا للغاية.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يجب تضمين ملاحظات المستخدم عندما تحتاج إلى تحديد بعض جوانب مخطط الصنف حيث أنه في نهاية الرسم، يجب أن يكون مفهوما لفريق تطوير البرمجيات.&lt;/p&gt;
+    &lt;p&gt;يجب تضمين ملاحظات المستخدم عندما تحتاج إلى تحديد بعض جوانب مخطط الصنف حيث أنه في نهاية الرسم يجب أن يكون مفهوما لفريق تطوير البرمجيات.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;في النهاية يجب رسم المخطط على ورق عادي قبل إنشاء النسخة النهائية، علاوة على ذلك يجب إعادة صياغتها حتى تصبح جاهزة للتسليم النهائي.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;نصيحة:&lt;/strong&gt; لإنشاء مخطط UML على الحاسوب بشكل عملي فهناك العديد من تطبيقات الوب التي تعمل على المتصفح وتساعدك في ذلك مثل أداة &lt;a href=&quot;https://creately.com/lp/uml-diagram-tool/&quot;&gt;Creately&lt;/a&gt; المجانية، ولكنها فقط للمخططات الصغيرة المؤلفة من ثلاث أصناف تقريبًا، حيث سيصبح العمل والمتصفح بطيئًا جدًا عند اتساع المخطط. لذا وللمخططات الكبيرة يفضل استخدام تطبيق على الحاسوب وأنصحك بـ &lt;a href=&quot;https://www.eclipse.org/papyrus/download.html&quot;&gt;Eclipse Papyrus&lt;/a&gt; المجاني.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;نصيحة:&lt;/strong&gt; لإنشاء مخطط UML على الحاسوب بشكل عملي فهناك العديد من تطبيقات الوب التي تعمل على المتصفح وتساعدك في ذلك مثل أداة &lt;a href=&quot;https://creately.com/lp/uml-diagram-tool/&quot;&gt;Creately&lt;/a&gt; أو &lt;a href=&quot;https://app.diagrams.net&quot;&gt;diagrams&lt;/a&gt;المجانية، ولكنها فقط للمخططات الصغيرة، حيث سيصبح العمل والمتصفح بطيئًا جدًا عند اتساع المخطط. لذا وللمخططات الكبيرة يفضل استخدام تطبيق على الحاسوب وأنصحك بـ &lt;a href=&quot;https://www.eclipse.org/papyrus/download.html&quot;&gt;Eclipse Papyrus&lt;/a&gt; المجاني.&lt;/p&gt;
 
 &lt;h1 id=&quot;النهاية-والملخص&quot;&gt;النهاية والملخص&lt;/h1&gt;
 
@@ -2666,10 +2672,10 @@
     &lt;p&gt;العناصر الأساسية في مخطط الصنف في UML هي 1) إسم الصنف  2) السمات 3) العلاقات&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يوفر مخطط الصنف نظرة عامة حول كيفية هيكلة التطبيق قبل دراسة الكود الفعلي، مما يجعل وقت العمل أسهل و أقل بكثير&lt;/p&gt;
+    &lt;p&gt;يوفر مخطط الصنف نظرة عامة حول كيفية هيكلة التطبيق قبل دراسة الكود الفعلي، مما يجعل وقت العمل أسهل وأقل بكثير&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;يُعد مخطط الصنف مفيدًا في تعيين لغات البرمجة الموجهة للمواضيع مثل Java و C ++ و Ruby و Python وما إلى ذلك.&lt;/p&gt;
+    &lt;p&gt;يُعد مخطط الصنف مفيدًا في العمل مع لغات البرمجة كائنية التوجه مثل Java وسي بلس بلس وروبي وبايثون وما إلى ذلك.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -10492,7 +10498,33 @@
     &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;6.
-   -60&lt;/p&gt;
+   -60 وذلك ﻷنه الدالات التي يتم استدعاؤها في الدالة الرئيسية main ولا يتم حفظها في أي متغير، يكون استادعاؤها وعدمه سواء!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: بالنسبة للمتغيرات التي تكون خارج أي دالة (المتغير d أدناه) وبالتالي يكون اسمها متغيرات global، عندما يتم تغيير قيمة تلك المتغيرات داخل أي دالة فستتغير قيمتهم بالفعل ويُحفظ ذلك، سواء تم استدعاء تلك الدالة وحفظها في متغير أم لا، مثلا ناتج الكود التالي سيكون 3:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;        &lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            
+            &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            
+            &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+     &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;7.&lt;/p&gt;
 
@@ -10600,7 +10632,7 @@
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;أرجو أن يكون المقال قد أفادك.&lt;/p&gt;
+&lt;p&gt;أرجو أن يكون المقال قد أفادك. يمكنك مراسلتي على أحد الروابط أدنى الصفحة في حال وجود أي استفسار.&lt;/p&gt;
 
 &lt;p&gt;لمزيد من الأمثلة يرجى &lt;a href=&quot;https://mulham.github.io/c-language-examples2&quot;&gt;الضغط هنا&lt;/a&gt;&lt;/p&gt;
 
@@ -11272,7 +11304,7 @@ e) 1011000010 : 1110
 			<content type="html">&lt;p&gt;فيما يلي 11 جدول لمعظم الرموز في علوم الجبر والمنطق والتحليل والاحتمالات والأرقام الرومانية والأحرف اليونانية.&lt;/p&gt;
 
 &lt;p&gt;اسحب لليمين على الهاتف لمشاهدة الأمثلة.
-تُقرأ الأمثلة (التي لاتحوي وصف عربي ضمن خانة المثال) من اليسار لليمين&lt;/p&gt;
+تُقرأ جميع الأمثلة من اليسار لليمين&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#رموز-الرياضيات-الأساسيّة&quot; id=&quot;markdown-toc-رموز-الرياضيات-الأساسيّة&quot;&gt;رموز الرياضيات الأساسيّة&lt;/a&gt;&lt;/li&gt;
@@ -11330,10 +11362,10 @@ table, th, td, tr {
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;مساواة&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
-			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p dir=&quot;rtl&quot; align=&quot;right&quot;&gt;5 = 2+3&lt;br /&gt;
-5 &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;تساوي
-				&lt;/span&gt;&lt;/font&gt;2+3&lt;/p&gt;
+			&lt;td style=&quot; padding: 0in ; direction: rtl&quot;&gt;
+				&lt;p&gt;5 = 2+3&lt;br /&gt;2+3
+ تساوي&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;5
+				&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
@@ -11346,10 +11378,10 @@ table, th, td, tr {
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;لامساواة&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
-			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p dir=&quot;rtl&quot; align=&quot;right&quot;&gt;5 ≠ 4&lt;br /&gt;
-5 &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;لاتساوي
-				&lt;/span&gt;&lt;/font&gt;4&lt;/p&gt;
+			&lt;td style=&quot; padding: 0in ; direction: rtl&quot;&gt;
+				&lt;p&gt;5 ≠ 4&lt;br /&gt;4
+لاتساوي &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;5
+				&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
@@ -11380,9 +11412,9 @@ table, th, td, tr {
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;أكبر من&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
-			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p dir=&quot;rtl&quot; align=&quot;right&quot;&gt;5 &amp;gt; 4&lt;br /&gt;
-5 &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;أكبر
+			&lt;td style=&quot; padding: 0in ; direction: rtl&quot;&gt;
+				&lt;p&gt;4 &amp;lt; 5&lt;br /&gt;
+5&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;أكبر
 				من &lt;/span&gt;&lt;/font&gt;4&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -11396,8 +11428,8 @@ table, th, td, tr {
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
 				&lt;p&gt;&lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;أصغر من&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
-			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p dir=&quot;rtl&quot; align=&quot;right&quot;&gt;4 &amp;lt; 5&lt;br /&gt;
+			&lt;td style=&quot; padding: 0in ; direction: rtl&quot;&gt;
+				&lt;p&gt;5 &amp;gt; 4&lt;br /&gt;
 4 &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;أصغر
 				من &lt;/span&gt;&lt;/font&gt;5&lt;/p&gt;
 			&lt;/td&gt;
@@ -11430,7 +11462,7 @@ table, th, td, tr {
 				يساوي&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in ; direction: rtl&quot;&gt;
-				&lt;p&gt;4 ≤ 5,&lt;br /&gt;
+				&lt;p&gt;5 ≥ 4,&lt;br /&gt;
 &lt;em&gt;x ≤ y&lt;/em&gt; تعني&lt;em&gt; x&lt;/em&gt; أصغر أو يساوي &lt;em&gt;y&lt;/em&gt;&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -11506,7 +11538,7 @@ table, th, td, tr {
 				الجمع والطرح&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p&gt;3 ± 5 = 8 أو -2&lt;/p&gt;
+				&lt;p&gt;3 ± 5 = 8 or -2&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
@@ -11521,7 +11553,7 @@ table, th, td, tr {
 				الجمع والطرح&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p&gt;3 ∓ 5 = -2 أو 8&lt;/p&gt;
+				&lt;p&gt;3 ∓ 5 = -2 or 8&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
@@ -11677,7 +11709,7 @@ table, th, td, tr {
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p&gt;&lt;i&gt;a&lt;/i&gt;√&lt;/p&gt;
+				&lt;p&gt;&lt;i&gt;√&lt;/i&gt;a&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
 				&lt;p&gt;square root&lt;/p&gt;
@@ -11687,7 +11719,7 @@ table, th, td, tr {
 				&lt;p&gt;√&lt;i&gt;a ⋅ &lt;/i&gt;√&lt;i&gt;a &amp;nbsp;= a&lt;/i&gt;&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in; direction: ltr&quot;&gt;
-				&lt;p&gt;9√ = ±3&lt;/p&gt;
+				&lt;p&gt;√9 = ±3&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
@@ -11893,7 +11925,7 @@ AOB
 				&lt;p&gt;right angle&lt;/p&gt;
 			&lt;/td&gt;
 			&lt;td style=&quot; padding: 0in ; direction: ltr&quot;&gt;
-				&lt;p&gt;= 90°  &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;زاوية
+				&lt;p&gt; 90° = &lt;font face=&quot;Lohit Devanagari&quot;&gt;&lt;span lang=&quot;hi-IN&quot;&gt;زاوية
 				قائمة &lt;/span&gt;&lt;/font&gt;
 				&lt;/p&gt;
 			&lt;/td&gt;
