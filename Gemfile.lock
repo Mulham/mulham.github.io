@@ -75,7 +75,7 @@ GEM
     minitest (5.14.2)
     multi_json (1.15.0)
     multipart-post (2.1.1)
-    nokogiri (1.10.10)
+    nokogiri (1.11.0)
       mini_portile2 (~> 2.4.0)
     octokit (4.19.0)
       faraday (>= 0.9)
@@ -87,7 +87,7 @@ GEM
     rack-protection (1.5.5)
       rack
     rack-test (1.1.0)
-      rack (>= 1.0, < 3)
+      rack (>= 2.1.4, < 3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
