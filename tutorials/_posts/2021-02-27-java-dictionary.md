@@ -86,23 +86,23 @@ public class New_Class
         } 
   
         // get() method : 
-        System.out.println("\nValue at key = 6 : " + geek.get("6")); 
-        System.out.println("Value at key = 456 : " + geek.get("123")); 
+        System.out.println("\nValue at key = 6 : " + mulham.get("age")); 
+        System.out.println("Value at key = 456 : " + mulham.get("height")); 
   
         // isEmpty() method : 
-        System.out.println("\nThere is no key-value pair : " + geek.isEmpty() + "\n"); 
+        System.out.println("\nThere is no key-value pair : " + mulham.isEmpty() + "\n"); 
   
         // keys() method : 
-        for (Enumeration k = geek.keys(); k.hasMoreElements();) 
+        for (Enumeration k = mulham.keys(); k.hasMoreElements();) 
         { 
             System.out.println("Keys in Dictionary : " + k.nextElement()); 
         } 
   
         // remove() method : 
-        System.out.println("\nRemove : " + geek.remove("123")); 
-        System.out.println("Check the value of removed key : " + geek.get("123")); 
+        System.out.println("\nRemove : " + mulham.remove("age")); 
+        System.out.println("Check the value of removed key : " + mulham.get("age")); 
   
-        System.out.println("\nSize of Dictionary : " + geek.size()); 
+        System.out.println("\nSize of Dictionary : " + mulham.size()); 
   
     } 
 } 
