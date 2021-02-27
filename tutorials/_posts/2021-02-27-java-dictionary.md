@@ -86,8 +86,8 @@ public class New_Class
         } 
   
         // get() method : 
-        System.out.println("\nValue at key = 6 : " + mulham.get("age")); 
-        System.out.println("Value at key = 456 : " + mulham.get("height")); 
+        System.out.println("\nValue at key = job : " + mulham.get("job")); 
+        System.out.println("Value at key = height : " + mulham.get("height")); 
   
         // isEmpty() method : 
         System.out.println("\nThere is no key-value pair : " + mulham.isEmpty() + "\n"); 
@@ -100,7 +100,7 @@ public class New_Class
   
         // remove() method : 
         System.out.println("\nRemove : " + mulham.remove("age")); 
-        System.out.println("Check the value of removed key : " + mulham.get("age")); 
+        System.out.println("Check the value of removed key : " + mulham.get("age")); //للتأكد من عدم وجود المفتاح وقيمته بعد حذفهما
   
         System.out.println("\nSize of Dictionary : " + mulham.size()); 
   
@@ -108,6 +108,24 @@ public class New_Class
 } 
 
 {% endhighlight %}
+
+وسيكون ناتج الكود على الشكل التالي:
+
+        Value in Dictionary : 26
+        Value in Dictionary : 172
+
+        Value at key = job : null
+        Value at key = height : 172
+
+        There is no key-value pair : false
+
+        Keys in Dictionary : age
+        Keys in Dictionary : height
+
+        Remove : 26
+        Check the value of removed key : null
+
+        Size of Dictionary : 1
 
 
 إن كان لديك أي سؤال فلا تتردد في مراسلتي.
