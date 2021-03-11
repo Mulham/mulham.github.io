@@ -25,7 +25,7 @@ tags: [برمجة, تعليم, Java]
 وما إلى ذلك..
 
 سأضع لك عند بعض المراحل في الشرح رابطًا للكود البرمجي في حالته عند تلك المرحلة.
-والكود النهائي للتطبيق تجده [هنا](https://github.com/Mulham/Java-Project) 
+والكود النهائي للتطبيق تجده [هنا](https://github.com/Mulham/Java-Project) (إذا أردت تشغيله لديك فاحفظ ملفات الحزمة في مجلد باسم INF202 وليس Java-Project-main، ثم تابع الشرح هنا وطريقة تهيئة بيئة العمل في الصفحة التالية من هذا الشرح)
 
 * Toc
 {:toc}
@@ -55,7 +55,7 @@ tags: [برمجة, تعليم, Java]
 
 ثم قم بتنزيل الملفات التالية وفك الضغط عنها لأشرح لك لاحقًا كيفية إضافتها لتطبيقك:
 
-* [JavaFX SDK](https://gluonhq.com/products/javafx/)
+* [JavaFX SDK](https://gluonhq.com/products/javafx/) حيث قم بفك الضغط عن الملف ثم ادخل للمجلد الناتج ثم مجلد lib واحذف ملف src.zip
  
 * مكتبة [Mysql connector](https://dev.mysql.com/downloads/connector/j/) للربط بقاعدة البيانات. (اختر من القائمة Platform Independent وقم بتحميل الملف المضغوط ثم فك الضغط عنه).
 
