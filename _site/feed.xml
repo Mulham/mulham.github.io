@@ -5,9 +5,459 @@
     <description>شغف المعرفة</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Mar 2021 01:51:14 +0300</pubDate>
-    <lastBuildDate>Mon, 08 Mar 2021 01:51:14 +0300</lastBuildDate>
+    <pubDate>Fri, 31 Dec 2021 14:46:26 +0300</pubDate>
+    <lastBuildDate>Fri, 31 Dec 2021 14:46:26 +0300</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>شرح برنامج إم ميكس مع تمارين عملية</title>
+        <description>&lt;p&gt;برنامج MMIX ويُلفظ إم-مِيكس مُصمَّم من قِبل دونالد نوث (Donald Knuth) وهو معالج افتراضي بلغة أسِّمبلي خاصة به. (يُطلق اسم لغة أسِّمبلي على كل لغة ذات مستوى منخفض Low-Level والتي تكون أقرب للآلة منها للإنسان).&lt;/p&gt;
+
+&lt;p&gt;يفيدنا تعلم لغة الأسمبلي هذه في فهم آلية عمل الحاسوب (والتي تستخدم في الـ compilers أيضا) وكذلك تتعلم من خلالها كيفية التعامل المباشر مع الذاكرة.&lt;/p&gt;
+
+&lt;p&gt;يمكنك تحميل برنامج MMIX من &lt;a href=&quot;http://mmix.cs.hm.edu/&quot;&gt;هنا&lt;/a&gt; (يمكن تشغيله على اللينكس باستخدام برنامج wine)&lt;/p&gt;
+
+&lt;p&gt;والحقيقة الشرح هنا ليس من الصفر تمامًا، وإنما وضع لمن يعلم الأساسيات (إضافة وطرح عددين وما إلى ذلك)، لذا يمكنك قراءة &lt;a href=&quot;http://mmix.cs.hm.edu/doc/instructions-en.html&quot;&gt;الشرح الرسمي هنا&lt;/a&gt; قبل البدء.&lt;/p&gt;
+
+&lt;p&gt;تتألف الذاكرة الرئيسية من خمسة أقسام كل قسم له عنوان (مجال من العناوين) خاص به&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;238&quot; height=&quot;368&quot; src=&quot;/assets/articles/mmix1.png&quot; alt=&quot;شرح برنامج mmix&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;يتم تخزين الكود والمتغيرات وقيمهم في الـ code Segment ويبدأ عنوانه من 100#&lt;/p&gt;
+
+&lt;p&gt;يتم تخزين المعلومات والنصوص ومُدخلات المستخدم في الـ Data_Segment بحيث
+عندما نريد أخذ شيئ من المستخدم أو طباعته على الشاشة نستخدم داًئمًا الـ Data_Segment
+ويبدأ من:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    #2000  0000 0000 0000      (عدد الأصفار 15)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;والآن لنأتي مباشرة لبعض الأمثلة:&lt;/p&gt;
+
+&lt;h1 id=&quot;تمرين-1&quot;&gt;تمرين 1&lt;/h1&gt;
+
+&lt;p&gt;برنامج لطباعة عبارة “Hello World!” ثلاث مرات&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;325&quot; height=&quot;263&quot; src=&quot;/assets/articles/mmix2.png&quot; alt=&quot;تمارين عملية في برنامج mmix&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;حيث أننا الآن في الداتا سيغمينت، وسنبدأ الكود دائما من هناك.
+تكون الرسالة التي نريد طباعتها دائما من نوع بايت، ونضع بعدها سطر جديد وبعدها صفر، دائما هكذا&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    #A  تعني سطر جديد
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;عندما نريد طباعة عبارة على الشاشة (أو أخذ شيئ من المستخدم) نضع دائما عنوان عبارتنا التي نريد طباعتها (أو العنوان المخصص لحفظ مُدخل المستخدم) في الريجستر 255&lt;/p&gt;
+
+&lt;p&gt;السطر التالي (المأخوذ من الصورة أعلاه) يقوم بالطباعة:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    TRAP 0, Fputs, stdout
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وفي السطر التالي من الكود قمنا بإنقاص قيمة 1 مرة تلو الأخرى من القيمة 3 التي أعطيناها في أول الكود، وهكذا ليتم طباعة العبارة ثلاث مرات&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    SUB times, times, 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;قم بقراءة الكود والشرح أعلاه جيدا قبل الانتقال للأسفل.&lt;/p&gt;
+
+&lt;p&gt;والآن كيف يمكننا أخذ قيمة من المستخدم؟ سوف نقوم بتخصيص عنوان في الذاكرة Data_Segment ونقوم بتحميل بداية هذا العنوان المخصص للريجستر 255 ونعطي أمر القراءة من المستخدم&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;699&quot; height=&quot;385&quot; src=&quot;/assets/articles/mmix3.png&quot; alt=&quot;تمارين عملية في برنامج mmix-1&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;لماذا انتهى عنوان الـ Arg بخمسين؟ لأن 80 بالديسيمال هي 50 بالهيكساديسيمال حيث أن العنوان دائمًا بالهيكساديسيمال&lt;/p&gt;
+
+&lt;p&gt;إذًا الـ Arg هنا هي نهاية العنوان المخصص لإدخال المستخدم، وبعدها مباشرة  نكتب القيمة التي خصصناها&lt;/p&gt;
+
+&lt;p&gt;عنوان الـ Arg إذًًا عرفناه، ولكن القيمة داخله هي بداية العنوان المخصص يعني عند ال Buffer والتي تكون ال Data_Segment
+لذا دائما عند قراءة شيئ من المستخدم نُحمّل نهاية العنوان للريجستر 255 والذي هو هنا الـ Args والذي يحفظ بداخله قيمة بداية العنوان، ثم يأتي الريجستر 255 على العنوان Args يجد بداخله أنه يدل على العنوان Buffer ويبدأ بحفظ مُدخل المستخدم من عنده.&lt;/p&gt;
+
+&lt;p&gt;كيف نكتب ذلك بالكود؟&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;921&quot; height=&quot;443&quot; src=&quot;/assets/articles/mmix4.png&quot; alt=&quot;تمارين عملية في برنامج mmix-2&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;السطر 4: اذهب للعنوان الذي يلي عنوان الـ Buffer بـ 80 (ديسيمال / 50 هيكساديسيمال)
+السطر 5: الآن احفظ لي هنا متغير اسمه Arg يحوي بداخله عنوان الـ Buffer
+السطر6: متغير جديد بلا اسم يحوي القيمة التي خزّنّاها (بالديسيمال)&lt;/p&gt;
+
+&lt;p&gt;الصورة أعلاه تنفذ تماما المخطط الذي تكلمنا عنه قبلها، لذلك سأضعهم بجانب بعضهم وتأمل يرعاك الله.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;921&quot; height=&quot;374&quot; src=&quot;/assets/articles/mmix5.png&quot; alt=&quot;تمارين عملية في برنامج mmix-3&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;تمرين-2&quot;&gt;تمرين 2&lt;/h1&gt;
+
+&lt;p&gt;اكتب برنامج يأخذ اسم من المستخدم ويحسب مربع عدد أحرف ذلك الاسم.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;828&quot; height=&quot;333&quot; src=&quot;/assets/articles/mmix6.png&quot; alt=&quot;تمارين عملية في برنامج mmix-4&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;أي إذا أدخل المستخدم abc  سيحفظ بعد الإدخال 4 في الريجستر 255،لماذا؟  ﻷنه دائما يكون بعد المُدخل صفر  بالنهاية، فإذا أردنا الطول الحقيقي يجب أن نننقص فورا 1&lt;/p&gt;
+
+&lt;p&gt;بالنسبة للأمر GO فهو من أجل عمل دالة، حيث تُكتب الدالة قبل الـ main وبعدها عندما نريد استدعاء الدالة نضع الأمر GO، وله شكلين، الأول:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Go $X,Name	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;هنا يكون لدينا دالة قبل الـ main اسمها Name، سيقوم الأمر أعلاه بالذهاب للدالة ذات الاسم Name وحفظ عنوان السطر الحالي أي سطر الأمر أعلاه في الريجستر X$&lt;/p&gt;
+
+&lt;p&gt;الشكل الثاني:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    GO  $X,$Y,0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ونعني هنا اذهب إلى عنوان السطر المُخزّن في Y واحفظ عنوان السطر الحالي في الريجستر X$ مع العلم أن X و Y قد يكونوا نفس الريجستر، أي&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Go $0,$0,0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أي اذهب للسطر المخزن عنوانه في الريجستر 0$ وبعدها عدل قيمة 0$ لتصبح عنوان السطر الحالي.&lt;/p&gt;
+
+&lt;p&gt;ولكن ما معنى الصفر في آخر التعليمة؟ Go $0,$0,0&lt;/p&gt;
+
+&lt;p&gt;عند التجربة تبين أنه لا معنى لها وأي رقم سيوضع مكان الصفر لن يؤثر بشيئ ويمكن الاستغناء عنها. ولكن لا يمكن إضافة صفر للشكل الأول أعلاه!&lt;/p&gt;
+
+&lt;p&gt;ولكن هذه الصفر (القيمة) مفيدة وهامة جدا في تعليمة مثل LDB مثلا، مثال:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    LDB h1,k1,cnt 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;هنا سيتم إضافة قيمة الريجستر cnt إلى k1 قبل تخزينها في h1، وهي الفكرة المطبقة لأخذ حرف حرف من الكلمة. (تابع التمارين أدناه)&lt;/p&gt;
+
+&lt;p&gt;الشكل الأول من GO إذًًا يُستخدم عند استدعاء دالة في الـ main والثاني يُستخدم عادة خارج الـ main للذهاب لسطر محدد خارج أو داخل الـ main&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; مباشرة قبل كتابة أول دالة اكتب دائمًا:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     LOC #100
+     GREG @
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;تمرين-3&quot;&gt;تمرين 3&lt;/h1&gt;
+
+&lt;p&gt;اكتب برنامج يقرأ عدد من الذاكرة ويحسب مجموع عدد خاناته (مثلا العدد 10 يحوي خانتين).&lt;/p&gt;
+
+&lt;p&gt;(الاسمان Sayi و Zahl أدناه يعنيان “عدد” والاسم summe يعني المجموع)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     LOC Data_Segment
+     GREG @
+
+    sayi OCTA 156
+        LOC #100
+    zahl IS $1
+    summe IS $2
+    p IS $3
+    s IS $4
+    Main LDO zahl,sayi
+        DIV summe,zahl,100
+        DIV p,zahl,10
+        DIV p,p,10
+        GET p,rR
+        DIV s,zahl,10
+        GET s,rR
+        ADD summe,summe,p
+        ADD summe,summe,s
+        TRAP 0,Halt,0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;تمرين-4&quot;&gt;تمرين 4&lt;/h1&gt;
+
+&lt;p&gt;اكتب برنامج ينفذ خوارزمية ترتيب الأعداد Bubble sort وقم بتخصيص مساحة WYDE لكل عدد يتم ترتيبه. إليك الكود والصورة التالية لشرح الخوارزمية:&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;311&quot; src=&quot;/assets/articles/bubble-sort.png&quot; alt=&quot;خوارزمية ترتيب الأعداد bubble sort&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;300&quot; height=&quot;333&quot; src=&quot;/assets/articles/bubble-sort1.png&quot; alt=&quot;خوارزمية ترتيب الأعداد bubble sort-1&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;الحل&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     LOC Data_Segment
+     GREG @
+
+    A1 WYDE 5
+    A2 WYDE 3
+    A3 WYDE 4
+    A4 WYDE 6
+    A5 WYDE 1
+
+    a1 IS $1
+    a2 IS $2
+    a3 IS $3
+    a4 IS $4
+    a5 IS $5
+    test IS $6
+    s IS $7
+    tmp IS $8
+     LOC #100
+    Main LDW a1,A1
+        LDW a2,A2
+        LDW a3,A3
+        LDW a4,A4
+        LDW a5,A5
+    Loop	SET s,0
+        CMP test,a1,a2
+        BP test,swap
+        JMP t2
+    swap ADD s,s,1
+         SET tmp,a1
+        SET a1,a2
+        SET a2,tmp
+    t2 	CMP test,a2,a3
+        BP test,swap1
+        JMP t3
+    swap1 ADD s,s,1
+         SET tmp,a2
+        SET a2,a3
+        SET a3,tmp
+    t3	CMP test,a3,a4
+        BP test,swap2
+        JMP t4
+    swap2 ADD s,s,1
+         SET tmp,a3
+        SET a3,a4
+        SET a4,tmp
+    t4	CMP test,a4,a5
+        BP test,swap3
+        JMP son
+    swap3 ADD s,s,1
+         SET tmp,a4
+        SET a4,a5
+        SET a5,tmp
+    son	BZ s,END 
+        JMP Loop
+
+    END	TRAP 0,Halt,0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;تمرين-5&quot;&gt;تمرين 5&lt;/h1&gt;
+
+&lt;p&gt;اكتب برنامج يقوم بمقارنة عبارتين نصيتين من نوع BYTE. في حال كانت العبارتين متماثلتين فليقم البرنامج بطبع الرسالة “Strings are equal” وإلا فليطبع “Srtings are different”&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     LOC Data_Segment
+
+     GREG @
+    loc1 BYTE 0
+    s1 BYTE &quot;Hello&quot;,#A,0
+    loc2 BYTE 0
+    s2 BYTE &quot;Hella&quot;,#A,0
+    loc3 BYTE 0
+    yes BYTE &quot;Strings are equal&quot;,#A,0
+
+    loc4 BYTE 0
+    no BYTE &quot;Srtings are different&quot;,#A,0
+    char BYTE 0
+    k1 IS $1
+    k2 IS $2
+    lang1 IS $3
+    lang2 IS $4
+    test IS $5
+    h1 IS $6
+    h2 IS $7
+    cnt IS $8
+        LOC #100
+    Main LDA k1,s1
+        LDA $255,s1
+        TRAP 0,Fputs,StdOut
+        SET lang1,$255
+        SUB lang1,lang1,1
+        LDA k2,s2
+        LDA $255,s2
+        TRAP 0,Fputs,StdOut
+        SET lang2,$255
+        SUB lang2,lang2,1
+        CMP test,lang1,lang2
+        BNZ test,not
+        SET cnt,0
+    Loop LDB h1,k1,cnt
+        LDB h2,k2,cnt
+        CMP test,h1,h2
+        BNZ test,not
+        ADD cnt,cnt,1
+        SUB lang1,lang1,1
+        BZ lang1,yup
+        JMP Loop
+
+
+    not	LDA $255,no
+        TRAP 0,Fputs,StdOut
+        JMP END
+    yup LDA $255,yes
+        TRAP 0,Fputs,StdOut
+    END	TRAP 0,Halt,0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;تمرين-6&quot;&gt;تمرين 6&lt;/h1&gt;
+
+&lt;p&gt;تحوي لغة سي دالة باسم Atoi حيث تحوي بارامتر يأخذ عدد على شكل عبارة نصية String وتقوم الدالة بتحويل العدد من نوع string إلى النوع int. اكتب هذه الدالة في برنامج MMIX&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     LOC Data_Segment
+     GREG @
+
+    buf BYTE 0
+        LOC buf+64
+    Arg OCTA buf,64
+    char OCTA 0
+    lang IS $1
+    all IS $4
+    a IS $2
+    cnt IS $3
+    int IS $5
+     LOC #100
+    Main LDA $255,Arg
+        TRAP 0,Fgets,StdIn
+        SET lang,$255
+        SUB lang,lang,1
+        SET cnt,0
+        LDA all,buf
+	        SET int,0
+    Loop LDB a,all,cnt
+        SUB a,a,48
+        MUL int,int,10
+        ADD int,int,a	
+        SUB lang,lang,1
+        BZ lang,END
+        ADD cnt,cnt,1
+        JMP Loop
+
+
+
+    END TRAP 0,Halt,0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;تمرين-7&quot;&gt;تمرين 7&lt;/h1&gt;
+
+&lt;p&gt;اكتب برنامج يأخذ من المستخدم عددا بين 1 و 10000. وباستخدام الدالة أعلاه Atoi قم بتحويل الرقم لنوع Integer. واكتب دالة تفحص هذا العدد إذا كان عدد أولي أم لا.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     LOC Data_Segment
+     GREG @
+
+    buf BYTE 0
+        LOC buf+64
+    Arg OCTA buf,64
+    char OCTA 0
+    lang IS $1
+    all IS $4
+    a IS $2
+    cnt IS $3
+    int IS $5
+    test IS $7
+    result IS $8
+    H IS $10
+    G IS $11
+    asama IS $12
+     LOC #100
+     GREG @
+    Atoi  LDB a,all,cnt
+        SUB a,a,48
+        MUL int,int,10
+        ADD int,int,a	
+        SUB lang,lang,1
+        BZ lang,END
+        ADD cnt,cnt,1
+        JMP Atoi
+    END GO $0,$0,0
+
+    prim SET G,0
+        SET asama,0
+        DIV test,int,2
+        GET test,rR
+        BNZ test,pz
+    continue DIV test,int,3
+        SET asama,2
+        GET test,rR
+        BNZ test,pz
+    Endp GO $9,$9,0
+    pz	ADD G,G,1
+        BZ asama,continue
+        CMP test,G,2
+        BZ test,pz1
+        JMP Endp
+    pz1	SET result,1
+        JMP Endp
+    Main LDA $255,Arg
+        TRAP 0,Fgets,StdIn
+        SET lang,$255
+        SUB lang,lang,1
+        SET cnt,0
+        LDA all,buf
+        SET int,0
+        GO $0,Atoi
+        CMP test,int,1
+        BN test,finish
+        SET H,10000
+        CMP test,int,H
+        BP test,finish
+
+        GO $9,prim
+        
+    finish TRAP 0,Halt,0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;تمرين-8&quot;&gt;تمرين 8&lt;/h1&gt;
+
+&lt;p&gt;احفظ القيم التالية في الذاكرة:&lt;/p&gt;
+
+&lt;p&gt;a=3, b=7, c=11, d=0, s=5, t=9, u=13, v=0&lt;/p&gt;
+
+&lt;p&gt;اكتب دالة باسم “islem” (إشلم تعني عملية/إجراء بالتركي) وبداخلها قم بعمل العملية التالية:&lt;/p&gt;
+
+&lt;p&gt;(x + (y * z)) / (x + y) iş&lt;/p&gt;
+
+&lt;p&gt;واحفظ النتيجة في الذاكرة.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;253&quot; height=&quot;503&quot; src=&quot;/assets/articles/mmix7.png&quot; alt=&quot;تمارين عملية في برنامج mmix-5&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;للمراجعة: ماهو الفرق بين STB, LDB,LDA..&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; يمكننا حفظ موقع بشكل مباشر في متغير في الذاكرة (وليس ريجستر) بكتابة GREG مثلًا:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    A      GREG     #2000000000000050
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة أخيرة:&lt;/strong&gt; هناك ريجسترات خاصة منها  rR الذي يحوي باقي القسمة ويتم أخذ القيمة منه بعد إجراء عملية قسمة بالأمر:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    GET $X,rR
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أي حفظ باقي القسمة في الريجستر X&lt;/p&gt;
+
+&lt;p&gt;عندما يكون لدينا أي تمرين يتطلب معرفة باقي قسمة ما، أو قانون يحوي العامل مودولو % والذي هو باقي القسمة أيضا، نستخدم  الريجستر rR (أي نأخذ قيمة باقي القسمة كما في الأمر أعلاه)&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 28 Mar 2021 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/MMIX/</link>
+        <guid isPermaLink="true">http://localhost:4000/MMIX/</guid>
+        
+        <category>برمجة</category>
+        
+        <category>تعليم</category>
+        
+        
+        <category>tutorials</category>
+        
+      </item>
     
       <item>
         <title>آلية العمل في تطبيق جافا إف إكس</title>
@@ -77,7 +527,7 @@
 &lt;p&gt;لنقم بإنشاء نافذة editUser.fxml والتي ستكون بنفس محتوى addUser ولكن سيختلف فقط رز Add ويصبح Update، النافذة لدي ستصبح على الشكل التالي:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-edit-users-window.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-edit-users-window.png&quot; alt=&quot;نافذة تعديل مستخدم في تطبيق جافا FX&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -111,17 +561,17 @@
 &lt;p&gt;وأخيرا في صنف UserController لنقم ببرمجة زر التعديل حيث يتم استدعاء دالة getInfo وتمرير المستخدم المحدد في الجدول إليها، وهذه هي طريقة إرسال بيانات من صنف لآخر أي من نافذة ﻷخرى:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;user_edit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectedItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()){&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectedItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// إنشاء عنصر من صنف المستخدم حيث معلوماته تكون من  السطر المحدد في الجدول&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()){&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// إذا قام المستخدم بتحديد سطر من الجدول&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;user_edit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hide&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
                     &lt;span class=&quot;nc&quot;&gt;FXMLLoader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FXMLLoader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getResource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/sample/view/editUser.fxml&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
                     &lt;span class=&quot;nc&quot;&gt;Parent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                     &lt;span class=&quot;nc&quot;&gt;EditUserController&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;editUserController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;editUserController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;editUserController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// إرسال عنصر المستخدم مع كافة بياناته كبارامتر للدالة الموجودة في صنف التعديل&lt;/span&gt;
                     &lt;span class=&quot;nc&quot;&gt;Stage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                     &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
                 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
                     &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
@@ -164,7 +614,7 @@
 &lt;p&gt;ستكون النافذة الرئيسية لدي أنا على الشكل التالي (حيث قمت بإضافة مجلد assets وإضافة الأيقونات التي أرغب بإضافتها للنافذة إليه):&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;250&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI2.png&quot; alt=&quot;بناء تطبيق جافا FX من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;250&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI2.png&quot; alt=&quot;النافذة الرئيسية في تطبيق جافا إف إكس&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -190,22 +640,22 @@
 &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SceneController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
     &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;changeScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scene&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hide&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hide&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// إخفاء النافذة الحالية&lt;/span&gt;
         &lt;span class=&quot;nc&quot;&gt;FXMLLoader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FXMLLoader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setLocation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getResource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/sample/view/&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// تحميل النافذة الجديدة&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;nc&quot;&gt;Parent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getRoot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
         &lt;span class=&quot;nc&quot;&gt;Stage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// عرض النافذة الجديدة&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;وعلى غرار الدالة هذه (changeScene) سأضيف دالة أخرى لإمكانية استخدام صورة بدل زر:&lt;/p&gt;
+&lt;p&gt;وعلى غرار الدالة هذه (changeScene) سأضيف دالة أخرى لإمكانية استخدام صورة بدل زر (سيختلف فقط البارامتر الأول وسيصبح من نوع صورة بدل زر):&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;changeSceneImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ImageView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scene&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hide&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
@@ -284,18 +734,38 @@
 
 &lt;p&gt;لنقم الآن بإنشاء نافذة إدارة المستخدمين حيث يمكن للمدير أن يضيف أو يعدل أو يحذف مستخدما ما.&lt;/p&gt;
 
-&lt;p&gt;وبالتالي سنقوم بعمل نافذتين، نافذة لعرض المستخدمين الموجودين ونافذة لإضافة مستخدم، وسنستخدم الأخيرة لتعديل بيانات المستخدم حيث ستظهر بياناته في نموذج الإضافة نفسه لإمكانية تعديلها.&lt;/p&gt;
+&lt;p&gt;وبالتالي سنقوم بعمل نافذتين، نافذة لعرض المستخدمين الموجودين ونافذة لإضافة مستخدم، وسنستخدم الأخيرة (نسخة منها) لتعديل بيانات المستخدم حيث ستظهر بياناته في نموذج الإضافة نفسه لإمكانية تعديلها.&lt;/p&gt;
 
 &lt;p&gt;اضغط باليمين على المجلد view واختر New ثم FXML File وسمه users وهي النافذة التي سنعرض فيها المستخدمين الموجودين في قاعدة البيانات.&lt;/p&gt;
 
 &lt;p&gt;الجديد في النافذة هذه والتي تعرض المستخدمين الموجودين، هو الجدول، وهو في محرر الواجهة باسم TabelView وستجد أنك عندما تضيفه سيحوي عمودَين، يمكنك النقر باليمين على أحد الأعمدة واختيار Duplicate لإضافة عمود جديد أو Delete لحذفه، كما يمكنك تغيير عرض أحد الأعمد بالنقر على حافته اليمنى أو اليسرى والسحب. وبالنسبة لتغيير اسمه ومعلوماته وإعطائه id مخصص فيتم من قائمة الخصائص على اليمين (حيث يجب إعطاء id لكل عمود). ستكون النافذة لدي على الشكل التالي:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-users-window.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-users-window.png&quot; alt=&quot;نافذة إدارة المستخدمين في تطبيق جافا إف إكس&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;طبعا تلك النافذة يجب أن يتم ربطها مع controller لذا اضغط باليمين على المجلد controller ثم New ثم Java Class وسمه UserController والذي ستنسخ كود الخاص به من محرر الواجهة كما تعلمت سابقًا في صفحة &lt;a href=&quot;/javafx-interface-design/#إضافة-مايلزم-للبرمجة&quot;&gt;تصميم الواجهة&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;طبعا تلك النافذة يجب أن يتم ربطها مع controller لذا بعد نسخ المحتوى من محرر الواجهة (من خيار sample skeleton الموضح سابقا في صفحة &lt;a href=&quot;/javafx-interface-design/#إضافة-مايلزم-للبرمجة&quot;&gt;تصميم الواجهة&lt;/a&gt;) اضغط (في محرر الكود IntelliJ) باليمين على المجلد controller ثم New ثم Java Class وسمه UserController والذي ستلصق الكود الخاص به من محرر الواجهة كما ذكرنا.&lt;/p&gt;
+
+&lt;p&gt;ولكن هنا يجب تغيير محتوى UserController قليلا..فمثلا سيقوم محرر الواجهة بإعطائك حقل الجدول على الشكل التالي:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    @FXML
+    private TableView&amp;lt;?&amp;gt; table;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;إشارة الاستفهام هذه يجب تبديلها بنوع الكائن الذي سيحتويه الجدول، والذي سيكون في حالتنا User، كذلك بالنسبة للأعمدة، فمثلا أول عمود تجده في الصورة أعلاه هو الـ id الخاص بالمستخدم والذي سيعطيه محرر الواجهة بالشكل التالي:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     @FXML
+        private TableColumn&amp;lt;?, ?&amp;gt; tableId;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;قم باستبدال إشارة الاستفهام الأولى بنوع الكائن كما ذكرنا وهو User والثانية بنوع المتغير الذي سيحتويه العمود وهو في هذا العمود سيكون رقم صحيح أي Integer وبالتالي بعد التعديل سيصبح:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     @FXML
+        private TableColumn&amp;lt;User, Integer&amp;gt; tableId;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وهكذا.. علمًا أن حقل التاريخ سيكون نوعه Date.&lt;/p&gt;
 
 &lt;p&gt;والآن يجب علينا أن نتعلم شيئًا جديدًا، وهو ال model.. أو ببساطة العناصر. الآن من الواضح أنه سيكون لدينا مستخدمين في التطبيق، ولكل مستخدم معلومات عديدة (الاسم الكنية كلمة السر..الخ) ولهذا السبب يجب إنشاء صنف يُعرِّف المستخدم والمعلومات التي سيحتويها (القالب وليس بيانات فعلية يعني فقط متغير الاسم ومتغير الكنية وهكذا دون إعطائهم قيم - باختصار فهم أسماء الأعمدة في جدول المستخدمين في قاعدة البيانات)، وعندها يمكننا أن نأخذ عنصر من هذا الكائن ونتعامل معه بالشكل الذي نريد.&lt;/p&gt;
 
@@ -354,17 +824,28 @@
         void initialize() {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;سنضيف التالي:&lt;/p&gt;
+&lt;p&gt;سنضيف التالي (كالعادة لإنشاء عنصر من صنق قاعدة البيانات وعنصر من صنف تغيير النافذة):&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    DatabaseHandler databaseHandler;
     private SceneController sceneController;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;ولكننا سنضيف التالي أيضا لحفظ النتائج القادمة من قاعدة البيانات لها (ضمن قائمة) سميناها oblist اختصارا:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ObservableList&amp;lt;User&amp;gt; oblist = FXCollections.observableArrayList();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;وستحتاج لإضافة المكتبتين التالييتين في بداية ملف UserController للتعرف على السطر السابق:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    import javafx.collections.FXCollections;
+    import javafx.collections.ObservableList;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;h1 id=&quot;عرض-المستخدمين&quot;&gt;عرض المستخدمين&lt;/h1&gt;
 
-&lt;p&gt;لعرض لمستخدمين في الجدول لدينا يجب في البداية كتابة الدالة في صنف DatabaseHandler والتي تستخرج جميع المستخدمين وبياناتهم من جدول المستخدمين في قاعدة البيانات، لذا سنضيف الدالة التالية لصنف DatabaseHandler:&lt;/p&gt;
+&lt;p&gt;لعرض المستخدمين في الجدول لدينا يجب في البداية كتابة الدالة في صنف DatabaseHandler والتي تستخرج جميع المستخدمين وبياناتهم من جدول المستخدمين في قاعدة البيانات، لذا سنضيف الدالة التالية لصنف DatabaseHandler:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// لاحظ أن الدالة تأخذ بارامتر واحد وهو اسم الجدول وبالتالي يمكن استخدامها لإعطاء بيانات أي جدول نريده وذلك فقط بتغيير الاسم في البرامتر عند الاستدعاء&lt;/span&gt;
         &lt;span class=&quot;nc&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;SELECT * FROM mydb.&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
@@ -373,10 +854,10 @@
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SQLException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClassNotFoundException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;resultset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;resultset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// تقوم الدالة بالتالي بإرجاع معلومات الجدول كاملة أي كل الأسطر التي يحتويها أو ستكون خالية إذا كان الجدول فارغا&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;بعد ذلك في صنف UserController وخارج دالة initialize سنقوم بإضافة الدالة التي تعرض محتويات الجدول عند عرض النافذة:&lt;/p&gt;
+&lt;p&gt;بعد ذلك في صنف UserController وخارج دالة initialize سنقوم بإضافة الدالة التي تعرض محتويات الجدول عند عرض النافذة، ولاحظ إضافة جميع محتويات الجدول القادم من قاعدة البيانات للقائمة oblist وفي آخر سطر نقوم بضبط محتوى الجدول في النافذة هنا على محتويات القائمة oblist:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;databaseHandler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DatabaseHandler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
@@ -384,21 +865,22 @@
             &lt;span class=&quot;nc&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databaseHandler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Users&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 
 
-            &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
+            &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// أي بينما يوجد سطر آخر في النتائج القادمة من قاعدة البيانات&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// أسماء الحقول أدناه من Name و Nachname يجب أن تطابق أسماء المتغيرات في صنف User&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;oblist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;idUser&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Nachname&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-                        &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Level&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Zertifikat_datum&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toLocalDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+                        &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Level&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Zertifikat_datum&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toLocalDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// إنشاء عنصر من المستخدم وإضافة كافة معلومات السطر له ثم إضافتها للقائمة&lt;/span&gt;
             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SQLException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;throwables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;throwables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-        &lt;span class=&quot;n&quot;&gt;tableId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;idUser&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;tableId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;idUser&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;  
+        &lt;span class=&quot;c1&quot;&gt;//الحقل أعلاه idUser وما يوازيه أدناه يجب أن يطابق اسم العمود في قاعدة البيانات&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt; 
         &lt;span class=&quot;n&quot;&gt;table_surname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Nachname&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;table_level&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Level&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;table_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Zertifikat_datum&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;table_pass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setCellValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PropertyValueFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setItems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oblist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setItems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oblist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ضبط عناصر الجدول وفق عناصر القائمة&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;حيث يتم استدعاء هذه الدالة مباشرة عند الضغط على زر “المستخدمين” في النافذة الرئيسية، أي في صنف MainController (وضمن دالة initialize):&lt;/p&gt;
@@ -409,7 +891,7 @@
                 &lt;span class=&quot;nc&quot;&gt;FXMLLoader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FXMLLoader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getResource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/sample/view/users.fxml&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
                 &lt;span class=&quot;nc&quot;&gt;Parent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                 &lt;span class=&quot;nc&quot;&gt;UserController&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;userController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;userController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// استدعاء دالة عرض الجدول&lt;/span&gt;
                 &lt;span class=&quot;nc&quot;&gt;Stage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
@@ -444,21 +926,21 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;        &lt;span class=&quot;n&quot;&gt;sceneController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SceneController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 
-        &lt;span class=&quot;n&quot;&gt;mainLogout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mainLogout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;       &lt;span class=&quot;c1&quot;&gt;// زر تسجيل الخروج&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;sceneController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;changeScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainLogout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;login.fxml&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;table_back&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;table_back&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;       &lt;span class=&quot;c1&quot;&gt;// زر العودة للخلف&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;sceneController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;changeScene&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table_back&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;main.fxml&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
 
-         &lt;span class=&quot;n&quot;&gt;user_delete&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;{&lt;/span&gt;
-            &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectedItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()){&lt;/span&gt;
-                &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;check&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databaseHandler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;deleteUser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;check&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;user_delete&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;{&lt;/span&gt;      &lt;span class=&quot;n&quot;&gt;زر&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;حذف&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;مستخدم&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectedItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// إنشاء عنصر من المستخدم والذي سيكون العنصر الذي تم تحديده في الجدول&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()){&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// إذا قام المستخدم بتحديد عنصر من الجدول&lt;/span&gt;
+                &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;check&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databaseHandler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;deleteUser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// إرسال المستخدم لدالة الحذف في صنف قاعدة البيانات&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;check&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;// جيث ترجع تلك الدالة صح إذا تم الحذف بشكل صحيح&lt;/span&gt;
                     &lt;span class=&quot;n&quot;&gt;radiographer_label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User deleted Successfully!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;oblist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;oblist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// إفراغ القائمة ليتم بناؤها من جديد في السطر الذي يليه وبالتالي لا يتم عرض محتوى الجدول مرتين&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// استدعاء دالة عرض الجدول التي تقوم بدورها بملء القائمة وفقا للبيانات الحالية في قواعد البيانات&lt;/span&gt;
                     &lt;span class=&quot;nc&quot;&gt;FadeTransition&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fadeTransition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FadeTransition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Duration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;millis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radiographer_label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
                     &lt;span class=&quot;n&quot;&gt;fadeTransition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setFromValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
                     &lt;span class=&quot;n&quot;&gt;fadeTransition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setToValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
@@ -472,6 +954,11 @@
                 &lt;span class=&quot;n&quot;&gt;radiographer_label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;You should select an Item&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; في الشرط أعلاه (if (check تعني&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      if (check == true)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;إضافة-مستخدم&quot;&gt;إضافة مستخدم&lt;/h1&gt;
 
@@ -494,10 +981,10 @@
             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;والآن سنحتاج لإنشاء نافذة جديدة مع controller جديدة، حيث أن زر إضافة مستخدم سيقوم بالتحويل لنافذة إضافة مستخدم حيث يتم إدخال البيانات، وعند الضغط هناك على زر إضافة يتم استدعاء الدالة أعلاه لإضافة تلك البيانات لجدول المستخدمين في قاعدة البيانات، النافذة الخاصة بإضافة مستخدمين لدي ستكون على الشكل التالي (addUser.fxml):&lt;/p&gt;
+&lt;p&gt;والآن سنحتاج لإنشاء نافذة جديدة مع controller جديد، حيث أن زر إضافة مستخدم سيقوم بالتحويل لنافذة إضافة مستخدم حيث يتم إدخال البيانات، وعند الضغط هناك على زر إضافة يتم استدعاء الدالة أعلاه لإضافة تلك البيانات لجدول المستخدمين في قاعدة البيانات، النافذة الخاصة بإضافة مستخدمين لدي ستكون على الشكل التالي (addUser.fxml):&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-add-user-window.png&quot; alt=&quot;بناء تطبيق جافا FX من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-add-user-window.png&quot; alt=&quot;نافذة إضافة مستخدم في تطبيق جافا إف إكس&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -567,7 +1054,7 @@
 
 &lt;p&gt;قم بتشغيل البرنامج الآن وجرب إضافة مستخدم ثم حذفه للتأكد من أن كل شيئ تم بالشكل الصحيح.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: جميع حقول إضافة المستخدم إجباريةو لا يجب أن تكون فارغة وإلا سينتج خطأ في البرنامج بسبب تمرير عبارات فارغة في SQL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ملاحظة&lt;/strong&gt;: جميع حقول إضافة المستخدم إجبارية ويجب ألا تكون فارغة وإلا سينتج خطأ في البرنامج بسبب تمرير عبارات فارغة في SQL.&lt;/p&gt;
 
 &lt;p&gt;يمكنك معاينة الكود في الوضع الحالي من &lt;a href=&quot;https://github.com/Mulham/Java-Project/tree/addUser&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
 
@@ -602,7 +1089,7 @@
 &lt;p&gt;في القائمة Hierarchy أسفل يسار البرنامج ستجد عنصر GridPane اضغط عليه باليمين واختر Delete، ثم في القائمة Container أعلاه اسحب العنصر AnchorPane وافلته في القائمة Hierarchy كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon1.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon1.png&quot; alt=&quot;شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 1&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -615,7 +1102,7 @@
 &lt;p&gt;الآن قم بالبحث مجددا عن حقل PasswordField، عند سحبه للنافذة، وبعد تغيير عرض الحقل الأول ستلاحظ أن هناك خطان جدد سيظهرون عند تحريك الحقل الأخير هذا، خط لمحاذاة هذا الحقل مع الحقل السابق يمينا وخط لمحاذاته يسارا كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon2.gif&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon2.gif&quot; alt=&quot; شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 2 &quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -624,7 +1111,7 @@
 &lt;p&gt;هل لاحظت وجود قسم أحمر أعلى النافذة في الصورة السابقة؟ لقد وضعت هذا القسم لعرض عنوان النافذة الموجودين فيها أو اسم التطبيق في نافذة البداية. يمكنك عمل نفس الشي بالبحث عن AnchorPane واضافته لأعلى النافذة بالحجم المناسب، ثم تغيير اللون للأحمر مثلا من القائمة Properties على اليمين ستجد حقل Style اختر fx-background-color- ثم حدد اللون في الحقل بجانبه، كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/fx-background-color-gluon.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/fx-background-color-gluon.png&quot; alt=&quot; شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 3&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -637,7 +1124,7 @@
 &lt;p&gt;لاحظ أن الـ label الأخير المضاف سيكون عنصرا من المنطقة الحمراء “AnchorPane” كما هو مبين في قسم Hierarchy أسفل يسار البرنامج لديك وكما في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-hierarchy.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-hierarchy.png&quot; alt=&quot;شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 4&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -646,7 +1133,7 @@
 &lt;p&gt;يمكنك دائما تجربة الواجهة من خلال النقر على خيار Preview في الأعلى ثم Show Preview in Window كما هو موضح في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;200&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-preview.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;200&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-preview.png&quot; alt=&quot;شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 5&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -689,7 +1176,7 @@
 &lt;p&gt;لاحظ أنه يمكن تغيير جهة الحقل (النص) لليمين بدل اليسار من خيار Alignment كما في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;500&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-text-alignment.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;500&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-text-alignment.png&quot; alt=&quot;شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 6&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -712,21 +1199,21 @@
 &lt;p&gt;الخطوة الأولى تتم ببساطة بالضغط على الحقل ثم ستجد على اليمين قسم Code به حقل fx:id قم بإعطاء اسم id فريد له ويعبر عنه، مثلا حقل اسم المستخدم سيكون username_field (لاحظ أنه لايمكن استخدام الفراغات، هذه الـ ids سيتم استخدامها في البرمجة لاحقا) كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-ids.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-ids.png&quot; alt=&quot;شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 7&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;والخطوة الثانية تتم بالذهاب يسارا لقسم Controller (سيكون أسفل يسار الشاشة) وفي حقل Controller class سنقوم بإدخال ملف الجافا المراد ربط هذه النافذة به مع مساره، والذي هو في حالتنا “LoginController” والمسار يبدأ من مجلد sample لذا سأكتب في هذا الحقل “sample.controller.LoginController” كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-controller.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-controller.png&quot; alt=&quot;شرح برنامج تصميم الواجهة لتطبيق جافا - محرر جلون Gluon 8&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;أخيرا &lt;strong&gt;وبعد حفظ تعديلاتنا&lt;/strong&gt; إلى الآن، نذهب في الأعلى يسارا للقائمة view (بجانب زر File) ثم آخر خيار “Show sample controller skeleton” ستظهر لك نافذة، اضغط أسفلها يمينا على الخيار Full ثم انسخ الكود بأكمله بالضغط على زر copy&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-sample-skeleton.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-sample-skeleton.png&quot; alt=&quot;نسخ كود جافا من محرر جلون Gluon 9&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -812,10 +1299,19 @@
                 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SQLException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClassNotFoundException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
                     &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;resultset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;ولنذهب لملف LoginController، في البداية لنقم باستدعاء الصنف DatabaseHandler، لذا وقبل السطر:&lt;/p&gt;
+&lt;p&gt;لاحظ أننا استخدمنا المعطيات في ملف Const كما ذكرنا سابقا، وللعلم فإننا نضع إشارة استفهام في عبارة SQL كما ترى في متغير query أعلاه، ثم لاحظ السطر:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    preparedStatement.setString(1, username);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أي قم باستبدال إشارة الاستفهام الأولى بالمتغير username، وهكذا.&lt;/p&gt;
+
+&lt;p&gt;الدالة تُرجع Resultset وهي تعني مجموعة من النتائج، أي إذا أردنا إرجاع عدة مستخدمين يشتركون في نفس المعلومات المعطاة، قد لا يتطلب هنا فعليا إرجاع resultset وإنما يمكن جعلها فقط ترجع صح true أو خطأ false أي تُرجع فقط المعلومة فيما إذا كان المستخدم موجود في قاعدة البيانات أم لا، يمكنك تغيير الدالة لتعمل بهذا الشكل أو بالشكل الذي تريد، سأترك ذلك كتمرينا لك.&lt;/p&gt;
+
+&lt;p&gt;ولنذهب الآن لملف LoginController، في البداية لنقم باستدعاء الصنف DatabaseHandler، لذا وقبل السطر:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    public class LoginController {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -832,7 +1328,7 @@
      void initialize() {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;لنقم بإضافة السطر التالي:&lt;/p&gt;
+&lt;p&gt;لنقم بإضافة السطر التالي (حيث سنقوم بإنشاء عنصر من صنف DatabaseHandler):&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      private DatabaseHandler databaseHandler;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -840,25 +1336,27 @@
 &lt;p&gt;ولنقم الآن بإضافة التالي للصنف (بين القوسين):&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;databaseHandler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DatabaseHandler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;loginButton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;databaseHandler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DatabaseHandler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// إنشاء عنصر من صنف قواعد البيانات&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;loginButton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnAction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// هذه الدالة تعني أنه عند الضغط على زر تسجيل الدخول افعل ما بداخلها&lt;/span&gt;
 
-            &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginpwd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginPassword&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//خذ محتوى حقل اسم المستخدم واحفظه في المتغير هذا&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginpwd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginPassword&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ﻷخذ محتوى حقل كلمة السر&lt;/span&gt;
 
    
-         &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginpwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginpwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;       
+         &lt;span class=&quot;c1&quot;&gt;// لاحظ إشارة التعجب للنفي، أي إذا كان الحقلين غير فارغين&lt;/span&gt;
                 &lt;span class=&quot;nc&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userRow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databaseHandler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getUser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loginpwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//كون الدالة getUser تُرجع مجموعة نتائج فيجب حفظها في مجموعة نتائج هنا&lt;/span&gt;
                 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;userRow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;userRow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;//بينما يوجد نتيجة تالية في مجموعة النتائج&lt;/span&gt;
                         &lt;span class=&quot;n&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
                     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// يجب أن يكون لدينا نتيجة واحدة أي مستخدم واحد&lt;/span&gt;
                         &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Login Successful!!!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// غير ذلك أي أننا لم نحصل على ناتج من قاعدة البيانات التي أعطت مجموعة النتائج فارغة&lt;/span&gt;
                         &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrong username or password!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                        &lt;span class=&quot;nc&quot;&gt;Shaker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shaker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shaker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                        &lt;span class=&quot;nc&quot;&gt;Shaker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shaker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shaker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//اهتزاز حقل اسم المستخدم &lt;/span&gt;
                         &lt;span class=&quot;n&quot;&gt;shaker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;shake&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
                         &lt;span class=&quot;nc&quot;&gt;Shaker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shaker1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shaker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginPassword&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
                         &lt;span class=&quot;n&quot;&gt;shaker1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;shake&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
@@ -899,7 +1397,7 @@
 &lt;p&gt;بعدها ستظهر لك نافذة كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/new-javafx-project.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/new-javafx-project.png&quot; alt=&quot;تهيئة محرر الكود IntelliJ للعمل على تطبيق جافا إف إكس&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -920,7 +1418,7 @@
 &lt;p&gt;الآن سيفتح البرنامج على مشروعك الجديد، على اليسار ستجد شجرة الملفات الخاصة بمشروعك، اضغط على السهم بجانب اسم المشروع لعرض الملفات التي بداخله ثم اضغط باليمين على مجلد src واختر New ثم module-Info.java كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/java-module-info.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/java-module-info.png&quot; alt=&quot;كتابة معلومات تطبيق جافا module info&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -937,7 +1435,7 @@
 &lt;p&gt;اضغط الآن من الأعلى على قائمة File ثم Project Structure. ستظهر لك نافذة كما في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-project-structure.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-project-structure.png&quot; alt=&quot;إعدادات المشروع في محرر الكود IntelliJ&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -957,16 +1455,18 @@
 &lt;/ol&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-project-libraries.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-project-libraries.png&quot; alt=&quot;طريقة إضافة مكتبات لبرنامج IntellıJ&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;بعدها في متصفح الملفات اختر المجلد Javafx-sdk الذي قمت بتحميله (كما وضحت في فقرة المتطلبات) ثم اختر مجلد lib الذي بداخله واضغط على ok. ثم قم بإغلاق النافذة الأصل بالضغط على ok مجددًا.&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; عند تشغيل الكود الخاص بي ستجد في قسم المكتبات الموضح أعلاه مكتبات مضافة مسبقا، قم بحذفها بالكامل حيث أن مساراتها لن تتوافق لديك، ثم أضف المكتبات الموجودة لديك كما هو مشروح.&lt;/p&gt;
+
 &lt;p&gt;الآن من اليمين في الأعلى سترى زر تشغيل أخضر قم بالضغط عليه لتشغيل المشروع، إن ظهرت لك نافذة فارغة باسم “Hello World” فهذا يعني أن كل شيئ على مايرام، أما إن ظهرت أخطاء فقم بالذهاب من الأعلى بجانب زر التشغيل لخيار Main أو أيا كان اسمه ثم Edit Configurations وتأكد من الـ SDK للمشروع أنه مضبوط بشكل صحيح وأن ملف  Main معرف كما في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-run-configurations.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-run-configurations.png&quot; alt=&quot;إعدادات تشغيل تطبيق جافا في برنامج إنتيلي جي&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -979,7 +1479,7 @@
 &lt;p&gt;بعد تنصيب البرنامج لديك، ضمن المشروع في برنامج IntelliJ اذهب إلى قائمة File ثم Settings، بعد ذلك وكما هو موضح في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-setting-SceneBuilder.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-setting-SceneBuilder.png&quot; alt=&quot;الإعدادات في برنامج إنتيلي جي&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1004,14 +1504,14 @@
 &lt;p&gt;ضمن برنامج Gluon ستجد في الأعلى على اليسار حقل للبحث وعلى يمينه أيقونة الإعدادات، اضغط عليها واختر JAR/FXML Manager كما في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;300&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon-add-library.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;300&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon-add-library.png&quot; alt=&quot;إضافة مكتبات لمحرر الواجهة جلون Gluon&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;ثم اختر “Add Library/FXML from file system” كما في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;300&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon-jfoenix.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;300&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/Gluon-jfoenix.png&quot; alt=&quot;طريقة إضافة مكتبة لباني المشاهد Gluon&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1105,7 +1605,7 @@
 &lt;p&gt;لإمكانية الاتصال بقاعدة البيانات (بشكل أدق بسيرفر MySQL) سيتطلب مننا إضافة حزمة MySQL Connector التي قمت بتنزيلها في &lt;a href=&quot;/java-project-from-scratch/#البرامج-والمكتبات-المستخدمة&quot;&gt;بداية هذه الشروحات&lt;/a&gt;. وللقيام بذلك قم بالذهاب ضمن برنامج IntelliJ للقائمة File ثم Project Structure ثم اتبع التالي:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/add-mysql-connector-intelliJ.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/add-mysql-connector-intelliJ.png&quot; alt=&quot;إضافة مكتبة MySQL Connector لبرنامج IntelliJ&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1196,7 +1696,7 @@
 
 &lt;p&gt;وسنكتب لاحقا جميع الدالات التي تتعامل مع قاعدة البيانات ضمن قوسي الصنف الموضحين أعلاه.&lt;/p&gt;
 
-&lt;p&gt;ولكن يتطلب في البداية كتابة الدالة التي تقوم بإنشاء الاتصال بقاعدة البيانات، لذا قم بكتابة التالي ضمن الصنف أعلاه أي بين القوسين:&lt;/p&gt;
+&lt;p&gt;ولكن يتطلب في البداية كتابة الدالة التي تقوم بإنشاء الاتصال بقاعدة البيانات، لذا قم بكتابة التالي ضمن الصنف أعلاه أي بين القوسين (لاحظ استخدام المعطيات dbHost و dbPort وغيرهم من ملف Configs):&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;    &lt;span class=&quot;nc&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dbConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 
@@ -1218,21 +1718,21 @@
 &lt;p&gt;قم بفتح برنامج MySQL Workbench، وقم بالاتصال بقاعدة البيانات عبر الضغط على الاتصال كما يظهر في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-connection.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-connection.png&quot; alt=&quot;شرح الاتصال بقاعدة البيانات من برنامج MySQL Workbench&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;سيطلب منك كلمة السر التي أدخلتها عند التنصيب، قم بإدخالها، ثم على القائمة اليسارية قم بتوسيع قاعدة البيانات الخاصة بتطبيقنا واضغط باليمين على الجدول Users ثم أول خيار Select Rows.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;600&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-tables.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;600&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-tables.png&quot; alt=&quot;شرح عرض جداول قاعدة البيانات في برنامج MySQL Workbench&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;قم بإدخال الاسم وكلمة السر على أنهم admin مثلا وباقي المعلومات غير مهمة حاليا (ولكن لاتتركها فارغة لكي لايحدث خطأ عند تشغيل البرنامج والتي تنتج عن تمرير قيم فارغة في عبارات sql)، ثم اضغط على Apply كما في الصورة:&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;200&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-insert.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;200&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-insert.png&quot; alt=&quot;إضافة بيانات لقواعد البيانات عبر برنامج MySQL Workbench&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1248,216 +1748,6 @@
         <pubDate>Sun, 28 Feb 2021 00:00:00 +0300</pubDate>
         <link>http://localhost:4000/java-database-handler/</link>
         <guid isPermaLink="true">http://localhost:4000/java-database-handler/</guid>
-        
-        
-        <category>tutorials</category>
-        
-      </item>
-    
-      <item>
-        <title>بناء تطبيق جافا إف إكس من الصفر</title>
-        <description>&lt;p&gt;مرحبًا.. سأشرح في هذا المقال كيفية عمل تطبيق جافا للحاسوب مع واجهة (JavaFX) وقاعدة بيانات (MySQL)، أي بناء تطبيق متكامل ومن الصفر. النتيجة النهائية لهذا التطبيق ستكون على الشكل التالي:&lt;/p&gt;
-
-&lt;p&gt;نافذة تسجيل الدخول&lt;/p&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;250&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI1.png&quot; alt=&quot;بناء تطبيق جافا FX من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;النافذة الرئيسية&lt;/p&gt;
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;250&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI2.png&quot; alt=&quot;بناء تطبيق جافا FX من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;نافذة تحرير المستخدمين حيث يمكن إضافة وحذف مستخدم أو تعديل بياناته&lt;/p&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;250&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI3.png&quot; alt=&quot;بناء تطبيق جافا FX من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;وما إلى ذلك..&lt;/p&gt;
-
-&lt;p&gt;سأضع لك عند بعض المراحل في الشرح رابطًا للكود البرمجي في حالته عند تلك المرحلة.
-والكود النهائي للتطبيق تجده &lt;a href=&quot;https://github.com/Mulham/Java-Project&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#ماهي-javafx&quot; id=&quot;markdown-toc-ماهي-javafx&quot;&gt;ماهي JavaFX&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#البرامج-والمكتبات-المستخدمة&quot; id=&quot;markdown-toc-البرامج-والمكتبات-المستخدمة&quot;&gt;البرامج والمكتبات المستخدمة&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#وصف-المشروع&quot; id=&quot;markdown-toc-وصف-المشروع&quot;&gt;وصف المشروع&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#تخطيط-قاعدة-البيانات&quot; id=&quot;markdown-toc-تخطيط-قاعدة-البيانات&quot;&gt;تخطيط قاعدة البيانات&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#تخطيط-البرنامج&quot; id=&quot;markdown-toc-تخطيط-البرنامج&quot;&gt;تخطيط البرنامج&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#تقرير-وصف-المشروع&quot; id=&quot;markdown-toc-تقرير-وصف-المشروع&quot;&gt;تقرير وصف المشروع&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#التنفيذ&quot; id=&quot;markdown-toc-التنفيذ&quot;&gt;التنفيذ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;ماهي-javafx&quot;&gt;ماهي JavaFX&lt;/h1&gt;
-
-&lt;p&gt;باختصار هي عبارة عن منصة &lt;strong&gt;لعمل واجهة&lt;/strong&gt; لتطبيقات الجافا، أي لا يمكن عمل تطبيق جافا &lt;strong&gt;مع واجهة&lt;/strong&gt; بدونها (أو بدون أحد بديلاتها)،  منصة Swing موجودة ومستخدمة لعمل الواجهات مع الجافا قبل وجود جافا إف إكس، وقد وُضِعت الأخيرة لاستبدال Swing، وتعتبر أفضل من swing في كثير من الأمور منها ماهو برمجي أيضًا حيث تفصل جافا إف إكس ملفات الواجهة عن ملفات الجافا وبالتالي يكون الكود أكثر تنسيقا مما هو عليه في swing.&lt;/p&gt;
-
-&lt;p&gt;يمكن مع جافا إف إكس عمل تطبيقات للحاسوب وللموبايل وكذلك للوب.&lt;/p&gt;
-
-&lt;h1 id=&quot;البرامج-والمكتبات-المستخدمة&quot;&gt;البرامج والمكتبات المستخدمة&lt;/h1&gt;
-
-&lt;p&gt;فيما يلي البرامج والأدوات اللازمة والتي يجب تنصيبها لتنفيذ التطبيق:&lt;/p&gt;
-
-&lt;p&gt;قم بتنصيب البرامج التالية:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;بالنسبة لمحرر الكود (IDE) فسيتم الشرح باستخدام &lt;a href=&quot;https://www.jetbrains.com/idea/download&quot;&gt;IntelliJ Edu&lt;/a&gt; وهو مجاني&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;محرر الواجهة &lt;a href=&quot;https://gluonhq.com/products/scene-builder/#download&quot;&gt;Gluon scene builder&lt;/a&gt; حيث أن مزايا محرر الواجهة الافتراضي والذي يأتي مع محرر الكود محدودة نوعا ما&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot;&gt;MySQL Server&lt;/a&gt; من أجل قواعد البيانات. ولشرح تنصيبه على اللينكس اضغط &lt;a href=&quot;https://mulham.github.io/mysql-ubuntu/&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;تطبيق &lt;a href=&quot;https://www.mysql.com/products/workbench/&quot;&gt;MySQL workbench&lt;/a&gt; لعمل مخطط لقاعدة البيانات وتحويله لقاعدة بيانات SQL&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ثم قم بتنزيل الملفات التالية وفك الضغط عنها لأشرح لك لاحقًا كيفية إضافتها لتطبيقك:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://gluonhq.com/products/javafx/&quot;&gt;JavaFX SDK&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;مكتبة &lt;a href=&quot;https://dev.mysql.com/downloads/connector/j/&quot;&gt;Mysql connector&lt;/a&gt; للربط بقاعدة البيانات. (اختر من القائمة Platform Independent وقم بتحميل الملف المضغوط ثم فك الضغط عنه).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; الكثير من الشروحات تتحدث عن إضافة مكتبة Jfoenix لتحسين جمالية التطبيق، إلا أن تلك المكتبة قد توقف دعمها ولم تعد تعمل مع الإصدارات الحديثة من بيئة عمل جافا FX (بعد الإصدار 11 من JavaFX SDK)&lt;/p&gt;
-
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;ملاحظة2:&lt;/strong&gt; وفقًا لما ذُكر فليس من المستحسن إطلاقًا الاعتماد دائمًا على مكتبات خارجية في تطبيقك، ﻷن تلك المكتبات قد يتوقف دعمها (لا يستمر تحديثها) وبالتالي يصبح تطبيقك بالكامل غير صالح عند نقظة زمنية محددة وسيحتاج للتعديل بالكامل ليعمل من جديد. وإن أردت استخدام مكتبة خارجية فتأكد من أنها شائعة وأن مستخدموها كثر وأنها تُحدَّث بشكل دوري.&lt;/p&gt;
-
-&lt;h1 id=&quot;وصف-المشروع&quot;&gt;وصف المشروع&lt;/h1&gt;
-
-&lt;p&gt;لدينا مؤسسة تقوم بفحص الأجهزة الطبية وإعطاء تقرير عنها، المطلوب في هذا المشروع هو أتمتة التقرير حول الأجهزة الطبية، حيث كانت تلك المؤسسة تعمل على برنامج الإكسل وفق الجداول لإنتاج وطباعة التقارير المتعلقة بالأجهزة الطبية وتريد تحويل هذه العملية لتطبيق بحيث يقوم هذا التطبيق بترشيح القيم المراد إدخالها تلقائيًا وبعدم قبول القيم غير الصحيحة (والمعرفة مسبقًا) وبالتالي تقليل الأخطاء أثناء ملء وإنتاج تلك التقارير وتسهيل العملية أيضًا.&lt;/p&gt;
-
-&lt;p&gt;لذا فإن هذا التطبيق الذي سنقوم ببناؤه سوية يحوي نافذة تسجيل دخول ثم النافذة الرئيسية التي تحوي عدة أقسام (أزرار تأخذ لنافذات مستقلة) بحيث يمكن للمستخدم إضافة مستخدمين وتعديل بياناتهم وحذفهم، وكذلك إضافة شركات بنفس الطريقة والخيارات، كما يمكن إضافة عناصر لقاعدة البيانات وهي الأجهزة الطبية المستخدمة وتاريخ صيانتها الدوري، بالإضافة للمعلومات الخاصة بالتقارير الطبية ذاتها.&lt;/p&gt;
-
-&lt;p&gt;التقرير الطبي المراد أتمتته يمكن الوصول له من &lt;a href=&quot;https://github.com/Mulham/Java-Project/blob/main/report.pdf&quot;&gt;هنا&lt;/a&gt; حيث ستلاحظ وجود عدة أقسام في التقرير، القسم الأول معلومات عامة عنه وعن الزبون (الشركة المتقدمة لفحص الجهاز الطبي) والقسم الثاني معلومات عن الجهاز ثم القسم الثالث نتائج التقرير والفحص وأخيرا معلومات الأشخاص الذين قاموا بإنتاج هذا التقرير.&lt;/p&gt;
-
-&lt;p&gt;والآن لنقم بالبدء بالمشروع..&lt;/p&gt;
-
-&lt;p&gt;لعمل تطبيق مثل هذا يجب أولًا اعتماد هيكلية التطبيق، وكأي عمارة نريد بناؤها لابد من موجود مخطط من قبل المهندس المعماري قبل البدء بالبناء، هنا أيضًا لابد لمهندس البرمجيات من أن يضع المخطط والهيكلية التفصيلية للتطبيق قبل الشروع بالتنفيذ والبرمجة.&lt;/p&gt;
-
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;ملاحظة:&lt;/strong&gt; من المهم جدا عند التعامل مع العميل معرفة كل مايدور برأسه قبل الشروع في العمل. مثلا من غير الكافي أن يتكلم العميل عن وصف المشروع أعلاه لكي تبدأ بالعمل! لا بد من أن تطرح عليه الكثير من الأسئلة عن وظائف التطبيق وآلية عمله ومظهره وعدد نوافذه وحجمها ولونها وكل شيئ قبل البدء.&lt;/p&gt;
-
-&lt;h1 id=&quot;تخطيط-قاعدة-البيانات&quot;&gt;تخطيط قاعدة البيانات&lt;/h1&gt;
-
-&lt;p&gt;سنقوم بهذا المشروع باستخدام قاعدة بيانات MySQL، إن لم يكن لديك معرفة بلغة قواعد البيانات SQL فيمكنك الاطلاع على &lt;a href=&quot;https://mulham.github.io/sql/intro&quot;&gt;سلسلة دروس SQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;وفق الأقسام التي رأيناها في التقرير أعلاه يمكن تقسيم قاعدة البيانات إلى الجداول التالية:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;جدول المستخدمين&lt;/li&gt;
-  &lt;li&gt;جدول الشركات (الزبائن)&lt;/li&gt;
-  &lt;li&gt;جدول الأجهزة&lt;/li&gt;
-  &lt;li&gt;جدول التقرير والذي يضم معلومات التقرير عموما&lt;/li&gt;
-  &lt;li&gt;جدول نتائج التقرير&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;بالإضافة لجداول أخرى مرتبطة بهذه الجداول وفقا لما هو مطلوب في التقرير، مخطط قاعدة البيانات لدينا هو على الشكل التالي:&lt;/p&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;500&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/databas_schema.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;يمكنك مشاهدة الملف الأصلي لمخطط قاعدة البيانات من &lt;a href=&quot;https://github.com/Mulham/Java-Project/blob/main/database_schema.mwb&quot;&gt;هنا&lt;/a&gt; وهو قابل للتشغيل والتنفيذ على برنامج MySQL Workbench، حيث تم رسم المخطط وعمله على ذلك البرنامج والذي يمكّن من تحويل هذا المخطط لاحقا إلى قاعدة بيانات SQL وفق الخطوات التالية:&lt;/p&gt;
-
-&lt;p&gt;قم بفتح ملف “database_schema.mwb” عبر برنامج MySQL Workbench ثم اضغط في الأعلى على الخيار “Database” ثم اختر “Forward Engineer” كما في الصورة:&lt;/p&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-forward-engineering.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;بعدها يمكنك قبول الإعدادات الافتراضية والضغط بشكل متتابع على زر Next إلى أن يتم إعطاء كود SQL الخاص بالمخطط ثم قم بإنهاء العملية ليتم تلقائيًا إنشاء قاعدة البيانات لديك وفق المخطط وكود SQL المُنشأ تلقائيًا. ستجد قاعدة البيانات “mydb” على القائمة اليسارية كما في الصورة:&lt;/p&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-databases.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h1 id=&quot;تخطيط-البرنامج&quot;&gt;تخطيط البرنامج&lt;/h1&gt;
-
-&lt;p&gt;المخطط العام للبرنامج سيكون على النحو التالي:&lt;/p&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/software_architecture.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;حيث سنستخدم للواجهة والتي يطلق عليها Frontend عادة: JavaFX وسيُقسم البرنامج إلى أربعة أقسام أو مجلدات: models وهي الكيانات المستخدمة في التطبيق مثل المستخدمين والشركات، و controllers أصناف الجافا التي تربط الواجهة بالدالات والوظائف المناسبة (أي تتحكم بالواجهة)، animations هذه للجماليات لإضافة حركة لبعض الحقول في الواجهة، وطبعا المكتبات المستخدمة في التطبيق libraries (تم إزالة هذا القسم للأسباب المذكورة أعلاه)&lt;/p&gt;
-
-&lt;p&gt;أيضًا لا بد من عمل مخطط لعرض أصناف الجافا التي سيتم كتابتها وبكل تفصيلها قبل البدء بالتنفيذ، وهذا يدعى مخطط الصنف في UML يمكنك الاطلاع على طريقة عمله من &lt;a href=&quot;https://mulham.github.io/uml-class-diagram/&quot;&gt;هنا&lt;/a&gt; ، ومخطط الصنف في حالتنا هذه سيكون على الشكل التالي&lt;/p&gt;
-
-&lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;400&quot; height=&quot;500&quot; src=&quot;https://raw.githubusercontent.com/Mulham/Java-Project/images/images/uml-class-diagram.png&quot; alt=&quot;بناء تطبيق جافا FX مع قاعدة بيانات من الصفر&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h1 id=&quot;تقرير-وصف-المشروع&quot;&gt;تقرير وصف المشروع&lt;/h1&gt;
-
-&lt;p&gt;كما ذكرت فيجب قبل البدء بالمشروع وضع مخططات للمشروع ووصفها بكامل تفاصيلها لتصف المشروع بدقة ليكون قابل للتنفيذ وفق التقرير المُعطى من قبل مهندس البرمجيات، هذا التقرير يحوي عادة شرح عام للمشروع وللمشكلة التي يعالجها وكيف سيقوم بحل تلك المشكلة وآلية عمل المشروع والوظائف التي سيحتويها ويقدمها وحالات استخدامه بالإضافة لمخطط قاعدة البيانات ومخطط الصنف المذكورين أعلاه وغيرها من المخططات اللازمة، يكون هذا التقرير عادة عبارة عن 30 صفحة فأكثر بحسب حجم البرنامج.&lt;/p&gt;
-
-&lt;h1 id=&quot;التنفيذ&quot;&gt;التنفيذ&lt;/h1&gt;
-
-&lt;p&gt;نأتي الآن بعد وضع المخططات وكتابة التقرير وتهيئة قاعدة البيانات إلى الجزء التنفيذي وهو البرمجة بلغة جافا وعمل الواجهة باستخدام JavaFX. وقد قسمت هذا القسم إلى عدة دروس وفقًا للمهام المنجزة فيها:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/javafx-initialization&quot;&gt;تهيئة بيئة العمل&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/java-project-structure&quot;&gt;هيكلة المشروع&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/javafx-interface-design&quot;&gt;تصميم الواجهة&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/java-database-handler&quot;&gt;الربط مع قاعدة البيانات&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/java-sign-in&quot;&gt;تسجيل الدخول&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/javafx-scene-changer&quot;&gt;الانتقال بين النوافذ&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/javafx-manage-users&quot;&gt;إدارة المستخدمين&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/javafx-transfer-data-between-scenes&quot;&gt;إرسال بيانات من نافذة ﻷخرى&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/javafx-working-process&quot;&gt;النهاية&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;المراجع&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLHdQfj3Nty4VulBDyryc5M9zfXwWo49Mc&quot;&gt;https://www.youtube.com/playlist?list=PLHdQfj3Nty4VulBDyryc5M9zfXwWo49Mc&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 28 Feb 2021 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/java-project-from-scratch/</link>
-        <guid isPermaLink="true">http://localhost:4000/java-project-from-scratch/</guid>
-        
-        <category>برمجة</category>
-        
-        <category>تعليم</category>
-        
-        <category>Java</category>
         
         
         <category>tutorials</category>
