@@ -10,6 +10,8 @@ feature: /assets/posts/java.jpg
 caption: "Java is annoying by Azhaaarry is licensed under CC BY-NC-ND 2.0" 
 ---
 
+الملاحظات في الأسفل هي في الحقيقة ملاحظات عن مبادئ البرمجة كائنية التوجه (object oriented programming) ولكن في لغة جافا تحديدا (حيث أن البرمجة كائنية التوجه هي مبادئ موجودة في العديد من لغات البرمجة)
+
 * Toc
 {:toc}
 
@@ -19,15 +21,15 @@ caption: "Java is annoying by Azhaaarry is licensed under CC BY-NC-ND 2.0"
 
 		public interface Name
 
-تحتوي على دالّات Methods بدون متن body أي فقط تعريف للدالات، مثلًا على الشكل:
+تحتوي هذه الأصناف على دالّات Methods بدون متن body أي فقط تعريف للدالات، مثلًا على الشكل:
 
 		public boolean add(String s);
 
 وهذا النوع من الدالات methods الذي لا يحوي متن body يدعى abstract methods
 
-وبالتالي تكون الدالات من نوع interface عبارة عن مجموعة من التوابع ذات النوع abstract أي collection of abtract methods
+وبالتالي تكون الأصناف من نوع interface عبارة عن مجموعة من الدالات ذات النوع abstract أي collection of abtract methods
 
-يمكن أن تحتوي دالات الـ interface على ثوابت أيضا، أي تعريف متغيرات مع إعطاء قيمهم، وأيضًا توابع رئيسية default methods وتوابع ثابتة static methods 
+يمكن أن تحتوي أصناف الـ interface على ثوابت أيضا، أي تعريف متغيرات مع إعطاء قيمهم، وأيضًا دالات رئيسية default methods ودالات ثابتة static methods 
 
 الـ interface class تحل مشكلة التوريث في لغة جافا، حيث أنه غير ممكن لصنف أن يرث من أكثر من صنف آخر، هذا يعني أنه **لا** يمكن كتابة:
 
@@ -37,9 +39,9 @@ caption: "Java is annoying by Azhaaarry is licensed under CC BY-NC-ND 2.0"
 
 		public class Name implements name1, name2{
 
-لماذا التوريث غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا صنف class يرث صنفين في نفس الوقت ويكون بين تلك الأصناف تعارض فلا يمكن تحديد أي دالة أو أمر يجب أن ينفذ الصنف الوارث! وبالتالي  لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن التوابع methods.
+لماذا التوريث ﻷكثر من صنف غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا صنف class يرث صنفين في نفس الوقت ويكون بين تلك الأصناف تعارض (دالتين لها نفس الاسم مثلا) فلا يمكن تحديد أي دالة أو أمر يجب أن ينفذ الصنف الوارث! ولكن عند الوراثة من صنفي interface لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن التوابع methods.
 
-ولكن! الـ interface يمكن أن تحوي constants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر  compiling error
+ولكن! الـ interface يمكن أن يحوي constants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر  compiling error
 ولن يتم بناء البرنامج
 
 وظيفة أصناف ال interface:  تعمل بشكل قالب يحدد الوظائف التي يجب أن تكون بالأصناف التابعة.
@@ -67,7 +69,7 @@ caption: "Java is annoying by Azhaaarry is licensed under CC BY-NC-ND 2.0"
 
 # Abstract class
 
-نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر object منها، يعني لدينا مثلا صنف student من نوع abtract فـ **لايمكن** كتابة:
+نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر (object) منها، يعني لدينا مثلا صنف student من نوع abtract فـ **لايمكن** كتابة:
 
 		Student s = new Student();
 
