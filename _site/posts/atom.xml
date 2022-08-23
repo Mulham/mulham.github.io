@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2022-08-23T17:45:09+03:00</updated>
+	<updated>2022-08-23T17:52:45+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -50,7 +50,7 @@
 &lt;p&gt;بعد ذلك لربط صفحات جتهب بنطاق (اسم) موقعك المدفوع ستذهب إلى الحزمة على جتهب ومن القائمة الأفقية أعلى الحزمة ستذهب لزر الإعدادات Settings ثم انزل للأسفل إلى قسم Gihub Pages وأضف اسم موقعك كما في الصورة&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;475&quot; height=&quot;307&quot; src=&quot;/assets/articles/add-custom-domain-to-github-pages.png&quot; alt=&quot;إضافة اسم موقعك المخصص لصفحات جتهب&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;475&quot; height=&quot;307&quot; src=&quot;/assets/add-custom-domain-to-github-pages.png&quot; alt=&quot;إضافة اسم موقعك المخصص لصفحات جتهب&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -76,21 +76,21 @@
 &lt;/ul&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;652&quot; height=&quot;389&quot; src=&quot;/assets/articles/cloudflare-add-site.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;652&quot; height=&quot;389&quot; src=&quot;/assets/cloudflare-add-site.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;بعد ذلك ستختار الخطة المناسبة لحسابك، يمكنك اختيار الخطة المجانية Free ثم Continue&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;265&quot; src=&quot;/assets/articles/cloudflare-add-site1.png&quot; alt=&quot;1كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;265&quot; src=&quot;/assets/cloudflare-add-site1.png&quot; alt=&quot;1كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;بعدها ستظهر قائمة طويلة تُظهر تسجيلات DNS. قم بإضافة عناوين جتهب لها وفق البيانات الموضحة في الصورة التالية (مع استبدال rawajitqan بنطاق موقعك):&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;130&quot; src=&quot;/assets/articles/Cloudflare-github-nameservers.png&quot; alt=&quot;كيفية ربط جتهب مع موقع كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;130&quot; src=&quot;/assets/Cloudflare-github-nameservers.png&quot; alt=&quot;كيفية ربط جتهب مع موقع كلاودفلير&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -103,7 +103,7 @@
 &lt;p&gt;ثم سيعطيك العناوين المطلوب إدخالها في إعدادات نطاق الموقع لربطها مع Cloudflare.&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;620&quot; height=&quot;499&quot; src=&quot;/assets/articles/cloudflare-add-site2.png&quot; alt=&quot;2كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;620&quot; height=&quot;499&quot; src=&quot;/assets/cloudflare-add-site2.png&quot; alt=&quot;2كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -112,7 +112,7 @@
 &lt;/ul&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;438&quot; height=&quot;211&quot; src=&quot;/assets/articles/Namecheap-set-nameservers.png&quot; alt=&quot;ضبط عنوان السيرفر لنطاق الموقع في Namecheap&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;438&quot; height=&quot;211&quot; src=&quot;/assets/Namecheap-set-nameservers.png&quot; alt=&quot;ضبط عنوان السيرفر لنطاق الموقع في Namecheap&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -121,14 +121,14 @@
 &lt;p&gt;يمكنك أخيرا من إعدادات cloudflare جعل موقع يستخدم الاتصال الآمن HTTPS بشكل دائم من خلال الضغط على اسم الموقع في الصفحة الرئيسية ثم الذهاب في القائمة الأفقية أعلاه لخيار SSL/TLS ثم في القائمة الأفقية أسفلها إلى الخيار Edge Certificates&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;562&quot; height=&quot;106&quot; src=&quot;/assets/articles/cloudflare-add-site4.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير4&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;562&quot; height=&quot;106&quot; src=&quot;/assets/cloudflare-add-site4.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير4&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;ثم انزل قليلًا للأسفل وفعل خيار Always Use HTTPS&lt;/p&gt;
 
 &lt;figure class=&quot;image&quot;&gt;
-  &lt;amp-img layout=&quot;responsive&quot; width=&quot;521&quot; height=&quot;215&quot; src=&quot;/assets/articles/cloudflare-add-site3.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير3&quot;&gt;&lt;/amp-img&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;521&quot; height=&quot;215&quot; src=&quot;/assets/cloudflare-add-site3.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير3&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 

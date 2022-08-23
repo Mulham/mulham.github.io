@@ -7,7 +7,7 @@ description: كل ما تحتاجه لاستضافة موقعك أو مدونت�
 type: tutorial
 comments: true
 tags: [Github, إنترنت]
-feature: /assets/posts/github-pages.jpg
+feature: /assets/github-pages.jpg
 captipn: "Octocat by Philippe Lin is licensed under CC BY-NC-SA 2.0"
 ---
 
