@@ -109,7 +109,21 @@ layout: compress
   	<li style="font-size:18px"><a href="{{ site.baseurl }}/tags/#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul><br>
-  {% include social-links.html %}
+<ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+   
+    <li>
+        <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="24" height="28.5" /></a>
+    </li>
+    <li>
+         <a href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML linedin"><amp-img src="/assets/img/linkedin.svg" width="24" height="28.5" /></a>
+    </li>
+                <li>
+                    <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="24" height="28.5" /></a>
+                </li>
+                <li>
+                    <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="24" height="28.5" /></a>
+                </li>
+</ul>    
 
       </article>
     </main>
