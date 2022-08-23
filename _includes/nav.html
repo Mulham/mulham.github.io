@@ -1,0 +1,47 @@
+ <!-- Start Navbar -->
+ <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
+    <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
+    </div>
+        <a class ="my0 mx-auto" href="{{ site.url }}"><amp-img src="/assets/img/logo1.svg" width="90" height="45" layout="fixed" class="my0 mx-auto " alt="موقع ملهم"></amp-img></a>
+       
+        </header>
+
+<!-- Start Sidebar -->
+<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3  " layout="nodisplay">
+  <div class="flex justify-start items-center ampstart-sidebar-header">
+    <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+  </div>
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 ampstart-label">
+          
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/">الرئيسيّة</a></li>
+         
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/about/">عن الموقع</a></li>
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/urls/">روابط مفيدة</a></li>
+    <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/support/">طلب دعم</a></li>
+<li class="ampstart-nav-item "><a class="ampstart-nav-link" href="{{ site.url }}/ask/">اسألني</a></li>
+    </ul>
+  </nav>
+
+
+
+  <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+   
+        <li>
+            <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="24" height="28.5" /></a>
+        </li>
+        <li>
+            <a href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML linedin"><amp-img src="/assets/img/linkedin.svg" width="24" height="28.5" /></a>
+        </li>
+                    <li>
+                        <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="24" height="28.5" /></a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="24" height="28.5" /></a>
+                    </li>
+    </ul> 
+
+  
+</amp-sidebar>
+<!-- End Sidebar -->
+  <!-- End Navbar -->

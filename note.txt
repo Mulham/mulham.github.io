@@ -1,0 +1,26 @@
+---
+layout: post
+title: Testing Readability with a Bunch of Text
+description:
+date: 2012-05-22
+modified: 2012-05-25
+excerpt: A ton of text to test readability.
+feature: /assets/Kensington-Security-Slot.jpg
+caption:
+tags: [sample post, readability, test]
+comments: true
+type: blog/tutorial
+hidden: false
+permalink:
+published: true
+---
+
+* Toc
+{:toc}
+
+{: .notice}
+
+
+<amp-img  width="" height="" src="" alt=""></amp-img>
+
+{% include image.html layout="responsive" width="744" height="655" src="/assets/articles/6.png" alt="مخطط الصنف للصراف الالي" %}

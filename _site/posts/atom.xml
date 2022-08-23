@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Mulham Blog</title>
+	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://mulham.github.io/blog"/>
+	<updated>2022-08-23T17:45:09+03:00</updated>
+	<id>http://mulham.github.io/tutorials</id>
+	<author>
+		<name>Mulham</name>
+		<email>mulham94@gmail.com</email>
+	</author>
+
+	
+		<entry>
+			<title>إنشاء موقع وب بأقصر وقت وأفضل التقنيات المجانية</title>
+			<link href="http://mulham.github.io/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D8%A8%D8%A3%D9%82%D9%88%D9%89-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%88%D8%A8%D8%AE%D9%85%D8%B3-%D8%AF%D9%82%D8%A7%D8%A6%D9%82/"/>
+			<updated>2020-06-23T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//إنشاء-موقعك-بأقوى-الخدمات-وبخمس-دقائق</id>
+			<content type="html">&lt;p&gt;مرحبًا، أنا ملهم مهندس حاسوب وأود هنا مشاركتكم لكيفية عمل موقع ثابت في مدة قصيرة وباستخدام خدمات قوية ومستقرة. لاستعراض النتيحة النهائية يمكن مشاهدة الموقع الذي قمت بإنشائه لإحدى الشركات المعمارية من &lt;a href=&quot;https://rawajitqan.com&quot;&gt;هنا&lt;/a&gt; وهو مجرد مثال لما يمكن عمله من هذا الشرح.&lt;/p&gt;
+
+&lt;p&gt;المتطلبات والتقنيات المستخدمة لهذا الشرح هي:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;نطاق (اسم) الموقع دوت كوم أو ماشابه (اختياري)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;صفحات Github&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cloudflare&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;فلنبدأ على بركة الله..&lt;/p&gt;
+
+&lt;h1 id=&quot;نطاق-الموقع&quot;&gt;نطاق الموقع&lt;/h1&gt;
+
+&lt;p&gt;يمكن شراء اسم الموقع (Domain Name) والذي ينتهي ب com. أو net. أو غير ذلك من الكثير من المواقع التي تتيح خدمة شراء النطاقات. ويمكن أن أقترح عليكم هنا موقع namecheap.com حيث أرى أن الأسعار فيه قد تكون أرخص ما يمكن بالإضافة للمزايا التي يقدمها مثل إخفاء معلومات المالك مجانًا. وكما يحوي خدمات أخرى كثيرة مدفوعة.&lt;/p&gt;
+
+&lt;p&gt;بالنسبة لاختيار اسم الموقع فلست متخصصًا في ذلك ولكن لا بأس بذكر ما أعرفه سريعًا. أولًا أشهر النطاقات هي com. فإذا وجدت اسم مناسب متاح لهذا النطاق فالأفضل حجزه بدلًا من غيره. ثانيا يجب أن يكون الاسم قصير قدر المستطاع ولكن بنفس الوقت يحوي كلمة مفهومة قابلة للتذكر ومعبرة عن محتوى الموقع ولكن الأخير ليس شرطًا ضروريًا. ولكن الأهم أن لا يكون مجرد أحرف متداخلة مع بعضها غير قابلة للفظ والنطق! وأيضًا أن يكون الاسم لايحوي شخطة &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; أو رقم فذلك أفضل.. 
+على سبيل المثال فلقد أحببت أنا أن أقتني موقعًا يهتم بقواعد اللغة العربية والأدب العربي..ففكرت في اسم شخصية معروفة وكان لها اهتمام في هذا المجال فوجدت شخصية العالم “الفراهيدي” والذي هو مؤسس علم العَروض كما أنه معروفا في مجال اللغة العربية عموما. ولكن الموقع الذي أردته أردت أن يكون غير تجاري لذلك قمت بشراء الاسم farahidy.org وكالعادة عن اقتناء موقع ينتهي بـ org. فمن الجيد وربما الضروري اقتناء نفس الاسم بلاحقة com. والذي بدوره يقوم بالتحويل تلقائيًا للنطاق الصحيح وهو في حالتنا org. والسبب هو أن المستخدمين عموما يفترضوا أن الموقع ينتهي بـ com. ويقوموا بالذهاب تلقائيا لذلك النطاق. جرب مثلًا اكتب wikipedia.com وستجد كيف يقوم بتحويلك لـ wikipedia.org&lt;/p&gt;
+
+&lt;h1 id=&quot;صفحات-github&quot;&gt;صفحات Github&lt;/h1&gt;
+
+&lt;p&gt;الآن وبعد حصولنا على اسم وعنوان الموقع يجب ربطه بالمحتوى المطلوب. وهنا إن لم يكن لديك موقع جاهز فيمكن إنشاء موقع بسهولة عبر قوالب جاهزة وتقوم فقط بملئها بمحتواك الخاص. 
+يجب أن أنوه هنا أنه يوجد لدي مقال منفصل عن صفحات Github فيرجي مراجعته قبل الإكمال من &lt;a href=&quot;/github-pages&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;بعد ذلك لربط صفحات جتهب بنطاق (اسم) موقعك المدفوع ستذهب إلى الحزمة على جتهب ومن القائمة الأفقية أعلى الحزمة ستذهب لزر الإعدادات Settings ثم انزل للأسفل إلى قسم Gihub Pages وأضف اسم موقعك كما في الصورة&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;475&quot; height=&quot;307&quot; src=&quot;/assets/articles/add-custom-domain-to-github-pages.png&quot; alt=&quot;إضافة اسم موقعك المخصص لصفحات جتهب&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;cloudflare&quot;&gt;Cloudflare&lt;/h1&gt;
+
+&lt;p&gt;في البداية هذه الفقرة مهمة فقط في حالة وجود اسم موقع مدفوع مثل com. وغيره.&lt;/p&gt;
+
+&lt;p&gt;ما يجب عليك معرفته سريعًا هنا هو أن موقع cloudflare يتيح لك ربط اسم موقعك المدفوع بصفحات جتهب كما أنه يوفر طبقة من الحماية لموقعك ويتيح تصفحه باستخدام اتصال آمن SSL وكل هذه الخدمات الأساسية يتيحها الموقع لك بشكل مجاني.&lt;/p&gt;
+
+&lt;p&gt;لربط اسم موقعك بصفحات Github اتبع التالي (الخطوات الروتينية لن أضيف صورا لها):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;قم بإنشاء حساب في الموقع&lt;/p&gt;
+
+    &lt;p&gt;بعد إنشاء الحساب ستذهب لصفحتك الرئيسية حيث ستقوم من هناك بـ:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;أضف موقعك&lt;/p&gt;
+
+    &lt;p&gt;في صفحتك الرئيسية بعد تسجيل الدخول ستجد زر “Add Site” يتيح لك إضافة موقعك، ستكتب من هناك اسم الموقع كاملًا مثل example.com ثم اضغط على Add Site&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;652&quot; height=&quot;389&quot; src=&quot;/assets/articles/cloudflare-add-site.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;بعد ذلك ستختار الخطة المناسبة لحسابك، يمكنك اختيار الخطة المجانية Free ثم Continue&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;265&quot; src=&quot;/assets/articles/cloudflare-add-site1.png&quot; alt=&quot;1كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;بعدها ستظهر قائمة طويلة تُظهر تسجيلات DNS. قم بإضافة عناوين جتهب لها وفق البيانات الموضحة في الصورة التالية (مع استبدال rawajitqan بنطاق موقعك):&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;509&quot; height=&quot;130&quot; src=&quot;/assets/articles/Cloudflare-github-nameservers.png&quot; alt=&quot;كيفية ربط جتهب مع موقع كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ثم اضغط في الأسفل على Continue&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;معلومة&lt;/strong&gt;: يمكنك أيضًا الحصول على بريد إلكتروني مجاني لاسم موقعك المدفوع من خلال خدمة zoho.com حيث يوفر لك خدمة البريد الإلكتروني و 5 عناوين للبريد الكتروني بشكل مجاني، ولربطها ستحتاج لإضافة بيانات موقع zoho أيضًا من نفس القائمة أعلاه.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ثم سيعطيك العناوين المطلوب إدخالها في إعدادات نطاق الموقع لربطها مع Cloudflare.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;620&quot; height=&quot;499&quot; src=&quot;/assets/articles/cloudflare-add-site2.png&quot; alt=&quot;2كيفية إضافة موقع في كلاودفلير&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;قم بإدخال عناوين Nameservers في إعدادات موقعك (من الموقع الذي اشتريت منه النطاق) وفق الصورة (أنا استخدم موقع Namecheap)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;438&quot; height=&quot;211&quot; src=&quot;/assets/articles/Namecheap-set-nameservers.png&quot; alt=&quot;ضبط عنوان السيرفر لنطاق الموقع في Namecheap&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;سيتوجب عليك الانتظار ربما ساعة أو أكثر لتصبح الإعدادات نافذة المفعول،&lt;/p&gt;
+
+&lt;p&gt;يمكنك أخيرا من إعدادات cloudflare جعل موقع يستخدم الاتصال الآمن HTTPS بشكل دائم من خلال الضغط على اسم الموقع في الصفحة الرئيسية ثم الذهاب في القائمة الأفقية أعلاه لخيار SSL/TLS ثم في القائمة الأفقية أسفلها إلى الخيار Edge Certificates&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;562&quot; height=&quot;106&quot; src=&quot;/assets/articles/cloudflare-add-site4.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير4&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ثم انزل قليلًا للأسفل وفعل خيار Always Use HTTPS&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+  &lt;amp-img layout=&quot;responsive&quot; width=&quot;521&quot; height=&quot;215&quot; src=&quot;/assets/articles/cloudflare-add-site3.png&quot; alt=&quot;كيفية إضافة موقع في كلاودفلير3&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ﻷي استفسار يمكنك التواصل معي مباشرة.&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>استضافة موقعك على صفحات جِتهَب</title>
+			<link href="http://mulham.github.io/github-pages/"/>
+			<updated>2019-10-29T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//github-pages</id>
+			<content type="html">&lt;p&gt;أحد خدمات موقع Github هي صفحات جتهب (Github pages) والتي تسمح لك باستضافة موقعك على جِتهَب.&lt;/p&gt;
+
+&lt;p&gt;قم بتوفير 50 ساعة تعلم بقراءتك لهذا الشرح وتطبيقك المباشر له.&lt;/p&gt;
+
+&lt;p&gt;أضع هذا الشرح لكي تتمكن من إنشاء موقعك وجعله جاهزاً للعمل في غضون خمس دقائق في حال تطبيقك المباشر له.
+بالنسبة للانتقال لـ Github، أي أنه لديك موقع بالفعل وتريد نقله، فيجب أن تسلك نفس المسار، إنشاء موقع أولاً ثم تصدير محتوى موقعك له. ولكن؟ هل أنت حقاً تريد استضافة موقعك على Github؟&lt;/p&gt;
+
+&lt;h1 id=&quot;هل-حقاً-أريد-جِتهَب&quot;&gt;هل حقاً أريد جِتهَب؟&lt;/h1&gt;
+
+&lt;p&gt;لكي تجيب على هذا السؤال، سأقول لك ما يمكن وما لا يمكن لجتهب أن يفعله.&lt;/p&gt;
+
+&lt;p&gt;جِتهب يسمح لك بإنشاء موقع بسيط، يتم التركيز فيه على المحتوى (على النص)، ولا يوجد به أي برمجة (فقط جافاسكريبت)، إذاً لا يمكن أن تُنشئ منتدى باستخدام صفحات جِتهَب ولا أي شكل من أشكال تفاعل المستخدمين عبر موقعك، بما في ذلك التعليقات (فهنا نستخدم خدمات خارجية لإتاحة المستخدمين للتعليق). برمجياً يمكنك استخدام اللغات التنسيقية فقط (HTML و CSS) ولغة البرمجة جافاسكريبت ولكن ليس لغات برمجية مثل PHP. كذلك لا يوجد هنا قواعد بيانات.&lt;/p&gt;
+
+&lt;p&gt;انظر إلى هذا الموقع .. واعلم أن هذا كل ما يمكن أن يقدمه جتهب (مع اختلاف في السمات العامة - أي في الإظهارات اوالتنسيق وطريقة العرض أما الإمكانيات فلن تزيد..)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;إذاً لماذا أستخدم جتهب لاستضافة موقعي؟&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;أعتقد أن البساطة والأناقة هي شعار من يريد استضافة موقعه على جتهب. لا للتعقيد ولقواعد البيانات ولغات البرمجة المتقدمة.. فلنجعل الأمور بسيطة، فلنركز على النص (المحتوى) ونعرضه بأفضل شكل ممكن .. تنسيقات جميلة وجذابة هنا لعرض النص - الأكواد - الاقتباسات - القوائم - الجداول - العناوين ومحتوى الصفحة.&lt;/p&gt;
+
+&lt;p&gt;ولقد قلت بأنه لا يوجد برمجة، ولكن يوجد jekyll والتي تعمل خلف الكواليس. (وتستخدم لجعل إنشاء صفحات الموقع ومحتواه أكثر سلاسة وديناميكية، مثلا هي التي تقوم بتوليد جدول “محتويات الصفحة” في بداية كل صفحة هنا بشكل تلقائي).&lt;/p&gt;
+
+&lt;h1 id=&quot;أولاً-إنشاء-موقعك-في-خمس-دقائق&quot;&gt;أولاً: إنشاء موقعك في خمس دقائق&lt;/h1&gt;
+
+&lt;p&gt;أولا يجب العلم أن المقصود هنا أن الموقع سيكون متاح على الإنترنت في غضون حوالي خمس دقائق، على افتراض أن الموقع جاهز (ملفات الموقع) ولكن لتخصيص الموقع وتدوين مشاركات به فهذا أمر آخر سنتكلم عنه هنا بإيجاز.&lt;/p&gt;
+
+&lt;p&gt;قم باختيار قالب جاهز لموقعك من &lt;a href=&quot;https://jekyllthemes.io/free&quot;&gt;هنا&lt;/a&gt; أو &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;هنا&lt;/a&gt; أو من أي موقع يحوي “free jekyll themes”.
+ثم قم بتحميل القالب الذي اخترته لجهازك وذلك بالذهاب لرابطه في جتهب والضغط على الزر الأخضر clone or Download ثم Download ZIP كما في الصورة&lt;/p&gt;
+
+&lt;amp-img src=&quot;/assets/github-rep-download.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;github-repository-download&quot;&gt;&lt;/amp-img&gt;
+
+&lt;p&gt;بعد ذلك عليك إنشاء حزمة على جتهب (Github) ورفع ملفات القالب بعد التعديل عليه لتلك الحزمة على الإنترنت. للقيام بذلك اتبع التالي:&lt;/p&gt;
+
+&lt;h2 id=&quot;إنشاء-موقعك-في-جتهب&quot;&gt;إنشاء موقعك في جتهب&lt;/h2&gt;
+
+&lt;p&gt;إن لم يكن لديك حساب على موقع Github فقم بإنشائه من &lt;a href=&quot;https://github.com/join&quot;&gt;هنا&lt;/a&gt; 
+أثناء إنشاء الحساب احرص أن يكون اسم المستخدم جيدًا ﻷن رابط الموقع (إن لم يكن لديك دومين/اسم موقع خاص) سيكون نفس اسم المستخدم. 
+ثم سيُطلب اختيار نوع الحساب اختره مجاني Free.
+بعد إتمام إنشاء الحساب قم بإنشاء حزمة جديدة من &lt;a href=&quot;https://github.com/new&quot;&gt;هنا&lt;/a&gt; وفقًا للبيانات التالية:&lt;/p&gt;
+
+&lt;p&gt;Repository name: username.github.io&lt;/p&gt;
+
+&lt;p&gt;مع استبدال username باسم المستخدم الخاص بك. ثم اضغط على create repository&lt;/p&gt;
+
+&lt;p&gt;الآن قم بالذهاب للحزمة التي تم إنشاؤها (سيذهب لها تلقائيا بعد إنشاؤها مباشرة) ستجد على اليمين زر upload files قم بالضغط عليه. ثم من على جهازك اذهب للمجلد الذي يحوي ملف القالب الذي قمت بتحميله وقم بفك الضغط عنه وارفع ملفات المجلد الناتج إلى الحزمة وذلك بسحبهم وإفلاتهم في المتصفح أو بالنقر في المتصفح لتحديد مكانهم.
+اكتب رسالة توضح ما فعلته في حقل Commit changes مثلا “My first commit” أو أي شيئ تريده، أبقِ على خيار Commit directly to the master branch. ثم اضغط على Commit changes لإتمام رفع الملفات.&lt;/p&gt;
+
+&lt;amp-img src=&quot;/assets/commit-gh-changes.png&quot; width=&quot;500&quot; height=&quot;400&quot; alt=&quot;commit-github-changes&quot;&gt;&lt;/amp-img&gt;
+
+&lt;p&gt;بعد رفع الملفات بنجاح سيكون موقعك بعد حوالي خمس دقائق جاهزًا على الرابط username.github.io طبعًا بعد تغيير username لاسم المستخدم الخاص بك، اي سيكون الرابط نفس اسم الحزمة التي أنشأتها.&lt;/p&gt;
+
+&lt;p&gt;ولكنه سيكون تماما كما القالب الذي حملته وبنفس المحتوى، كيف يمكنك تغيير المحتوى وتخصيص العرض ليناسب موقعك كما ترغب؟&lt;/p&gt;
+
+&lt;h3 id=&quot;تخصيص-الموقع&quot;&gt;تخصيص الموقع&lt;/h3&gt;
+
+&lt;p&gt;هنا يتوجب عليك فهم بعض الأساسيات في Jekyll حتى تغير وتضيف محتوى لموقعك، سأشرح ذلك هنا باختصار شديد يمكّنك من عمل ماتريد بأسرع وقت.&lt;/p&gt;
+
+&lt;p&gt;يحتوي قالب jekyll (موقعك) على المجلدات التالية:&lt;/p&gt;
+
+&lt;ul style=&quot;direction: ltr&quot;&gt;
+
+&lt;li&gt; /_layouts &lt;/li&gt;
+&lt;li&gt; /_includes&lt;/li&gt;
+&lt;li&gt; /_posts &lt;/li&gt;
+&lt;li&gt; /_site&lt;/li&gt;
+&lt;li&gt; index.html&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;بالإضافة لمجلدات وملفات أخرى.&lt;/p&gt;
+
+&lt;p&gt;لتغيير الصفحة الرئيسية لموقعك وطريقة العرض فيتوجب عليك معرفة بدائية في لغات HTML و CSS، لفهم الموقع ستبدأ من الصفحة الرئيسية index.html وتجد إلى أين تشير وتتبع ذلك. مع ملاحظة أنه عند وجود مثلا عبارة&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    include head.html 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أي تبدأ بـ include ضمن أقواس كبيرة فيعني أن الملف موجود في مجلد _includes&lt;/p&gt;
+
+&lt;p&gt;لتعديل وإضافة مشاركات للموقع (مقالات كالصفحة التي تقرؤها هذه) فيتوجب عليك إنشاء ملف لكل مشاركة في المجلد _posts وسيكون اسم الملف على الشكل التالي:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    2019-10-24-the-name-of-file.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;أي تبدأ بالتاريخ سنة-شهر-يوم-اسم-الملف.md وهكذا.&lt;/p&gt;
+
+&lt;p&gt;سيحوي بداية كل ملف على الأسطر التالية وهي خاصة بلغة jekyll&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ---
+    layout: post
+    date: 2019-10-29
+    title: عنوان الصفحة
+    description: وصف خاص للمشاركة والذي سيظهر في محركات البحث
+    ---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;كما رأيت في بداية كل مشاركة هناك متغيرات للمشاركة يجب تعريفها مثل التاريخ والعنوان والوصف، بالنسبة للـ  layout فهي هنا post أي أننا نستخدم ملف post.html الموجود في مجلد _layouts&lt;/p&gt;
+
+&lt;p&gt;لمثال كامل عن موقع جاهز للاطلاع على كيفية بناؤه يمكنك مشاهدة حزمة هذا الموقع على جتهب &lt;a href=&quot;https://github.com/Mulham/mulham.github.io&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;طبعا يمكن أيضا إنشاء موقع لشركة مثلا يحوي صفحة رئيسية تعريفية بالشركة وصفحات مثل رؤيتنا وما إلى ذلك. لمثال على ذلك يمكن الاطلاع على حزمة الموقع التالي من &lt;a href=&quot;https://github.com/rawajitqan/rawajitqan.github.io&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;مع ملاحظة أنه إذا أردت تضمين نموذج اتصل بنا مثلا، وﻷن جتهب كما قلنا لايدعم لغات البرمجة مثل php فستضطر لاستخدام خدمات خارجية وتضمين الكود المعطى من قبلهم في موقعك.. مثلا لإنشاء نماذج تواصل فهناك موقع مجاني (ضمن خيارات محدودة) يتيح لك ذلك مثل موقع jotform وغيره الكثير.&lt;/p&gt;
+
+&lt;p&gt;إذا احتجت ﻷي مساعدة في عمل موقعك أو تخصيصه فيمكنك مراسلتي.&lt;/p&gt;
+
+&lt;p&gt;والآن هل تريد ربط موقعك بدومين خاص ( هل لديك اسم موقع .com أو غيره خاص بك تريد عرض موقعك المستضاف في صفحات جتهب من خلاله؟). يمكنك ذلك عبر اتباع التعليمات الموجودة في المقال &lt;a href=&quot;/إنشاء-موقعك-بأقوى-الخدمات-وبخمس-دقائق&quot;&gt;هنا&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+		</entry>
+	
+		<entry>
+			<title>أساسيات لغة ماركداون Markdown</title>
+			<link href="http://mulham.github.io/markdown/"/>
+			<updated>2016-06-21T00:00:00+03:00</updated>
+			<id>http://mulham.github.io//markdown</id>
+			<content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#كيفية-التنسيق&quot; id=&quot;markdown-toc-كيفية-التنسيق&quot;&gt;كيفية التنسيق&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#النص-العادي&quot; id=&quot;markdown-toc-النص-العادي&quot;&gt;النص العادي&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#العناوين&quot; id=&quot;markdown-toc-العناوين&quot;&gt;العناوين&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#الاقتباس&quot; id=&quot;markdown-toc-الاقتباس&quot;&gt;الاقتباس&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#نمط-النص&quot; id=&quot;markdown-toc-نمط-النص&quot;&gt;نمط النص&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#القوائم&quot; id=&quot;markdown-toc-القوائم&quot;&gt;القوائم&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#قائمة-منقطة&quot; id=&quot;markdown-toc-قائمة-منقطة&quot;&gt;قائمة منقطة&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#قائمة-مُرقّمة&quot; id=&quot;markdown-toc-قائمة-مُرقّمة&quot;&gt;قائمة مُرقّمة&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#قوائم-متداخلة&quot; id=&quot;markdown-toc-قوائم-متداخلة&quot;&gt;قوائم متداخلة&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#الأكواد&quot; id=&quot;markdown-toc-الأكواد&quot;&gt;الأكواد&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#الروابط&quot; id=&quot;markdown-toc-الروابط&quot;&gt;الروابط&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#خط-أفقي&quot; id=&quot;markdown-toc-خط-أفقي&quot;&gt;خط أفقي&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#الجداول&quot; id=&quot;markdown-toc-الجداول&quot;&gt;الجداول&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#التعليقات&quot; id=&quot;markdown-toc-التعليقات&quot;&gt;التعليقات&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ملاحظات&quot; id=&quot;markdown-toc-ملاحظات&quot;&gt;ملاحظات&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;إنّ لغة ماركداون (Markdown) هي لغة وب تنسيقية. فبدلاً من الكتابة بلغة HTML يمكن الكتابة بهذه اللغة وهي أبسط بكثير من html وسهلة القراءة والكتابة، وبوجود مفسر فسيتم تحويل تنسيق markdown إلى html.&lt;/p&gt;
+
+&lt;p&gt;يجب العلم بأن الكثير من المواقع التي نستخدمها تدعم تفسير تنسيق markdown، فيمكن استخدام هذه اللغة في ووردبريس ومشاريع أخرى، وطبعاً هي لغة أساسية في github.&lt;/p&gt;
+
+&lt;h1 id=&quot;كيفية-التنسيق&quot;&gt;كيفية التنسيق&lt;/h1&gt;
+
+&lt;p&gt;والآن، لكي نتعلم هذه اللغة فكل ما علينا تعلمه هو بعض الأكواد التي تتضمنها اللغة. هنا حاولت جمع كل الأكواد المستخدمة في هذه اللغة (فهي ليست لغة ضخمة)&lt;/p&gt;
+
+&lt;h2 id=&quot;النص-العادي&quot;&gt;النص العادي&lt;/h2&gt;
+
+&lt;p&gt;النص العادي يكتب بدون الحاجة لأي أكواد. مع ملاحظة بسيطة هو أنك يجب أن تضع سطر فارغ بين الفقرة والأخرى لكي تُقرأ على أنها بداية سطر جديد. أي بدل الضغط على &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enter&lt;/code&gt; للانتقال للسطر الجديد ستضغط على &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enter&lt;/code&gt; مرتين لترك سطر فارغ وبالتالي ليفهم المفسر أنك تريد الانتقال لسطر جديد.&lt;/p&gt;
+
+&lt;h2 id=&quot;العناوين&quot;&gt;العناوين&lt;/h2&gt;
+
+&lt;p&gt;لكتابة العناوين نضع الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; مرة واحدة أو أكثر قبل العنوان (لا تنس الفراغ بين الرمز والعنوان):&lt;/p&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+
+# عنوان رئيسي
+## عنوان فرعي 1
+### عنوان فرعي 2
+#### عنوان فرعي 3
+	
+&lt;/pre&gt;
+
+&lt;p&gt;وما إلى ذلك .. مثلاً العنوان الرئيسي في هذه الصفحة هو “كيفية التنسيق (الأكواد)” والعنوان الفرعي الأول هو “العناوين”.&lt;/p&gt;
+
+&lt;h2 id=&quot;الاقتباس&quot;&gt;الاقتباس&lt;/h2&gt;
+
+&lt;p&gt;لكتابة نص مقتبس بلغة markdown (أو عرض نص كملاحظة كما أفعل أنا هنا) نضع الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; قبل النص المقتبس، وأيضاً يجب الانتباه للفراغ بين الرمز والكتابة:&lt;/p&gt;
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&amp;gt; هذا عبارة عن نص مقتبس
+&lt;/pre&gt;
+&lt;p&gt;سيكون الناتج:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;هذا عبارة عن نص مقتبس&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;نمط-النص&quot;&gt;نمط النص&lt;/h2&gt;
+
+&lt;p&gt;لجعل بعض الكلمات تظهر بشكل عريض أو مائل نستخدم الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; كما يلي:&lt;/p&gt;
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+هذه الكلمة مكتوبة بشكل **عريض** وهذه مكتوبة بشكل *مائل*
+&lt;/pre&gt;
+&lt;p&gt;الناتج:&lt;/p&gt;
+
+&lt;p&gt;هذه الكلمة مكتوبة بشكل &lt;strong&gt;عريض&lt;/strong&gt; وهذه مكتوبة بشكل &lt;em&gt;مائل&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;ملاحظة: هناك رمز آخر يستخدم لنفس الغرض وهو الشرطة السفلية &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt; وبنفس الطريقة المذكورة.&lt;/p&gt;
+
+&lt;h2 id=&quot;القوائم&quot;&gt;القوائم&lt;/h2&gt;
+
+&lt;h3 id=&quot;قائمة-منقطة&quot;&gt;قائمة منقطة&lt;/h3&gt;
+
+&lt;p&gt;للقائمة المنقطة نستخدم الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; ثم فراغ ثم النص. كذلك الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; يستخدم لنفس الغرض&lt;/p&gt;
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+* عنصر قائمة
+* عنصر قائمة
+* عنصر قائمة
+&lt;/pre&gt;
+&lt;p&gt;الناتج:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;عنصر قائمة&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;قائمة-مُرقّمة&quot;&gt;قائمة مُرقّمة&lt;/h3&gt;
+
+&lt;p&gt;للقائمة المُرّقمة نستخدم الأرقام. حيث نضع بعد الرقم نقطة &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt; ثم فراغ ثم النص&lt;/p&gt;
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+1. عنصر قائمة 1
+2. عنصر قائمة 2
+3. عنصر قائمة 3
+&lt;/pre&gt;
+&lt;p&gt;الناتج:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;عنصر قائمة 1&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة 2&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ملاحظة: هناك خطأ يرتكبه البعض ولا يعرفوا السبب، مثلاً لو وضعنا نص أسفل عنصر القائمة 1 والذي يشرح هذا العنصر ثم نصاً تحت عنصر القائمة 2 ليشرحه وهكذا، عند  المعاينة ستجد النتيجة على الشكل :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;عنصر قائمة 1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;نص شرح للعنصر1&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;عنصر قائمة 2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;نص شرح للعنصر 2&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;عنصر قائمة 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;نص شرح للعنصر 3&lt;/p&gt;
+
+&lt;p&gt;هل لاحظت أن الترقيم بات 1 وأيضاً 1 و 1 !! لماذا؟ في الواقع يجب وضع أربعة فراغات على الأقل قبل نص الشرح وذلك لكي يفهم المفسر أن النص هو تابع للعنصر 1 وبالتالي لا يعيد الترقيم من الأول وكأننا بدأنا بقائمة جديدة. عند وضع 4 فراغات قبل كل عنصر ستُحل المشكلة:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;عنصر قائمة 1&lt;/p&gt;
+
+    &lt;p&gt;نص شرح للعنصر1&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;عنصر قائمة 2&lt;/p&gt;
+
+    &lt;p&gt;نص شرح للعنصر 2&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;عنصر قائمة 3&lt;/p&gt;
+
+    &lt;p&gt;نص شرح للعنصر 3&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;قوائم-متداخلة&quot;&gt;قوائم متداخلة&lt;/h3&gt;
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+		1. عنصر 1
+			1. عنصر مُرقّم تابع للعنصر 1
+			2. عنصر مرقم تابع للعنصر 1
+		2. عنصر 2
+			* عنصر غير مرقم تابع للعنصر 2
+			  * عنصر غير مرقم تابع للعنصر الذي يسبقه
+			  * عنصر غير مرقم تابع لقبل سابقه
+		3. عنصر 3
+&lt;/pre&gt;
+&lt;p&gt;الناتج:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;عنصر 1
+    &lt;ol&gt;
+      &lt;li&gt;عنصر مُرقّم تابع للعنصر 1&lt;/li&gt;
+      &lt;li&gt;عنصر مرقم تابع للعنصر 1&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;عنصر 2
+    &lt;ul&gt;
+      &lt;li&gt;عنصر غير مرقم تابع للعنصر 2
+        &lt;ul&gt;
+          &lt;li&gt;عنصر غير مرقم تابع للعنصر الذي يسبقه&lt;/li&gt;
+          &lt;li&gt;عنصر غير مرقم تابع لقبل سابقه&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;عنصر 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ملاحظة: لقد وضعت هنا فراغين فقط بدلاً من 4 بين العنصر الفرعي والعنصر التابع له، وذلك لكي لا يسبق العنصر الذي من الدرجة الثالثة 8 فراغات وبالتالي يُفهم بشكل آخر، اقرأ الفقرة التالية&lt;/p&gt;
+
+&lt;h2 id=&quot;الأكواد&quot;&gt;الأكواد&lt;/h2&gt;
+
+&lt;p&gt;نحتاج أحياناً لتضمين الأكواد في المقال وذلك عند كتابة شرح للغة برمجة معينة أو ما شابه. لتضمين أسطر برمجية نضع 8 فراغات قبل كل سطر برمجي وبالتالي يكون الناتج:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	This is a code line
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ولكن أحياناً نحتاج أيضا لإظهار كلمة واحدة ضمن النص على أنه وسم أو جزء من كود، أي ماذا عن هذه الكلمة التي على شكل &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;كود&lt;/code&gt; . كيف كتبتها؟&lt;/p&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+ماذا عن هذه الكلمة التي على شكل `كود` . كيف كتبتها؟
+&lt;/pre&gt;
+&lt;p&gt;هل وصلت الفكرة؟&lt;/p&gt;
+
+&lt;p&gt;ملاحظة: ألم تجد الرمز ` في لوحة المفاتيح؟ سأوفر عليك عناء البحث .. إنه الزر &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ذ&lt;/code&gt; ولكن عندما تكون لغة الكتابة الإنجليزية.&lt;/p&gt;
+
+&lt;p&gt;ملاحظة2: لوضع 4 أو 8 فراغات يمكن استخدام زر الـ Tab والذي يكون 4 فراغات في بعض محررات النصوص على جهازك أو 8 في محررات أخرى، يمكن تحديد ذلك من إعدادات محرر النصوص لديك (مثل المفكرة - ولكنها برنامج بدائي بعض الشيئ)&lt;/p&gt;
+
+&lt;h2 id=&quot;الروابط&quot;&gt;الروابط&lt;/h2&gt;
+
+&lt;p&gt;لكتابة الروابط بلغة ماركداون نضع نص الرابط بين قوسين متوسطين &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; وبعدها مباشرة قوسين صغيرين &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;( )&lt;/code&gt; يكون الرابط ضمنهم.&lt;/p&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+[موقع ملهم](http://mulham.github.io)
+&lt;/pre&gt;
+
+&lt;p&gt;والناتج:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mulham.github.io&quot;&gt;موقع ملهم&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ماذا عن الصورة؟&lt;/p&gt;
+
+&lt;p&gt;لوضع صورة نقوم بنفس الكتابة السابقة ولكن يسبقها إشارة التعجب &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!&lt;/code&gt; ، يكون الشكل:&lt;/p&gt;
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+![نص بديل للصورة](رابط الصورة &quot;نص توضيح اختياري&quot;)
+&lt;/pre&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+
+![صورة الترخيص](https://mulham.github.io/assets/ccl.png &quot;رمز رخصة الموقع&quot;)
+&lt;/pre&gt;
+
+&lt;p&gt;الناتج:&lt;/p&gt;
+
+&lt;amp-img height=&quot;31&quot; width=&quot;88&quot; src=&quot;https://mulham.github.io/assets/ccl.png&quot; title=&quot;رمز رخصة الموقع&quot;&gt;&lt;/amp-img&gt;
+
+&lt;p&gt;ملاحظة: يفيد النص البديل في توضيح محتوى الصورة لمحركات البحث، فلا تهمله.&lt;/p&gt;
+
+&lt;p&gt;لعرض الرابط نفسه للضغط عليه، نضع الرابط بين رمزي &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; و &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; أي:&lt;/p&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&amp;lt;http://mulham.github.io&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;الناتج:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mulham.github.io&quot;&gt;http://mulham.github.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;خط-أفقي&quot;&gt;خط أفقي&lt;/h2&gt;
+
+&lt;p&gt;لإظهار خط أفقي في الصفحة نضع ثلاث نجمات أو أكثر &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;***&lt;/code&gt; ، فيظهر :&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;الجداول&quot;&gt;الجداول&lt;/h1&gt;
+
+&lt;p&gt;لكتابة جدول بلغة الماركداون نستخدم الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt; (يُكتب هذا الرمز بالضغط على زر 
+&lt;kbd&gt; shift &lt;/kbd&gt;
+  وزر 
+&lt;kbd&gt; \ &lt;/kbd&gt;
+ والذي يكون فوق زر الـ
+&lt;kbd&gt; Enter &lt;/kbd&gt;
+)، يجب أن تكون كل خانة في الجدول محاطة بالرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt; من الجهتين:&lt;/p&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+
+| عنوان غليظ | عنوان غليظ | عنوان غليظ |
+|------------| ---------- | ---------- |
+| عنصر | عنصر | عنصر |
+| عنصر | عنصر | عنصر ما |
+
+&lt;/pre&gt;
+
+&lt;p&gt;الناتج:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;عنوان غليظ&lt;/th&gt;
+      &lt;th&gt;عنوان غليظ&lt;/th&gt;
+      &lt;th&gt;عنوان غليظ&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;عنصر&lt;/td&gt;
+      &lt;td&gt;عنصر&lt;/td&gt;
+      &lt;td&gt;عنصر&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;عنصر&lt;/td&gt;
+      &lt;td&gt;عنصر&lt;/td&gt;
+      &lt;td&gt;عنصر ما&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;لاحظ أن العنوان الغليظ ظهر (بشكل غليظ) لأننا وضعنا أسفله 3 شرطات &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; أو أكثر.&lt;/p&gt;
+
+&lt;h1 id=&quot;التعليقات&quot;&gt;التعليقات&lt;/h1&gt;
+
+&lt;p&gt;يمكن كتابة تعليق في الملف النصي بحيث يظهر فقط للمحرر، ولكنه لن يظهر عن التنفيذ على صفحة الوب مثلًا. يُكتب التعليق بالشكل التالي:&lt;/p&gt;
+
+&lt;pre style=&quot;direction: rtl; text-align: right;&quot;&gt;
+[comment]: # (هذا عبارة عن تعليق لا يظهر للقارئ)
+&lt;/pre&gt;
+
+&lt;h1 id=&quot;ملاحظات&quot;&gt;ملاحظات&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;يمكن الكتابة بلغة html داخل لغة Markdown ، فلو وجدت أن هناك ما ينقص لغة markdown فلا بأس من استخدام أكواد html بداخل التنسيق&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;هل تريد عرض رموز ماركداون نفسها؟ أي كيف سأعرض مثلاً الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt; ضمن الجدول؟ يمكن ذلك باستخدام الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt; قبل رمز ماركداون المخصص.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;لكتابة تعليق في لغة ماركداون بحيث لا يتم إظهاره في العرض&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;[//]: # (التعليق هنا)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;إذا أردت طباعة الرمز &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;`&lt;/code&gt; كما تشاهد الآن فقم بإحاطته بعلامتين &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;`&lt;/code&gt; مزدوجة أي &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;``  ``&lt;/code&gt; وإذا أردت طباعة رمزين منه بالشكل هذا فقم بإحاطته برقم أكبر (أي علامتين ثلاثية) وهكذا..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;لتجربة كود ماركداون ومعاينته مباشرة يمكن استخدام صفحة &lt;a href=&quot;https://arabicmarkdown.netlify.com/&quot;&gt;مارك داون بالعربي&lt;/a&gt; مع العلم أنها غير فعالة تماما فهناك بعض الأمور لا يتم تفسيرها في حين أن ماركداون يقبلها ويفهمها. (&lt;strong&gt;تحديث:&lt;/strong&gt; يمكن استخدام &lt;a href=&quot;https://www.dawin.io/&quot;&gt;مُحرّر دَوِّن&lt;/a&gt; لهذا الغرض أيضًا)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;هل تريد أمثلة؟ هناك الكثير، مثلاً الشروحات في هذا الموقع كلها بتنسيق ماركداون. اختر صفحة من &lt;a href=&quot;http://mulham.github.io/tutorials&quot;&gt;الدروس&lt;/a&gt; مثلا واذهب للصفحة المصدر على &lt;a href=&quot;https://github.com/mulham/mulham.github.io/tree/master/tutorials/_posts&quot;&gt;github&lt;/a&gt; وتعلم كيف كُتبت الصفحة.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;تُستخدم لغة التنسيق CSS بجانب لغة ماركداون لإظهار المحتوى بالشكل المطلوب (لتلوين خانات جدول ماركدوان، لتلوين حقل الإقتباس، وما إلى ذلك ..) لو أعجبك الإظهار هنا، أي طريقة إظهار الأكواد والاقتباسات فيمكنك أخذ ملف التنسيق الخاص بالموقع الموجود &lt;a href=&quot;https://github.com/mulham/mulham.github.io/tree/master/_includes/head.html&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+		</entry>
+	
+
+</feed>

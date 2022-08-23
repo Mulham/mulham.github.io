@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html ⚡ lang="ar" class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+</head>
+<body>
+    <amp-analytics type="gtag" data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "UA-80564042-1",
+    "config" : {
+      "UA-80564042-1": { "groups": "default" }
+    }
+  }
+}
+</script>
+</amp-analytics>
+	  	
+	  	<!-- Navigation -->
+	  	{% include nav.html %}
+    
+    <!-- Header -->
+    <br><br><br>
+    <main id="content" role="main" class="">
+
+    <header class="header" role="banner">
+        <article class="recipe-article">
+            <header>
+                    <h1 class="mb1 px3">{{ page.title }}</h1>
+                    <a href="{{site.url}}">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                </div>
+                {{ content }}
+        </div>
+        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
+    </header></article></header></main>
+
+    {% if site.mathjax == true %}
+    <!-- MathJax -->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
+</body>
+</html>
