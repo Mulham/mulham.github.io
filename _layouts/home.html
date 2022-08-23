@@ -5,7 +5,7 @@ layout: compress
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html ⚡ lang="ar" class="no-js"><!--<![endif]-->
+<!--[if gt IE 8]><!--> <html ⚡ lang="en" class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
 </head>
@@ -20,30 +20,68 @@ layout: compress
             <div class="content">
                 <div class="post-title">
                     <h1>{{ page.title }}</h1>
-                    <a class="ampstart-btn" href="{{site.url}}">
-                        <amp-img height="24" width="24" src="/assets/img/home.png"></amp-img>
+                    <a class="ampstart-btn" href="{{site.baseurl}}">
+                        <amp-img height="24" width="24" src="{{ site.baseurl }}/assets/img/home.png"></amp-img>
                     </a>
                 </div>
-                <div class="post-list">
+                <div>
+
+                    {% assign i = 0 %}
                     {% for post in paginator.posts %} 
+                    {% assign value = i | modulo:2 %}
+                    {% if value == 0 %}
+          <div class="blog-card">
+    <div class="meta">
+      <div class="photo" style="background-image: url({{site.baseurl}}{{ post.feature }})"></div>
+      <ul class="details">
+        <li class="author"><a href="{{ site.baseurl }}/about"> {% if post.author %} {{ post.author }} {% else %} ملهم {% endif %}  </a></li>
+        <li style="color: #fff;" class="date">{{ post.date | date_to_string }}</li>
+        <li class="tags">
+          <ul>
 
-                    <ul style="list-style: none;">
-                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            
-                            <a style="font-size: 33px;" href="{{ site.url }}{{ post.url }}">
-                        {{ post.title }}
-                        <h4 style="font-size: 18px;color: #8ca29d;">{{ post.description }}</h4>
+{% for tag in post.tags %}<li><a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }} </a></li>{% unless forloop.last %}{% endunless %}{% endfor %}
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>{{ post.title }}</h1>
+      <h2>{{ post.description }}</h2>
+      <p> {{ post.excerpt | strip_html | truncatewords:45 }}</p>
+      <p class="read-more">
+        <a style="width:30%" href="{{site.baseurl}}{{ post.url }}">اقرأ المزيد</a>
+      </p>
+    </div>
+  </div>
+              {% assign i = i | plus: 1 %}
+    {% else %}
+  <div class="blog-card alt">
+    <div class="meta">
+      <div class="photo" style="background-image: url({{site.baseurl}}{{ post.feature }})"></div>
+      <ul class="details">
+        <li class="author"><a href="{{ site.baseurl }}/about">{% if post.author %} {{ post.author }} {% else %} ملهم {% endif %}</a></li>
+        <li style="color: #fff;" class="date">{{ post.date | date_to_string }}</li>
+        <li class="tags">
+          <ul>
+           {% for tag in post.tags %}<li><a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }} </a></li>{% unless forloop.last %}{% endunless %}{% endfor %}
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>{{ post.title }}</h1>
+      <h2>{{ post.description }}</h2>
+      <p>{{ post.excerpt | strip_html | truncatewords:45 }}</p>
+      <p class="read-more">
+        <a style="width:30%" href="{{site.baseurl}}{{ post.url }}">اقرأ المزيد</a>
+      </p>
+    </div>
+  </div>
                   
-                        {% if post.feature %}
-<amp-img width="200px" height="200px" style="float:left; border-radius: 20%;" src="{{post.feature}}"alt= "{{ post.title }}"></amp-img>
-{% endif %}
-</a>
-                            <p style="font-size: 20px;">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn">قراءة المزيد»</a>
-                        </li>
-                    </ul>
-
-
+                    
+                    {% assign i = i | plus: 1 %}
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>
@@ -61,32 +99,22 @@ layout: compress
                         	<p style="font-size:25px;font-weight:300">{{ site.bio }}</p>
 			            </a>
                     </h3>
-<h2>تصنيفات الموقع</h2>
+<h2>التصنفيات</h2>
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tags_list = site_tags | split:',' | sort %}
 
 <ul class="entry-meta inline-list">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  	<li style="font-size:18px"><a href="/tags/#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
+  	<li style="font-size:18px"><a href="{{ site.baseurl }}/tags/#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul><br>
-     <center>
-                    <ul style="list-style: none;">
-                        <li style="display: inline;">
-                            <a href="http://twitter.com/{{ site.twitter }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><amp-img src="/assets/img/twitter.svg" width="30" height="35.5" /></a>
-                        </li>
-                        <li style="display: inline;">
-                            <a href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML linedin"><amp-img src="/assets/img/linkedin.svg" width="30" height="35.5" /></a>
-                        </li>
-                                    <li style="display: inline;">
-                                        <a href="http://github.com/{{ site.github }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Github"><amp-img src="/assets/img/github.svg" width="30" height="35.5" /></a>
-                                    </li>
-                                    <li style="display: inline;">
-                                        <a href="mailto:{{ site.email }}" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Email"><amp-img src="/assets/img/gmail.svg" width="30" height="35.5" /></a>
-                                    </li>
-                    </ul></article></main><center>
-<footer>      
+  {% include social-links.html %}
+
+      </article>
+    </main>
+
+<footer>   <center>   
       <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar"><amp-img width="63" height="25" alt="رخصة المشاع الابداعي" style="border-width:0" src="/assets/ccl.png" /></a><br /><span property="dct:title">موقع ملهم</span> مرخّص بموجب <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.ar">رخصة المشاع الإبداعي نسب المصنف - غير تجاري 4.0 دولي</a>.
      </center> 
   </footer>

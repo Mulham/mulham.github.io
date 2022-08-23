@@ -6,60 +6,259 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     <!-- Twitter Cards -->
-    {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
-    <meta name="twitter:card" content="summary">
+    {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.baseurl }}/{{ feature }}{% endcapture %}{% endunless %}
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{{ feature }}">
     {% else %}<meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}">{% endif %}
+    <meta name="twitter:image" content="{{ site.baseurl }}/{{ site.logo }}">{% endif %}
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     <meta property="article:published_time" content="{{ page.date }}" />
     {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:creator" content="@{{ site.twitter }}">{% endif %}
     <!-- Open Graph -->
-
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
     <meta property="og:locale" content="{{ site.locale }}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:image" content="{{ site.url }}/{{ site.logo }}">
-
-	<meta name="yandex-verification" content="ea5684dc21acccc9" />
-    {% if site.google.verify %}
+    <meta property="og:image" content="{{ site.baseurl }}/{{ site.logo }}">
+    {% if site.yandex-verification %}
+	<meta name="yandex-verification" content="{{ site.yandex-verification }}" />
+    {% endif %}
+    {% if site.google-verify %}
     <!-- Webmaster Tools verfication -->
-    <meta name="google-site-verification" content="{{ site.google.verify }}">{% endif %}
+    <meta name="google-site-verification" content="{{ site.google-verify }}">{% endif %}
     {% if site.bing-verify %}    <meta name="msvalidate.01" content="{{ site.bing-verify }}">{% endif %}
-    {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+    {% capture canonical %}{{ site.baseurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
     <link rel="canonical" href="{{ canonical }}">
 
-    <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+    <link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
     <!-- Handheld -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
 <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
-
+<script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
+<script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
 <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet"> 
        <style amp-custom> 
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-
+/*!  taken from moon theme for jekyll too   */
 html {
     font-family: 'Tajawal', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  direction: rtl;
-   padding-left: 10px;
+ background: #f1f1f1;
+  margin: 2rem;
+  padding-left: 10px;
 
 padding-right: 10px;
+direction: rtl;
+}
+.blog-card {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.blog-card .details a:hover {
+  color: #5ad67d;
+}
+.blog-card:hover .photo {
+  -webkit-transform: scale(1.3) rotate(3deg);
+          transform: scale(1.3) rotate(3deg);
+}
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.blog-card .details,
+.blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  -webkit-transition: left .2s;
+  transition: left .2s;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  width: 100%;
+  font-size: .9rem;
+}
+.blog-card .details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+  color: #fff;
+}   
+
+.blog-card .details ul li {
+  display: inline-block;
+}
+.blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: url({{ site.baseurl }}/assets/img/user.png);
+}
+.blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: url({{ site.baseurl }}/assets/img/date.png);
+}
+.blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: url({{ site.baseurl }}/assets/img/tag.png);
+  margin-right: 10px;
+}
+.blog-card .details .tags li {
+  margin-right: 2px;
+
+}
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1,
+.blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.blog-card .description .read-more {
+  text-align: right;
+}
+.blog-card .description .read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+.blog-card .description .read-more a:after {
+  content: "»";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  -webkit-transition: margin .3s, opacity .3s;
+  transition: margin .3s, opacity .3s;
+}
+.blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blog-card:hover .details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .blog-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    max-width: 700px;
+  }
+  .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    -webkit-transform: skewX(-3deg);
+            transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+            flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    -webkit-transform: skew(3deg);
+            transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }
 }
 
 article,aside,footer,header,nav,section {
@@ -118,7 +317,7 @@ abbr[title] {
 
 b,strong {
   font-weight: inherit;
-  font-weight: bold;
+  font-weight: bolder
 }
 
 code,kbd,samp {
@@ -162,9 +361,7 @@ audio:not([controls]) {
   display: none;
   height: 0
 }
-div {
-  font-size: 20px;
-}
+
 img {
   border-style: none
 }
@@ -300,7 +497,8 @@ canvas {
 }
 
 .text-decoration-none {
-  text-decoration: none
+  text-decoration: none;
+  padding-left:20px
 }
 
 .bold {
@@ -377,7 +575,7 @@ canvas {
 
 .list-reset {
   list-style: none;
-  padding-left: 0
+  padding-left: 10px
 }
 
 .inline {
@@ -1373,9 +1571,6 @@ summary {
   .xs-hide {
     display: none
   }
-article {
-        overflow-x: auto;
-    }
 }
 
 @media (min-width:40.06rem) and (max-width:52rem) {
@@ -1465,7 +1660,7 @@ main {
 }
 
 .ampstart-label {
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .ampstart-footer,.ampstart-small-text {
@@ -1482,13 +1677,12 @@ main {
 .ampstart-btn {
   display: inline-block;
 	margin: 0 1px;
-	padding: 1px 8px;
-	font-weight: bold;
+	padding: 4px 8px;
 	color: #555;
 	vertical-align: middle;
 	background-color: #f9f9f9;
 	border: solid 1px #ccc;
-	border-bottom-color: #bbb;
+	border-bottom-color: #1d92bf;
 	border-radius: 3px;
 	box-shadow: inset 0 -1px 0 #bbb;
 }
@@ -1935,7 +2129,8 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-nav .ampstart-label {
-  color: inherit
+  color: inherit;
+  padding-left: 10px;
 }
 
 .ampstart-navbar-trigger {
@@ -2447,35 +2642,32 @@ h3.title a {
   text-decoration: none;
 }
 
-.post-list {
-  text-align: right;
-}
+
   ul {
     padding-right: 0;
   }
   li {
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
-    background: #fff;
     color: #282828;
   }
    
     p {
       font-weight: lighter;
-      font-size: 24px;
+      font-size: 18px;
     }
   
 
 
 blockquote {
   font-style: italic;
-  border-right: 8px solid #444;
-  padding-right: 20px;
+  border-left: 8px solid #444;
+  padding-left: 20px;
   margin: 0;
 }
 @media only screen and (min-width: 48em) {
   blockquote {
-    margin-left: -28px;
+    margin-right: -28px;
   }
 }
 
@@ -2489,7 +2681,7 @@ figcaption {
 }
 
   a:link {
-    color: #066c55;
+    color: #1c84c6;
     text-decoration:none
   }
   a:visited {
@@ -2521,7 +2713,7 @@ li pre {
   font-size: 18px;
 }
 #markdown-toc::before {
-  content: "محتويات الصفحة";
+  content: "Table of Content";
   font-size: 28px;
 }
 #markdown-toc {
@@ -2539,11 +2731,9 @@ li .highlight pre {
 
 table {
   width: 100%;
-  font-size: 22px;
+  text-align: center;
 }
-tbody {
-    text-align: center;
-}
+
 .notice {
   margin-top: 1.5em;
   padding: 0.5em 1em;
@@ -2564,25 +2754,13 @@ dt {
 
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/favicons/apple-icon-precomposed.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/assets/img/favicons/apple-icon-144x144.png">
-    <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.png" />
-    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/apple-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/img/favicons/apple-icon-144x144.png">
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png" />
  
-    <!-- Background Image -->
-    {% if site.background %}
-    {% capture background %}{{ site.background }}{% endcapture %}
-    {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/{{ background }}{% endcapture %}{% endunless %}
-   
-    {% endif %}
-    <!-- Post Feature Image -->
-    {% if page.feature %}
-    {% capture feature %}{{ page.feature }}{% endcapture %}
-    {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
-   
-    {% endif %}
+ 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 <script type="application/ld+json">
@@ -2602,14 +2780,14 @@ dt {
     "width": 500
   },
    "datePublished":"{{ page.date }}",
-  "dateModified":"{% if page.modified %}{{ page.modified }}{% else %}{{ page.date }}{% endif %}",
+  "dateModified":"{% if page.modified %}{{ page.modified }}{% else %} {{ page.date }} {% endif %}",
    "author": {
      "@type": "Person",
-     "name": "Mulham Alibrahim"
+     "name": "{{ site.author }}"
     },
      "publisher": {
       "@type": "Organization",
-      "name": "Mulham's Site",
+      "name": "{{ site.title }}",
       "logo": {
         "@type": "ImageObject",
         "url": "{{ site.logo }}",
