@@ -4,7 +4,7 @@
 	<title>Mulham Blog</title>
 	<link href="http://mulham.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mulham.github.io/blog"/>
-	<updated>2021-12-31T14:46:26+03:00</updated>
+	<updated>2022-08-23T16:24:30+03:00</updated>
 	<id>http://mulham.github.io/tutorials</id>
 	<author>
 		<name>Mulham</name>
@@ -4205,7 +4205,7 @@
 			<link href="http://mulham.github.io/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D8%A8%D8%A3%D9%82%D9%88%D9%89-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%88%D8%A8%D8%AE%D9%85%D8%B3-%D8%AF%D9%82%D8%A7%D8%A6%D9%82/"/>
 			<updated>2020-06-23T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//إنشاء-موقعك-بأقوى-الخدمات-وبخمس-دقائق</id>
-			<content type="html">&lt;p&gt;مرحبًا، أنا ملهم طالب هندسة حاسوب وأود هنا مشاركتكم لكيفية عمل موقع ثابت في مدة قصيرة وباستخدام خدمات قوية ومستقرة. لاستعراض النتيحة النهائية يمكن مشاهدة الموقع الذي قمت بإنشائه لإحدى الشركات المعمارية من &lt;a href=&quot;https://rawajitqan.com&quot;&gt;هنا&lt;/a&gt; وهو مجرد مثال لما يمكن عمله من هذا الشرح.&lt;/p&gt;
+			<content type="html">&lt;p&gt;مرحبًا، أنا ملهم مهندس حاسوب وأود هنا مشاركتكم لكيفية عمل موقع ثابت في مدة قصيرة وباستخدام خدمات قوية ومستقرة. لاستعراض النتيحة النهائية يمكن مشاهدة الموقع الذي قمت بإنشائه لإحدى الشركات المعمارية من &lt;a href=&quot;https://rawajitqan.com&quot;&gt;هنا&lt;/a&gt; وهو مجرد مثال لما يمكن عمله من هذا الشرح.&lt;/p&gt;
 
 &lt;p&gt;المتطلبات والتقنيات المستخدمة لهذا الشرح هي:&lt;/p&gt;
 
@@ -4321,57 +4321,6 @@
 &lt;/figure&gt;
 
 &lt;p&gt;ﻷي استفسار يمكنك التواصل معي مباشرة.&lt;/p&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>أهم الأسئلة التي تسأل لمبرمجي لغة جافا في مقابلات العمل</title>
-			<link href="http://mulham.github.io/%D8%A3%D8%B3%D8%A6%D9%84%D8%A9-%D8%AC%D8%A7%D9%81%D8%A7-%D9%84%D9%84%D9%85%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D9%86/"/>
-			<updated>2020-05-16T00:00:00+03:00</updated>
-			<id>http://mulham.github.io//أسئلة-جافا-للمبرمجين</id>
-			<content type="html">&lt;p&gt;إليك أهم عشر أسئلة لمبرمجي لغة الجافا في مقابلات العمل لاختبار معرفتهم باللغة:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;مناقشة تصميم المصعد الكهربائي.&lt;/p&gt;
-
-    &lt;p&gt;تلميح: سيتم طرح الأسئلة المتعلقة بوظيفة المصعد؛ متبوعة بتصميم عالي المستوى وتصميم منخفض المستوى. ستكون مستعدًا لأسئلة الجدولة المتعلقة بالمصعد.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;يتم إعطاء عدد n من النقاط، و ينبغي ايجاد عدد الرباعيات التي تشكّل مربّعًا.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;أسئلة تتعلق بإدارة الذاكرة في Java.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;خوارزمية Mark and Sweep وجمع المخلّفات في جافا&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;إنشاء شجرة من Inorder و Preorder&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;التسلسل (Serialization) في جافا&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;كيفية التأكد من أن المثال لن تُجمع مخلفاته أبداً؟&lt;/p&gt;
-
-    &lt;p&gt;تلميح: يمكننا استخدام نمط Singleton. يوجد مرجع ثابت (static) لـ singleton، لذا لن يكون مؤهل لجمع المهملات إلى أن يصبح ClassLoader مؤهلاً لذلك.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;أسئلة تتعلق بـ classloader و rt.jar&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;الفرق بين String و StringBuffer و StringBuilder&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;لم الـ String غير قابلة للتغيير (immutable) في Java؟&lt;/p&gt;
-
-    &lt;p&gt;ملاحظة: قم بمناقشة المشكلات المتعلقة بالأمان في ClassLoader.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;هذه المقالة مترجمة وبتصرّف. يمكنك الإطلاع على &lt;a href=&quot;https://www.geeksforgeeks.org/10-important-interview-questions/&quot;&gt;المصدر&lt;/a&gt;&lt;/p&gt;
 
 </content>
 		</entry>
@@ -15153,7 +15102,7 @@ table, th, td, tr {
   &lt;/p&gt;
     &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-    &lt;p&gt;التحويل إلى Oktal:
+    &lt;p&gt;التحويل إلى النظام الثماني (Octal):
  نبدأ من اليمين لليسار بأخذ كل ثلاثة أرقام سوية وإذا انتهينا يسارًا بأقل من ثلاثة أرقام نضيف أصفار للإتمام (هنا أضفنا صفرا واحد يسار الرقم)
  ثم نجمع الأرقام الناتجة عن كل ثلاث خانات سوية (خانات الأصفار لا تُحسب)&lt;/p&gt;
 
@@ -15253,7 +15202,7 @@ table, th, td, tr {
 
     &lt;p&gt;&lt;em&gt;ملاحظة:&lt;/em&gt; للتأكد يمكن استخدام الموقع &lt;a href=&quot;https://coderstoolbox.net/number/&quot;&gt;هنا&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;التحويل للهيكساديسيمال: هنا نأخذ كل أربع خانات سويةً&lt;/p&gt;
+    &lt;p&gt;التحويل للنظام السادس عشري (هيكساديسيمال): هنا نأخذ كل أربع خانات سويةً&lt;/p&gt;
 
     &lt;table&gt;
       &lt;tbody&gt;
@@ -22100,7 +22049,9 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 			<link href="http://mulham.github.io/Java-notes/"/>
 			<updated>2019-05-20T00:00:00+03:00</updated>
 			<id>http://mulham.github.io//Java-notes</id>
-			<content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+			<content type="html">&lt;p&gt;الملاحظات في الأسفل هي في الحقيقة ملاحظات عن مبادئ البرمجة كائنية التوجه (object oriented programming) ولكن في لغة جافا تحديدا (حيث أن البرمجة كائنية التوجه هي مبادئ موجودة في العديد من لغات البرمجة)&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#interface-class&quot; id=&quot;markdown-toc-interface-class&quot;&gt;interface class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#abstract-class&quot; id=&quot;markdown-toc-abstract-class&quot;&gt;Abstract class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ملاحظات-متفرقة&quot; id=&quot;markdown-toc-ملاحظات-متفرقة&quot;&gt;ملاحظات متفرقة&lt;/a&gt;&lt;/li&gt;
@@ -22113,16 +22064,16 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	public interface Name
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;تحتوي على دالّات Methods بدون متن body أي فقط تعريف للدالات، مثلًا على الشكل:&lt;/p&gt;
+&lt;p&gt;تحتوي هذه الأصناف على دالّات Methods بدون متن body أي فقط تعريف للدالات، مثلًا على الشكل:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	public boolean add(String s);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;وهذا النوع من الدالات methods الذي لا يحوي متن body يدعى abstract methods&lt;/p&gt;
 
-&lt;p&gt;وبالتالي تكون الدالات من نوع interface عبارة عن مجموعة من التوابع ذات النوع abstract أي collection of abtract methods&lt;/p&gt;
+&lt;p&gt;وبالتالي تكون الأصناف من نوع interface عبارة عن مجموعة من الدالات ذات النوع abstract أي collection of abtract methods&lt;/p&gt;
 
-&lt;p&gt;يمكن أن تحتوي دالات الـ interface على ثوابت أيضا، أي تعريف متغيرات مع إعطاء قيمهم، وأيضًا توابع رئيسية default methods وتوابع ثابتة static methods&lt;/p&gt;
+&lt;p&gt;يمكن أن تحتوي أصناف الـ interface على ثوابت أيضا، أي تعريف متغيرات مع إعطاء قيمهم، وأيضًا دالات رئيسية default methods ودالات ثابتة static methods&lt;/p&gt;
 
 &lt;p&gt;الـ interface class تحل مشكلة التوريث في لغة جافا، حيث أنه غير ممكن لصنف أن يرث من أكثر من صنف آخر، هذا يعني أنه &lt;strong&gt;لا&lt;/strong&gt; يمكن كتابة:&lt;/p&gt;
 
@@ -22134,9 +22085,9 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	public class Name implements name1, name2{
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;لماذا التوريث غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا صنف class يرث صنفين في نفس الوقت ويكون بين تلك الأصناف تعارض فلا يمكن تحديد أي دالة أو أمر يجب أن ينفذ الصنف الوارث! وبالتالي  لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن التوابع methods.&lt;/p&gt;
+&lt;p&gt;لماذا التوريث ﻷكثر من صنف غير مسموح في الجافا؟ لعدم حصول مشاكل فعندما يكون لدينا صنف class يرث صنفين في نفس الوقت ويكون بين تلك الأصناف تعارض (دالتين لها نفس الاسم مثلا) فلا يمكن تحديد أي دالة أو أمر يجب أن ينفذ الصنف الوارث! ولكن عند الوراثة من صنفي interface لايمكن أن يحدث فيها تعارض ﻷنها لا تحوي تعليمات ضمن التوابع methods.&lt;/p&gt;
 
-&lt;p&gt;ولكن! الـ interface يمكن أن تحوي constants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر  compiling error
+&lt;p&gt;ولكن! الـ interface يمكن أن يحوي constants متغيرات مع قيمهم، ولكن من الأفضل عدم استخدام هذه الميزة لعدم حصول تعارض كما ذكرنا، في حالة التعارض ستظهر  compiling error
 ولن يتم بناء البرنامج&lt;/p&gt;
 
 &lt;p&gt;وظيفة أصناف ال interface:  تعمل بشكل قالب يحدد الوظائف التي يجب أن تكون بالأصناف التابعة.&lt;/p&gt;
@@ -22162,7 +22113,7 @@ WHERE Customers.CustomerName=&quot;Around the Horn&quot; AND Customers.CustomerI
 
 &lt;h1 id=&quot;abstract-class&quot;&gt;Abstract class&lt;/h1&gt;
 
-&lt;p&gt;نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر object منها، يعني لدينا مثلا صنف student من نوع abtract فـ &lt;strong&gt;لايمكن&lt;/strong&gt; كتابة:&lt;/p&gt;
+&lt;p&gt;نفس ال interface ولكن تحوي تعليمات ضمن ال methods، كما لا يمكن إنشاء عنصر (object) منها، يعني لدينا مثلا صنف student من نوع abtract فـ &lt;strong&gt;لايمكن&lt;/strong&gt; كتابة:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	Student s = new Student();
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
