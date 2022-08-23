@@ -1,7 +1,0 @@
-{% assign wpm = site.words_per_minute | append: '.0' %}
-{% assign readtime = content | strip_html | number_of_words | divided_by:wpm | round %}
-مدة القراءة ~
-{% if readtime > 2 and readtime <= 10  %}
-{{ readtime }} دقائق
-{% elsif readtime <=1 %} 1 دقيقة
-{% else %}{{ readtime }} دقيقة{% endif %}
