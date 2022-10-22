@@ -6,17 +6,9 @@
     <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
     <script src="{{ site.url }}/assets/js/scripts.js"></script>
 
-    {% if site.google.analytics %}
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3Y8XXC1QZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-Z3Y8XXC1QZ');
-</script>
-    {% endif %}
+
+
 
     {% if page.comments != false %}
         {% include disqus_comments.html %}
