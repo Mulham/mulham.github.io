@@ -4,6 +4,7 @@ date: 2021-02-28
 title: بناء تطبيق جافا إف إكس من الصفر
 description: شرح عمل تطبيق بلغة جافا مع واجهة JavaFX وقاعدة بيانات MySQL من الصفر
 type: tutorial
+feature: https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI3.png
 tags: [برمجة, تعليم, Java]
 ---
 
