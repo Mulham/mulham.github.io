@@ -1,0 +1,9 @@
+# Simple File List Access Restricter
+
+RewriteEngine On
+
+# 1) If NOT the current host
+RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} !^([^@]*)@@https?://\1/.*
+
+# 2) Deny access to these types
+RewriteRule \.(gif|jpg|jpeg|png|tif|pdf|wav|wmv|wma|avi|mov|mp4|m4v|mp3|zip?)$ - [F]
