@@ -6,7 +6,7 @@ title: استضافة موقعك على صفحات جِتهَب
 description: كل ما تحتاجه لاستضافة موقعك أو مدونتك على صفحات جِتهَب
 type: tutorial
 comments: true
-tags: [Github, إنترنت]
+tags: [github, إنترنت]
 feature: /assets/github-pages.jpg
 captipn: "Octocat by Philippe Lin is licensed under CC BY-NC-SA 2.0"
 ---
