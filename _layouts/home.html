@@ -45,7 +45,7 @@ layout: compress
       </ul>
     </div>
     <div class="description">
-      <h1>{{ post.title }}</h1>
+      <a href="{{site.baseurl}}{{ post.url }}"><h1>{{ post.title }}</h1></a>
       <h2>{{ post.description }}</h2>
       <p> {{ post.excerpt | strip_html | truncatewords:45 }}</p>
       <p class="read-more">
@@ -70,7 +70,7 @@ layout: compress
       </ul>
     </div>
     <div class="description">
-      <h1>{{ post.title }}</h1>
+      <a href="{{site.baseurl}}{{ post.url }}"><h1>{{ post.title }}</h1></a>
       <h2>{{ post.description }}</h2>
       <p>{{ post.excerpt | strip_html | truncatewords:45 }}</p>
       <p class="read-more">
