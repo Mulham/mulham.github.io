@@ -354,22 +354,7 @@
       
 
       
-        <a
-          href="https://github.com/mulham"
-          aria-label="github"
-          
-
-          
-            target="_blank"
-            
-          
-
-          
-
-          
-            rel="noopener noreferrer"
-          
-        >
+        <a href="https://github.com/mulham" aria-label="github" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i>
         </a>
       
@@ -377,22 +362,7 @@
       
 
       
-        <a
-          href="https://twitter.com/mulham_ib"
-          aria-label="twitter"
-          
-
-          
-            target="_blank"
-            
-          
-
-          
-
-          
-            rel="noopener noreferrer"
-          
-        >
+        <a href="https://twitter.com/mulham_ib" aria-label="twitter" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-x-twitter"></i>
         </a>
       
@@ -400,17 +370,7 @@
       
 
       
-        <a
-          href="javascript:location.href = 'mailto:' + ['mulham94','gmail.com'].join('@')"
-          aria-label="email"
-          
-
-          
-
-          
-
-          
-        >
+        <a href="javascript:location.href%20=%20'mailto:'%20+%20['mulham94','gmail.com'].join('@')" aria-label="email">
           <i class="fas fa-envelope"></i>
         </a>
       
@@ -418,17 +378,7 @@
       
 
       
-        <a
-          href="/feed.xml"
-          aria-label="rss"
-          
-
-          
-
-          
-
-          
-        >
+        <a href="/feed.xml" aria-label="rss">
           <i class="fas fa-rss"></i>
         </a>
       
@@ -444,10 +394,7 @@
         <!-- The Top Bar -->
 
 <header id="topbar-wrapper" aria-label="Top Bar">
-  <div
-    id="topbar"
-    class="d-flex align-items-center justify-content-between px-lg-3 h-100"
-  >
+  <div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100">
     <nav id="breadcrumb" aria-label="Breadcrumb">
       
 
@@ -485,14 +432,7 @@
 
     <search id="search" class="align-items-center ms-3 ms-lg-0">
       <i class="fas fa-search fa-fw"></i>
-      <input
-        class="form-control"
-        id="search-input"
-        type="search"
-        aria-label="search"
-        autocomplete="off"
-        placeholder="بحث..."
-      >
+      <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="بحث...">
     </search>
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">إلغاء</button>
   </div>
@@ -588,14 +528,7 @@
 
 
 
-<time
-  
-  data-ts="1614632400"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
+<time data-ts="1614632400" data-df="ll" data-bs-toggle="tooltip" data-bs-placement="bottom">
   Mar  2, 2021
 </time>
 
@@ -643,12 +576,7 @@
 
 
 <!-- return element -->
-<span
-  class="readtime"
-  data-bs-toggle="tooltip"
-  data-bs-placement="bottom"
-  title="575 كلمة"
->
+<span class="readtime" data-bs-toggle="tooltip" data-bs-placement="bottom" title="575 كلمة">
   <em>2 
      دقيقة 
   </em> قراءة</span>
@@ -667,9 +595,13 @@
 
 <p>لنبدأ أولًا بكتابة الدالة “getUser” التي تأخذ اسم المستخدم وكلمة المرور وتبحث عنهم في قاعدة البيانات:</p>
 
-<div class="language-java highlighter-rouge"><div class="code-header">
+<div class="language-java highlighter-rouge">
+<div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -683,7 +615,8 @@
 12
 13
 14
-</pre></td><td class="rouge-code"><pre>
+</pre></td>
+<td class="rouge-code"><pre>
 <span class="kd">public</span> <span class="nc">ResultSet</span> <span class="nf">getUser</span><span class="o">(</span><span class="nc">String</span> <span class="n">username</span><span class="o">,</span> <span class="nc">String</span> <span class="n">password</span><span class="o">){</span>
                 <span class="nc">ResultSet</span> <span class="n">resultset</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
                <span class="nc">String</span> <span class="n">query</span> <span class="o">=</span> <span class="s">"SELECT * FROM "</span> <span class="o">+</span> <span class="n">dbName</span> <span class="o">+</span> <span class="s">"."</span> <span class="o">+</span> <span class="nc">Const</span><span class="o">.</span><span class="na">USERS_TABLE</span> <span class="o">+</span> <span class="s">" where "</span> <span class="o">+</span> <span class="nc">Const</span><span class="o">.</span><span class="na">USERS_FIRSTNAME</span> <span class="o">+</span><span class="s">"=? and "</span> <span class="o">+</span> <span class="nc">Const</span><span class="o">.</span><span class="na">USERS_PASSWORD</span> <span class="o">+</span> <span class="s">" =?"</span><span class="o">;</span>
@@ -697,15 +630,24 @@
                 <span class="o">}</span>
                 <span class="k">return</span> <span class="n">resultset</span><span class="o">;</span>
             <span class="o">}</span>
-</pre></td></tr></tbody></table></code></div></div>
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
 <p>لاحظ أننا استخدمنا المعطيات في ملف Const كما ذكرنا سابقا، وللعلم فإننا نضع إشارة استفهام في عبارة SQL كما ترى في متغير query أعلاه، ثم لاحظ السطر:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
+<div class="language-plaintext highlighter-rouge">
+<div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>    preparedStatement.setString(1, username);
-</pre></td></tr></tbody></table></code></div></div>
+      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>    preparedStatement.setString(1, username);
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
 <p>أي قم باستبدال إشارة الاستفهام الأولى بالمتغير username، وهكذا.</p>
 
@@ -713,45 +655,77 @@
 
 <p>ولنذهب الآن لملف LoginController، في البداية لنقم باستدعاء الصنف DatabaseHandler، لذا وقبل السطر:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
+<div class="language-plaintext highlighter-rouge">
+<div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>    public class LoginController {
-</pre></td></tr></tbody></table></code></div></div>
+      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>    public class LoginController {
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
 <p>أضف التالي:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
+<div class="language-plaintext highlighter-rouge">
+<div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="rouge-code"><pre>    import sample.Database.DatabaseHandler;
+</pre></td>
+<td class="rouge-code"><pre>    import sample.Database.DatabaseHandler;
     import java.sql.ResultSet;
-</pre></td></tr></tbody></table></code></div></div>
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
 <p>وقبل سطري</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
+<div class="language-plaintext highlighter-rouge">
+<div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="rouge-code"><pre>    @FXML
+</pre></td>
+<td class="rouge-code"><pre>    @FXML
      void initialize() {
-</pre></td></tr></tbody></table></code></div></div>
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
 <p>لنقم بإضافة السطر التالي (حيث سنقوم بإنشاء عنصر من صنف DatabaseHandler):</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
+<div class="language-plaintext highlighter-rouge">
+<div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>      private DatabaseHandler databaseHandler;
-</pre></td></tr></tbody></table></code></div></div>
+      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>      private DatabaseHandler databaseHandler;
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
 <p>ولنقم الآن بإضافة التالي للصنف (بين القوسين):</p>
 
-<div class="language-java highlighter-rouge"><div class="code-header">
+<div class="language-java highlighter-rouge">
+<div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="تم النسخ!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -784,7 +758,8 @@
 31
 32
 33
-</pre></td><td class="rouge-code"><pre>
+</pre></td>
+<td class="rouge-code"><pre>
  <span class="kt">void</span> <span class="nf">initialize</span><span class="o">()</span> <span class="o">{</span>
         <span class="n">databaseHandler</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatabaseHandler</span><span class="o">();</span>    <span class="c1">// إنشاء عنصر من صنف قواعد البيانات</span>
         <span class="n">loginButton</span><span class="o">.</span><span class="na">setOnAction</span><span class="o">(</span><span class="n">event</span> <span class="o">-&gt;</span> <span class="o">{</span>  <span class="c1">// هذه الدالة تعني أنه عند الضغط على زر تسجيل الدخول افعل ما بداخلها</span>
@@ -817,13 +792,15 @@
             <span class="o">}</span>
 <span class="o">});</span>
     <span class="o">}</span>
-</pre></td></tr></tbody></table></code></div></div>
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
 <p>قم الآن بتشغيل الكود وأدخل معلومات المستخدم الذي أدخلته سابقا في جدول Users في قاعدة البيانات، أنا لدي البيانات “admin” لكلا اسم المستخدم وكلمة المرور، اضغط على تسجيل الدخول، إذا ظهرت في طرفية IntelliJ رسالة “Login Successful!!!” فهذا يعني أن كل شيئ على مايرام.</p>
 
 <p>يمكنك معاينة الكود حتى الوضع الحالي من <a href="https://github.com/Mulham/Java-Project/tree/login">هنا</a></p>
 
-<hr />
+<hr>
 
 <p><strong>التالي:</strong> <a href="/javafx-scene-changer">الانتقال بين النوافذ</a></p>
 
@@ -837,12 +814,10 @@
     <!-- tags -->
     
 
-    <div
-      class="
+    <div class="
         post-tail-bottom
         d-flex justify-content-between align-items-center mt-5 pb-2
-      "
-    >
+      ">
       <div class="license-wrapper">
         
           
@@ -868,34 +843,26 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%D8%A2%D9%84%D9%8A%D8%A9%20%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%AC%D8%A7%D9%81%D8%A7%20%D8%A5%D9%81%20%D8%A5%D9%83%D8%B3%20-%20%D9%85%D8%AF%D9%88%D9%86%D8%A9%20%D9%85%D9%84%D9%87%D9%85&url=http%3A%2F%2Flocalhost%3A4000%2Fjava-sign-in%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%D8%A2%D9%84%D9%8A%D8%A9%20%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%AC%D8%A7%D9%81%D8%A7%20%D8%A5%D9%81%20%D8%A5%D9%83%D8%B3%20-%20%D9%85%D8%AF%D9%88%D9%86%D8%A9%20%D9%85%D9%84%D9%87%D9%85&amp;url=http%3A%2F%2Flocalhost%3A4000%2Fjava-sign-in%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%D8%A2%D9%84%D9%8A%D8%A9%20%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%AC%D8%A7%D9%81%D8%A7%20%D8%A5%D9%81%20%D8%A5%D9%83%D8%B3%20-%20%D9%85%D8%AF%D9%88%D9%86%D8%A9%20%D9%85%D9%84%D9%87%D9%85&u=http%3A%2F%2Flocalhost%3A4000%2Fjava-sign-in%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%D8%A2%D9%84%D9%8A%D8%A9%20%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%AC%D8%A7%D9%81%D8%A7%20%D8%A5%D9%81%20%D8%A5%D9%83%D8%B3%20-%20%D9%85%D8%AF%D9%88%D9%86%D8%A9%20%D9%85%D9%84%D9%87%D9%85&amp;u=http%3A%2F%2Flocalhost%3A4000%2Fjava-sign-in%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fjava-sign-in%2F&text=%D8%A2%D9%84%D9%8A%D8%A9%20%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%AC%D8%A7%D9%81%D8%A7%20%D8%A5%D9%81%20%D8%A5%D9%83%D8%B3%20-%20%D9%85%D8%AF%D9%88%D9%86%D8%A9%20%D9%85%D9%84%D9%87%D9%85" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fjava-sign-in%2F&amp;text=%D8%A2%D9%84%D9%8A%D8%A9%20%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%AC%D8%A7%D9%81%D8%A7%20%D8%A5%D9%81%20%D8%A5%D9%83%D8%B3%20-%20%D9%85%D8%AF%D9%88%D9%86%D8%A9%20%D9%85%D9%84%D9%87%D9%85" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
 
-    <button
-      id="copy-link"
-      aria-label="Copy link"
-      class="btn small"
-      data-bs-toggle="tooltip"
-      data-bs-placement="top"
-      title="أنسخ الرابط"
-      data-title-succeed="تم نسخ الرابط بنجاح!"
-    >
+    <button id="copy-link" aria-label="Copy link" class="btn small" data-bs-toggle="tooltip" data-bs-placement="top" title="أنسخ الرابط" data-title-succeed="تم نسخ الرابط بنجاح!">
       <i class="fa-fw fas fa-link pe-none fs-6"></i>
     </button>
   </span>
@@ -1896,21 +1863,13 @@
   
 
   
-    <a
-      href="/javafx-initialization/"
-      class="btn btn-outline-primary"
-      aria-label="الأقدم"
-    >
+    <a href="/javafx-initialization/" class="btn btn-outline-primary" aria-label="الأقدم">
       <p>تهيئة بيئة العمل لتطبيق جافا إف إكس</p>
     </a>
   
 
   
-    <a
-      href="/javafx-interface-design/"
-      class="btn btn-outline-primary"
-      aria-label="الأجدد"
-    >
+    <a href="/javafx-interface-design/" class="btn btn-outline-primary" aria-label="الأجدد">
       <p>تصميم الواجهة في تطبيق جافا إف إكس</p>
     </a>
   
@@ -1991,13 +1950,10 @@
 
             <!-- The Footer -->
 
-<footer
-  aria-label="Site Info"
-  class="
+<footer aria-label="Site Info" class="
     d-flex flex-column justify-content-center text-muted
     flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
-  "
->
+  ">
   <p>©
     <time>2024</time>
 
@@ -2006,26 +1962,15 @@
     
 
     
-      <span
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="ما لم يذكر خلاف ذلك ، يتم ترخيص منشورات المدونة على هذا الموقع بموجب ترخيص Creative Commons Attribution 4.0 International (CC BY 4.0) من قبل المؤلف."
-      >بعض الحقوق محفوظة.| 
+      <span data-bs-toggle="tooltip" data-bs-placement="top" title="ما لم يذكر خلاف ذلك ، يتم ترخيص منشورات المدونة على هذا الموقع بموجب ترخيص Creative Commons Attribution 4.0 International (CC BY 4.0) من قبل المؤلف.">بعض الحقوق محفوظة.| 
       </span>
     
    <span>
-<a href="/privacy-policy" aria-label="سياسة الخصوصية والاستخدام" >سياسة الخصوصية والاستخدام</a>
+<a href="/privacy-policy" aria-label="سياسة الخصوصية والاستخدام">سياسة الخصوصية والاستخدام</a>
     </span>
   </p>
 
-  <p>باستخدام <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> السمة <a
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="v7.0.1"
-        href="https://github.com/cotes2020/jekyll-theme-chirpy"
-        target="_blank"
-        rel="noopener"
-      >Chirpy</a>
+  <p>باستخدام <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> السمة <a data-bs-toggle="tooltip" data-bs-placement="top" title="v" href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
   </p>
 </footer>
 
@@ -2915,22 +2860,9 @@
     <div id="mask"></div>
 
     
-      <aside
-  id="notification"
-  class="toast"
-  role="alert"
-  aria-live="assertive"
-  aria-atomic="true"
-  data-bs-animation="true"
-  data-bs-autohide="false"
->
+      <aside id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-animation="true" data-bs-autohide="false">
   <div class="toast-header">
-    <button
-      type="button"
-      class="btn-close ms-auto"
-      data-bs-dismiss="toast"
-      aria-label="Close"
-    ></button>
+    <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
   <div class="toast-body text-center pt-0">
     <p class="px-2 mb-3">يتوفر اصدار جديد للمحتوى.</p>
