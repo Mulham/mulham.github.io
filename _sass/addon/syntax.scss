@@ -56,12 +56,15 @@ html {
 
   overflow: auto;
   padding-bottom: 0.75rem;
+      direction: ltr;
+
 
   pre {
     margin-bottom: 0;
     font-size: $code-font-size;
     line-height: 1.4rem;
     word-wrap: normal; /* Fixed Safari overflow-x */
+    margin-left: 1rem;
   }
 
   table {
@@ -267,12 +270,12 @@ div {
     .code-header {
       @include ml-mr(0);
 
-      $dot-margin: 1rem;
+      $dot-margin: 3rem;
 
       &::before {
         content: '';
         display: inline-block;
-        margin-left: $dot-margin;
+        margin-right: $dot-margin;
         width: $code-dot-size;
         height: $code-dot-size;
         border-radius: 50%;

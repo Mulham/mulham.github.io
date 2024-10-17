@@ -93,7 +93,7 @@ blockquote {
   &[class^='prompt-'] {
     border-left: 0;
     position: relative;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 1rem 3rem 1rem 1rem;
     color: var(--prompt-text-color);
 
     @extend %rounded;
@@ -102,7 +102,7 @@ blockquote {
       text-align: center;
       width: 3rem;
       position: absolute;
-      left: 0.25rem;
+      right: 0.25rem;
       margin-top: 0.4rem;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
@@ -376,7 +376,7 @@ main {
   p {
     > a.popup {
       &:not(.normal):not(.left):not(.right) {
-        @include align-center;
+         position: relative;
       }
     }
   }
