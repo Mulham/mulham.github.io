@@ -1,13 +1,11 @@
 ---
-layout: post
 date: 2019-08-10
 description: كيفية الإقلاع القسري من الفلاشة usb لتثبيت أنظمة أخرى على أجهزة الويندوز ذات الـ UEFI بدلا عن الـ BIOS
 title: كيفية الإقلاع من usb في أجهزة الويندوز ضمن وضع UEFI
-type: blog
-comments: true
 tags: [تقنية, أنظمة]
-feature: /assets/posts/uefi.jpg
-caption: "20180729_213918_HDR by vincent_kl_tam is licensed under CC BY-SA 2.0"
+image:
+  path: /assets/posts/uefi.jpg
+  alt: "20180729_213918_HDR by vincent_kl_tam is licensed under CC BY-SA 2.0"
 ---
 
 مرحبًا..
@@ -15,14 +13,13 @@ caption: "20180729_213918_HDR by vincent_kl_tam is licensed under CC BY-SA 2.0"
 
 سنتعلم هنا كيفية حل هذه المشكلة والإقلاع من USB ضمن وضع الـ UEFI لتثبيت نظام آخر.
 
-# 1. تهيئة القرص الإقلاعي USB
+## 1. تهيئة القرص الإقلاعي USB
 
 هذه الخطوة مهمة جدًا، فلجعل القرص قابل للإقلاع وتتعرف عليه واجهة الـ UEFI فيجب اتباع الخطوات التالية (وليس من البرامج التي تقوم بذلك فلن تعمل تلك الطرق في هذه الحالة):
 
 أولًا نقوم بتهيئة القرص USB [لنظام ملفات](https://mulham.github.io/File-Systems/) FAT32 ثم نضيف له boot flag أي نجعله قرص إقلاعي، هذه العملية تتم عن طريق برنامج gparted أو في الويندوز قم بالبحث عن شبيه له لعمل ذلك. في الصورة أدناه كيفية إضافة boot flag للقرص عن طريق برنامج Gparted
 
-<amp-img  width="500" height="300" src="/assets/boot-flag.png" alt="add boot flag"></amp-img>
-
+![add boot flag](/assets/boot-flag.png)
 
 بعدها سيكون النظام الذي تود تنصيبه لديك على شكل ملف .iso ، نقوم بفتح ذلك الملف: باللينكس بالنقر عليه مرتين وبالويندوز 10 نضغط عليه باليمين ثم Mount، ستظهر لنا الملفات الموجود في ملف الـ iso نقوم بنسخها ولصقها ببساطة في قرص الـ USB، إذا كان هناك أخطاء في نسخ مجلدات الاختصارات فلا تقلق يمكن تجاهل ذلك!
 
@@ -31,19 +28,17 @@ caption: "20180729_213918_HDR by vincent_kl_tam is licensed under CC BY-SA 2.0"
 وبهذا تكون الفلاشة USB جاهزة.
 
 
-# 2. تغيير إعدادات الـ BIOS
+## 2. تغيير إعدادات الـ BIOS
 
 مازالت تتيح لك الـ UEFI الوصول لإعدادات الـ BIOS، للذهاب إليها يجب عند بداية تشغيل الجهاز الضغط على زر معين حسب الجهاز وهو <kbd>Esc</kbd> أو زر آخر بحسب نوع جهازك. يمكنك البحث على الإنترنت عن كيفية الوصول لإعدادات البيوس في جهازك.
 
 مثلًا على جهازي ال Hometech أضغط على <kbd>Esc</kbd> فتظهر هذه الشاشة:
 
-<amp-img  width="600" height="400" src="/assets/uefi1.jpg" alt="uefi Hometech"></amp-img>
-
+![uefi Hometech](/assets/uefi1.jpg)
 
 بعدها عند الذهاب لخيار SCU ستظهر لك شاشة زرقاء، نذهب ضمنها لتبويبة Boot في الأعلى كما في الصورة:
 
-<amp-img  width="600" height="400" src="/assets/uefi2.jpg" alt="إعدادات بيوس لتفعيل الإقلاع من الفلاشة"></amp-img>
-
+![إعدادات بيوس لتفعيل الإقلاع من الفلاشة](/assets/uefi2.jpg)
 
 نقوم من هناك بإلغاء تفعيل كلا من الخيارات التالية وذلك بتغيير حالتهم لـ Disabled:
 

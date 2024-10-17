@@ -1,16 +1,13 @@
 ---
-layout: post
 title: سكريبت php بسيط لرفع ملف
 date: 2016-06-19
-type: blog
-comments: true
 tags: [PHP, برمجة]
-feature: /assets/posts/php.png
-caption: Image by OpenClipart-Vectors from Pixabay 
+image:
+  path: /assets/posts/php.png
+  alt: Image by OpenClipart-Vectors from Pixabay 
 ---
 
 نقدم لكم سكريبت بسيط بلغة php لرفع ملف .
-
 
 يستخدم هذا السكريبت لرفع صور أو ملفات من نوع آخر لسيرفرك ،<!--more--> حيث يحتوي على نموذج بلغة `HTML` فيه حقل لرفع ملف ، و كود `php` والذي يتأكد من نوع الملف (لاحقته) ، حجم الملف ، العرض والطول بالنسبة للصور ، ويقوم برفع الملف اذا لم يكن هناك أخطاء .
 
@@ -26,7 +23,7 @@ caption: Image by OpenClipart-Vectors from Pixabay
 
 الكود :
 
-{% highlight php %}
+```php
 
 <?php
 // Simple PHP Upload Script:  http://coursesweb.net/php-mysql/
@@ -70,7 +67,7 @@ if(isset($_FILES['fileup']) && strlen($_FILES['fileup']['name']) > 1) {
  </form>
 </div>
 
-{% endhighlight %}
+```
 
 إذا تم رفع الملف بنجاح ، سيقوم السكريبت بتقديم معلومات كما في المثال التالي
 

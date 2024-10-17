@@ -1,9 +1,7 @@
 ---
-layout: post
 date: 2020-03-27
 description: تعرف على الفرق بين الأمرين git pull و git fetch
 title: الفرق بين git pull و git fetch
-type: blog
 hidden: true
 ---
 
@@ -17,7 +15,7 @@ hidden: true
 
 
 
-ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة أسفل الصفحة.
+ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة في الشريط الجانبي.
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
 

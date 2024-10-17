@@ -9,3 +9,10 @@ gem 'jekyll-paginate-v2'
 gem 'jekyll-paginate'
 gem 'jekyll-archives'
 gem "kramdown-parser-gfm"
+gem 'jekyll-assets'
+gem 'jekyll-minifier'
+gem 'jekyll-redirect-from'
+gem 'jekyll-seo-tag'
+gem 'jekyll-include-cache'
+gem 'liquid-tag-parser'
+gem "html-proofer"

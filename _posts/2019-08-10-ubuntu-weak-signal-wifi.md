@@ -1,13 +1,11 @@
 ---
-layout: post
 date: 2019-08-10
 description: حل مشكلة ضعف إشارة الوايفاي في أبونتو والتوزيعات الشبيهة بها من لينكس وذلك بتغيير المشغل driver
 title: حل مشكلة ضعف إشارة الوايفاي في أبونتو
-type: blog
-comments: true
-tags: لينكس
-feature: /assets/posts/ubuntu.png
-caption: Image by guaxipo from Pixabay 
+tags: [لينكس]
+image:
+  path: /assets/posts/ubuntu.png
+  alt: Image by guaxipo from Pixabay 
 ---
 
 عند تنصيب أبونتو ﻷول مرة على بعض الأجهزة نجد أحيانًا مشكلة في عدم استقبال إشارة الوايفاي أو ضعفها كثيرا، هذه المشكلة ناجمة عن عدم توافق المعرِّف المستخدم افتراضيا في أبونتو مع جهازك، لحل هذه المشكلة افتح الطرفية Terimal واكتب الأوامر التالية:

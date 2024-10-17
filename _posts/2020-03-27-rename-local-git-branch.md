@@ -1,9 +1,7 @@
 ---
-layout: post
 date: 2020-03-27
 description: تعلم باختصار كيف يمكنك تغيير اسم فرع محلي في git
 title: كيفية إعادة تسمية فرع محلي في git
-type: blog
 hidden: true
 ---
 
@@ -26,7 +24,7 @@ hidden: true
 
 
 
-ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة أسفل الصفحة.
+ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة في الشريط الجانبي.
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
 

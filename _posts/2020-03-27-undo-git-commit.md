@@ -1,9 +1,7 @@
 ---
-layout: post
 date: 2020-03-27
 description: تعلم كيف يمكنك التراجع وإلغاء آخر اعتماد أو commit في جت git محليا بخطوات سريعة وعملية
 title: كيفية التراجع عن آخر اعتماد commit في git
-type: blog
 hidden: true
 ---
 
@@ -27,7 +25,7 @@ hidden: true
 
         git commit --amend
 
-ﻷي استفسار يرجى مراسلتي على الإيميل الظاهرة أيقونته أسفل الصفحة.
+ﻷي استفسار يرجى مراسلتي على الإيميل الظاهرة أيقونته في الشريط الجانبي.
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 

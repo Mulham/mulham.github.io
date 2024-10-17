@@ -1,7 +1,40 @@
-{% assign wpm = site.words_per_minute | append: '.0' %}
-{% assign readtime = content | strip_html | number_of_words | divided_by:wpm | round %}
-مدة القراءة ~
-{% if readtime > 2 and readtime <= 10  %}
-{{ readtime }} دقائق
-{% elsif readtime <=1 %} 1 دقيقة
-{% else %}{{ readtime }} دقيقة{% endif %}
+<!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+{% assign words = include.content | strip_html | number_of_words: 'auto' %}
+
+<!-- words per minute -->
+
+{% assign wpm = 200 %}
+{% assign min_time = 1 %}
+
+{% assign read_time = words | divided_by: wpm | round %}
+
+{% unless read_time > 0 %}
+  {% assign read_time = min_time %}
+{% endunless %}
+
+{% capture read_prompt %}
+  {{- site.data.locales[include.lang].post.read_time.prompt -}}
+{% endcapture %}
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="{{ words }} كلمة"
+>
+  <em>
+{{- read_time -}}
+{{ ' ' }}
+    {% if read_time > 2 and read_time <= 10  %}
+     {{ 'دقائق' }} 
+    {% elsif readtime <=1 %} {{ 'دقيقة' }}
+    {% else %} {{ 'دقيقة' }} {% endif %}
+  </em>
+  {%- if include.prompt -%}
+    {%- assign _prompt_words = read_prompt | number_of_words: 'auto' -%}
+    {%- unless _prompt_words > 1 -%}{{ ' ' }}{%- endunless -%}
+    {{ read_prompt }}
+  {%- endif -%}
+</span>

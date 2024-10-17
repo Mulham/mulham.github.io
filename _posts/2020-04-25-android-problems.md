@@ -1,13 +1,12 @@
 ---
-layout: post
 date: 2020-04-25
 description: أكثر المشاكل الشائعة في أندرويد مع حلها بشكل مبسط وواضح مع الصور
 title: أبرز مشاكل أندرويد وحلولها 
-type: blog
 author: husam
-feature: /assets/articles/android-2995824_640.png
-caption: Image by mohamed Hassan from Pixabay
-tags: أندرويد
+image:
+  path: /assets/posts/android-2995824_640.png
+  alt: Image by mohamed Hassan from Pixabay
+tags: [أندرويد]
 ---
 
 
@@ -17,12 +16,12 @@ tags: أندرويد
 
 يغطي هذا الدليل مشاكل الهاتف المحمول الشائعة في Android والحلول السهلة لها، لكن يجب أن تلاحظ  أنه وفقًا لهاتفك وإصدار Android الخاص به قد تختلف هذه الخطوات قليلاً بالنسبة لك. 
 
-فلننتقل الى مشاكل الأندرويد االتالية:
+فلننتقل الى مشاكل الأندرويد التالية:
 
 * Toc
 {:toc}
 
-# 1. يتعطل متجر Google Play دائما
+## 1. يتعطل متجر Google Play دائما
 
 إذا تعطل Google Play بعد تشغيله، فقد يكون لديك ذاكرة تخزين مؤقت تالفة، عادة ما يؤدي مسح ذاكرة التخزين المؤقت إلى إصلاح المشكلة. إذن فلنفعل ذلك
 
@@ -34,21 +33,23 @@ tags: أندرويد
 
 4. أعد تشغيل هاتفك.
 
-{% include image.html width="214" height="381" src="/assets/articles/google-play.png" alt="حل مشكلة متجر بلاي" %}
+![حل مشكلة متجر بلاي](/assets/posts/google-play.png)
 
-{% include image.html width="214" height="381" src="/assets/articles/google-play-2.png" alt="حل مشكلة متجر بلاي 2" %}
+![حل مشكلة متجر بلاي 2](/assets/posts/google-play-2.png)
 
-{% include image.html width="214" height="381" src="/assets/articles/google-play-3.png" alt="حل مشكلة متجر بلاي 3" %}
+![حل مشكلة متجر بلاي 3](/assets/posts/google-play-3.png)
+
 
 حاول إذا فشل ذلك  مسح التخزين وذاكرة التخزين المؤقت لخدمات Google Play و Google Services Framework باستخدام نفس الخطوات الموضحة أعلاه، تذكر إعادة تشغيل الجهاز بعد الانتهاء،كما بإمكانك إلقاء نظرة على دليل تحرّي الخلل وإصلاحه المخصص لمتجر Google Play للحصول على مزيد من المساعدة.
 
-# 2. مساحة غير كافية على الجهاز
+## 2. مساحة غير كافية على الجهاز
 
-{% include image.html width="214" height="381" src="/assets/articles/space.png" alt="حل مشكلة المساحة" %}
+![حل مشكلة المساحة](/assets/posts/space.png)
 
-{% include image.html width="214" height="381" src="/assets/articles/space-2.png" alt="حل مشكلة المساحة 2" %}
+![حل مشكلة المساحة 2](/assets/posts/space-2.png)
 
-{% include image.html width="214" height="381" src="/assets/articles/space-3.png" alt="  3حل مشكلة المساحة" %}
+![حل مشكلة المساحة 3](/assets/posts/space-3.png)
+
 
 إذا كانت مساحة هاتفك منخفضة، ولا يدعم بطاقة microSD، فإن خيارك الوحيد هو حذف الملفات، ولكن كيف ستجد الملفات التي ينبغي عليك حذفها وسط هذه الفوضى العارمة من الملفات؟
 
@@ -60,7 +61,7 @@ tags: أندرويد
 
 تنزيل: [DiskUsage](https://play.google.com/store/apps/details?id=com.google.android.diskusage) (مجاني)
 
-# 3.  لا يقوم متجر Google Play بتنزيل التطبيقات
+## 3.  لا يقوم متجر Google Play بتنزيل التطبيقات
 
 لا يقوم Google Play في بعض الأحيان بتثبيت التطبيقات، و عندما تصادفك مثل هذه المشكلة فإن لديك خياران رئيسيان لإصلاح هذا، الأول هو مسح ذاكرة التخزين المؤقت لـ Google Play كما هو موضح في رقم 1 أعلاه، والثاني هو محو سجل Google Play.
 
@@ -74,11 +75,12 @@ tags: أندرويد
 
 3. اختر مسح محفوظات البحث المحلي.
 
-{% include image.html width="328" height="584" src="/assets/articles/play-history.png" alt="مسح سجل متجر بلاي" %}
+![مسح سجل متجر بلاي](/assets/posts/play-history.png)
 
-{% include image.html width="328" height="584" src="/assets/articles/play-history-2.png" alt="مسح سجل متجر بلاي 2" %}
+![مسح سجل متجر بلاي 2](/assets/posts/play-history-2.png)
 
-# 4. كيفية إعادة تثبيت متجر Google Play
+
+## 4. كيفية إعادة تثبيت متجر Google Play
 
 لا يمكنك إلغاء تثبيت متجر Google Play دون تأصيل جهازك. إذا كنت تعتقد أنك قمت بحذف Google Play، فمن المحتمل أنك قمت بتعطيله بدلاً من ذلك. لإعادة تمكين متجر Play:
 
@@ -88,21 +90,22 @@ tags: أندرويد
 
 3. ابحث عن متجر Google Play واضغط عليه. اضغط على أيقونة تمكين لتنشيطه مرة أخرى.
 
-{% include image.html width="328" height="584" src="/assets/articles/enable.png" alt="اعادة تفعيل متجر بلاي" %}
+![اعادة تفعيل متجر بلاي](/assets/posts/enable.png)
 
-{% include image.html width="328" height="584" src="/assets/articles/enable-2.png" alt=" 2اعادة تفعيل متجر بلاي" %}
+![اعادة تفعيل متجر بلاي 2](/assets/posts/enable-2.png)
+
  
-# 5. كيف أقوم بتثبيت Google Play؟
+## 5. كيف أقوم بتثبيت Google Play؟
 
 لا تأتي بعض الأجهزة اللوحية والهواتف الذكية المستوردة مع متجر Google Play المثبت و ستحتاج في هذه الحالة،  إلى تحديد موقع ملف APK لمتجر Play من مصدر تابع لجهة خارجية ثم تثبيته يدويًا.
 
 تنزيل: [متجر Google Play](https://www.apkmirror.com/apk/google-inc/google-play-store/) (مجانًا) 
 
-# 6. أحتاج إلى إصدار أقدم من متجر Google Play
+## 6. أحتاج إلى إصدار أقدم من متجر Google Play
 
  لن يعمل في بعض الأحيان أحدث إصدار من Google Play على جهازك لذلك في هذه الحالة، يمكنك محاولة تثبيت إصدار أقدم.
 
-# 7. كيف يمكنني تحرير الذاكرة على جهاز Android الخاص بي؟
+## 7. كيف يمكنني تحرير الذاكرة على جهاز Android الخاص بي؟
 
 تشير "الذاكرة" في Android (مثل معظم أنظمة التشغيل) إلى ذاكرة الوصول العشوائي، وليس التخزين، لذلك كلما كان عدد التطبيقات المثبتة أقل كلما عمل نظام أندرويد بشكل أفضل ،وذلك لأن بعض التطبيقات ترغب في العمل في الخلفية، حتى عندما لا تستخدمها.
 
@@ -110,7 +113,7 @@ tags: أندرويد
 
 لا نوصي باستخدام أدوات إنهاء المهام، لأنها تؤثر سلبًا على وظائف جهازك، علاوة على ذلك، فإنهم لا يعالجون بشكل كاف المشكلة الرئيسية: و ذلك أن التطبيقات التي تستهلك الموارد يمكن أن تبدأ من تلقاء نفسها حسب الرغبة و بذلك لا تستطيع أن تضمن أنها ستبقى مغلقة دائما.
 
-# 8. لا تعمل واجهة مستخدم النظام  (Android 9 أو أقدم)
+## 8. لا تعمل واجهة مستخدم النظام  (Android 9 أو أقدم)
 
 يمكن أن تتوقف في بعض الأحيان واجهة مستخدم النظام (UI) عن العمل، و إذا لم تؤد إعادة تشغيل جهازك إلى حل هذه المشكلة ،فإننا نقترح مسح ذاكرة التخزين المؤقت لواجهة مستخدم النظام. لمسح ذاكرة التخزين المؤقت:
 
@@ -127,10 +130,12 @@ tags: أندرويد
 
 تنزيل: [System UI Tuner](https://play.google.com/store/apps/details?id=com.bryancandi.android.uituner) (مجانًا)
 
-# 9.  لا يعمل مدير تنزيل Android
-{% include image.html width="310" height="671" src="/assets/articles/manager.png" alt=" حل مشكلة مدير التنزيل" %}
- 
-{% include image.html width="310" height="671" src="/assets/articles/manager-2.png" alt="  2حل مشكلة مدير التنزيل" %}
+## 9.  لا يعمل مدير تنزيل Android
+
+![حل مشكلة مدير التنزيل](/assets/posts/manager.png)
+
+![حل مشكلة مدير التنزيل-2](/assets/posts/manager-2.png)
+
  
 لا يعمل في بعض الأحيان  مدير تنزيل Android، غالبًا ما تتلف الملفات التي ينزلها (إلى موقع مؤقت يسمى "ذاكرة التخزين المؤقت")،
 
@@ -148,7 +153,7 @@ tags: أندرويد
 
 تنزيل: [Advanced Download Manager](https://play.google.com/store/apps/details?id=com.dv.adm) (تتوفر عمليات شراء مجانية داخل التطبيق)
 
-# 10. لا يمكنني العثور على التنزيل الذي قمت به 
+## 10. لا يمكنني العثور على التنزيل الذي قمت به 
 
 يخزن Android بشكل افتراضي الملفات التي تم تنزيلها في مجلد يسمى تنزيل، يمكنك تحديد موقع هذا الدليل باستخدام مدير الملفات، مثل Ghost Commander و بمجرد التثبيت، انتقل إلى تنزيل وستظهر لك قائمة كاملة بالملفات التي تم تنزيلها.
 
@@ -158,7 +163,7 @@ tags: أندرويد
 
 تنزيل: [ملفات من Google](https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files) (مجانًا)
 
-# 11. لا يمكنني تشغيل مقطع فيديو تم تنزيله
+## 11. لا يمكنني تشغيل مقطع فيديو تم تنزيله
 
 لحل مشاكل الفيديو على جهاز Android الخاص بك جرب استخدام VLC Player أو MX Player، واللذان يعملان تقريبًا مع كل ملف يمكنك تخيله،ومع ذلك في بعض الأحيان لا يتم تشغيل مقاطع الفيديو التي تأتي بتنسيقات خاصة، مع الأسف لا يوجد حل حقيقي لهذه المشكلة سوى تثبيت برنامج ترميز الفيديو الخاص.
 
@@ -168,7 +173,7 @@ tags: أندرويد
 
 تنزيل: [MX Player](https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad) (مجانًا)
 
-# 12. لقد قمت بتثبيت Android Malware!
+## 12. لقد قمت بتثبيت Android Malware!
 
 عندما تشك في وجود برامج ضارة على هاتف Android، ما عليك سوى إلغاء تثبيت التطبيق الضار المفترض.
 
@@ -186,11 +191,12 @@ tags: أندرويد
 
 5. اضغط على سهم التحديث بجوار أيقونة الدرع لتشغيل المسح.
 
-{% include image.html width="214" height="464" src="/assets/articles/malware.png" alt=" كيف تحمي جهازك الأندرويد" %}
+![كيف تحمي جهازك الأندرويد](/assets/posts/malware.png)
 
-{% include image.html width="214" height="464" src="/assets/articles/malware-2.png" alt="  2كيف تحمي جهازك الأندرويد" %}
+![كيف تحمي جهازك الأندرويد 2](/assets/posts/malware-2.png)
 
-{% include image.html width="214" height="464" src="/assets/articles/malware-3.png" alt="3 كيف تحمي جهازك الأندرويد" %}
+![كيف تحمي جهازك الأندرويد 3](/assets/posts/malware-3.png)
+
 
 إذا لم يكن هاتفك يحتوي على Google Play Protect أو إذا كنت تريد رأيًا آخر ، فإن Malwarebytes Security هو خيار ثانٍ جيد.
 
@@ -204,9 +210,9 @@ tags: أندرويد
 
 من المحتمل أن يكون جهاز التوجيه الخاص بك "الراوتر" يحتوي على مشكلة ما و هو ما يسبب هذه المشكلة،إذا لم تعمل إعادة تشغيل جهاز التوجيه والهاتف فيرجى مراجعة مدير الشبكة.
 
-# 13. كيف يمكنني كسر كلمة مرور Android؟
+## 13. كيف يمكنني كسر كلمة مرور Android؟
 
-{% include image.html width="670" height="358" src="/assets/articles/password.png" alt=" كيف تجد هاتفك" %}
+![كيف تكسر كلمة سر هاتفك](/assets/posts/password.png)
 
 ستحتاج إلى إجراء إعادة ضبط المصنع من أداة تحميل التشغيل"bootloader"، فهي تتيح بيئة ما قبل الإقلاع التي تسمح لك باستعادة نظام التشغيل، من بين مهام أخرى.
 
@@ -216,13 +222,13 @@ tags: أندرويد
 
 لاحظ أنه إذا كان لديك ROM مخصص، فلا يجب عليك القيام بذلك لأنه يمكن أن يجعل جهازك غير قابل للإقلاع.
 
-# 14. يتعطل جهاز Android عند الإقلاع
+## 14. يتعطل جهاز Android عند الإقلاع
 
 إذا لم يعد هاتفك يعمل، يمكنك إدخال "الوضع الآمن" في Android حيث يسمح لك هذا بتعطيل جميع تطبيقات بدء التشغيل غير الضرورية التي قد تتسبب في تعطل هاتفك.
 
 بمجرد التحميل في الوضع الآمن، ينبغي أن يكون من السهل إزالة التطبيق الذي يسيء التصرف.
 
-# 15. جهاز Android لا يعمل أو لا يقلع
+## 15. جهاز Android لا يعمل أو لا يقلع
 
 إذا لم يتم تشغيل هاتفك ، فجرّب الخطوات التالية:
 
@@ -234,7 +240,7 @@ tags: أندرويد
 
 4. إذا تعذر ذلك ، فربما تحتاج إما إلى صيانة الجهاز أو إعادته.
 
-# 16. لا يقرأ أندرويد  بطاقة microSD
+## 16. لا يقرأ أندرويد  بطاقة microSD
 
 عندما يحدث هذا، يجب عليك تهيئة بطاقة SD من داخل Android، لتهيئة بطاقة Android microSD:
 
@@ -256,22 +262,24 @@ tags: أندرويد
 
 5. اختر تهيئة، ثم حدد تهيئة بطاقة SD.
 
-{% include image.html width="214" height="464" src="/assets/articles/format.png" alt=" كيف تقوم بفرمتة كرت الذاكرة" %}
 
-{% include image.html width="214" height="464" src="/assets/articles/format-2.png" alt=" 2 كيف تقوم بفرمتة كرت الذاكرة" %}
+![كيف تقوم بفرمتة كرت الذاكرة](/assets/posts/format.png)
 
-{% include image.html width="214" height="464" src="/assets/articles/format-3.png" alt=" كيف تقوم بفرمتة كرت الذاكرة 3" %}
+![كيف تقوم بفرمتة كرت الذاكرة 2](/assets/posts/format-2.png)
+
+![كيف تقوم بفرمتة كرت الذاكرة 3](/assets/posts/format-3.png)
+
 
 إذا فشل ذلك ،فستحتاج إلى توصيل بطاقة SD بجهاز الكمبيوتر باستخدام قارئ البطاقة وتهيئتها بهذه الطريقة.
 
-# 17. لا يمكن توصيل جهاز Android بجهاز كمبيوتر يعمل بنظام Windows
+## 17. لا يمكن توصيل جهاز Android بجهاز كمبيوتر يعمل بنظام Windows
 
 هناك طريقتان يمكن لجهاز Android استخدامهما للاتصال بجهاز كمبيوتر: Android Debug Bridge (ADB) أو بروتوكول نقل الوسائط (MTP). يتيح لك ADB التفاعل مع نظام تشغيل Android، بينما يسمح MTP بالوصول فقط إلى أدلة تخزين الوسائط المخصصة.
 
 ADB أكثر تعقيدًا ، مما يعني أنه يواجه مشكلات في كثير من الأحيان.
 
 
-# 18. الخيار الأخير: إعادة ضبط المصنع
+## 18. الخيار الأخير: إعادة ضبط المصنع
 
 إذا فشل كل شيء آخر، فستحتاج إلى التحول إلى إعادة ضبط المصنع، تذكر أن هذا سيحذف كل شيء من جهازك تمامًا، لذا يجب عليك الاحتفاظ بنسخة احتياطية من جهاز Android أولاً.
 
@@ -283,11 +291,17 @@ ADB أكثر تعقيدًا ، مما يعني أنه يواجه مشكلات ف
 
 3. قم بتأكيد العملية ، ثم أدخل رمز المرور لبدء العملية.
 
-{% include image.html width="214" height="381" src="/assets/articles/factory.png" alt=" كيف تقوم بإعادة ضبط بيانات المصنع" %}
+![كيف تقوم بإعادة ضبط بيانات المصنع](/assets/posts/factory.png)
 
-{% include image.html width="214" height="381" src="/assets/articles/factory-2.png" alt="  2كيف تقوم بإعادة ضبط بيانات المصنع" %}
+![كيف تقوم بإعادة ضبط بيانات المصنع 2](/assets/posts/factory-2.png)
 
-{% include image.html width="214" height="381" src="/assets/articles/factory-3.png" alt="3 كيف تقوم بإعادة ضبط بيانات المصنع" %}
+![كيف تقوم بإعادة ضبط بيانات المصنع 3](/assets/posts/factory-3.png)
+
+{% include image.html width="214" height="381" src="/assets/posts/factory.png" alt=" كيف تقوم بإعادة ضبط بيانات المصنع" %}
+
+{% include image.html width="214" height="381" src="/assets/posts/factory-2.png" alt="  2كيف تقوم بإعادة ضبط بيانات المصنع" %}
+
+{% include image.html width="214" height="381" src="/assets/posts/factory-3.png" alt="3 كيف تقوم بإعادة ضبط بيانات المصنع" %}
 
 لإجراء إعادة تعيين إعدادات المصنع في الإصدارات القديمة من Android:
 

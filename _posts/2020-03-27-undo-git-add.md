@@ -1,9 +1,7 @@
 ---
-layout: post
 date: 2020-03-27
 description: تعلم كي يمكنك التراجع عن إضافة الملفات لـ git قبل اعتمادها بـ commit
 title: كيفية التراجع عن أمر git add
-type: blog
 hidden: true
 ---
 
@@ -24,7 +22,7 @@ hidden: true
 في الإصدارات القديمة من git فقد كان الأمرين السابقين بالشكل `git reset HEAD <file>` و `git reset HEAD` على التوالي. 
 
 
-ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة أسفل الصفحة.
+ﻷي استفسار يرجى مراسلتي على الروابط الظاهرة في الشريط الجانبي.
 
 ترجمة وبتصرف. [المصدر](https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit)
 

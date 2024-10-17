@@ -1,11 +1,9 @@
 ---
-layout: post
 date: 2019-10-31
 title: نصيحة أمان لحماية الحواسيب المحمولة من السرقة
-type: blog
-feature: /assets/Kensington-Security-Slot.jpg
-comments: true
-tags: تقنية
+image:
+  path: /assets/Kensington-Security-Slot.jpg
+tags: [تقنية]
 ---
 
 هل فقدت حاسوبك المحمول من قبل بسبب السرقة في الأماكن العامة؟
@@ -16,12 +14,11 @@ tags: تقنية
 
 هذا المنفذ والذي يُدعى بـ "Kensington Security Slot" هو عبارة عن نظام مضاد للسرقة يسمح لنا بتوصيل الكمبيوتر المحمول الخاص بنا بأي جسم ثابت باستخدام ملحقات معينة مثل قفل Kensington.
 
-<amp-img width="210" height="210" src="/assets/laptop-safety1.jpg" alt="Kensington lock"></amp-img>
-
+![Kensington lock](/assets/laptop-safety1.jpg)
 
 تحتوي هذه الأقفال على قطعة أسطوانية متصلة بكابل معدني طويل. ترتبط تلك القطعة الأسطوانية بالمنفذ باستخدام رقم سري ويمكن توصيل الطرف الآخر من الكبل بأي كائن غير ثابت.
 
-<amp-img width="310" height="210" src="/assets/laptop-safety2.jpg" alt="laptop safety via Kensington lock"></amp-img>
+![laptop safety via Kensington lock](/assets/laptop-safety2.jpg)
 
 
 لن يكون السارق قادرًا على قطع الكابل المعدني أو محاولة كسر القفل لأنه سيضر بالكمبيوتر المحمول ولن يتمكن من إعادة بيعه حينئذِ.
