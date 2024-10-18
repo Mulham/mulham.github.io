@@ -484,7 +484,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" aria-label="Navigation menu" class="btn btn-link">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -492,7 +492,7 @@
       منشور
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" aria-label="search button" class="btn btn-link">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -507,7 +507,7 @@
         placeholder="بحث..."
       >
     </search>
-    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">إلغاء</button>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel" aria-label="cancel search button">إلغاء</button>
   </div>
 </header>
 
@@ -759,7 +759,7 @@
   <li><a href="#حذف-القيد-primary-key" id="markdown-toc-حذف-القيد-primary-key">حذف القيد PRIMARY KEY</a></li>
 </ul>
 
-<h2 id="قيد-primary-key-في-sql"><span class="me-2">قيد PRIMARY KEY في SQL</span><a href="#قيد-primary-key-في-sql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="قيد-primary-key-في-sql"><span class="me-2">قيد PRIMARY KEY في SQL</span><a href="#قيد-primary-key-في-sql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>القيد PRIMARY KEY يعرّف بشكل فريد كل سجل في جدول.</p>
 
@@ -767,7 +767,7 @@
 
 <p>يمكن أن يحتوي الجدول على مفتاح PRIMARY KEY واحد فقط ؛ وفي الجدول يمكن أن يتكون PRIMARY KEY هذا من أعمدة (حقول) مفردة أو متعددة.</p>
 
-<h2 id="أستخدام-primary-key-في-create-table-في-sql"><span class="me-2">أستخدام PRIMARY KEY في CREATE TABLE في SQL</span><a href="#أستخدام-primary-key-في-create-table-في-sql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="أستخدام-primary-key-في-create-table-في-sql"><span class="me-2">أستخدام PRIMARY KEY في CREATE TABLE في SQL</span><a href="#أستخدام-primary-key-في-create-table-في-sql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>يقوم SQL التالي بإنشاء PRIMARY KEY على عمود “المعرف” عند إنشاء جدول “الأشخاص”:</p>
 
@@ -879,7 +879,7 @@
 
 <p><strong>ملاحظة:</strong> في المثال أعلاه ، يوجد PRIMARY KEY واحد فقط (PK_Person) ومع ذلك نلاحظ أنه تتكون قيمة PRIMARY KEY من اثنين من الأعمدة (ID + LastName).</p>
 
-<h2 id="استخدام-primary-key-في-alter-table-في-sql"><span class="me-2">استخدام PRIMARY KEY في ALTER TABLE في SQL</span><a href="#استخدام-primary-key-في-alter-table-في-sql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="استخدام-primary-key-في-alter-table-في-sql"><span class="me-2">استخدام PRIMARY KEY في ALTER TABLE في SQL</span><a href="#استخدام-primary-key-في-alter-table-في-sql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>لإنشاء قيد PRIMARY KEY على عمود “المعرف” عند إنشاء الجدول  ، استخدم SQL التالية:</p>
 
@@ -919,7 +919,7 @@
 
 <p><strong>ملاحظة:</strong> إذا كنت تستخدم عبارة ALTER TABLE لإضافة PRIMARY KEY ، فيجب أن يكون عمود (أعمدة) PRIMARY KEY قد تم تعريفه بالفعل على أنه لا يحتوي على قيم NULL (عندما تم إنشاء الجدول لأول مرة).</p>
 
-<h2 id="حذف-القيد-primary-key"><span class="me-2">حذف القيد PRIMARY KEY</span><a href="#حذف-القيد-primary-key" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="حذف-القيد-primary-key"><span class="me-2">حذف القيد PRIMARY KEY</span><a href="#حذف-القيد-primary-key" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>لحذف قيد PRIMARY KEY، استخدم عبارة SQL التالية:</p>
 

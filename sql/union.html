@@ -484,7 +484,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" aria-label="Navigation menu" class="btn btn-link">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -492,7 +492,7 @@
       منشور
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" aria-label="search button" class="btn btn-link">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -507,7 +507,7 @@
         placeholder="بحث..."
       >
     </search>
-    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">إلغاء</button>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel" aria-label="cancel search button">إلغاء</button>
   </div>
 </header>
 
@@ -819,7 +819,7 @@
   <li><a href="#مثال-آخر-عن-union" id="markdown-toc-مثال-آخر-عن-union">مثال آخر عن UNION</a></li>
 </ul>
 
-<h2 id="عبارة-union-في-sql"><span class="me-2">عبارة UNION في SQL</span><a href="#عبارة-union-في-sql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="عبارة-union-في-sql"><span class="me-2">عبارة UNION في SQL</span><a href="#عبارة-union-في-sql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تُستخدم عبارة  UNION لدمج مجموعة النتائج لعبارتي SELECT أو أكثر.</p>
 
@@ -835,7 +835,7 @@
   </li>
 </ul>
 
-<h2 id="بناء-جملة-union"><span class="me-2">بناء جملة UNION</span><a href="#بناء-جملة-union" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="بناء-جملة-union"><span class="me-2">بناء جملة UNION</span><a href="#بناء-جملة-union" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
@@ -855,7 +855,7 @@
 
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="بناء-جملة-union-all"><span class="me-2">بناء جملة UNION ALL</span><a href="#بناء-جملة-union-all" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="بناء-جملة-union-all"><span class="me-2">بناء جملة UNION ALL</span><a href="#بناء-جملة-union-all" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تعرض عبارة UNION القيم المختلفة فقط (دون تكرار) بشكل افتراضي. استخدم UNION ALL للسماح بقيم مكررة:</p>
 
@@ -879,7 +879,7 @@
 
 <p><strong>ملاحظة:</strong> عادةً ما تكون أسماء الأعمدة في مجموعة النتائج مساوية لأسماء الأعمدة في عبارة SELECT الأولى في UNION.</p>
 
-<h2 id="استعراض-قاعدة-البيانات"><span class="me-2">استعراض قاعدة البيانات</span><a href="#استعراض-قاعدة-البيانات" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="استعراض-قاعدة-البيانات"><span class="me-2">استعراض قاعدة البيانات</span><a href="#استعراض-قاعدة-البيانات" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>سنستخدم في هذا الدرس قاعدة البيانات النموذجية المعروفة Northwind.</p>
 
@@ -973,7 +973,7 @@
   </tbody>
 </table></div>
 
-<h2 id="مثال-عن-union"><span class="me-2">مثال عن UNION</span><a href="#مثال-عن-union" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="مثال-عن-union"><span class="me-2">مثال عن UNION</span><a href="#مثال-عن-union" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تُرجع عبارة SQL التالية جميع المدن (القيم المختلفة فقط) من كلا جدولي “العملاء” و”المورِّدين”:</p>
 
@@ -1001,7 +1001,7 @@
 
 <p><strong>ملاحظة:</strong> إذا كان لدى بعض العملاء أو الموردين نفس المدينة ، فسيتم إدراج كل مدينة مرة واحدة فقط ، لأن UNION تحدد القيم المميزة فقط. استخدم UNION ALL  لتحديد القيم المكررة أيضًا!</p>
 
-<h2 id="مثال-عن-union-all"><span class="me-2">مثال عن UNION ALL</span><a href="#مثال-عن-union-all" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="مثال-عن-union-all"><span class="me-2">مثال عن UNION ALL</span><a href="#مثال-عن-union-all" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تقوم عبارة SQL التالية بإرجاع المدن (القيم المكررة أيضًا) من كل من جدولي “العملاء” و”الموردين”:</p>
 
@@ -1027,7 +1027,7 @@
 
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="عبارة-union-مع-where-في-sql"><span class="me-2">عبارة UNION مع WHERE في SQL</span><a href="#عبارة-union-مع-where-في-sql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="عبارة-union-مع-where-في-sql"><span class="me-2">عبارة UNION مع WHERE في SQL</span><a href="#عبارة-union-مع-where-في-sql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تقوم عبارة SQL التالية بإرجاع المدن الألمانية (القيم المختلفة فقط) من كل من جدولي “العملاء” و”الموردين”:</p>
 
@@ -1065,7 +1065,7 @@
 
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="عبارة-union-all-مع-where-في-sql"><span class="me-2">عبارة UNION ALL مع WHERE في SQL</span><a href="#عبارة-union-all-مع-where-في-sql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="عبارة-union-all-مع-where-في-sql"><span class="me-2">عبارة UNION ALL مع WHERE في SQL</span><a href="#عبارة-union-all-مع-where-في-sql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تقوم عبارة SQL التالية بإرجاع المدن الألمانية (القيم المكررة أيضًا) من كل من جدولي “العملاء” و”الموردين”:</p>
 
@@ -1101,7 +1101,7 @@
 
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="مثال-آخر-عن-union"><span class="me-2">مثال آخر عن UNION</span><a href="#مثال-آخر-عن-union" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="مثال-آخر-عن-union"><span class="me-2">مثال آخر عن UNION</span><a href="#مثال-آخر-عن-union" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>يسرد بيان SQL التالي كافة العملاء والموردين:</p>
 

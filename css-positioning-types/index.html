@@ -430,7 +430,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" aria-label="Navigation menu" class="btn btn-link">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -438,7 +438,7 @@
       منشور
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" aria-label="search button" class="btn btn-link">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -446,7 +446,7 @@
       <i class="fas fa-search fa-fw"></i>
       <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="بحث...">
     </search>
-    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">إلغاء</button>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel" aria-label="cancel search button">إلغاء</button>
   </div>
 </header>
 
@@ -929,13 +929,13 @@
 </ul>
 
 <h2 id="مراجعة-ﻷنواع-التوضّع-المتاحة-في-css">
-<span class="me-2">مراجعة ﻷنواع التوضّع المتاحة في CSS</span><a href="#%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%EF%BB%B7%D9%86%D9%88%D8%A7%D8%B9-%D8%A7%D9%84%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-css" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">مراجعة ﻷنواع التوضّع المتاحة في CSS</span><a href="#%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%EF%BB%B7%D9%86%D9%88%D8%A7%D8%B9-%D8%A7%D9%84%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-css" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h2>
 
 <p>تتيح لنا خاصية <code class="language-plaintext highlighter-rouge">position</code> في CSS تحديد نوع التوضّع لعنصر ما.</p>
 
 <h3 id="خيارات-خاصيّة-التوضّع-position">
-<span class="me-2">خيارات خاصيّة التوضّع ‘position’</span><a href="#%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D8%A7%D8%B5%D9%8A%D9%91%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B6%D9%91%D8%B9-position" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">خيارات خاصيّة التوضّع ‘position’</span><a href="#%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D8%A7%D8%B5%D9%8A%D9%91%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B6%D9%91%D8%B9-position" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h3>
 
 <p>إن القيمة الافتراضية لهذه الخاصية هي <strong>static</strong>. هذه القيمة تعني أن العنصر لم يتم تحديد موقعه، لتحديد توضعّه يجب تغيير هذه القيمة الافتراضية ﻷحد القيم التالية:</p>
@@ -1000,7 +1000,7 @@
 <p>عليك دائماً أن تتذكر أن العنصر الذي تكون قيمة الخاصيّة <code class="language-plaintext highlighter-rouge">position</code> له هي <code class="language-plaintext highlighter-rouge">absolute</code> أو <code class="language-plaintext highlighter-rouge">fixed</code> يدعى العنصر المتوضّع بشكل مطلق/ أو العنصر مطلق التوضّع. يعني أنك لا يمكن أن تستخدم خصائص الإزاحة مع هذه القيم. لاحظ أيضاً أن العنصر المتوضّع يمكن أن يستخدم خاصيّة <code class="language-plaintext highlighter-rouge">z-index</code> والتي تحدد ترتيبه وأوليته في العرض (فوق الكل أم أسفل شيئ معين وما إلى ذلك، مثل ترتيب الطبقات في برامج التصميم).</p>
 
 <h3 id="الاختلافات-الرئيسية-لخاصية-التوضّع-في-css">
-<span class="me-2">الاختلافات الرئيسية لخاصية التوضّع في CSS</span><a href="#%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9-%D9%84%D8%AE%D8%A7%D8%B5%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D9%81%D9%8A-css" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">الاختلافات الرئيسية لخاصية التوضّع في CSS</span><a href="#%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9-%D9%84%D8%AE%D8%A7%D8%B5%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D9%81%D9%8A-css" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h3>
 
 <p>دعنا الآن نناقش باختصار فروقات ثلاث رئيسية بين أنواع التوضّع المتاحة:</p>
@@ -1030,7 +1030,7 @@
 </blockquote>
 
 <h2 id="توضّع-العناصر-وفق-النوع-absolute">
-<span class="me-2">توضّع العناصر وفق النوع Absolute</span><a href="#%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D9%81%D9%82-%D8%A7%D9%84%D9%86%D9%88%D8%B9-absolute" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">توضّع العناصر وفق النوع Absolute</span><a href="#%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D9%81%D9%82-%D8%A7%D9%84%D9%86%D9%88%D8%B9-absolute" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h2>
 
 <p>قد يعرف الكثير منكم كيف يعمل هذا النوع من التوضّع، ولكن في بعض الأحيان يكون هذا النوع غير مفهوم ومربك للمصممين الجدد.</p>
@@ -1047,13 +1047,13 @@
 <p>أعطينا في هذا العرض الصندوق الأخضر (الدائري) نوع توضّع مبدئي absolute مع قيم إزاحة <code class="language-plaintext highlighter-rouge">bottom:0</code> و <code class="language-plaintext highlighter-rouge">left:0</code>. كما لم نحدّد نوع التوضّع للعنصر الأب (الصندوق الأحمر). إلا أنّنا قمنا بتحديد توضّع الكود الخارجي (outer wrapper) مثل العنصر ضمن صنف <code class="language-plaintext highlighter-rouge">jumbotron</code>. لاحظ اختلاف توضّع الصندوق الأخضر باختلاف نوع التوضّع للعناصر الأب.</p>
 
 <h2 id="تجاهل-خاصية-float-للعناصر-المتوضّعة-بشكل-مطلق">
-<span class="me-2">تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق</span><a href="#%D8%AA%D8%AC%D8%A7%D9%87%D9%84-%D8%AE%D8%A7%D8%B5%D9%8A%D8%A9-float-%D9%84%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B6%D9%91%D8%B9%D8%A9-%D8%A8%D8%B4%D9%83%D9%84-%D9%85%D8%B7%D9%84%D9%82" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">تجاهل خاصية float للعناصر المتوضّعة بشكل مطلق</span><a href="#%D8%AA%D8%AC%D8%A7%D9%87%D9%84-%D8%AE%D8%A7%D8%B5%D9%8A%D8%A9-float-%D9%84%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B6%D9%91%D8%B9%D8%A9-%D8%A8%D8%B4%D9%83%D9%84-%D9%85%D8%B7%D9%84%D9%82" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h2>
 
 <p>إذا كان العنصر يحوي خاصية float ليظهر إلى اليمين أو اليسار وقمنا بجعل نوعية توضّعه absolute أو fixed، فإن قيمة الخاصية float ستصبح <code class="language-plaintext highlighter-rouge">none</code> (يتم تجاهلها). وفي المقابل، فإذا جعلنا نوعيّة توضّعه relative فلن تتأثر قيمة float.</p>
 
 <h2 id="العناصر-المضمّنة-المتوضّعة-بشكل-مطلق-تكون-كعناصر-مستوى-block">
-<span class="me-2">العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block</span><a href="#%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%B6%D9%85%D9%91%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B6%D9%91%D8%B9%D8%A9-%D8%A8%D8%B4%D9%83%D9%84-%D9%85%D8%B7%D9%84%D9%82-%D8%AA%D9%83%D9%88%D9%86-%D9%83%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%85%D8%B3%D8%AA%D9%88%D9%89-block" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">العناصر المضمّنة المتوضّعة بشكل مطلق تكون كعناصر مستوى block</span><a href="#%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%B6%D9%85%D9%91%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B6%D9%91%D8%B9%D8%A9-%D8%A8%D8%B4%D9%83%D9%84-%D9%85%D8%B7%D9%84%D9%82-%D8%AA%D9%83%D9%88%D9%86-%D9%83%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%85%D8%B3%D8%AA%D9%88%D9%89-block" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h2>
 
 <p>أي أن سلوكها كالعناصر التي تكون ككتلة، أي block-level .. غير واضح؟</p>
@@ -1068,7 +1068,7 @@
 <p>وعند جعل وضع التوضّع absolute أو fixed فإن العنصر (الأحمر) يظهر ﻷن سلوكه أصبح من مستوى block-level.</p>
 
 <h2 id="الهوامش-غير-قابلة-للطي-في-العناصر-المتوضّعة-بشكل-مطلق">
-<span class="me-2">الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق</span><a href="#%D8%A7%D9%84%D9%87%D9%88%D8%A7%D9%85%D8%B4-%D8%BA%D9%8A%D8%B1-%D9%82%D8%A7%D8%A8%D9%84%D8%A9-%D9%84%D9%84%D8%B7%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B6%D9%91%D8%B9%D8%A9-%D8%A8%D8%B4%D9%83%D9%84-%D9%85%D8%B7%D9%84%D9%82" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">الهوامش غير قابلة للطي في العناصر المتوضّعة بشكل مطلق</span><a href="#%D8%A7%D9%84%D9%87%D9%88%D8%A7%D9%85%D8%B4-%D8%BA%D9%8A%D8%B1-%D9%82%D8%A7%D8%A8%D9%84%D8%A9-%D9%84%D9%84%D8%B7%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B6%D9%91%D8%B9%D8%A9-%D8%A8%D8%B4%D9%83%D9%84-%D9%85%D8%B7%D9%84%D9%82" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h2>
 
 <p>عند تلامس هامشان عموديان مع بعضهما فإنهما افتراضياً ينطويان ضمن هامش واحد تكون قيمتة محددّة بحسب قيمة الهامش الأكبر. يُعرف هذا السلوك باسم طيّ الهامش (margin collapsin).</p>
@@ -1089,7 +1089,7 @@
 <p>حسناً .. يجب علينا وضع شيئ يمنعهم من ذلك. لنقل على سبيل المثال بعض الملء <code class="language-plaintext highlighter-rouge">padding</code> أو الحدود <code class="language-plaintext highlighter-rouge">border</code> (يجب علينا تطبيق ذلك على العناصر الرئيسية “الأب” أو “الابن” أي العناصر المُضمّنة). كما يوجد حل آخر وهو إضافة الصنف <code class="language-plaintext highlighter-rouge">clearfix</code> (والموجود في مثالنا) للعنصر الأب.</p>
 
 <h2 id="توضّع-العناصر-بالبيكسل-والنسب-المئويّة">
-<span class="me-2">توضّع العناصر بالبيكسل والنسب المئويّة</span><a href="#%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A8%D8%A7%D9%84%D8%A8%D9%8A%D9%83%D8%B3%D9%84-%D9%88%D8%A7%D9%84%D9%86%D8%B3%D8%A8-%D8%A7%D9%84%D9%85%D8%A6%D9%88%D9%8A%D9%91%D8%A9" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">توضّع العناصر بالبيكسل والنسب المئويّة</span><a href="#%D8%AA%D9%88%D8%B6%D9%91%D8%B9-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A8%D8%A7%D9%84%D8%A8%D9%8A%D9%83%D8%B3%D9%84-%D9%88%D8%A7%D9%84%D9%86%D8%B3%D8%A8-%D8%A7%D9%84%D9%85%D8%A6%D9%88%D9%8A%D9%91%D8%A9" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h2>
 
 <p>هل استخدمت سابقاً النسب المئويّة بدلاً من البيكسل لتحديد إزاحة عنصر ما؟ إذا كان جوابك نعم فربما لاحظت أن قيم الإزاحة المحسوبة تختلف بحسب وحدات CSS التي تختارها (بيكسل أو وحدة مئوية).</p>
@@ -1116,7 +1116,7 @@
 <p><strong>ملاحظة</strong>: كما تعلم، فإن خاصية <code class="language-plaintext highlighter-rouge">transform</code> (بالإضافة لخصائص <code class="language-plaintext highlighter-rouge">translate</code> المختلفة) تتيح لنا أيضاً تغيرر موضع العنصر. ولكن يجب الانتباه إلى أنه عند اختيارنا للنسب المئويّة كوحدة CSS، فإن العنصر سيتوضّع وفقاً لأبعاده وليس وفقاً لأبعاد العنصر الأب (خلافاً للإزاحات).</p>
 
 <h2 id="في-النهاية-">
-<span class="me-2">في النهاية ..</span><a href="#%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+<span class="me-2">في النهاية ..</span><a href="#%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9-" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a>
 </h2>
 
 <p>أتمنى أن يكون المقال أفادك .. لا تنسى .. عند وجود أي سؤال أو إضافة فيمكنك مراسلتي على البريد الظاهر في ترويسة جميع صفحات الموقع، أيضاً يمكنك فتح المناقشة وفق الرابط أدناه، كذلك يمكنك نشر الفائدة عبر مواقع التواصل :)</p>

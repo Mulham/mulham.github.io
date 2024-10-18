@@ -481,7 +481,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" aria-label="Navigation menu" class="btn btn-link">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -489,7 +489,7 @@
       منشور
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" aria-label="search button" class="btn btn-link">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -504,7 +504,7 @@
         placeholder="بحث..."
       >
     </search>
-    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">إلغاء</button>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel" aria-label="cancel search button">إلغاء</button>
   </div>
 </header>
 
@@ -1420,13 +1420,13 @@
   <li><a href="#التنفيذ" id="markdown-toc-التنفيذ">التنفيذ</a></li>
 </ul>
 
-<h2 id="ماهي-javafx"><span class="me-2">ماهي JavaFX</span><a href="#ماهي-javafx" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="ماهي-javafx"><span class="me-2">ماهي JavaFX</span><a href="#ماهي-javafx" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>باختصار هي عبارة عن منصة <strong>لعمل واجهة</strong> لتطبيقات الجافا، أي لا يمكن عمل تطبيق جافا <strong>مع واجهة</strong> بدونها (أو بدون أحد بديلاتها)،  منصة Swing موجودة ومستخدمة لعمل الواجهات مع الجافا قبل وجود جافا إف إكس، وقد وُضِعت الأخيرة لاستبدال Swing، وتعتبر أفضل من swing في كثير من الأمور منها ماهو برمجي أيضًا حيث تفصل جافا إف إكس ملفات الواجهة عن ملفات الجافا وبالتالي يكون الكود أكثر تنسيقا مما هو عليه في swing.</p>
 
 <p>يمكن مع جافا إف إكس عمل تطبيقات للحاسوب وللموبايل وكذلك للوب.</p>
 
-<h2 id="البرامج-والمكتبات-المستخدمة"><span class="me-2">البرامج والمكتبات المستخدمة</span><a href="#البرامج-والمكتبات-المستخدمة" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="البرامج-والمكتبات-المستخدمة"><span class="me-2">البرامج والمكتبات المستخدمة</span><a href="#البرامج-والمكتبات-المستخدمة" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>فيما يلي البرامج والأدوات اللازمة والتي يجب تنصيبها لتنفيذ التطبيق:</p>
 
@@ -1462,7 +1462,7 @@
 
 <p><strong>ملاحظة2:</strong> وفقًا لما ذُكر فليس من المستحسن إطلاقًا الاعتماد دائمًا على مكتبات خارجية في تطبيقك، ﻷن تلك المكتبات قد يتوقف دعمها (لا يستمر تحديثها) وبالتالي يصبح تطبيقك بالكامل غير صالح عند نقظة زمنية محددة وسيحتاج للتعديل بالكامل ليعمل من جديد. وإن أردت استخدام مكتبة خارجية فتأكد من أنها شائعة وأن مستخدموها كثر وأنها تُحدَّث بشكل دوري.</p>
 
-<h2 id="وصف-المشروع"><span class="me-2">وصف المشروع</span><a href="#وصف-المشروع" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="وصف-المشروع"><span class="me-2">وصف المشروع</span><a href="#وصف-المشروع" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>لدينا مؤسسة تقوم بفحص الأجهزة الطبية وإعطاء تقرير عنها، المطلوب في هذا المشروع هو أتمتة التقرير حول الأجهزة الطبية، حيث كانت تلك المؤسسة تعمل على برنامج الإكسل وفق الجداول لإنتاج وطباعة التقارير المتعلقة بالأجهزة الطبية وتريد تحويل هذه العملية لتطبيق بحيث يقوم هذا التطبيق بترشيح القيم المراد إدخالها تلقائيًا وبعدم قبول القيم غير الصحيحة (والمعرفة مسبقًا) وبالتالي تقليل الأخطاء أثناء ملء وإنتاج تلك التقارير وتسهيل العملية أيضًا.</p>
 
@@ -1476,7 +1476,7 @@
 
 <p><strong>ملاحظة:</strong> من المهم جدا عند التعامل مع العميل معرفة كل مايدور برأسه قبل الشروع في العمل. مثلا من غير الكافي أن يتكلم العميل عن وصف المشروع أعلاه لكي تبدأ بالعمل! لا بد من أن تطرح عليه الكثير من الأسئلة عن وظائف التطبيق وآلية عمله ومظهره وعدد نوافذه وحجمها ولونها وكل شيئ قبل البدء.</p>
 
-<h2 id="تخطيط-قاعدة-البيانات"><span class="me-2">تخطيط قاعدة البيانات</span><a href="#تخطيط-قاعدة-البيانات" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="تخطيط-قاعدة-البيانات"><span class="me-2">تخطيط قاعدة البيانات</span><a href="#تخطيط-قاعدة-البيانات" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>سنقوم بهذا المشروع باستخدام قاعدة بيانات MySQL، إن لم يكن لديك معرفة بلغة قواعد البيانات SQL فيمكنك الاطلاع على <a href="https://mulham.github.io/sql/intro">سلسلة دروس SQL</a></p>
 
@@ -1504,7 +1504,7 @@
 
 <p><a href="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-databases.png" class="popup img-link  shimmer"><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-databases.png" alt="بناء تطبيق جافا FX مع قاعدة بيانات من الصفر" loading="lazy"></a></p>
 
-<h2 id="تخطيط-البرنامج"><span class="me-2">تخطيط البرنامج</span><a href="#تخطيط-البرنامج" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="تخطيط-البرنامج"><span class="me-2">تخطيط البرنامج</span><a href="#تخطيط-البرنامج" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>المخطط العام للبرنامج سيكون على النحو التالي:</p>
 
@@ -1516,11 +1516,11 @@
 
 <p><a href="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/uml-class-diagram.png" class="popup img-link  shimmer"><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/uml-class-diagram.png" alt="مخطط الصنف لتطبيق جافا" loading="lazy"></a></p>
 
-<h2 id="تقرير-وصف-المشروع"><span class="me-2">تقرير وصف المشروع</span><a href="#تقرير-وصف-المشروع" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="تقرير-وصف-المشروع"><span class="me-2">تقرير وصف المشروع</span><a href="#تقرير-وصف-المشروع" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>كما ذكرت فيجب قبل البدء بالمشروع وضع مخططات للمشروع ووصفها بكامل تفاصيلها لتصف المشروع بدقة ليكون قابل للتنفيذ وفق التقرير المُعطى من قبل مهندس البرمجيات، هذا التقرير يحوي عادة شرح عام للمشروع وللمشكلة التي يعالجها وكيف سيقوم بحل تلك المشكلة وآلية عمل المشروع والوظائف التي سيحتويها ويقدمها وحالات استخدامه بالإضافة لمخطط قاعدة البيانات ومخطط الصنف المذكورين أعلاه وغيرها من المخططات اللازمة، يكون هذا التقرير عادة عبارة عن 30 صفحة فأكثر بحسب حجم البرنامج.</p>
 
-<h2 id="التنفيذ"><span class="me-2">التنفيذ</span><a href="#التنفيذ" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="التنفيذ"><span class="me-2">التنفيذ</span><a href="#التنفيذ" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>نأتي الآن بعد وضع المخططات وكتابة التقرير وتهيئة قاعدة البيانات إلى الجزء التنفيذي وهو البرمجة بلغة جافا وعمل الواجهة باستخدام JavaFX. وقد قسمت هذا القسم إلى عدة دروس وفقًا للمهام المنجزة فيها:</p>
 

@@ -482,7 +482,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" aria-label="Navigation menu" class="btn btn-link">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -490,7 +490,7 @@
       منشور
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" aria-label="search button" class="btn btn-link">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -505,7 +505,7 @@
         placeholder="بحث..."
       >
     </search>
-    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">إلغاء</button>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel" aria-label="cancel search button">إلغاء</button>
   </div>
 </header>
 
@@ -887,13 +887,13 @@
   <li><a href="#إضافة-تصريح-where" id="markdown-toc-إضافة-تصريح-where">إضافة تصريح WHERE</a></li>
 </ul>
 
-<h2 id="عبارة-select-top-في-sql"><span class="me-2">عبارة SELECT TOP في SQL</span><a href="#عبارة-select-top-في-sql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="عبارة-select-top-في-sql"><span class="me-2">عبارة SELECT TOP في SQL</span><a href="#عبارة-select-top-في-sql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تستخدم عبارة SELECT TOP لتحديد عدد القيم المراد استخراجها من قاعدة البيانات (الحصول عليها) ، هذه العبارة مفيدة في حالة الجداول الضخمة التي تحتوي على آلاف القيم، مع ملاحظة أن استخراج عدد كبير من القيم قد يؤثر على الأداء.</p>
 
 <p><strong>ملاحظة</strong>: لا تدعم جميع أنظمة قواعد البيانات عبارة SELECT TOP. وبذلك تدعم لغة MySQL العبارة LIMIT لتحديد عدد محدد من القيم، بينما تستخدم Oracle العبارة ROWNUM.</p>
 
-<h3 id="بناء-التصريح-في-سيرفر-sql-أو-ميكروسوفت-access"><span class="me-2">بناء التصريح في سيرفر SQL أو ميكروسوفت Access</span><a href="#بناء-التصريح-في-سيرفر-sql-أو-ميكروسوفت-access" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="بناء-التصريح-في-سيرفر-sql-أو-ميكروسوفت-access"><span class="me-2">بناء التصريح في سيرفر SQL أو ميكروسوفت Access</span><a href="#بناء-التصريح-في-سيرفر-sql-أو-ميكروسوفت-access" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -905,7 +905,7 @@ FROM table_name
 WHERE condition;
 </pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="بناء-التصريح-في-mysql"><span class="me-2">بناء التصريح في MySQL</span><a href="#بناء-التصريح-في-mysql" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="بناء-التصريح-في-mysql"><span class="me-2">بناء التصريح في MySQL</span><a href="#بناء-التصريح-في-mysql" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -919,7 +919,7 @@ WHERE condition
 LIMIT number;
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="بناء-التصريح-في-oracle"><span class="me-2">بناء التصريح في Oracle</span><a href="#بناء-التصريح-في-oracle" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="بناء-التصريح-في-oracle"><span class="me-2">بناء التصريح في Oracle</span><a href="#بناء-التصريح-في-oracle" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -931,13 +931,13 @@ FROM table_name
 WHERE ROWNUM &lt;= number;
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="استعراض-قاعدة-بيانات"><span class="me-2">استعراض قاعدة بيانات</span><a href="#استعراض-قاعدة-بيانات" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="استعراض-قاعدة-بيانات"><span class="me-2">استعراض قاعدة بيانات</span><a href="#استعراض-قاعدة-بيانات" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>في الأسفل تحديد من جدول الزبائن Customers</p>
 
 <p><a href="/assets/customers.png" class="popup img-link  shimmer"><img src="/assets/customers.png" alt="customers" loading="lazy"></a></p>
 
-<h2 id="أمثلة-على-sql-top-و-limit-و-rownum"><span class="me-2">أمثلة على SQL TOP و LIMIT و ROWNUM</span><a href="#أمثلة-على-sql-top-و-limit-و-rownum" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="أمثلة-على-sql-top-و-limit-و-rownum"><span class="me-2">أمثلة على SQL TOP و LIMIT و ROWNUM</span><a href="#أمثلة-على-sql-top-و-limit-و-rownum" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تحدد عبارة SQL التالية أول ثلاث قيم من جدول “Customers”:</p>
 
@@ -967,7 +967,7 @@ LIMIT 3;
 WHERE ROWNUM &lt;= 3;
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="مثال-على-sql-top-percent"><span class="me-2">مثال على SQL TOP PERCENT</span><a href="#مثال-على-sql-top-percent" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="مثال-على-sql-top-percent"><span class="me-2">مثال على SQL TOP PERCENT</span><a href="#مثال-على-sql-top-percent" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تُحدِّد عبارة SQL التالية أول 50% من القيم في جدول “Customers”:</p>
 
@@ -977,7 +977,7 @@ WHERE ROWNUM &lt;= 3;
 </pre></td><td class="rouge-code"><pre>SELECT TOP 50 PERCENT * FROM Customers;
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="إضافة-تصريح-where"><span class="me-2">إضافة تصريح WHERE</span><a href="#إضافة-تصريح-where" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="إضافة-تصريح-where"><span class="me-2">إضافة تصريح WHERE</span><a href="#إضافة-تصريح-where" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تُحدِّد عبارة SQL التالية أول ثلاث قيم من جدول “Customers” حيث البلد هو “Germany”:</p>
 

@@ -483,7 +483,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" aria-label="Navigation menu" class="btn btn-link">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -491,7 +491,7 @@
       منشور
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" aria-label="search button" class="btn btn-link">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -506,7 +506,7 @@
         placeholder="بحث..."
       >
     </search>
-    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">إلغاء</button>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel" aria-label="cancel search button">إلغاء</button>
   </div>
 </header>
 
@@ -999,7 +999,7 @@
   <li><a href="#المراجع" id="markdown-toc-المراجع">المراجع</a></li>
 </ul>
 
-<h2 id="وظيفة-أنظمة-الملفات"><span class="me-2">وظيفة أنظمة الملفات</span><a href="#وظيفة-أنظمة-الملفات" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="وظيفة-أنظمة-الملفات"><span class="me-2">وظيفة أنظمة الملفات</span><a href="#وظيفة-أنظمة-الملفات" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>تقوم بتقسيم مساحة القرص إلى حجرات (أقسام صغيرة) افتراضية وتعطي لكل ملف رقم تسلسلي يعبر عن مكان تواجده في القرص الصلب.</p>
 
@@ -1009,7 +1009,7 @@
 
 <p>(للمزيد حول فهم الموضوع نظريًا اقرأ عنه في <a href="https://ar.wikipedia.org/wiki/نظام_الملفات">ويكيبيديا</a>)</p>
 
-<h2 id="fat12-fat16--fat32"><span class="me-2">FAT12, FAT16 &amp; FAT32</span><a href="#fat12-fat16--fat32" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="fat12-fat16--fat32"><span class="me-2">FAT12, FAT16 &amp; FAT32</span><a href="#fat12-fat16--fat32" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>أقدم أنواع الملفات في هذه القائمة وهو FAT12 المُصدر عام 1980 وبعدها FAT16 عام 1984 من قبل IBM وميكروسوفت ثم FAT32 من قبل ميكروسوفت عام 1996.
 إن FAT اختصار لـ (File allocation table) وتعني جدول توزيع الملفات، الأنواع الرئيسية لها هي المذكورة هنا (FAT12-16-32) بحيث يشير ازدياد الرقم إلى زيادة في عدد الحجرات والحجم الأعظمي للملف الواحد ولحجم القرص بالكامل. وفيما يلي جدول يوضح ذلك:</p>
@@ -1053,7 +1053,7 @@
 
 <p><strong>التوافق مع أنظمة التشغيل</strong>: نظام الملفات FAT32 شائع جدًا بسبب توافقه مع أنظمة التشغيل المختلفة ويُستخدم كثيرًا لوحدات التخزين الخارجية من USB Flash وكروت الذاكرة للهواتف وما إلى ذلك..</p>
 
-<h2 id="ntfs"><span class="me-2">NTFS</span><a href="#ntfs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="ntfs"><span class="me-2">NTFS</span><a href="#ntfs" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 <p>اختصار لـ New Technology File System وهو الأكثر شيوعًا ﻷنظمة ويندوز وتم إطلاقه عام 1993 لتجاوز حد حجم الملفات الموجود في FAT32 حيث أصبح الحد الأعظمي لحجم الملف الواحد 16 exabytes، والإكسابايت EB هي مليون تيرابايت، مما يعني أنه عمليا لايوجد حد لحجم الملف!</p>
 
 <p>هذا النوع من أنظمة الملفات هو journaling File System أي يحتفظ بسجل للتغييرات وبالتالي يتم تجنب تلف البيانات ويتم الاستعادة في حال حدوث خلل في النظام أو في الطاقة الكهربائية.
@@ -1061,7 +1061,7 @@
 
 <p><strong>التوافق مع أنظمة التشغيل</strong>: غير متوافق مع الإصدارات القديمة لويندوز وكذلك غير متوافق مع الأنظمة الأخرى، مثلا تظهر أقراص NTFS على أنها للقراءة فقط في نظام macOS والأنظمة القديمة من لينكس. وقد لاتكون قابلة للقراءة نهائيًا لأجهزة مشغلات الفيديو مثلًا. بالتالي يجب عدم استخدامها للأقراص الخارجية</p>
 
-<h2 id="exfat"><span class="me-2">exFAT</span><a href="#exfat" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="exfat"><span class="me-2">exFAT</span><a href="#exfat" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>اختصار لـ Extended File Allocation Table تم إطلاقه من قِبَل ميكروسوفت عام 2006 كنظام مُحسَّن لأقراص USB كبيرة السعة وكروت الذاكرة.</p>
 
@@ -1070,7 +1070,7 @@
 
 <p><strong>التوافق مع أنظمة التشغيل</strong>: يتوافق بشكل أفضل مع الأنظمة المختلفة بالمقارنة مع NTFS. بما في ذلك القراءة والكتابة على أنظمة ماك macOS والإصدارات الحديثة من أندرويد. وعلى اللينكس فستحتاج لتنزيل حزم إضافية للوصول لأقراص exFAT.</p>
 
-<h2 id="ext2-ext3--ext4"><span class="me-2">ext2, ext3 &amp; ext4</span><a href="#ext2-ext3--ext4" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="ext2-ext3--ext4"><span class="me-2">ext2, ext3 &amp; ext4</span><a href="#ext2-ext3--ext4" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>اختصار لـ extended File System وتم إطلاقه حصرًا ﻷنظمة لينكس عام 1992 حيث أُطلق نظام الملفات ext.
 بعدها بعام أُطلق ext2 والذي كان لسنوات عديدة نظام الملفات الافتراضي للعديد من توزيعات لينكس.
@@ -1080,7 +1080,7 @@
 
 <p><strong>التوافق مع أنظمة التشغيل</strong>: كونه مخصص لأنظمة لينكس فهو غير متوافق بشكل افتراضي مع أنظمة تشغيل ويندوز وماك، ولكن قد يصبح قابل للقراءة أو حتى الكتابة باستخدام برامج اضافية.</p>
 
-<h2 id="hfs-hfs--apfs"><span class="me-2">HFS, HFS+ &amp; APFS</span><a href="#hfs-hfs--apfs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="hfs-hfs--apfs"><span class="me-2">HFS, HFS+ &amp; APFS</span><a href="#hfs-hfs--apfs" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>حيث HFS اختصار لـ hierarchical File System أي نظام الملفات الهرمي وتم إطلاقه من أبّل عام 1995 لنظام ماك. ويدعم حجم أعظمي للملف 2GB وحجم أعظمي للقرص 2TB ويُعرف أيضًا بـ Mac OS standard.
 وتم إطلاق HFS+ عام 1998 والذي يُعرف أيضًا بـ HFS Extended أو Mac OS Extended والذي يوفّر journaling لتجنب تلف البيانات ويدعم حجم أعظمي للملف والقرص 8EB عند استخدام نظام macOS 10 أو أحدث.
@@ -1088,7 +1088,7 @@
 
 <p><strong>التوافق مع أنظمة التشغيل</strong>: جميعهم لا يدعمون افتراضيًا الأنظمة الأخرى الغير تابعة لشركة أبّل</p>
 
-<h2 id="zfs"><span class="me-2">ZFS</span><a href="#zfs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="zfs"><span class="me-2">ZFS</span><a href="#zfs" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>و zed file system الذي تم إطلاقه مبدأيًا عام 2006 من قِبَل Sun Microsystems ولكن منذ عام 2013 أصبح تطويره من قِبَل OpenZFS project.</p>
 
@@ -1096,7 +1096,7 @@
 
 <p><strong>التوافق مع أنظمة التشغيل</strong>: متوافق حاليًا مع لينكس و FreeBSD و TrueOS وقد يدعم ويندوز وماك لاحقًا.</p>
 
-<h2 id="كيفية-اختيار-نظام-الملفات"><span class="me-2">كيفية اختيار نظام الملفات</span><a href="#كيفية-اختيار-نظام-الملفات" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="كيفية-اختيار-نظام-الملفات"><span class="me-2">كيفية اختيار نظام الملفات</span><a href="#كيفية-اختيار-نظام-الملفات" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 
 <ol>
   <li>
@@ -1114,7 +1114,7 @@
 
 <p>آمل أن تكون قد حصلت على فائدة، إذا كان لديك أي سؤال فاطرحه في التعليقات، ﻷي تعديل أو اقتراح يمكن طرحه أيضًا في الأسفل أو تعديل الصفحة مباشرة من خلال الزر أعلى الصفحة.</p>
 
-<h2 id="المراجع"><span class="me-2">المراجع</span><a href="#المراجع" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="المراجع"><span class="me-2">المراجع</span><a href="#المراجع" class="anchor text-muted" aria-label="link to paragraph"><i class="fas fa-hashtag"></i></a></h2>
 <ul>
   <li><a href="https://en.wikipedia.org/wiki/Comparison_of_file_systems">Wikipedia</a></li>
   <li><a href="https://www.youtube.com/watch?v=_h30HBYxtws">ExplainigComputer channel on YouTube</a></li>
