@@ -11,7 +11,7 @@
     content: '';
     width: $timeline-width;
     position: relative;
-    float: left;
+    float: right;
     background-color: var(--timeline-color);
   }
 
@@ -19,14 +19,14 @@
     height: 3.5rem;
     font-size: 1.5rem;
     position: relative;
-    left: 2px;
-    margin-left: -$timeline-width;
+    right: 2px;
+    margin-right: -$timeline-width;
 
     &::before {
       @extend %timeline;
 
       height: 72px;
-      left: 79px;
+      right: 79px;
       bottom: 16px;
     }
 
@@ -45,7 +45,7 @@
       border-radius: 50%;
       width: 12px;
       height: 12px;
-      left: 21.5px;
+      right: 21.5px;
       border: 3px solid;
       background-color: var(--timeline-year-dot-color);
       border-color: var(--timeline-node-bg);
@@ -78,7 +78,7 @@
         @extend %timeline;
 
         top: 0;
-        left: 77px;
+        right: 77px;
         height: 3.1rem;
       }
     }
@@ -92,7 +92,7 @@
     white-space: nowrap;
     display: inline-block;
     position: relative;
-    right: 0.5rem;
+    right: -0.5rem;
 
     &.month {
       width: 1.4rem;
@@ -107,7 +107,7 @@
 
   a {
     /* post title in Archvies */
-    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     position: relative;
     top: 0.1rem;
 
@@ -123,9 +123,9 @@
       border-radius: 50%;
       width: 8px;
       height: 8px;
-      float: left;
+      float: right;
       top: 1.35rem;
-      left: 71px;
+      right: 71px;
       background-color: var(--timeline-node-bg);
       box-shadow: 0 0 3px 0 #c2c6cc;
       z-index: 1;
@@ -141,4 +141,7 @@
       letter-spacing: 0;
     }
   }
+}
+.list-unstyled {
+  padding-right: 0;
 }
