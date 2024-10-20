@@ -1,4 +1,344 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ar"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ar" /><updated>2024-10-18T21:18:21+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">مدونة ملهم</title><subtitle>دروس وشروحات قيّمة وحصريّة لا سابق لها في المحتوى العربي</subtitle><entry><title type="html">المسميات الوظيفية في مجال علم الحاسوب</title><link href="http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/" rel="alternate" type="text/html" title="المسميات الوظيفية في مجال علم الحاسوب" /><published>2023-09-19T00:00:00+03:00</published><updated>2024-04-22T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8</id><content type="html" xml:base="http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/"><![CDATA[<p>تضم القائمة أدناه المناصب الوظيفية الأشهر في إعلانات التوظيف، والتي تخص مجال علم الحاسوب. يتم تحديث القائمة بحسب المستجدات وبمساعدتكم. يمكنكم دائمًا التواصل معنا لتحديث الصفحة وتزويدنا بأي معلومات إضافية لديكم لم يتم ذكرها هنا. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ar"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ar" /><updated>2024-10-20T16:55:09+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">مدونة ملهم</title><subtitle>دروس وشروحات قيّمة وحصريّة لا سابق لها في المحتوى العربي</subtitle><entry><title type="html">فنون البرمجة</title><link href="http://localhost:4000/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/" rel="alternate" type="text/html" title="فنون البرمجة" /><published>2024-10-19T00:00:00+03:00</published><updated>2024-10-19T00:00:00+03:00</updated><id>http://localhost:4000/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9</id><content type="html" xml:base="http://localhost:4000/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/"><![CDATA[<p>أذكر أن أول كتاب قرأته في البرمجة كان كتاب “تعلم البرمجة من الصفر مع بايثون 3” وهو مترجم من الفرنسية. حين فتحته وجدت بدايته تقول لي “أهلًا بك في مدرسة السحرة”! نعم لقد شعرت بنفسي دخلت مدرسة هاري بوتر وأمسكت بالعصا وبدأت أتعلم التعليمات اللازمة لتلقينها للحاسوب ليفعل لي ما أريد..شعور جميل. وهذه هي البرمجة حقيقةً، فهي أداة فعالة للتواصل مع الحاسوب ليقوم بفعل ما نريده منه ويوفر علينا الوقت لاحقًا.</p>
+
+<p>سأناقش معكم في هذا المقال أشياء غريبة ومثيرة أنتجتها البرمجة.</p>
+
+<h2 id="المرئيات">المرئيات</h2>
+
+<p>سأخوض معك بدايةً ببعض التفاصيل الرياضية، ولكن لا تفزع! إنها مجرد تفاصيل أولية، ثم أذكر لك نتيجتها الغريبة التي تم الحصول عليها.</p>
+
+<p>نعلم أن الرياضيات تعبّر عمومًا عن أشياء منطقية، فواحد زائد واحد يساوي اثنان. ولكن الحال ليس دائمًا كذلك، فقد نظر علماء الرياضيات ووجدوا أن مربع أي عدد سيُنتج دائمًا عددًا موجبًا:</p>
+
+\[(2)^2 = 4\]
+
+\[(-2)^2 = 4\]
+
+<p>فلم يعجبهم ذلك، فلِمَ لا يكون لدينا عددًا يُنتِج مربعه عددًا سالبًا؟ أليست هذه فكرة جميلة؟ أجاب العالَم بأن ذلك غير منطقي، فقالوا لنفسهم ومن يكترث؟ يكفي أننا نريد ذلك! ولكن لكي يشرّعوا ذلك سموه بالعدد التخيلي (imaginary number)، حيث يكون مربعه ناقص واحد:</p>
+
+\[i^2 = -1\]
+
+<p>(وُضعت هذه الأعداد في الواقع لتمثيل المقاييس الصغيرة جدًا والمرتبطة بالذرات والإلكترونات)</p>
+
+<p>حسنًا، ها قد تحقق الحلم، وقد فتح ذلك بابًا ﻷشياءٍ غريبة غير متوقعة..</p>
+
+<p>أصبح لدينا الآن أعدادًا حقيقة وأعدادًا تخيلية. لننظر أولًا لسلوك الأعداد الحقيقة، وليكن لدينا الدالة f(x) وفق التالي:</p>
+
+<p>f(x) = x +1</p>
+
+<p>لنبدأ مثلًا بإعطاء قيمة 1 لـ x، ستصبح النتيجة 2 ، لنستمر بزيادة 1، فتصبح النتيجة 3 ثم 4 ثم خمسة وهكذا، يمكنك مباشرة فهم سلوك هذه الدالة إلى مالانهاية، فسنبقى دائمًا نضيف واحدًا للناتج، وسيعطي ذلك بيانيًا خطًا مستقيمًا:</p>
+
+<p><img src="/assets/posts/a337d3e60f1a459599c8b02cdf220914.png" alt="مخطط بياني يعبر عن المعادلة f(x) = x+1" /></p>
+
+<p>وإذا نظرنا ﻷي دالة تحوي أعدادًا حقيقة فقط، فسنجد أن سلوكها مفهومًا وواضحًا، سواء كانت تعطي خط مستقيم أو منحني. 
+و لنعد الآن إلى الأعداد التخيلية، حيث نسمي أي دالة تحوي عددًا تخيليًا بالعدد المعقد:</p>
+
+\[f(x) = (x + 0.8i)^2\]
+
+<p>وإذا أعطينا x قيمة 0.6 مثلًا، لنسير بخطوات بسيطة، ثم عوضنا الناتج مجددًا بـ x، فنجد أن سلوك الدالة غير مفهوم، فالقيمة الناتجة مختلفة تمامًا في كل مرة، وينتج الرسم البياني التالي:</p>
+
+<p><img src="/assets/posts/9498a9c64c554dd9bf135be7fda7fcb8.png" alt="مخطط بياني يعبر عن المعادلة التي تحوي عددا عقديا" /></p>
+
+<p>حيث نلاحظ أن الخطوات مختلفة في كل مرة ولا يوجد نمط واضح لهذه الدالة. والآن لنسأل أنفسنا، هل هذا السلوك غير الواضح ذو الخطوات المختلفة في كل مرة يمكن أن يُنتج لنا شيئًا مفيدًا؟</p>
+
+<p>لقد قام علماء الرياضيات بدراسة هذا السلوك الغريب في سبعينيات القرن الماضي، حيث قاموا بدراسة مجموعة من الأعداد المعقدة c حيث لا تصل فيها الدالة التالية إلى اللانهاية:</p>
+
+\[f_c(z) = z^2 + c\]
+
+<p>بإعطاء z القيمة 0 وإنشاء سلسلة تبدأ من $f_c(0)$ ثم $f_c(f_c(0))$ إلى آخره..تبقى القيم الناتجة محصورة بمجال محدود. وقد تم تمثيل القيم الناتجة من هذه المجموعة بشكل مرئي، حيث تم تمثيل ذلك بمربع على محور الإحداثيات ضمن مجال معين، حيث يكون كل مربع جزئي فيه هو القيمة المدخلة للدالة، وإذا كانت القيمة الناتجة تقع ضمن المربع فيتم تلوين المربع باللون الأسود، أما إذا كانت القيمة الناتجة من الدالة تقع خارج المربع ذلك، فيتم إعطاء المربع الجزئي لون مختلف بناء على مدى خروج القيمة عن المربع المحدد. وقد نتج عن ذلك التمثيل التالي:</p>
+
+<p><img src="/assets/posts/32e5a321c24b4fdd8ef55aa46e5578f5.png" alt="Benoit Mandelbrot" /></p>
+
+<p>حيث نرى المربع الكبير الذي ذكرناه والمربعات الجزئية التي تحمل ألوان مختلفة وفق ما ذكرناه أيضًا. بعد ذلك قام عالم الرياضيات بينوا ماندلبرو (Benoit Mandelbrot) الظاهر في الصورة أدناه بتمثيل ذلك بتصوير عالي الدقة.</p>
+
+<p><img src="/assets/posts/3f0e92bfe9a34146a084a66a8d678ee9.webp" alt="صورة لعالم الرياضيات بينوا ماندلبرو" />
+ونتج عن ذلك الصورة التالية، حيث نرى أنه باستمرار تكبيرها سيظهر لنا دائمًا أشكال جديدة مختلفة وغير مكررة، وذلك بسبب السلوك غير النمطي للأعداد المعقدة.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/File:Mandelbrot_sequence_new.gif">https://en.wikipedia.org/wiki/File:Mandelbrot_sequence_new.gif</a></p>
+
+<p>وتم تسمية هذه المجموعة بمجموعة ماندلبرو  (بالإنجليزية Mandelbrot set ) بناء على العالم الأخير المذكور.</p>
+
+<p>تم إنتاج الصورة أعلاه عام 1980 ومن أحد أجهزة IBM، حيث كانت الحواسيب باهظة الثمن وغير متوفرة للجميع، ومن هنا نكون قد فتحنا الباب لتصاوير غريبة يمكن أن تنتجها الحواسيب، خاصة بعد تطورها ورخص ثمنها وإتاحتها للعامة.</p>
+
+<p>وفي سياق آخر ضمن حديثنا عن المرئيات، أصبح لدينا كم كبير من الأفلام المصنوعة من خلال الحاسوب، ونتكلم بالأخص عن الأفلام المعمولة بالكامل (مكان التصوير والإضاءة واللقطات) من خلال الحاسوب مثل الأفلام ثلاثية الأبعاد.
+<img src="/assets/posts/cac10f44fa1c43a19d12e450e475f7b4.webp" alt="أفلام ثري دي" /></p>
+
+<p>لا أدري إن كنا نحتاج هنا للتذكير بأن البرامج التي تُنتج هذه الأفلام هي برمجيات معمولة بلغات البرمجة، وأن عملية إنتاج وتصدير الأفلام (rendering) هي عبارة عن عمليات حسابية. بل في الواقع، لا نحتاج أصلًا لوجود واجهة (محررات الفيديو) لصناعة المقاطع المصورة، فالواجهات بالأصل وُضعت لعامة الناس التي لا تعلم البرمجة لتسهيل استخدامهم للحاسوب ولوظائفه، وهناك الكثير من المقاطع المصورة المصنوعة بدون أي محرر فيديو وباستخدام البرمجة بشكل مباشر، وإذا أردنا مثالًا حديثًا نوعًا ما على ذلك فيمكن ذكر القناة 3Blue1Brown على اليوتيوب، وهي قناة تعليمية  تتناول مواضيع في الرياضيات والفيزياء، وقام منشؤها بتطوير مكتبة للغة بايثون أسماها Manim (Math animation) وهي خاصة بصنع الرسوم المتحركة المتعلقة بالمعادلات الرياضية والرسوم البيانية ثنائية وثلاثية الأبعاد، ويصنع معظم مقاطعه بواسطتها، وبفضل طرحه للمكتبة (الكود البرمجي) بشكل مجاني ومفتوح المصدر، فقد قام المجتمع البرمجي بتطويرها باسم Manim community ووضع شرح وموقع تعريفي لها. والواقع أن مكتبة تحريك الرسوم تلك هي التي أسهمت بشكل رئيسي (برأيي) بجعل مقاطع القناة تبدو أصلية وجديدة، وساهمت طبعًا بتبسيط الأفكار وتوضيحها بشكل غير مسبوق، مما أدى لانتشار المحتوى بشكل كبير وترجمته (دبلجة المقاطع) كذلك لعدة لغات.</p>
+
+<p>وبالحديث عن خوارزميات ما يسمى بـ “الذكاء الصناعي” وخوارزمياته التي تطورت كثيرًا بالتزامن مع تطور الأجهزة وسرعة الحساب، أصبح بالإمكان وباستخدام مودلات تعلم الآلة والتي تسمى Generative models إنتاج صورًا ﻷشخاص غير موجودين في الحقيقة، وذلك عبر دمج عدة صور مع بعضها، مثل أخذ العينين من شخص حقيقي ووضعهم مع أنف من شخص آخر وهكذا، ولكن الصور الناتجة لا تبدو شاذة بسبب تحسين الأعضاء المجمعة لتبدو بشكل متسق ومتناسب، مثل الصورة هذه المولدة تلقائيًا من أحد المودلات تلك:</p>
+
+<p><img src="/assets/posts/c9579e5edaaf4782a1a28bf1ea39c4d3.webp" alt="صورة مولدة عبر الذكاء الصناعي" /></p>
+
+<p>وقد سمعنا كذلك عن خوارزميات اكتشاف العناصر في الصور (object detection)، مثل التي تقوم بالتعرف على الوجه، أو على وجود قطة في الصورة، أو على أرقام لوحة السيارة، وما إلى ذلك. ولكن ما رأيك في العملية العكسية؟ أي إعطاء صورة لا تحوي مثلًا أي كلب فيها، ثم نطلب من مودل تعلم الآلة إيجاد وإبراز كل الكلاب الموجودة في تلك الصورة..لنجرب</p>
+
+<p><img src="/assets/posts/d4c38cc2bc114d53b52c59c210bcb1dd.webp" alt="صورة طحالب في البحر" /></p>
+
+<p>كما ترى فالصورة أعلاه لا تحوي أي كلب فيها، عند طلب إبراز الكلاب في الصورة من مودل تعلم الآلة نحصل على التالي:</p>
+
+<p><img src="/assets/posts/d0d0064fe26144d19f41cb6b8a1a4525.webp" alt="صورة مولدة عبر الذكاء الصناعي" /></p>
+
+<p>وعند طلب زيادة نسبة الإبراز والوضوح للكلاب في الصورة نحصل على التالي:</p>
+
+<p><img src="/assets/posts/e6055de15c1b423f94701d45e51aaf98.webp" alt="صورة مولدة عبر الذكاء الصناعي" /></p>
+
+<p>وكما تلاحظ، فقد نتج لنا أشياء خرافية وأضغاث أحلام. صور مثل الصورة أعلاه أُسميها أنا صورًا مشوهة، ويسميها البعض فن، ولكن البرنامج الذي يولد مثل هذه الصور موضوع بالأصل من أحد مهندسي جوجل باسم DeepDream. فإذا بحثت على الإنترنت عن هذا الاسم ستجد الكثير من الصور المشوهة، أو الكثير من الفن..</p>
+
+<p>وفي سياق المرئيات لا بد أيضًا من الإشارة إلى البرمجيات التي أُطلق عليها Deep fake والتي تقوم باستبدال وجه شخص ما في مقطع مصور بوجه شخص آخر مأخوذًا من صورة. أي يمكن مثلًا وضع وجهك بدلًا من وجه مقدم الأخبار أو رئيس الجمهورية وهو يلقى خطابًا، ويبدو وكأنك أنت من يتحدث، حيث يتم التعرف على أعضاء وأجزاء وجهك في الصورة المعطاة وتحريكها وفقًا لحركة وتعابير وجه الشخص الأصلي في المقطع.. ولكن ماذا عن الصوت؟</p>
+
+<h2 id="الصوتيات">الصوتيات</h2>
+
+<p>لقد بدأ الاهتمام بتمثيل الإشارات الصوتية منذ بداية القرن الماضي مع بالتزامن مع ظهور اختراعات مثل الهاتف والراديو. وقد تحدثنا في مسار “أسس علم الحاسوب” عن طريقة تمثيل تلك الإشارات في الحاسوب.
+وبحديثنا عن البرمجة، فقد ظهرت عدة لغات برمجة تهدف لبرمجة الموسيقا! بعبارة أخرى لتأليف الموسيقا عبر البرمجة، ويتم فيها استخدام الحلقات والشروط والمفاهيم المنطقية ﻷي لغة برمجة. من تلك اللغات لغة sonic pi. بالإضافة لمكتبات مثل مكتبة jfugue و JMusic للغة جافا. وغير ذلك. ويوجد اليوم طبعًا الكثير من برامج تحرير الموسيقى وتأليفها وتوزيعها (المصنوعة بلغات البرمجة المعروفة ومكتباتهاالخاصة للموسيقا، وبواجهات للمستخدم)، ويتم استخدام تلك البرامج في كل الألحان تقريبًا التي يتم إنتاجها في عصرنا الحالي.</p>
+
+<p>ولا يقتصر موضوعنا هنا على تأليف الموسيقا، بل جوانب عدة أخرى، مثل استخراج المعلومات من الملفات الموسيقية (Music information retrieval)، ويشمل ذلك أيضًا عدة تطبيقات، أحدها تصنيف الملفات الموسيقية، مثل موسيقى كلاسيكية وجاز وروك وما إلى ذلك، وهو موضوع بحثي مستمر. وفي نفس السياق تُنشر أبحاث عن تحديد نوع الطائر مثلًا من خلال الصوت، أو تحديد اللغة المستخدمة في المقطع الصوتي، وكلها مواضيع بحثية.</p>
+
+<p>من التطبيقات الأخرى كذلك هو كتابة النوتة الموسيقية بشكل تلقائي من الملفات (Automatic music transcription) ويمكنك العثور اليوم على خدمات عبر الإنترنت توفر ذلك، مثل أن تقوم أنت بالعزف على آلة ما، أو حتى مجرد الغناء، ليتم كتابة النوتة الموسيقية للحن. ولكن إذا احتوى المقطع الموسيقي على عدة آلات، فستنخفض دقة صحة النوتة المولّدة تلقائيًا بشكل كبير.</p>
+
+<p>هذا بالإضافة طبعًا لتطبيقات نستخدمها ونستفيد منها جميعًا اليوم، مثل توليد النص تلقائيًا من المقاطع الصوتية (وهذا مشابه لتوليد النوتة الموسيقية)، وكذلك الترجمة الفورية الآلية. ولكن الدقة هنا (أي صحة النص المولّد) أيضًا تختلف كثيرًا وبحسب لغة المقطع الصوتي ووضوحه.</p>
+
+<p>وكما في المرئيات حيث يمكن إنتاج فيديو مزيف لك، يمكن هنا إنتاج مقطع مزيف لصوتك عبر ما يعرف بـ audio deepfake. والتي يُقال أنا وُضعت بدايةً لأغراض حسنة، مثل إنتاج كتب صوتية بصوتك، وهذا يوفر عليك الكثير من الوقت (رغم انخفاض الجودة مقارنة بقراءة النصوص بنفسك)، كذلك لمساعدة الناس الذين فقدوا صوتهم نتيجة لأمراض معينة على إعادة صوتهم بهذه الطريقة. ولكن ذلك فتح بابًا لاستغلال ذلك تجاريًا ولأغراض سيئة، وقد سمعنا بالفعل عن العديد من عمليات الاحتيال التي حدثت مؤخرًا والتي اعتمدت بشكل رئيسي على هذه التقنية.</p>
+
+<h2 id="البرمجة-الفنية">البرمجة الفنية</h2>
+
+<p>نناقش هنا بعض الأكواد التي كُتبت حقًا بشكل فني، وأولها هو مفهوم الكود المُبهم (obfuscated code)، يستخدم هذا المصطلح بشكل رئيسي في مجال أمن المعلومات حيث يتم تعديل الكود ليكون غير قابل للقراءة والتحليل، ولكننا نقصد هنا بتعديل الكود ﻷسباب فنية بحتة، بحيث يشكّل لوحة فنية! فمن المعلوم أن لغات البرمجة تتجاهل الفراغات، لذا يمكن عبر استخدام العدد الذي نرغب من الفراغات ضمن الكود إنشاء أشكال مختلفة للكود، كما في المثال التالي:</p>
+
+<p><img src="/assets/posts/663c62b28b174ae08135d82efeea39cf.png" alt="obfuscated code" /></p>
+
+<p>وهو كود مكتوب بلغة سي، وتم تعديله بالفراغات ليأخذ شكل الكعكة (donut)، وعند تشغيله يظهر الشكل المتحرك التالي على التيرمينال (موجه الأوامر):</p>
+
+<p><a href="https://qph.cf2.quoracdn.net/main-qimg-b8bd8e9ef1120fc69f2766449763d627">https://qph.cf2.quoracdn.net/main-qimg-b8bd8e9ef1120fc69f2766449763d627</a></p>
+
+<p>مصدر الكود: <a href="https://www.a1k0n.net/2006/09/15/obfuscated-c-donut.html">https://www.a1k0n.net/2006/09/15/obfuscated-c-donut.html</a></p>
+
+<p>وهناك الكثير من الأمثلة المشابهة، صحيح أن الكود هذا لا يحوي أي فائدة، ولكننا نتحدث عن الفن هنا..</p>
+
+<p>وبعيدًا عن موضوع الأكواد المعدلة، الكود التالي هو كود بسيط بلغة جافا سكريبت، هل يمكنك تخمين ناتجه؟</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="rouge-code"><pre><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span><span class="c1">//(c)2010 Oscar Toledo G.</span>
+<span class="kd">var</span> <span class="nx">B</span><span class="p">,</span><span class="nx">i</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span><span class="nx">u</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">I</span><span class="o">=</span><span class="p">[],</span><span class="nx">G</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span><span class="nx">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nx">z</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span><span class="nx">M</span><span class="o">=</span><span class="mi">1</span><span class="nx">e4</span><span class="p">,</span><span class="nx">l</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span>
+<span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">306</span><span class="p">,</span><span class="mi">297</span><span class="p">,</span><span class="mi">495</span><span class="p">,</span><span class="mi">846</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">11</span><span class="p">,</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span><span class="o">-</span><span class="mi">11</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span><span class="o">-</span><span class="mi">21</span><span class="p">,</span><span class="o">-</span><span class="mi">19</span><span class="p">,</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">21</span><span class="p">];</span><span class="kd">function</span>
+<span class="nf">X</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="nx">c</span><span class="p">,</span><span class="nx">h</span><span class="p">,</span><span class="nx">e</span><span class="p">,</span><span class="nx">S</span><span class="p">,</span><span class="nx">s</span><span class="p">){</span><span class="kd">var</span> <span class="nx">t</span><span class="p">,</span><span class="nx">o</span><span class="p">,</span><span class="nx">L</span><span class="p">,</span><span class="nx">E</span><span class="p">,</span><span class="nx">d</span><span class="p">,</span><span class="nx">O</span><span class="o">=</span><span class="nx">e</span><span class="p">,</span><span class="nx">N</span><span class="o">=-</span><span class="nx">M</span><span class="o">*</span><span class="nx">M</span><span class="p">,</span><span class="nx">K</span><span class="o">=</span><span class="mi">78</span><span class="o">-</span><span class="nx">h</span><span class="o">&lt;&lt;</span><span class="nx">x</span><span class="p">,</span><span class="nx">p</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">n</span><span class="p">,</span><span class="nx">m</span><span class="p">,</span><span class="nx">A</span><span class="p">,</span><span class="nx">q</span><span class="p">,</span><span class="nx">r</span><span class="p">,</span><span class="nx">C</span><span class="p">,</span><span class="nx">J</span><span class="p">,</span><span class="nx">a</span><span class="o">=</span><span class="nx">y</span><span class="p">?</span><span class="o">-</span><span class="nx">x</span><span class="p">:</span><span class="nx">x</span><span class="p">;</span>
+<span class="nx">y</span><span class="o">^=</span><span class="mi">8</span><span class="p">;</span><span class="nx">G</span><span class="o">++</span><span class="p">;</span><span class="nx">d</span><span class="o">=</span><span class="nx">w</span><span class="o">||</span><span class="nx">s</span><span class="o">&amp;&amp;</span><span class="nx">s</span><span class="o">&gt;=</span><span class="nx">h</span><span class="o">&amp;&amp;</span><span class="nc">X</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">&gt;</span><span class="nx">M</span><span class="p">;</span><span class="k">do</span><span class="p">{</span><span class="k">if</span><span class="p">(</span><span class="nx">o</span><span class="o">=</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="o">=</span><span class="nx">O</span><span class="p">]){</span><span class="nx">q</span><span class="o">=</span><span class="nx">o</span><span class="o">&amp;</span><span class="nx">z</span><span class="o">^</span><span class="nx">y</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="nx">q</span><span class="o">&lt;</span><span class="mi">7</span><span class="p">){</span><span class="nx">A</span><span class="o">=</span><span class="nx">q</span><span class="o">--&amp;</span>
+<span class="mi">2</span><span class="p">?</span><span class="mi">8</span><span class="p">:</span><span class="mi">4</span><span class="p">;</span><span class="nx">C</span><span class="o">=</span><span class="nx">o</span><span class="o">-</span><span class="mi">9</span><span class="o">&amp;</span><span class="nx">z</span><span class="p">?[</span><span class="mi">53</span><span class="p">,</span><span class="mi">47</span><span class="p">,</span><span class="mi">61</span><span class="p">,</span><span class="mi">51</span><span class="p">,</span><span class="mi">47</span><span class="p">,</span><span class="mi">47</span><span class="p">][</span><span class="nx">q</span><span class="p">]:</span><span class="mi">57</span><span class="p">;</span><span class="k">do</span><span class="p">{</span><span class="nx">r</span><span class="o">=</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="o">+=</span><span class="nx">l</span><span class="p">[</span><span class="nx">C</span><span class="p">]];</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">w</span><span class="o">|</span><span class="nx">p</span><span class="o">==</span><span class="nx">w</span><span class="p">){</span><span class="nx">g</span><span class="o">=</span><span class="nx">q</span><span class="o">|</span><span class="nx">p</span><span class="o">+</span><span class="nx">a</span><span class="o">-</span><span class="nx">S</span><span class="p">?</span><span class="mi">0</span>
+<span class="p">:</span><span class="nx">S</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">r</span><span class="o">&amp;</span><span class="p">(</span><span class="o">!!</span><span class="nx">q</span><span class="o">|</span><span class="nx">A</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">||!!</span><span class="nx">g</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="nx">r</span><span class="o">+</span><span class="mi">1</span><span class="o">&amp;</span><span class="nx">z</span><span class="o">^</span><span class="nx">y</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">9</span><span class="o">&amp;&amp;</span><span class="nx">q</span><span class="o">|</span><span class="nx">A</span><span class="o">&gt;</span><span class="mi">2</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">m</span><span class="o">=!</span><span class="p">(</span><span class="nx">r</span><span class="o">-</span><span class="mi">2</span><span class="o">&amp;</span><span class="mi">7</span><span class="p">))</span><span class="k">return</span> <span class="nx">y</span><span class="o">^=</span><span class="mi">8</span><span class="p">,</span><span class="nx">I</span><span class="p">[</span><span class="nx">G</span><span class="o">--</span><span class="p">]</span><span class="o">=</span>
+<span class="nx">O</span><span class="p">,</span><span class="nx">K</span><span class="p">;</span><span class="nx">J</span><span class="o">=</span><span class="nx">n</span><span class="o">=</span><span class="nx">o</span><span class="o">&amp;</span><span class="nx">z</span><span class="p">;</span><span class="nx">E</span><span class="o">=</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="o">-</span><span class="nx">a</span><span class="p">]</span><span class="o">&amp;</span><span class="nx">z</span><span class="p">;</span><span class="nx">t</span><span class="o">=</span><span class="nx">q</span><span class="o">|</span><span class="nx">E</span><span class="o">-</span><span class="mi">7</span><span class="p">?</span><span class="nx">n</span><span class="p">:(</span><span class="nx">n</span><span class="o">+=</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="o">^</span><span class="nx">y</span><span class="p">);</span><span class="k">while</span><span class="p">(</span><span class="nx">n</span><span class="o">&lt;=</span><span class="nx">t</span><span class="p">){</span><span class="nx">L</span><span class="o">=</span><span class="nx">r</span><span class="p">?</span><span class="nx">l</span><span class="p">[</span><span class="nx">r</span><span class="o">&amp;</span><span class="mi">7</span><span class="o">|</span><span class="mi">32</span><span class="p">]</span><span class="o">-</span><span class="nx">h</span><span class="o">-</span><span class="nx">q</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span><span class="k">if</span><span class="p">(</span>
+<span class="nx">s</span><span class="p">)</span><span class="nx">L</span><span class="o">+=</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="nx">q</span><span class="p">?</span><span class="nx">l</span><span class="p">[(</span><span class="nx">p</span><span class="o">-</span><span class="nx">p</span><span class="o">%</span><span class="nx">x</span><span class="p">)</span><span class="o">/</span><span class="nx">x</span><span class="o">+</span><span class="mi">37</span><span class="p">]</span><span class="o">-</span><span class="nx">l</span><span class="p">[(</span><span class="nx">O</span><span class="o">-</span><span class="nx">O</span><span class="o">%</span><span class="nx">x</span><span class="p">)</span><span class="o">/</span><span class="nx">x</span><span class="o">+</span><span class="mi">37</span><span class="p">]</span><span class="o">+</span><span class="nx">l</span><span class="p">[</span><span class="nx">p</span><span class="o">%</span><span class="nx">x</span><span class="o">+</span><span class="mi">38</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="nx">q</span><span class="p">?</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="nx">l</span><span class="p">[</span><span class="nx">O</span><span class="o">%</span><span class="nx">x</span><span class="o">+</span><span class="mi">38</span><span class="p">]</span><span class="o">+</span><span class="p">(</span><span class="nx">o</span><span class="o">&amp;</span><span class="mi">16</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">:</span>
+<span class="o">!!</span><span class="nx">m</span><span class="o">*</span><span class="mi">9</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="nx">q</span><span class="p">?</span><span class="o">!</span><span class="p">(</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">^</span><span class="nx">n</span><span class="p">)</span><span class="o">+!</span><span class="p">(</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">^</span><span class="nx">n</span><span class="p">)</span><span class="o">+</span><span class="nx">l</span><span class="p">[</span><span class="nx">n</span><span class="o">&amp;</span><span class="mi">7</span><span class="o">|</span><span class="mi">32</span><span class="p">]</span><span class="o">-</span><span class="mi">99</span><span class="o">+!!</span><span class="nx">g</span><span class="o">*</span><span class="mi">99</span><span class="o">+</span><span class="p">(</span><span class="nx">A</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">):</span><span class="mi">0</span><span class="p">)</span><span class="o">+!</span><span class="p">(</span><span class="nx">E</span><span class="o">^</span><span class="nx">y</span><span class="o">^</span><span class="mi">9</span><span class="p">);</span><span class="k">if</span><span class="p">(</span><span class="nx">s</span><span class="o">&gt;</span><span class="nx">h</span>
+<span class="o">||</span><span class="mi">1</span><span class="o">&lt;</span><span class="nx">s</span><span class="o">&amp;</span><span class="nx">s</span><span class="o">==</span><span class="nx">h</span><span class="o">&amp;&amp;</span><span class="nx">L</span><span class="o">&gt;</span><span class="nx">z</span><span class="o">|</span><span class="nx">d</span><span class="p">){</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="p">]</span><span class="o">=</span><span class="nx">n</span><span class="p">,</span><span class="nx">I</span><span class="p">[</span><span class="nx">O</span><span class="p">]</span><span class="o">=</span><span class="nx">m</span><span class="p">?(</span><span class="nx">I</span><span class="p">[</span><span class="nx">g</span><span class="p">]</span><span class="o">=</span><span class="nx">I</span><span class="p">[</span><span class="nx">m</span><span class="p">],</span><span class="nx">I</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span><span class="nx">g</span><span class="p">?</span><span class="nx">I</span><span class="p">[</span><span class="nx">g</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span><span class="nx">L</span><span class="o">-=</span><span class="nc">X</span><span class="p">(</span><span class="nx">s</span><span class="o">&gt;</span><span class="nx">h</span><span class="o">|</span><span class="nx">d</span><span class="p">?</span><span class="mi">0</span><span class="p">:</span><span class="nx">p</span><span class="p">,</span><span class="nx">L</span>
+<span class="o">-</span><span class="nx">N</span><span class="p">,</span><span class="nx">h</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nx">I</span><span class="p">[</span><span class="nx">G</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span><span class="nx">J</span><span class="o">=</span><span class="nx">q</span><span class="o">|</span><span class="nx">A</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">?</span><span class="mi">0</span><span class="p">:</span><span class="nx">p</span><span class="p">,</span><span class="nx">s</span><span class="p">);</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="nx">h</span><span class="o">||</span><span class="nx">s</span><span class="o">-</span><span class="mi">1</span><span class="o">|</span><span class="nx">B</span><span class="o">-</span><span class="nx">O</span><span class="o">|</span><span class="nx">i</span><span class="o">-</span><span class="nx">n</span><span class="o">|</span><span class="nx">p</span><span class="o">-</span><span class="nx">b</span><span class="o">|</span><span class="nx">L</span><span class="o">&lt;-</span><span class="nx">M</span><span class="p">))</span><span class="k">return</span> <span class="nc">W</span><span class="p">(),</span><span class="nx">G</span><span class="o">--</span><span class="p">,</span><span class="nx">u</span><span class="o">=</span><span class="nx">J</span><span class="p">;</span>
+<span class="nx">J</span><span class="o">=</span><span class="nx">q</span><span class="o">-</span><span class="mi">1</span><span class="o">|</span><span class="nx">A</span><span class="o">&lt;</span><span class="mi">7</span><span class="o">||</span><span class="nx">m</span><span class="o">||!</span><span class="nx">s</span><span class="o">|</span><span class="nx">d</span><span class="o">|</span><span class="nx">r</span><span class="o">|</span><span class="nx">o</span><span class="o">&lt;</span><span class="nx">z</span><span class="o">||</span><span class="nc">X</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">&gt;</span><span class="nx">M</span><span class="p">;</span><span class="nx">I</span><span class="p">[</span><span class="nx">O</span><span class="p">]</span><span class="o">=</span><span class="nx">o</span><span class="p">;</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="p">]</span><span class="o">=</span><span class="nx">r</span><span class="p">;</span><span class="nx">m</span><span class="p">?(</span><span class="nx">I</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span><span class="o">=</span><span class="nx">I</span><span class="p">[</span><span class="nx">g</span><span class="p">],</span><span class="nx">I</span><span class="p">[</span><span class="nx">g</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<span class="nx">g</span><span class="p">?</span><span class="nx">I</span><span class="p">[</span><span class="nx">g</span><span class="p">]</span><span class="o">=</span><span class="mi">9</span><span class="o">^</span><span class="nx">y</span><span class="p">:</span><span class="mi">0</span><span class="p">;}</span><span class="k">if</span><span class="p">(</span><span class="nx">L</span><span class="o">&gt;</span><span class="nx">N</span><span class="o">||</span><span class="nx">s</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="nx">L</span><span class="o">==</span><span class="nx">N</span><span class="o">&amp;&amp;!</span><span class="nx">h</span><span class="o">&amp;&amp;</span><span class="nb">Math</span><span class="p">.</span><span class="nf">random</span><span class="p">()</span><span class="o">&lt;</span><span class="p">.</span><span class="mi">5</span><span class="p">){</span><span class="nx">I</span><span class="p">[</span><span class="nx">G</span><span class="p">]</span><span class="o">=</span><span class="nx">O</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="nx">s</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">h</span><span class="o">&amp;&amp;</span><span class="nx">c</span><span class="o">-</span><span class="nx">L</span>
+<span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span><span class="k">return</span> <span class="nx">y</span><span class="o">^=</span><span class="mi">8</span><span class="p">,</span><span class="nx">G</span><span class="o">--</span><span class="p">,</span><span class="nx">L</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">h</span><span class="p">)</span><span class="nx">i</span><span class="o">=</span><span class="nx">n</span><span class="p">,</span><span class="nx">B</span><span class="o">=</span><span class="nx">O</span><span class="p">,</span><span class="nx">b</span><span class="o">=</span><span class="nx">p</span><span class="p">;}</span><span class="nx">N</span><span class="o">=</span><span class="nx">L</span><span class="p">;}</span><span class="nx">n</span><span class="o">+=</span><span class="nx">J</span><span class="o">||</span><span class="p">(</span><span class="nx">g</span><span class="o">=</span><span class="nx">p</span><span class="p">,</span><span class="nx">m</span><span class="o">=</span><span class="nx">p</span><span class="o">&lt;</span><span class="nx">O</span><span class="p">?</span><span class="nx">g</span><span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="nx">g</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span><span class="nx">I</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span><span class="o">&lt;</span><span class="nx">z</span><span class="o">|</span><span class="nx">I</span><span class="p">[</span>
+<span class="nx">m</span><span class="o">+</span><span class="nx">O</span><span class="o">-</span><span class="nx">p</span><span class="p">]</span><span class="o">||</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="o">+=</span><span class="nx">p</span><span class="o">-</span><span class="nx">O</span><span class="p">])?</span><span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="p">;}}}}</span><span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="nx">r</span><span class="o">&amp;</span><span class="nx">q</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">||</span><span class="p">(</span><span class="nx">p</span><span class="o">=</span><span class="nx">O</span><span class="p">,</span><span class="nx">q</span><span class="o">|</span><span class="nx">A</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">|</span><span class="nx">o</span><span class="o">&gt;</span><span class="nx">z</span><span class="o">&amp;!</span><span class="nx">r</span><span class="o">&amp;&amp;++</span><span class="nx">C</span><span class="o">*--</span><span class="nx">A</span><span class="p">));}}}</span><span class="k">while</span><span class="p">(</span>
+<span class="o">++</span><span class="nx">O</span><span class="o">&gt;</span><span class="mi">98</span><span class="p">?</span><span class="nx">O</span><span class="o">=</span><span class="mi">20</span><span class="p">:</span><span class="nx">e</span><span class="o">-</span><span class="nx">O</span><span class="p">);</span><span class="k">return</span> <span class="nx">y</span><span class="o">^=</span><span class="mi">8</span><span class="p">,</span><span class="nx">G</span><span class="o">--</span><span class="p">,</span><span class="nx">N</span><span class="o">+</span><span class="nx">M</span><span class="o">*</span><span class="nx">M</span><span class="o">&amp;&amp;</span><span class="nx">N</span><span class="o">&gt;-</span><span class="nx">K</span><span class="o">+</span><span class="mi">1924</span><span class="o">|</span><span class="nx">d</span><span class="p">?</span><span class="nx">N</span><span class="p">:</span><span class="mi">0</span><span class="p">;}</span><span class="nx">B</span><span class="o">=</span><span class="nx">i</span><span class="o">=</span><span class="nx">y</span><span class="o">=</span><span class="nx">u</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="k">while</span><span class="p">(</span><span class="nx">B</span><span class="o">++&lt;</span>
+<span class="mi">120</span><span class="p">)</span><span class="nx">I</span><span class="p">[</span><span class="nx">B</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nx">B</span><span class="o">%</span><span class="nx">x</span><span class="p">?</span><span class="nx">B</span><span class="o">/</span><span class="nx">x</span><span class="o">%</span><span class="nx">x</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">|</span><span class="nx">B</span><span class="o">%</span><span class="nx">x</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">?</span><span class="mi">7</span><span class="p">:</span><span class="nx">B</span><span class="o">/</span><span class="nx">x</span><span class="o">&amp;</span><span class="mi">4</span><span class="p">?</span><span class="mi">0</span><span class="p">:</span><span class="nx">l</span><span class="p">[</span><span class="nx">i</span><span class="o">++</span><span class="p">]</span><span class="o">|</span><span class="mi">16</span><span class="p">:</span><span class="mi">7</span><span class="p">;</span><span class="k">for</span><span class="p">(</span><span class="nx">a</span><span class="o">=</span>
+<span class="dl">"</span><span class="s2">&lt;table cellspacing=0 align=center&gt;</span><span class="dl">"</span><span class="p">,</span><span class="nx">i</span><span class="o">=</span><span class="mi">18</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">;</span><span class="nx">a</span><span class="o">+=++</span><span class="nx">i</span><span class="o">%</span><span class="mi">10</span><span class="o">-</span><span class="mi">9</span><span class="p">?</span>
+<span class="dl">"</span><span class="s2">&lt;th width=60 height=60 onclick=Y(</span><span class="dl">"</span><span class="o">+</span><span class="nx">i</span><span class="o">+</span><span class="dl">"</span><span class="s2">) id=o</span><span class="dl">"</span><span class="o">+</span><span class="nx">i</span><span class="o">+</span>
+<span class="dl">"</span><span class="s2"> style='line-height:50px;font-size:50px;border:2px solid #dde' bgcolor=#</span><span class="dl">"</span><span class="o">+</span>
+<span class="p">(</span><span class="nx">i</span><span class="o">*</span><span class="p">.</span><span class="mi">9</span><span class="o">&amp;</span><span class="mi">1</span><span class="p">?</span><span class="dl">"</span><span class="s2">c0c</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">f0f</span><span class="dl">"</span><span class="p">)</span><span class="o">+</span><span class="dl">"</span><span class="s2">0f0&gt;</span><span class="dl">"</span><span class="p">:(</span><span class="nx">i</span><span class="o">++</span><span class="p">,</span><span class="dl">"</span><span class="s2">&lt;tr&gt;</span><span class="dl">"</span><span class="p">));</span>
+<span class="nx">a</span><span class="o">+=</span><span class="dl">"</span><span class="s2">&lt;th colspan=8&gt;&lt;select id=t style='font-size:20px'&gt;&lt;option&gt;&amp;#9819;&lt;option&gt;</span><span class="dl">"</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="nx">a</span><span class="o">+</span><span class="dl">"</span><span class="s2">&amp;#9820;&lt;option&gt;&amp;#9821;&lt;option&gt;&amp;#9822;&lt;/select&gt;&lt;/table&gt;</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">function</span> <span class="nf">W</span><span class="p">(){</span><span class="nx">B</span><span class="o">=</span><span class="nx">b</span><span class="p">;</span><span class="k">for</span><span class="p">(</span><span class="nx">p</span><span class="o">=</span><span class="mi">21</span><span class="p">;</span><span class="nx">p</span><span class="o">&lt;</span><span class="mi">99</span><span class="p">;</span><span class="o">++</span><span class="nx">p</span><span class="p">)</span><span class="k">if</span><span class="p">(</span><span class="nx">q</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">o</span><span class="dl">"</span><span class="o">+</span><span class="nx">p</span><span class="p">)){</span><span class="nx">q</span><span class="p">.</span>
+<span class="nx">innerHTML</span><span class="o">=</span><span class="dl">"</span><span class="se">\</span><span class="s2">xa0</span><span class="se">\</span><span class="s2">u265f</span><span class="se">\</span><span class="s2">u265a</span><span class="se">\</span><span class="s2">u265e</span><span class="se">\</span><span class="s2">u265d</span><span class="se">\</span><span class="s2">u265c</span><span class="se">\</span><span class="s2">u265b  </span><span class="se">\</span><span class="s2">u2659</span><span class="se">\</span><span class="s2">u2654</span><span class="se">\</span><span class="s2">u2658</span><span class="se">\</span><span class="s2">u2657</span><span class="se">\</span><span class="s2">u2656</span><span class="se">\</span><span class="s2">u2655</span><span class="dl">"</span><span class="p">.</span><span class="nf">charAt</span><span class="p">(</span><span class="nx">I</span><span class="p">[</span><span class="nx">p</span><span class="p">]</span><span class="o">&amp;</span><span class="nx">z</span><span class="p">);</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">borderColor</span><span class="o">=</span><span class="nx">p</span><span class="o">==</span><span class="nx">B</span><span class="p">?</span><span class="dl">"</span><span class="s2">red</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">#dde</span><span class="dl">"</span><span class="p">;}}</span><span class="nc">W</span><span class="p">();</span>
+<span class="kd">function</span> <span class="nf">Y</span><span class="p">(</span><span class="nx">s</span><span class="p">){</span><span class="nx">i</span><span class="o">=</span><span class="p">(</span><span class="nx">I</span><span class="p">[</span><span class="nx">s</span><span class="p">]</span><span class="o">^</span><span class="nx">y</span><span class="p">)</span><span class="o">&amp;</span><span class="nx">z</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="o">&gt;</span><span class="mi">8</span><span class="p">){</span><span class="nx">b</span><span class="o">=</span><span class="nx">s</span><span class="p">;</span><span class="nc">W</span><span class="p">();}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">B</span><span class="o">&amp;&amp;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mi">9</span><span class="p">){</span><span class="nx">b</span><span class="o">=</span><span class="nx">s</span><span class="p">;</span><span class="nx">i</span><span class="o">=</span><span class="nx">I</span><span class="p">[</span><span class="nx">B</span><span class="p">]</span><span class="o">&amp;</span><span class="nx">z</span><span class="p">;</span><span class="k">if</span><span class="p">((</span><span class="nx">i</span><span class="o">&amp;</span>
+<span class="mi">7</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="o">&amp;</span><span class="p">(</span><span class="nx">b</span><span class="o">&lt;</span><span class="mi">29</span><span class="o">|</span><span class="nx">b</span><span class="o">&gt;</span><span class="mi">90</span><span class="p">))</span><span class="nx">i</span><span class="o">=</span><span class="mi">14</span><span class="o">-</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">t</span><span class="dl">"</span><span class="p">).</span><span class="nx">selectedIndex</span><span class="o">^</span><span class="nx">y</span><span class="p">;</span><span class="nc">X</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span>
+<span class="nx">u</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="k">if</span><span class="p">(</span><span class="nx">y</span><span class="p">)</span><span class="nf">setTimeout</span><span class="p">(</span><span class="dl">"</span><span class="s2">X(0,0,0,21,u,2/*ply*/),X(0,0,0,21,u,1)</span><span class="dl">"</span><span class="p">,</span><span class="mi">250</span><span class="p">);}}</span>
+<span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>يقوم الكود أعلاه بإنشاء لعبة شطرنج على المتصفح! نعم لقد قرأتها صحيحًا، ليس مجرد رسم لوح شطرنج، بل لعبة جاهزة للعب، وذلك بكود بسيط قصير في الجافا سكريبت يحوي كل قواعد الشطرنج.</p>
+
+<p><img src="/assets/posts/504b3bedec864c42be6923b87c567d75.png" alt="لوح شطرنج" /></p>
+
+<p>المصدر: <a href="https://nanochess.org/chess4.html">https://nanochess.org/chess4.html</a></p>
+
+<p>وهناك الكثير من الأمثلة على أكواد قصيرة جدًا تقوم بإعطاء نتائج مذهلة.
+دعني أسرد لك هذه الطرفة، حيث يُروى أنه في مسابقة للأكواد المعدلة (obfuscated codes) عام 2005، قام أحدهم بالاشتراك بالمسابقة بملف فارغ، وأرفق معه الشرح بأن الملف هو عبارة عن كود، إذا تم تنفيذه على المفسر (compiler) فلن يعطي أي ناتج، بعبارة أخرى، فالملف هو عبارة عن كود يقوم عند تنفيذه بطباعة الكود المصدري الخاص به، أي أنه كود يطبع نفسه. طبعا هنا اضطرت اللجنة لإضافة قاعدة للاشتراك بالمسابقة هو أن الكود يجب أن يتألف من حرف واحد على الأقل، ولكن إذا عدنا لفكرة “كود يطبع نفسه” فهذا شيء ليس سهلا أبدا، ولكن البشر يحبون فعل الأشياء الغريبة، فقد قاموا بالفعل بعمل ذلك..</p>
+
+<p>فالكود التالي المكتوب بلغة سي شارب يقوم بطباعة نفسه عند التنفيذ</p>
+
+<p><img src="/assets/posts/abb48b3369db4fc49893c92584c39266.webp" alt="مثال على كود يطبع نفسه بلغة سي شارب" /></p>
+
+<p>ولكنه ليس مبهرًا تمامًا، إليك ما هو أقوى من ذلك، فالسطر التالي في جافا سكريبت يقوم تمامًا بطباعة نفسه، ويمكنك تجربته مباشرة على الـ console في المتصفح لديك:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="o">=</span><span class="nx">_</span><span class="o">=&gt;</span><span class="s2">`$=</span><span class="p">${</span><span class="nx">$</span><span class="p">}</span><span class="s2">;$()`</span><span class="p">;</span><span class="nf">$</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/assets/posts/3897f2a46925470eafc3b713ca429197.webp" alt="مثال على كود يطبع نفسه بلغة جافاسكريبت" /></p>
+
+<p>ولكن هل هذا ممكن خارج لغات البرمجة بلغة مثل HTML؟ فمن المعلوم أن HTML ليست لغة برمجة وإنما لغة تنسيقية، ولكن هناك من قام بذلك بلغة HTML بالاستعانة أيضًا بلغة CSS التنسيقية أيضًا.</p>
+
+<p><img src="/assets/posts/0c9e01c3713343939e11359f1a27c171.webp" alt="مثال على كود يطبع نفسه بلغة HTML" /></p>
+
+<p>الفكرة الأغرب من كل ما ذكرناه إلى الآن موجودة في الكود التالي:</p>
+
+<p><img src="/assets/posts/39201c2480be4083bf0cccaf039ce44b.webp" alt="مثال على كود يطبع نفسه" /></p>
+
+<p>إذا نظرت بتمعن إلى الكود أعلاه، ستجد أن بداخله حيلة ذكية، فهو يحوي رموز تستخدم لإضافة تعليق بلغات مختلفة، أي أننا إذا قرأناه على أنه كود بلغة بايثون فنتجاهل بعض الأسطر والتعليمات بسبب وجود رمز التعليق الخاص ببايثون وهو المربع #، وإذا قرأناه على أنه لغة سي فنتجاهل الرموز <em>/ و /</em> الخاصة لإضافة تعليق بلغة سي ولغات أخرى. والسحر في هذا الكود أنه عند تنفيذه بلغة سي سيقوم بطباعة نفسه، وماذا إذا نفذناه على أنه كود بلغة روبي؟ سيقوم أيضًا بطباعة نفسه! هل يمكن ذلك بلغة بايثون؟ نعم سيطبع نفسه أيضًا، حسنًا..هل يمكن تجربته على أنه كود بيرل perl؟ نعم سيطبع نفسه كذلك!</p>
+
+<p>وهنا نكون قد فتحنا الباب لفكرة جديدة، الكود الصالح بأكثر من لغة!</p>
+
+<p>قام الياباني Yusuke Endoh بكتابة كود بلغة روبي بالشكل المعدل التالي:</p>
+
+<p><img src="/assets/posts/8d2c9e589a914c5fb75f5119a172275c.png" alt="مثال على كود يولد نفسه" /></p>
+
+<p>يقوم هذا البرنامج عند تنفيذه بإعطاء كود بلغة Rust، وعند تنفيذ ذلك الكود يعطي كودًا آخرا بلغة scala، والحلقة تستمر لتمر على 128 لغة برمجة إلى الوصول لبايثون والذي يُنتِج كودا بلغة R والذي ينتج كودا بلغة Ratfor يليه كود rc يليه كود REXX والذي ينتج بدوره كود روبي مجددًا. وهذه هي قائمة اللغات التي ينتجها ابتداء من روبي في منتصف اليسار.</p>
+
+<p><img src="/assets/posts/035fc58308.webp" alt="Yusuke Endoh code" /></p>
+
+<p>مصدر الكود على جتهب: <a href="https://github.com/mame/quine-relay">https://github.com/mame/quine-relay</a></p>
+
+<p>من  الواضح أن هذا الكود ليس له أي فائدة، ولكنه مذهل حقًا، وأنا أعتقد أن الذي كتبه ذكي حقًا، وبرأيي أنه يعطينا مثالًا عن الذكاء الحقيقي.</p>
+
+<h2 id="لغات-برمجة-غريبة">لغات برمجة غريبة</h2>
+
+<p>وُضِع مصطلح “لغات البرمجة الباطنية” (esoteric programming languages / esolang)  للدلالة على لغات البرمجة الغريبة التي لم توضع لهدف البرمجة والاستخدام الحقيقي، ولكن لتنفيذ بعض الأفكار الغريبة وإثبات أن ذلك ممكنًا، وكذلك بصفته نوع من الفنون في عالم الحاسوب. من اللغات الغريبة القديمة لغة وُضعت عام 1993 تدعى (أعتذر عن الاسم) Brainfuck، ميزتها أنها صغيرة جدًا، حيث تحوي فقط ثمانية رموز وهي</p>
+
+<p>+-&lt;&gt;[],.</p>
+
+<p>أي أن مفسرها يفهم فقط هذه الرموز ويتجاهل أي حرف أو  رمز آخر، وبذلك يكون البرنامج الذي يطبع عبارة “Hello, world!” بالشكل التالي:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;→&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>من اللغات الغريبة الأخرى لغة شكسبير، حيث يكون الكود فيها عبارة عن مسرحيات لشكسبير! ولذا فطباعة كل حرف فيها يتطلب جملة طويلة، وبالتالي يكون البرنامج الذي يطبع عبارة “Hello, world!” مؤلفًا من ثلاث صفحات تشكل حوارا ضمن مسرحية لشكسبير.</p>
+
+<p>من اللغات الغريبة والمثيرة للاهتمام هي لغة Whitespace، عندما تفتح ملفًا يحوي كود مكتوب بتلك اللغة فلن تجد أي شيء مكتوب، ﻷن الأحرف الوحيدة التي تُفسَّر في هذه اللغة هي الفراغ وال tab والإنتر return. وبالتالي لن تجد أي حرف أو رمز في الكود الخاص بهذه اللغة! إلا على سبيل التعليق. وهذا يعني أيضًا أنه من الممكن إخفاء أكواد هذه اللغة ضمن أي كود أو نص آخر.</p>
+
+<p>ولنطلع على لغة شيف Chef، حيث تبدو الأكواد فيها بشكل وصفات للطبخ. يتألف كل برنامج في هذه اللغة من عنوان (اسم الطبخة) وقائمة بالمتغيرات وقيمهم (المقادير) ومجموعة التعليمات (طريقة التحضير).
+الكود التالي يطبع عبارة “Hello, world!”، ويشرح لك طريقة عمل كعكة بالشوكولا!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+</pre></td><td class="rouge-code"><pre>Hello World Cake with Chocolate sauce.
+
+This prints hello world, while being tastier than Hello World Souffle. The main
+chef makes a " world!" cake, which he puts in the baking dish. When he gets the
+sous chef to make the "Hello" chocolate sauce, it gets put into the baking dish
+and then the whole thing is printed when he refrigerates the sauce. When
+actually cooking, I'm interpreting the chocolate sauce baking dish to be
+separate from the cake one and Liquify to mean either melt or blend depending on
+context.
+
+Ingredients.
+33 g chocolate chips
+100 g butter
+54 ml double cream
+2 pinches baking powder
+114 g sugar
+111 ml beaten eggs
+119 g flour
+32 g cocoa powder
+0 g cake mixture
+
+Cooking time: 25 minutes.
+
+Pre-heat oven to 180 degrees Celsius.
+
+Method.
+Put chocolate chips into the mixing bowl.
+Put butter into the mixing bowl.
+Put sugar into the mixing bowl.
+Put beaten eggs into the mixing bowl.
+Put flour into the mixing bowl.
+Put baking powder into the mixing bowl.
+Put cocoa  powder into the mixing bowl.
+Stir the mixing bowl for 1 minute.
+Combine double cream into the mixing bowl.
+Stir the mixing bowl for 4 minutes.
+Liquify the contents of the mixing bowl.
+Pour contents of the mixing bowl into the baking dish.
+bake the cake mixture.
+Wait until baked.
+Serve with chocolate sauce.
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>المصدر: <a href="https://www.mike-worth.com/2013/03/31/baking-a-hello-world-cake">https://www.mike-worth.com/2013/03/31/baking-a-hello-world-cake</a></p>
+
+<p>الجميل في هذه اللغة أنها تعطي نص له تفسيره في مجالين مختلفين، فالوصفة أعلاه هي وصفة حقيقية يمكن أن تفسرها في مطبخك لتُنتج لك قطعة حلوى لذيذة مغطاة بالشوكولاه، ولكنها في نفس الوقت برنامجًا يمكن أن يفسره الحاسوب ليعطي ناتجًا ما.
+بعيدًا عن النصوص بالكامل، تعتمد لغة  piet على المربعات الملونة، حيث يبدأ تفسير اللغة بمؤشر في الصورة ويسير باتجاه ما، حيث يغير اتجاهه بحسب لون المربع الذي يصل إليه، تحوي هذه اللغة 20 لونًا لكل لون معنى محدد. يطبع البرنامج التالي الكلمة Piet</p>
+
+<p><img src="/assets/posts/bf670843053e467aa31bd4c096e6cd49.png" alt="كود بلغة piet" /></p>
+
+<p>فيما يطبع البرنامج التالي العبارة “Hello World”</p>
+
+<p><img src="/assets/posts/5890cd29635649a78d9a80afb1604c1c.gif" alt="كود بلغة piet" /></p>
+
+<p>تم الاعتماد في فكرة المقال والكثير من محتواه على المحاضرة:
+<a href="https://youtu.be/6avJHaC3C2U">https://youtu.be/6avJHaC3C2U</a></p>]]></content><author><name></name></author><category term="برمجة" /><summary type="html"><![CDATA[استخدامات غريبة للبرمجة تسمع عنها للمرة الأولى!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/posts/381971125cc44d2aa9320cea925ebb2b.jpg" /><media:content medium="image" url="http://localhost:4000/assets/posts/381971125cc44d2aa9320cea925ebb2b.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">المسميات الوظيفية في مجال علم الحاسوب</title><link href="http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/" rel="alternate" type="text/html" title="المسميات الوظيفية في مجال علم الحاسوب" /><published>2023-09-19T00:00:00+03:00</published><updated>2024-04-22T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8</id><content type="html" xml:base="http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/"><![CDATA[<p>تضم القائمة أدناه المناصب الوظيفية الأشهر في إعلانات التوظيف، والتي تخص مجال علم الحاسوب. يتم تحديث القائمة بحسب المستجدات وبمساعدتكم. يمكنكم دائمًا التواصل معنا لتحديث الصفحة وتزويدنا بأي معلومات إضافية لديكم لم يتم ذكرها هنا. 
 انقر على المسمى الوظيفي أدناه للاطلاع على العلوم المطلوبة والمهام الخاصة به. علمًا أن المتطلبات والمهام لكل مسمى وظيفي تختلف من شركة لأخرى وبحسب مكان الشركة وحجمها، وكذلك يوجد مسميات وظيفية تتساوى تقريبًا في المتطلبات والمهام في كثير من الشركات. وتم ذكر تلك الحالات في التفاصيل أدناه.
 انتبه إلى أن التسميات العربية ليست كلها شائعة ومستخدمة، وإنما محاولة مني لتوضيح المسميات بالعربي.</p>
 
@@ -1781,171 +2121,4 @@ by Aurélien Géron.</li>
 
 <p>إلى هنا ويكون الشرح قد انتهى تماما، حيث باقي الأمور في التطبيق ستكون مماثلة ولن يكون هناك أي شيئ جديد.</p>
 
-<p>إذا وجدت أي أمر غير واضح أثناء الشرح أو لديك اقتراحات لتحسينه أو معلومات جديدة لتحديثه فلا تتردد بمراسلتي عبر البريد الإلكتروني أو أحد الروابط الموجودة أسفل الصفحة.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[تلخيص طريقة عمل تطبيق جافا إف إكس مع قاعدة بيانات]]></summary></entry><entry><title type="html">بناء تطبيق جافا إف إكس من الصفر</title><link href="http://localhost:4000/java-project-from-scratch/" rel="alternate" type="text/html" title="بناء تطبيق جافا إف إكس من الصفر" /><published>2021-02-28T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/java-project-from-scratch</id><content type="html" xml:base="http://localhost:4000/java-project-from-scratch/"><![CDATA[<p>مرحبًا.. سأشرح في هذا المقال كيفية عمل تطبيق جافا للحاسوب مع واجهة (JavaFX) وقاعدة بيانات (MySQL)، أي بناء تطبيق متكامل ومن الصفر. النتيجة النهائية لهذا التطبيق ستكون على الشكل التالي:</p>
-
-<p>نافذة تسجيل الدخول</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI1.png" alt="بناء تطبيق جافا FX من الصفر -1" /></p>
-
-<p>النافذة الرئيسية</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI2.png" alt="بناء تطبيق جافا FX من الصفر -2" /></p>
-
-<p>نافذة تحرير المستخدمين حيث يمكن إضافة وحذف مستخدم أو تعديل بياناته</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI3.png" alt="بناء تطبيق جافا FX من الصفر -3" /></p>
-
-<p>وما إلى ذلك..</p>
-
-<p>سأضع لك عند بعض المراحل في الشرح رابطًا للكود البرمجي في حالته عند تلك المرحلة.
-والكود النهائي للتطبيق تجده <a href="https://github.com/Mulham/Java-Project">هنا</a> (إذا أردت تشغيله لديك فاحفظ ملفات الحزمة في مجلد باسم INF202 وليس Java-Project-main، ثم تابع الشرح هنا وطريقة تهيئة بيئة العمل في الصفحة التالية من هذا الشرح)</p>
-
-<ul id="markdown-toc">
-  <li><a href="#ماهي-javafx" id="markdown-toc-ماهي-javafx">ماهي JavaFX</a></li>
-  <li><a href="#البرامج-والمكتبات-المستخدمة" id="markdown-toc-البرامج-والمكتبات-المستخدمة">البرامج والمكتبات المستخدمة</a></li>
-  <li><a href="#وصف-المشروع" id="markdown-toc-وصف-المشروع">وصف المشروع</a></li>
-  <li><a href="#تخطيط-قاعدة-البيانات" id="markdown-toc-تخطيط-قاعدة-البيانات">تخطيط قاعدة البيانات</a></li>
-  <li><a href="#تخطيط-البرنامج" id="markdown-toc-تخطيط-البرنامج">تخطيط البرنامج</a></li>
-  <li><a href="#تقرير-وصف-المشروع" id="markdown-toc-تقرير-وصف-المشروع">تقرير وصف المشروع</a></li>
-  <li><a href="#التنفيذ" id="markdown-toc-التنفيذ">التنفيذ</a></li>
-</ul>
-
-<h2 id="ماهي-javafx">ماهي JavaFX</h2>
-
-<p>باختصار هي عبارة عن منصة <strong>لعمل واجهة</strong> لتطبيقات الجافا، أي لا يمكن عمل تطبيق جافا <strong>مع واجهة</strong> بدونها (أو بدون أحد بديلاتها)،  منصة Swing موجودة ومستخدمة لعمل الواجهات مع الجافا قبل وجود جافا إف إكس، وقد وُضِعت الأخيرة لاستبدال Swing، وتعتبر أفضل من swing في كثير من الأمور منها ماهو برمجي أيضًا حيث تفصل جافا إف إكس ملفات الواجهة عن ملفات الجافا وبالتالي يكون الكود أكثر تنسيقا مما هو عليه في swing.</p>
-
-<p>يمكن مع جافا إف إكس عمل تطبيقات للحاسوب وللموبايل وكذلك للوب.</p>
-
-<h2 id="البرامج-والمكتبات-المستخدمة">البرامج والمكتبات المستخدمة</h2>
-
-<p>فيما يلي البرامج والأدوات اللازمة والتي يجب تنصيبها لتنفيذ التطبيق:</p>
-
-<p>قم بتنصيب البرامج التالية:</p>
-
-<ul>
-  <li>
-    <p>بالنسبة لمحرر الكود (IDE) فسيتم الشرح باستخدام <a href="https://www.jetbrains.com/idea/download">IntelliJ Edu</a> وهو مجاني</p>
-  </li>
-  <li>
-    <p>محرر الواجهة <a href="https://gluonhq.com/products/scene-builder/#download">Gluon scene builder</a> حيث أن مزايا محرر الواجهة الافتراضي والذي يأتي مع محرر الكود محدودة نوعا ما</p>
-  </li>
-  <li>
-    <p><a href="https://dev.mysql.com/downloads/mysql/">MySQL Server</a> من أجل قواعد البيانات. ولشرح تنصيبه على اللينكس اضغط <a href="https://mulham.github.io/mysql-ubuntu/">هنا</a>.</p>
-  </li>
-  <li>
-    <p>تطبيق <a href="https://www.mysql.com/products/workbench/">MySQL workbench</a> لعمل مخطط لقاعدة البيانات وتحويله لقاعدة بيانات SQL</p>
-  </li>
-</ul>
-
-<p>ثم قم بتنزيل الملفات التالية وفك الضغط عنها لأشرح لك لاحقًا كيفية إضافتها لتطبيقك:</p>
-
-<ul>
-  <li>
-    <p><a href="https://gluonhq.com/products/javafx/">JavaFX SDK</a> حيث قم بفك الضغط عن الملف ثم ادخل للمجلد الناتج ثم مجلد lib واحذف ملف src.zip</p>
-  </li>
-  <li>
-    <p>مكتبة <a href="https://dev.mysql.com/downloads/connector/j/">Mysql connector</a> للربط بقاعدة البيانات. (اختر من القائمة Platform Independent وقم بتحميل الملف المضغوط ثم فك الضغط عنه).</p>
-  </li>
-</ul>
-
-<p class="notice"><strong>ملاحظة:</strong> الكثير من الشروحات تتحدث عن إضافة مكتبة Jfoenix لتحسين جمالية التطبيق، إلا أن تلك المكتبة قد توقف دعمها ولم تعد تعمل مع الإصدارات الحديثة من بيئة عمل جافا FX (بعد الإصدار 11 من JavaFX SDK)</p>
-
-<p><strong>ملاحظة2:</strong> وفقًا لما ذُكر فليس من المستحسن إطلاقًا الاعتماد دائمًا على مكتبات خارجية في تطبيقك، ﻷن تلك المكتبات قد يتوقف دعمها (لا يستمر تحديثها) وبالتالي يصبح تطبيقك بالكامل غير صالح عند نقظة زمنية محددة وسيحتاج للتعديل بالكامل ليعمل من جديد. وإن أردت استخدام مكتبة خارجية فتأكد من أنها شائعة وأن مستخدموها كثر وأنها تُحدَّث بشكل دوري.</p>
-
-<h2 id="وصف-المشروع">وصف المشروع</h2>
-
-<p>لدينا مؤسسة تقوم بفحص الأجهزة الطبية وإعطاء تقرير عنها، المطلوب في هذا المشروع هو أتمتة التقرير حول الأجهزة الطبية، حيث كانت تلك المؤسسة تعمل على برنامج الإكسل وفق الجداول لإنتاج وطباعة التقارير المتعلقة بالأجهزة الطبية وتريد تحويل هذه العملية لتطبيق بحيث يقوم هذا التطبيق بترشيح القيم المراد إدخالها تلقائيًا وبعدم قبول القيم غير الصحيحة (والمعرفة مسبقًا) وبالتالي تقليل الأخطاء أثناء ملء وإنتاج تلك التقارير وتسهيل العملية أيضًا.</p>
-
-<p>لذا فإن هذا التطبيق الذي سنقوم ببناؤه سوية يحوي نافذة تسجيل دخول ثم النافذة الرئيسية التي تحوي عدة أقسام (أزرار تأخذ لنافذات مستقلة) بحيث يمكن للمستخدم إضافة مستخدمين وتعديل بياناتهم وحذفهم، وكذلك إضافة شركات بنفس الطريقة والخيارات، كما يمكن إضافة عناصر لقاعدة البيانات وهي الأجهزة الطبية المستخدمة وتاريخ صيانتها الدوري، بالإضافة للمعلومات الخاصة بالتقارير الطبية ذاتها.</p>
-
-<p>التقرير الطبي المراد أتمتته يمكن الوصول له من <a href="https://github.com/Mulham/Java-Project/blob/main/report.pdf">هنا</a> حيث ستلاحظ وجود عدة أقسام في التقرير، القسم الأول معلومات عامة عنه وعن الزبون (الشركة المتقدمة لفحص الجهاز الطبي) والقسم الثاني معلومات عن الجهاز ثم القسم الثالث نتائج التقرير والفحص وأخيرا معلومات الأشخاص الذين قاموا بإنتاج هذا التقرير.</p>
-
-<p>والآن لنقم بالبدء بالمشروع..</p>
-
-<p>لعمل تطبيق مثل هذا يجب أولًا اعتماد هيكلية التطبيق، وكأي عمارة نريد بناؤها لابد من موجود مخطط من قبل المهندس المعماري قبل البدء بالبناء، هنا أيضًا لابد لمهندس البرمجيات من أن يضع المخطط والهيكلية التفصيلية للتطبيق قبل الشروع بالتنفيذ والبرمجة.</p>
-
-<p><strong>ملاحظة:</strong> من المهم جدا عند التعامل مع العميل معرفة كل مايدور برأسه قبل الشروع في العمل. مثلا من غير الكافي أن يتكلم العميل عن وصف المشروع أعلاه لكي تبدأ بالعمل! لا بد من أن تطرح عليه الكثير من الأسئلة عن وظائف التطبيق وآلية عمله ومظهره وعدد نوافذه وحجمها ولونها وكل شيئ قبل البدء.</p>
-
-<h2 id="تخطيط-قاعدة-البيانات">تخطيط قاعدة البيانات</h2>
-
-<p>سنقوم بهذا المشروع باستخدام قاعدة بيانات MySQL، إن لم يكن لديك معرفة بلغة قواعد البيانات SQL فيمكنك الاطلاع على <a href="https://mulham.github.io/sql/intro">سلسلة دروس SQL</a></p>
-
-<p>وفق الأقسام التي رأيناها في التقرير أعلاه يمكن تقسيم قاعدة البيانات إلى الجداول التالية:</p>
-
-<ul>
-  <li>جدول المستخدمين</li>
-  <li>جدول الشركات (الزبائن)</li>
-  <li>جدول الأجهزة</li>
-  <li>جدول التقرير والذي يضم معلومات التقرير عموما</li>
-  <li>جدول نتائج التقرير</li>
-</ul>
-
-<p>بالإضافة لجداول أخرى مرتبطة بهذه الجداول وفقا لما هو مطلوب في التقرير، مخطط قاعدة البيانات لدينا هو على الشكل التالي:</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/databas_schema.png" alt="مخطط قاعدة بيانات SQL قابل للتنفيذ" /></p>
-
-<p>يمكنك مشاهدة الملف الأصلي لمخطط قاعدة البيانات من <a href="https://github.com/Mulham/Java-Project/blob/main/database_schema.mwb">هنا</a> وهو قابل للتشغيل والتنفيذ على برنامج MySQL Workbench، حيث تم رسم المخطط وعمله على ذلك البرنامج والذي يمكّن من تحويل هذا المخطط لاحقا إلى قاعدة بيانات SQL وفق الخطوات التالية:</p>
-
-<p>قم بفتح ملف “database_schema.mwb” عبر برنامج MySQL Workbench ثم اضغط في الأعلى على الخيار “Database” ثم اختر “Forward Engineer” كما في الصورة:</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-forward-engineering.png" alt="تحويل مخطط قاعدة البيانات إلى كود SQL" /></p>
-
-<p>بعدها يمكنك قبول الإعدادات الافتراضية والضغط بشكل متتابع على زر Next إلى أن يتم إعطاء كود SQL الخاص بالمخطط ثم قم بإنهاء العملية ليتم تلقائيًا إنشاء قاعدة البيانات لديك وفق المخطط وكود SQL المُنشأ تلقائيًا. ستجد قاعدة البيانات “mydb” على القائمة اليسارية كما في الصورة:</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/mysql-workbench-databases.png" alt="بناء تطبيق جافا FX مع قاعدة بيانات من الصفر" /></p>
-
-<h2 id="تخطيط-البرنامج">تخطيط البرنامج</h2>
-
-<p>المخطط العام للبرنامج سيكون على النحو التالي:</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/software_architecture.png" alt="مخطط وهيكلية برنامج جافا" /></p>
-
-<p>حيث سنستخدم للواجهة والتي يطلق عليها Frontend عادة: JavaFX وسيُقسم البرنامج إلى أربعة أقسام أو مجلدات: models وهي الكيانات المستخدمة في التطبيق مثل المستخدمين والشركات، و controllers أصناف الجافا التي تربط الواجهة بالدالات والوظائف المناسبة (أي تتحكم بالواجهة)، animations هذه للجماليات لإضافة حركة لبعض الحقول في الواجهة، وطبعا المكتبات المستخدمة في التطبيق libraries (تم إزالة هذا القسم للأسباب المذكورة أعلاه)</p>
-
-<p>أيضًا لا بد من عمل مخطط لعرض أصناف الجافا التي سيتم كتابتها وبكل تفصيلها قبل البدء بالتنفيذ، وهذا يدعى مخطط الصنف في UML يمكنك الاطلاع على طريقة عمله من <a href="https://mulham.github.io/uml-class-diagram/">هنا</a>، ومخطط الصنف في حالتنا هذه سيكون على الشكل التالي</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/uml-class-diagram.png" alt="مخطط الصنف لتطبيق جافا" /></p>
-
-<h2 id="تقرير-وصف-المشروع">تقرير وصف المشروع</h2>
-
-<p>كما ذكرت فيجب قبل البدء بالمشروع وضع مخططات للمشروع ووصفها بكامل تفاصيلها لتصف المشروع بدقة ليكون قابل للتنفيذ وفق التقرير المُعطى من قبل مهندس البرمجيات، هذا التقرير يحوي عادة شرح عام للمشروع وللمشكلة التي يعالجها وكيف سيقوم بحل تلك المشكلة وآلية عمل المشروع والوظائف التي سيحتويها ويقدمها وحالات استخدامه بالإضافة لمخطط قاعدة البيانات ومخطط الصنف المذكورين أعلاه وغيرها من المخططات اللازمة، يكون هذا التقرير عادة عبارة عن 30 صفحة فأكثر بحسب حجم البرنامج.</p>
-
-<h2 id="التنفيذ">التنفيذ</h2>
-
-<p>نأتي الآن بعد وضع المخططات وكتابة التقرير وتهيئة قاعدة البيانات إلى الجزء التنفيذي وهو البرمجة بلغة جافا وعمل الواجهة باستخدام JavaFX. وقد قسمت هذا القسم إلى عدة دروس وفقًا للمهام المنجزة فيها:</p>
-
-<ol>
-  <li>
-    <p><a href="/javafx-initialization">تهيئة بيئة العمل</a></p>
-  </li>
-  <li>
-    <p><a href="/java-project-structure">هيكلة المشروع</a></p>
-  </li>
-  <li>
-    <p><a href="/javafx-interface-design">تصميم الواجهة</a></p>
-  </li>
-  <li>
-    <p><a href="/java-database-handler">الربط مع قاعدة البيانات</a></p>
-  </li>
-  <li>
-    <p><a href="/java-sign-in">تسجيل الدخول</a></p>
-  </li>
-  <li>
-    <p><a href="/javafx-scene-changer">الانتقال بين النوافذ</a></p>
-  </li>
-  <li>
-    <p><a href="/javafx-manage-users">إدارة المستخدمين</a></p>
-  </li>
-  <li>
-    <p><a href="/javafx-transfer-data-between-scenes">إرسال بيانات من نافذة ﻷخرى</a></p>
-  </li>
-  <li>
-    <p><a href="/javafx-working-process">النهاية</a></p>
-  </li>
-</ol>
-
-<p><strong>المراجع</strong></p>
-
-<ul>
-  <li><a href="https://www.youtube.com/playlist?list=PLHdQfj3Nty4VulBDyryc5M9zfXwWo49Mc">https://www.youtube.com/playlist?list=PLHdQfj3Nty4VulBDyryc5M9zfXwWo49Mc</a></li>
-</ul>]]></content><author><name></name></author><category term="سلسلة دروس" /><category term="برمجة" /><category term="تعليم" /><category term="Java" /><summary type="html"><![CDATA[شرح عمل تطبيق بلغة جافا مع واجهة JavaFX وقاعدة بيانات MySQL من الصفر]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI3.png" /><media:content medium="image" url="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/UI3.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>إذا وجدت أي أمر غير واضح أثناء الشرح أو لديك اقتراحات لتحسينه أو معلومات جديدة لتحديثه فلا تتردد بمراسلتي عبر البريد الإلكتروني أو أحد الروابط الموجودة أسفل الصفحة.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[تلخيص طريقة عمل تطبيق جافا إف إكس مع قاعدة بيانات]]></summary></entry></feed>
