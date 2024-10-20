@@ -131,7 +131,7 @@
 /* Tablet */
 @media all and (min-width: 768px) {
   %img-radius {
-    border-radius: 0 $base-radius $base-radius 0;
+    border-radius: $base-radius 0 0 $base-radius;
   }
 
   #post-list {
