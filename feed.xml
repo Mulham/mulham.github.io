@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ar"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://mulham.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mulham.github.io/" rel="alternate" type="text/html" hreflang="ar" /><updated>2024-10-20T20:57:37+03:00</updated><id>https://mulham.github.io/feed.xml</id><title type="html">مدونة ملهم</title><subtitle>دروس وشروحات قيّمة وحصريّة لا سابق لها في المحتوى العربي</subtitle><entry><title type="html">فنون البرمجة</title><link href="https://mulham.github.io/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/" rel="alternate" type="text/html" title="فنون البرمجة" /><published>2024-10-19T00:00:00+03:00</published><updated>2024-10-19T00:00:00+03:00</updated><id>https://mulham.github.io/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9</id><content type="html" xml:base="https://mulham.github.io/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/"><![CDATA[<p>أذكر أن أول كتاب قرأته في البرمجة كان كتاب “تعلم البرمجة من الصفر مع بايثون 3” وهو مترجم من الفرنسية. حين فتحته وجدت بدايته تقول لي “أهلًا بك في مدرسة السحرة”! نعم لقد شعرت بنفسي دخلت مدرسة هاري بوتر وأمسكت بالعصا وبدأت أتعلم التعليمات اللازمة لتلقينها للحاسوب ليفعل لي ما أريد..شعور جميل. وهذه هي البرمجة حقيقةً، فهي أداة فعالة للتواصل مع الحاسوب ليقوم بفعل ما نريده منه ويوفر علينا الوقت لاحقًا.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ar"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ar" /><updated>2024-10-21T15:49:03+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">مدونة ملهم</title><subtitle>دروس وشروحات قيّمة وحصريّة لا سابق لها في المحتوى العربي</subtitle><entry><title type="html">هل “الذكاء الاصطناعي” ذكاء بالفعل؟</title><link href="http://localhost:4000/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84/" rel="alternate" type="text/html" title="هل “الذكاء الاصطناعي” ذكاء بالفعل؟" /><published>2024-10-21T00:00:00+03:00</published><updated>2024-10-21T00:00:00+03:00</updated><id>http://localhost:4000/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84</id><content type="html" xml:base="http://localhost:4000/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84/"><![CDATA[<p>نشاهد في الصور أعلاه صورة كلب أمام رقعة الشطرنج، وصورة أخرى لطفلة، وأخرى لمسنين يلعبون الشطرنج.
+أعتقد أننا متفقون أن الكلب لا يمكن له أن يلعب الشطرنج، فليس بمقدوره فهم قواعدها واللعب وفقًا لتلك القواعد. ولكن هل نقول نتيجة لذلك أن الكلب غبي؟
+وبالنسبة للمسنين الذين يلعبون باحترافية نتيجة ممارستهم لتلك اللعبة لسنوات طويلة وحفظهم تقريبًا لجميع الحركات فيها، هل نقول عنهم أنهم أذكياء؟
+لو أنك تحفظ حركات معينة تؤدي لهزيمة خصمك في لعبة الشطرنج، فهذا لا يعكس ذكاءك، أليس كذلك؟
+أما الطفلة، فلو علمناها قواعد الشطرنج للتو، ولعبنا معها، وأظهرت مقدرتها على التفكير، وإنشاء خطة ذكية في عقلها ثم تنفيذها، فهنا نقول عنها أنها ذكية حقًا، ﻷنها لم يسبق لها أن رأت مثل تلك الخطة من قبل، وقامت هي بابتكارها.
+يشبه الحاسوب في الأمثلة أعلاه مثال المسنين، فالحاسوب لديه ذاكرة كبيرة، ويمكنه تخزين كافة حركات وحالات لوحة الشطرنج، أي جميع الحالات على الإطلاق! وكذلك حفظ أفضل حركة يواجه بها الخصم في كل حالة، فهل هذا ذكاء؟ 
+لا يوجد في الواقع تعريف متفق عليه للذكاء، ولكنني أعتقد شخصيًا أن الكائن الذكي يجب أن يتصف بصفات عدة، منها الإدراك والقدرة على الاستنتاج والتخطيط. فهل الآلة تدرك؟ وهل يمكنها أن تخطط وتضع طريقة عملها بمفردها؟</p>
+
+<h2 id="مبالغات-البشر">مبالغات البشر</h2>
+
+<p>إذا كنت من مواليد التسعينات، وقد عاصرت ظهور الهواتف النقالة الأولى، فلا شك أنك كنت منبهرًا بذلك الاختراع.</p>
+
+<p><img src="/assets/posts/c4638d24be1846db8189c69b025c07bc.jpg" alt="هاتف محمول" /></p>
+
+<p>هاتف تأخذه معك أينما تريد، وتتحدث مع من تريد وأنت تسير في الشارع!  لا شك أيضًا أنك سمعت الكثير من عبارات الدهشة والانبهار ممن حولك، رغم ضعف مزايا تلك الهواتف مقارنةً بهواتف اليوم، والتي يُقال عنها اليوم أنها ذكية. 
+في كل مرة يخترع الإنسان شيئًا جديدًا، يكون ذلك الاختراع مبهرًا له ولمن حوله، ولا يخلو الأمر من المبالغات و “الشطحات” في عبارات الدعاية والتسويق. 
+فلقد سمعت ربما عن عبارات مثل “تفوق الذكاء الصناعي على الذكاء البشري”، هذه العبارات التي وُضعت إما من قِبل جهّال، أو أناس يقصدون نشر الجهل والتخاريف. 
+وسأناقش معكم بعد قليل الأدوات التي يطلقون عليها صفة الذكاء، ومزاياها التي تجعلهم ينسبون صفة الذكاء إليها. ولكن لكي لا نخرج عن سياق فقرة المبالغات هذه، دعونا نكمل بالعودة للوراء، ﻷول حاسوب ميكانيكي، وما تم وصفه به آنذاك.
+من الحواسيب الأولى والتي كانت حواسيب ميكانيكية، حاسوب “محرك الفَرق” (difference engine) لمصممه تشالز بابج (Charles Babbage). نشاهد في الصورة التالية نموذجًا لمحرك الفرق معاد بناؤه من قبل متحف العلوم في لندن.</p>
+
+<p><img src="/assets/posts/5fc1c44fde6c4e219388a661649892e6.webp" alt="حاسوب &quot;محرك الفَرق&quot; تشالز بابج " /></p>
+
+<p>وقد صنع نموذج مبسط منه آنذاك بسبب عدم وجود الإمكانيات الكافية، ذلك النموذج الذي يستطيع إجراء بعض الحسابات على أعداد من 6 خانات فقط. 
+عندما رأت البارونة “بايرون” ذلك النموذج، وذلك عام 1833، قالت<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>:</p>
+
+<blockquote>
+  <p>“We both went to see the thinking machine (or so it seems) last Monday. It raised several Nos. to the 2nd and 3rd powers, and extracted the root of a Quadratic equation.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“لقد ذهبنا معًا الاثنين الماضي لمشاهدة الآلة التي تفكر (أو التي تبدو كذلك). حيث حَسَبت أعداد بِأُس 2  وأس 3، وكذلك حسبت جذر معادلة تربيعية”.</p>
+</blockquote>
+
+<p>على الرغم من أن برنامج الآلة الحاسبة على هاتفك اليوم أقوى من تلك الآلة بأكملها (بفضل قدرات مكونات هاتفك)، إلا أن “بايرون” ووفقًا لزمنها، وصفت تلك الآلة الحاسبة الميكانيكية ذات القدرات المحدودة بـ “الآلة المفكرة” ونسبت صفة التفكير لها. علمًا أن التفكير بعيد كل البعد عن تلك الآلة أو أي آلة مصنوعة من قبل الإنسان، الآن وإلى آخر الزمان.</p>
+
+<h2 id="الذكاء-الصناعي">الذكاء الصناعي</h2>
+
+<p>تعني كلمة “خوارزمية” طريقة حل، فلحل معادلة رياضية بسيطة، ننقل المجاهيل للطرف الأول، وهذه هي الخطوة الأولى، ثم ننقل المعاليم للطرف الثاني، وهي الخطوة الثانية، ثم نحسب المعاليم والمجاهيل معًا، وهي الخطوة الثالثة. تشكل هذه الخطوات طريقة الحل، أي الخوارزمية.</p>
+
+<p>يُقصد بالذكاء الصناعي اليوم مايعرف بتعلم الآلة، على الرغم من أن مصطلح الذكاء الصناعي أشمل من تعلم الآلة. وعندما نتحدث عن “تعلم الآلة” فنحن نتحدث عن خوارزميات، وأول ما شاع منها خوارزمية اكتشاف الرسائل الضارة (spam) في البريد الإلكتروني. يمكن أن نأخذ تلك الخوارزمية بصفتها مثالًا بسيطًا لتعلم الآلة، حيث نحتاج لبيانات (رسائل كثيرة مصنفة يدويًا إما ضارة أو سليمة) وندخلها للآلة لبناء معادلة رياضية تحدد الصفات الرئيسية للرسائل الضارة. ويمكننا بعد بناء تلك المعادلة، إدخال رسائل جديدة للآلة، لتقوم بدورها بتخمين صنف الرسالة، إما ضارة أو لا. وتَعلم من خلال استخدامك للبريد الإلكتروني، أن البرنامج يقوم أحيانًا بوضع رسائل سليمة في مجلد الرسائل الضارة، وهذا ما يُعرف بخطأ موجب (false positive) أي أنه صنفها خطأً على أنها ضارة. وبالتالي يكون دور الآلة هنا هو مجرد التخمين، قد يصيب ذلك التخمين، وقد يُخطئ.</p>
+
+<p>نقول عن “مودل” لتعلم الآلة أنه جيد، إذا تم تدريبه على الكثير من البيانات وبحيث وصلت الدقة فيه إلى 90% أو أكثر، وهذا يعني أن احتمالية الخطأ في تخمينه لا تتجاوز العشرة بالمئة.</p>
+
+<p>لا يوجد “مودل” دقته مئة بالمئة. ولا يمكن أن يوجد. وبالتالي، بعد أن نعلم ذلك جيدًا، هل يمكن أن نعتمد على تخمين الآلة في قضايا حساسة، هي يمكن أن نسأل الآلة: “هل أبتر قدم هذا المريض أم لا” لتعطينا تخمينًا نعتمده في قرار البتر؟</p>
+
+<p>والتخمين ذلك يعتمد بالتأكيد على البيانات التي تم إدخالها مسبقًا للآلة. ففي مثال السيارات ذاتية القيادة، لا يمكن للآلة أن تتوقف في حال وجود عائق لم تتعرف عليه مسبقًا (لم يكن موجودًا في البيانات التي تدربت عليها). فربما دربنا الآلة على عوائق مثل سيارة تقف أمامنا، وكذلك المشاة. ولكن ماذا عن حالات جديدة كليًا على الآلة، لا بد أن النتائج ستكون كارثية في حال اعتمدنا كليًا عليها. فمثلًا، بينما تقود سيارتك رأيت شجرة على يمين الطريق وهي تميل باتجاه اليسار، أي باتجاه الطريق، ومازالت تميل وتميل، من الواضح أنها ستقع على الطريق، لابد لك هنا أن تتوقف مسبقًا قبل أن تصبح تحتها مباشرة وتقع فوق رأسك، ولكن الآلة غالبًا لم تتدرب على مثل تلك الحالة، والآلة لا تدرك ولا تستنتج، وبالتالي لن تخمن أن الشجرة التي على يمين الطريق ستصبح بعد قليل في منتصفه! وإذا اعتمدت بدورك على القيادة الذاتية، فإنا لله وإنا إليه راجعون.</p>
+
+<p><img src="/assets/posts/giphy.webp" alt="شجرة ترتطم بالسيارة" />
+<em><a href="https://giphy.com/gifs/viralhog-viral-hog-tree-falls-across-highway-into-unlucky-motorist-6I4V6oLjM8J0SPv439">via GIPHY</a></em></p>
+
+<ul>
+  <li>ولكن يوجد اليوم سيارات ذاتية القيادة
+نعم صحيح، بل يوجد أيضًا مترو (قطار الأنفاق) ذاتي القيادة، وهو في الخدمة حاليًا في العديد من المدن، وذلك بسبب وجود سكة واحدة، أي طريق ومسار واحد له، ودون وجود عوائق، وبالتالي نسبة الخطر تكون ضئيلة.</li>
+</ul>
+
+<p>تُظهر الصورة التالية مترو بدون سائق في مدينة اسطنبول</p>
+
+<p><img src="/assets/posts/494ae3f895de452a8c9039e625789bcb.webp" alt="مترو بدون سائق في مدينة اسطنبول" /></p>
+
+<p>أما بالنسبة للسيارات، حيث لا يوجد سكة للسيارة، وبالتالي يمكن أن تذهب السيارة بجميع الاتجاهات، ويمكن أن يظهر الكثير من العوائق في الطريق، سواء طفل أو طائر أو رصيف أو سيارة أو عربة، إلخ.. فهذا كله يجعل إمكانية الاعتماد عليها دون وجود سائق صعبًا جدًا، ولهذا لم يتم السماح باستخدام سيارات ذاتية القيادة في معظم البلدان، أما بالنسبة للأماكن والحالات التي رأيتُها وسمعت عنها، فهي سيارات كهربائية بسرعات منخفضة جدًا ومناطق مفتوحة ولا يوجد بها الكثير من السكان، وبهذا يتم تقليل نسبة الخطر بشكل كبير، فالسرعة المنخفضة لوحدها كافية لتخفيف نسبة الخطر كثيرًا.</p>
+
+<p>وإذا أردنا أخذ مثال آخر، فتخيل أنك ركبت طائرة للسفر من مدينتك إلى مدينة أخرى، وقد سمعت عبر مكبرات الصوت أن الطائرة هذه ستُقلع بعد قليل وبدون طيار، فهي تطير عبر استخدام خوارزميات الذكاء الصناعي! هل ستكون سعيدًا حينها؟</p>
+
+<p>الطيار التلقائي في الواقع موجود منذ زمن، حتى قبل انتشار خوارزميات تعلم الآلة، ولكن لا يمكن الاعتماد عليه كليًا، وإنما يستخدم بصفة مساعد ثانوي، حيث يتيح للطيار رفع يده قليلًا عن المقود ليتناول القهوة مثلًا، ولكن يبقى الطيار منتبهًا لكل شيء ومستعدًا للتدخل بشكل فوري. حتى أن مهنة مساعد الطيار لم يتم الاستغناء عنها.</p>
+
+<p>أما بالنسبة للمسيّرات الحربية والتي تكون بدون طيار، فهي لا تحوي ركاب، ويتم التحكم بها لا سلكيًا من قبل الإنسان.</p>
+
+<p>بعد أن علمنا أن كل ما تعطيه الآلة في النهاية هو مجرد تخمين، فيجب أن نتيقن أننا لا يمكننا الاعتماد عليها في اتخاذ قراراتنا، ويجب علينا استخدامها بالشكل الصحيح، باعتبارها أدوات مساعدة لا أكثر. وستبقى التقنية كذلك، فمنذ أن تم اختراع الآلة الحاسبة وإلى يومنا هذا، ظلت التقنية تساعدنا وتوفر علينا الوقت في بعض المهام الروتينية ذات الخطوات المحددة والمعروفة، أما اتخاذ القرار، فذلك شيء آخر. سنتعرف على كوارث الاعتماد في اتخاذ القرار على الآلة في فقرة لاحقة.</p>
+
+<p>وأخيرًا..يُستخدم في هذا المجال كلمات غير صحيحة علميًا، مثل مصطلح “الشبكات العصبية” (neural networks) والتي يتم فيها الادعاء أن خوارزميات تعلم الآلة تعمل بشكل مشابه لعمل الشبكات العصبية في الكائنات الحية، وهذا خاطئ علميًا. إذًا يجب أن تعلم أن المصطلحات المستخدمة في هذا المجال من “ذكاء” و”شبكات عصبية” وماشابه، إنما هي مصطلحات دعائية لا علاقة لها بالعلم.</p>
+
+<h2 id="ما-هي-المهن-التي-يمكن-أن-تقوم-بها-الآلة-بدل-الإنسان">ما هي المهن التي يمكن أن تقوم بها الآلة بدل الإنسان؟</h2>
+
+<p>بما أن الآلة تعتمد في عملها على برمجة مسبقة، أو على التخمين، فلا يمكن استخدامها في أمور حساسة، مثل المجالات الطبية والعسكرية، وأي مجال قد يشكّل خطرًا على حياة الإنسان. (نعم، يُستخدم الذكاء الصناعي اليوم ليساعد الأطباء في تشخيص المرض مثلًا، وليس لاتخاذ القرار أو لكي يحل محل الطبيب)
+لقد لاحظت أن الاشخاص الذين يتحدثون عن هذا الموضوع يخلطون بين البرمجة العادية للآلة، وبين موضوع تعلم الآلة الذي انتشر مؤخرًا. لنتعرف على الفرق بينهم عبر الأمثلة.</p>
+
+<p>يمكننا عبر البرمجة العادية استخدام الآلة في مهام روتينية ذات خطوات محدودة تتكرر باستمرار ولا تتضمن مخاطر، فيمكن مثلًا استخدام روبوت لصناعة القهوة، لسببين:</p>
+
+<ol>
+  <li>تتألف هذه العملية من خطوات محددة ثابتة</li>
+  <li>لا تتضمن هذه العملية أي خطر على حياة الإنسان</li>
+</ol>
+
+<p>فأكبر خطأ يمكن أن تقوم به الآلة هنا هو مقادير خاطئة في البن والسكر، أو أن يُسفح المزيج على الأرض مثلًا، وهذه كلها أخطاء مقبولة.</p>
+
+<p>مثل المهمة المذكورة هذه لا تحتاج لتخمين شيء، فالعملية برمتها معروفة، وخطواتها قليلة وثابتة تتكرر باستمرار مع كل فنجان للقهوة.</p>
+
+<p>وبالتالي تُتسخدم الآلات في المصانع لتوفير الوقت والجهد واليد العاملة، وذلك في الحالات التي يتحقق فيها البندين المذكورين أعلاه.</p>
+
+<p>تُظهر الصورة التالية أحد مراحل صناعة السيارات والتي تتم كليًا بواسطة الآلة.</p>
+
+<p><img src="/assets/posts/645b65e22cff4672b2799818392175c0.webp" alt="أحد مراحل صناعة السيارات آليًا" /></p>
+
+<p>أما بالنسبة لتعلم الآلة، فيتم استخدامه عند جهلنا بالخطوات، ففي المثال المذكور سابقًا عن تحديد الرسائل الضارة للبريد الإلكتروني، لا يوجد لدينا مميزات رئيسية ثابتة للرسائل الضارة، وبهذا يمكن استخدام تعلم الآلة، بشرط وجود بيانات كثيرة (رسائل كثيرة مصنفة مسبقًا) وموارد كافية (للحساب وتخزين البيانات)، وهذان الأمران هو ما يحتاجه أي مشروع أو تطبيق لتعلم الآلة.</p>
+
+<p>وبهذا نجد أن المهن التي يتم استخدام تعلم الآلة بها، والتي يمكن أن تحل الآلة بها محل الإنسان، هي مهن أيضًا روتينية، مثل مهنة إدخال البيانات، وخدمة العملاء، وما إلى ذلك، علمًا أن هذه المهن أيضًا لا يمكن الاعتماد فيها على الآلة تمامًا، فمثلًا، إذا كان لدينا جدولًا على ورقة مطبوعة ونريد إدخاله للحاسوب، فيمكن اليوم أن نقوم بتصويره، ويتم التعرف على الكتابة وإدخالها بواسطة خوارزميات تعلم الآلة، وهذا شيئًا مفيدًا فعلًا ويوفر علينا الكثير من الوقت، ولكن لا بد من تدقيق الجدول الناتج من هذه الخوارزميات مرة أخرى وتصويب الأخطاء التي نراها.</p>
+
+<p>إن الاعتماد على الآلة في اتخاذ القرار من قبل تعلم الآلة والتعلم من الأخطاء أو ما يعرف بـ reinforcment learning إنما يستخدم في الألعاب فقط.</p>
+
+<p>وماذا عن ChatGPT؟</p>
+
+<p>يُعتبر هذا التطبيق اليوم من أبرز الأمثلة على تطبيقات تعلم الآلة، والذي يستخدم خوارزميات مخصصة لمعالجة لغات الإنسان، أو ما يُعرف بـ Natural Language Processing واختصارًا NLP. ويبقى كما تطبيقات تعلم الآلة، يحتاج للعنصرين الرئيسيين؛ البيانات الكثيرة والموارد العالية. فمع انتشار النصوص الكثيرة على الإنترنت وبشكل ضخم جدًا، أصبح بالإمكان عمل مودل لتعلم الآلة يتم تدريبه على تلك النصوص لتوليد نصوصًا جديدة، وبعبارة أوضح، لتخمين الكلمة اللاحقة لأي جملة.</p>
+
+<p>لم يتم تدريب مودل ChatGPT على النصوص المتاحة للعامة فقط، بل على نصوص وكتب مدفوعة وغير متاحة للعامة، وفي ذلك خرق لحقوق التأليف والنشر، ولكنه لا يتضح تمامًا بسبب استبدال المودل لمرادفات الكلمات بدلًا من استخدامها كما هي، وبالتالي يصعب تحديد المصدر الذي تم استخدامه عند توليد نص ما، وهذه سلبية أخرى، حيث لا يمكن استخدام شات جي بي تي على أنه مرجعًا علميًا بسبب عدم معرفة المصدر الذي أخذ منه تلك المعلومات، وبالتالي يمكن أن تكون خاطئة، كما أن استبدال مرادفة مكان الأخرى يسبب مشكلة في النصوص العلمية التي يتغير معناها بشكل كبير بحسب الكلمات المستخدمة.</p>
+
+<h2 id="كوارث-الاعتماد-على-الآلة">كوارث الاعتماد على الآلة</h2>
+
+<p>لقد أظهر فيلمًا وثائقيًا نشرته قناة DW على اليوتيوب، مساوئ الاعتماد على الآلة بشكل كامل في اتخاذ القرار. ففي هولندا مثلًا، قامت وزارة الداخلية باستخدام خوارزميات تعلم الآلة لتحديد المواطنين المشتبه بهم والذي يمكن أن يكونوا “إرهابيين”، وهنا تم تصنيف الكثير من المواطنين على أنهم خطرين أو “إرهابيين”، ودون معرفة السبب تمامًا، وحتى دون أن تعرف وزارة الداخلية المعايير التي تتخذها تلك الخوارزميات في تخميناتها تلك، وقد بدا لهم لاحقًا، أن أحد الحالات كان المواطن فيها مصنفًا على أنه خطر وقد كان ذلك الشخص يحمل جنسية أخرى، فقامت الخوارزمية بتصنيف كل شخص يحمل جنسية أخرى غير الجنسية الهولندية على أنه خطر!</p>
+
+<p>وهناك حالات أخرى لحوادث كثيرة مأساوية نتجت من الاعتماد على خوارزميات تعلم الآلة بشكل أعمى، وهذا هو الاسخدام الخاطئ للآلة عمومًا، فالآلة وُجدت لتساعد الإنسان، لا لتحل محله أو تتخذ القرار عنه.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://en.wikipedia.org/wiki/Difference_engine">https://en.wikipedia.org/wiki/Difference_engine</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;&#xfe0e;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="ذكاء صناعي" /><summary type="html"><![CDATA[يناقش هذا المقال بشكل علمي حقيقة ما يسمى بـ "الذكاء الاصطناعي". ماهو الذكاء؟]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/posts/a0e17e55683c4f0d84c948ee47e7efb7.webp" /><media:content medium="image" url="http://localhost:4000/assets/posts/a0e17e55683c4f0d84c948ee47e7efb7.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">فنون البرمجة</title><link href="http://localhost:4000/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/" rel="alternate" type="text/html" title="فنون البرمجة" /><published>2024-10-19T00:00:00+03:00</published><updated>2024-10-19T00:00:00+03:00</updated><id>http://localhost:4000/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9</id><content type="html" xml:base="http://localhost:4000/%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9/"><![CDATA[<p>أذكر أن أول كتاب قرأته في البرمجة كان كتاب “تعلم البرمجة من الصفر مع بايثون 3” وهو مترجم من الفرنسية. حين فتحته وجدت بدايته تقول لي “أهلًا بك في مدرسة السحرة”! نعم لقد شعرت بنفسي دخلت مدرسة هاري بوتر وأمسكت بالعصا وبدأت أتعلم التعليمات اللازمة لتلقينها للحاسوب ليفعل لي ما أريد..شعور جميل. وهذه هي البرمجة حقيقةً، فهي أداة فعالة للتواصل مع الحاسوب ليقوم بفعل ما نريده منه ويوفر علينا الوقت لاحقًا.</p>
 
 <p>سأناقش معكم في هذا المقال أشياء غريبة ومثيرة أنتجتها البرمجة.</p>
 
@@ -338,7 +455,7 @@ Serve with chocolate sauce.
 <p><img src="/assets/posts/5890cd29635649a78d9a80afb1604c1c.gif" alt="كود بلغة piet" /></p>
 
 <p>تم الاعتماد في فكرة المقال والكثير من محتواه على المحاضرة:
-<a href="https://youtu.be/6avJHaC3C2U">https://youtu.be/6avJHaC3C2U</a></p>]]></content><author><name></name></author><category term="برمجة" /><summary type="html"><![CDATA[استخدامات غريبة للبرمجة تسمع عنها للمرة الأولى!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mulham.github.io/assets/posts/381971125cc44d2aa9320cea925ebb2b.jpg" /><media:content medium="image" url="https://mulham.github.io/assets/posts/381971125cc44d2aa9320cea925ebb2b.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">المسميات الوظيفية في مجال علم الحاسوب</title><link href="https://mulham.github.io/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/" rel="alternate" type="text/html" title="المسميات الوظيفية في مجال علم الحاسوب" /><published>2023-09-19T00:00:00+03:00</published><updated>2024-04-22T00:00:00+03:00</updated><id>https://mulham.github.io/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8</id><content type="html" xml:base="https://mulham.github.io/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/"><![CDATA[<p>تضم القائمة أدناه المناصب الوظيفية الأشهر في إعلانات التوظيف، والتي تخص مجال علم الحاسوب. يتم تحديث القائمة بحسب المستجدات وبمساعدتكم. يمكنكم دائمًا التواصل معنا لتحديث الصفحة وتزويدنا بأي معلومات إضافية لديكم لم يتم ذكرها هنا. 
+<a href="https://youtu.be/6avJHaC3C2U">https://youtu.be/6avJHaC3C2U</a></p>]]></content><author><name></name></author><category term="برمجة" /><summary type="html"><![CDATA[استخدامات غريبة للبرمجة تسمع عنها للمرة الأولى!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/posts/381971125cc44d2aa9320cea925ebb2b.jpg" /><media:content medium="image" url="http://localhost:4000/assets/posts/381971125cc44d2aa9320cea925ebb2b.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">المسميات الوظيفية في مجال علم الحاسوب</title><link href="http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/" rel="alternate" type="text/html" title="المسميات الوظيفية في مجال علم الحاسوب" /><published>2023-09-19T00:00:00+03:00</published><updated>2024-04-22T00:00:00+03:00</updated><id>http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8</id><content type="html" xml:base="http://localhost:4000/%D8%A7%D9%84%D9%85%D8%B3%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D9%84-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8/"><![CDATA[<p>تضم القائمة أدناه المناصب الوظيفية الأشهر في إعلانات التوظيف، والتي تخص مجال علم الحاسوب. يتم تحديث القائمة بحسب المستجدات وبمساعدتكم. يمكنكم دائمًا التواصل معنا لتحديث الصفحة وتزويدنا بأي معلومات إضافية لديكم لم يتم ذكرها هنا. 
 انقر على المسمى الوظيفي أدناه للاطلاع على العلوم المطلوبة والمهام الخاصة به. علمًا أن المتطلبات والمهام لكل مسمى وظيفي تختلف من شركة لأخرى وبحسب مكان الشركة وحجمها، وكذلك يوجد مسميات وظيفية تتساوى تقريبًا في المتطلبات والمهام في كثير من الشركات. وتم ذكر تلك الحالات في التفاصيل أدناه.
 انتبه إلى أن التسميات العربية ليست كلها شائعة ومستخدمة، وإنما محاولة مني لتوضيح المسميات بالعربي.</p>
 
@@ -700,7 +817,7 @@ by Aurélien Géron.</li>
 
 <p>يمكن للدكتور في الجامعة العمل على التدريس، أو على البحث العلمي، أو على كلاهما معًا، وهذا طبعًا إذا احتوت الجامعات لديك على شيء يدعى البحث العلمي (ليس في البلدان النامية للأسف).</p>
 
-<p>لا تكمل دراستك من أجل الراتب العالي لدكتور الجامعة، أو العمل المريح، فسكان كوكبنا هذا أصبحوا كثر، ويحصل سنويًا مئات آلاف الأشخاص على شهادة الدكتوراة، ولا تتسع جامعات العالم لتلك الأعداد الكبيرة التي تتخرج سنويًا. ويمكن جدًا أن تحصل على شهادة دكتوراة ولا تجد أي فرصة عمل في أي جامعة. ومع هذا، تتطلب الكثير من الوظائف في الشركات شهادة الدكتوراة، خاصة في مجال البحث العلمي مجددًا، أو في مجال إدارة المهندسين (رئيس قسم). ولكن الأعداد الكبيرة تجعل المنافسة دائمًا قوية.</p>]]></content><author><name></name></author><category term="تعليم" /><summary type="html"><![CDATA[يشرح هذا المقال أشهر المسميات الوظيفية التي تجدها في إعلانات التوظيف للشركات، والخاصة فيما يتعلق بالبرمجة وعلم الحاسوب]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mulham.github.io/assets/posts/8fc7ee1ac5da4043af7df6617cfc8a8f.webp" /><media:content medium="image" url="https://mulham.github.io/assets/posts/8fc7ee1ac5da4043af7df6617cfc8a8f.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">بناء هيكلية تطبيق جافا</title><link href="https://mulham.github.io/java-project-structure/" rel="alternate" type="text/html" title="بناء هيكلية تطبيق جافا" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/java-project-structure</id><content type="html" xml:base="https://mulham.github.io/java-project-structure/"><![CDATA[<blockquote class="prompt-info">
+<p>لا تكمل دراستك من أجل الراتب العالي لدكتور الجامعة، أو العمل المريح، فسكان كوكبنا هذا أصبحوا كثر، ويحصل سنويًا مئات آلاف الأشخاص على شهادة الدكتوراة، ولا تتسع جامعات العالم لتلك الأعداد الكبيرة التي تتخرج سنويًا. ويمكن جدًا أن تحصل على شهادة دكتوراة ولا تجد أي فرصة عمل في أي جامعة. ومع هذا، تتطلب الكثير من الوظائف في الشركات شهادة الدكتوراة، خاصة في مجال البحث العلمي مجددًا، أو في مجال إدارة المهندسين (رئيس قسم). ولكن الأعداد الكبيرة تجعل المنافسة دائمًا قوية.</p>]]></content><author><name></name></author><category term="تعليم" /><summary type="html"><![CDATA[يشرح هذا المقال أشهر المسميات الوظيفية التي تجدها في إعلانات التوظيف للشركات، والخاصة فيما يتعلق بالبرمجة وعلم الحاسوب]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/posts/8fc7ee1ac5da4043af7df6617cfc8a8f.webp" /><media:content medium="image" url="http://localhost:4000/assets/posts/8fc7ee1ac5da4043af7df6617cfc8a8f.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">بناء هيكلية تطبيق جافا</title><link href="http://localhost:4000/java-project-structure/" rel="alternate" type="text/html" title="بناء هيكلية تطبيق جافا" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/java-project-structure</id><content type="html" xml:base="http://localhost:4000/java-project-structure/"><![CDATA[<blockquote class="prompt-info">
   <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
 </blockquote>
 
@@ -752,7 +869,7 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/javafx-interface-design">تصميم الواجهة</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[تنفيذ هيكلية وبناء التطبيق وتقسيم الحزم (المجلدات) لتطبيق جافا إف إكس]]></summary></entry><entry><title type="html">تهيئة بيئة العمل لتطبيق جافا إف إكس</title><link href="https://mulham.github.io/javafx-initialization/" rel="alternate" type="text/html" title="تهيئة بيئة العمل لتطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/javafx-initialization</id><content type="html" xml:base="https://mulham.github.io/javafx-initialization/"><![CDATA[<blockquote class="prompt-info">
+<p><strong>التالي:</strong> <a href="/javafx-interface-design">تصميم الواجهة</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[تنفيذ هيكلية وبناء التطبيق وتقسيم الحزم (المجلدات) لتطبيق جافا إف إكس]]></summary></entry><entry><title type="html">تهيئة بيئة العمل لتطبيق جافا إف إكس</title><link href="http://localhost:4000/javafx-initialization/" rel="alternate" type="text/html" title="تهيئة بيئة العمل لتطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/javafx-initialization</id><content type="html" xml:base="http://localhost:4000/javafx-initialization/"><![CDATA[<blockquote class="prompt-info">
   <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
 </blockquote>
 
@@ -869,7 +986,7 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/java-project-structure">هيكلة المشروع</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[تهيئة محرر الكود IntelliJ ومحرر الواجهة Gluon لتطبيق جافا إف إكس]]></summary></entry><entry><title type="html">آلية تسجيل الدخول في تطبيق جافا إف إكس</title><link href="https://mulham.github.io/java-sign-in/" rel="alternate" type="text/html" title="آلية تسجيل الدخول في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/java-sign-in</id><content type="html" xml:base="https://mulham.github.io/java-sign-in/"><![CDATA[<blockquote class="prompt-info">
+<p><strong>التالي:</strong> <a href="/java-project-structure">هيكلة المشروع</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[تهيئة محرر الكود IntelliJ ومحرر الواجهة Gluon لتطبيق جافا إف إكس]]></summary></entry><entry><title type="html">آلية تسجيل الدخول في تطبيق جافا إف إكس</title><link href="http://localhost:4000/java-sign-in/" rel="alternate" type="text/html" title="آلية تسجيل الدخول في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/java-sign-in</id><content type="html" xml:base="http://localhost:4000/java-sign-in/"><![CDATA[<blockquote class="prompt-info">
   <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
 </blockquote>
 
@@ -1021,7 +1138,7 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/javafx-scene-changer">الانتقال بين النوافذ</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[شرح كيفية التأكد من بيانات المستخدم في قاعدة البيانات وتسجيل الدخول في تطبيق جافا FX]]></summary></entry><entry><title type="html">تصميم الواجهة في تطبيق جافا إف إكس</title><link href="https://mulham.github.io/javafx-interface-design/" rel="alternate" type="text/html" title="تصميم الواجهة في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/javafx-interface-design</id><content type="html" xml:base="https://mulham.github.io/javafx-interface-design/"><![CDATA[<blockquote class="prompt-info">
+<p><strong>التالي:</strong> <a href="/javafx-scene-changer">الانتقال بين النوافذ</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[شرح كيفية التأكد من بيانات المستخدم في قاعدة البيانات وتسجيل الدخول في تطبيق جافا FX]]></summary></entry><entry><title type="html">تصميم الواجهة في تطبيق جافا إف إكس</title><link href="http://localhost:4000/javafx-interface-design/" rel="alternate" type="text/html" title="تصميم الواجهة في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/javafx-interface-design</id><content type="html" xml:base="http://localhost:4000/javafx-interface-design/"><![CDATA[<blockquote class="prompt-info">
   <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
 </blockquote>
 
@@ -1215,7 +1332,7 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/java-database-handler">الربط مع قاعدة البيانات</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[تصميم نوافذ تطبيق جافا إف إكس في محرر الواجهة Gluon]]></summary></entry><entry><title type="html">إدارة المستخدمين في تطبيق جافا إف إكس</title><link href="https://mulham.github.io/javafx-manage-users/" rel="alternate" type="text/html" title="إدارة المستخدمين في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/javafx-manage-users</id><content type="html" xml:base="https://mulham.github.io/javafx-manage-users/"><![CDATA[<blockquote class="prompt-info">
+<p><strong>التالي:</strong> <a href="/java-database-handler">الربط مع قاعدة البيانات</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[تصميم نوافذ تطبيق جافا إف إكس في محرر الواجهة Gluon]]></summary></entry><entry><title type="html">إدارة المستخدمين في تطبيق جافا إف إكس</title><link href="http://localhost:4000/javafx-manage-users/" rel="alternate" type="text/html" title="إدارة المستخدمين في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/javafx-manage-users</id><content type="html" xml:base="http://localhost:4000/javafx-manage-users/"><![CDATA[<blockquote class="prompt-info">
   <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
 </blockquote>
 
@@ -1773,7 +1890,7 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/javafx-transfer-data-between-scenes">إرسال بيانات من نافذة ﻷخرى</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية برمجة تطبيق جافا إف إكس لحذف وتعديل وإضافة مستخدمين وباستخدام قواعد بيانات MySQL]]></summary></entry><entry><title type="html">الانتقال بين النوافذ في تطبيق جافا إف إكس</title><link href="https://mulham.github.io/javafx-scene-changer/" rel="alternate" type="text/html" title="الانتقال بين النوافذ في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/javafx-scene-changer</id><content type="html" xml:base="https://mulham.github.io/javafx-scene-changer/"><![CDATA[<blockquote class="prompt-info">
+<p><strong>التالي:</strong> <a href="/javafx-transfer-data-between-scenes">إرسال بيانات من نافذة ﻷخرى</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية برمجة تطبيق جافا إف إكس لحذف وتعديل وإضافة مستخدمين وباستخدام قواعد بيانات MySQL]]></summary></entry><entry><title type="html">الانتقال بين النوافذ في تطبيق جافا إف إكس</title><link href="http://localhost:4000/javafx-scene-changer/" rel="alternate" type="text/html" title="الانتقال بين النوافذ في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/javafx-scene-changer</id><content type="html" xml:base="http://localhost:4000/javafx-scene-changer/"><![CDATA[<blockquote class="prompt-info">
   <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
 </blockquote>
 
@@ -1937,7 +2054,7 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/javafx-manage-users">إدارة المستخدمين</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية تغيير النوافذ والانتقال بينهم في تطبيق JavaFX]]></summary></entry><entry><title type="html">تبادل البيانات بين الأصناف في جافا إف إكس</title><link href="https://mulham.github.io/javafx-transfer-data-between-scenes/" rel="alternate" type="text/html" title="تبادل البيانات بين الأصناف في جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/javafx-transfer-data-between-scenes</id><content type="html" xml:base="https://mulham.github.io/javafx-transfer-data-between-scenes/"><![CDATA[<blockquote class="prompt-info">
+<p><strong>التالي:</strong> <a href="/javafx-manage-users">إدارة المستخدمين</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية تغيير النوافذ والانتقال بينهم في تطبيق JavaFX]]></summary></entry><entry><title type="html">تبادل البيانات بين الأصناف في جافا إف إكس</title><link href="http://localhost:4000/javafx-transfer-data-between-scenes/" rel="alternate" type="text/html" title="تبادل البيانات بين الأصناف في جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>http://localhost:4000/javafx-transfer-data-between-scenes</id><content type="html" xml:base="http://localhost:4000/javafx-transfer-data-between-scenes/"><![CDATA[<blockquote class="prompt-info">
   <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
 </blockquote>
 
@@ -2095,30 +2212,4 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/javafx-working-process">النهاية</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية إرسال بيانات ومعلومات من صنف لآخر ومن نافذة لأخرى في جافا وجافا FX]]></summary></entry><entry><title type="html">آلية العمل في تطبيق جافا إف إكس</title><link href="https://mulham.github.io/javafx-working-process/" rel="alternate" type="text/html" title="آلية العمل في تطبيق جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/javafx-working-process</id><content type="html" xml:base="https://mulham.github.io/javafx-working-process/"><![CDATA[<blockquote class="prompt-info">
-  <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
-</blockquote>
-
-<p>سألخص هنا طريقة العمل التي قمنا بها في شرحنا لكيفية بناء تطبيق جافا إف إكس من الصفر.</p>
-
-<p>من الملاحظ أنه عندما نريد إضافة نافذة جديدة بوظيفة جديدة متعلقة بقاعدة البيانات نقوم بالتالي:</p>
-
-<ul>
-  <li>
-    <p>إنشاء دالة في صنف قاعدة البيانات والتي تحوي عبارة SQL للتعامل مباشرة مع قاعدة البيانات</p>
-  </li>
-  <li>
-    <p>إنشاء نافذة وتصميمها .fxml</p>
-  </li>
-  <li>
-    <p>إنشاء صنف الجافا الذي يتحكم بها controller</p>
-  </li>
-</ul>
-
-<p>وبالنسبة لإرسال بيانات من صنف لآخر فوجدنا كيفية ذلك، حيث نقوم بإنشاء دالة تتطلب (تحوي بارامتر) عنصر يحوي المعلومات التي نحتاج لتمريرها للصنف، ومن ثم في الصنف الأول الذي سيرسل البيانات نقوم باستدعاء تلك الدالة وتمرير العنصر الذي يحوي البيانات في بارامتر الدالة.</p>
-
-<p>وبهذا أصبحنا قادرين بفضل الله على إنشاء تطبيق جافا مع واجهة باستخدام JavafX حيث تعلمنا تصميم النوافذ وربطها بالكود البرمجي وإنشاء الدالات وإنشاء الكيانات model وإنشاء Setters and Getters وكذلك عمل Constructors لها وأخذ عناصر منها، وإنشاء الجداول، وإرسال واستخراج وتعديل وحذف بيانات في قاعدة البيانات.</p>
-
-<p>إلى هنا ويكون الشرح قد انتهى تماما، حيث باقي الأمور في التطبيق ستكون مماثلة ولن يكون هناك أي شيئ جديد.</p>
-
-<p>إذا وجدت أي أمر غير واضح أثناء الشرح أو لديك اقتراحات لتحسينه أو معلومات جديدة لتحديثه فلا تتردد بمراسلتي عبر البريد الإلكتروني أو أحد الروابط الموجودة أسفل الصفحة.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[تلخيص طريقة عمل تطبيق جافا إف إكس مع قاعدة بيانات]]></summary></entry></feed>
+<p><strong>التالي:</strong> <a href="/javafx-working-process">النهاية</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية إرسال بيانات ومعلومات من صنف لآخر ومن نافذة لأخرى في جافا وجافا FX]]></summary></entry></feed>
