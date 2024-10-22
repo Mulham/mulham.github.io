@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ar"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://mulham.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mulham.github.io/" rel="alternate" type="text/html" hreflang="ar" /><updated>2024-10-21T16:09:53+03:00</updated><id>https://mulham.github.io/feed.xml</id><title type="html">مدونة ملهم</title><subtitle>دروس وشروحات قيّمة وحصريّة لا سابق لها في المحتوى العربي</subtitle><entry><title type="html">هل “الذكاء الاصطناعي” ذكاء بالفعل؟</title><link href="https://mulham.github.io/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84/" rel="alternate" type="text/html" title="هل “الذكاء الاصطناعي” ذكاء بالفعل؟" /><published>2024-10-21T00:00:00+03:00</published><updated>2024-10-21T00:00:00+03:00</updated><id>https://mulham.github.io/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84</id><content type="html" xml:base="https://mulham.github.io/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84/"><![CDATA[<p>نشاهد في الصور أعلاه صورة كلب أمام رقعة الشطرنج، وصورة أخرى لطفلة، وأخرى لمسنين يلعبون الشطرنج.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ar"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://mulham.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mulham.github.io/" rel="alternate" type="text/html" hreflang="ar" /><updated>2024-10-22T20:34:40+03:00</updated><id>https://mulham.github.io/feed.xml</id><title type="html">مدونة ملهم</title><subtitle>دروس وشروحات قيّمة وحصريّة لا سابق لها في المحتوى العربي</subtitle><entry><title type="html">تاريخ الحواسيب وتطورها وأنواعها</title><link href="https://mulham.github.io/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B3%D9%8A%D8%A8-,%D9%88%D8%AA%D8%B7%D9%88%D8%B1%D9%87%D8%A7-%D9%88%D8%A3%D9%86%D9%88%D8%A7%D8%B9%D9%87%D8%A7-%D8%A7%D9%84%D9%8A%D9%88%D9%85/" rel="alternate" type="text/html" title="تاريخ الحواسيب وتطورها وأنواعها" /><published>2024-10-22T00:00:00+03:00</published><updated>2024-10-22T00:00:00+03:00</updated><id>https://mulham.github.io/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B3%D9%8A%D8%A8-,%D9%88%D8%AA%D8%B7%D9%88%D8%B1%D9%87%D8%A7-%D9%88%D8%A3%D9%86%D9%88%D8%A7%D8%B9%D9%87%D8%A7-%D8%A7%D9%84%D9%8A%D9%88%D9%85</id><content type="html" xml:base="https://mulham.github.io/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B3%D9%8A%D8%A8-,%D9%88%D8%AA%D8%B7%D9%88%D8%B1%D9%87%D8%A7-%D9%88%D8%A3%D9%86%D9%88%D8%A7%D8%B9%D9%87%D8%A7-%D8%A7%D9%84%D9%8A%D9%88%D9%85/"><![CDATA[<p>يُشتقُّ من كلِمَةِ حساب (computing) كلمةُ حاسوب (computer) أي الآلةُ التي تقومُ بالحساب، بعبارةٍ أخرى الآلة الحاسبة، نعم..الآلة الحاسبة الالكترونية هي عبارة عن حاسوب ولكن لهدف محدود. حيث تحوي دارةً لحساب الأعداد وتحوي ذاكرة، وحتى أن بعضَها يكون قابلا للبرمجة. 
+والحسابُ في الحقيقة بدأ منذ  زمنٍ بعيدٍ قبل الميلاد.  فهو مهمٌ جدًّا و لا يمكن أن تقومَ أيُ حضارةٍ بدونِ علمِ الحسابِ ووسائلٍ للحساب، فلا يمكن التعميرُ أو إنشاءُ اقتصادٍ.. وغيرُ ذلك من مقومات الحضارة والدول بدون علم الحساب. وكلنا نعلمُ الأهرامات، أحد عجائب الدنيا السبع، والتي يعود تاريخ بنائها لـ ألفين وخمسمئةِ عامٍ قبل الميلاد. فعندما ترى بناءًا مثل الأهرام يجب عليك التيقنُ مباشرةً أن من بناه كان على علمٍ جيد  بالحساب.
+وتصديقًا لذلك، فإن أحدَ الاكتشافات التي بيّنت جزءًا من طرقِ الحسابِ لدى الفراعنة هو بُرديةُ أُحمس بابيروس، وهي مكتوبة بالخط الهيراطيقي:</p>
+
+<p><img src="/assets/posts/بردية-أحمس-بابيروس.webp" alt="بُردية أُحمس بابيروس" /></p>
+
+<p>وﻷخذ لمحة سريعة عما وُجد في المخطوطات المكتشفة، وُجد في علم الجبر المعادلات الخطية والكسور ومسائل متقدمة تشمل التحليل البُعدي (Dimensional analysis). أما بالنسبة للهندسة فقد عرفوا بالطبع الأشكال الهندسية من مثلثات ودوائر وحساب المحيط والمساحة والحجم، وقد وُضِّحت تفاصيل كثيرة في كتب عن طرق الحساب وعلم الهندسة لدى المصريين القدماء، وهي ليست مجال بحثنا هنا.</p>
+
+<p>من أقدمِ الأدواتِ التي كانت تُستخدم للحسابِ وبشكلٍ واسع هي المِعداد (تدعى بالإنجليزية abacus) والتي يُعتقد أن أصلها من بابل:</p>
+
+<p><img src="/assets/posts/المعداد.webp" alt="المعداد Abacus" /></p>
+
+<p>وربما رأيتَ مثلَها من قبل، فهي مازالت تُدرّس في العديد من المدارس الابتدائية في وقتنا الحاضر. تُستخدم هذه الآلة لتمثيل أرقامٍ كبيرةٍ يصعب حفظها، وكذلك لإجراء عمليتي الجمع والطرح، فكل سلك معدني موضوعًا عليه الأحجار يمثل خانة في العدد، وعند سحب حجرًا ما في خانة ما فهذا يؤدي إما لطرح أو جمع عدد مع العدد قبل السحب، لنحصل على الناتج بعد السحب.</p>
+
+<p>قد تظن أن الآلة هذه بسيطة جدًا وتمثل أرقامًا بسيطة، ولكنها كانت تُستخدم في العملياتِ التجاريَّةِ الكبرى، تُظهر الآلة هذه الرقم التالي 6,302,715,408، أي أننا نتحدث عن أرقام بالمليارات.</p>
+
+<p><img src="/assets/posts/المعداد-2.webp" alt="المعداد Abacus" /></p>
+
+<p>وكما ترى فالآلة هذه نسخ متعددة في بلدان عدة، بعضها يكون بِعيدان عامودية وبعضها أفقية، وكذلك عدد العيدان (أي الخانات) يختلف بحسب حجم الأعداد المراد التعامل معها.</p>
+
+<p>بالنسبة للآلات الحاسبة ذات الهدف الوحيد وهو حساب وعرض الأعداد، فمازالت تُصنع إلى يومنا هذا، نذكر منها (الصورة التالية على اليمين وهي) الآلة الحاسبة الميكانيكية والتي استُخدمت بشكل واسع في القرن الماضي وتسمى آلة الجمع (Adding machine) وكذلك الآلات الحاسبة التي نعرفها جيدًا اليوم.</p>
+
+<p><img src="/assets/posts/آلة-حاسبة-ميكانيكية.webp" alt="آلة حاسبة ميكانيكية" /></p>
+
+<p><img src="/assets/posts/آلة-حاسبة.webp" alt="آلة حاسبة" /></p>
+
+<p>ولنتعرف الآن على الآلات الحاسبة ذات اﻷهداف العديدة أو العامة، أي الحواسيب، وبحسب التسلسل الزمني. علمًا أن أحدث حاسوب اليوم ليس بمقدور القطعة الرئيسية فيه  (أي وحدةُ المعالجةِ المركزية CPU) سوى جمع وطرح الأرقام، بالإضافة لبعض العمليات المنطقية. أي أنَّ أحدث الحواسيبِ ماهي إلا مجردُ آلاتٍ حاسبةٍ بسيطة، ولكنَّ سرعةَ الحساباتِ فيها (بالإضافة للمساحاتِ التخزينيةِ الكبيرة) أتاحت استخدامَها ﻷهدافٍ عامةٍ مثلَ التعاملِ مع الصوتياتِ والمرئياتِ والنصوص.</p>
+
+<p>من أوائل الحواسيب ذات الأهداف العامة هي الحواسيب المكيانيكية، يُعتقد أن أقدمها بحسب التاريخ المكتشف هو الحاسوب الإغريقي الذي يدعى إنتيكِثيرا Antikythera mechanism (حوالي مئة قبل الميلاد) المخصصُ لحسابِ مواقعِ النجومِ بحسبِ التاريخِ المُعطى. تمثلُ الصورةُ هذه نموذجًا منشئًا للجهاز في عامِ ألفين وسبعة.</p>
+
+<p><img src="/assets/posts/حاسوب-إنتيكيثيرا.webp" alt="حاسوب إنتيكيثيرا" /></p>
+
+<p>ظهرت بعد ذلك بمدة عدةُ حواسيبٍ ميكانيكية من قبل علماءِ فلكٍ مسلمين مثلُ أبو الريحان البيروني الذي طور الاسطرلاب والذي يحوي وظائفَ عدة منها حسابُ مواقعِ النجوم وارتفاعِ الشمسِ ومواقيتِ الصلاة واتجاهِ القبلة ووظائفَ أخرى، وقد قيلَ أنه يوجدُ حوالَي ألفُ استخدامٍ لوظائفِ الاسطرلاب.</p>
+
+<p><img src="/assets/posts/الاسطرلاب.webp" alt="الاسطرلاب" /></p>
+
+<p>وقد اشتُهر بعد ذلك الحاسوبُ الميكانيكي غيرُ المكتمل لتشارْلز بابِج (Charles Babbage) والذي يدعى المحركُ التحليليAnalytical Engine ،( والصورة هذه مأخوذة من متحف العلوم (Science Museum) في لندن).</p>
+
+<p><img src="/assets/posts/المحرك-التحليلي-لتشارلز-بابج.webp" alt="المحرك-التحليلي-لتشارلز-بابج" /></p>
+
+<p>وقد صُمِّم في عام 1837 ألفٍ وثمانمئةٍ وسبعةٍ وثلاثين ليكونَ حاسوبًا ﻷهداف عامةٍ وقابلا للبرمجة وليحتوي على كلِّ الوظائفِ المنطقيةِ الموجودةِ في حاسوبِ اليوم. ولكنه في ذلك الوقت كان مشروعًا حالمًا وخارجًا عن الإمكانيات المتاحة، مما أدى لبقائه بشكلِ تصميم وعدم بنائه، بل تم بناؤه لاحقا من قبل متحف العلوم في لندن في عام ألف وتسمعئة وواحد وتسعين  1991.</p>
+
+<p>ويُذكر في هذا السياق عالمةُ الرياضيات  Eda Loveless) Ada Lovelace (1815 - 1852)) والتي سمعت بمشروع تشارْلز  وأرسلت له أولَ خوارزميةٍ لحاسوبه المقترح والتي تهدفُ لحساب أعداد بِرنولي (وهي متسلسلة من الأعداد الكسرية)، تعد  تلك الخوارزميَّة أولُ برنامجٍ للحاسوب حتى قبل ظهورِ الحاسوبِ الذي يمكنه التعاملَ معها، وبذلك تُعتبرُ تلك العالمة أولُ مبرمجةٍ وفقًا للكثير من المراجع (أي أنَّ أولَ مبرمجٍ هو امرأة).</p>
+
+<p>وبعد ذلك بنحو مئةِ عام، قام المهندسُ الألماني كونراد سوزى Konrad Zuse بتطوير الحاسوب Z1 في عام ألف وتسعمئة وسبعةٍ وثلاثين 1937 والذي يُعتبرُ أولُ حاسوبٍ ميكانيكي (مكتمل). تُظهر الصورة أدناه نموذجًا معادًا إنتاجه لذلك الحاسوب، والموجود في المتحفِ التقني الألماني في برلين.</p>
+
+<p><img src="/assets/posts/z1-computer.webp" alt="Z1 Computer" /></p>
+
+<p>وظهر بعد ذلك عدة حواسيب، منها الحاسوبُ الميكانيكي Harvard Mark I الصادرُ في عام 1944.</p>
+
+<p><img src="/assets/posts/Harvard-Mark-I.webp" alt="Harvard-Mark-I" /></p>
+
+<p>وباستخدام الصماماتِ المفرغة (vacuum tubes)، بدأت الحواسيبُ الرقمية بالظهور، حيث عملت تلك الصمامات عملَ البوابات المنطقية (logic gates). وبهذا يُذكر حاسوبُ ENIAC عام 1945 بصفته أولُ حاسوبٍ رقمي.</p>
+
+<p><img src="/assets/posts/ENIAC.webp" alt="ENIAC" /></p>
+
+<p>وكما ترى فقد كان حجمُه كبيرا جدا، حيث يملأُ مساحةَ مايقربُ من 550 مترٍ مربع ويزنُ 27 طنًا ويحوي آلافَ الصماماتِ المفرغة ويمكنه إجراءُ حوالَي خمسةَ آلافِ عمليةِ طرحٍ وجمعٍ في الثانية.</p>
+
+<p>وقد تحدثت عن الصمامات المفرغة والبوابات المنطقية في <a href="https://play.google.com/store/books/details/%D9%85%D9%84%D9%87%D9%85_%D8%A7%D9%84%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85_%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82_%D9%84%D8%B7%D9%84%D8%A7%D8%A8_%D8%B9%D9%84%D9%85_%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8?id=Q7v_EAAAQBAJ">كتاب المنطق</a>.</p>
+
+<p>وظهر بعد ذلك الحاسوب UNIVAC عام 1951 ذو الحجمِ الأصغر.</p>
+
+<p><img src="/assets/posts/UNIVAC.webp" alt="UNIVAC" /></p>
+
+<p><strong>ولكن ما الفرق بين الحواسيب الميكانيكية والإلكترونية؟</strong></p>
+
+<p>لنقارنَ الحواسيب المكيانيكية الأخيرة مع الحواسيب الإلكترونية. حيث نحتاج في الحاسوب إلى التعاملِ مع الأصفار والواحدات. استخدمت الحواسيب الميكانيكية المُرحِّلات (Relays) لتمثيل الصفر والواحد.</p>
+
+<p><img src="/assets/posts/المرحل.webp" alt="المرحِّل" /></p>
+
+<p>المُرحِّل (والذي يستخدم في الجرس الكهربائي أيضًا) يعمل <em>عبر إعطائه طاقةٍ كهربائيةٍ صغيرة</em> بتفعيل الحقلِ المغناطيسي والذي يؤدي بدوره لجذب ذراعٍ حديدية مما يؤدي لعمل الدارة (يمثل ذلك الرقم 1  في الحاسوب)، وعند توقف التيار ينعدمُ المجالُ المغناطيسي وتعودُ الذراعُ لمكانها وتتوقفُ الدارةُ عن العمل (يمثل ذلك الرقم 0). لذا تطلبت الحواسيبُ الميكانيكية حركةً فيزيائيةً فعليةً لعملها، بينما تم الاستغناء عن الحركةِ الفيزيائية باستبدال المرحِّلات بالصمامات المفرغة.  وبالاستغناء عن الحركة لم تعد الأجهزة ميكانيكية بل أصبحت الكترونية تعمل وفق حركة الالكترونات فقط في الدارة (في الأسلاك) دون حركة قطع داخل الجهاز،  مما سرَّع من إجراءِ العملياتِ الحسابية.</p>
+
+<p>تُعتبر الحواسيب الالكترونية التي تَستخدم الصمامات المفرغة على أنها الجيل الأول من الحواسيب.</p>
+
+<p>ولكن ماذا عن الحواسيبِ الميكانيكية؟ أليست هي أيضًا أحدُ أجيالِ الحاسوب؟ نعم صحيح..إنها الجيلُ صفر! (لا أمزح)</p>
+
+<p>وباختراع الترانزستور، والذي حل محلَ الصماماتِ المفرغة، تمكن العلماءُ من تصغيرِ حجمِ الحواسيبِ كثيرا إلى أن وصلت إلى ما هي عليه اليوم. وقد كان حاسوب TRADIC هو الأول الذي يَستخدم الترانزستورات عام 1954.</p>
+
+<p><img src="/assets/posts/TRADIC-computer.png" alt="TRADIC computer" /></p>
+
+<p>تُعتبر  الحواسيبُ التي تستخدمُ الترانزستورات الجيلَ الثاني من الحواسيب.
+ثم ظهرتِ الداراتُ المتكاملة (Integrated circuits) وهي عبارة عن شرائح (chips) من موادِ نصفِ ناقلة، والتي تكون سيليكون غالبًا، وتحتوي على عدد كبير من الترانزستورات والمقاومات ومكوناتٍ إلكترونية أخرى لتشكل معًا شريحةً متكاملة. 
+تدعى الحواسيب ذاتُ الداراتِ المتكاملة هذه بالجيل الثالث من الحواسيب. وهي على خلافِ حواسيبِ الجيل الثاني التي احتوت على ألواح من الدارات التي تحوي ترانزستورات منفصلة.
+الداراتُ المتكاملة موجودةٌ في كلِّ حاسوبٍ اليوم، ولكنها أصبحت أصغر بكثير وتحوي عدد من الترانزستورات أكبر بكثير مما كانت عليه. الصورة التالية ﻷحد الدارات المتكاملة مع مخترعها روبرت نويس Robert Noyce  وتعود لعام 1959 ألفٍ وتسعمئة وتسعةٍ وخمسين.</p>
+
+<p><img src="/assets/posts/دارة-متكاملة.png" alt="دارة متكاملة" /></p>
+
+<p>والتي احتوت على بضعة آلاف من الترانزستورات. أما دارات اليوم فهي أصغر بكثير وتحوي على مليارات الترانزستورات. 
+وهنا تم التفريق بين الجيل الثالث والرابع والخامس من الحواسيب بناء على عدد الترانزستورات في الدارات المتكاملة، حيث تسمى الدارات المتكاملة في الجيل الرابع من الحواسيب بـ Very Large Scale Integrated (VLSI) واحتوت في بداياتها على أكثر من 10 آلاف ترانزستور، وفي عمومها على عشرات الآلاف من الترانزستورات.
+أما الجيل الخامس، والذي بدأ من ثمانينات القرن الماضي وحتى اليوم، فبدأت باحتوائها على مئات ثم ملايين ثم مليارات الترانزستورات في الدارة المتكاملة الواحدة. ولذا سميت هذه الدارات بـ Ultra Large Scale Integration (ULSI).</p>
+
+<h2 id="قانون-مور">قانون مور</h2>
+
+<p>إذا كنت تدرس هندسة الحاسوب، أو تقرأ وتشاهد بعض المقاطع المتعلقة بالتقنية، فلا شك بأنك ستسمع عن شيء يدعى قانون مور (Moore’s law)، لذا وجب علي أن أحدثك عنه سريعا، فهو بسيط، قال شخص يدعى جوردِن مور Gordon Moore في عام 1965 بأن عدد الترانزستورات المضمنة في شريحةٍ (chip) ذاتِ حجمٍ ثابت سيتضاعف كلَّ سنتين تقريبًا. وقد صدَّق تطور التقنية تلك الفرضية أو القانون:</p>
+
+<p><img src="/assets/posts/قانون-مور.png" alt="قانون مور" /></p>
+
+<p>هل برأيك أن قانونَ مور سيبقى صحيحًا، وأن تطورَ التقنية سيستمر بنفس ذلك المعدل؟</p>
+
+<h2 id="أنواع-الحواسيب">أنواع الحواسيب</h2>
+
+<p>تختلف أنواع الحواسيبُ وفق الهدف، حيث لدينا الآلةُ الحاسبة، Playstation المخصصُ للألعاب، الهاتفُ الذكي للتواصلِ بحريةٍ أثناءَ التنقل، والحواسيبُ الثابتةِ المختلفة ذاتُ الأغراضِ العامة.</p>
+
+<p>وتختلفُ وفقَ السرعةِ والأداء، فلدينا:</p>
+
+<ul>
+  <li>
+    <p>الحاسوب الشخصي PC (Personal Computer): وهو حاسوب صغير بأسعارٍ غيرِ مرتفعة وللاستخداماتِ الشخصية. أُطلق عليه في ثمانينات القرن الماضي اسم microcomputer  ثم استُبدل ذلك الاسم بالاسم الحالي مع بداية هذا القرن. تَستخدمُ المؤسساتُ التجاريةِ كذلك الحواسيبِ الشخصية لمعالجةِ النصوص والنشرِ والمحاسبةِ والتطبيقاتِ الإدارية.</p>
+  </li>
+  <li>
+    <p>الحاسوب الصغير Minicomputer: والذي بدأ في ستينات القرن الماضي. ويتميز بصِغَرِ حجمِهِ وانخفاضِ سِعرِه، ومازال يُستخدم إلى اليوم، فهو أيضًا يستهلكُ طاقةً أقل، والكثيرُ من أنواعِهِ لا تحوي مروحة أصلا مما يجعله صامتًا تمامًا، أما استخداماته فهي عمومًا التطبيقاتُ المكتبية وتصفحُ الإنترنت، ولا يُستخدم للتطبيقات والعمليات التي تتطلب مواردًا عالية.</p>
+  </li>
+</ul>
+
+<p><img src="/assets/posts/mini-computer.jpg" alt="Mini computer" />
+<em>A Gigabyte BRIX</em></p>
+
+<ul>
+  <li>الحاسوب المركزي Mainframe computer: حاسوبٌ كبيرٌ باهظُ الثمن يُستخدم لتخديم مئاتِ أو آلافِ المستخدمين في نفس الوقت، حيث يمكنه تنفيذُ عددٍ كبيرٍ من العمليات في نفسِ الوقت. وبالتالي يُستخدم في المؤسسات الكبيرة.</li>
+</ul>
+
+<p><img src="/assets/posts/IBM-z15-mainframe.jpg" alt="IBM-z15-mainframe" />
+<em>IBM z15 mainframe</em></p>
+
+<ul>
+  <li>الحاسوب الفائق Supercomputer: وهو أسرعُ وأغلى حاسوبٍ متاحٍ اليوم. يُستخدم لتطبيقاتٍ متخصصةٍ جدًا تتطلب كمًّا هائلا من العمليات الحسابية، مثلِ أبحاثِ الطاقة النووية وتحليلِ المواقعِ الجغرافية وتوقعِ حالةِ الطقس وكذلك تحليلِ الشفرات (في مجال الأمن السيبراني).</li>
+</ul>
+
+<p><img src="/assets/posts/super-computer.jpg" alt="super-computer" />
+<em>The IBM Blue Gene/P supercomputer “Intrepid” at Argonne National Laboratory</em></p>
+
+<p>تطرح الفقرة أعلاه عدة أسئلة، بما فيها طريقة عمل الحاسوب بالضبط مع الأصفار والواحدات؟ وكيف يتم تمثيل النصوص والصوتيات والمرئيات بواسطة الأصفار والواحدات؟ 
+ستجد إجابات مفصلة على مثل تلك الأسئلة في المقالات اللاحقة إن شاء الله.</p>
+
+<p>للاطلاع:</p>
+
+<ul>
+  <li>
+    <p>مقطع يُظهر طريقة استخدام أحد الأنواع الشائعة لآلة المعداد (<a href="https://www.youtube.com/watch?v=FTVXUG_PngE">https://www.youtube.com/watch?v=FTVXUG_PngE</a>) والذي يتحدث عن الاستخدام الأساسي فقط، دون الاستخدامات المعقدة لها!</p>
+  </li>
+  <li>
+    <p>الجدول الزمني لتاريخ الحاسوب (إنجليزي):<a href="https://www.computerhistory.org/timeline/computers/">https://www.computerhistory.org/timeline/computers/</a></p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="تعليم" /><summary type="html"><![CDATA[لنأخذ معًا نبذة عن بداية الحواسيب وتطورها وأنواعها]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mulham.github.io/assets/posts/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B3%D9%8A%D8%A8.webp" /><media:content medium="image" url="https://mulham.github.io/assets/posts/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B3%D9%8A%D8%A8.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">هل “الذكاء الاصطناعي” ذكاء بالفعل؟</title><link href="https://mulham.github.io/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84/" rel="alternate" type="text/html" title="هل “الذكاء الاصطناعي” ذكاء بالفعل؟" /><published>2024-10-21T00:00:00+03:00</published><updated>2024-10-21T00:00:00+03:00</updated><id>https://mulham.github.io/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84</id><content type="html" xml:base="https://mulham.github.io/%D9%87%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%81%D8%B9%D9%84/"><![CDATA[<p>نشاهد في الصور أعلاه صورة كلب أمام رقعة الشطرنج، وصورة أخرى لطفلة، وأخرى لمسنين يلعبون الشطرنج.
 أعتقد أننا متفقون أن الكلب لا يمكن له أن يلعب الشطرنج، فليس بمقدوره فهم قواعدها واللعب وفقًا لتلك القواعد. ولكن هل نقول نتيجة لذلك أن الكلب غبي؟
 وبالنسبة للمسنين الذين يلعبون باحترافية نتيجة ممارستهم لتلك اللعبة لسنوات طويلة وحفظهم تقريبًا لجميع الحركات فيها، هل نقول عنهم أنهم أذكياء؟
 لو أنك تحفظ حركات معينة تؤدي لهزيمة خصمك في لعبة الشطرنج، فهذا لا يعكس ذكاءك، أليس كذلك؟
@@ -2054,162 +2197,4 @@ by Aurélien Géron.</li>
 
 <hr />
 
-<p><strong>التالي:</strong> <a href="/javafx-manage-users">إدارة المستخدمين</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية تغيير النوافذ والانتقال بينهم في تطبيق JavaFX]]></summary></entry><entry><title type="html">تبادل البيانات بين الأصناف في جافا إف إكس</title><link href="https://mulham.github.io/javafx-transfer-data-between-scenes/" rel="alternate" type="text/html" title="تبادل البيانات بين الأصناف في جافا إف إكس" /><published>2021-03-02T00:00:00+03:00</published><updated>2024-10-18T00:18:26+03:00</updated><id>https://mulham.github.io/javafx-transfer-data-between-scenes</id><content type="html" xml:base="https://mulham.github.io/javafx-transfer-data-between-scenes/"><![CDATA[<blockquote class="prompt-info">
-  <p>هذه الصفحة جزء من شرح <a href="/java-project-from-scratch">بناء تطبيق جافا إف إكس من الصفر</a></p>
-</blockquote>
-
-<p>إذًا لإمكانية تعديل بيانات مستخدم يجب علينا أن نرسل بياناته الموجودة والتي نرغب بتعديلها إلى نافذة التعديل.</p>
-
-<p>لنقم أولًا بإضافة الدالة التي تقوم فعليا بتعديل البيانات في قواعد البيانات في صنف DatabaseHandler:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="rouge-code"><pre>    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">editUser</span><span class="o">(</span><span class="nc">User</span> <span class="n">user</span><span class="o">)</span> <span class="o">{</span>
-        <span class="nc">String</span> <span class="n">edit</span> <span class="o">=</span> <span class="s">"update Users "</span> <span class="o">+</span> <span class="s">" set Name = ?, Nachname = ?, Level = ?, Zertifikat_datum = ?, password = ?"</span>
-                <span class="o">+</span><span class="s">" Where idUser"</span> <span class="o">+</span> <span class="s">" = ?"</span><span class="o">;</span>
-        <span class="k">try</span> <span class="o">{</span>
-            <span class="nc">PreparedStatement</span> <span class="n">preparedStatement</span> <span class="o">=</span> <span class="n">getDbConnection</span><span class="o">().</span><span class="na">prepareStatement</span><span class="o">(</span><span class="n">edit</span><span class="o">);</span>
-            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">user</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
-            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="n">user</span><span class="o">.</span><span class="na">getNachname</span><span class="o">());</span>
-            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="n">user</span><span class="o">.</span><span class="na">getLevel</span><span class="o">());</span>
-            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="nc">String</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getZertifikat_datum</span><span class="o">()));</span>
-            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="n">user</span><span class="o">.</span><span class="na">getPassword</span><span class="o">());</span>
-            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setInt</span><span class="o">(</span><span class="mi">6</span><span class="o">,</span> <span class="n">user</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
-            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">();</span>
-            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">SQLException</span> <span class="o">|</span> <span class="nc">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p>لنقم بإنشاء نافذة editUser.fxml والتي ستكون بنفس محتوى addUser ولكن سيختلف فقط رز Add ويصبح Update، النافذة لدي ستصبح على الشكل التالي:</p>
-
-<p><img src="https://raw.githubusercontent.com/Mulham/Java-Project/images/images/gluon-edit-users-window.png" alt="نافذة تعديل مستخدم في تطبيق جافا FX" /></p>
-
-<p>ثم في صنف EditUserController سأقوم بإنشاء دالة getInfo والتي تأخذ بيانات المستخدم الذي تم تحديده من الجدول وتعرضه في النموذج لدينا (كما دمجت زر تحديث البيانات ضمن الدالة):</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-</pre></td><td class="rouge-code"><pre> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">getInfo</span><span class="o">(</span><span class="nc">User</span> <span class="n">user</span><span class="o">){</span>
-       <span class="n">addName</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
-       <span class="n">addSurname</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getNachname</span><span class="o">());</span>
-       <span class="n">addLevel</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getLevel</span><span class="o">());</span>
-       <span class="n">addDate</span><span class="o">.</span><span class="na">getEditor</span><span class="o">().</span><span class="na">setText</span><span class="o">(</span><span class="nc">String</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getZertifikat_datum</span><span class="o">()));</span>
-       <span class="n">idLabel</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="nc">String</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getId</span><span class="o">()));</span>
-       <span class="n">updateButton</span><span class="o">.</span><span class="na">setOnAction</span><span class="o">(</span><span class="n">event</span> <span class="o">-&gt;</span> <span class="o">{</span>
-            <span class="n">databaseHandler</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DatabaseHandler</span><span class="o">();</span>
-            <span class="nc">User</span> <span class="n">rg</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">User</span><span class="o">(</span> <span class="n">user</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">,</span> <span class="n">addName</span><span class="o">.</span><span class="na">getText</span><span class="o">(),</span><span class="n">addSurname</span><span class="o">.</span><span class="na">getText</span><span class="o">(),</span>
-                    <span class="n">addLevel</span><span class="o">.</span><span class="na">getText</span><span class="o">(),</span><span class="n">addDate</span><span class="o">.</span><span class="na">getValue</span><span class="o">(),</span> <span class="n">addPassword</span><span class="o">.</span><span class="na">getText</span><span class="o">()</span> <span class="o">);</span>
-            <span class="kt">boolean</span> <span class="n">check</span> <span class="o">=</span> <span class="n">databaseHandler</span><span class="o">.</span><span class="na">editUser</span><span class="o">(</span><span class="n">rg</span><span class="o">);</span>
-            <span class="k">if</span> <span class="o">(</span><span class="n">check</span><span class="o">){</span>
-                <span class="n">addLabel</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">"User updated successfully!"</span><span class="o">);</span>
-                <span class="nc">FadeTransition</span> <span class="n">fadeTransition</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FadeTransition</span><span class="o">(</span><span class="nc">Duration</span><span class="o">.</span><span class="na">millis</span><span class="o">(</span><span class="mi">5000</span><span class="o">),</span><span class="n">addLabel</span><span class="o">);</span>
-                <span class="n">fadeTransition</span><span class="o">.</span><span class="na">setFromValue</span><span class="o">(</span><span class="mi">1</span><span class="n">f</span><span class="o">);</span>
-                <span class="n">fadeTransition</span><span class="o">.</span><span class="na">setToValue</span><span class="o">(</span><span class="mi">0</span><span class="n">f</span><span class="o">);</span>
-                <span class="n">fadeTransition</span><span class="o">.</span><span class="na">setCycleCount</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
-                <span class="n">fadeTransition</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
-            <span class="o">}</span>
-            <span class="k">else</span><span class="o">{</span>
-                <span class="n">addLabel</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">"Couldn't update the user!"</span><span class="o">);</span>
-            <span class="o">}</span>
-       <span class="o">});</span>
-    <span class="o">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p>وأخيرا في صنف UserController لنقم ببرمجة زر التعديل حيث يتم استدعاء دالة getInfo وتمرير المستخدم المحدد في الجدول إليها، وهذه هي طريقة إرسال بيانات من صنف لآخر أي من نافذة ﻷخرى:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-</pre></td><td class="rouge-code"><pre>
-<span class="n">user_edit</span><span class="o">.</span><span class="na">setOnAction</span><span class="o">(</span><span class="n">event</span> <span class="o">-&gt;</span> <span class="o">{</span>
-            <span class="nc">User</span> <span class="n">user</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="na">getSelectionModel</span><span class="o">().</span><span class="na">getSelectedItem</span><span class="o">();</span>    <span class="c1">// إنشاء عنصر من صنف المستخدم حيث معلوماته تكون من  السطر المحدد في الجدول</span>
-            <span class="k">if</span> <span class="o">(!</span><span class="n">table</span><span class="o">.</span><span class="na">getSelectionModel</span><span class="o">().</span><span class="na">isEmpty</span><span class="o">()){</span>  <span class="c1">// إذا قام المستخدم بتحديد سطر من الجدول</span>
-                <span class="n">user_edit</span><span class="o">.</span><span class="na">getScene</span><span class="o">().</span><span class="na">getWindow</span><span class="o">().</span><span class="na">hide</span><span class="o">();</span>
-                <span class="k">try</span> <span class="o">{</span>
-                    <span class="nc">FXMLLoader</span> <span class="n">loader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FXMLLoader</span><span class="o">(</span><span class="n">getClass</span><span class="o">().</span><span class="na">getResource</span><span class="o">(</span><span class="s">"/sample/view/editUser.fxml"</span><span class="o">));</span>
-                    <span class="nc">Parent</span> <span class="n">root</span> <span class="o">=</span> <span class="o">(</span><span class="nc">Parent</span><span class="o">)</span> <span class="n">loader</span><span class="o">.</span><span class="na">load</span><span class="o">();</span>
-                    <span class="nc">EditUserController</span> <span class="n">editUserController</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="na">getController</span><span class="o">();</span>
-                    <span class="n">editUserController</span><span class="o">.</span><span class="na">getInfo</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>   <span class="c1">// إرسال عنصر المستخدم مع كافة بياناته كبارامتر للدالة الموجودة في صنف التعديل</span>
-                    <span class="nc">Stage</span> <span class="n">stage</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Stage</span><span class="o">();</span>
-                    <span class="n">stage</span><span class="o">.</span><span class="na">setScene</span><span class="o">(</span><span class="k">new</span> <span class="nc">Scene</span><span class="o">(</span><span class="n">root</span><span class="o">));</span>
-                    <span class="n">stage</span><span class="o">.</span><span class="na">show</span><span class="o">();</span> 
-                <span class="o">}</span><span class="k">catch</span>  <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">){</span>
-                    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-                <span class="o">}</span>
-            <span class="o">}</span>
-            <span class="k">else</span><span class="o">{</span>
-                <span class="n">radiographer_label</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">"You should select an Item"</span><span class="o">);</span>
-            <span class="o">}</span>
-
-
-        <span class="o">});</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p>والآن قم بتجربة البرنامج وتجربة وظيفة التعديل الجديدة فيه.</p>
-
-<p>يمكنك معاينة الكود في الوضع الحالي من <a href="https://github.com/Mulham/Java-Project/tree/editUser">هنا</a></p>
-
-<hr />
-
-<p><strong>التالي:</strong> <a href="/javafx-working-process">النهاية</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية إرسال بيانات ومعلومات من صنف لآخر ومن نافذة لأخرى في جافا وجافا FX]]></summary></entry></feed>
+<p><strong>التالي:</strong> <a href="/javafx-manage-users">إدارة المستخدمين</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[كيفية تغيير النوافذ والانتقال بينهم في تطبيق JavaFX]]></summary></entry></feed>
